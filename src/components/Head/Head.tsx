@@ -2,7 +2,7 @@
 import styled from '@emotion/styled';
 import Image from 'next/image';
 
-const HeaderComponent = styled.header`
+const HeadComponent = styled.head`
     background: linear-gradient(180deg, #07B3FD 0%, #0081E8 100%);
     height: 190px;
     width: 100%;
@@ -21,11 +21,11 @@ const Ul = styled.ul`
             width: 100px;
         }
 `;
-const Header = function() {
+const Head = function() {
   return (
-    <HeaderComponent>
+    <HeadComponent>
         <div>
-            <Image src="/images/logo.svg" width={81} height={104} alt="logo" />
+            <Image src="/images/logo-fox 1.svg" width={81} height={104} alt="logo" />
         </div>
         <div>
             <Ul>
@@ -34,8 +34,8 @@ const Header = function() {
             </Ul>
         </div>
 
-    </HeaderComponent>
+    </HeadComponent>
   )
 }
 
-export default Header
+export default Head
