@@ -31,16 +31,10 @@ const Ul = styled.ul`
 `;
 const Head = function() {
   return (
-<<<<<<<< HEAD:src/components/Head/Head.tsx
     <HeadComponent>
-        <div>
-            <Image src="/images/logo-fox 1.svg" width={81} height={104} alt="logo" />
-========
-    <HeaderComponent>
         <div className='image'>
             <Image src="/images/logo-fox1.svg" width={81} height={104} alt="logo" />
             <div className='nameLogo'>FoxSoluctions</div>
->>>>>>>> a2bfd676a82c5d1d9e0dc51211ab44269aaa1d67:src/components/Header/Header.tsx
         </div>
         <div>
             <Ul>
