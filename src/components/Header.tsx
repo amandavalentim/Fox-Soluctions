@@ -9,6 +9,13 @@ const HeaderComponent = styled.header`
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 20px;
+    .nameLogo {
+        color: white;
+    }
+    .image {
+        
+    }
     @media (min-width: 768px){
         height: 172px;
     }
@@ -19,13 +26,15 @@ const Ul = styled.ul`
         list-style: none;   
         li {
             width: 100px;
+            color: white;
         }
 `;
 const Header = function() {
   return (
     <HeaderComponent>
-        <div>
-            <Image src="/images/logo.svg" width={81} height={104} alt="logo" />
+        <div className='image'>
+            <Image src="/images/logo-fox1.svg" width={81} height={104} alt="logo" />
+            <div className='nameLogo'>FoxSoluctions</div>
         </div>
         <div>
             <Ul>
