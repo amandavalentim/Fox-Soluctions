@@ -35,5 +35,5 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 =======
 # Fox-Soluctions
-Projeto desenvolvido com o objetivo de criar um CRUD de documentos por pessoas.
->>>>>>> 25ba7ddfe55d38555dc96a2b258a041c31bed7fb
+Projeto desenvolvido com o objetivo de criar um CRUD de documentos por pessoa.
+>>>>>>> 
