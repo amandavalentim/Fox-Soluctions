@@ -1,14 +1,11 @@
-import Header from '../components/Head
-import Footer from '../components/Footer';
+import Background from '@/components/ulix/background/background'
+import Head  from '../components/Head/Head'
 
 export default function Home() {
   return (
     <main>
-
-      <Header />
-
-      <Footer/>
-      
+      <Head/>
+      <Background/>
     </main>
 
   )
