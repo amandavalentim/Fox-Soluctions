@@ -4,6 +4,9 @@ import Image from 'next/image';
 
 const BackgroundComponent = styled.body`
     background-color: #0A53B5;
+    body::-webkit-scrollbar {
+        width: -2px;
+    }
     #img1 {
         position: absolute;
         top: 420px;
