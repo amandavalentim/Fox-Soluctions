@@ -66,39 +66,37 @@ const BackgroundComponent = styled.body`
         top: 805px;
     }
 
-    @media (min-width: 1024px){
-        width: 100%;
-        height: 1200px;
+    @media ((min-width: 1024px) and (max-width: 1464px)){
     #img1 {
         position: absolute;
-        top: 420px;
+        top: 220px;
         width: 180px;
         height: 130px;
         }
     #img2 {
         position: absolute;
-        top: 115px;
+        top: -25px;
         left: 1px;
         width: 120px;
         height: 120px;
     }
     #img3 {   
         position: absolute;
-        top: 132px;
+        top: -5px;
         left: 400px;
         width: 180px;
         height: 50px;
     }
     #img4 {
         position: absolute;
-        top: 135px;
-        left: 923px;
-        width: 100px;
-        height: 100px;
+        top: -5px;
+        left: 853px;
+        width: 180px;
+        height: 150px;
     }
     #img5 {
         position: absolute;
-        top: 320px;
+        top: 120px;
         left: 160px;
         width: 185px;
         height: 120px;
