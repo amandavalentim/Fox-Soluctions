@@ -7,7 +7,7 @@ const FormComponent = styled.div`
         background-color: #FFFF;
         width: 628px;
         height: 573px;
-        display: flex;
+        display: none;
         align-items: center;
         justify-content: center;
         
