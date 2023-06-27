@@ -36,7 +36,12 @@ const BackgroundComponent = styled.body`
     #img7 {
         position: absolute;
         top: 525px;
-        left: 1050px;
+        left: 1150px;
+    }
+    #img8 {
+        position: absolute;
+        top: 650px;
+        left: 1320px;
     }
 `;
 
@@ -50,6 +55,7 @@ const Background = function() {
             <Image src="/images/Ellipse-2.png" width={265} height={200} alt='img-5' id='img5'/>
             <Image src="/images/Ellipse-3.png" width={400} height={200} alt='img-6' id='img6'/>
             <Image src="/images/Ellipse-8.png" width={200} height={95} alt='img-7' id='img7'/>
+            <Image src="/images/Ellipse-4.png" width={265} height={200} alt='img-8' id='img8'/>
         </BackgroundComponent>
     )
 }
