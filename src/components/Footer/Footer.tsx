@@ -3,10 +3,10 @@ import styled from '@emotion/styled';
 
 const FooterComponent = styled.footer`
     background: linear-gradient(180deg, rgba(7, 179, 253, 1), rgba(7, 179, 253, 1));
-    height: 190px;
+    height: 300px;
     width: 100%;
     position: absolute;
-    top: 1500px;
+    top: 900px;
 `;
 
 const Footer = function (){
