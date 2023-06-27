@@ -43,13 +43,13 @@ const BackgroundComponent = styled.body`
 const Background = function() {
     return(
         <BackgroundComponent>
-            <Image src="/images/Ellipse 1.png" width={310} height={225} alt='img-1' id='img1'/>
-            <Image src="/images/Rectangle 20.png" width={165} height={200} alt='img-2' id='img2'/>
-            <Image src="/images/Ellipse 5-8.png" width={200} height={65} alt='img-3.8' id='img3'/>
+            <Image src="/images/Ellipse-1.png" width={310} height={225} alt='img-1' id='img1'/>
+            <Image src="/images/Rectangle-20.png" width={165} height={200} alt='img-2' id='img2'/>
+            <Image src="/images/Ellipse-5.png" width={200} height={65} alt='img-3.8' id='img3'/>
             <Image src="/images/header.png" width={270} height={225} alt='img-4' id='img4'/>
-            <Image src="/images/Ellipse 2.png" width={265} height={200} alt='img-5' id='img5'/>
-            <Image src="/images/Ellipse 3.png" width={400} height={200} alt='img-6' id='img6'/>
-            <Image src="/images/Ellipse 8.png" width={200} height={95} alt='img-7' id='img7'/>
+            <Image src="/images/Ellipse-2.png" width={265} height={200} alt='img-5' id='img5'/>
+            <Image src="/images/Ellipse-3.png" width={400} height={200} alt='img-6' id='img6'/>
+            <Image src="/images/Ellipse-8.png" width={200} height={95} alt='img-7' id='img7'/>
         </BackgroundComponent>
     )
 }
