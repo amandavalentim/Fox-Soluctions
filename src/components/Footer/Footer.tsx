@@ -12,12 +12,18 @@ const FooterComponent = styled.footer`
 const Footer = function (){
     return(
         <FooterComponent>
-            <footer className='Contacts'>
+            <div className='box'>
                 <h3>Contatos</h3>
-                <p><span>Endereço:</span> </p>
-            </footer>
+                <p><span>Endereço: </span>Rua Tamoios, 246, Jardim Aeroporto - São Paulo, SP.</p>
+            </div>
+            <div className='box'>
+
+            </div>
+            <div className='box'>
+
+            </div>
         </FooterComponent>
     )
 }
 
-export default Footer
+export default Footer;
