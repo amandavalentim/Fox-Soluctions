@@ -10,6 +10,7 @@ const HeadComponent = styled.head`
     justify-content: space-between;
     align-items: center;
     padding: 20px;
+    position: fixed;
     .nameLogo {
         color: white;
     }

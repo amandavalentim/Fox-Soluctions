@@ -13,7 +13,7 @@ const BackgroundComponent = styled.body`
         top: 95px;
         left: -1px;
     }
-    #img3 {
+    #img3 {   
         position: absolute;
         top: 130px;
         left: 735px;
@@ -25,23 +25,13 @@ const BackgroundComponent = styled.body`
     }
 `;
 
-
-
 const Background = function() {
     return(
         <BackgroundComponent>
-                <div id='img1'>
-                    <Image src="/images/Ellipse-1.png" width={310} height={225} alt='img-1'/>
-                </div>
-                <div id='img2'>
-                    <Image src="/images/Rectangle 20.png" width={165} height={200} alt='img-2'/>
-                </div>
-                <div id='img3'>
-                    <Image src="/images/Ellipse 5-8.png" width={200} height={65} alt='img-3.8'/>
-                </div>
-                <div id='img4'>
-                    <Image src="/images/header.png" width={270} height={225} alt='img-4'/>
-                </div>
+            <Image src="/images/Ellipse 1.png" width={310} height={225} alt='img-1' id='img1'/>
+            <Image src="/images/Rectangle 20.png" width={165} height={200} alt='img-2' id='img2'/>
+            <Image src="/images/Ellipse 5-8.png" width={200} height={65} alt='img-3.8' id='img3'/>
+            <Image src="/images/header.png" width={270} height={225} alt='img-4' id='img4'/>
         </BackgroundComponent>
     )
 }
