@@ -5,7 +5,7 @@ const FooterComponent = styled.footer`
     background: linear-gradient(180deg, rgba(7, 179, 253, 1), rgba(7, 179, 253, 1));
     height: 300px;
     width: 100%;
-    position: absolute;
+    position: relative;
     top: 900px;
 `;
 

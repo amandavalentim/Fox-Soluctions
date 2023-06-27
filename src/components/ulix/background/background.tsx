@@ -4,48 +4,51 @@ import Image from 'next/image';
 
 const BackgroundComponent = styled.body`
     background-color: #0A53B5;
+    position: relative;
+    width: 100%;
+    height: 1200px;
     #img1 {
         position: absolute;
         top: 420px;
     }
     #img2 {
         position: absolute;
-        top: 95px;
+        top: -40px;
         left: -1px;
     }
     #img3 {   
         position: absolute;
-        top: 132px;
+        top: -5px;
         left: 735px;
     }
     #img4 {
         position: absolute;
-        top: 135px;
+        top: -5px;
         left: 1355px;
     }
     #img5 {
         position: absolute;
-        top: 270px;
+        top: 280px;
         left: 280px;
     }
     #img6 {
         position: absolute;
-        top: 250px;
+        top: 220px;
         left: 970px;
     }
     #img7 {
         position: absolute;
-        top: 525px;
+        top: 500px;
         left: 1150px;
     }
     #img8 {
         position: absolute;
-        top: 650px;
+        top: 660px;
         left: 1320px;
     }
     #img9 {
         position: absolute;
-        top: 650px;
+        top: 655px;
         left: 635px;
     }
     #img10 {
@@ -55,12 +58,99 @@ const BackgroundComponent = styled.body`
     #img11 {
         position: absolute;
         left: 200px;
-        top: 120px;
+        top: -10px;
     }
     #img12 {
         position: absolute;
-        left: 2000px;
-        top: 1200px;
+        left: 750px;
+        top: 805px;
+    }
+
+    @media (min-width: 1024px){
+        width: 100%;
+        height: 1200px;
+    #img1 {
+        position: absolute;
+        top: 420px;
+        width: 180px;
+        height: 130px;
+        }
+    #img2 {
+        position: absolute;
+        top: 115px;
+        left: 1px;
+        width: 120px;
+        height: 120px;
+    }
+    #img3 {   
+        position: absolute;
+        top: 132px;
+        left: 400px;
+        width: 180px;
+        height: 50px;
+    }
+    #img4 {
+        position: absolute;
+        top: 135px;
+        left: 923px;
+        width: 100px;
+        height: 100px;
+    }
+    #img5 {
+        position: absolute;
+        top: 320px;
+        left: 160px;
+        width: 185px;
+        height: 120px;
+    }
+    #img6 {
+        position: absolute;
+        top: 250px;
+        left: 923px;
+        width: 100px;
+        height: 100px;
+    }
+    #img7 {
+        position: absolute;
+        top: 525px;
+        left: 923px;
+        width: 100px;
+        height: 100px;
+    }
+    #img8 {
+        position: absolute;
+        top: 650px;
+        left: 923px;
+        width: 100px;
+        height: 100px;
+    }
+    #img9 {
+        position: absolute;
+        top: 650px;
+        left: 635px;
+        width: 100px;
+        height: 100px;
+    }
+    #img10 {
+        position: absolute;
+        top: 720px;
+        width: 100px;
+        height: 100px;
+    }
+    #img11 {
+        position: absolute;
+        left: 200px;
+        top: 120px;
+        width: 100px;
+        height: 100px;
+    }
+    #img12 {
+        position: absolute;
+        left: 750px;
+        top: 805px;
+        width: 100px;
+        height: 100px;
+    }
     }
 `;
 
@@ -79,6 +169,7 @@ const Background = function() {
             <Image src="/images/Ellipse-7.png" width={350} height={425} alt='img-9' id='img9'/>
             <Image src="/images/Ellipse-6-1.png" width={450} height={180} alt='img-10' id='img10'/>
             <Image src="/images/Group-82.png" width={1200} height={950} alt='img-11' id='img11'/>
+            <Image src="/images/Stella.png" width={130} height={130} alt='img-12' id='img12'/>
             
         </BackgroundComponent>
     )
