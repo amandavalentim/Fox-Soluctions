@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 const HeadComponent = styled.head`
     background: linear-gradient(180deg, #07B3FD 0%, #0081E8 100%);
-    height: 190px;
+    height: 150px;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -13,9 +13,7 @@ const HeadComponent = styled.head`
     .nameLogo {
         color: white;
     }
-    .image {
-        
-    }
+
     @media (min-width: 768px){
         height: 172px;
     }
