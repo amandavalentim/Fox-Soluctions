@@ -10,8 +10,16 @@ const HeadComponent = styled.head`
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    position: fixed;
+    position: relative;
+    .logo-Fox {
+        position: absolute;
+        top: 5px;
+        left: -70px;
+    }
     .nameLogo {
+        position: absolute;
+        left: 40px;
+        top: 110px;
         color: white;
     }
 
@@ -31,10 +39,10 @@ const Ul = styled.ul`
 const Head = function() {
   return (
     <HeadComponent>
-        <div className='image'>
-            <Image src="/images/logo-fox1.svg" width={310} height={104} alt="logo" />
+        <nav className='header'>
+            <Image className='logo-Fox' src="/images/logo-fox1.svg" width={310} height={104} alt="logo" />
             <div className='nameLogo'>FoxSoluctions</div>
-        </div>
+        </nav>
         <div>
             <Ul>
                 <li>Home</li>
