@@ -3,6 +3,7 @@ import styled from '@emotion/styled';
 import Image from 'next/image';
 
 const HeadComponent = styled.head`
+    font-family: poppins;
     background: linear-gradient(180deg, #07B3FD 0%, #0081E8 100%);
     height: 150px;
     width: 100%;
@@ -41,7 +42,7 @@ const Head = function() {
     <HeadComponent>
         <nav className='header'>
             <Image className='logo-Fox' src="/images/logo-fox1.svg" width={310} height={104} alt="logo" />
-            <div className='nameLogo'>FoxSoluctions</div>
+            <div className='nameLogo'>Fox Soluctions</div>
         </nav>
         <div>
             <Ul>
