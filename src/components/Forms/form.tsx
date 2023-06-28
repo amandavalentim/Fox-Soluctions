@@ -28,16 +28,16 @@ const FormComponent = styled.div`
             }
         }
     }
-    /* form {
-        width: 100px;
-        height: 30px;
+     form {
+        #enter {
+            
+            button {
+                background-color: red;
+            }
+        }
     }
 
-     input {
-        align-items: center;
-        justify-content: center;
-    }
-    #btn-enter {
+    /* #btn-enter {
         display: flex;
     } */
 `;
@@ -63,7 +63,7 @@ const Form = function(){
 
                     </div>
 
-                    <div>
+                    <div id='enter'>
 
                         <button className='button'>
 
