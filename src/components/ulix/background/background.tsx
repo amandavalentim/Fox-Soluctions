@@ -6,7 +6,8 @@ const BackgroundComponent = styled.body`
     background-color: #0A53B5;
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 1200px;
+    display: flex;
     #img1 {
         position: absolute;
         top: 420px;
@@ -152,6 +153,7 @@ const BackgroundComponent = styled.body`
     }*/
 
     @media ((min-width: 1114px)){
+        display: flex;
         #img1 {
         position: absolute;
         top: 370px;
