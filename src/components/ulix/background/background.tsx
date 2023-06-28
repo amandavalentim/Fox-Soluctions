@@ -151,7 +151,7 @@ const BackgroundComponent = styled.body`
     }
     }*/
 
-    @media ((max-width: 1114px)){
+    @media ((min-width: 1115px)){
         #img1 {
         position: absolute;
         top: 370px;
