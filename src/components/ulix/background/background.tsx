@@ -223,7 +223,7 @@ const BackgroundComponent = styled.body`
     #img11 {
         position: absolute;
         left: 10px;
-        top: 105px;
+        top: 5px;
         width: 1200px;
         height: 1150px;
     }
