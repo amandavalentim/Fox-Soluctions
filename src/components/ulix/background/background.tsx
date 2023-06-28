@@ -151,7 +151,7 @@ const BackgroundComponent = styled.body`
     }
     }*/
 
-    @media ((min-width: 1115px)){
+    @media ((min-width: 1114px)){
         #img1 {
         position: absolute;
         top: 370px;
@@ -161,56 +161,56 @@ const BackgroundComponent = styled.body`
     #img2 {
         position: absolute;
         top: -25px;
-        left: -10px;
+        left: 1px;
         width: 130px;
         height: 180px;
     }
     #img3 {   
         position: absolute;
         top: -5px;
-        left: 330px;
+        left: 430px;
         width: 200px;
         height: 70px;
     }
     #img4 {
         position: absolute;
         top: -5px;
-        left: 853px;
+        left: 953px;
         width: 250px;
         height: 190px;
     }
     #img5 {
         position: absolute;
         top: 190px;
-        left: 70px;
+        left: 170px;
         width: 250px;
         height: 170px;
     }
     #img6 {
         position: absolute;
         top: 200px;
-        left: 515px;
+        left: 615px;
         width: 350px;
         height: 155px;
     }
     #img7 {
         position: absolute;
         top: 415px;
-        left: 713px;
+        left: 813px;
         width: 165px;
         height: 80px;
     }
     #img8 {
         position: absolute;
         top: 715px;
-        left: 763px;
+        left: 863px;
         width: 250px;
         height: 230px;
     }
     #img9 {
         position: absolute;
         top: 680px;
-        left: 315px;
+        left: 415px;
         width: 350px;
         height: 360px;
     }
@@ -223,13 +223,13 @@ const BackgroundComponent = styled.body`
     #img11 {
         position: absolute;
         left: -5px;
-        top: -10px;
+        top: 5px;
         width: 1200px;
         height: 1150px;
     }
     #img12 {
         position: absolute;
-        left: 430px;
+        left: 530px;
         top: 790px;
         width: 140px;
         height: 140px;
