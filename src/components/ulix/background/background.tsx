@@ -151,7 +151,7 @@ const BackgroundComponent = styled.body`
     }
     }*/
 
-    @media ((min-width: 1114px)){
+    @media ((min-width: 1115px)){
         #img1 {
         position: absolute;
         top: 370px;
@@ -161,56 +161,56 @@ const BackgroundComponent = styled.body`
     #img2 {
         position: absolute;
         top: -25px;
-        left: 1px;
+        left: -1px;
         width: 130px;
         height: 180px;
     }
     #img3 {   
         position: absolute;
         top: -5px;
-        left: 430px;
+        left: 630px;
         width: 200px;
         height: 70px;
     }
     #img4 {
         position: absolute;
         top: -5px;
-        left: 953px;
+        left: 1153px;
         width: 250px;
         height: 190px;
     }
     #img5 {
         position: absolute;
         top: 190px;
-        left: 170px;
+        left: 270px;
         width: 250px;
         height: 170px;
     }
     #img6 {
         position: absolute;
         top: 200px;
-        left: 615px;
+        left: 815px;
         width: 350px;
         height: 155px;
     }
     #img7 {
         position: absolute;
         top: 415px;
-        left: 813px;
+        left: 1013px;
         width: 165px;
         height: 80px;
     }
     #img8 {
         position: absolute;
         top: 715px;
-        left: 863px;
+        left: 1100px;
         width: 250px;
         height: 230px;
     }
     #img9 {
         position: absolute;
         top: 680px;
-        left: 415px;
+        left: 545px;
         width: 350px;
         height: 360px;
     }
@@ -222,14 +222,14 @@ const BackgroundComponent = styled.body`
     }
     #img11 {
         position: absolute;
-        left: 200px;
-        top: 200px;
-        width: 100px;
-        height: 100px;
+        left: 120px;
+        top: 5px;
+        width: 1200px;
+        height: 1150px;
     }
     #img12 {
         position: absolute;
-        left: 530px;
+        left: 650px;
         top: 790px;
         width: 140px;
         height: 140px;
@@ -252,7 +252,6 @@ const Background = function() {
                 <Image src="/images/Ellipse-4.png" width={265} height={200} alt='img-8' id='img8'/>
                 <Image src="/images/Ellipse-7.png" width={350} height={425} alt='img-9' id='img9'/>
                 <Image src="/images/Ellipse-6-1.png" width={450} height={180} alt='img-10' id='img10'/>
-                <Image src="/images/Group-82.png" width={1200} height={950} alt='img-11' id='img11'/>
                 <Image src="/images/Stella.png" width={130} height={130} alt='img-12' id='img12'/>
             </nav>
             
