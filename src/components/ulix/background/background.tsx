@@ -203,7 +203,7 @@ const BackgroundComponent = styled.body`
     #img8 {
         position: absolute;
         top: 715px;
-        left: 1063px;
+        left: 1093px;
         width: 250px;
         height: 230px;
     }
