@@ -8,7 +8,7 @@ const FooterComponent = styled.footer`
     height: 300px;
     width: 100%;
     position: relative;
-    top: 226px;
+    top: 900px;
     display: flex;
     justify-content: space-between;
     .box{
