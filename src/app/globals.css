@@ -95,3 +95,21 @@ a {
     color-scheme: dark;
   }
 }
+
+@font-face {
+  font-family: 'Poppins-Bold';
+  src: local('Poppins'), 
+  url(../fonts/Poppins/Poppins-Bold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Poppins-Semibold';
+  src: local('Poppins'), 
+  url(../fonts/Poppins/Poppins-SemiBold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Poppins-Regular';
+  src: local('Poppins'), 
+  url(../fonts/Poppins/Poppins-Regular.ttf) format('truetype');
+}

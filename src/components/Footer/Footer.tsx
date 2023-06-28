@@ -19,17 +19,70 @@ const FooterComponent = styled.footer`
             padding-right: 10px;
             padding-top: 20px;
             padding-bottom: 20px;
-
             text-align: center;
+            color: #FEFEFE;
+            font-size: 25px;
+            font-family: 'Poppins-bold';
         }
         p{
             padding: 10px;
             width: 250px;
+            color: #FEFEFE;
+            font-family: 'Poppins-Regular';
+            font-size: 13px;
+
+            span{
+                font-size: 15px;
+                font-family: 'Poppins-Semibold';
+            }
         }
         a{
-            padding: 13px;
+            padding: 15px;
             display: grid;
+            font-family: 'Poppins-Regular';
+            font-size: 13px;
+            color: #FEFEFE;
         }
+        .container{
+            height: 20vh;
+            display: flex;
+            width: 30px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            .facebook{
+                width: 50px;
+                height: 50px;
+                fill: #3a77ff;
+                cursor: pointer;
+                margin-left: 40px ;
+                margin-right: 5px;
+            }
+            .instagram{
+                width: 50px;
+                height: 50px;
+                fill:  #C82D8E;
+                cursor: pointer;
+                margin-left: 40px ;
+                margin-right: 5px;
+            }
+            .twitter{
+                width: 50px;
+                height: 50px;
+                fill:  #098BEA;
+                cursor: pointer;
+                margin-left: 10px ;
+                margin-right: 10px;
+            }
+            .github{
+                width: 50px;
+                height: 50px;
+                fill:  #000000;
+                cursor: pointer;
+                margin-left: 10px ;
+                margin-right: 10px;
+            }
+        }
+        
     }
 `;
 
@@ -45,17 +98,24 @@ const Footer = function (){
                 <p><span>Email: </span> foxsoluctions@gmail.com</p>
             </div>
             <div className='box'>
-                <h3>Nossa Empressa</h3>
+                <h3>Nossa Empresa</h3>
                 <a href="">Home</a>
                 <a href="">Documentos</a>
                 <a href="">Sobre Nós</a>
             </div>
             <div className='box'>
                <h3>Redes Sociais</h3>
-               <i><FaFacebookSquare></FaFacebookSquare></i>
-               <i><FaInstagram></FaInstagram></i>
-               <i><FaTwitterSquare></FaTwitterSquare></i>
-               <i><FaGithubSquare></FaGithubSquare></i>
+               <div className='container'>
+                    <div className='box-FI'>
+                        <FaFacebookSquare className='facebook'/>
+                        <FaInstagram className='instagram'/>
+                    </div>
+                    <div className='box-TG'>
+                        <FaTwitterSquare className='twitter'/>
+                        <FaGithubSquare className='github'/>
+                    </div>
+               </div>
+               
             </div>
         </FooterComponent>
     )
