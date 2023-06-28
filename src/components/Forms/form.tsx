@@ -36,10 +36,6 @@ const FormComponent = styled.div`
             }
         }
     }
-
-    /* #btn-enter {
-        display: flex;
-    } */
 `;
 
 const Form = function(){
