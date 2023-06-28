@@ -8,8 +8,8 @@ export default function Home() {
     <main>
       <Head/>
       <Background/>
-      <Form/>
       <Footer/>
+      <Form/>
     </main>
 
   )
