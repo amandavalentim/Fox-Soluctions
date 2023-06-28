@@ -8,21 +8,32 @@ const FooterComponent = styled.footer`
     height: 300px;
     width: 100%;
     position: relative;
-    top: 900px;
+    top: 226px;
     display: flex;
     justify-content: space-between;
     .box{
         padding: auto;
         margin: auto;
         h3{
-            padding: 30px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+
+            text-align: center;
         }
         p{
             padding: 10px;
             width: 250px;
         }
+        a{
+            padding: 13px;
+            display: grid;
+        }
     }
 `;
+
+
 
 const Footer = function (){
     return(
@@ -38,10 +49,9 @@ const Footer = function (){
                 <a href="">Home</a>
                 <a href="">Documentos</a>
                 <a href="">Sobre Nós</a>
-                <a href=""><p>Termos e condições de uso</p></a>
             </div>
             <div className='box'>
-                <h3>Redes Sociais</h3>
+               <h3>Redes Sociais</h3>
                <i><FaFacebookSquare></FaFacebookSquare></i>
                <i><FaInstagram></FaInstagram></i>
                <i><FaTwitterSquare></FaTwitterSquare></i>
