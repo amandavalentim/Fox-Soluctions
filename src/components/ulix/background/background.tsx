@@ -161,56 +161,56 @@ const BackgroundComponent = styled.body`
     #img2 {
         position: absolute;
         top: -25px;
-        left: 1px;
+        left: -10px;
         width: 130px;
         height: 180px;
     }
     #img3 {   
         position: absolute;
         top: -5px;
-        left: 430px;
+        left: 330px;
         width: 200px;
         height: 70px;
     }
     #img4 {
         position: absolute;
         top: -5px;
-        left: 953px;
+        left: 853px;
         width: 250px;
         height: 190px;
     }
     #img5 {
         position: absolute;
         top: 190px;
-        left: 170px;
+        left: 70px;
         width: 250px;
         height: 170px;
     }
     #img6 {
         position: absolute;
         top: 200px;
-        left: 615px;
+        left: 515px;
         width: 350px;
         height: 155px;
     }
     #img7 {
         position: absolute;
         top: 415px;
-        left: 813px;
+        left: 713px;
         width: 165px;
         height: 80px;
     }
     #img8 {
         position: absolute;
         top: 715px;
-        left: 863px;
+        left: 763px;
         width: 250px;
         height: 230px;
     }
     #img9 {
         position: absolute;
         top: 680px;
-        left: 415px;
+        left: 315px;
         width: 350px;
         height: 360px;
     }
@@ -229,7 +229,7 @@ const BackgroundComponent = styled.body`
     }
     #img12 {
         position: absolute;
-        left: 530px;
+        left: 430px;
         top: 790px;
         width: 140px;
         height: 140px;
