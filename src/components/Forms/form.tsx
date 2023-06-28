@@ -12,6 +12,7 @@ const FormComponent = styled.div`
         margin-top: 300px;
         /* align-items: center; */
         justify-content: center;
+        text-align: center;
         border-radius: 19px;
         background: linear-gradient(180deg, #07B3FD 0%, #0A53B5 100%);
         h1 {
@@ -20,20 +21,20 @@ const FormComponent = styled.div`
         }
     }
     
-
      form {
         width: 100px;
         height: 30px;
-        background-color: #FFFF;
-        display: flex;
     }
-    input {
+
+     input {
         align-items: center;
         justify-content: center;
-    }
-    #btn-enter {
-        display: flex;
     } 
+
+    #btn-enter {
+        width: 80px;
+        height: 30px;
+    }  
 `;
 
 const Form = function(){
@@ -48,6 +49,16 @@ const Form = function(){
                     <h1>Login</h1>
                     <input type="email" name="e-mail" id="e-mail"/>
                     <input type="password" name="password" id="password"/>
+
+                    <div id='button'>
+
+                        <button type='button'>
+
+                            <input type="submit" value="Entrar" />  
+
+                        </button>   
+
+                    </div>
 
                 </form>
 
