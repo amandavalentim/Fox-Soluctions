@@ -252,7 +252,6 @@ const Background = function() {
                 <Image src="/images/Ellipse-4.png" width={265} height={200} alt='img-8' id='img8'/>
                 <Image src="/images/Ellipse-7.png" width={350} height={425} alt='img-9' id='img9'/>
                 <Image src="/images/Ellipse-6-1.png" width={450} height={180} alt='img-10' id='img10'/>
-                <Image src="/images/Group-82.png" width={1200} height={950} alt='img-11' id='img11'/>
                 <Image src="/images/Stella.png" width={130} height={130} alt='img-12' id='img12'/>
             </nav>
             
