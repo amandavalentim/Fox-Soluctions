@@ -6,7 +6,7 @@ const BackgroundComponent = styled.body`
     background-color: #0A53B5;
     position: relative;
     width: 100%;
-    height: 1200px;
+    height: 100vh;
     #img1 {
         position: absolute;
         top: 420px;
