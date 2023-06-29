@@ -8,72 +8,96 @@ const BackgroundComponent = styled.body`
     width: 100%;
     height: 1200px;
     .hide-on-small-desktops {
-        display: none;
+            display: flex;
+        justify-content: space-between;
     }
     .show-in-small-desktops {
-        display: flex;
-        justify-content: space-between;
+        display: none;
     }
     .desktops-1024-1100-screens {
         display: none;
     }
-    #img1 {
+        #img1 {
         position: absolute;
-        top: 420px;
-    }
+        top: 370px;
+        width: 250px;
+        height: 170px;
+        }
     #img2 {
         position: absolute;
-        top: -40px;
+        top: -25px;
         left: -1px;
+        width: 110px;
+        height: 160px;
     }
     #img3 {   
         position: absolute;
         top: -5px;
-        left: 735px;
+        left: 535px;
+        width: 180px;
+        height: 50px;
     }
     #img4 {
         position: absolute;
         top: -5px;
-        left: 1355px;
+        left: 973px;
+        width: 250px;
+        height: 190px;
     }
     #img5 {
         position: absolute;
-        top: 280px;
-        left: 280px;
+        top: 190px;
+        left: 170px;
+        width: 250px;
+        height: 170px;
     }
     #img6 {
         position: absolute;
-        top: 220px;
-        left: 970px;
+        top: 200px;
+        left: 765px;
+        width: 350px;
+        height: 155px;
     }
     #img7 {
         position: absolute;
-        top: 500px;
-        left: 1150px;
+        top: 415px;
+        left: 955px;
+        width: 165px;
+        height: 80px;
     }
     #img8 {
         position: absolute;
-        top: 660px;
-        left: 1320px;
+        top: 715px;
+        left: 953px;
+        width: 250px;
+        height: 230px;
     }
     #img9 {
         position: absolute;
-        top: 655px;
-        left: 635px;
+        top: 680px;
+        left: 445px;
+        width: 350px;
+        height: 360px;
     }
     #img10 {
         position: absolute;
-        top: 720px;
+        top: 730px;
+        width: 390px;
+        height: 175px;
     }
     #img11 {
         position: absolute;
-        left: 200px;
-        top: -10px;
+        left: 120px;
+        top: 5px;
+        width: 1200px;
+        height: 1150px;
     }
     #img12 {
         position: absolute;
-        left: 750px;
-        top: 805px;
+        left: 550px;
+        top: 790px;
+        width: 140px;
+        height: 140px;
     }
 
     @media ((min-width: 1024px) and (max-width: 1110px)){
@@ -171,7 +195,7 @@ const BackgroundComponent = styled.body`
     }
     }
 
-    @media ((min-width: 1115px) and (max-width: 1250px)){
+    @media ((min-width: 1335px) and (max-width: 1550px)){
         .hide-on-small-desktops {
             display: flex;
         justify-content: space-between;
@@ -182,89 +206,65 @@ const BackgroundComponent = styled.body`
     .desktops-1024-1100-screens {
         display: none;
     }
-        #img1 {
+    #img1 {
         position: absolute;
-        top: 370px;
-        width: 250px;
-        height: 170px;
-        }
+        top: 420px;
+    }
     #img2 {
         position: absolute;
-        top: -25px;
+        top: -40px;
         left: -1px;
-        width: 110px;
-        height: 160px;
     }
     #img3 {   
         position: absolute;
         top: -5px;
-        left: 535px;
-        width: 180px;
-        height: 50px;
+        left: 735px;
     }
     #img4 {
         position: absolute;
         top: -5px;
-        left: 973px;
-        width: 250px;
-        height: 190px;
+        left: 1355px;
     }
     #img5 {
         position: absolute;
-        top: 190px;
-        left: 170px;
-        width: 250px;
-        height: 170px;
+        top: 280px;
+        left: 280px;
     }
     #img6 {
         position: absolute;
-        top: 200px;
-        left: 765px;
-        width: 350px;
-        height: 155px;
+        top: 220px;
+        left: 970px;
     }
     #img7 {
         position: absolute;
-        top: 415px;
-        left: 955px;
-        width: 165px;
-        height: 80px;
+        top: 500px;
+        left: 1150px;
     }
     #img8 {
         position: absolute;
-        top: 715px;
-        left: 953px;
-        width: 250px;
-        height: 230px;
+        top: 660px;
+        left: 1320px;
     }
     #img9 {
         position: absolute;
-        top: 680px;
-        left: 445px;
-        width: 350px;
-        height: 360px;
+        top: 655px;
+        left: 635px;
     }
     #img10 {
         position: absolute;
-        top: 730px;
-        width: 390px;
-        height: 175px;
+        top: 720px;
     }
     #img11 {
         position: absolute;
-        left: 120px;
-        top: 5px;
-        width: 1200px;
-        height: 1150px;
+        left: 200px;
+        top: -10px;
     }
     #img12 {
         position: absolute;
-        left: 450px;
-        top: 790px;
-        width: 140px;
-        height: 140px;
+        left: 750px;
+        top: 805px;
     }
-    }
+}
 `;
 
 const Background = function() {
