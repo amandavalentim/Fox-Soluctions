@@ -11,10 +11,10 @@ const BackgroundComponent = styled.body`
         display: flex;
         justify-content: space-between;
     }
-    .desktop-114-screens {
+    .desktops-1024-1100-screens {
         display: none;
     }
-    .desktops-1024-1100-screens {
+    .desktop-114-screens {
         display: none;
     }
     #img1 {
@@ -80,12 +80,12 @@ const BackgroundComponent = styled.body`
         .hide-on-small-desktops {
         display: none;
     }
-    .desktop-114-screens {
-        display: none;
-    }
     .desktops-1024-1100-screens {
         display: flex;
         justify-content: space-between;
+    }
+    .desktop-114-screens {
+        display: none;
     }
     #img1 {
         position: absolute;
@@ -171,16 +171,16 @@ const BackgroundComponent = styled.body`
     }
     }
 
-    @media((min-width: 1114px) and (max-width: 1250px)) {
+    @media((min-width: 1114px) and (max-width: 1150px)) {
     .hide-on-small-desktops {
+        display: none;
+    }
+    .desktops-1024-1100-screens {
         display: none;
     }
     .desktop-114-screens {
         display: flex;
         justify-content: space-between;
-    }
-    .desktops-1024-1100-screens {
-        display: none;
     }
         #img1 {
         position: absolute;
