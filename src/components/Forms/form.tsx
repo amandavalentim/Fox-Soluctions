@@ -30,9 +30,6 @@ const FormComponent = styled.div`
                     justify-content: center;
                     align-items: center;
                     padding-bottom: 20px;
-                    /* input ::placeholder {
-                        color: #FFFF;
-                    } */
                 }
 
                 input::placeholder{
@@ -41,37 +38,21 @@ const FormComponent = styled.div`
                     color: #FFFF;
                 }
             }
-           
-            .submit {
-                /* width: 306px;
-                height: 67px;
-                flex-shrink: 0;
-                border-radius: 20px;
-                background: #93B413;
-                display: flex;
-                width: 108px;
-                height: 38px;
-                flex-direction: column;
-                flex-shrink: 0;
-                color: #FFF;
-                font-size: 36px;
-                font-family: Poppins;
-                font-style: normal;
-                font-weight: 500;
-                line-height: normal; */
-                width: 250px;
-                height: 40px;
-                margin-top: 30px;
-                border-radius: 20px;
-                border: none;
-                background-color: #93B413;
-                border-radius: 20px;
-                justify-content: center;
-                align-items: center;
-                color: #FFFF;
-                font-family: 'Poppins-Medium';
-                font-size: 20px; 
-                
+           div {
+               width: 100%;
+                .submit {
+                    width: 100%;
+                    height: 40px;
+                    margin-top: 30px;
+                    border-radius: 20px;
+                    border: none;
+                    background-color: #93B413;
+                    justify-content: center;
+                    align-items: center;
+                    color: #FFFF;
+                    font-family: 'Poppins-Medium';
+                    font-size: 20px; 
+                }
             }
 
             .forget {
@@ -82,7 +63,7 @@ const FormComponent = styled.div`
                 font-weight: 500;
                 line-height: normal;
                 text-align: center;
-                font-family: 'Poppins-Regular';
+                margin-bottom: 10px;
             } 
             .create_account {
                 color: #FFF;
