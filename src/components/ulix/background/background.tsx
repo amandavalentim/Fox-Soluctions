@@ -39,7 +39,7 @@ const BackgroundComponent = styled.body`
     #img5 {
         position: absolute;
         top: 320px;
-        left: 1283px;
+        left: 1383px;
     }
     #img6 {
         position: absolute;
