@@ -171,7 +171,7 @@ const BackgroundComponent = styled.body`
     }
     }
 
-    @media ((min-width: 1115px) and (max-width: 1300px)){
+    @media ((min-width: 1115px) and (max-width: 1250px)){
         .hide-on-small-desktops {
         display: none;
     }
