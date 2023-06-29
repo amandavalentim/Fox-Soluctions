@@ -43,10 +43,25 @@ const FormComponent = styled.div`
             }
            
             .submit {
+                /* width: 306px;
+                height: 67px;
+                flex-shrink: 0;
+                border-radius: 20px;
+                background: #93B413;
+                display: flex;
+                width: 108px;
+                height: 38px;
+                flex-direction: column;
+                flex-shrink: 0;
+                color: #FFF;
+                font-size: 36px;
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal; */
                 width: 250px;
                 height: 40px;
                 margin-top: 30px;
-                border: none;
                 border-radius: 20px;
                 border: none;
                 background-color: #93B413;
@@ -55,16 +70,26 @@ const FormComponent = styled.div`
                 align-items: center;
                 color: #FFFF;
                 font-family: 'Poppins-Medium';
-                font-size: 20px;
+                font-size: 20px; 
+                
             }
 
             .forget {
                 color: #F47216;
+                font-size: 24px;
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
                 text-align: center;
-                font-family: 'Poppins-Medium';
             } 
             .create_account {
-                color: #FFFF;
+                color: #FFF;
+                font-size: 24px;
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
                 text-align: center;
                 span {
                     color: #F47216;
