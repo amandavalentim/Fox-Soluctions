@@ -185,70 +185,70 @@ const BackgroundComponent = styled.body`
         #img1 {
         position: absolute;
         top: 370px;
-        width: 250px;
-        height: 170px;
+        width: 360px;
+        height: 220px;
         }
     #img2 {
         position: absolute;
         top: -25px;
         left: -1px;
-        width: 110px;
-        height: 160px;
+        width: 150px;
+        height: 230px;
     }
     #img3 {   
         position: absolute;
         top: -5px;
-        left: 535px;
-        width: 180px;
-        height: 50px;
+        left: 605px;
+        width: 230px;
+        height: 60px;
     }
     #img4 {
         position: absolute;
         top: -5px;
-        left: 973px;
+        left: 1213px;
         width: 250px;
         height: 190px;
     }
     #img5 {
         position: absolute;
-        top: 190px;
-        left: 170px;
-        width: 250px;
-        height: 170px;
+        top: 230px;
+        left: 250px;
+        width: 310px;
+        height: 190px;
     }
     #img6 {
         position: absolute;
         top: 200px;
-        left: 765px;
-        width: 350px;
-        height: 155px;
+        left: 930px;
+        width: 450px;
+        height: 215px;
     }
     #img7 {
         position: absolute;
-        top: 415px;
-        left: 955px;
-        width: 165px;
-        height: 80px;
+        top: 465px;
+        left: 1115px;
+        width: 235px;
+        height: 95px;
     }
     #img8 {
         position: absolute;
-        top: 715px;
-        left: 863px;
-        width: 280px;
-        height: 260px;
+        top: 625px;
+        left: 1103px;
+        width: 340px;
+        height: 310px;
     }
     #img9 {
         position: absolute;
-        top: 680px;
-        left: 445px;
-        width: 350px;
-        height: 360px;
+        top: 580px;
+        left: 595px;
+        width: 420px;
+        height: 440px;
     }
     #img10 {
         position: absolute;
-        top: 730px;
-        width: 390px;
-        height: 175px;
+        top: 690px;
+        width: 490px;
+        height: 210px;
     }
     #img11 {
         position: absolute;
@@ -259,10 +259,10 @@ const BackgroundComponent = styled.body`
     }
     #img12 {
         position: absolute;
-        left: 550px;
-        top: 790px;
-        width: 140px;
-        height: 140px;
+        left: 650px;
+        top: 760px;
+        width: 180px;
+        height: 180px;
     }
     }
 `;
@@ -283,7 +283,6 @@ const Background = function() {
                 <Image src="/images/Ellipse-7.png" width={350} height={425} alt='img-9' id='img9'/>
                 <Image src="/images/Ellipse-6-1.png" width={450} height={180} alt='img-10' id='img10'/>
                 <Image src="/images/Stella.png" width={130} height={130} alt='img-12' id='img12'/>
-                <h1>1111111111111</h1>
             </nav>
 
             <nav className='desktops-1024-1100-screens'>

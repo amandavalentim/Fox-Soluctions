@@ -82,6 +82,10 @@ const FormComponent = styled.div`
                 font-weight: 500;
                 line-height: normal;
                 text-align: center;
+<<<<<<< HEAD
+=======
+                font-family: 'Poppins-Regular';
+>>>>>>> 557f7093ad54d61dcb69f6a54ba575b5bd7c76bd
             } 
             .create_account {
                 color: #FFF;
