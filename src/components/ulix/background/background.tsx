@@ -259,7 +259,7 @@ const BackgroundComponent = styled.body`
     }
     #img12 {
         position: absolute;
-        left: 550px;
+        left: 450px;
         top: 790px;
         width: 140px;
         height: 140px;
@@ -312,7 +312,6 @@ const Background = function() {
                 <Image src="/images/Ellipse-7.png" width={350} height={425} alt='img-9' id='img9'/>
                 <Image src="/images/Ellipse-6-1.png" width={450} height={180} alt='img-10' id='img10'/>
                 <Image src="/images/Stella.png" width={130} height={130} alt='img-12' id='img12'/>
-                <h1>3333333333333333</h1>
             </nav>
             
         </BackgroundComponent>
