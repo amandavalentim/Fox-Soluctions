@@ -241,7 +241,7 @@ const BackgroundComponent = styled.body`
         position: absolute;
         top: 680px;
         left: 445px;
-        width: 350px;
+        width: 3500000px;
         height: 360px;
     }
     #img10 {
