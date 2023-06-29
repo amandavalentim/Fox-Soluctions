@@ -4,30 +4,31 @@ import { FaFacebookSquare, FaInstagram, FaTwitterSquare, FaGithubSquare } from "
 
 
 const FooterComponent = styled.footer`
-    background: linear-gradient(180deg, rgba(7, 179, 253, 1), rgba(7, 179, 253, 1));
-    height: 300px;
-    width: 100%;
-    position: relative;
-    top: 900px;
-    display: flex;
-    justify-content: space-between;
-    .box{
-        padding: auto;
-        margin: auto;
-        h3{
-            margin: 20px;
-            text-align: center;
-            color: #FEFEFE;
-            font-size: 25px;
-            font-family: 'Poppins-bold';
-        }
-        p{
-            margin: 20px;
-            width: 230px;
-            color: #FEFEFE;
-            font-family: 'Poppins-Regular';
-            font-size: 13px;
-            cursor: pointer;
+    .show-on-desktop{
+        background: linear-gradient(180deg, rgba(7, 179, 253, 1), rgba(7, 179, 253, 1));
+        height: 300px;
+        width: 100%;
+        position: relative;
+        top: 900px;
+        display: flex;
+        justify-content: space-between;
+        .box{
+            padding: auto;
+            margin: auto;
+            h3{
+                margin: 20px;
+                text-align: center;
+                color: #FEFEFE;
+                font-size: 25px;
+                font-family: 'Poppins-bold';
+            }
+            p{
+                margin: 20px;
+                width: 230px;
+                color: #FEFEFE;
+                font-family: 'Poppins-Regular';
+                font-size: 13px;
+                cursor: pointer;
 
             span{
                 font-size: 15px;
@@ -84,11 +85,37 @@ const FooterComponent = styled.footer`
         }
         
     }
-    @media screen and (max-width: 425px){
-        .box{
-            display: block;
-            width: 10%;
+    }
+    .show-on-mobile{
+        display: none;
+    }
+    
+    @media ((min-width: 320px) and (max-width: 425px)){
+        .show-on-mobile{
+            background: linear-gradient(180deg, rgba(7, 179, 253, 1), rgba(7, 179, 253, 1));
+            height: 300px;
+            width: 100%;
+            position: relative;
+            top: 900px;
+            display: flex;
+            .container-center{
+                .name-box{
+                    width: 300px;
+                    height: 78px;
+                    border-radius: 5px;
+                    border: 3px solid #93B413;
+                    background: #93B413;
+                    margin: 40px;
+                    h3{
+                        
+                    }
+                }
+            }
         }
+        .show-on-desktop{
+            display: none;
+        }
+
     }
 `;
 
@@ -97,32 +124,46 @@ const FooterComponent = styled.footer`
 const Footer = function (){
     return(
         <FooterComponent>
-            <div className='box'>
-                <h3>Contatos</h3>
-                <p><span>Endereço: </span>Rua Tamoios, 246, Jardim Aeroporto - São Paulo, SP.</p>
-                <p><span>Telefone: </span> (11) 99999-9999</p>
-                <p><span>Email: </span> foxsoluctions@gmail.com</p>
-            </div>
-            <div className='box'>
-                <h3>Nossa Empresa</h3>
-                <a href="">Home</a>
-                <a href="">Documentos</a>
-                <a href="">Sobre Nós</a>
-            </div>
-            <div className='box'>
-               <h3>Redes Sociais</h3>
-               <div className='container'>
-                    <div className='box-FI'>
-                        <FaFacebookSquare className='facebook'/>
-                        <FaInstagram className='instagram'/>
+            <nav className='show-on-desktop'>
+                <div className='box'>
+                    <h3>Contatos</h3>
+                    <p><span>Endereço: </span>Rua Tamoios, 246, Jardim Aeroporto - São Paulo, SP.</p>
+                    <p><span>Telefone: </span> (11) 99999-9999</p>
+                    <p><span>Email: </span> foxsoluctions@gmail.com</p>
+                </div>
+                <div className='box'>
+                    <h3>Nossa Empresa</h3>
+                    <a href="">Home</a>
+                    <a href="">Documentos</a>
+                    <a href="">Sobre Nós</a>
+                </div>
+                <div className='box'>
+                    <h3>Redes Sociais</h3>
+                    <div className='container'>
+                        <div className='box-FI'>
+                            <FaFacebookSquare className='facebook'/>
+                            <FaInstagram className='instagram'/>
+                        </div>
+                        <div className='box-TG'>
+                             <FaTwitterSquare className='twitter'/>
+                            <FaGithubSquare className='github'/>
+                        </div>
                     </div>
-                    <div className='box-TG'>
-                        <FaTwitterSquare className='twitter'/>
-                        <FaGithubSquare className='github'/>
+                </div>
+            </nav>
+            <nav className='show-on-mobile'>
+                <div className='container-center'>
+                    <div className='name-box'>
+                        <h3>Contatos</h3>
                     </div>
-               </div>
-               
-            </div>
+                    <div className='name-box'> 
+                        <h3>Nossa Empresa</h3>
+                    </div>
+                    <div className='name-box'>
+                        <h3>Redes Sociais</h3>
+                    </div>
+                </div>
+            </nav>
         </FooterComponent>
     )
 }
