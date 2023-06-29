@@ -76,7 +76,7 @@ const BackgroundComponent = styled.body`
         top: 805px;
     }
 
-    @media ((min-width: 1024px) and (max-width: 1110px)){
+    /* @media ((min-width: 1024px) and (max-width: 1110px)){
         .hide-on-small-desktops {
         display: none;
     }
@@ -169,7 +169,7 @@ const BackgroundComponent = styled.body`
         width: 130px;
         height: 130px;
     }
-    }
+    } */
 
     @media ((min-width: 1115px) and (max-width: 1300px)){
         .hide-on-small-desktops {
