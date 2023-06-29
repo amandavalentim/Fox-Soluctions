@@ -6,7 +6,7 @@ const BackgroundComponent = styled.body`
     background-color: #0A53B5;
     position: relative;
     width: 100%;
-    height: 1250px;
+    height: 1200px;
         .hide-on-small-desktops {
         display: none;
     }
