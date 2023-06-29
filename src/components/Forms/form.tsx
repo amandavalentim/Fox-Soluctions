@@ -17,6 +17,7 @@ const FormComponent = styled.div`
                 color: #FFFF;
                 text-align: center;
                 margin: 30px;
+                font-family: 'Poppins-Bold';
             }
             .login {
                 margin: 50px;
@@ -45,6 +46,8 @@ const FormComponent = styled.div`
                 justify-content: center;
                 align-items: center;
                 color: #FFFF;
+                font-family: 'Poppins-Medium';
+                font-size: 20px;
             }
 
             .forget {
