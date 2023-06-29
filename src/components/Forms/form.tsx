@@ -64,13 +64,13 @@ const Form = function(){
                     <h1 id='title'>Login</h1>
                     <div className='login'>
 
-                        <input type="email" name="e-mail" id="e-mail"/>
+                        <input type="email" name="e-mail" id="e-mail" placeholder='E-mail'/>
 
                     </div>
 
                     <div className='login'>
 
-                        <input type="password" name="password" id="password"/>
+                        <input type="password" name="password" id="password" placeholder='Senha'/>
 
                     </div>
 
