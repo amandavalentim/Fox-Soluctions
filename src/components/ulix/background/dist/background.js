@@ -46,7 +46,8 @@ var Background = function () {
             React.createElement(image_1["default"], { src: "/images/Ellipse-4.png", width: 265, height: 200, alt: 'img-8', id: 'img8' }),
             React.createElement(image_1["default"], { src: "/images/Ellipse-7.png", width: 350, height: 425, alt: 'img-9', id: 'img9' }),
             React.createElement(image_1["default"], { src: "/images/Ellipse-6-1.png", width: 450, height: 180, alt: 'img-10', id: 'img10' }),
-            React.createElement(image_1["default"], { src: "/images/Stella.png", width: 130, height: 130, alt: 'img-12', id: 'img12' }))));
+            React.createElement(image_1["default"], { src: "/images/Stella.png", width: 130, height: 130, alt: 'img-12', id: 'img12' }),
+            React.createElement("h2", null, "555555555"))));
 };
 exports["default"] = Background;
 var templateObject_1;
