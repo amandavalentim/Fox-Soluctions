@@ -15,14 +15,15 @@ const FooterComponent = styled.footer`
         padding: auto;
         margin: auto;
         h3{
+            margin: 20px;
             text-align: center;
             color: #FEFEFE;
             font-size: 25px;
             font-family: 'Poppins-bold';
         }
         p{
-            padding: 10px;
-            width: 255px;
+            margin: 20px;
+            width: 220px;
             color: #FEFEFE;
             font-family: 'Poppins-Regular';
             font-size: 13px;
@@ -34,59 +35,41 @@ const FooterComponent = styled.footer`
                 cursor: pointer;
             }
         }
-        p:hover{
-            font-size: 14px;
-            span{
-                font-size: 16px;
-            }
-        }
         a{
-            padding: 15px;
+            margin: 20px;
+            height: 31px;
             display: grid;
             font-family: 'Poppins-Regular';
             font-size: 13px;
             color: #FEFEFE;
         }
-        a:hover{
-            font-size: 15px;
-        }
         .container{
             height: 20vh;
             display: flex;
             width: 30px;
-            margin-top: 20px;
-            margin-bottom: 10px;
             .facebook{
                 width: 50px;
                 height: 50px;
                 fill: #3a77ff;
                 cursor: pointer;
-                margin-left: 40px ;
-                margin-right: 5px;
             }
             .instagram{
                 width: 50px;
                 height: 50px;
                 fill:  #C82D8E;
                 cursor: pointer;
-                margin-left: 40px ;
-                margin-right: 5px;
             }
             .twitter{
                 width: 50px;
                 height: 50px;
                 fill:  #098BEA;
                 cursor: pointer;
-                margin-left: 10px ;
-                margin-right: 10px;
             }
             .github{
                 width: 50px;
                 height: 50px;
                 fill:  #000000;
                 cursor: pointer;
-                margin-left: 10px ;
-                margin-right: 10px;
             }
         }
         
