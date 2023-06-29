@@ -23,7 +23,7 @@ const FooterComponent = styled.footer`
         }
         p{
             margin: 20px;
-            width: 220px;
+            width: 230px;
             color: #FEFEFE;
             font-family: 'Poppins-Regular';
             font-size: 13px;
@@ -44,33 +44,43 @@ const FooterComponent = styled.footer`
             color: #FEFEFE;
         }
         .container{
-            height: 20vh;
-            display: flex;
-            width: 30px;
-            .facebook{
-                width: 50px;
-                height: 50px;
-                fill: #3a77ff;
-                cursor: pointer;
+            height: 150px;
+            .box-FI{
+                width : 100px ;
+                margin-left: auto;
+                margin-right: auto;
+                .facebook{
+                    width: 50px;
+                    height: 50px;
+                    fill: #3a77ff;
+                    cursor: pointer;
+                }
+                .instagram{
+                    width: 50px;
+                    height: 50px;
+                    fill:  #C82D8E;
+                    cursor: pointer;
+                }
             }
-            .instagram{
-                width: 50px;
-                height: 50px;
-                fill:  #C82D8E;
-                cursor: pointer;
+
+            .box-TG{
+                width : 100px ;
+                margin-left: auto;
+                margin-right: auto;
+                .twitter{
+                    width: 50px;
+                    height: 50px;
+                    fill:  #098BEA;
+                    cursor: pointer;
+                }
+                .github{
+                    width: 50px;
+                    height: 50px;
+                    fill:  #000000;
+                    cursor: pointer;
+                }
             }
-            .twitter{
-                width: 50px;
-                height: 50px;
-                fill:  #098BEA;
-                cursor: pointer;
-            }
-            .github{
-                width: 50px;
-                height: 50px;
-                fill:  #000000;
-                cursor: pointer;
-            }
+        
         }
         
     }
@@ -98,10 +108,10 @@ const Footer = function (){
                <div className='container'>
                     <div className='box-FI'>
                         <FaFacebookSquare className='facebook'/>
-                        <FaTwitterSquare className='twitter'/>
+                        <FaInstagram className='instagram'/>
                     </div>
                     <div className='box-TG'>
-                        <FaInstagram className='instagram'/>
+                        <FaTwitterSquare className='twitter'/>
                         <FaGithubSquare className='github'/>
                     </div>
                </div>
