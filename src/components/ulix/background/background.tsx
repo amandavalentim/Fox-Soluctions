@@ -8,11 +8,11 @@ const BackgroundComponent = styled.body`
     width: 100%;
     height: 1200px;
     .hide-on-small-desktops {
-        display: flex;
-        justify-content: space-between;
+        display: none;
     }
     .show-in-small-desktops {
-        display: none;
+        display: flex;
+        justify-content: space-between;
     }
     .desktops-1024-1100-screens {
         display: none;
