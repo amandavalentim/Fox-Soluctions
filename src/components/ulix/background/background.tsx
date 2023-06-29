@@ -173,11 +173,11 @@ const BackgroundComponent = styled.body`
 
     @media ((min-width: 1115px) and (max-width: 1250px)){
         .hide-on-small-desktops {
-        display: none;
+            display: flex;
+        justify-content: space-between;
     }
     .show-in-small-desktops {
-        display: flex;
-        justify-content: space-between;
+        display: none;
     }
     .desktops-1024-1100-screens {
         display: none;
