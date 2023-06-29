@@ -45,7 +45,10 @@ const FormComponent = styled.div`
                 color: #F47216;
             } 
             .create_account {
-                color: #F47216;
+                color: #FFFF;
+                span {
+                    color: #F47216;
+                }
             } 
         }
     }
