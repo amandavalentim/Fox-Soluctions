@@ -89,9 +89,9 @@ const BackgroundComponent = styled.body`
     }
     #img1 {
         position: absolute;
-        top: 220px;
-        width: 180px;
-        height: 130px;
+        top: 430px;
+        width: 300px;
+        height: 250px;
         }
     #img2 {
         position: absolute;
@@ -111,8 +111,8 @@ const BackgroundComponent = styled.body`
         position: absolute;
         top: -5px;
         left: 853px;
-        width: 180px;
-        height: 150px;
+        width: 280px;
+        height: 250px;
     }
     #img5 {
         position: absolute;
@@ -123,36 +123,36 @@ const BackgroundComponent = styled.body`
     }
     #img6 {
         position: absolute;
-        top: 150px;
-        left: 623px;
-        width: 250px;
-        height: 130px;
+        top: 350px;
+        left: 563px;
+        width: 320px;
+        height: 150px;
     }
     #img7 {
         position: absolute;
-        top: 325px;
+        top: 525px;
         left: 723px;
-        width: 140px;
-        height: 70px;
+        width: 170px;
+        height: 90px;
     }
     #img8 {
         position: absolute;
-        top: 650px;
-        left: 923px;
-        width: 100px;
-        height: 100px;
+        top: 700px;
+        left: 773px;
+        width: 250px;
+        height: 220px;
     }
     #img9 {
         position: absolute;
-        top: 420px;
-        left: 415px;
-        width: 220px;
-        height: 220px;
+        top: 720px;
+        left: 420px;
+        width: 320px;
+        height: 320px;
     }
     #img10 {
         position: absolute;
-        top: 460px;
-        width: 250px;
+        top: 780px;
+        width: 350px;
         height: 120px;
     }
     #img11 {
@@ -164,10 +164,10 @@ const BackgroundComponent = styled.body`
     }
     #img12 {
         position: absolute;
-        left: 550px;
-        top: 505px;
-        width: 100px;
-        height: 100px;
+        left: 460px;
+        top: 805px;
+        width: 130px;
+        height: 130px;
     }
     }
 
