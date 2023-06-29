@@ -6,8 +6,7 @@ const BackgroundComponent = styled.body`
     background-color: #0A53B5;
     position: relative;
     width: 100%;
-    height: 1200px;
-    @media ((min-width: 1350px) and (max-width: 1500px)) {
+    height: 1250px;
         .hide-on-small-desktops {
         display: none;
     }
@@ -76,9 +75,7 @@ const BackgroundComponent = styled.body`
         left: 750px;
         top: 805px;
     }
-    }
     
-
     @media ((min-width: 1024px) and (max-width: 1110px)){
         .hide-on-small-desktops {
         display: none;
@@ -174,7 +171,7 @@ const BackgroundComponent = styled.body`
     }
     }
 
-    @media ((min-width: 1114px) and (max-width: 1150px)){
+    @media ((min-width: 1114px) and (max-width: 1200px)){
         .hide-on-small-desktops {
             display: flex;
         justify-content: space-between;
