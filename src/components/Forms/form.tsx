@@ -28,9 +28,16 @@ const FormComponent = styled.div`
                     background-color: rgba(7, 179, 253, 0);
                     justify-content: center;
                     align-items: center;
+                    padding-bottom: 20px;
                     /* input ::placeholder {
                         color: #FFFF;
                     } */
+                }
+
+                input::placeholder{
+                    font-size: 15px;
+                    font-family: 'Poppins-Medium';
+                    color: #FFFF;
                 }
             }
            
@@ -53,6 +60,7 @@ const FormComponent = styled.div`
             .forget {
                 color: #F47216;
                 text-align: center;
+                font-family: 'Poppins-Medium';
             } 
             .create_account {
                 color: #FFFF;
