@@ -233,9 +233,9 @@ const BackgroundComponent = styled.body`
     #img8 {
         position: absolute;
         top: 715px;
-        left: 873px;
-        width: 250px;
-        height: 230px;
+        left: 773px;
+        width: 450px;
+        height: 430px;
     }
     #img9 {
         position: absolute;
