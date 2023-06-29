@@ -97,8 +97,8 @@ const BackgroundComponent = styled.body`
         position: absolute;
         top: -25px;
         left: 1px;
-        width: 120px;
-        height: 120px;
+        width: 150px;
+        height: 250px;
     }
     #img3 {   
         position: absolute;
@@ -116,17 +116,17 @@ const BackgroundComponent = styled.body`
     }
     #img5 {
         position: absolute;
-        top: 120px;
-        left: 160px;
-        width: 185px;
-        height: 120px;
+        top: 320px;
+        left: 210px;
+        width: 265px;
+        height: 180px;
     }
     #img6 {
         position: absolute;
-        top: 350px;
+        top: 280px;
         left: 563px;
-        width: 320px;
-        height: 150px;
+        width: 360px;
+        height: 180px;
     }
     #img7 {
         position: absolute;
