@@ -24,18 +24,26 @@ const FormComponent = styled.div`
                 display: flex;
                 input {
                     border: none;
+                    width: 300px;
                     border-bottom: 1px solid #FFFF;
                     background-color: rgba(7, 179, 253, 0);
                     justify-content: center;
                     align-items: center;
+                    padding-bottom: 20px;
                     /* input ::placeholder {
                         color: #FFFF;
                     } */
                 }
+
+                input::placeholder{
+                    font-size: 15px;
+                    font-family: 'Poppins-Medium';
+                    color: #FFFF;
+                }
             }
            
             .submit {
-                width: 300px;
+                width: 250px;
                 height: 40px;
                 margin-top: 30px;
                 border: none;
@@ -53,6 +61,7 @@ const FormComponent = styled.div`
             .forget {
                 color: #F47216;
                 text-align: center;
+                font-family: 'Poppins-Regular';
             } 
             .create_account {
                 color: #FFFF;
