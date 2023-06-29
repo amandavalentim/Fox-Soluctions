@@ -44,7 +44,7 @@ const BackgroundComponent = styled.body`
     #img6 {
         position: absolute;
         top: 660px;
-        left: 1320px;
+        left: 15020px;
     }
     #img7 {
         position: absolute;
