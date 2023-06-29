@@ -24,6 +24,7 @@ const FormComponent = styled.div`
                 display: flex;
                 input {
                     border: none;
+                    width: 300px;
                     border-bottom: 1px solid #FFFF;
                     background-color: rgba(7, 179, 253, 0);
                     justify-content: center;
@@ -35,7 +36,7 @@ const FormComponent = styled.div`
             }
            
             .submit {
-                width: 300px;
+                width: 250px;
                 height: 40px;
                 margin-top: 30px;
                 border: none;
