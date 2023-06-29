@@ -76,7 +76,7 @@ const BackgroundComponent = styled.body`
         top: 805px;
     }
 
-    /* @media ((min-width: 1024px) and (max-width: 1110px)){
+    @media ((min-width: 1024px) and (max-width: 1110px)){
         .hide-on-small-desktops {
         display: none;
     }
@@ -169,7 +169,7 @@ const BackgroundComponent = styled.body`
         width: 130px;
         height: 130px;
     }
-    } */
+    }
 
     @media ((min-width: 1115px) and (max-width: 1300px)){
         .hide-on-small-desktops {
@@ -283,6 +283,7 @@ const Background = function() {
                 <Image src="/images/Ellipse-7.png" width={350} height={425} alt='img-9' id='img9'/>
                 <Image src="/images/Ellipse-6-1.png" width={450} height={180} alt='img-10' id='img10'/>
                 <Image src="/images/Stella.png" width={130} height={130} alt='img-12' id='img12'/>
+                <h1>1111111111111</h1>
             </nav>
 
             <nav className='show-in-small-desktops'>
@@ -297,6 +298,7 @@ const Background = function() {
                 <Image src="/images/Ellipse-7.png" width={350} height={425} alt='img-9' id='img9'/>
                 <Image src="/images/Ellipse-6-1.png" width={450} height={180} alt='img-10' id='img10'/>
                 <Image src="/images/Stella.png" width={130} height={130} alt='img-12' id='img12'/>
+                <h1>2222222222222222</h1>
             </nav>
 
             <nav className='desktops-1024-1100-screens'>
@@ -311,6 +313,7 @@ const Background = function() {
                 <Image src="/images/Ellipse-7.png" width={350} height={425} alt='img-9' id='img9'/>
                 <Image src="/images/Ellipse-6-1.png" width={450} height={180} alt='img-10' id='img10'/>
                 <Image src="/images/Stella.png" width={130} height={130} alt='img-12' id='img12'/>
+                <h1>3333333333333333</h1>
             </nav>
             
         </BackgroundComponent>
