@@ -11,7 +11,7 @@ const BackgroundComponent = styled.body`
         display: flex;
         justify-content: space-between;
     }
-    .show-in-small-desktops {
+    .desktop-114-screens {
         display: none;
     }
     .desktops-1024-1100-screens {
@@ -80,7 +80,7 @@ const BackgroundComponent = styled.body`
         .hide-on-small-desktops {
         display: none;
     }
-    .show-in-small-desktops {
+    .desktop-114-screens {
         display: none;
     }
     .desktops-1024-1100-screens {
@@ -175,7 +175,7 @@ const BackgroundComponent = styled.body`
     .hide-on-small-desktops {
         display: none;
     }
-    .show-in-small-desktops {
+    .desktop-114-screens {
         display: flex;
         justify-content: space-between;
     }
