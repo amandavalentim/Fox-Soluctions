@@ -7,7 +7,8 @@ const BackgroundComponent = styled.body`
     position: relative;
     width: 100%;
     height: 1200px;
-    .hide-on-small-desktops {
+    @media ((min-width: 1350px) and (max-width: 1500px)) {
+        .hide-on-small-desktops {
         display: none;
     }
     .show-in-small-desktops {
@@ -75,6 +76,8 @@ const BackgroundComponent = styled.body`
         left: 750px;
         top: 805px;
     }
+    }
+    
 
     @media ((min-width: 1024px) and (max-width: 1110px)){
         .hide-on-small-desktops {
