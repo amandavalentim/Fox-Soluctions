@@ -171,7 +171,7 @@ const BackgroundComponent = styled.body`
     }
     }
 
-    @media((min-width: 1200px) and (max-width: 1250px)) {
+    @media((min-width: 1360px) and (max-width: 1550px)) {
     .hide-on-small-desktops {
         display: none;
     }
@@ -241,7 +241,7 @@ const BackgroundComponent = styled.body`
         position: absolute;
         top: 680px;
         left: 445px;
-        width: 3500000px;
+        width: 350px;
         height: 360px;
     }
     #img10 {
@@ -312,7 +312,6 @@ const Background = function() {
                 <Image src="/images/Ellipse-7.png" width={350} height={425} alt='img-9' id='img9'/>
                 <Image src="/images/Ellipse-6-1.png" width={450} height={180} alt='img-10' id='img10'/>
                 <Image src="/images/Stella.png" width={130} height={130} alt='img-12' id='img12'/>
-                <h2>555555555</h2>
             </nav>
             
         </BackgroundComponent>
