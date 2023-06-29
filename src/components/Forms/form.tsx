@@ -27,25 +27,26 @@ const FormComponent = styled.div`
                     background-color: rgba(7, 179, 253, 0);
                     justify-content: center;
                     align-items: center;
-                    
+                    /* input ::placeholder {
+                        color: #FFFF;
+                    } */
                 }
             }
-            #enter {
-                display: flex;
-                justify-content: center;
+            .button {
+                border: none;
                 background-color: #93B413;
-                .button {
-                    border: none;
-                    background-color: #0A53B5;
-                    border-radius: 20px;
-                }
+                border-radius: 20px;
+                justify-content: center;
+                align-items: center;
+            }
 
-            }  
             .forget {
                 color: #F47216;
+                text-align: center;
             } 
             .create_account {
                 color: #FFFF;
+                text-align: center;
                 span {
                     color: #F47216;
                 }
@@ -82,15 +83,11 @@ const Form = function(){
                         <h4>Não tem uma conta? <span className='orange'>Crie uma</span></h4>
                     </div>
 
-                    <div id='enter'>
+                    <button className='button'>
 
-                        <button className='button'>
+                        <input type="submit" value="Entrar"/>
 
-                            <input type="submit" value="Entrar"/>
-
-                        </button>
-
-                    </div>
+                    </button>
 
                 </form>
 
