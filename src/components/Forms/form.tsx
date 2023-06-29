@@ -12,27 +12,25 @@ const FormComponent = styled.div`
         justify-content: center;
         margin-left: 350px;
         margin-top: -200px;
-    }
-
-    #title {
-        color: #FFFF;
-    }
-
-    .login {
-        input {
-            border: none;
-            border-bottom: 1px solid #FFFF;
-            background-color: rgba(7, 179, 253, 0);
-            #e-mail {
-                color: white;
+        form {
+            #title {
+                color: #FFFF;
+                text-align: center;
+                margin: 10px;
             }
-        }
-    }
-     form {
-        #enter {
-            
-            button {
-                background-color: red;
+            .login {
+                margin: 20px;
+                display: flex;
+                input {
+                    border: none;
+                    border-bottom: 1px solid #FFFF;
+                    background-color: rgba(7, 179, 253, 0);
+                    justify-content: center;
+                    align-items: center;
+                    #e-mail {
+                        color: white;
+                    }
+                }
             }
         }
     }
@@ -45,17 +43,16 @@ const Form = function(){
 
             <div className='box-container'>
                 <form>
-
                     <h1 id='title'>Login</h1>
                     <div className='login'>
 
-                        <input type="email" name="e-mail" id="e-mail" placeholder='Digite seu email.'/>
+                        <input type="email" name="e-mail" id="e-mail"/>
 
                     </div>
 
                     <div className='login'>
 
-                        <input type="password" name="password" id="password" placeholder='Digite sua senha.'/>
+                        <input type="password" name="password" id="password"/>
 
                     </div>
 
