@@ -10,7 +10,7 @@ const FormComponent = styled.div`
         height: 490px;
         display: flex;
         justify-content: center;
-        margin-left: 350px;
+        margin-left: 430px;
         margin-top: -200px;
         form {
             #title {
