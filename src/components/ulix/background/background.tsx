@@ -14,7 +14,7 @@ const BackgroundComponent = styled.body`
     .desktops-1024-1100-screens {
         display: none;
     }
-    .desktop-114-screens {
+    .desktop-1098-screens {
         display: none;
     }
     #img1 {
@@ -76,7 +76,7 @@ const BackgroundComponent = styled.body`
         top: 805px;
     }
         
-    @media ((min-width: 1024px) and (max-width: 1110px)){
+    @media ((min-width: 1024px) and (max-width: 1180px)){
         .hide-on-small-desktops {
         display: none;
     }
@@ -84,7 +84,7 @@ const BackgroundComponent = styled.body`
         display: flex;
         justify-content: space-between;
     }
-    .desktop-114-screens {
+    .desktop-1098-screens {
         display: none;
     }
     #img1 {
@@ -171,14 +171,14 @@ const BackgroundComponent = styled.body`
     }
     }
 
-    @media((min-width: 1114px) and (max-width: 1150px)) {
+    @media((min-width: 1098px) and (max-width: 1150px)) {
     .hide-on-small-desktops {
         display: none;
     }
     .desktops-1024-1100-screens {
         display: none;
     }
-    .desktop-114-screens {
+    .desktop-1098-screens {
         display: flex;
         justify-content: space-between;
     }
@@ -300,7 +300,7 @@ const Background = function() {
                 <Image src="/images/Stella.png" width={130} height={130} alt='img-12' id='img12'/>
             </nav>
 
-            <nav className='desktop-114-screens'>
+            <nav className='desktop-1098-screens'>
             <Image src="/images/Ellipse-1.png" width={310} height={225} alt='img-1' id='img1'/>
                 <Image src="/images/Rectangle-20.png" width={165} height={200} alt='img-2' id='img2'/>
                 <Image src="/images/Ellipse-5.png" width={200} height={65} alt='img-3.8' id='img3'/>
