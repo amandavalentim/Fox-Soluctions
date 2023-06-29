@@ -205,7 +205,7 @@ const BackgroundComponent = styled.body`
     #img4 {
         position: absolute;
         top: -5px;
-        left: 1113px;
+        left: 1213px;
         width: 250px;
         height: 190px;
     }
@@ -219,28 +219,28 @@ const BackgroundComponent = styled.body`
     #img6 {
         position: absolute;
         top: 200px;
-        left: 795px;
+        left: 930px;
         width: 450px;
         height: 215px;
     }
     #img7 {
         position: absolute;
         top: 465px;
-        left: 1015px;
+        left: 1115px;
         width: 235px;
         height: 95px;
     }
     #img8 {
         position: absolute;
         top: 625px;
-        left: 1023px;
+        left: 1103px;
         width: 340px;
         height: 310px;
     }
     #img9 {
         position: absolute;
         top: 580px;
-        left: 525px;
+        left: 595px;
         width: 420px;
         height: 440px;
     }
