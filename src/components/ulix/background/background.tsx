@@ -75,101 +75,6 @@ const BackgroundComponent = styled.body`
         left: 750px;
         top: 805px;
     }
-    
-    @media ((min-width: 1024px) and (max-width: 1110px)){
-        .hide-on-small-desktops {
-        display: none;
-    }
-    .show-in-small-desktops {
-        display: none;
-    }
-    .desktops-1024-1100-screens {
-        display: flex;
-        justify-content: space-between;
-    }
-    #img1 {
-        position: absolute;
-        top: 430px;
-        width: 300px;
-        height: 250px;
-        }
-    #img2 {
-        position: absolute;
-        top: -25px;
-        left: 1px;
-        width: 150px;
-        height: 250px;
-    }
-    #img3 {   
-        position: absolute;
-        top: -5px;
-        left: 410px;
-        width: 230px;
-        height: 90px;
-    }
-    #img4 {
-        position: absolute;
-        top: -5px;
-        left: 853px;
-        width: 280px;
-        height: 250px;
-    }
-    #img5 {
-        position: absolute;
-        top: 320px;
-        left: 210px;
-        width: 265px;
-        height: 180px;
-    }
-    #img6 {
-        position: absolute;
-        top: 280px;
-        left: 563px;
-        width: 360px;
-        height: 180px;
-    }
-    #img7 {
-        position: absolute;
-        top: 525px;
-        left: 723px;
-        width: 170px;
-        height: 90px;
-    }
-    #img8 {
-        position: absolute;
-        top: 700px;
-        left: 773px;
-        width: 250px;
-        height: 220px;
-    }
-    #img9 {
-        position: absolute;
-        top: 720px;
-        left: 420px;
-        width: 320px;
-        height: 320px;
-    }
-    #img10 {
-        position: absolute;
-        top: 780px;
-        width: 350px;
-        height: 120px;
-    }
-    #img11 {
-        position: absolute;
-        left: 200px;
-        top: 120px;
-        width: 100px;
-        height: 100px;
-    }
-    #img12 {
-        position: absolute;
-        left: 460px;
-        top: 805px;
-        width: 130px;
-        height: 130px;
-    }
-    }
 
     @media ((min-width: 1114px) and (max-width: 1200px)){
         .hide-on-small-desktops {
@@ -263,6 +168,101 @@ const BackgroundComponent = styled.body`
         top: 790px;
         width: 140px;
         height: 140px;
+    }
+    }
+    
+    @media ((min-width: 1024px) and (max-width: 1110px)){
+        .hide-on-small-desktops {
+        display: none;
+    }
+    .show-in-small-desktops {
+        display: none;
+    }
+    .desktops-1024-1100-screens {
+        display: flex;
+        justify-content: space-between;
+    }
+    #img1 {
+        position: absolute;
+        top: 430px;
+        width: 300px;
+        height: 250px;
+        }
+    #img2 {
+        position: absolute;
+        top: -25px;
+        left: 1px;
+        width: 150px;
+        height: 250px;
+    }
+    #img3 {   
+        position: absolute;
+        top: -5px;
+        left: 410px;
+        width: 230px;
+        height: 90px;
+    }
+    #img4 {
+        position: absolute;
+        top: -5px;
+        left: 853px;
+        width: 280px;
+        height: 250px;
+    }
+    #img5 {
+        position: absolute;
+        top: 320px;
+        left: 210px;
+        width: 265px;
+        height: 180px;
+    }
+    #img6 {
+        position: absolute;
+        top: 280px;
+        left: 563px;
+        width: 360px;
+        height: 180px;
+    }
+    #img7 {
+        position: absolute;
+        top: 525px;
+        left: 723px;
+        width: 170px;
+        height: 90px;
+    }
+    #img8 {
+        position: absolute;
+        top: 700px;
+        left: 773px;
+        width: 250px;
+        height: 220px;
+    }
+    #img9 {
+        position: absolute;
+        top: 720px;
+        left: 420px;
+        width: 320px;
+        height: 320px;
+    }
+    #img10 {
+        position: absolute;
+        top: 780px;
+        width: 350px;
+        height: 120px;
+    }
+    #img11 {
+        position: absolute;
+        left: 200px;
+        top: 120px;
+        width: 100px;
+        height: 100px;
+    }
+    #img12 {
+        position: absolute;
+        left: 460px;
+        top: 805px;
+        width: 130px;
+        height: 130px;
     }
     }
 `;
