@@ -27,10 +27,10 @@ const FormComponent = styled.div`
                     background-color: rgba(7, 179, 253, 0);
                     justify-content: center;
                     align-items: center;
-                    #e-mail {
-                        color: white;
-                    }
                 }
+                #e-mail {
+                        color: #93d413;
+                    }
             }
         }
     }
