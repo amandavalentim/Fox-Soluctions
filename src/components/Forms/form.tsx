@@ -32,12 +32,19 @@ const FormComponent = styled.div`
                     } */
                 }
             }
-            .button {
+           
+            .submit {
+                width: 300px;
+                height: 40px;
+                margin-top: 30px;
+                border: none;
+                border-radius: 20px;
                 border: none;
                 background-color: #93B413;
                 border-radius: 20px;
                 justify-content: center;
                 align-items: center;
+                color: #FFFF;
             }
 
             .forget {
@@ -83,11 +90,11 @@ const Form = function(){
                         <h4>Não tem uma conta? <span className='orange'>Crie uma</span></h4>
                     </div>
 
-                    <button className='button'>
-
-                        <input type="submit" value="Entrar"/>
-
-                    </button>
+                    <div>
+                        <button className='submit'>
+                            Entrar
+                        </button>
+                    </div>
 
                 </form>
 
