@@ -84,6 +84,12 @@ const FooterComponent = styled.footer`
         }
         
     }
+    @media screen and (max-width: 425px){
+        .box{
+            display: block;
+            width: 10%;
+        }
+    }
 `;
 
 
