@@ -8,11 +8,11 @@ const BackgroundComponent = styled.body`
     width: 100%;
     height: 1200px;
         .hide-on-small-desktops {
-        display: none;
-    }
-    .show-in-small-desktops {
         display: flex;
         justify-content: space-between;
+    }
+    .show-in-small-desktops {
+        display: none;
     }
     .desktops-1024-1100-screens {
         display: none;
@@ -75,102 +75,7 @@ const BackgroundComponent = styled.body`
         left: 750px;
         top: 805px;
     }
-
-    @media ((min-width: 1114px) and (max-width: 1200px)){
-        .hide-on-small-desktops {
-            display: flex;
-        justify-content: space-between;
-    }
-    .show-in-small-desktops {
-        display: none;
-    }
-    .desktops-1024-1100-screens {
-        display: none;
-    }
-        #img1 {
-        position: absolute;
-        top: 370px;
-        width: 250px;
-        height: 170px;
-        }
-    #img2 {
-        position: absolute;
-        top: -25px;
-        left: -1px;
-        width: 110px;
-        height: 160px;
-    }
-    #img3 {   
-        position: absolute;
-        top: -5px;
-        left: 535px;
-        width: 180px;
-        height: 50px;
-    }
-    #img4 {
-        position: absolute;
-        top: -5px;
-        left: 973px;
-        width: 250px;
-        height: 190px;
-    }
-    #img5 {
-        position: absolute;
-        top: 190px;
-        left: 170px;
-        width: 250px;
-        height: 170px;
-    }
-    #img6 {
-        position: absolute;
-        top: 200px;
-        left: 765px;
-        width: 350px;
-        height: 155px;
-    }
-    #img7 {
-        position: absolute;
-        top: 415px;
-        left: 955px;
-        width: 165px;
-        height: 80px;
-    }
-    #img8 {
-        position: absolute;
-        top: 715px;
-        left: 863px;
-        width: 280px;
-        height: 260px;
-    }
-    #img9 {
-        position: absolute;
-        top: 680px;
-        left: 445px;
-        width: 350px;
-        height: 360px;
-    }
-    #img10 {
-        position: absolute;
-        top: 730px;
-        width: 390px;
-        height: 175px;
-    }
-    #img11 {
-        position: absolute;
-        left: 120px;
-        top: 5px;
-        width: 1200px;
-        height: 1150px;
-    }
-    #img12 {
-        position: absolute;
-        left: 550px;
-        top: 790px;
-        width: 140px;
-        height: 140px;
-    }
-    }
-    
+        
     @media ((min-width: 1024px) and (max-width: 1110px)){
         .hide-on-small-desktops {
         display: none;
@@ -265,6 +170,101 @@ const BackgroundComponent = styled.body`
         height: 130px;
     }
     }
+
+    @media((min-width: 1114px) and (max-width: 1250px)) {
+    .hide-on-small-desktops {
+        display: none;
+    }
+    .show-in-small-desktops {
+        display: flex;
+        justify-content: space-between;
+    }
+    .desktops-1024-1100-screens {
+        display: none;
+    }
+        #img1 {
+        position: absolute;
+        top: 370px;
+        width: 250px;
+        height: 170px;
+        }
+    #img2 {
+        position: absolute;
+        top: -25px;
+        left: -1px;
+        width: 110px;
+        height: 160px;
+    }
+    #img3 {   
+        position: absolute;
+        top: -5px;
+        left: 535px;
+        width: 180px;
+        height: 50px;
+    }
+    #img4 {
+        position: absolute;
+        top: -5px;
+        left: 973px;
+        width: 250px;
+        height: 190px;
+    }
+    #img5 {
+        position: absolute;
+        top: 190px;
+        left: 170px;
+        width: 250px;
+        height: 170px;
+    }
+    #img6 {
+        position: absolute;
+        top: 200px;
+        left: 765px;
+        width: 350px;
+        height: 155px;
+    }
+    #img7 {
+        position: absolute;
+        top: 415px;
+        left: 955px;
+        width: 165px;
+        height: 80px;
+    }
+    #img8 {
+        position: absolute;
+        top: 715px;
+        left: 863px;
+        width: 280px;
+        height: 260px;
+    }
+    #img9 {
+        position: absolute;
+        top: 680px;
+        left: 445px;
+        width: 350px;
+        height: 360px;
+    }
+    #img10 {
+        position: absolute;
+        top: 730px;
+        width: 390px;
+        height: 175px;
+    }
+    #img11 {
+        position: absolute;
+        left: 120px;
+        top: 5px;
+        width: 1200px;
+        height: 1150px;
+    }
+    #img12 {
+        position: absolute;
+        left: 550px;
+        top: 790px;
+        width: 140px;
+        height: 140px;
+    }
+    }
 `;
 
 const Background = function() {
@@ -286,7 +286,7 @@ const Background = function() {
                 <h1>1111111111111</h1>
             </nav>
 
-            <nav className='show-in-small-desktops'>
+            <nav className='desktops-1024-1100-screens'>
                 <Image src="/images/Ellipse-1.png" width={310} height={225} alt='img-1' id='img1'/>
                 <Image src="/images/Rectangle-20.png" width={165} height={200} alt='img-2' id='img2'/>
                 <Image src="/images/Ellipse-5.png" width={200} height={65} alt='img-3.8' id='img3'/>
@@ -300,8 +300,8 @@ const Background = function() {
                 <Image src="/images/Stella.png" width={130} height={130} alt='img-12' id='img12'/>
             </nav>
 
-            <nav className='desktops-1024-1100-screens'>
-                <Image src="/images/Ellipse-1.png" width={310} height={225} alt='img-1' id='img1'/>
+            <nav className='desktop-114-screens'>
+            <Image src="/images/Ellipse-1.png" width={310} height={225} alt='img-1' id='img1'/>
                 <Image src="/images/Rectangle-20.png" width={165} height={200} alt='img-2' id='img2'/>
                 <Image src="/images/Ellipse-5.png" width={200} height={65} alt='img-3.8' id='img3'/>
                 <Image src="/images/header.png" width={270} height={225} alt='img-4' id='img4'/>
