@@ -10,7 +10,7 @@ const FormComponent = styled.div`
         height: 490px;
         display: flex;
         justify-content: center;
-        margin-left: 430px;
+        margin-left: 600px;
         margin-top: -200px;
         form {
             #title {
@@ -52,6 +52,7 @@ const FormComponent = styled.div`
                     color: #FFFF;
                     font-family: 'Poppins-Medium';
                     font-size: 20px; 
+                    cursor: pointer;
                 }
             }
 
@@ -64,6 +65,7 @@ const FormComponent = styled.div`
                 line-height: normal;
                 text-align: center;
                 margin-bottom: 10px;
+                cursor: pointer;
             } 
             .create_account {
                 color: #FFF;
@@ -73,6 +75,7 @@ const FormComponent = styled.div`
                 font-weight: 500;
                 line-height: normal;
                 text-align: center;
+                cursor: pointer;
                 span {
                     color: #F47216;
                 }
