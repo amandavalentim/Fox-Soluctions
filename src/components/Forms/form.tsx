@@ -16,10 +16,10 @@ const FormComponent = styled.div`
             #title {
                 color: #FFFF;
                 text-align: center;
-                margin: 10px;
+                margin: 30px;
             }
             .login {
-                margin: 20px;
+                margin: 50px;
                 display: flex;
                 input {
                     border: none;
@@ -27,11 +27,26 @@ const FormComponent = styled.div`
                     background-color: rgba(7, 179, 253, 0);
                     justify-content: center;
                     align-items: center;
-                        #e-mail {
-                            border-bottom: 1px solid #93d413;
-                        }
+                    
                 }
             }
+            #enter {
+                display: flex;
+                justify-content: center;
+                background-color: #93B413;
+                .button {
+                    border: none;
+                    background-color: #0A53B5;
+                    border-radius: 20px;
+                }
+
+            }  
+            .forget {
+                color: #F47216;
+            } 
+            .create_account {
+                color: #F47216;
+            } 
         }
     }
 `;
@@ -54,6 +69,14 @@ const Form = function(){
 
                         <input type="password" name="password" id="password"/>
 
+                    </div>
+
+                    <div className='forget'>
+                        <h4><span className='orange'>Esqueceu a senha?</span></h4>
+                    </div>
+
+                    <div className='create_account'>
+                        <h4>Não tem uma conta? <span className='orange'>Crie uma</span></h4>
                     </div>
 
                     <div id='enter'>
