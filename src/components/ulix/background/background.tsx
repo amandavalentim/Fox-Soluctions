@@ -48,8 +48,8 @@ const BackgroundComponent = styled.body`
     }
     #img7 {
         position: absolute;
-        top: 500px;
-        left: 1150px;
+        top: 320px;
+        left: 1283px;
     }
     #img8 {
         position: absolute;
@@ -273,23 +273,22 @@ const Background = function() {
             
             <nav className='hide-on-small-desktops'>
                 <Image src="/images/Ellipse-1.png" width={310} height={225} alt='img-1' id='img1'/>
-                <Image src="/images/Rectangle-20.png" width={165} height={200} alt='img-2' id='img2'/>
                 <Image src="/images/Ellipse-5.png" width={200} height={65} alt='img-3.8' id='img3'/>
                 <Image src="/images/header.png" width={270} height={225} alt='img-4' id='img4'/>
-                <Image src="/images/Ellipse-8.png" width={200} height={95} alt='img-7' id='img7'/>
-                <Image src="/images/Ellipse-4.png" width={265} height={200} alt='img-8' id='img8'/>
+                <Image src="/images/Ellipse-8-2.png" width={300} height={165} alt='img-7' id='img7'/>
+                <Image src="/images/Ellipse-4-2.png" width={265} height={200} alt='img-8' id='img8'/>
                 <Image src="/images/Ellipse-7.png" width={350} height={425} alt='img-9' id='img9'/>
                 <Image src="/images/Ellipse-6-1.png" width={450} height={180} alt='img-10' id='img10'/>
                 <Image src="/images/Stella.png" width={130} height={130} alt='img-12' id='img12'/>
+                <Image src="/images/Rectangle-21.png" width={165} height={200} alt='img-2' id='img2'/>
             </nav>
 
             <nav className='desktops-1024-1100-screens'>
                 <Image src="/images/Ellipse-1.png" width={310} height={225} alt='img-1' id='img1'/>
-                <Image src="/images/Rectangle-20.png" width={165} height={200} alt='img-2' id='img2'/>
                 <Image src="/images/Ellipse-5.png" width={200} height={65} alt='img-3.8' id='img3'/>
                 <Image src="/images/header.png" width={270} height={225} alt='img-4' id='img4'/>
-                <Image src="/images/Ellipse-8.png" width={200} height={95} alt='img-7' id='img7'/>
-                <Image src="/images/Ellipse-4.png" width={265} height={200} alt='img-8' id='img8'/>
+                <Image src="/images/Ellipse-8-2.png" width={200} height={95} alt='img-7' id='img7'/>
+                <Image src="/images/Ellipse-4-2.png" width={265} height={200} alt='img-8' id='img8'/>
                 <Image src="/images/Ellipse-7.png" width={350} height={425} alt='img-9' id='img9'/>
                 <Image src="/images/Ellipse-6-1.png" width={450} height={180} alt='img-10' id='img10'/>
                 <Image src="/images/Stella.png" width={130} height={130} alt='img-12' id='img12'/>
@@ -297,11 +296,10 @@ const Background = function() {
 
             <nav className='desktop-1098-screens'>
             <Image src="/images/Ellipse-1.png" width={310} height={225} alt='img-1' id='img1'/>
-                <Image src="/images/Rectangle-20.png" width={165} height={200} alt='img-2' id='img2'/>
                 <Image src="/images/Ellipse-5.png" width={200} height={65} alt='img-3.8' id='img3'/>
                 <Image src="/images/header.png" width={270} height={225} alt='img-4' id='img4'/>
-                <Image src="/images/Ellipse-8.png" width={200} height={95} alt='img-7' id='img7'/>
-                <Image src="/images/Ellipse-4.png" width={265} height={200} alt='img-8' id='img8'/>
+                <Image src="/images/Ellipse-8-2.png" width={200} height={95} alt='img-7' id='img7'/>
+                <Image src="/images/Ellipse-4-2.png" width={265} height={200} alt='img-8' id='img8'/>
                 <Image src="/images/Ellipse-7.png" width={350} height={425} alt='img-9' id='img9'/>
                 <Image src="/images/Ellipse-6-1.png" width={450} height={180} alt='img-10' id='img10'/>
                 <Image src="/images/Stella.png" width={130} height={130} alt='img-12' id='img12'/>
