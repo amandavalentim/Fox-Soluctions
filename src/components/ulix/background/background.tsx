@@ -6,8 +6,8 @@ const BackgroundComponent = styled.body`
     background-color: #0A53B5;
     position: relative;
     width: 100%;
-    height: 1200px;
-    .hide-on-small-desktops {
+    height: 1250px;
+        .hide-on-small-desktops {
         display: none;
     }
     .show-in-small-desktops {
@@ -75,7 +75,7 @@ const BackgroundComponent = styled.body`
         left: 750px;
         top: 805px;
     }
-
+    
     @media ((min-width: 1024px) and (max-width: 1110px)){
         .hide-on-small-desktops {
         display: none;
@@ -171,7 +171,7 @@ const BackgroundComponent = styled.body`
     }
     }
 
-    @media ((min-width: 1115px) and (max-width: 1250px)){
+    @media ((min-width: 1114px) and (max-width: 1200px)){
         .hide-on-small-desktops {
             display: flex;
         justify-content: space-between;
@@ -233,9 +233,9 @@ const BackgroundComponent = styled.body`
     #img8 {
         position: absolute;
         top: 715px;
-        left: 953px;
-        width: 250px;
-        height: 230px;
+        left: 863px;
+        width: 280px;
+        height: 260px;
     }
     #img9 {
         position: absolute;
@@ -259,7 +259,7 @@ const BackgroundComponent = styled.body`
     }
     #img12 {
         position: absolute;
-        left: 450px;
+        left: 550px;
         top: 790px;
         width: 140px;
         height: 140px;
