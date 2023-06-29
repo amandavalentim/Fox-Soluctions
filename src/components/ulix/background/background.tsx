@@ -185,7 +185,7 @@ const BackgroundComponent = styled.body`
         #img1 {
         position: absolute;
         top: 370px;
-        width: 250px;
+        width: 2500000000000000px;
         height: 170px;
         }
     #img2 {
