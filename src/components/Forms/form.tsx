@@ -60,7 +60,7 @@ const FormComponent = styled.div`
             .forget {
                 color: #F47216;
                 text-align: center;
-                font-family: 'Poppins-Medium';
+                font-family: 'Poppins-Regular';
             } 
             .create_account {
                 color: #FFFF;
