@@ -27,9 +27,9 @@ const FormComponent = styled.div`
                     background-color: rgba(7, 179, 253, 0);
                     justify-content: center;
                     align-items: center;
-                    #e-mail {
-                        border-bottom: 1px solid #93d413;
-                    }
+                        #e-mail {
+                            border-bottom: 1px solid #93d413;
+                        }
                 }
             }
         }
