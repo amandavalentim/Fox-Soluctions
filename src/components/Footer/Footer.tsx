@@ -15,10 +15,6 @@ const FooterComponent = styled.footer`
         padding: auto;
         margin: auto;
         h3{
-            padding-left: 10px;
-            padding-right: 10px;
-            padding-top: 20px;
-            padding-bottom: 20px;
             text-align: center;
             color: #FEFEFE;
             font-size: 25px;
@@ -26,14 +22,22 @@ const FooterComponent = styled.footer`
         }
         p{
             padding: 10px;
-            width: 250px;
+            width: 255px;
             color: #FEFEFE;
             font-family: 'Poppins-Regular';
             font-size: 13px;
+            cursor: pointer;
 
             span{
                 font-size: 15px;
                 font-family: 'Poppins-Semibold';
+                cursor: pointer;
+            }
+        }
+        p:hover{
+            font-size: 14px;
+            span{
+                font-size: 16px;
             }
         }
         a{
@@ -42,6 +46,9 @@ const FooterComponent = styled.footer`
             font-family: 'Poppins-Regular';
             font-size: 13px;
             color: #FEFEFE;
+        }
+        a:hover{
+            font-size: 15px;
         }
         .container{
             height: 20vh;
@@ -108,10 +115,10 @@ const Footer = function (){
                <div className='container'>
                     <div className='box-FI'>
                         <FaFacebookSquare className='facebook'/>
-                        <FaInstagram className='instagram'/>
+                        <FaTwitterSquare className='twitter'/>
                     </div>
                     <div className='box-TG'>
-                        <FaTwitterSquare className='twitter'/>
+                        <FaInstagram className='instagram'/>
                         <FaGithubSquare className='github'/>
                     </div>
                </div>

@@ -22,6 +22,7 @@ const HeadComponent = styled.head`
         left: 40px;
         top: 110px;
         color: white;
+        font-family: 'Roboto-Medium';
     }
 
     @media (min-width: 768px){
@@ -35,6 +36,7 @@ const Ul = styled.ul`
         li {
             width: 100px;
             color: white;
+            font-family: 'Poppins-Medium';
         }
 `;
 const Head = function() {
