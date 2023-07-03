@@ -100,6 +100,16 @@ const BackgroundComponent = styled.body`
         top: -15px;
         left: 300px;
     }
+    #img17 {
+        position: absolute;
+        top: -35px;
+        left: 1100px;
+    }
+    #img18 {
+        position: absolute;
+        top: 270px;
+        left: 1200px;
+    }
         
     @media ((min-width: 1024px) and (max-width: 1180px)){
         .hide-on-small-desktops {
@@ -235,7 +245,7 @@ const BackgroundComponent = styled.body`
     background: linear-gradient(180deg, #0A53B5 0% ,#07B3FD 100%);
     position: relative;
     width: 100%;
-    height: 570px;
+    height: 543px;
     .hide-on-small-desktops {
         display: none;
     }
@@ -283,6 +293,8 @@ const Background = function() {
                 <Image src="/images/fox_paw6-2.png" width={190} height={190} alt='img-14' id='img14'/>
                 <Image src="/images/fox_paw2-4.png" width={320} height={320} alt='img-15' id='img15'/>
                 <Image src="/images/fox_paw-1.png" width={180} height={180} alt='img-16' id='img16'/>
+                <Image src="/images/fox_paw2-7.png" width={310} height={310} alt='img-17' id='img17'/>
+                <Image src="/images/fox_paw-5-2.png" width={160} height={160} alt='img-18' id='img18'/>
             </nav>
 
             <nav className='desktops-1024-1100-screens'>
