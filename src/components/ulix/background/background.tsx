@@ -17,6 +17,9 @@ const BackgroundComponent = styled.body`
     .desktop-1098-screens {
         display: none;
     }
+    .mobile {
+        display: none;
+    }
     #img1 {
         position: absolute;
         top: 350px;
@@ -109,6 +112,9 @@ const BackgroundComponent = styled.body`
     .desktop-1098-screens {
         display: none;
     }
+    .mobile {
+        display: none;
+    }
     #img1 {
         position: absolute;
         top: 380px;
@@ -187,6 +193,9 @@ const BackgroundComponent = styled.body`
         display: flex;
         justify-content: space-between;
     }
+    .mobile {
+        display: none;
+    }
     #img3 {
         position: absolute;
         left: 840px;
@@ -219,6 +228,22 @@ const BackgroundComponent = styled.body`
     #img10 {
         position: absolute;
         left: 330px;
+    }
+}
+
+@media ((min-width: 300px) and (max-width: 640px)) {
+    .hide-on-small-desktops {
+        display: none;
+    }
+    .desktops-1024-1100-screens {
+        display: none;
+    }
+    .desktop-1098-screens {
+        display: none;
+    }
+    .mobile {
+        display: flex;
+        justify-content: space-between;
     }
 }
 `;
@@ -282,6 +307,10 @@ const Background = function() {
                 <Image src="/images/fox_paw6-2.png" width={190} height={190} alt='img-14' id='img14'/>
                 <Image src="/images/fox_paw2-4.png" width={320} height={320} alt='img-15' id='img15'/>
                 <Image src="/images/fox_paw-1.png" width={180} height={180} alt='img-16' id='img16'/>
+            </nav>
+
+            <nav className='mobile'>
+                <h1>Login</h1>
             </nav>
             
         </BackgroundComponent>
