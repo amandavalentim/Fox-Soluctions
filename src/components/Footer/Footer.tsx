@@ -1,6 +1,6 @@
 'use client';
 import styled from '@emotion/styled';
-import { FaFacebookSquare, FaInstagram, FaTwitterSquare, FaGithubSquare } from "react-icons/fa";
+import { FaFacebookSquare, FaInstagram, FaTwitterSquare, FaGithubSquare} from "react-icons/fa";
 
 
 const FooterComponent = styled.footer`
@@ -24,10 +24,10 @@ const FooterComponent = styled.footer`
             }
             p{
                 margin: 20px;
-                width: 230px;
+                width: 260px;
                 color: #FEFEFE;
                 font-family: 'Poppins-Regular';
-                font-size: 13px;
+                font-size: 14px;
                 cursor: pointer;
 
             span{
@@ -41,12 +41,12 @@ const FooterComponent = styled.footer`
             height: 31px;
             display: grid;
             font-family: 'Poppins-Regular';
-            font-size: 13px;
+            font-size: 15px;
             color: #FEFEFE;
         }
         .container{
             height: 150px;
-            .box-FI{
+            .icon-FI{
                 width : 100px ;
                 margin-left: auto;
                 margin-right: auto;
@@ -64,7 +64,7 @@ const FooterComponent = styled.footer`
                 }
             }
 
-            .box-TG{
+            .icon-TG{
                 width : 100px ;
                 margin-left: auto;
                 margin-right: auto;
@@ -93,12 +93,14 @@ const FooterComponent = styled.footer`
     @media ((min-width: 320px) and (max-width: 425px)){
         .show-on-mobile{
             background: linear-gradient(180deg, rgba(7, 179, 253, 1), rgba(7, 179, 253, 1));
-            height: 390px;
+            height: 400px;
             width: 100%;
             position: relative;
             top: 900px;
             display: flex;
             .container-center{
+                margin: auto;
+                padding: auto;
                 .box-mobile{
                     width: 300px;
                     height: 78px;
@@ -106,15 +108,20 @@ const FooterComponent = styled.footer`
                     border: 3px solid #93B413;
                     background: #93B413;
                     margin: 40px;
-                    .name-box{
-                       h3{
+                    h3{
                         text-align: justify ;
                         margin: 20px;
                         font-family: 'Poppins-Bold';
                         font-size: 21px;
                         color: #FEFEFE;
-                       } 
                     }
+                    .internal-content{
+                        p{
+                            margin: 10px;
+                        }
+                    }
+                    
+                   
                 }
             }
         }
@@ -124,8 +131,6 @@ const FooterComponent = styled.footer`
 
     }
 `;
-
-
 
 const Footer = function (){
     return(
@@ -146,12 +151,12 @@ const Footer = function (){
                 <div className='box'>
                     <h3>Redes Sociais</h3>
                     <div className='container'>
-                        <div className='box-FI'>
+                        <div className='icon-FI'>
                             <FaFacebookSquare className='facebook'/>
                             <FaInstagram className='instagram'/>
                         </div>
-                        <div className='box-TG'>
-                             <FaTwitterSquare className='twitter'/>
+                        <div className='icon-TG'>
+                            <FaTwitterSquare className='twitter'/>
                             <FaGithubSquare className='github'/>
                         </div>
                     </div>
@@ -160,19 +165,18 @@ const Footer = function (){
             <nav className='show-on-mobile'>
                 <div className='container-center'>
                     <div className='box-mobile'>
-                        <div className='name-box'>
-                            <h3>Contatos</h3>
-                        </div>
-                    </div>
-                    <div className='box-mobile'> 
-                        <div className='name-box'>
-                            <h3>Nossa Empresa</h3>
-                        </div>
+                        <h3>Contatos</h3>
+                        {/* <div className='internal-content'>
+                            <p><span>Endereço: </span>Rua Tamoios, 246, Jardim Aeroporto - São Paulo, SP.</p>
+                            <p><span>Telefone: </span> (11) 99999-9999</p>
+                            <p><span>Email: </span>foxsoluctions@gmail.com</p>
+                        </div> */}
                     </div>
                     <div className='box-mobile'>
-                        <div className='name-box'>
-                            <h3>Redes Sociais</h3>
-                        </div>
+                        <h3>Nossa Empresa</h3>
+                    </div>
+                    <div className='box-mobile'>
+                        <h3>Redes Sociais</h3>
                     </div>
                 </div>
             </nav>
