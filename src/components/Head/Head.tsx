@@ -26,7 +26,20 @@ const HeadComponent = styled.head`
     }
 
     @media (min-width: 768px){
-        height: 132px;
+        .logo-Fox {
+            position: absolute;
+            top: 5px;
+            left: -70px;
+        }
+        .nameLogo {
+            font-size: 1em;
+            position: absolute;
+            left: 40px;
+            top: 110px;
+            color: white;
+            font-family: 'Roboto-Medium';
+        }
+        
     }
 `;
 
