@@ -3,7 +3,7 @@ import styled from '@emotion/styled';
 import Image from 'next/image';
 
 const BackgroundComponent = styled.body`
-    background: linear-gradient(180deg, #0A53B5 0% ,#07B3FD 100%);
+    background-color: #0A53B5;
     position: relative;
     width: 100%;
     height: 1200px;
