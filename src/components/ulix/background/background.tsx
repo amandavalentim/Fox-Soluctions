@@ -155,6 +155,10 @@ const BackgroundComponent = styled.body`
         display: flex;
         justify-content: space-between;
     }
+    #img3 {
+        position: absolute;
+        left: 840px;
+    }
     #img4 {
         position: absolute;
         left: 1100px;
@@ -179,6 +183,10 @@ const BackgroundComponent = styled.body`
     #img9-3 {
         position: absolute;
         left: 710px;
+    }
+    #img10 {
+        position: absolute;
+        left: 330px;
     }
 }
 `;
