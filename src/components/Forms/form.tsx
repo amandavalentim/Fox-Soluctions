@@ -170,7 +170,7 @@ const FormComponent = styled.div`
         border-radius: 19px;
         background: linear-gradient(180deg, #07B3FD 0%, #0A53B5 100%);
         width: 528px;
-        height: 490px;
+        height: 100vh;
         display: flex;
         justify-content: center;
         margin-left: 410px;
@@ -246,6 +246,89 @@ const FormComponent = styled.div`
         }
     }
 }
+
+/* @media (min-width: 1385px) and (max-width: 1400px ) {
+    .box-container {
+        border-radius: 19px;
+        background: linear-gradient(180deg, #07B3FD 0%, #0A53B5 100%);
+        width: 528px;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        margin-left: 410px;
+        margin-top: -190px;
+        form {
+            #title {
+                color: #FFFF;
+                text-align: center;
+                margin: 30px;
+                font-family: 'Poppins-Bold';  
+            }
+            .login {
+                margin: 50px;
+                display: flex;
+                input {
+                    border: none;
+                    width: 300px;
+                    border-bottom: 1px solid #FFFF;
+                    background-color: rgba(7, 179, 253, 0);
+                    justify-content: center;
+                    align-items: center;
+                    padding-bottom: 20px;
+                }
+
+                input::placeholder{
+                    font-size: 15px;
+                    font-family: 'Poppins-Medium';
+                    color: #FFFF;
+                }
+            }
+           div {
+               width: 100%;
+                .submit {
+                    width: 100%;
+                    height: 40px;
+                    margin-top: 30px;
+                    border-radius: 20px;
+                    border: none;
+                    background-color: #93B413;
+                    justify-content: center;
+                    align-items: center;
+                    color: #FFFF;
+                    font-family: 'Poppins-Medium';
+                    font-size: 20px; 
+                    cursor: pointer;
+                }
+            }
+
+            .forget {
+                color: #F47216;
+                font-size: 24px;
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                text-align: center;
+                margin-bottom: 10px;
+                cursor: pointer;
+                
+            } 
+            .create_account {
+                color: #FFF;
+                font-size: 24px;
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                text-align: center;
+                cursor: pointer;
+                span {
+                    color: #F47216;
+                }
+            } 
+        }
+    } 
+} */
 `;
 
 const Form = function(){
