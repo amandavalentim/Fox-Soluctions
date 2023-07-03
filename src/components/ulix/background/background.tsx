@@ -231,7 +231,7 @@ const BackgroundComponent = styled.body`
     }
 }
 
-@media ((min-width: 300px) and (max-width: 640px)) {
+@media ((min-width: 320px) and (max-width: 640px)) {
     background: linear-gradient(180deg, #0A53B5 0% ,#07B3FD 100%);
     position: relative;
     width: 100%;
@@ -251,7 +251,12 @@ const BackgroundComponent = styled.body`
     }
     #img9-3 {
         position: absolute;
-        top: 840px;
+        top: 805px;
+        left: 105px;
+    }
+    #txt1 {
+        position: absolute;
+        top: 30px;
         left: 125px;
     }
 }
