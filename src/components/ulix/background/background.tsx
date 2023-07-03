@@ -2,7 +2,7 @@
 import styled from '@emotion/styled';
 import Image from 'next/image';
 
-const BackgroundComponent = styled.body`
+const BackgroundComponent = styled.section`
     background-color: #0A53B5;
     position: relative;
     width: 100%;
