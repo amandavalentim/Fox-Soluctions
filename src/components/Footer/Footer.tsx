@@ -89,6 +89,10 @@ const FooterComponent = styled.footer`
     .show-on-mobile{
         display: none;
     }
+
+    @media ((min-width: 1024px) and (max-width: 1440px)){
+        font-size: 40px;
+    }
     
     @media ((min-width: 320px) and (max-width: 425px)){
         .show-on-mobile{
