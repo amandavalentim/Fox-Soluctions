@@ -24,10 +24,10 @@ const FooterComponent = styled.footer`
             }
             p{
                 margin: 20px;
-                width: 230px;
+                width: 260px;
                 color: #FEFEFE;
                 font-family: 'Poppins-Regular';
-                font-size: 13px;
+                font-size: 14px;
                 cursor: pointer;
 
             span{
@@ -41,7 +41,7 @@ const FooterComponent = styled.footer`
             height: 31px;
             display: grid;
             font-family: 'Poppins-Regular';
-            font-size: 13px;
+            font-size: 15px;
             color: #FEFEFE;
         }
         .container{
