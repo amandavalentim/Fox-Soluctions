@@ -249,6 +249,11 @@ const BackgroundComponent = styled.body`
         display: flex;
         justify-content: space-between;
     }
+    #img9-3 {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
 }
 `;
 
@@ -315,6 +320,7 @@ const Background = function() {
 
             <nav className='mobile'>
                 <h1 id='txt1'>Login</h1>
+                <Image src="/images/Stella.png" width={180} height={180} alt='img-9' id='img9-3'/>
             </nav>
             
         </BackgroundComponent>
