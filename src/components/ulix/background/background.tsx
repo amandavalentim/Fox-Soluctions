@@ -127,9 +127,9 @@ const BackgroundComponent = styled.body`
     }
     #img8-2 {
         position: absolute;
-        top: 780px;
-        width: 350px;
-        height: 120px;
+        top: 710px;
+        width: 390px;
+        height: 200px;
     }
     #img9-3 {
         position: absolute;
