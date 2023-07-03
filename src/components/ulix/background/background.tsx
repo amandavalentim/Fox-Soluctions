@@ -144,7 +144,82 @@ const BackgroundComponent = styled.body`
     }
     }
 
-    
+    @media((min-width: 1360px) and (max-width: 1550px)) {
+    .hide-on-small-desktops {
+        display: none;
+    }
+    .desktops-1024-1100-screens {
+        display: none;
+    }
+    .desktop-1098-screens {
+        display: flex;
+        justify-content: space-between;
+    }
+        #img1 {
+        position: absolute;
+        top: 370px;
+        width: 360px;
+        height: 220px;
+        }
+    #img2-3 {
+        position: absolute;
+        top: -25px;
+        left: -1px;
+        width: 150px;
+        height: 230px;
+    }
+    #img3 {   
+        position: absolute;
+        top: -5px;
+        left: 605px;
+        width: 230px;
+        height: 60px;
+    }
+    #img4 {
+        position: absolute;
+        top: -5px;
+        left: 1153px;
+        width: 250px;
+        height: 190px;
+    } height: 215px;
+    #img5-3 {
+        position: absolute;
+        top: 465px;
+        left: 1015px;
+        width: 235px;
+        height: 95px;
+    }
+    #img6-3 {
+        position: absolute;
+        top: 625px;
+        left: 1023px;
+        width: 340px;
+        height: 310px;
+    }
+    #img7-3 {
+        position: absolute;
+        top: 580px;
+        left: 525px;
+        width: 420px;
+        height: 440px;
+    }
+    #img8-2 {
+        position: absolute;
+        top: 690px;
+        width: 190px;
+        height: 210px;
+    }
+    #img9-3 {
+        position: absolute;
+        left: 650px;
+        top: 760px;
+        width: 180px;
+        height: 180px;
+    }
+    #img10 {
+        position: absolute;
+    }
+}
 `;
 
 const Background = function() {
