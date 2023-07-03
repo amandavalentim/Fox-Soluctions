@@ -65,6 +65,38 @@ const BackgroundComponent = styled.body`
         top: -35px;
         left: 435px;
     }
+    #img11 {
+        position: absolute;
+        top: 770px;
+        left: 230px;
+        transition: tranform 1s;
+    }
+    #img12 {
+        position: absolute;
+        top: 670px;
+        left: 310px;
+    }
+    #img13 {
+        position: absolute;
+        top: 505px;
+        left: 290px;
+    }
+    
+    #img14 {
+        position: absolute;
+        top: 370px;
+        left: 220px;
+    }
+    #img15 {
+        position: absolute;
+        top: 90px;
+        left: 120px;
+    }
+    #img16 {
+        position: absolute;
+        top: -15px;
+        left: 300px;
+    }
         
     @media ((min-width: 1024px) and (max-width: 1180px)){
         .hide-on-small-desktops {
@@ -206,6 +238,12 @@ const Background = function() {
                 <Image src="/images/Ellipse-6-1.png" width={450} height={180} alt='img-8' id='img8-2'/>
                 <Image src="/images/Stella.png" width={180} height={180} alt='img-9' id='img9-3'/>
                 <Image src="/images/Ellipse-18.png" width={230} height={80} alt='img-10' id='img10'/>
+                <Image src="/images/fox_paw-4.png" width={140} height={140} alt='img-11' id='img11'/>
+                <Image src="/images/fox_paw-5.png" width={140} height={140} alt='img-12' id='img12'/>
+                <Image src="/images/fox_paw-6.png" width={180} height={180} alt='img-13' id='img13'/>
+                <Image src="/images/fox_paw6-2.png" width={190} height={190} alt='img-14' id='img14'/>
+                <Image src="/images/fox_paw2-4.png" width={320} height={320} alt='img-15' id='img15'/>
+                <Image src="/images/fox_paw-1.png" width={180} height={180} alt='img-16' id='img16'/>
             </nav>
 
             <nav className='desktops-1024-1100-screens'>
@@ -219,6 +257,12 @@ const Background = function() {
                 <Image src="/images/Ellipse-6-1.png" width={450} height={180} alt='img-8' id='img8-2'/>
                 <Image src="/images/Stella.png" width={180} height={180} alt='img-9' id='img9-3'/>
                 <Image src="/images/Ellipse-18.png" width={230} height={90} alt='img-10' id='img10'/>
+                <Image src="/images/fox_paw-4.png" width={140} height={140} alt='img-11' id='img11'/>
+                <Image src="/images/fox_paw-5.png" width={140} height={140} alt='img-12' id='img12'/>
+                <Image src="/images/fox_paw-6.png" width={180} height={180} alt='img-13' id='img13'/>
+                <Image src="/images/fox_paw6-2.png" width={190} height={190} alt='img-14' id='img14'/>
+                <Image src="/images/fox_paw2-4.png" width={320} height={320} alt='img-15' id='img15'/>
+                <Image src="/images/fox_paw-1.png" width={180} height={180} alt='img-16' id='img16'/>
             </nav>
 
             <nav className='desktop-1098-screens'>
@@ -232,6 +276,12 @@ const Background = function() {
                 <Image src="/images/Ellipse-6-1.png" width={450} height={180} alt='img-8' id='img8-2'/>
                 <Image src="/images/Stella.png" width={180} height={180} alt='img-9' id='img9-3'/>
                 <Image src="/images/Ellipse-18.png" width={230} height={80} alt='img-10' id='img10'/>
+                <Image src="/images/fox_paw-4.png" width={140} height={140} alt='img-11' id='img11'/>
+                <Image src="/images/fox_paw-5.png" width={140} height={140} alt='img-12' id='img12'/>
+                <Image src="/images/fox_paw-6.png" width={180} height={180} alt='img-13' id='img13'/>
+                <Image src="/images/fox_paw6-2.png" width={190} height={190} alt='img-14' id='img14'/>
+                <Image src="/images/fox_paw2-4.png" width={320} height={320} alt='img-15' id='img15'/>
+                <Image src="/images/fox_paw-1.png" width={180} height={180} alt='img-16' id='img16'/>
             </nav>
             
         </BackgroundComponent>
