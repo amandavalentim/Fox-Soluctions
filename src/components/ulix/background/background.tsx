@@ -17,6 +17,9 @@ const BackgroundComponent = styled.body`
     .desktop-1098-screens {
         display: none;
     }
+    .mobile {
+        display: none;
+    }
     #img1 {
         position: absolute;
         top: 350px;
@@ -65,6 +68,38 @@ const BackgroundComponent = styled.body`
         top: -35px;
         left: 435px;
     }
+    #img11 {
+        position: absolute;
+        top: 770px;
+        left: 230px;
+        transition: tranform 1s;
+    }
+    #img12 {
+        position: absolute;
+        top: 670px;
+        left: 310px;
+    }
+    #img13 {
+        position: absolute;
+        top: 505px;
+        left: 290px;
+    }
+    
+    #img14 {
+        position: absolute;
+        top: 370px;
+        left: 220px;
+    }
+    #img15 {
+        position: absolute;
+        top: 90px;
+        left: 120px;
+    }
+    #img16 {
+        position: absolute;
+        top: -15px;
+        left: 300px;
+    }
         
     @media ((min-width: 1024px) and (max-width: 1180px)){
         .hide-on-small-desktops {
@@ -75,6 +110,9 @@ const BackgroundComponent = styled.body`
         justify-content: space-between;
     }
     .desktop-1098-screens {
+        display: none;
+    }
+    .mobile {
         display: none;
     }
     #img1 {
@@ -127,9 +165,9 @@ const BackgroundComponent = styled.body`
     }
     #img8-2 {
         position: absolute;
-        top: 780px;
-        width: 350px;
-        height: 120px;
+        top: 710px;
+        width: 390px;
+        height: 200px;
     }
     #img9-3 {
         position: absolute;
@@ -155,69 +193,57 @@ const BackgroundComponent = styled.body`
         display: flex;
         justify-content: space-between;
     }
-        #img1 {
-        position: absolute;
-        top: 370px;
-        width: 360px;
-        height: 220px;
-        }
-    #img2-3 {
-        position: absolute;
-        top: -25px;
-        left: -1px;
-        width: 150px;
-        height: 230px;
+    .mobile {
+        display: none;
     }
-    #img3 {   
+    #img3 {
         position: absolute;
-        top: -5px;
-        left: 605px;
-        width: 230px;
-        height: 60px;
+        left: 840px;
     }
     #img4 {
         position: absolute;
-        top: -5px;
-        left: 1153px;
-        width: 250px;
-        height: 190px;
-    } height: 215px;
+        left: 1100px;
+    }
     #img5-3 {
         position: absolute;
-        top: 465px;
-        left: 1015px;
-        width: 235px;
-        height: 95px;
+        left: 1060px;
+        width: 300px;
     }
     #img6-3 {
         position: absolute;
-        top: 625px;
-        left: 1023px;
-        width: 340px;
-        height: 310px;
+        left: 1040px;
     }
     #img7-3 {
         position: absolute;
-        top: 580px;
-        left: 525px;
-        width: 420px;
-        height: 440px;
+        left: 600px;
     }
     #img8-2 {
         position: absolute;
-        top: 690px;
-        width: 190px;
-        height: 210px;
+        width: 560px;
     }
     #img9-3 {
         position: absolute;
-        left: 650px;
-        top: 760px;
-        width: 180px;
-        height: 180px;
+        left: 710px;
     }
     #img10 {
         position: absolute;
+        left: 330px;
+    }
+}
+
+@media ((min-width: 300px) and (max-width: 640px)) {
+    .hide-on-small-desktops {
+        display: none;
+    }
+    .desktops-1024-1100-screens {
+        display: none;
+    }
+    .desktop-1098-screens {
+        display: none;
+    }
+    .mobile {
+        display: flex;
+        justify-content: space-between;
     }
 }
 `;
@@ -237,6 +263,12 @@ const Background = function() {
                 <Image src="/images/Ellipse-6-1.png" width={450} height={180} alt='img-8' id='img8-2'/>
                 <Image src="/images/Stella.png" width={180} height={180} alt='img-9' id='img9-3'/>
                 <Image src="/images/Ellipse-18.png" width={230} height={80} alt='img-10' id='img10'/>
+                <Image src="/images/fox_paw-4.png" width={140} height={140} alt='img-11' id='img11'/>
+                <Image src="/images/fox_paw-5.png" width={140} height={140} alt='img-12' id='img12'/>
+                <Image src="/images/fox_paw-6.png" width={180} height={180} alt='img-13' id='img13'/>
+                <Image src="/images/fox_paw6-2.png" width={190} height={190} alt='img-14' id='img14'/>
+                <Image src="/images/fox_paw2-4.png" width={320} height={320} alt='img-15' id='img15'/>
+                <Image src="/images/fox_paw-1.png" width={180} height={180} alt='img-16' id='img16'/>
             </nav>
 
             <nav className='desktops-1024-1100-screens'>
@@ -250,6 +282,12 @@ const Background = function() {
                 <Image src="/images/Ellipse-6-1.png" width={450} height={180} alt='img-8' id='img8-2'/>
                 <Image src="/images/Stella.png" width={180} height={180} alt='img-9' id='img9-3'/>
                 <Image src="/images/Ellipse-18.png" width={230} height={90} alt='img-10' id='img10'/>
+                <Image src="/images/fox_paw-4.png" width={140} height={140} alt='img-11' id='img11'/>
+                <Image src="/images/fox_paw-5.png" width={140} height={140} alt='img-12' id='img12'/>
+                <Image src="/images/fox_paw-6.png" width={180} height={180} alt='img-13' id='img13'/>
+                <Image src="/images/fox_paw6-2.png" width={190} height={190} alt='img-14' id='img14'/>
+                <Image src="/images/fox_paw2-4.png" width={320} height={320} alt='img-15' id='img15'/>
+                <Image src="/images/fox_paw-1.png" width={180} height={180} alt='img-16' id='img16'/>
             </nav>
 
             <nav className='desktop-1098-screens'>
@@ -263,6 +301,16 @@ const Background = function() {
                 <Image src="/images/Ellipse-6-1.png" width={450} height={180} alt='img-8' id='img8-2'/>
                 <Image src="/images/Stella.png" width={180} height={180} alt='img-9' id='img9-3'/>
                 <Image src="/images/Ellipse-18.png" width={230} height={80} alt='img-10' id='img10'/>
+                <Image src="/images/fox_paw-4.png" width={140} height={140} alt='img-11' id='img11'/>
+                <Image src="/images/fox_paw-5.png" width={140} height={140} alt='img-12' id='img12'/>
+                <Image src="/images/fox_paw-6.png" width={180} height={180} alt='img-13' id='img13'/>
+                <Image src="/images/fox_paw6-2.png" width={190} height={190} alt='img-14' id='img14'/>
+                <Image src="/images/fox_paw2-4.png" width={320} height={320} alt='img-15' id='img15'/>
+                <Image src="/images/fox_paw-1.png" width={180} height={180} alt='img-16' id='img16'/>
+            </nav>
+
+            <nav className='mobile'>
+                <h1>Login</h1>
             </nav>
             
         </BackgroundComponent>
