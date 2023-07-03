@@ -1,11 +1,17 @@
 'use client'
 import styled from '@emotion/styled';
 
-const FormComponent = styled.div`
+const FormComponent = styled.section`
 
     .hide-on-mobile {
-            display: none;
-        }
+        display: flex;
+    }
+    .show-on-mobile {
+        display: none;
+    }
+    .show-on-tablet {
+        display: none;
+    }
     .box-container {
         border-radius: 19px;
         background: linear-gradient(180deg, #07B3FD 0%, #0A53B5 100%);
@@ -46,7 +52,7 @@ const FormComponent = styled.div`
                 .submit {
                     position: absolute;
                     left: 45px;
-                    width: 100%;
+                    width: 50%;
                     height: 40px;
                     margin-top: 30px;
                     border-radius: 20px;
@@ -87,11 +93,17 @@ const FormComponent = styled.div`
             } 
         }
     }
-
+    //Amanda
     @media (min-width: 1024px) and (max-width: 1180px) {
         .hide-on-mobile {
+            display: flex;
+        }
+        .show-on-mobile {
             display: none;
         }
+        .show-on-tablet {
+        display: none;
+    }
         form {
             #title {
                 color: #FFFF;
@@ -164,11 +176,17 @@ const FormComponent = styled.div`
             } 
         }
     } 
-
-@media (min-width: 1335px) and (max-width: 1355px) {
-        .hide-on-mobile {
+    //Gabriel
+    @media (min-width: 1335px) and (max-width: 1355px) {
+        .show-on-mobile {
             display: none;
         }
+        .hide-on-mobile {
+            display: flex;
+        }
+        .show-on-tablet {
+        display: none;
+    }
         .box-container {
         border-radius: 19px;
         background: linear-gradient(180deg, #07B3FD 0%, #0A53B5 100%);
@@ -251,10 +269,17 @@ const FormComponent = styled.div`
         }
     }
 }
-
-@media (min-width: 320px) and (max-width: 425px) {
+    //Mobile
+    @media (min-width: 320px) and (max-width: 425px){
         .show-on-mobile {
             display: flex;
+            justify-content: space-between;
+        }
+        .hide-on-mobile{
+            display: none;
+        }
+        .show-on-tablet {
+            display: none;
         }
         .box-container-mobile {
             border-radius: 19px;
@@ -337,6 +362,100 @@ const FormComponent = styled.div`
                 } 
             }
     }
+    }
+
+    //Tablet
+    @media (min-width: 768px) {
+        .hide-on-mobile{
+            display: none;
+        }
+        .show-on-mobile{
+            display: none;
+        }
+        .show-on-tablet{
+            display:flex;
+        }
+        .box-container-tablet {
+        border-radius: 19px;
+        background: linear-gradient(180deg, #07B3FD 0%, #0A53B5 100%);
+        width: 528px;
+        height: 490px;
+        box-shadow: 0px 0px 2px 0px;
+        display: flex;
+        justify-content: center;
+        margin-left: 120px;
+        margin-top: -190px;
+        form {
+            #title-tablet {
+                color: #FFFF;
+                text-align: center;
+                /* font-size: ; */
+                margin: 30px;
+                font-family: 'Poppins-Bold';
+            }
+            .login-tablet {
+                margin: 50px;
+                display: flex;
+                input {
+                    border: none;
+                    width: 300px;
+                    border-bottom: 1px solid #FFFF;
+                    background-color: rgba(7, 179, 253, 0);
+                    justify-content: center;
+                    align-items: center;
+                    padding-bottom: 20px;
+                }
+
+                input::placeholder{
+                    font-size: 15px;
+                    font-family: 'Poppins-Medium';
+                    color: #FFFF;
+                }
+            }
+           div {
+               width: 100%;
+                .submit-tablet {
+                    position: absolute;
+                    left: 45px;
+                    width: 60%;
+                    height: 40px;
+                    margin-top: 30px;
+                    border-radius: 20px;
+                    border: none;
+                    background-color: #93B413;
+                    color: #FFFF;
+                    font-family: 'Poppins-Medium';
+                    font-size: 20px; 
+                    cursor: pointer;
+                }
+            }
+
+            .forget-tablet {
+                color: #F47216;
+                font-size: 24px;
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                text-align: center;
+                margin-bottom: 10px;
+                cursor: pointer;
+            } 
+            .create_account-tablet {
+                color: #FFF;
+                font-size: 24px;
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                text-align: center;
+                cursor: pointer;
+                span {
+                    color: #F47216;
+                }
+            } 
+        }
+    }
 }
 `;
 
@@ -369,7 +488,6 @@ const Form = function(){
                     </form>
                 </div>
             </nav>
-
             <nav className='show-on-mobile'>
                 <div className='box-container-mobile'>
                     <form>
@@ -388,6 +506,30 @@ const Form = function(){
                         </div>
                         <div>
                             <button className='submit-mobile'>
+                                Entrar
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </nav>
+            <nav className='show-on-tablet'>
+                <div className='box-container-tablet'>
+                    <form>
+                        <h1 id='title-tablet'>Login</h1>
+                        <div className='login-tablet'>
+                            <input type="email" name="e-mail" id="e-mail" placeholder='E-mail'/>
+                        </div>
+                        <div className='login-tablet'>
+                            <input type="password" name="password" id="password" placeholder='Senha'/>
+                        </div>
+                        <div className='forget-tablet'>
+                            <h4><span className='orange'>Esqueceu a senha?</span></h4>
+                        </div>
+                        <div className='create_account-tablet'>
+                            <h4>Não tem uma conta? <span className='orange'>Crie uma</span></h4>
+                        </div>
+                        <div>
+                            <button className='submit-tablet'>
                                 Entrar
                             </button>
                         </div>
