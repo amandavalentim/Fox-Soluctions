@@ -19,9 +19,9 @@ const BackgroundComponent = styled.body`
     }
     #img1 {
         position: absolute;
-        top: 420px;
+        top: 350px;
     }
-    #img2 {
+    #img2-3 {
         position: absolute;
         top: -40px;
         left: -1px;
@@ -29,36 +29,41 @@ const BackgroundComponent = styled.body`
     #img3 {   
         position: absolute;
         top: -5px;
-        left: 735px;
+        left: 935px;
     }
     #img4 {
         position: absolute;
         top: -5px;
         left: 1355px;
     }
-    #img5 {
+    #img5-3 {
         position: absolute;
         top: 320px;
-        left: 1383px;
+        left: 1283px;
     }
-    #img6 {
+    #img6-3 {
         position: absolute;
         top: 660px;
-        left: 15020px;
+        left: 1260px;
     }
-    #img7 {
+    #img7-3 {
         position: absolute;
-        top: 655px;
+        top: 595px;
         left: 635px;
     }
-    #img8 {
+    #img8-2 {
         position: absolute;
         top: 720px;
     }
-    #img9 {
+    #img9-3 {
         position: absolute;
-        left: 750px;
-        top: 805px;
+        left: 740px;
+        top: 760px;
+    }
+    #img10 {
+        position: absolute;
+        top: -35px;
+        left: 435px;
     }
         
     @media ((min-width: 1024px) and (max-width: 1180px)){
@@ -74,23 +79,23 @@ const BackgroundComponent = styled.body`
     }
     #img1 {
         position: absolute;
-        top: 430px;
-        width: 300px;
-        height: 250px;
+        top: 380px;
+        width: 250px;
+        height: 190px;
         }
-    #img2 {
+    #img2-3 {
         position: absolute;
         top: -25px;
         left: 1px;
         width: 150px;
-        height: 250px;
+        height: 210px;
     }
     #img3 {   
         position: absolute;
         top: -5px;
-        left: 410px;
+        left: 610px;
         width: 230px;
-        height: 90px;
+        height: 80px;
     }
     #img4 {
         position: absolute;
@@ -99,39 +104,43 @@ const BackgroundComponent = styled.body`
         width: 280px;
         height: 250px;
     }
-    #img5 {
+    #img5-3 {
         position: absolute;
-        top: 525px;
-        left: 723px;
-        width: 170px;
-        height: 90px;
+        top: 425px;
+        left: 783px;
+        width: 240px;
+        height: 130px;
     }
-    #img6 {
+    #img6-3 {
         position: absolute;
         top: 700px;
         left: 773px;
         width: 250px;
         height: 220px;
     }
-    #img7 {
+    #img7-3 {
         position: absolute;
-        top: 720px;
+        top: 620px;
         left: 420px;
-        width: 320px;
-        height: 320px;
+        width: 310px;
+        height: 380px;
     }
-    #img8 {
+    #img8-2 {
         position: absolute;
         top: 780px;
         width: 350px;
         height: 120px;
     }
-    #img9 {
+    #img9-3 {
         position: absolute;
-        left: 460px;
-        top: 805px;
-        width: 130px;
-        height: 130px;
+        left: 490px;
+        top: 775px;
+        width: 160px;
+        height: 160px;
+    }
+    #img10 {
+        position: absolute;
+        left: 210px;
     }
     }
 
@@ -152,7 +161,7 @@ const BackgroundComponent = styled.body`
         width: 360px;
         height: 220px;
         }
-    #img2 {
+    #img2-3 {
         position: absolute;
         top: -25px;
         left: -1px;
@@ -173,41 +182,44 @@ const BackgroundComponent = styled.body`
         width: 250px;
         height: 190px;
     } height: 215px;
-    }
-    #img5 {
+    #img5-3 {
         position: absolute;
         top: 465px;
         left: 1015px;
         width: 235px;
         height: 95px;
     }
-    #img6 {
+    #img6-3 {
         position: absolute;
         top: 625px;
         left: 1023px;
         width: 340px;
         height: 310px;
     }
-    #img7 {
+    #img7-3 {
         position: absolute;
         top: 580px;
         left: 525px;
         width: 420px;
         height: 440px;
     }
-    #img8 {
+    #img8-2 {
         position: absolute;
         top: 690px;
-        width: 490px;
+        width: 190px;
         height: 210px;
     }
-    #img9 {
+    #img9-3 {
         position: absolute;
         left: 650px;
         top: 760px;
         width: 180px;
         height: 180px;
     }
+    #img10 {
+        position: absolute;
+    }
+}
 `;
 
 const Background = function() {
@@ -215,39 +227,42 @@ const Background = function() {
         <BackgroundComponent>
             
             <nav className='hide-on-small-desktops'>
-                <Image src="/images/Ellipse-1.png" width={310} height={225} alt='img-1' id='img1'/>
-                <Image src="/images/Rectangle-21.png" width={165} height={200} alt='img-2' id='img2'/>
+                <Image src="/images/Ellipse-1.png" width={390} height={225} alt='img-1' id='img1'/>
+                <Image src="/images/Rectangle-21.png" width={175} height={285} alt='img-2' id='img2-3'/>
                 <Image src="/images/Ellipse-5.png" width={200} height={65} alt='img-3.8' id='img3'/>
                 <Image src="/images/header.png" width={270} height={225} alt='img-4' id='img4'/>
-                <Image src="/images/Ellipse-8-2.png" width={3500} height={265} alt='img-5' id='img5'/>
-                <Image src="/images/Ellipse-4-2.png" width={265} height={200} alt='img-6' id='img6'/>
-                <Image src="/images/Ellipse-7.png" width={350} height={425} alt='img-7' id='img7'/>
-                <Image src="/images/Ellipse-6-1.png" width={450} height={180} alt='img-8' id='img8'/>
-                <Image src="/images/Stella.png" width={130} height={130} alt='img-9' id='img9'/>
+                <Image src="/images/Ellipse-8.png" width={350} height={165} alt='img-5' id='img5-3'/>
+                <Image src="/images/Ellipse-9.png" width={325} height={290} alt='img-6' id='img6-3'/>
+                <Image src="/images/Ellipse-7.png" width={400} height={455} alt='img-7' id='img7-3'/>
+                <Image src="/images/Ellipse-6-1.png" width={450} height={180} alt='img-8' id='img8-2'/>
+                <Image src="/images/Stella.png" width={180} height={180} alt='img-9' id='img9-3'/>
+                <Image src="/images/Ellipse-18.png" width={230} height={80} alt='img-10' id='img10'/>
             </nav>
 
             <nav className='desktops-1024-1100-screens'>
-                <Image src="/images/Ellipse-1.png" width={310} height={225} alt='img-1' id='img1'/>
-                <Image src="/images/Rectangle-21.png" width={165} height={200} alt='img-2' id='img2'/>
+                <Image src="/images/Ellipse-1.png" width={390} height={225} alt='img-1' id='img1'/>
+                <Image src="/images/Rectangle-21.png" width={175} height={285} alt='img-2' id='img2-3'/>
                 <Image src="/images/Ellipse-5.png" width={200} height={65} alt='img-3.8' id='img3'/>
                 <Image src="/images/header.png" width={270} height={225} alt='img-4' id='img4'/>
-                <Image src="/images/Ellipse-8-2.png" width={300} height={165} alt='img-7' id='img5'/>
-                <Image src="/images/Ellipse-4-2.png" width={265} height={200} alt='img-8' id='img6'/>
-                <Image src="/images/Ellipse-7.png" width={350} height={425} alt='img-9' id='img7'/>
-                <Image src="/images/Ellipse-6-1.png" width={450} height={180} alt='img-10' id='img8'/>
-                <Image src="/images/Stella.png" width={130} height={130} alt='img-12' id='img9'/>
+                <Image src="/images/Ellipse-8.png" width={350} height={165} alt='img-5' id='img5-3'/>
+                <Image src="/images/Ellipse-9.png" width={325} height={290} alt='img-6' id='img6-3'/>
+                <Image src="/images/Ellipse-7.png" width={400} height={455} alt='img-7' id='img7-3'/>
+                <Image src="/images/Ellipse-6-1.png" width={450} height={180} alt='img-8' id='img8-2'/>
+                <Image src="/images/Stella.png" width={180} height={180} alt='img-9' id='img9-3'/>
+                <Image src="/images/Ellipse-18.png" width={230} height={90} alt='img-10' id='img10'/>
             </nav>
 
             <nav className='desktop-1098-screens'>
-                <Image src="/images/Ellipse-1.png" width={310} height={225} alt='img-1' id='img1'/>
-                <Image src="/images/Rectangle-21.png" width={165} height={200} alt='img-2' id='img2'/>
+                <Image src="/images/Ellipse-1.png" width={390} height={225} alt='img-1' id='img1'/>
+                <Image src="/images/Rectangle-21.png" width={175} height={285} alt='img-2' id='img2-3'/>
                 <Image src="/images/Ellipse-5.png" width={200} height={65} alt='img-3.8' id='img3'/>
                 <Image src="/images/header.png" width={270} height={225} alt='img-4' id='img4'/>
-                <Image src="/images/Ellipse-8-2.png" width={300} height={165} alt='img-7' id='img5'/>
-                <Image src="/images/Ellipse-4-2.png" width={265} height={200} alt='img-8' id='img6'/>
-                <Image src="/images/Ellipse-7.png" width={350} height={425} alt='img-9' id='img7'/>
-                <Image src="/images/Ellipse-6-1.png" width={450} height={180} alt='img-10' id='img8'/>
-                <Image src="/images/Stella.png" width={130} height={130} alt='img-12' id='img9'/>
+                <Image src="/images/Ellipse-8.png" width={350} height={165} alt='img-5' id='img5-3'/>
+                <Image src="/images/Ellipse-9.png" width={325} height={290} alt='img-6' id='img6-3'/>
+                <Image src="/images/Ellipse-7.png" width={400} height={455} alt='img-7' id='img7-3'/>
+                <Image src="/images/Ellipse-6-1.png" width={450} height={180} alt='img-8' id='img8-2'/>
+                <Image src="/images/Stella.png" width={180} height={180} alt='img-9' id='img9-3'/>
+                <Image src="/images/Ellipse-18.png" width={230} height={80} alt='img-10' id='img10'/>
             </nav>
             
         </BackgroundComponent>
