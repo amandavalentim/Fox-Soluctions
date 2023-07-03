@@ -93,21 +93,27 @@ const FooterComponent = styled.footer`
     @media ((min-width: 320px) and (max-width: 425px)){
         .show-on-mobile{
             background: linear-gradient(180deg, rgba(7, 179, 253, 1), rgba(7, 179, 253, 1));
-            height: 300px;
+            height: 390px;
             width: 100%;
             position: relative;
             top: 900px;
             display: flex;
             .container-center{
-                .name-box{
+                .box-mobile{
                     width: 300px;
                     height: 78px;
                     border-radius: 5px;
                     border: 3px solid #93B413;
                     background: #93B413;
                     margin: 40px;
-                    h3{
-                        
+                    .name-box{
+                       h3{
+                        text-align: justify ;
+                        margin: 20px;
+                        font-family: 'Poppins-Bold';
+                        font-size: 21px;
+                        color: #FEFEFE;
+                       } 
                     }
                 }
             }
@@ -129,7 +135,7 @@ const Footer = function (){
                     <h3>Contatos</h3>
                     <p><span>Endereço: </span>Rua Tamoios, 246, Jardim Aeroporto - São Paulo, SP.</p>
                     <p><span>Telefone: </span> (11) 99999-9999</p>
-                    <p><span>Email: </span> foxsoluctions@gmail.com</p>
+                    <p><span>Email: </span>foxsoluctions@gmail.com</p>
                 </div>
                 <div className='box'>
                     <h3>Nossa Empresa</h3>
@@ -153,14 +159,20 @@ const Footer = function (){
             </nav>
             <nav className='show-on-mobile'>
                 <div className='container-center'>
-                    <div className='name-box'>
-                        <h3>Contatos</h3>
+                    <div className='box-mobile'>
+                        <div className='name-box'>
+                            <h3>Contatos</h3>
+                        </div>
                     </div>
-                    <div className='name-box'> 
-                        <h3>Nossa Empresa</h3>
+                    <div className='box-mobile'> 
+                        <div className='name-box'>
+                            <h3>Nossa Empresa</h3>
+                        </div>
                     </div>
-                    <div className='name-box'>
-                        <h3>Redes Sociais</h3>
+                    <div className='box-mobile'>
+                        <div className='name-box'>
+                            <h3>Redes Sociais</h3>
+                        </div>
                     </div>
                 </div>
             </nav>
