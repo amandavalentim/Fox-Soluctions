@@ -3,7 +3,7 @@ import styled from '@emotion/styled';
 import Image from 'next/image';
 
 const BackgroundComponent = styled.body`
-    background-color: #0A53B5;
+    background: linear-gradient(180deg, #0A53B5 0% ,#07B3FD 100%);
     position: relative;
     width: 100%;
     height: 1200px;
@@ -232,7 +232,6 @@ const BackgroundComponent = styled.body`
 }
 
 @media ((min-width: 300px) and (max-width: 640px)) {
-    background: linear-gradient(180deg, #0A53B5 0% ,#07B3FD 100%);
     position: relative;
     width: 100%;
     height: 570px;
@@ -251,8 +250,8 @@ const BackgroundComponent = styled.body`
     }
     #img9-3 {
         position: absolute;
-        top: 10px;
-        left: 10px;
+        top: 840px;
+        left: 125px;
     }
 }
 `;
@@ -320,7 +319,7 @@ const Background = function() {
 
             <nav className='mobile'>
                 <h1 id='txt1'>Login</h1>
-                <Image src="/images/Stella.png" width={180} height={180} alt='img-9' id='img9-3'/>
+                <Image src="/images/Stella.png" width={120} height={120} alt='img-9' id='img9-3'/>
             </nav>
             
         </BackgroundComponent>
