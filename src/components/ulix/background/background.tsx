@@ -232,6 +232,7 @@ const BackgroundComponent = styled.body`
 }
 
 @media ((min-width: 300px) and (max-width: 640px)) {
+    background: linear-gradient(180deg, #0A53B5 0% ,#07B3FD 100%);
     position: relative;
     width: 100%;
     height: 570px;
