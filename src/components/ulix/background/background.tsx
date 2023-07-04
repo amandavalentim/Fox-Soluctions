@@ -1,5 +1,6 @@
 'use client';
 import styled from '@emotion/styled';
+import Image from 'next/image';
 
 const BackgroundComponent = styled.html`
     background-image: url("/images/background3.svg");
@@ -18,7 +19,7 @@ const BackgroundComponent = styled.html`
 const Background = function() {
     return(
         <BackgroundComponent>
-            
+
         </BackgroundComponent>
     )
 }
