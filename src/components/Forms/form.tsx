@@ -15,7 +15,7 @@ const FormComponent = styled.section`
     .box-container {
         position: absolute;
         left: 400px;
-        top: 190px;
+        top: 175px;
         border-radius: 19px;
         background: linear-gradient(180deg, #07B3FD 0%, #0A53B5 100%);
         width: 528px;
@@ -27,6 +27,7 @@ const FormComponent = styled.section`
                 color: #FFFF;
                 text-align: center;
                 margin: 20px;
+                font-size: 30px;
                 font-family: 'Poppins-Bold';
             }
             .login {
@@ -78,8 +79,8 @@ const FormComponent = styled.section`
 
             .forget {
                 color: #F47216;
-                font-size: 24px;
-                font-family: Poppins;
+                font-size: 20px;
+                font-family: 'Roboto-medium';
                 font-style: normal;
                 font-weight: 500;
                 line-height: normal;
@@ -89,8 +90,8 @@ const FormComponent = styled.section`
             } 
             .create_account {
                 color: #FFF;
-                font-size: 24px;
-                font-family: Poppins;
+                font-size: 20px;
+                font-family: 'Roboto-medium';
                 font-style: normal;
                 font-weight: 500;
                 line-height: normal;
@@ -116,11 +117,11 @@ const FormComponent = styled.section`
     .box-container {
         position: absolute;
         left: 263px;
-        top: 180px;
+        top: 170px;
         border-radius: 19px;
         background: linear-gradient(180deg, #07B3FD 0%, #0A53B5 100%);
         width: 490px;
-        height: 410px;
+        height: 440px;
         display: flex;
         justify-content: center;
           
@@ -128,11 +129,12 @@ const FormComponent = styled.section`
             #title {
                 color: #FFFF;
                 text-align: center;
-                margin: 15px;
+                margin: 20px;
                 font-family: 'Poppins-Bold';
+                font-size: 30px;
             }
             .login {
-                margin: 35px;
+                margin: 40px;
                 display: flex;
                 input {
                     border: none;
@@ -162,10 +164,10 @@ const FormComponent = styled.section`
                 .submit {
                     position: absolute;
                     left: 140px;
+                    top: 320px;
                     /* width: 100%; */
                     width: 200px;
                     height: 40px;
-                    margin-top: 30px;
                     border-radius: 20px;
                     border: none;
                     background-color: #93B413;
@@ -180,9 +182,8 @@ const FormComponent = styled.section`
 
             .forget {
                 color: #F47216;
-                font-size: 24px;
-                font-family: Poppins;
-                font-style: normal;
+                font-size: 20px;
+                font-family: 'Roboto-medium';
                 font-weight: 500;
                 line-height: normal;
                 text-align: center;
@@ -191,9 +192,8 @@ const FormComponent = styled.section`
             } 
             .create_account {
                 color: #FFF;
-                font-size: 24px;
-                font-family: Poppins;
-                font-style: normal;
+                font-size: 20px;
+                font-family: 'Roboto-medium';
                 font-weight: 500;
                 line-height: normal;
                 text-align: center;
@@ -283,9 +283,8 @@ const FormComponent = styled.section`
 
             .forget {
                 color: #F47216;
-                font-size: 24px;
-                font-family: Poppins;
-                font-style: normal;
+                font-size: 20px;
+                font-family: 'Roboto-medium';
                 font-weight: 500;
                 line-height: normal;
                 text-align: center;
@@ -294,9 +293,8 @@ const FormComponent = styled.section`
             } 
             .create_account {
                 color: #FFF;
-                font-size: 24px;
-                font-family: Poppins;
-                font-style: normal;
+                font-size: 20px;
+                font-family: 'Roboto-medium';
                 font-weight: 500;
                 line-height: normal;
                 text-align: center;
@@ -565,7 +563,9 @@ const Form = function(){
             <nav className='show-on-mobile'>
                 <div className='box-container-mobile'>
                     <form>
-                        <h1 id='title-mobile'></h1>
+                        <h1 id='title-mobile'>
+                            Login
+                        </h1>
                         <div className='login-mobile'>
                             <input type="email" name="e-mail" id="e-mail" placeholder='E-mail'/>
                         </div>
