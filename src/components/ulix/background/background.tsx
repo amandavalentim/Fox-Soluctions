@@ -19,8 +19,8 @@ const BackgroundComponent = styled.html`
     }
     
     @media((min-width: 320px) and (max-width: 400px)){
-    background: linear-gradient(180deg, #0A53B5 0%, #07B3FD 100%);
-    height: 1200px;
+    background-image: url("/images/mobile - cadastro.svg");
+    background-repeat: no-repeat;
     }
 `;
 
