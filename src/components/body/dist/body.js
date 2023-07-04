@@ -11,7 +11,7 @@ var BodyComponent = styled_1["default"].body(templateObject_1 || (templateObject
 var Body = function () {
     return (React.createElement(BodyComponent, null,
         React.createElement("div", { className: 'hide-on-small-desktops' },
-            React.createElement(image_1["default"], { src: "/images/fox_paw1.png", width: 150, height: 150, alt: 'img-1', id: 'img1' }),
+            React.createElement(image_1["default"], { src: "/images/fox_paw1.png", width: 120, height: 120, alt: 'img-1', id: 'img1' }),
             React.createElement(image_1["default"], { src: "/images/fox_paw-2.png", width: 150, height: 150, alt: 'img-2', id: 'img2' }))));
 };
 exports["default"] = Body;

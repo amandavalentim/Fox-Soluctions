@@ -21,7 +21,7 @@ const Body = function() {
         <BodyComponent>
             
             <div className='hide-on-small-desktops'>
-                <Image src="/images/fox_paw1.png" width={150} height={150} alt='img-1' id='img1'/>
+                <Image src="/images/fox_paw1.png" width={120} height={120} alt='img-1' id='img1'/>
                 <Image src="/images/fox_paw-2.png" width={150} height={150} alt='img-2' id='img2'/>
             </div>
             
