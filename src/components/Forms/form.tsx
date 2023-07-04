@@ -116,11 +116,11 @@ const FormComponent = styled.section`
     .box-container {
         position: absolute;
         left: 263px;
-        top: 180px;
+        top: 170px;
         border-radius: 19px;
         background: linear-gradient(180deg, #07B3FD 0%, #0A53B5 100%);
         width: 490px;
-        height: 410px;
+        height: 440px;
         display: flex;
         justify-content: center;
           
@@ -133,7 +133,7 @@ const FormComponent = styled.section`
                 font-size: 30px;
             }
             .login {
-                margin: 35px;
+                margin: 40px;
                 display: flex;
                 input {
                     border: none;
@@ -163,10 +163,10 @@ const FormComponent = styled.section`
                 .submit {
                     position: absolute;
                     left: 140px;
+                    top: 320px;
                     /* width: 100%; */
                     width: 200px;
                     height: 40px;
-                    margin-top: 30px;
                     border-radius: 20px;
                     border: none;
                     background-color: #93B413;
