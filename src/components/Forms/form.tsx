@@ -205,7 +205,7 @@ const FormComponent = styled.section`
     } 
 }
     //Gabriel
-    @media (min-width: 1335px) and (max-width: 1355px) {
+    @media (min-width: 1600px) and (max-width: 1700px) {
         .show-on-mobile {
             display: none;
         }
@@ -217,7 +217,7 @@ const FormComponent = styled.section`
         }
         .box-container {
             position: absolute;
-            left: 600px;
+            left: 650px;
             top: 180px;
             border-radius: 19px;
             background: linear-gradient(180deg, #07B3FD 0%, #0A53B5 100%);
