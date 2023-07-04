@@ -404,7 +404,7 @@ const FormComponent = styled.section`
     }
 
     //Tablet
-    @media (min-width: 768px) and (max-width: 1024px) {
+    @media (min-width: 768px) and (max-width: 1022px) {
         .hide-on-mobile{
             display: none;
         }
