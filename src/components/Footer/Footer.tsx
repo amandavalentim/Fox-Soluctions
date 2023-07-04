@@ -2,14 +2,13 @@
 import styled from '@emotion/styled';
 import { FaFacebookSquare, FaInstagram, FaTwitterSquare, FaGithubSquare} from "react-icons/fa";
 
-
 const FooterComponent = styled.footer`
     .show-on-desktop{
         background: linear-gradient(180deg, rgba(7, 179, 253, 1), rgba(7, 179, 253, 1));
         height: 300px;
         width: 100%;
-        position: relative;
         top: 900px;
+        position: relative;
         display: flex;
         justify-content: space-between;
         .box{
