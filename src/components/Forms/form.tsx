@@ -478,6 +478,12 @@ const FormComponent = styled.section`
             }
         }
     }
+
+    @media (min-width:375px) and (max-width:425px) {
+        .logo-Fox {
+            
+        }
+    }
 `;
 
 const Form = function(){
