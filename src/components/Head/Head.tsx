@@ -34,7 +34,7 @@ const HeadComponent = styled.head`
         height: 132px;
     }
 
-    @media (min-width: 320px) and (max-width:425px) {
+    @media (min-width: 320px) and (max-width:375px) {
         .hide-on-mobile {
             display: none;
         }
@@ -52,12 +52,42 @@ const HeadComponent = styled.head`
         .logo-Fox {
             position: absolute;
             top: 15px;
-            left: 2px;
+            left: -3px;
         }
         .nameLogo {
             font-size: 1em;
             position: absolute;
-            left: 103px;
+            left: 101px;
+            top: 122px;
+            color: white;
+            font-family: 'Roboto-Medium';
+        }    
+    }
+
+    @media (min-width: 376px) and (max-width:425px) {
+        .hide-on-mobile {
+            display: none;
+        }
+        .show-on-mobile {
+            display: flex;
+            color: #FFFF;
+            cursor: pointer;
+            width: 35px;
+            height: 0px;
+            .faBars {
+                width: 30px;
+                height: 30px;
+            }
+        }
+        .logo-Fox {
+            position: absolute;
+            top: 15px;
+            left: 50px;
+        }
+        .nameLogo {
+            font-size: 1em;
+            position: absolute;
+            left: 150px;
             top: 122px;
             color: white;
             font-family: 'Roboto-Medium';
