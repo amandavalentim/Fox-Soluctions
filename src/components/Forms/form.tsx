@@ -606,6 +606,107 @@ const FormComponent = styled.section`
             }
         }
     }
+
+    //Mobile-426px
+    @media (min-width:426px) and (max-width:768px) {
+        .show-on-mobile {
+            display: flex;
+            justify-content: space-between;
+        }
+        .hide-on-mobile{
+            display: none;
+        }
+        .show-on-tablet {
+            display: none;
+        }
+        .box-container-mobile {
+            border-radius: 19px;
+            width: 528px;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            margin-left: -12px;
+            margin-top: -350px;
+            form {
+                #title-mobile {
+                    color: #FFFF;
+                    text-align: center;
+                    margin: 30px;
+                    font-family: 'Poppins-Bold';
+                }
+                .login-mobile {
+                        margin: 50px;
+                        display: flex;
+                    input {
+                        border: none;
+                        width: 250px;
+                        border-bottom: 1px solid #FFFF;
+                        background-color: rgba(7, 179, 253, 0);
+                        justify-content: center;
+                        align-items: center;
+                        padding-bottom: 20px;
+                        outline: none;
+                        color: #FFF;
+                        font-family: 'Poppins-Medium';
+                    }
+
+                    input::placeholder{
+                        font-size: 10px;
+                        font-family: 'Poppins-Medium';
+                        color: #FFFF;
+                    }
+                    input:focus{
+                    border-bottom: 3px solid #93B413;
+                    }
+                }
+            .enter-mobile {
+                    width: 100%;
+                    .submit-mobile {
+                        position: absolute;
+                        left: 45px;
+                        width: 70%;
+                        height: 40px;
+                        margin-top: 30px;
+                        border-radius: 20px;
+                        border: none;
+                        background-color: #93B413;
+                        justify-content: center;
+                        align-items: center;
+                        color: #FFFF;
+                        font-family: 'Poppins-Medium';
+                        font-size: 15px; 
+                        cursor: pointer;
+                    }
+                }
+
+                .forget-mobile {
+                    color: #F47216;
+                    font-size: 20px;
+                    font-family: 'Roboto-medium';
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    text-align: center;
+                    margin-bottom: 10px;
+                    cursor: pointer;
+                    
+                } 
+                .create_account-mobile {
+                    color: #FFF;
+                    font-size: 20px;
+                    font-family: 'Roboto-medium';
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    text-align: center;
+                    cursor: pointer;
+                    span {
+                        color: #F47216;
+                    }
+                } 
+            }
+        }
+    }
 `;
 
 const Form = function(){
