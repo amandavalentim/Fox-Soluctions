@@ -1,11 +1,13 @@
 'use client';
 import styled from '@emotion/styled';
 
-const BackgroundComponent = styled.body`
+const BackgroundComponent = styled.html`
     background-image: url("/images/background3.svg");
     background-color: #0A53B5;
     background-repeat: no-repeat;
-    background-size: 100% ;
+    background-size: cover ;
+
+    
 `;
 
 const Background = function() {
