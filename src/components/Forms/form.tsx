@@ -40,8 +40,9 @@ const FormComponent = styled.section`
                     justify-content: center;
                     align-items: center;
                     padding-bottom: 20px;
-                    border: none;
                     outline: none;
+                    color: #FFF;
+                    font-family: 'Poppins-Medium';
                 }
 
                 input::placeholder{
@@ -49,7 +50,6 @@ const FormComponent = styled.section`
                     font-family: 'Poppins-Medium';
                     color: #FFFF;
                 }
-
                 input:focus{
                     border-bottom: 3px solid #93B413;
 
@@ -238,13 +238,15 @@ const FormComponent = styled.section`
                     display: flex;
                 input {
                     border: none;
-                    width: 300px;
+                    width: 270px;
                     border-bottom: 1px solid #FFFF;
                     background-color: rgba(7, 179, 253, 0);
                     justify-content: center;
                     align-items: center;
                     padding-bottom: 20px;
                     outline: none;
+                    color: #FFF;
+                    font-family: 'Poppins-Medium';
                 }
 
                 input::placeholder{
@@ -252,7 +254,6 @@ const FormComponent = styled.section`
                     font-family: 'Poppins-Medium';
                     color: #FFFF;
                 }
-                
                 input:focus{
                     border-bottom: 3px solid #93B413;
 
@@ -346,12 +347,18 @@ const FormComponent = styled.section`
                         justify-content: center;
                         align-items: center;
                         padding-bottom: 20px;
+                        outline: none;
+                        color: #FFF;
+                        font-family: 'Poppins-Medium';
                     }
 
                     input::placeholder{
                         font-size: 10px;
                         font-family: 'Poppins-Medium';
                         color: #FFFF;
+                    }
+                    input:focus{
+                    border-bottom: 3px solid #93B413;
                     }
                 }
             .enter-mobile {
@@ -443,6 +450,9 @@ const FormComponent = styled.section`
                         justify-content: center;
                         align-items: center;
                         padding-bottom: 20px;
+                        outline: none;
+                        color: #FFF;
+                        font-family: 'Poppins-Medium';
                     }
 
                     input::placeholder{
@@ -450,6 +460,10 @@ const FormComponent = styled.section`
                         font-family: 'Poppins-Medium';
                         color: #FFFF;
                     }
+                    input:focus{
+                    border-bottom: 3px solid #93B413;
+                    }
+                    
                 }
                 .enter-tablet {
                     width: 400px;
