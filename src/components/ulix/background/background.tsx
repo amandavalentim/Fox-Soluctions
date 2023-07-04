@@ -22,6 +22,11 @@ const BackgroundComponent = styled.html`
     background-image: url("/images/mobile - cadastro.svg");
     background-repeat: no-repeat;
     }
+
+    @media((min-width: 768px) and (max-width: 1000px)) {
+        background-image: url("/images/tablet.svg");
+    background-position-y: 35px;
+    }
 `;
 
 const Background = function() {
