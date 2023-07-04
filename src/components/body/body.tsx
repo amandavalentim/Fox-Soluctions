@@ -26,8 +26,8 @@ const BodyComponent = styled.body`
     }
     #img3 {
         position: absolute;
-        top: 630px;
-        left: 310px;
+        top: 640px;
+        left: 290px;
     }
 
     @media((min-width: 1024px) and (max-width: 1100px)) {
