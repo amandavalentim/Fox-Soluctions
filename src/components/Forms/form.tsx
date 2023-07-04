@@ -217,7 +217,7 @@ const FormComponent = styled.section`
         }
         .box-container {
             position: absolute;
-            left: 550px;
+            left: 548px;
             top: 180px;
             border-radius: 19px;
             background: linear-gradient(180deg, #07B3FD 0%, #0A53B5 100%);
@@ -404,7 +404,7 @@ const FormComponent = styled.section`
     }
 
     //Tablet
-    @media (min-width: 768px) and (max-width: 773px) {
+    @media (min-width: 768px) and (max-width: 1022px) {
         .hide-on-mobile{
             display: none;
         }
@@ -429,7 +429,6 @@ const FormComponent = styled.section`
                 #title-tablet {
                     color: #FFFF;
                     text-align: center;
-                    /* font-size: ; */
                     margin: 20px;
                     font-family: 'Poppins-Bold';
                 }
@@ -483,22 +482,20 @@ const FormComponent = styled.section`
 
                 .forget-tablet {
                     color: #F47216;
-                    font-size: 24px;
-                    font-family: Poppins;
+                    font-size: 20px;
+                    font-family: 'Roboto-medium';
                     font-style: normal;
                     font-weight: 500;
-                    line-height: normal;
                     text-align: center;
                     margin-bottom: 10px;
                     cursor: pointer;
                 } 
                 .create_account-tablet {
                     color: #FFF;
-                    font-size: 24px;
-                    font-family: Poppins;
+                    font-size: 20px;
+                    font-family: 'Roboto-medium';
                     font-style: normal;
                     font-weight: 500;
-                    line-height: normal;
                     text-align: center;
                     cursor: pointer;
                     span {
@@ -583,8 +580,8 @@ const FormComponent = styled.section`
 
                 .forget-mobile {
                     color: #F47216;
-                    font-size: 15px;
-                    font-family: Poppins;
+                    font-size: 20px;
+                    font-family: 'Roboto-medium';
                     font-style: normal;
                     font-weight: 500;
                     line-height: normal;
@@ -595,8 +592,8 @@ const FormComponent = styled.section`
                 } 
                 .create_account-mobile {
                     color: #FFF;
-                    font-size: 15px;
-                    font-family: Poppins;
+                    font-size: 20px;
+                    font-family: 'Roboto-medium';
                     font-style: normal;
                     font-weight: 500;
                     line-height: normal;
