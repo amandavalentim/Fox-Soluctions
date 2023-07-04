@@ -24,7 +24,7 @@ const BackgroundComponent = styled.html`
     }
 
     @media((min-width: 768px) and (max-width: 1000px)) {
-        background-image: url("/images/tablet.svg");
+    background-image: url("/images/tablet.svg");
     background-position-y: 35px;
     }
 `;
