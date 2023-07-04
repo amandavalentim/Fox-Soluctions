@@ -218,12 +218,12 @@ const FormComponent = styled.section`
         }
         .box-container {
             position: absolute;
-            left: 400px;
-            top: 300px;
+            left: 500px;
+            top: 330px;
             border-radius: 19px;
             background: linear-gradient(180deg, #07B3FD 0%, #0A53B5 100%);
             width: 528px;
-            height: 80vh;
+            height: 500px;
             display: flex;
             justify-content: center;
             form {
