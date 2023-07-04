@@ -11,7 +11,6 @@ export default function Home() {
       <Background/>
       <Footer/>
       <Form/>
-      <Body/>
     </main>
 
   )
