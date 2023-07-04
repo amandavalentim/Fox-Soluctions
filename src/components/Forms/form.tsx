@@ -13,14 +13,15 @@ const FormComponent = styled.section`
         display: none;
     }
     .box-container {
+        position: absolute;
+        left: 400px;
+        top: 300px;
         border-radius: 19px;
         background: linear-gradient(180deg, #07B3FD 0%, #0A53B5 100%);
         width: 528px;
         height: 490px;
         display: flex;
         justify-content: center;
-        margin-left: 550px;
-        margin-top: -200px;
         form {
             #title {
                 color: #FFFF;
@@ -33,7 +34,7 @@ const FormComponent = styled.section`
                 display: flex;
                 input {
                     border: none;
-                    width: 100px;
+                    width: 270px;
                     border-bottom: 1px solid #FFFF;
                     background-color: rgba(7, 179, 253, 0);
                     justify-content: center;
@@ -51,8 +52,8 @@ const FormComponent = styled.section`
                width: 100%;
                 .submit {
                     position: absolute;
-                    left: 45px;
-                    width: 50px;
+                    left: 185px;
+                    width: 150px;
                     height: 40px;
                     margin-top: 30px;
                     border-radius: 20px;
@@ -105,14 +106,16 @@ const FormComponent = styled.section`
             display: none;
         }
     .box-container {
+        position: absolute;
+        left: 245px;
+        top: 300px;
         border-radius: 19px;
         background: linear-gradient(180deg, #07B3FD 0%, #0A53B5 100%);
         width: 528px;
         height: 490px;
         display: flex;
         justify-content: center;
-        margin-left: 240px;
-        margin-top: -200px;  
+          
         form {
             #title {
                 color: #FFFF;
@@ -143,7 +146,7 @@ const FormComponent = styled.section`
                width: 400px;
                 .submit {
                     position: absolute;
-                    left: 405px;
+                    left: 152px;
                     /* width: 100%; */
                     width: 200px;
                     height: 40px;
@@ -199,14 +202,15 @@ const FormComponent = styled.section`
             display: none;
         }
         .box-container {
+            position: absolute;
+            left: 400px;
+            top: 300px;
             border-radius: 19px;
             background: linear-gradient(180deg, #07B3FD 0%, #0A53B5 100%);
             width: 528px;
-            height: 100vh;
+            height: 80vh;
             display: flex;
             justify-content: center;
-            margin-left: 410px;
-            margin-top: -190px;
             form {
                 #title {
                     color: #FFFF;
@@ -237,7 +241,8 @@ const FormComponent = styled.section`
                width: 400px;
                 .submit {
                     position: absolute;
-                    left: 405px;
+                    left: 160px;
+                    top: 400px;
                     /* width: 100%; */
                     width: 200px;
                     height: 40px;
@@ -428,7 +433,8 @@ const FormComponent = styled.section`
                     width: 400px;
                 .submit-tablet {
                     position: absolute;
-                    left: 405px;
+                    left: 285px;
+                    top: 600px;
                     /* width: 100%; */
                     width: 200px;
                     height: 40px;
