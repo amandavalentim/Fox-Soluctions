@@ -15,26 +15,26 @@ const FormComponent = styled.section`
     .box-container {
         position: absolute;
         left: 400px;
-        top: 300px;
+        top: 190px;
         border-radius: 19px;
         background: linear-gradient(180deg, #07B3FD 0%, #0A53B5 100%);
         width: 528px;
-        height: 490px;
+        height: 450px;
         display: flex;
         justify-content: center;
         form {
             #title {
                 color: #FFFF;
                 text-align: center;
-                margin: 30px;
+                margin: 20px;
                 font-family: 'Poppins-Bold';
             }
             .login {
-                margin: 50px;
+                margin: 45px;
                 display: flex;
                 input {
                     border: none;
-                    width: 270px;
+                    width: 305px;
                     border-bottom: 1px solid #FFFF;
                     background-color: rgba(7, 179, 253, 0);
                     justify-content: center;
@@ -115,12 +115,12 @@ const FormComponent = styled.section`
         }
     .box-container {
         position: absolute;
-        left: 245px;
-        top: 300px;
+        left: 263px;
+        top: 180px;
         border-radius: 19px;
         background: linear-gradient(180deg, #07B3FD 0%, #0A53B5 100%);
-        width: 528px;
-        height: 490px;
+        width: 490px;
+        height: 410px;
         display: flex;
         justify-content: center;
           
@@ -128,15 +128,15 @@ const FormComponent = styled.section`
             #title {
                 color: #FFFF;
                 text-align: center;
-                margin: 30px;
+                margin: 15px;
                 font-family: 'Poppins-Bold';
             }
             .login {
-                margin: 50px;
+                margin: 35px;
                 display: flex;
                 input {
                     border: none;
-                    width: 300px;
+                    width: 325px;
                     border-bottom: 2px solid #FFFF;
                     background-color: rgba(7, 179, 253, 0);
                     justify-content: center;
@@ -161,7 +161,7 @@ const FormComponent = styled.section`
                width: 400px;
                 .submit {
                     position: absolute;
-                    left: 152px;
+                    left: 140px;
                     /* width: 100%; */
                     width: 200px;
                     height: 40px;
@@ -219,11 +219,11 @@ const FormComponent = styled.section`
         .box-container {
             position: absolute;
             left: 400px;
-            top: 300px;
+            top: 180px;
             border-radius: 19px;
             background: linear-gradient(180deg, #07B3FD 0%, #0A53B5 100%);
             width: 528px;
-            height: 80vh;
+            height: 480px;
             display: flex;
             justify-content: center;
             form {
@@ -234,11 +234,11 @@ const FormComponent = styled.section`
                     font-family: 'Poppins-Bold';
                 }
                 .login {
-                    margin: 50px;
+                    margin: 45px;
                     display: flex;
                 input {
                     border: none;
-                    width: 270px;
+                    width: 310px;
                     border-bottom: 1px solid #FFFF;
                     background-color: rgba(7, 179, 253, 0);
                     justify-content: center;
@@ -265,11 +265,10 @@ const FormComponent = styled.section`
                 .submit {
                     position: absolute;
                     left: 160px;
-                    top: 400px;
+                    top: 370px;
                     /* width: 100%; */
                     width: 200px;
                     height: 40px;
-                    margin-top: 30px;
                     border-radius: 20px;
                     border: none;
                     background-color: #93B413;
@@ -310,7 +309,7 @@ const FormComponent = styled.section`
     }
 }
     //Mobile
-    @media (min-width: 320px) and (max-width: 768px){
+    @media (min-width: 320px) and (max-width: 336px){
         .show-on-mobile {
             display: flex;
             justify-content: space-between;
@@ -422,29 +421,30 @@ const FormComponent = styled.section`
             display:flex;
         }
         .box-container-tablet {
+            position:absolute;
+            left: 115px;
+            top: 170px;
             border-radius: 19px;
             background: linear-gradient(180deg, #07B3FD 0%, #0A53B5 100%);
             width: 528px;
-            height: 490px;
+            height: 410px;
             box-shadow: 0px 0px 2px 0px;
             display: flex;
             justify-content: center;
-            margin-left: 121px;
-            margin-top: -190px;
             form {
                 #title-tablet {
                     color: #FFFF;
                     text-align: center;
                     /* font-size: ; */
-                    margin: 30px;
+                    margin: 20px;
                     font-family: 'Poppins-Bold';
                 }
                 .login-tablet {
-                    margin: 50px;
+                    margin: 40px;
                     display: flex;
                     input {
                         border: none;
-                        width: 300px;
+                        width: 325px;
                         border-bottom: 1px solid #FFFF;
                         background-color: rgba(7, 179, 253, 0);
                         justify-content: center;
@@ -469,8 +469,8 @@ const FormComponent = styled.section`
                     width: 400px;
                 .submit-tablet {
                     position: absolute;
-                    left: 285px;
-                    top: 600px;
+                    left: 160px;
+                    top: 320px;
                     /* width: 100%; */
                     width: 200px;
                     height: 40px;
@@ -515,9 +515,20 @@ const FormComponent = styled.section`
         }
     }
 
+    //Mobile-375px
     @media (min-width:375px) and (max-width:425px) {
         .logo-Fox {
-            
+            position: absolute;
+            top: 5px;
+            left: -70px;
+        }
+        .nameLogo {
+            font-size: 1em;
+            position: absolute;
+            left: 40px;
+            top: 110px;
+            color: white;
+            font-family: 'Roboto-Medium';
         }
     }
 `;

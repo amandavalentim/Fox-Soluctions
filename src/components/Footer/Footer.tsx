@@ -21,14 +21,19 @@ const FooterComponent = styled.footer`
                 font-size: 25px;
                 font-family: 'Poppins-bold';
             }
+            h3:hover{
+                transform: translateX(10px) scale(1.2);
+            }
             p{
                 margin: 20px;
                 width: 260px;
                 color: #FEFEFE;
                 font-family: 'Poppins-Regular';
                 font-size: 14px;
-                cursor: pointer;
-
+            }
+            p:hover{
+                transform: translateX(10px) scale(1.2);
+            }
             span{
                 font-size: 15px;
                 font-family: 'Poppins-Semibold';
@@ -43,6 +48,9 @@ const FooterComponent = styled.footer`
             font-size: 15px;
             color: #FEFEFE;
         }
+        a:hover{
+            transform: translateX(10px) scale(1.2);
+        }
         .container{
             height: 150px;
             .icon-FI{
@@ -55,11 +63,17 @@ const FooterComponent = styled.footer`
                     fill: #3a77ff;
                     cursor: pointer;
                 }
+                .facebook:hover{
+                    transform: translateX(10px) scale(1.2);
+                }
                 .instagram{
                     width: 50px;
                     height: 50px;
                     fill:  #C82D8E;
                     cursor: pointer;
+                }
+                .instagram:hover{
+                    transform: translateX(10px) scale(1.2);
                 }
             }
 
@@ -73,23 +87,29 @@ const FooterComponent = styled.footer`
                     fill:  #098BEA;
                     cursor: pointer;
                 }
+                .twitter:hover{
+                    transform: translateX(10px) scale(1.2);
+                }
                 .github{
                     width: 50px;
                     height: 50px;
                     fill:  #000000;
                     cursor: pointer;
                 }
+                .github:hover{
+                    transform: translateX(10px) scale(1.2);
+                }
             }
         
         }
         
     }
-    }
+    
     .show-on-mobile{
         display: none;
     }
     
-    @media ((min-width: 320px) and (max-width: 425px)){
+    @media ((min-width: 320px) and (max-width: 700px)){
         background: linear-gradient(180deg, rgba(7, 179, 253, 1), rgba(7, 179, 253, 1));
         height: 400px;
         width: 100%;
