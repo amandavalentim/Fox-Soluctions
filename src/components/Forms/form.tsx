@@ -79,8 +79,8 @@ const FormComponent = styled.section`
 
             .forget {
                 color: #F47216;
-                font-size: 24px;
-                font-family: Poppins;
+                font-size: 20px;
+                font-family: 'Roboto-medium';
                 font-style: normal;
                 font-weight: 500;
                 line-height: normal;
@@ -90,8 +90,8 @@ const FormComponent = styled.section`
             } 
             .create_account {
                 color: #FFF;
-                font-size: 24px;
-                font-family: Poppins;
+                font-size: 20px;
+                font-family: 'Roboto-medium';
                 font-style: normal;
                 font-weight: 500;
                 line-height: normal;
@@ -131,6 +131,7 @@ const FormComponent = styled.section`
                 text-align: center;
                 margin: 20px;
                 font-family: 'Poppins-Bold';
+                font-size: 30px;
             }
             .login {
                 margin: 40px;
@@ -181,9 +182,8 @@ const FormComponent = styled.section`
 
             .forget {
                 color: #F47216;
-                font-size: 24px;
-                font-family: Poppins;
-                font-style: normal;
+                font-size: 20px;
+                font-family: 'Roboto-medium';
                 font-weight: 500;
                 line-height: normal;
                 text-align: center;
@@ -192,9 +192,8 @@ const FormComponent = styled.section`
             } 
             .create_account {
                 color: #FFF;
-                font-size: 24px;
-                font-family: Poppins;
-                font-style: normal;
+                font-size: 20px;
+                font-family: 'Roboto-medium';
                 font-weight: 500;
                 line-height: normal;
                 text-align: center;
@@ -284,9 +283,8 @@ const FormComponent = styled.section`
 
             .forget {
                 color: #F47216;
-                font-size: 24px;
-                font-family: Poppins;
-                font-style: normal;
+                font-size: 20px;
+                font-family: 'Roboto-medium';
                 font-weight: 500;
                 line-height: normal;
                 text-align: center;
@@ -295,9 +293,8 @@ const FormComponent = styled.section`
             } 
             .create_account {
                 color: #FFF;
-                font-size: 24px;
-                font-family: Poppins;
-                font-style: normal;
+                font-size: 20px;
+                font-family: 'Roboto-medium';
                 font-weight: 500;
                 line-height: normal;
                 text-align: center;
