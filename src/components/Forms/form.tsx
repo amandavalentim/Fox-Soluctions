@@ -55,7 +55,6 @@ const FormComponent = styled.section`
                     border-bottom: 3px solid #93B413;
 
                 }
-
             }
            div {
                width: 100%;
@@ -218,7 +217,7 @@ const FormComponent = styled.section`
         }
         .box-container {
             position: absolute;
-            left: 400px;
+            left: 500px;
             top: 180px;
             border-radius: 19px;
             background: linear-gradient(180deg, #07B3FD 0%, #0A53B5 100%);
