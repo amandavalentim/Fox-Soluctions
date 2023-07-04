@@ -6,9 +6,12 @@ const BackgroundComponent = styled.html`
     background-color: #0A53B5;
     background-repeat: no-repeat;
     background-size: cover ;
-    height: 1200px;
-    body {
-        height: 1200px;
+
+    @media((min-width: 1024px) and (max-width: 1100px)){
+    background-image: url("/images/background8.svg");
+    background-color: #0A53B5;
+    background-size: cover ;
+    background-position-y: 50px;
     }
 `;
 

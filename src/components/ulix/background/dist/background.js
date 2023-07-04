@@ -6,7 +6,7 @@ var __makeTemplateObject = (this && this.__makeTemplateObject) || function (cook
 };
 exports.__esModule = true;
 var styled_1 = require("@emotion/styled");
-var BackgroundComponent = styled_1["default"].html(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n    background-image: url(\"/images/background3.svg\");\n    background-color: #0A53B5;\n    background-repeat: no-repeat;\n    background-size: cover ;\n    height: 1200px;\n    body {\n        height: 1200px;\n    }\n"], ["\n    background-image: url(\"/images/background3.svg\");\n    background-color: #0A53B5;\n    background-repeat: no-repeat;\n    background-size: cover ;\n    height: 1200px;\n    body {\n        height: 1200px;\n    }\n"])));
+var BackgroundComponent = styled_1["default"].html(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n    background-image: url(\"/images/background3.svg\");\n    background-color: #0A53B5;\n    background-repeat: no-repeat;\n    background-size: cover ;\n\n    @media((min-width: 1024px) and (max-width: 1100px)){\n    background-image: url(\"/images/background8.svg\");\n    background-color: #0A53B5;\n    background-size: cover ;\n    background-position-y: 50px;\n    }\n"], ["\n    background-image: url(\"/images/background3.svg\");\n    background-color: #0A53B5;\n    background-repeat: no-repeat;\n    background-size: cover ;\n\n    @media((min-width: 1024px) and (max-width: 1100px)){\n    background-image: url(\"/images/background8.svg\");\n    background-color: #0A53B5;\n    background-size: cover ;\n    background-position-y: 50px;\n    }\n"])));
 var Background = function () {
     return (React.createElement(BackgroundComponent, null));
 };
