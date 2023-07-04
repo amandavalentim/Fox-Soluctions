@@ -15,7 +15,7 @@ const FormComponent = styled.section`
     .box-container {
         position: absolute;
         left: 400px;
-        top: 190px;
+        top: 175px;
         border-radius: 19px;
         background: linear-gradient(180deg, #07B3FD 0%, #0A53B5 100%);
         width: 528px;
@@ -27,6 +27,7 @@ const FormComponent = styled.section`
                 color: #FFFF;
                 text-align: center;
                 margin: 20px;
+                font-size: 30px;
                 font-family: 'Poppins-Bold';
             }
             .login {
@@ -565,7 +566,9 @@ const Form = function(){
             <nav className='show-on-mobile'>
                 <div className='box-container-mobile'>
                     <form>
-                        <h1 id='title-mobile'></h1>
+                        <h1 id='title-mobile'>
+                            Login
+                        </h1>
                         <div className='login-mobile'>
                             <input type="email" name="e-mail" id="e-mail" placeholder='E-mail'/>
                         </div>
