@@ -10,6 +10,9 @@ const BodyComponent = styled.body`
     .desktop-1024 {
         display: none;
     }
+    .mobile {
+        display: none;
+    }
     #img1 {
         position: absolute;
         top: 910px;
@@ -23,7 +26,7 @@ const BodyComponent = styled.body`
     }
     #img3 {
         position: absolute;
-        top: 690px;
+        top: 630px;
         left: 310px;
     }
 
@@ -32,6 +35,22 @@ const BodyComponent = styled.body`
         display: none;
     }
     .desktop-1024 {
+        display: flex;
+        justify-content: space-between;
+    }
+    .mobile {
+        display: none;
+    }
+    }
+
+    @media((min-width: 320px) and (max-width: 640px)) {
+        .hide-on-small-desktops {
+        display: none;
+    }
+    .desktop-1024 {
+        display: none;
+    }
+    .mobile {
         display: flex;
         justify-content: space-between;
     }
@@ -45,9 +64,14 @@ const Body = function() {
             <div className='hide-on-small-desktops'>
                 <Image src="/images/fox_paw1.png" width={150} height={150} alt='img-1' id='img1'/>
                 <Image src="/images/fox_paw-2.png" width={150} height={150} alt='img-2' id='img2'/>
-                <Image src="/images/fox_paw-3.png" width={10} height={150} alt='img-3' id='img3'/>
+                <Image src="/images/fox_paw-3.png" width={190} height={190} alt='img-3' id='img3'/>
             </div>
+
             <div className='desktop-1024'>
+                
+            </div>
+
+            <div className='mobile'>
                 
             </div>
             
