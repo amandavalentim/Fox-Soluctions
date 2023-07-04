@@ -202,7 +202,7 @@ const FormComponent = styled.section`
             border-radius: 19px;
             background: linear-gradient(180deg, #07B3FD 0%, #0A53B5 100%);
             width: 528px;
-            height: 100vh;
+            height: 80vh;
             display: flex;
             justify-content: center;
             margin-left: 410px;
@@ -237,7 +237,8 @@ const FormComponent = styled.section`
                width: 400px;
                 .submit {
                     position: absolute;
-                    left: 405px;
+                    left: 570px;
+                    top: 610px;
                     /* width: 100%; */
                     width: 200px;
                     height: 40px;
@@ -428,7 +429,8 @@ const FormComponent = styled.section`
                     width: 400px;
                 .submit-tablet {
                     position: absolute;
-                    left: 405px;
+                    left: 285px;
+                    top: 600px;
                     /* width: 100%; */
                     width: 200px;
                     height: 40px;
