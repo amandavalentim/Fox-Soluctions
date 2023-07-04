@@ -349,7 +349,7 @@ const FormComponent = styled.section`
                     }
 
                     input::placeholder{
-                        font-size: 10px;
+                        font-size: 15px;
                         font-family: 'Poppins-Medium';
                         color: #FFFF;
                     }
@@ -372,18 +372,16 @@ const FormComponent = styled.section`
                         align-items: center;
                         color: #FFFF;
                         font-family: 'Poppins-Medium';
-                        font-size: 15px; 
+                        font-size: 18px; 
                         cursor: pointer;
                     }
                 }
 
                 .forget-mobile {
                     color: #F47216;
-                    font-size: 15px;
-                    font-family: Poppins;
-                    font-style: normal;
+                    font-size: 16px;
+                    font-family: 'Roboto-Medium';
                     font-weight: 500;
-                    line-height: normal;
                     text-align: center;
                     margin-bottom: 10px;
                     cursor: pointer;
@@ -391,9 +389,8 @@ const FormComponent = styled.section`
                 } 
                 .create_account-mobile {
                     color: #FFF;
-                    font-size: 15px;
-                    font-family: Poppins;
-                    font-style: normal;
+                    font-size: 16px;
+                    font-family: 'Roboto-Medium';
                     font-weight: 500;
                     line-height: normal;
                     text-align: center;
