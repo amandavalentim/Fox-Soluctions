@@ -9,7 +9,7 @@ const BackgroundComponent = styled.html`
     background-size: cover ;
 
     @media((min-width: 1024px) and (max-width: 1100px)){
-    background-image: url("/images/background8.svg");
+    background-image: url("/images/background3.svg");
     background-color: #0A53B5;
     background-size: cover ;
     background-position-y: 50px;
