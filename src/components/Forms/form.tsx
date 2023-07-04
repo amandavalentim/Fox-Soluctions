@@ -309,7 +309,7 @@ const FormComponent = styled.section`
     }
 }
     //Mobile
-    @media (min-width: 320px) and (max-width: 768px){
+    @media (min-width: 320px) and (max-width: 336px){
         .show-on-mobile {
             display: flex;
             justify-content: space-between;
@@ -501,9 +501,20 @@ const FormComponent = styled.section`
         }
     }
 
+    //Mobile-375px
     @media (min-width:375px) and (max-width:425px) {
         .logo-Fox {
-            
+            position: absolute;
+            top: 5px;
+            left: -70px;
+        }
+        .nameLogo {
+            font-size: 1em;
+            position: absolute;
+            left: 40px;
+            top: 110px;
+            color: white;
+            font-family: 'Roboto-Medium';
         }
     }
 `;
