@@ -324,11 +324,7 @@ const FormComponent = styled.section`
             display: flex;
             justify-content: center;
             margin-left: -12px;
-<<<<<<< HEAD
-            margin-top: -1000px;
-=======
-            margin-top: -250px;
->>>>>>> ab5c30cf41ac8a6a60c06862c20e94188693a186
+            margin-top: -950px;
             form {
                 #title-mobile {
                     color: #FFFF;
