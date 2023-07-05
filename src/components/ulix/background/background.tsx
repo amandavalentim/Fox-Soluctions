@@ -21,7 +21,7 @@ const BackgroundComponent = styled.div`
     background-position-y: -145px;
     }
     
-    @media((min-width: 320px) and (max-width: 400px)){
+    @media((min-width: 320px) and (max-width: 500px)){
     background-image: url("/images/mobile - cadastro.svg");
     background-repeat: no-repeat;
     }
@@ -133,7 +133,7 @@ const BodyComponent = styled.body`
     }
     }
 
-    @media((min-width: 320px) and (max-width: 400px)) {
+    @media((min-width: 320px) and (max-width: 500px)) {
         .hide-on-small-desktops {
         display: none;
     }
