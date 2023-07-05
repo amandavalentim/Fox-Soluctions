@@ -1,5 +1,14 @@
 'use client'
 import styled from '@emotion/styled';
+import Input from './Input/Input';
+
+//mobile
+
+//tablet - 768px
+
+//desktop - 992px
+
+
 
 const FormComponent = styled.section`
 
@@ -10,18 +19,9 @@ const FormComponent = styled.section`
                 
             }
             .login {
-               
-                input {
-                    
-                }
-
-                input::placeholder{
-                    
-                }
-                input:focus{
-                    
-
-                }
+                margin: 45px;
+                display: flex;
+                
             }
            div {
                
