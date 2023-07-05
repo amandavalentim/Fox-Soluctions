@@ -27,8 +27,8 @@ const BackgroundComponent = styled.div`
     }
 
     @media((min-width: 768px) and (max-width: 1000px)) {
-    background-image: url("/images/tablet.svg");
-    background-position-y: 35px;
+    background-image: url("/images/tablet1.svg");
+    background-position-y: -85px;
     }
 `;
 const BodyComponent = styled.body`
@@ -43,6 +43,9 @@ const BodyComponent = styled.body`
         display: none;
     }
     .mobile {
+        display: none;
+    }
+    .tablet {
         display: none;
     }
     #img1 {
@@ -103,6 +106,9 @@ const BodyComponent = styled.body`
     .mobile {
         display: none;
     }
+    .tablet {
+        display: none;
+    }
     .desktop-1360 {
         display: none;
     }
@@ -118,13 +124,16 @@ const BodyComponent = styled.body`
     .mobile {
         display: none;
     }
+    .tablet {
+        display: none;
+    }
     .desktop-1360 {
         display: flex;
         justify-content: space-between;
     }
     }
 
-    @media((min-width: 320px) and (max-width: 640px)) {
+    @media((min-width: 320px) and (max-width: 400px)) {
         .hide-on-small-desktops {
         display: none;
     }
@@ -135,6 +144,28 @@ const BodyComponent = styled.body`
         display: none;
     }
     .mobile {
+        display: flex;
+        justify-content: space-between;
+    }
+    .mobile {
+        display: none;
+    }
+    }
+
+    @media((min-width: 768px) and (max-width: 1000px)) {
+        .hide-on-small-desktops {
+        display: none;
+    }
+    .desktop-1024 {
+        display: none;
+    }
+    .desktop-1360 {
+        display: none;
+    }
+    .mobile {
+        display: none;
+    }
+    .tablet {
         display: flex;
         justify-content: space-between;
     }
@@ -168,6 +199,10 @@ const Background = function() {
             </div>
 
             <div className='mobile'>
+                
+            </div>
+
+            <div className='tablet'>
                 
             </div>
             
