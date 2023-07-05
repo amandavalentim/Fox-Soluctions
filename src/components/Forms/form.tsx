@@ -1,5 +1,14 @@
 'use client'
 import styled from '@emotion/styled';
+import Input from './Input/Input';
+
+//mobile
+
+//tablet - 768px
+
+//desktop - 992px
+
+
 
 const FormComponent = styled.section`
 
@@ -33,28 +42,7 @@ const FormComponent = styled.section`
             .login {
                 margin: 45px;
                 display: flex;
-                input {
-                    border: none;
-                    width: 305px;
-                    border-bottom: 1px solid #FFFF;
-                    background-color: rgba(7, 179, 253, 0);
-                    justify-content: center;
-                    align-items: center;
-                    padding-bottom: 20px;
-                    outline: none;
-                    color: #FFF;
-                    font-family: 'Poppins-Medium';
-                }
-
-                input::placeholder{
-                    font-size: 15px;
-                    font-family: 'Poppins-Medium';
-                    color: #FFFF;
-                }
-                input:focus{
-                    border-bottom: 3px solid #93B413;
-
-                }
+                
             }
            div {
                width: 100%;
@@ -135,28 +123,7 @@ const FormComponent = styled.section`
             .login {
                 margin: 40px;
                 display: flex;
-                input {
-                    border: none;
-                    width: 325px;
-                    border-bottom: 2px solid #FFFF;
-                    background-color: rgba(7, 179, 253, 0);
-                    justify-content: center;
-                    align-items: center;
-                    padding-bottom: 20px;
-                    outline: none;
-                    color: #FFF;
-                    font-family: 'Poppins-Medium';
-                }
-
-                input::placeholder{
-                    font-size: 15px;
-                    font-family: 'Poppins-Medium';
-                    color: #FFFF;
-                }
-                input:focus{
-                    border-bottom: 3px solid #93B413;
-
-                }
+                
             }
            .enter {
                width: 400px;
@@ -235,28 +202,7 @@ const FormComponent = styled.section`
                 .login {
                     margin: 45px;
                     display: flex;
-                input {
-                    border: none;
-                    width: 310px;
-                    border-bottom: 1px solid #FFFF;
-                    background-color: rgba(7, 179, 253, 0);
-                    justify-content: center;
-                    align-items: center;
-                    padding-bottom: 20px;
-                    outline: none;
-                    color: #FFF;
-                    font-family: 'Poppins-Medium';
-                }
-
-                input::placeholder{
-                    font-size: 15px;
-                    font-family: 'Poppins-Medium';
-                    color: #FFFF;
-                }
-                input:focus{
-                    border-bottom: 3px solid #93B413;
-
-                }
+                
 
             }
             .enter {
@@ -337,27 +283,7 @@ const FormComponent = styled.section`
                         margin: 50px;
                         margin-top: 50px;
                         display: flex;
-                    input {
-                        border: none;
-                        width: 250px;
-                        border-bottom: 1px solid #FFFF;
-                        background-color: rgba(7, 179, 253, 0);
-                        justify-content: center;
-                        align-items: center;
-                        padding-bottom: 20px;
-                        outline: none;
-                        color: #FFF;
-                        font-family: 'Poppins-Medium';
-                    }
-
-                    input::placeholder{
-                        font-size: 15px;
-                        font-family: 'Poppins-Medium';
-                        color: #FFFF;
-                    }
-                    input:focus{
-                    border-bottom: 3px solid #93B413;
-                    }
+                    
                 }
             .enter-mobile {
                     width: 100%;
@@ -439,27 +365,7 @@ const FormComponent = styled.section`
                 .login-tablet {
                     margin: 40px;
                     display: flex;
-                    input {
-                        border: none;
-                        width: 325px;
-                        border-bottom: 1px solid #FFFF;
-                        background-color: rgba(7, 179, 253, 0);
-                        justify-content: center;
-                        align-items: center;
-                        padding-bottom: 20px;
-                        outline: none;
-                        color: #FFF;
-                        font-family: 'Poppins-Medium';
-                    }
-
-                    input::placeholder{
-                        font-size: 15px;
-                        font-family: 'Poppins-Medium';
-                        color: #FFFF;
-                    }
-                    input:focus{
-                    border-bottom: 3px solid #93B413;
-                    }
+                    
                     
                 }
                 .enter-tablet {
@@ -542,27 +448,7 @@ const FormComponent = styled.section`
                         margin: 50px;
                         margin-top: 50px;
                         display: flex;
-                    input {
-                        border: none;
-                        width: 250px;
-                        border-bottom: 1px solid #FFFF;
-                        background-color: rgba(7, 179, 253, 0);
-                        justify-content: center;
-                        align-items: center;
-                        padding-bottom: 20px;
-                        outline: none;
-                        color: #FFF;
-                        font-family: 'Poppins-Medium';
-                    }
-
-                    input::placeholder{
-                        font-size: 15px;
-                        font-family: 'Poppins-Medium';
-                        color: #FFFF;
-                    }
-                    input:focus{
-                    border-bottom: 3px solid #93B413;
-                    }
+                    
                 }
             .enter-mobile {
                     width: 100%;
@@ -642,27 +528,7 @@ const FormComponent = styled.section`
                 .login-mobile {
                         margin: 50px;
                         display: flex;
-                    input {
-                        border: none;
-                        width: 250px;
-                        border-bottom: 1px solid #FFFF;
-                        background-color: rgba(7, 179, 253, 0);
-                        justify-content: center;
-                        align-items: center;
-                        padding-bottom: 20px;
-                        outline: none;
-                        color: #FFF;
-                        font-family: 'Poppins-Medium';
-                    }
-
-                    input::placeholder{
-                        font-size: 10px;
-                        font-family: 'Poppins-Medium';
-                        color: #FFFF;
-                    }
-                    input:focus{
-                    border-bottom: 3px solid #93B413;
-                    }
+                    
                 }
             .enter-mobile {
                     width: 100%;
@@ -750,10 +616,10 @@ const Form = function(){
                             Login
                         </h1>
                         <div className='login-mobile'>
-                            <input type="email" name="e-mail" id="e-mail" placeholder='E-mail'/>
+                            <Input type="email" name="e-mail" id="e-mail" placeholder='E-mail'/>
                         </div>
                         <div className='login-mobile'>
-                            <input type="password" name="password" id="password" placeholder='Senha'/>
+                            <Input type="password" name="password" id="password" placeholder='Senha'/>
                         </div>
                         <div className='forget-mobile'>
                             <h4><span className='orange'>Esqueceu a senha?</span></h4>
@@ -774,10 +640,10 @@ const Form = function(){
                     <form>
                         <h1 id='title-tablet'>Login</h1>
                         <div className='login-tablet'>
-                            <input type="email" name="e-mail" id="e-mail" placeholder='E-mail'/>
+                            <Input type="email" name="e-mail" id="e-mail" placeholder='E-mail'/>
                         </div>
                         <div className='login-tablet'>
-                            <input type="password" name="password" id="password" placeholder='Senha'/>
+                            <Input type="password" name="password" id="password" placeholder='Senha'/>
                         </div>
                         <div className='forget-tablet'>
                             <h4><span className='orange'>Esqueceu a senha?</span></h4>
