@@ -3,10 +3,10 @@ import styled from '@emotion/styled';
 import Image from 'next/image';
 
 const BackgroundComponent = styled.div`
+    background-color: linear-gradient(180deg, #0A53B5 0%, #07B3FD 100%);
     background-repeat: no-repeat;
     background-size: cover ;
     height: 100vh;
-    background-color: linear-gradient(180deg, #0A53B5 0%, #07B3FD 100%);
 
     @media (min-width: 768px){
     background-image: url("/images/background-tablet-2.svg");
