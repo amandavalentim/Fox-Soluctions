@@ -3,51 +3,51 @@ import styled from '@emotion/styled';
 import { FaFacebookSquare, FaInstagram, FaTwitterSquare, FaGithubSquare} from "react-icons/fa";
 
 const FooterComponent = styled.footer`
-
-background: linear-gradient(180deg, rgba(7, 179, 253, 1), rgba(7, 179, 253, 1));
-        height: 400px;
-        width: 100%;
-        position: relative;
-        .show-on-mobile{
-            display: flex;
-            justify-content: space-between;
-        }
-        .container-center{
-                margin: auto;
-                padding: auto;
-                .box-mobile{
-                    width: 250px;
-                    height: 78px;
-                    border-radius: 5px;
-                    border: 3px solid #93B413;
-                    background: #93B413;
-                    margin: 40px;
-                    box-sizing: border-box;
-                    h3{
-                        text-align: justify ;
-                        margin: 20px;
-                        font-family: 'Poppins-Bold';
-                        font-size: 21px;
-                        color: #FEFEFE;
-                    }
-                    .internal-content{
-                        p{
-                            margin: 10px;
-                        }
-                    }
-                    
-                   
+    background: linear-gradient(180deg, rgba(7, 179, 253, 1), rgba(7, 179, 253, 1));
+    height: 400px;
+    width: 100%;
+    position: relative;
+    .show-on-mobile{
+        display: flex;
+        justify-content: space-between;
+    }
+    .container-center{
+        margin: auto;
+        padding: auto;
+        .box-mobile{
+            width: 250px;
+            height: 78px;
+            border-radius: 5px;
+            border: 3px solid #93B413;
+            background: #93B413;
+            margin: 40px;
+            box-sizing: border-box;
+            h3{
+                text-align: justify ;
+                margin: 20px;
+                font-family: 'Poppins-Bold';
+                font-size: 21px;
+                color: #FEFEFE;
+            }
+            .internal-content{
+                p{
+                    margin: 10px;
                 }
             }
-        .show-on-desktop{
-            display: none;
+                    
+                   
         }
+    }
+    .show-on-desktop{
+        display: none;
+    }
 
-    /* .show-on-desktop{
-        background: linear-gradient(180deg, rgba(7, 179, 253, 1), rgba(7, 179, 253, 1));
+    //Desktop
+    @media(min-width: 992px){
         height: 300px;
         width: 100%; 
         position: relative;
+        .show-on-desktop{
         display: flex;
         justify-content: space-between;
         .box{
@@ -147,9 +147,9 @@ background: linear-gradient(180deg, rgba(7, 179, 253, 1), rgba(7, 179, 253, 1));
     
     .show-on-mobile{
         display: none;
-    } */
-    
-    
+    }
+    }
+
 `;
 
 const Footer = function (){
@@ -168,7 +168,7 @@ const Footer = function (){
                     </div>
                 </div>
             </nav>
-            {/* <nav className='show-on-desktop'>
+            <nav className='show-on-desktop'>
                 <div className='box'>
                     <h3>Contatos</h3>
                     <p><span>Endereço: </span>Rua Tamoios, 246, Jardim Aeroporto - São Paulo, SP.</p>
@@ -194,7 +194,7 @@ const Footer = function (){
                         </div>
                     </div>
                 </div>
-            </nav> */}
+            </nav>
         </FooterComponent>
     )
 }
