@@ -51,38 +51,38 @@ const BodyComponent = styled.body`
     #img1 {
         position: absolute;
         top: 920px;
-        left: 120px;
+        left: 70px;
         
     }
     #img2 {
         position: absolute;
         top: 810px;
-        left: 200px;
+        left: 150px;
     }
     #img3 {
         position: absolute;
         top: 650px;
-        left: 180px;
+        left: 130px;
     }
     #img4 {
         position: absolute;
         top: 390px;
-        left: 80px;
+        left: 30px;
     }
     #img5 {
         position: absolute;
         top: 310px;
-        left: 260px;
+        left: 210px;
     }
     #img6 {
         position: absolute;
         top: 210px;
-        left: 340px;
+        left: 290px;
     }
     #img7 {
         position: absolute;
         top: 150px;
-        left: 380px;
+        left: 330px;
     }
     #img8 {
         position: absolute;
@@ -91,8 +91,28 @@ const BodyComponent = styled.body`
     }
     #img9 {
         position: absolute;
-        top: 260px;
-        left: 1280px;
+        top: 240px;
+        left: 1220px;
+    }
+    #img10 {
+        position: absolute;
+        top: 370px;
+        left: 1250px;
+    }
+    #img11 {
+        position: absolute;
+        top: 480px;
+        left: 1250px;
+    }
+    #img12 {
+        position: absolute;
+        top: 720px;
+        left: 1290px;
+    }
+    #img13 {
+        position: absolute;
+        top: 800px;
+        left: 740px;
     }
 
     @media((min-width: 1024px) and (max-width: 1100px)) {
@@ -111,6 +131,11 @@ const BodyComponent = styled.body`
     }
     .desktop-1360 {
         display: none;
+    }
+    #img1 {
+        position: absolute;
+        top: 680px;
+        left: 20px;
     }
     }
 
@@ -186,12 +211,16 @@ const Background = function() {
                     <Image src="/images/fox_paw8.png" width={150} height={150} alt='img-5' id='img5'/>
                     <Image src="/images/fox_paw-2.png" width={130} height={130} alt='img-6' id='img6'/>
                     <Image src="/images/fox_paw10.png" width={100} height={100} alt='img-7' id='img7'/>
-                    <Image src="/images/fox_paw11.png" width={155} height={155} alt='img-8' id='img8'/>
-                    <Image src="/images/fox_paw12.png" width={155} height={155} alt='img-9' id='img9'/>
+                    <Image src="/images/fox_paw11.png" width={145} height={145} alt='img-8' id='img8'/>
+                    <Image src="/images/fox_paw12.png" width={145} height={145} alt='img-9' id='img9'/>
+                    <Image src="/images/fox_paw-13.png" width={135} height={135} alt='img-10' id='img10'/>
+                    <Image src="/images/fox_paw14.png" width={290} height={290} alt='img-11' id='img11'/>
+                    <Image src="/images/fox_paw15-2.png" width={190} height={190} alt='img-12' id='img12'/>
+                    <Image src="/images/Stella.png" width={150} height={150} alt='img-13' id='img13'/>
             </div>
 
             <div className='desktop-1024'>
-                
+                <Image src="/images/fox_paw1.png" width={110} height={110} alt='img-1' id='img1'/>
             </div>
 
             <div className='desktop-1360'>
