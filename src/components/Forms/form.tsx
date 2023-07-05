@@ -408,7 +408,7 @@ const FormComponent = styled.section`
     }
 
     //Tablet
-    @media (min-width: 768px) and (max-width: 1024px) {
+    @media (min-width: 768px) and (max-width: 1022px) {
         .hide-on-mobile{
             display: none;
         }
@@ -511,7 +511,7 @@ const FormComponent = styled.section`
     }
 
     //Mobile-375px
-     @media (min-width:375px) and (max-width:767px) {
+     @media (min-width:375px) and (max-width:425px) {
         .show-on-mobile {
             display: flex;
             justify-content: space-between;
@@ -613,7 +613,7 @@ const FormComponent = styled.section`
     } 
 
      //Mobile-426px
-    @media (min-width:425px) and (max-width:767px) {
+    @media (min-width:426px) and (max-width:767px) {
         .show-on-mobile {
             display: flex;
             justify-content: space-between;
