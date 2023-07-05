@@ -11,6 +11,8 @@ exports.metadata = {
 function RootLayout(_a) {
     var children = _a.children;
     return (React.createElement("html", { lang: "pt-br" },
-        React.createElement("body", { className: inter.className }, children)));
+        React.createElement("body", { className: inter.className },
+            children,
+            React.createElement("div", null))));
 }
 exports["default"] = RootLayout;
