@@ -25,18 +25,18 @@ const InputField = styled.input`
 }
 
 @media (min-width: 768px){
-    width: 305px;
+      width: 305px;
 
 }
 
 @media (min-width: 992px){
-                    width: 325px;
-                    border-bottom: 2px solid #FFFF;
+          width: 325px;
+          border-bottom: 2px solid #FFFF;
                 
-            }
+        }
 
 @media (min-width:1200px){
-                    width: 310px;
+        width: 310px;
              
 
 }
