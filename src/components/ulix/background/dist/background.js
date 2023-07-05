@@ -27,7 +27,7 @@ var Background = function () {
                 React.createElement(image_1["default"], { src: "/images/fox_paw15-2.png", width: 190, height: 190, alt: 'img-12', id: 'img12' }),
                 React.createElement(image_1["default"], { src: "/images/Stella.png", width: 150, height: 150, alt: 'img-13', id: 'img13' })),
             React.createElement("div", { className: 'desktop-1024' },
-                React.createElement(image_1["default"], { src: "/images/fox_paw1.png", width: 110, height: 110, alt: 'img-1', id: 'img1' }),
+                React.createElement(image_1["default"], { src: "/images/fox_paw1.png", width: 90, height: 90, alt: 'img-1', id: 'img1' }),
                 React.createElement(image_1["default"], { src: "/images/fox_paw-2.png", width: 110, height: 110, alt: 'img-2', id: 'img2' }),
                 React.createElement(image_1["default"], { src: "/images/fox_paw16-2.png", width: 95, height: 95, alt: 'img-3', id: 'img3' }),
                 React.createElement(image_1["default"], { src: "/images/fox_paw4.png", width: 240, height: 240, alt: 'img-4', id: 'img4' }),

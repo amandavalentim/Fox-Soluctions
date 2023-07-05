@@ -245,7 +245,7 @@ const Background = function() {
             </div>
 
             <div className='desktop-1024'>
-                <Image src="/images/fox_paw1.png" width={110} height={110} alt='img-1' id='img1'/>
+                <Image src="/images/fox_paw1.png" width={90} height={90} alt='img-1' id='img1'/>
                     <Image src="/images/fox_paw-2.png" width={110} height={110} alt='img-2' id='img2'/>
                     <Image src="/images/fox_paw16-2.png" width={95} height={95} alt='img-3' id='img3'/>
                     <Image src="/images/fox_paw4.png" width={240} height={240} alt='img-4' id='img4'/>
