@@ -329,7 +329,7 @@ const FormComponent = styled.section`
                 #title-mobile {
                     color: #FFFF;
                     text-align: center;
-                    margin: -40px 0px 100px 0px;
+                    margin: 20px 0px 100px 0px;
                     font-size: 30px;
                     font-family: 'Poppins-Bold';
                 }
@@ -364,6 +364,7 @@ const FormComponent = styled.section`
                     .submit-mobile {
                         position: absolute;
                         left: 45px;
+                        top: 560px;
                         width: 70%;
                         height: 40px;
                         margin-top: 80px;
@@ -407,7 +408,7 @@ const FormComponent = styled.section`
     }
 
     //Tablet
-    @media (min-width: 768px) and (max-width: 1022px) {
+    @media (min-width: 768px) and (max-width: 1024px) {
         .hide-on-mobile{
             display: none;
         }
@@ -510,7 +511,7 @@ const FormComponent = styled.section`
     }
 
     //Mobile-375px
-    @media (min-width:375px) and (max-width:425px) {
+     @media (min-width:375px) and (max-width:767px) {
         .show-on-mobile {
             display: flex;
             justify-content: space-between;
@@ -528,16 +529,18 @@ const FormComponent = styled.section`
             display: flex;
             justify-content: center;
             margin-left: -12px;
-            margin-top: -350px;
+            margin-top: -950px;
             form {
                 #title-mobile {
                     color: #FFFF;
                     text-align: center;
-                    margin: 30px;
+                    margin: 20px 0px 100px 0px;
+                    font-size: 30px;
                     font-family: 'Poppins-Bold';
                 }
                 .login-mobile {
                         margin: 50px;
+                        margin-top: 50px;
                         display: flex;
                     input {
                         border: none;
@@ -553,7 +556,7 @@ const FormComponent = styled.section`
                     }
 
                     input::placeholder{
-                        font-size: 10px;
+                        font-size: 15px;
                         font-family: 'Poppins-Medium';
                         color: #FFFF;
                     }
@@ -566,9 +569,10 @@ const FormComponent = styled.section`
                     .submit-mobile {
                         position: absolute;
                         left: 45px;
+                        top: 560px;
                         width: 70%;
                         height: 40px;
-                        margin-top: 30px;
+                        margin-top: 80px;
                         border-radius: 20px;
                         border: none;
                         background-color: #93B413;
@@ -576,18 +580,16 @@ const FormComponent = styled.section`
                         align-items: center;
                         color: #FFFF;
                         font-family: 'Poppins-Medium';
-                        font-size: 15px;
+                        font-size: 18px; 
                         cursor: pointer;
                     }
                 }
 
                 .forget-mobile {
                     color: #F47216;
-                    font-size: 20px;
-                    font-family: 'Roboto-medium';
-                    font-style: normal;
+                    font-size: 16px;
+                    font-family: 'Roboto-Medium';
                     font-weight: 500;
-                    line-height: normal;
                     text-align: center;
                     margin-bottom: 10px;
                     cursor: pointer;
@@ -595,23 +597,23 @@ const FormComponent = styled.section`
                 } 
                 .create_account-mobile {
                     color: #FFF;
-                    font-size: 20px;
-                    font-family: 'Roboto-medium';
-                    font-style: normal;
+                    font-size: 16px;
+                    font-family: 'Roboto-Medium';
                     font-weight: 500;
                     line-height: normal;
                     text-align: center;
                     cursor: pointer;
+                    margin-top: 30px;
                     span {
                         color: #F47216;
                     }
                 } 
             }
         }
-    }
+    } 
 
-    //Mobile-426px
-    @media (min-width:426px) and (max-width:767px) {
+     //Mobile-426px
+    @media (min-width:425px) and (max-width:767px) {
         .show-on-mobile {
             display: flex;
             justify-content: space-between;
@@ -709,7 +711,7 @@ const FormComponent = styled.section`
                 } 
             }
         }
-    }
+    } 
 `;
 
 const Form = function(){
