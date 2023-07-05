@@ -137,6 +137,31 @@ const BodyComponent = styled.body`
         top: 680px;
         left: 20px;
     }
+    #img2 {
+        position: absolute;
+        top: 600px;
+        left: 70px;
+    }
+    #img3 {
+        position: absolute;
+        top: 540px;
+        left: 90px;
+    }
+    #img4 {
+        position: absolute;
+        top: 310px;
+        left: 10px;
+    }
+    #img5 {
+        position: absolute;
+        top: 220px;
+        left: 130px;
+    }
+    #img6 {
+        position: absolute;
+        top: 130px;
+        left: 110px;
+    }
     }
 
     @media((min-width: 1360px) and (max-width: 1500px)) {
@@ -221,6 +246,11 @@ const Background = function() {
 
             <div className='desktop-1024'>
                 <Image src="/images/fox_paw1.png" width={110} height={110} alt='img-1' id='img1'/>
+                    <Image src="/images/fox_paw-2.png" width={110} height={110} alt='img-2' id='img2'/>
+                    <Image src="/images/fox_paw16-2.png" width={95} height={95} alt='img-3' id='img3'/>
+                    <Image src="/images/fox_paw4.png" width={240} height={240} alt='img-4' id='img4'/>
+                    <Image src="/images/fox_paw16-2.png" width={90} height={90} alt='img-5' id='img5'/>
+                    <Image src="/images/fox_paw-2-1.png" width={110} height={110} alt='img-6' id='img6'/>
             </div>
 
             <div className='desktop-1360'>
