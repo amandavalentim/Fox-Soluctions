@@ -23,7 +23,7 @@ const FormComponent = styled.section`
         display: flex;
         justify-content: center;
         form {
-            #title {
+            .title {
                 color: #FFFF;
                 text-align: center;
                 margin: 20px;
@@ -324,16 +324,22 @@ const FormComponent = styled.section`
             display: flex;
             justify-content: center;
             margin-left: -12px;
+<<<<<<< HEAD
             margin-top: -1000px;
+=======
+            margin-top: -250px;
+>>>>>>> ab5c30cf41ac8a6a60c06862c20e94188693a186
             form {
                 #title-mobile {
                     color: #FFFF;
                     text-align: center;
-                    margin: 30px;
+                    margin: -40px 0px 100px 0px;
+                    font-size: 30px;
                     font-family: 'Poppins-Bold';
                 }
                 .login-mobile {
                         margin: 50px;
+                        margin-top: 50px;
                         display: flex;
                     input {
                         border: none;
@@ -364,7 +370,7 @@ const FormComponent = styled.section`
                         left: 45px;
                         width: 70%;
                         height: 40px;
-                        margin-top: 30px;
+                        margin-top: 80px;
                         border-radius: 20px;
                         border: none;
                         background-color: #93B413;
@@ -395,6 +401,7 @@ const FormComponent = styled.section`
                     line-height: normal;
                     text-align: center;
                     cursor: pointer;
+                    margin-top: 30px;
                     span {
                         color: #F47216;
                     }
@@ -717,7 +724,7 @@ const Form = function(){
             <nav className='hide-on-mobile'>
                 <div className='box-container'>
                     <form>
-                        <h1 id='title'>Login</h1>
+                        <h1 className='title'>Login</h1>
                         <div className='login'>
                             <input type="email" name="e-mail" id="e-mail" placeholder='E-mail'/>
                         </div>

@@ -19,6 +19,7 @@ const FooterComponent = styled.footer`
                 color: #FEFEFE;
                 font-size: 25px;
                 font-family: 'Poppins-bold';
+                cursor: pointer;
             }
             h3:hover{
                 transform: translateX(10px) scale(1.2);
