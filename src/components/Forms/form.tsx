@@ -573,7 +573,7 @@ const FormComponent = styled.section`
                         align-items: center;
                         color: #FFFF;
                         font-family: 'Poppins-Medium';
-                        font-size: 15px; 
+                        font-size: 15px;
                         cursor: pointer;
                     }
                 }
@@ -608,7 +608,7 @@ const FormComponent = styled.section`
     }
 
     //Mobile-426px
-    @media (min-width:426px) and (max-width:768px) {
+    @media (min-width:426px) and (max-width:767px) {
         .show-on-mobile {
             display: flex;
             justify-content: space-between;
