@@ -8,7 +8,6 @@ export default function Home() {
   return (
     <main>
       <Head/>
-      <Background/>
       <Footer/>
       <Body/>
       <Form/>
