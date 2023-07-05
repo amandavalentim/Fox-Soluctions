@@ -3,10 +3,50 @@ import styled from '@emotion/styled';
 import { FaFacebookSquare, FaInstagram, FaTwitterSquare, FaGithubSquare} from "react-icons/fa";
 
 const FooterComponent = styled.footer`
-    .show-on-desktop{
+
+background: linear-gradient(180deg, rgba(7, 179, 253, 1), rgba(7, 179, 253, 1));
+        height: 400px;
+        width: 100%;
+        position: relative;
+        .show-on-mobile{
+            display: flex;
+            justify-content: space-between;
+        }
+        .container-center{
+                margin: auto;
+                padding: auto;
+                .box-mobile{
+                    width: 250px;
+                    height: 78px;
+                    border-radius: 5px;
+                    border: 3px solid #93B413;
+                    background: #93B413;
+                    margin: 40px;
+                    box-sizing: border-box;
+                    h3{
+                        text-align: justify ;
+                        margin: 20px;
+                        font-family: 'Poppins-Bold';
+                        font-size: 21px;
+                        color: #FEFEFE;
+                    }
+                    .internal-content{
+                        p{
+                            margin: 10px;
+                        }
+                    }
+                    
+                   
+                }
+            }
+        .show-on-desktop{
+            display: none;
+        }
+
+    /* .show-on-desktop{
         background: linear-gradient(180deg, rgba(7, 179, 253, 1), rgba(7, 179, 253, 1));
         height: 300px;
-        width: 100%;
+        width: 100%; 
         position: relative;
         display: flex;
         justify-content: space-between;
@@ -19,7 +59,7 @@ const FooterComponent = styled.footer`
                 color: #FEFEFE;
                 font-size: 25px;
                 font-family: 'Poppins-bold';
-                cursor: pointer;
+                cursor: default;
             }
             h3:hover{
                 transform: translateX(10px) scale(1.2);
@@ -30,6 +70,7 @@ const FooterComponent = styled.footer`
                 color: #FEFEFE;
                 font-family: 'Poppins-Regular';
                 font-size: 14px;
+                cursor: default;
             }
             p:hover{
                 transform: translateX(10px) scale(1.2);
@@ -37,7 +78,6 @@ const FooterComponent = styled.footer`
             span{
                 font-size: 15px;
                 font-family: 'Poppins-Semibold';
-                cursor: pointer;
             }
         }
         a{
@@ -107,57 +147,28 @@ const FooterComponent = styled.footer`
     
     .show-on-mobile{
         display: none;
-    }
+    } */
     
-    //Mobile
-
-    @media ((min-width: 320px) and (max-width: 700px)){
-        background: linear-gradient(180deg, rgba(7, 179, 253, 1), rgba(7, 179, 253, 1));
-        height: 400px;
-        width: 100%;
-        position: relative;
-        .show-on-mobile{
-            display: flex;
-            justify-content: space-between;
-        }
-        .container-center{
-                margin: auto;
-                padding: auto;
-                .box-mobile{
-                    width: 250px;
-                    height: 78px;
-                    border-radius: 5px;
-                    border: 3px solid #93B413;
-                    background: #93B413;
-                    margin: 40px;
-                    box-sizing: border-box;
-                    h3{
-                        text-align: justify ;
-                        margin: 20px;
-                        font-family: 'Poppins-Bold';
-                        font-size: 21px;
-                        color: #FEFEFE;
-                    }
-                    .internal-content{
-                        p{
-                            margin: 10px;
-                        }
-                    }
-                    
-                   
-                }
-            }
-        .show-on-desktop{
-            display: none;
-        }
-
-    }
+    
 `;
 
 const Footer = function (){
     return(
         <FooterComponent>
-            <nav className='show-on-desktop'>
+            <nav className='show-on-mobile'>
+                <div className='container-center'>
+                    <div className='box-mobile'>
+                        <h3>Contatos</h3>
+                    </div>
+                    <div className='box-mobile'>
+                        <h3>Nossa Empresa</h3>
+                    </div>
+                    <div className='box-mobile'>
+                        <h3>Redes Sociais</h3>
+                    </div>
+                </div>
+            </nav>
+            {/* <nav className='show-on-desktop'>
                 <div className='box'>
                     <h3>Contatos</h3>
                     <p><span>Endereço: </span>Rua Tamoios, 246, Jardim Aeroporto - São Paulo, SP.</p>
@@ -183,25 +194,7 @@ const Footer = function (){
                         </div>
                     </div>
                 </div>
-            </nav>
-            <nav className='show-on-mobile'>
-                <div className='container-center'>
-                    <div className='box-mobile'>
-                        <h3>Contatos</h3>
-                        {/* <div className='internal-content'>
-                            <p><span>Endereço: </span>Rua Tamoios, 246, Jardim Aeroporto - São Paulo, SP.</p>
-                            <p><span>Telefone: </span> (11) 99999-9999</p>
-                            <p><span>Email: </span>foxsoluctions@gmail.com</p>
-                        </div> */}
-                    </div>
-                    <div className='box-mobile'>
-                        <h3>Nossa Empresa</h3>
-                    </div>
-                    <div className='box-mobile'>
-                        <h3>Redes Sociais</h3>
-                    </div>
-                </div>
-            </nav>
+            </nav> */}
         </FooterComponent>
     )
 }
