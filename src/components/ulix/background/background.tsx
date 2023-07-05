@@ -1,10 +1,12 @@
 'use client';
 import styled from '@emotion/styled';
+
 const BackgroundComponent = styled.html`
     background-image: url("/images/background2.svg");
     background-repeat: no-repeat;
     background-size: cover ;
     height: 100vh;
+    background-position-y: 10000px;
 
     @media((min-width: 1024px) and (max-width: 1100px)){
     background-image: url("/images/background1.svg");

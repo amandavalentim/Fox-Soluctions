@@ -7,7 +7,7 @@ const FooterComponent = styled.footer`
         background: linear-gradient(180deg, rgba(7, 179, 253, 1), rgba(7, 179, 253, 1));
         height: 300px;
         width: 100%;
-        top: 900px;
+        /* top: 600px; */
         position: relative;
         display: flex;
         justify-content: space-between;
@@ -109,12 +109,14 @@ const FooterComponent = styled.footer`
         display: none;
     }
     
+    //Mobile
+
     @media ((min-width: 320px) and (max-width: 700px)){
         background: linear-gradient(180deg, rgba(7, 179, 253, 1), rgba(7, 179, 253, 1));
         height: 400px;
         width: 100%;
         position: relative;
-        top: 900px;
+        /* top: 600px; */
         .show-on-mobile{
             display: flex;
             justify-content: space-between;
