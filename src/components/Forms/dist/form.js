@@ -6,7 +6,7 @@ var __makeTemplateObject = (this && this.__makeTemplateObject) || function (cook
 };
 exports.__esModule = true;
 var styled_1 = require("@emotion/styled");
-var FormComponent = styled_1["default"].section(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n\n    @media (min-width: 768px) {\n        \n    }\n\n    @media (min-width: 992px) {\n        \n    }\n\n    @media (min-width:1200px) {\n\n    }\n\n    @media (min-width: 1600px) {\n        \n    }\n"], ["\n\n    @media (min-width: 768px) {\n        \n    }\n\n    @media (min-width: 992px) {\n        \n    }\n\n    @media (min-width:1200px) {\n\n    }\n\n    @media (min-width: 1600px) {\n        \n    }\n"])));
+var FormComponent = styled_1["default"].section(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n\n    .box-container {\n        position: absolute;\n        top: 300px;\n        left: 50px;\n    }\n\n    @media (min-width: 768px) {\n        \n    }\n\n    @media (min-width: 992px) {\n        \n    }\n\n    @media (min-width:1200px) {\n\n    }\n\n    @media (min-width: 1600px) {\n        \n    }\n"], ["\n\n    .box-container {\n        position: absolute;\n        top: 300px;\n        left: 50px;\n    }\n\n    @media (min-width: 768px) {\n        \n    }\n\n    @media (min-width: 992px) {\n        \n    }\n\n    @media (min-width:1200px) {\n\n    }\n\n    @media (min-width: 1600px) {\n        \n    }\n"])));
 var Form = function () {
     return (React.createElement(FormComponent, null,
         React.createElement("div", { className: 'box-container' },

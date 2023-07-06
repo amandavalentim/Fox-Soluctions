@@ -2,6 +2,7 @@
 import styled from '@emotion/styled';
 
 const BackgroundComponent = styled.div`
+position: relative;
     background-color: linear-gradient(180deg, #0A53B5 0%, #07B3FD 100%);
     background-repeat: no-repeat;
     background-size: cover ;

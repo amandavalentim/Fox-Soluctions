@@ -3,6 +3,12 @@ import styled from '@emotion/styled';
 
 const FormComponent = styled.section`
 
+    .box-container {
+        position: absolute;
+        top: 300px;
+        left: 50px;
+    }
+
     @media (min-width: 768px) {
         
     }
