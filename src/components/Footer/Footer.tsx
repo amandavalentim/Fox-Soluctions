@@ -44,15 +44,10 @@ const FooterComponent = styled.footer`
 
     //Desktop
     @media(min-width: 992px){
-        height: 300px;
-        width: 100%; 
-        position: relative;
         .show-on-desktop{
         display: flex;
         justify-content: space-between;
         .box{
-            padding: auto;
-            margin: auto;
             h3{
                 margin: 20px;
                 text-align: center;
