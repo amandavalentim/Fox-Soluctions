@@ -11,31 +11,90 @@ const FooterComponent = styled.footer`
             margin: 20px;
             h3{
                 margin: 10px;
-                padding: 20px;
+                padding: 15px;
                 border-radius: 5px;
                 border: 3px solid #93B413;
                 background: #93B413;
                 height: 70px;
+                font-family: 'Poppins-Bold';
+                font-size: 25px;
+                color: #fff;
             }
             p{
                 margin: 20px;
-                width: 250px;
+                width: auto;
+                font-family: 'Poppins-Regular';
+                color: #fff;
+                cursor: default;
+                span{
+                    font-family: 'Poppins-Bold';
+                    font-size: 15px;
+                }
             }
             a{
                 display: grid;
                 margin: 20px;
+                font-family: 'Poppins-Regular';
+                color: #fff;
             }
             .container-icons{
-                margin: 20px;
+                margin: 10px;
+                display: flex;
+                .facebook{
+                    width: 50px;
+                    height: 60px;
+                    fill: #1877F2;
+                    margin:5px;
+                }
+                .instagram{
+                    width: 50px;
+                    height: 60px;
+                    fill: #C82D8E;
+                    margin:5px;
+                }
+                .twitter{
+                    width: 50px;
+                    height: 60px;
+                    fill: #098BEA;
+                    margin:5px;
+                }
+                .github{
+                    width: 50px;
+                    height: 60px;
+                    margin:5px;
+                }
             }
         }
     }
     //Desktop
     @media(min-width: 992px){
-          
+        .container-center{
+            display: flex;
+            justify-content: space-between;
+            .box{
+                h3{
+                    background:none;
+                    border: none;
+                    width: 250px;
+                    text-align: center;
+                }
+                p{
+                    margin: 10px;
+                    width: 290px;
+                }
+                a{
+                    margin: 17px;
+                }
+            }
+        }
     }
     
-    
+    @media(min-width:1200px){
+        .container-center{
+            margin: 40px;
+            justify-content: space-between;
+        }
+    }
     
 
 `;
