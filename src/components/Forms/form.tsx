@@ -5,8 +5,7 @@ import Input from './Input/Input'
 const FormComponent = styled.section`
 
     * {
-        box-sizing: border-box;  
-        
+        box-sizing: border-box;    
     }
 
     .title {
@@ -27,12 +26,13 @@ const FormComponent = styled.section`
             .forget {
                 padding-top: 0px 0px 0px 10px;
                 text-align: center;
-                font-size: 15px;
+                font-size: 13px;
                 color: #F47216;
             }
             .create_account {
                 padding-top: 15px;
                 text-align: center;
+                font-size: 13px;
                 span {
                     color: #F47216;
                 }
@@ -42,7 +42,6 @@ const FormComponent = styled.section`
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                width: 100%;
                 padding-top: 50px;
                 .submit {
                     border: none;
@@ -59,8 +58,26 @@ const FormComponent = styled.section`
     }
 
     @media (min-width: 768px) {
-        .hide-on-desktop {
+        /* .hide-on-desktop {
             display: none;
+        } */
+
+        .box-container {
+            position: absolute;
+            top: 213px;
+            left: 157px;
+            width: 428px;
+            height: 450px;
+            border-radius: 19px;
+            background: linear-gradient(180deg, #07B3FD 0%, #0A53B5 100%);
+            form {
+                .forget {
+                    color: #FFFF;
+                }
+                .create_account {
+                    color: #FFFF;
+                }
+            }
         }
     }
 

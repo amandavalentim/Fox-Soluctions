@@ -6,7 +6,7 @@ import styled from '@emotion/styled';
 const InputField = styled.input`
       border: none;
       width: 230px;
-      border-bottom: 2px solid #000;
+      border-bottom: 2px solid #FFFF;
       background-color: rgba(7, 179, 253, 0);
       justify-content: center;
       align-items: center;
