@@ -1,7 +1,7 @@
 import Background from '@/components/ulix/background/background'
 import Head  from '../components/Head/Head'
 import Footer  from '../components/Footer/Footer'
-import Form from '../components/Forms/Form'
+import Form from '../components/Forms/form'
 
 export default function Home() {
   return (
@@ -11,5 +11,6 @@ export default function Home() {
       <Footer/>
       <Form/>
     </main>
+
   )
 }
