@@ -10,6 +10,9 @@ const FormComponent = styled.section`
     }
 
     .title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         font-family: 'poppins-bold';
         font-size: 30px;
         font-style: normal;
@@ -17,7 +20,7 @@ const FormComponent = styled.section`
 
     .box-container {
         position: absolute;
-        top: 290px;
+        top: 180px;
         left: 15px;
         color: #000;
         form {
