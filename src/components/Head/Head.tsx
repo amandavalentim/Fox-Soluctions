@@ -70,6 +70,46 @@ const HeadComponent = styled.head`
         font-family: 'Roboto-Medium';
     }
     }
+
+    @media (min-width: 922px) {
+
+        .hide-on-mobile {
+                display: flex;
+                justify-content: space-between;
+                position: absolute;
+                left: 740px;
+            }
+
+            .show-on-mobile {
+                display: none;
+            }      
+    }
+
+    @media (min-width: 1200px) {
+        .hide-on-mobile {
+                display: flex;
+                justify-content: space-between;
+                position: absolute;
+                left: 1070px;
+            }
+
+            .show-on-mobile {
+                display: none;
+            } 
+    }
+
+    @media (min-width: 1600px) {
+        .hide-on-mobile {
+                display: flex;
+                justify-content: space-between;
+                position: absolute;
+                left: 1295px;
+            }
+
+            .show-on-mobile {
+                display: none;
+            } 
+    }
 `;
 
 const Ul = styled.ul`
