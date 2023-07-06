@@ -79,6 +79,21 @@
   margin: 0;
 }
 
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+
+*::-webkit-scrollbar-track {
+  background: #0A53B5;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #93B413;
+  border-radius: 20px;
+  border: 3px solid #0A53B5;
+}
+
 
 a {
   color: inherit;
