@@ -33,7 +33,6 @@ position: relative;
 const Background = function() {
     return(
         <BackgroundComponent>
-
         </BackgroundComponent>
     )
 }
