@@ -7,7 +7,7 @@ position: relative;
     background-repeat: no-repeat;
     background-size: cover ;
     height: 100vh;
-    
+    width: 100%;
 
     @media (min-width: 768px){
     background-image: url("/images/background-tablet-2.svg");
@@ -33,7 +33,6 @@ position: relative;
 const Background = function() {
     return(
         <BackgroundComponent>
-
         </BackgroundComponent>
     )
 }
