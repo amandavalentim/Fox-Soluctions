@@ -7,6 +7,7 @@ const FormComponent = styled.section`
         position: absolute;
         top: 300px;
         left: 50px;
+        color: #FFFF;
     }
 
     @media (min-width: 768px) {
