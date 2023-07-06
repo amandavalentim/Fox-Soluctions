@@ -5,22 +5,23 @@ import styled from '@emotion/styled';
 
 const InputField = styled.input`
       border: none;
-      width: 250px;
-      border-bottom: 1px solid #FFFF;
+      width: 230px;
+      border-bottom: 2px solid #000;
       background-color: rgba(7, 179, 253, 0);
       justify-content: center;
       align-items: center;
-      padding-bottom: 20px;
+      padding-bottom: 10px;
+      margin: 30px;
       outline: none;
       color: #FFF;
       font-family: 'Poppins-Medium';
 
 &::placeholder{
-      font-size: 15px;
-      color: #FFFF;
+      font-size: 14px;
+      color: #000;
 }
 &:focus{
-      border-bottom: 3px solid #93B413;
+      border-bottom: 2px solid #93B413;
 
 }
 
