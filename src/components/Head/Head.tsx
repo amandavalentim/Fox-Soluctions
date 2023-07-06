@@ -25,6 +25,7 @@ const HeadComponent = styled.head`
             .faBars {
                 width: 30px;
                 height: 30px;
+                color: #fff;
             }
 
     .logo-Fox {
