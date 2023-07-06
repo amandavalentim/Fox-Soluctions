@@ -4,23 +4,23 @@ import styled from '@emotion/styled';
 
 
 const InputField = styled.input`
-    border: none;
-    width: 250px;
-    border-bottom: 1px solid #FFFF;
-    background-color: rgba(7, 179, 253, 0);
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 20px;
-    outline: none;
-    color: #FFF;
-    font-family: 'Poppins-Medium';
+      border: none;
+      width: 250px;
+      border-bottom: 1px solid #FFFF;
+      background-color: rgba(7, 179, 253, 0);
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 20px;
+      outline: none;
+      color: #FFF;
+      font-family: 'Poppins-Medium';
 
 &::placeholder{
-    font-size: 15px;
-    color: #FFFF;
+      font-size: 15px;
+      color: #FFFF;
 }
 &:focus{
-    border-bottom: 3px solid #93B413;
+      border-bottom: 3px solid #93B413;
 
 }
 
@@ -30,15 +30,13 @@ const InputField = styled.input`
 }
 
 @media (min-width: 992px){
-          width: 325px;
-          border-bottom: 2px solid #FFFF;
+      width: 325px;
+      border-bottom: 2px solid #FFFF;
                 
-        }
+}
 
 @media (min-width:1200px){
-        width: 310px;
-             
-
+      width: 310px;
 }
 
 `;
