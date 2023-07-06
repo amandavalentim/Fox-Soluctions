@@ -20,7 +20,7 @@ const FormComponent = styled.section`
 
     .box-container {
         position: absolute;
-        top: 180px;
+        top: 240px;
         left: 15px;
         color: #000;
         form {

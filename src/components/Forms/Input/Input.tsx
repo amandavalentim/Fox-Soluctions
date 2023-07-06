@@ -47,11 +47,11 @@ const InputField = styled.input`
     name?:string;
     id ?: string;
     placeholder ?: string;
-    value ?: string
+    defaultValue ?: string
    }             
 function Input(props : InputProps) {
   return (
-    <InputField type={props.type} name={props.name} id={props.id} placeholder={props.placeholder} value={props.value ? props.value:''}/>
+    <InputField type={props.type} name={props.name} id={props.id} placeholder={props.placeholder} value={props.defaultValue ? props.defaultValue:''}/>
   )
 }
 
