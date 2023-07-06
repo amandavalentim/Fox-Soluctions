@@ -5,20 +5,14 @@ import Input from './Input/Input'
 const FormComponent = styled.section`
 
     * {
-        box-sizing: border-box;
-        
+        box-sizing: border-box;  
         
     }
 
     .title {
-        
-        position: absolute;
-        left: 120px;
-        top: 200px;
         font-family: 'poppins-bold';
         font-size: 30px;
         font-style: normal;
-        
     }    
 
     .box-container {
@@ -41,7 +35,6 @@ const FormComponent = styled.section`
                 }
             }
             .enter {
-                
                 border-style: none;
                 display: flex;
                 align-items: center;
@@ -69,15 +62,21 @@ const FormComponent = styled.section`
     }
 
     @media (min-width: 992px) {
-        
+        .hide-on-desktop {
+            display: none;
+        }
     }
 
     @media (min-width:1200px) {
-
+        .hide-on-desktop {
+            display: none;
+        }
     }
 
     @media (min-width: 1600px) {
-        
+        .hide-on-desktop {
+            display: none;
+        }
     }
 `;
 
@@ -86,8 +85,8 @@ const Form = function(){
     return(
         <FormComponent>
                 <nav className='hide-on-desktop'>
-                <h1 className='title'>Login</h1>
                     <div className='box-container'>
+                    <h1 className='title'>Login</h1>
                         <form>
                             <div className='login'>
                                 <Input type="email" name="e-mail" id="e-mail" placeholder='E-mail'/>
