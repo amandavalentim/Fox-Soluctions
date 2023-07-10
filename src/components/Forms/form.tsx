@@ -8,59 +8,59 @@ const FormComponent = styled.section`
         box-sizing: border-box;    
     }
    
-        form {
+    form {
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        .title {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'poppins-bold';
+            font-size: 30px;
+            color: #ffff;
             position: absolute;
-            top: 80%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            .title {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                font-family: 'poppins-bold';
-                font-size: 30px;
-                color: #ffff;
-                position: absolute;
-                top: -30%;
-                left: 33%;
-            }         
+            top: -30%;
+            left: 33%;
+        }         
 
-            .forget {
-                padding: 0px 0px 0px 10px;
-                text-align: center;
-                font-size: 13px;
+        .forget {
+            padding: 0px 0px 0px 10px;
+            text-align: center;
+            font-size: 13px;
+            color: #F47216;
+        }
+        .create_account {
+            padding-top: 15px;
+            text-align: center;
+            font-size: 13px;
+            color: #FFFF;
+            span {
                 color: #F47216;
             }
-            .create_account {
-                padding-top: 15px;
-                text-align: center;
-                font-size: 13px;
+        }
+        .enter {
+            border-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 50px;
+            .submit {
+                border: none;
+                background-color: #93B413;
                 color: #FFFF;
-                span {
-                    color: #F47216;
-                }
+                border-radius: 20px;
+                width: 150px;
+                height: 40px;
+                font-family: 'poppins-medium';
+                font-size: 20px;
             }
-            .enter {
-                border-style: none;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                padding-top: 50px;
-                .submit {
-                    border: none;
-                    background-color: #93B413;
-                    color: #FFFF;
-                    border-radius: 20px;
-                    width: 150px;
-                    height: 40px;
-                    font-family: 'poppins-medium';
-                    font-size: 20px;
-                }
-                .submit:hover {
-                    background-color: #9fc214;
-                }
+            .submit:hover {
+                background-color: #9fc214;
             }
         }
+    }
     
 
     @media (min-width: 768px) {
@@ -69,13 +69,19 @@ const FormComponent = styled.section`
         } */
 
         .box-container {
-            
+            position: absolute;
+            top: 80%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 19px;
+            background: linear-gradient(180deg, #07B3FD 0%, #0A53B5 100%);
+            width: 100%;
             form {
-                transform: translate(-50%, -50%);
-                border-radius: 19px;
-                background: linear-gradient(180deg, #07B3FD 0%, #0A53B5 100%);
-                width: 60%;
-                height: 55vh;
+                width: 100%;
+                height: 66vh;
+                .login {
+                    text-align: center;
+                }
                 .title {
                     display: flex;
                     justify-content: center;
@@ -84,8 +90,8 @@ const FormComponent = styled.section`
                     font-size: 30px;
                     color: #ffff;
                     position: absolute;
-                    top: -30%;
-                    left: 37%;
+                    top: -10%;
+                    left: 40%;
                 }         
             }
         }
@@ -117,7 +123,7 @@ const Form = function(){
                 <nav className='hide-on-desktop'>
                     <div className='box-container'>
                         <form>
-                        <h1 className='title'>Login</h1>
+                            <h1 className='title'>Login</h1>
                             <div className='login'>
                                 <Input type="email" name="e-mail" id="e-mail" placeholder='E-mail'/>
                             </div>
