@@ -7,25 +7,24 @@ const FormComponent = styled.section`
     * {
         box-sizing: border-box;    
     }
-
-    .title {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-family: 'poppins-bold';
-        font-size: 30px;
-        font-style: normal;
-    }    
-
-    .box-container {
-        position: absolute;
-        top: 240px;
-        left: 15px;
-        color: #ffff;
-    .title {
-        color: #ffff;
-    }
+   
         form {
+            position: absolute;
+            top: 80%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            .title {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-family: 'poppins-bold';
+                font-size: 30px;
+                color: #ffff;
+                position: absolute;
+                top: -30%;
+                left: 33%;
+            }         
+
             .forget {
                 padding: 0px 0px 0px 10px;
                 text-align: center;
@@ -36,6 +35,7 @@ const FormComponent = styled.section`
                 padding-top: 15px;
                 text-align: center;
                 font-size: 13px;
+                color: #FFFF;
                 span {
                     color: #F47216;
                 }
@@ -61,7 +61,7 @@ const FormComponent = styled.section`
                 }
             }
         }
-    }
+    
 
     @media (min-width: 768px) {
         /* .hide-on-desktop {
@@ -69,15 +69,24 @@ const FormComponent = styled.section`
         } */
 
         .box-container {
-            position: absolute;
-            top: 213px;
-            left: 157px;
-            width: 428px;
-            height: 450px;
-            border-radius: 19px;
-            background: linear-gradient(180deg, #07B3FD 0%, #0A53B5 100%);
+            
             form {
-                
+                transform: translate(-50%, -50%);
+                border-radius: 19px;
+                background: linear-gradient(180deg, #07B3FD 0%, #0A53B5 100%);
+                width: 60%;
+                height: 55vh;
+                .title {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-family: 'poppins-bold';
+                    font-size: 30px;
+                    color: #ffff;
+                    position: absolute;
+                    top: -30%;
+                    left: 37%;
+                }         
             }
         }
     }
@@ -107,8 +116,8 @@ const Form = function(){
         <FormComponent>
                 <nav className='hide-on-desktop'>
                     <div className='box-container'>
-                    <h1 className='title'>Login</h1>
                         <form>
+                        <h1 className='title'>Login</h1>
                             <div className='login'>
                                 <Input type="email" name="e-mail" id="e-mail" placeholder='E-mail'/>
                             </div>
