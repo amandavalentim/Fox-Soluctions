@@ -99,19 +99,19 @@ const FormComponent = styled.section`
 
     @media (min-width: 992px) {
         .hide-on-desktop {
-            display: none;
+            display: flex;
         }
     }
 
     @media (min-width:1200px) {
         .hide-on-desktop {
-            display: none;
+            display: flex;
         }
     }
 
     @media (min-width: 1600px) {
         .hide-on-desktop {
-            display: none;
+            display: flex;
         }
     }
 `;
