@@ -61,6 +61,7 @@ const FooterComponent = styled.footer`
                 .github{
                     width: 50px;
                     height: 60px;
+                    fill: #000;
                     margin:5px;
                 }
             }
@@ -91,7 +92,6 @@ const FooterComponent = styled.footer`
     
     @media(min-width:1200px){
         .container-center{
-            margin: 40px;
             justify-content: space-between;
         }
     }
