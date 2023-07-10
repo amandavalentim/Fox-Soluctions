@@ -16,7 +16,7 @@ const BackgroundComponent = styled.div`
 
     @media (min-width: 992px){
     background-image: url("/images/background3.svg");
-    background-position-y: -40px;
+    background-position-y: -100px;
     }
 
     @media (min-width: 1200px){
