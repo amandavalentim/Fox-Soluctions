@@ -4,34 +4,34 @@ import Image from 'next/image';
 import { FaBars } from "react-icons/fa";
 
 const HeadComponent = styled.head`
-            background: linear-gradient(180deg, #07B3FD 0%, #0081E8 100%);
-            height: 150px;
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px;
-            position: relative;
+    background: linear-gradient(180deg, #07B3FD 0%, #0081E8 100%);
+    height: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: relative;
 
-            .hide-on-mobile {
-                display: none;
-            }
+    .hide-on-mobile {
+        display: none;
+    }
 
-            .show-on-mobile {
-                display: flex;
-                justify-content: space-between;
-            }
+    .show-on-mobile {
+        display: flex;
+        justify-content: space-between;
+    }
 
-            .faBars {
-                width: 30px;
-                height: 30px;
-                color: #fff;
-            }
+    .faBars {
+        width: 30px;
+        height: 30px;
+        color: #fff;
+    }
 
     .logo-Fox {
         position: absolute;
         top: 5px;
-        left: 5px;
+        left: 110px;
     }
 
     .nameLogo {
@@ -59,7 +59,7 @@ const HeadComponent = styled.head`
             .logo-Fox {
                 position: absolute;
                 top: 5px;
-                left: -35px;
+                left: 70px;
     }
 
     .nameLogo {
@@ -128,7 +128,9 @@ const Head = function() {
       <HeadComponent>
              
                   <nav className='header'>
-                      <Image className='logo-Fox' src="/images/logo-fox1.svg" width={310} height={104} alt="logo" />
+                        <a href="/">
+                        <Image className='logo-Fox' src="/images/logo-fox1.svg" width={100} height={104} alt="logo" />
+                        </a>
                       <div className='nameLogo'>Fox Soluctions</div>
                   </nav>
               
