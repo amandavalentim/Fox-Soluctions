@@ -21,13 +21,13 @@ const FormComponent = styled.section`
         position: absolute;
         top: 240px;
         left: 15px;
-        color: #000;
+        color: #ffff;
     .title {
-        color: #000;
+        color: #ffff;
     }
         form {
             .forget {
-                padding-top: 0px 0px 0px 10px;
+                padding: 0px 0px 0px 10px;
                 text-align: center;
                 font-size: 13px;
                 color: #F47216;
@@ -56,6 +56,9 @@ const FormComponent = styled.section`
                     font-family: 'poppins-medium';
                     font-size: 20px;
                 }
+                .submit:hover {
+                    background-color: #9fc214;
+                }
             }
         }
     }
@@ -74,12 +77,7 @@ const FormComponent = styled.section`
             border-radius: 19px;
             background: linear-gradient(180deg, #07B3FD 0%, #0A53B5 100%);
             form {
-                .forget {
-                    color: #FFFF;
-                }
-                .create_account {
-                    color: #FFFF;
-                }
+                
             }
         }
     }
