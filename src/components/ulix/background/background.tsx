@@ -2,8 +2,8 @@
 import styled from '@emotion/styled';
 
 const BackgroundComponent = styled.div`
-position: relative;
-    background-color: linear-gradient(180deg, #0A53B5 0%, #07B3FD 100%);
+    background: linear-gradient(180deg, #07B3FD 0%, #0A53B5 100%);
+    position: relative;
     background-repeat: no-repeat;
     background-size: cover ;
     height: 100vh;
@@ -16,7 +16,7 @@ position: relative;
 
     @media (min-width: 992px){
     background-image: url("/images/background3.svg");
-    background-position-y: -110px;
+    background-position-y: -40px;
     }
 
     @media (min-width: 1200px){
