@@ -6,14 +6,14 @@ import styled from '@emotion/styled';
 const InputField = styled.input`
       border: none;
       width: 230px;
-      border-bottom: 2px solid #FFFF;
+      border-bottom: 2px solid #000;
       background-color: rgba(7, 179, 253, 0);
       justify-content: center;
       align-items: center;
       padding-bottom: 10px;
       margin: 30px;
       outline: none;
-      color: #FFF;
+      color: #000;
       font-family: 'Poppins-Medium';
 
 &::placeholder{
@@ -26,8 +26,31 @@ const InputField = styled.input`
 }
 
 @media (min-width: 768px){
-      width: 305px;
 
+      .hide-on-desktop {
+            display: flex;
+      }
+      .title {
+        color: #FFFF;
+    }
+      width: 305px;
+      .box-container {
+            border: none;
+            width: 230px;
+            border-bottom: 2px solid #FFFF;
+            background-color: rgba(7, 179, 253, 0);
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 10px;
+            margin: 30px;
+            outline: none;
+            color: #FFFF;
+            font-family: 'Poppins-Medium';
+            &::placeholder{
+                  font-size: 14px;
+                  color: #FFFF;
+            }
+      }
 }
 
 @media (min-width: 992px){

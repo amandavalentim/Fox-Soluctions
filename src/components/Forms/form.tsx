@@ -22,6 +22,9 @@ const FormComponent = styled.section`
         top: 240px;
         left: 15px;
         color: #000;
+    .title {
+        color: #000;
+    }
         form {
             .forget {
                 padding-top: 0px 0px 0px 10px;
