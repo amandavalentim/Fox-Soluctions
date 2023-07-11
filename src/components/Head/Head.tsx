@@ -6,6 +6,13 @@ import Image from 'next/image';
 import { FaBars } from "react-icons/fa";
 import { AiOutlineClose } from "react-icons/Ai";
 
+document.querySelector('.show-on-mobile')?.addEventListener('click', e => {
+
+    document.querySelector('.show-on-mobile')?.classList.add('open');
+
+});
+
+
 const HeadComponent = styled.head`
     position: relative;
     background: linear-gradient(180deg, #07B3FD 0%, #0081E8 100%);
@@ -211,12 +218,12 @@ const Head = function() {
                       <div className='nameLogo'>Fox Soluctions</div>
                   </nav> 
   
-                  <nav className='show-on-mobile open'>
+                  <nav className='show-on-mobile'>
                         <button className='open-menu'>
                             <FaBars className='faBars'/>
                         </button>
-                         <div className="backdrop"></div>
-                        <Ul>
+                        <div className="backdrop"></div>
+                        <Ul id='menu'>
                             <li className='close-menu'>
                                 <button type='button'>
                                    <AiOutlineClose className='closeAi'/>
@@ -234,12 +241,8 @@ const Head = function() {
                               <li id='home'>Home</li>
                               <li id='documents'>Documentos</li>
                           </Ul>
-                          <button type='button' id='butão'>
-                            Clique aqui
-                          </button>
                       </div>
                   </nav>
-
   
       </HeadComponent>
     )
