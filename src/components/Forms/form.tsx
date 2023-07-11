@@ -85,52 +85,11 @@ const FormComponent = styled.section`
                     text-align: center;
                 }
                 .title {
-                    border-radius: 19px;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    font-family: 'poppins-bold';
-                    font-size: 30px;
-                    color: #ffff;
                     position: absolute;
-                    top: 5%;
-                    left: 40%;
-                } 
-                .forget {
-                    padding: 0px 0px 0px 10px;
-                    text-align: center;
-                    font-size: 13px;
-                    color: #F47216;
-                }
-                .create_account {
-                    padding-top: 15px;
-                    text-align: center;
-                    font-size: 13px;
-                    color: #FFFF;
-                    span {
-                        color: #F47216;
-                    }
-                }
-                .enter {
-                    border-style: none;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    padding-top: 50px;
-                    .submit {
-                        border: none;
-                        background-color: #93B413;
-                        color: #FFFF;
-                        border-radius: 20px;
-                        width: 150px;
-                        height: 40px;
-                        font-family: 'poppins-medium';
-                        font-size: 20px;
-                    }
-                    .submit:hover {
-                        background-color: #9fc214;
-                    }
-                }           
+                    top: 10%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }             
             }
         }
     }
@@ -139,11 +98,20 @@ const FormComponent = styled.section`
         .hide-on-desktop {
             display: flex;
         }
+        .title {
+            position: absolute;
+            top: 5%;
+            left: 40%;
+        } 
     }
 
     @media (min-width:1200px) {
         .hide-on-desktop {
             display: flex;
+        }
+        .box-container {
+            position: absolute;
+            top: 75%;
         }
     }
 
