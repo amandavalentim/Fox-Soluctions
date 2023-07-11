@@ -7,14 +7,14 @@ import { FaBars } from "react-icons/fa";
 import { AiOutlineClose } from "react-icons/Ai";
 
 const HeadComponent = styled.head`
+    position: relative;
     background: linear-gradient(180deg, #07B3FD 0%, #0081E8 100%);
-    height: 150px;
+    height: 170px;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    position: relative;
 
     .hide-on-mobile {
         display: none;
@@ -29,24 +29,32 @@ const HeadComponent = styled.head`
         width: 30px;
         height: 30px;
         color: #fff;
+        position: absolute;
+        top: 60%;
+        left: 88%;
+        transform: translate(-50%, -50%);
     }
 
     .logo-Fox {
         position: absolute;
         top: 5px;
         left: 100px;
+        top: 40%;
+        left: 48%;
+        transform: translate(-50%, -50%);
     }
 
     .nameLogo {
         font-size: 1em;
         position: absolute;
-        left: 90px;
-        top: 110px;
+        top: 80%;
+        left: 48%;
+        transform: translate(-50%, -50%);
         color: white;
         font-family: 'Roboto-Medium';
     }
 
-    /* .open-menu {
+     .open-menu {
         display: block;
         font-size: 2em;
         padding: .9rem;
@@ -111,86 +119,85 @@ const HeadComponent = styled.head`
         position: absolute;
         left: 10px;
         top: 10px;
-    } */
+    }
 
     @media (min-width: 768px) {
 
         .hide-on-mobile {
-                display: flex;
-                justify-content: space-between;
-                position: absolute;
-                left: 500px;
-            }
+            display: flex;
+            justify-content: space-between;
+            position: absolute;
+            left: 500px;
+        }
 
-            .show-on-mobile {
-                display: none;
-            }
+        .show-on-mobile {
+            display: none;
+        }
 
-            .logo-Fox {
-                position: absolute;
-                top: 5px;
-                left: 70px;
-    }
+        .logo-Fox {
+            position: absolute;
+            top: 45%;
+            left: 10%;
+        }
 
-    .nameLogo {
-        font-size: 1em;
-        position: absolute;
-        left: 60px;
-        top: 110px;
-        color: white;
-        font-family: 'Roboto-Medium';
-    }
+        .nameLogo {
+            font-size: 1em;
+            position: absolute;
+            left: 10%;
+            top: 85%;
+            color: white;
+            font-family: 'Roboto-Medium';
+        }
     }
 
     @media (min-width: 922px) {
-
         .hide-on-mobile {
-                display: flex;
-                justify-content: space-between;
-                position: absolute;
-                left: 740px;
-            }
+            display: flex;
+            justify-content: space-between;
+            position: absolute;
+            left: 740px;
+        }
 
-            .show-on-mobile {
-                display: none;
-            }      
+        .show-on-mobile {
+            display: none;
+        }      
     }
 
     @media (min-width: 1200px) {
         .hide-on-mobile {
-                display: flex;
-                justify-content: space-between;
-                position: absolute;
-                left: 1070px;
-            }
+            display: flex;
+            justify-content: space-between;
+            position: absolute;
+            left: 1070px;
+        }
 
-            .show-on-mobile {
-                display: none;
-            } 
+        .show-on-mobile {
+            display: none;
+        } 
     }
 
     @media (min-width: 1600px) {
         .hide-on-mobile {
-                display: flex;
-                justify-content: space-between;
-                position: absolute;
-                left: 1295px;
-            }
+            display: flex;
+            justify-content: space-between;
+            position: absolute;
+            left: 1295px;
+        }
 
-            .show-on-mobile {
-                display: none;
-            } 
+        .show-on-mobile {
+            display: none;
+        } 
     }
 `;
 
 const Ul = styled.ul`
-        display: flex;
-        list-style: none; 
-        li {
-            width: 100px;
-            color: white;
-            font-family: 'Poppins-Medium';
-        }
+    display: flex;
+    list-style: none; 
+    li {
+        width: 100px;
+        color: white;
+        font-family: 'Poppins-Medium';
+    }
 `;
 
 const Head = function() {
@@ -208,7 +215,7 @@ const Head = function() {
                         <button className='open-menu'>
                             <FaBars className='faBars'/>
                         </button>
-                        {/* <div className="backdrop"></div>
+                         <div className="backdrop"></div>
                         <Ul>
                             <li className='close-menu'>
                                 <button type='button'>
@@ -218,17 +225,21 @@ const Head = function() {
                             <li><a href="/">Home</a></li>
                             <li><a href="/">Documentos</a></li>
                             <li><a href="/">Sobre Nós</a></li>
-                        </Ul> */}
+                        </Ul> 
                   </nav>
 
                   <nav className='hide-on-mobile'>
                       <div>
                           <Ul>
-                              <li>Home</li>
-                              <li>Documentos</li>
+                              <li id='home'>Home</li>
+                              <li id='documents'>Documentos</li>
                           </Ul>
+                          <button type='button' id='butão'>
+                            Clique aqui
+                          </button>
                       </div>
                   </nav>
+
   
       </HeadComponent>
     )

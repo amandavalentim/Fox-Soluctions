@@ -1,6 +1,8 @@
 'use client';
 import styled from '@emotion/styled';
 import { FaFacebookSquare, FaInstagram, FaTwitterSquare, FaGithubSquare} from "react-icons/fa";
+import Button from './Button/ButtonIcons';
+
 
 const FooterComponent = styled.footer`
     background: rgba(7, 179, 253, 1);
@@ -9,6 +11,7 @@ const FooterComponent = styled.footer`
         padding: 10px;
         .box{
             margin: 20px;
+            position: relative;
             h3{
                 margin: 10px;
                 padding: 15px;
@@ -17,7 +20,7 @@ const FooterComponent = styled.footer`
                 background: #93B413;
                 height: 70px;
                 font-family: 'Poppins-Bold';
-                font-size: 25px;
+                font-size: 21px;
                 color: #fff;
             }
             p{
@@ -104,19 +107,25 @@ const Footer = function (){
         <FooterComponent>
             <div className='container-center'>
                 <div className='box'>
-                    <h3>Contatos</h3>
+                    <h3>Contatos 
+                        <Button></Button>
+                    </h3>
                     <p><span>Endereço: </span>Rua Tamoios, 246, Jardim Aeroporto - São Paulo, SP.</p>
                     <p><span>Telefone: </span> (11) 99999-9999</p>
                     <p><span>Email: </span>foxsoluctions@gmail.com</p>
                 </div>
                 <div className='box'>
-                    <h3>Nossa Empresa</h3>
+                    <h3>Nossa Empresa
+                        <Button></Button>
+                    </h3>
                     <a href="">Home</a>
                     <a href="">Documentos</a>
                     <a href="">Sobre Nós</a>
                 </div>
                 <div className='box'>
-                    <h3>Redes Sociais</h3>
+                    <h3>Redes Sociais
+                        <Button></Button>
+                    </h3>
                     <div className='container-icons'>
                         <FaFacebookSquare className='facebook'/>
                         <FaInstagram className='instagram'/>
