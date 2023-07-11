@@ -1,3 +1,4 @@
+// Background feito por Gabriel
 'use client';
 "use strict";
 var __makeTemplateObject = (this && this.__makeTemplateObject) || function (cooked, raw) {

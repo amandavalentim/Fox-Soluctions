@@ -1,3 +1,5 @@
+// Background feito por Gabriel
+
 'use client';
 import styled from '@emotion/styled';
 
