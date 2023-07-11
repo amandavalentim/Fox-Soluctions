@@ -1,3 +1,5 @@
+//desenvolvido por Amanda
+
 import React from 'react'
 import styled from '@emotion/styled';
 import { FaAngleRight } from "react-icons/fa";
@@ -23,6 +25,8 @@ const FieldButton = styled.div`
     }
 `;
 
+
+
 const Button = function (){
     return(
         <FieldButton>
@@ -32,3 +36,4 @@ const Button = function (){
 }
 
 export default Button
+

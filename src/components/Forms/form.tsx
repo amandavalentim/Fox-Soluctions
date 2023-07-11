@@ -1,3 +1,4 @@
+//Código desenvolvido por Gustavo Otacílio
 'use client'
 import styled from '@emotion/styled';
 import Input from './Input/Input'
@@ -73,26 +74,22 @@ const FormComponent = styled.section`
             top: 80%;
             left: 50%;
             transform: translate(-50%, -50%);
-            border-radius: 19px;
-            background: linear-gradient(180deg, #07B3FD 0%, #0A53B5 100%);
             width: 100%;
             form {
-                width: 100%;
-                height: 66vh;
+                border-radius: 19px;
+                background: linear-gradient(180deg, #07B3FD 0%, #0A53B5 100%);
+                width: 60%;
+                height: 80vh;
+                padding: 100px 0px 0px 0px;
                 .login {
                     text-align: center;
                 }
                 .title {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    font-family: 'poppins-bold';
-                    font-size: 30px;
-                    color: #ffff;
                     position: absolute;
-                    top: -10%;
-                    left: 40%;
-                }         
+                    top: 10%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }             
             }
         }
     }
@@ -101,11 +98,20 @@ const FormComponent = styled.section`
         .hide-on-desktop {
             display: flex;
         }
+        .title {
+            position: absolute;
+            top: 5%;
+            left: 40%;
+        } 
     }
 
     @media (min-width:1200px) {
         .hide-on-desktop {
             display: flex;
+        }
+        .box-container {
+            position: absolute;
+            top: 75%;
         }
     }
 

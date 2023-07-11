@@ -1,5 +1,4 @@
-// Header feita por Gabriel e Gustavo
-
+//Código desenvolvido por Gustavo Otacílio
 'use client';
 import styled from '@emotion/styled';
 import Image from 'next/image';
@@ -27,10 +26,10 @@ const HeadComponent = styled.head`
         display: none;
     }
 
-    .show-on-mobile {
+    /* .show-on-mobile {
         display: flex;
         justify-content: space-between;
-    }
+    } */
 
     .faBars {
         width: 30px;
@@ -136,6 +135,9 @@ const HeadComponent = styled.head`
             position: absolute;
             left: 500px;
         }
+        /* .hide-on-mobile ul {
+            position: absolute;
+        } */
 
         .show-on-mobile {
             display: none;
