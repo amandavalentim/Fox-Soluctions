@@ -74,16 +74,18 @@ const FormComponent = styled.section`
             top: 80%;
             left: 50%;
             transform: translate(-50%, -50%);
-            border-radius: 19px;
-            background: linear-gradient(180deg, #07B3FD 0%, #0A53B5 100%);
             width: 100%;
             form {
-                width: 100%;
-                height: 66vh;
+                border-radius: 19px;
+                background: linear-gradient(180deg, #07B3FD 0%, #0A53B5 100%);
+                width: 60%;
+                height: 80vh;
+                padding: 100px 0px 0px 0px;
                 .login {
                     text-align: center;
                 }
                 .title {
+                    border-radius: 19px;
                     display: flex;
                     justify-content: center;
                     align-items: center;
@@ -91,9 +93,44 @@ const FormComponent = styled.section`
                     font-size: 30px;
                     color: #ffff;
                     position: absolute;
-                    top: -10%;
+                    top: 5%;
                     left: 40%;
-                }         
+                } 
+                .forget {
+                    padding: 0px 0px 0px 10px;
+                    text-align: center;
+                    font-size: 13px;
+                    color: #F47216;
+                }
+                .create_account {
+                    padding-top: 15px;
+                    text-align: center;
+                    font-size: 13px;
+                    color: #FFFF;
+                    span {
+                        color: #F47216;
+                    }
+                }
+                .enter {
+                    border-style: none;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding-top: 50px;
+                    .submit {
+                        border: none;
+                        background-color: #93B413;
+                        color: #FFFF;
+                        border-radius: 20px;
+                        width: 150px;
+                        height: 40px;
+                        font-family: 'poppins-medium';
+                        font-size: 20px;
+                    }
+                    .submit:hover {
+                        background-color: #9fc214;
+                    }
+                }           
             }
         }
     }

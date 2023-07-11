@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 //Código desenvolvido por Gustavo Otacílio
-=======
-// Header feita por Gabriel e Gustavo
->>>>>>> 0d8115af601a64b7ff0ff4ced42f5c9692f5aa19
 'use client';
 "use strict";
 var __makeTemplateObject = (this && this.__makeTemplateObject) || function (cooked, raw) {
