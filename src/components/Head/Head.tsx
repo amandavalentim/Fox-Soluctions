@@ -4,13 +4,7 @@ import styled from '@emotion/styled';
 import Image from 'next/image';
 import { FaBars } from "react-icons/fa";
 import { AiOutlineClose } from "react-icons/Ai";
-
-document.querySelector('.show-on-mobile')?.addEventListener('click', e => {
-
-    document.querySelector('.show-on-mobile')?.classList.add('open');
-
-});
-
+import { Script } from 'vm';
 
 const HeadComponent = styled.head`
     position: relative;
@@ -22,6 +16,7 @@ const HeadComponent = styled.head`
     align-items: center;
     padding: 20px;
 
+
     .hide-on-mobile {
         display: none;
     }
@@ -32,13 +27,19 @@ const HeadComponent = styled.head`
     } */
 
     .faBars {
+        background: none;
+        border: none;
+        position: absolute;
+        left: 275px;
+    }
+
+    .faBars .menu{
         width: 30px;
         height: 30px;
         color: #fff;
         position: absolute;
-        top: 60%;
-        left: 88%;
         transform: translate(-50%, -50%);
+        
     }
 
     .logo-Fox {
@@ -60,7 +61,7 @@ const HeadComponent = styled.head`
         font-family: 'Roboto-Medium';
     }
 
-     .open-menu {
+    .show-on-mobile .open-menu {
         display: block;
         font-size: 2em;
         padding: .9rem;
@@ -209,6 +210,12 @@ const Ul = styled.ul`
     }
 `;
 
+    document.querySelector('.faBars')?.addEventListener('click', e => {
+
+        console.log("Funciona por favor");
+
+    });
+
 const Head = function() {
     return (
       <HeadComponent>
@@ -221,20 +228,9 @@ const Head = function() {
                   </nav> 
   
                   <nav className='show-on-mobile'>
-                        <button className='open-menu'>
-                            <FaBars className='faBars'/>
+                        <button type='button' className='faBars'>
+                            <FaBars className='menu'/>
                         </button>
-                        <div className="backdrop"></div>
-                        <Ul id='menu'>
-                            <li className='close-menu'>
-                                <button type='button'>
-                                   <AiOutlineClose className='closeAi'/>
-                                </button>
-                            </li>
-                            <li><a href="/">Home</a></li>
-                            <li><a href="/">Documentos</a></li>
-                            <li><a href="/">Sobre Nós</a></li>
-                        </Ul> 
                   </nav>
 
                   <nav className='hide-on-mobile'>
