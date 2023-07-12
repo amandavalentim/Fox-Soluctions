@@ -19,23 +19,23 @@ const FormComponent = styled.section`
             justify-content: center;
             align-items: center;
             font-family: 'poppins-bold';
-            font-size: 30px;
+            font-size: 2.5em;
             color: #ffff;
             position: absolute;
             top: -30%;
-            left: 33%;
+            left: 30%;
         }         
 
         .forget {
             padding: 0px 0px 0px 10px;
             text-align: center;
-            font-size: 13px;
+            font-size: 1em;
             color: #F47216;
         }
         .create_account {
             padding-top: 15px;
             text-align: center;
-            font-size: 13px;
+            font-size: 1em;
             color: #FFFF;
             span {
                 color: #F47216;
@@ -81,56 +81,12 @@ const FormComponent = styled.section`
                 width: 60%;
                 height: 80vh;
                 padding: 100px 0px 0px 0px;
-                .login {
-                    text-align: center;
-                }
                 .title {
-                    border-radius: 19px;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    font-family: 'poppins-bold';
-                    font-size: 30px;
-                    color: #ffff;
                     position: absolute;
-                    top: 5%;
-                    left: 40%;
-                } 
-                .forget {
-                    padding: 0px 0px 0px 10px;
-                    text-align: center;
-                    font-size: 13px;
-                    color: #F47216;
-                }
-                .create_account {
-                    padding-top: 15px;
-                    text-align: center;
-                    font-size: 13px;
-                    color: #FFFF;
-                    span {
-                        color: #F47216;
-                    }
-                }
-                .enter {
-                    border-style: none;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    padding-top: 50px;
-                    .submit {
-                        border: none;
-                        background-color: #93B413;
-                        color: #FFFF;
-                        border-radius: 20px;
-                        width: 150px;
-                        height: 40px;
-                        font-family: 'poppins-medium';
-                        font-size: 20px;
-                    }
-                    .submit:hover {
-                        background-color: #9fc214;
-                    }
-                }           
+                    top: 10%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }             
             }
         }
     }
@@ -139,17 +95,46 @@ const FormComponent = styled.section`
         .hide-on-desktop {
             display: flex;
         }
+        .box-container {
+            top: 75%;
+        }
     }
 
     @media (min-width:1200px) {
         .hide-on-desktop {
             display: flex;
         }
+        .box-container {
+            top: 73%;  
+        }
     }
 
     @media (min-width: 1600px) {
         .hide-on-desktop {
             display: flex;
+        }
+        .forget {
+            font-size: 1000px;
+        }
+        .create_account {
+            padding-top: 15px;
+        }
+        .enter {
+            border-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 50px;
+            .submit {
+                border: none;
+                background-color: #93B413;
+                color: #FFFF;
+                border-radius: 20px;
+                width: 150px;
+                height: 40px;
+                font-family: 'poppins-medium';
+                font-size: 3em;
+            }
         }
     }
 `;

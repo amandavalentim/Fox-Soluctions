@@ -4,6 +4,7 @@ import styled from '@emotion/styled';
 import Image from 'next/image';
 import { FaBars } from "react-icons/fa";
 import { AiOutlineClose } from "react-icons/Ai";
+import { Script } from 'vm';
 
 const HeadComponent = styled.head`
     position: relative;
@@ -15,23 +16,30 @@ const HeadComponent = styled.head`
     align-items: center;
     padding: 20px;
 
+
     .hide-on-mobile {
         display: none;
     }
 
-    .show-on-mobile {
+    /* .show-on-mobile {
         display: flex;
         justify-content: space-between;
-    }
+    } */
 
     .faBars {
+        background: none;
+        border: none;
+        position: absolute;
+        left: 275px;
+    }
+
+    .faBars .menu{
         width: 30px;
         height: 30px;
         color: #fff;
         position: absolute;
-        top: 60%;
-        left: 88%;
         transform: translate(-50%, -50%);
+        
     }
 
     .logo-Fox {
@@ -53,7 +61,7 @@ const HeadComponent = styled.head`
         font-family: 'Roboto-Medium';
     }
 
-     .open-menu {
+    .show-on-mobile .open-menu {
         display: block;
         font-size: 2em;
         padding: .9rem;
@@ -128,6 +136,9 @@ const HeadComponent = styled.head`
             position: absolute;
             left: 500px;
         }
+        /* .hide-on-mobile ul {
+            position: absolute;
+        } */
 
         .show-on-mobile {
             display: none;
@@ -199,6 +210,12 @@ const Ul = styled.ul`
     }
 `;
 
+    document.querySelector('.faBars')?.addEventListener('click', e => {
+
+        console.log("Funciona por favor");
+
+    });
+
 const Head = function() {
     return (
       <HeadComponent>
@@ -210,7 +227,7 @@ const Head = function() {
                       <div className='nameLogo'>Fox Soluctions</div>
                   </nav> 
   
-                  {/* <nav className='show-on-mobile open'>
+                  <nav className='show-on-mobile open'>
                         <button className='open-menu'>
                             <FaBars className='faBars'/>
                         </button>
@@ -225,7 +242,7 @@ const Head = function() {
                             <li><a href="/">Documentos</a></li>
                             <li><a href="/">Sobre Nós</a></li>
                         </Ul> 
-                  </nav> */}
+                  </nav>
 
                   <nav className='hide-on-mobile'>
                       <div>
@@ -233,12 +250,8 @@ const Head = function() {
                               <li id='home'>Home</li>
                               <li id='documents'>Documentos</li>
                           </Ul>
-                          <button type='button' id='butão'>
-                            Clique aqui
-                          </button>
                       </div>
                   </nav>
-
   
       </HeadComponent>
     )

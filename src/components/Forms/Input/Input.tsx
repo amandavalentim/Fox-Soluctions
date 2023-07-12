@@ -5,7 +5,7 @@ import styled from '@emotion/styled';
 
 const InputField = styled.input`
       border: none;
-      width: 230px;
+      width: 70vw;
       border-bottom: 2px solid #ffff;
       background-color: rgba(7, 179, 253, 0);
       justify-content: center;
@@ -26,6 +26,8 @@ const InputField = styled.input`
 
 
       @media (min-width: 768px){
+            margin: 30px 0px 30px 85px;
+            width: 40vw;
 
             .hide-on-desktop {
                   display: flex;
@@ -33,10 +35,9 @@ const InputField = styled.input`
             .title {
                   color: #FFFF;
             }
-            width: 305px;
+           
             .box-container {
                   border: none;
-                  width: 230px;
                   border-bottom: 2px solid #FFFF;
                   background-color: rgba(7, 179, 253, 0);
                   justify-content: center;
@@ -50,13 +51,19 @@ const InputField = styled.input`
       }
 
       @media (min-width: 992px){
-            width: 325px;
+            width: 40vw;
             border-bottom: 2px solid #FFFF;
-                  
+            margin: 30px 0px 30px 97px;      
       }
 
       @media (min-width:1200px){
-            width: 310px;
+            width: 40vw;
+            margin: 30px 0px 50px 125px;
+      }
+
+      @media (min-width:1600px){
+            width: 40vw;
+            margin: 50px 0px 80px 160px;
       }
 
 `;
