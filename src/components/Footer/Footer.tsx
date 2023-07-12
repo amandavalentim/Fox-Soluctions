@@ -1,10 +1,11 @@
-//Desenvolvido por 
+//Desenvolvido por Amanda
+
 'use client';
 import styled from '@emotion/styled';
-import { FaFacebookSquare, FaInstagram, FaTwitterSquare, FaGithubSquare} from "react-icons/fa";
-import Button from './Button/ButtonIcons';
+import React from 'react';
+import { FaFacebookSquare, FaInstagram, FaTwitterSquare, FaGithubSquare, FaAngleDown} from "react-icons/fa";
 
-
+//Mobile
 const FooterComponent = styled.footer`
     background: rgba(7, 179, 253, 1);
     box-sizing: border-box;
@@ -24,6 +25,13 @@ const FooterComponent = styled.footer`
                 font-size: 21px;
                 color: #fff;
                 cursor: default;
+                .angle-down{
+                    position: absolute;
+                    top: 1%;
+                    left: 80%;
+                    transform: translate(40%, 100%);
+                    fill: #fff;
+                }
             }
             p{
                 margin: 20px;
@@ -35,7 +43,6 @@ const FooterComponent = styled.footer`
                     font-family: 'Poppins-Bold';
                     font-size: 15px;
                 }
-
             }
             a{
                 display: grid;
@@ -52,17 +59,11 @@ const FooterComponent = styled.footer`
                     fill: #1877F2;
                     margin:5px;
                 }
-                .facebook:hover, .facebook:focus{
-                transform: translateX(10px) scale(1.2);
-                }
                 .instagram{
                     width: 50px;
                     height: 60px;
                     fill: #C82D8E;
                     margin:5px;
-                }
-                .instagram:hover, .instagram:focus{
-                transform: translateX(10px) scale(1.2);
                 }
                 .twitter{
                     width: 50px;
@@ -70,21 +71,32 @@ const FooterComponent = styled.footer`
                     fill: #098BEA;
                     margin:5px;
                 }
-                .twitter:hover, .twitter:focus{
-                transform: translateX(10px) scale(1.2);
-                }
                 .github{
                     width: 50px;
                     height: 60px;
                     fill: #000;
                     margin:5px;
                 }
-                .github:hover, .github:focus{
-                transform: translateX(10px) scale(1.2);
+            }
+        }
+    }
+
+    //Tablet
+    @media(min-width: 450px){
+        .container-center {
+            .box{
+                h3{
+                    .angle-down{
+                        position: absolute;
+                        top: 1%;
+                        left: 90%;
+                        transform: translate(40%, 100%);
+                    }
                 }
             }
         }
     }
+
     //Desktop
     @media(min-width: 992px){
         .container-center{
@@ -97,6 +109,9 @@ const FooterComponent = styled.footer`
                     width: 250px;
                     text-align: center;
                     font-size: 25px;
+                    .angle-down{
+                        display: none;
+                    }
                 }
                 h3:hover, h3:focus{
                 transform: translateX(10px) scale(1.2);
@@ -125,12 +140,6 @@ const FooterComponent = styled.footer`
                     .twitter:hover, .twitter:focus{
                         transform: translateX(10px) scale(1.2);
                     }
-                    .github{
-                        width: 50px;
-                        height: 60px;
-                        fill: #000;
-                        margin:5px;
-                    }
                     .github:hover, .github:focus{
                         transform: translateX(10px) scale(1.2);
                     }
@@ -138,39 +147,48 @@ const FooterComponent = styled.footer`
             }
         }
     }
-    
+
+    //Large Screen
     @media(min-width:1200px){
         .container-center{
             justify-content: space-between;
         }
     }
-    
-
 `;
 
 const Footer = function (){
     return(
         <FooterComponent>
             <div className='container-center'>
+
+                {/* Section Contacts*/}
                 <div className='box'>
                     <h3>Contatos 
-                        <Button></Button>
+                        <button type='button' className='angle-down'><FaAngleDown/></button>
                     </h3>
-                    <p><span>Endereço: </span>Rua Tamoios, 246, Jardim Aeroporto - São Paulo, SP.</p>
-                    <p><span>Telefone: </span> (11) 99999-9999</p>
-                    <p><span>Email: </span>foxsoluctions@gmail.com</p>
+                    <div className='container-contacts'>
+                        <p><span>Endereço: </span>Rua Tamoios, 246, Jardim Aeroporto - São Paulo, SP.</p>
+                        <p><span>Telefone: </span> (11) 99999-9999</p>
+                        <p><span>Email: </span>foxsoluctions@gmail.com</p>
+                    </div>
                 </div>
+
+                {/* Section Our Company */}
                 <div className='box'>
                     <h3>Nossa Empresa
-                        <Button></Button>
+                        <button type='button' className='angle-down'><FaAngleDown/></button>
                     </h3>
+                    <div className='container-company'>
                     <a href="">Home</a>
                     <a href="">Documentos</a>
                     <a href="">Sobre Nós</a>
+                    </div>
                 </div>
+
+                {/* Section Social Media */}
                 <div className='box'>
                     <h3>Redes Sociais
-                        <Button></Button>
+                        <button type='button' className='angle-down'><FaAngleDown/></button>
                     </h3>
                     <div className='container-icons'>
                         <FaFacebookSquare className='facebook'/>
