@@ -4,6 +4,7 @@ import styled from '@emotion/styled';
 import Image from 'next/image';
 import { FaBars } from "react-icons/fa";
 import { AiOutlineClose } from "react-icons/Ai";
+import ButtonJS from './Button';
 
 const HeadComponent = styled.head`
     position: relative;
@@ -54,17 +55,13 @@ const HeadComponent = styled.head`
         font-family: 'Roboto-Medium';
     }
 
-    .show-on-mobile .open-menu {
+    .show-on-mobile{
         display: block;
         font-size: 2em;
         padding: .9rem;
-        flex: 1;
-        background: none;
-        border: none;
-        color: #fff;
     }
 
-    .show-on-mobile Ul {
+    /* .show-on-mobile Ul {
         display: block;
         position: fixed;
         top: 0;
@@ -119,7 +116,7 @@ const HeadComponent = styled.head`
         position: absolute;
         left: 10px;
         top: 10px;
-    }
+    } */
 
     @media (min-width: 768px) {
 
@@ -203,12 +200,6 @@ const Ul = styled.ul`
     }
 `;
 
-document.querySelector('.show-on-mobile')?.addEventListener('click', e => {
-
-    document.querySelector('.show-on-mobile')?.classList.add('open');
- 
-});  
-
 const Head = function() {
     return (
       <HeadComponent>
@@ -224,11 +215,8 @@ const Head = function() {
                         <button className='open-menu'>
                             <FaBars className='faBars'/>
                         </button>
-                  <nav className='show-on-mobile'>
-                        <button type="button" className='open-menu'>
-                            <FaBars className='faBars'/>
-                        </button>
-                        <Ul>
+                            {/* <nav className='menu'>
+                            <Ul>
                             <li className='close-menu'>
                                 <button type='button'>
                                    <AiOutlineClose className='closeAi'/>
@@ -237,8 +225,11 @@ const Head = function() {
                             <li><a href="/">Home</a></li>
                             <li><a href="/">Documentos</a></li>
                             <li><a href="/">Sobre Nós</a></li>
-                        </Ul> 
-                  </nav> 
+                        </Ul>  
+                            </nav>
+                            */}
+                            
+                        </nav>
 
                   <nav className='hide-on-mobile'>
                       <div>
@@ -247,7 +238,6 @@ const Head = function() {
                               <li id='documents'>Documentos</li>
                           </Ul>
                       </div>
-                  </nav>
                   </nav>
   
       </HeadComponent>
