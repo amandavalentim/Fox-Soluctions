@@ -19,11 +19,11 @@ const FormComponent = styled.section`
             justify-content: center;
             align-items: center;
             font-family: 'poppins-bold';
-            font-size: 2.5em;
+            font-size: 2em;
             color: #ffff;
             position: absolute;
             top: -30%;
-            left: 30%;
+            left: 36%;
         }         
 
         .forget {
@@ -31,12 +31,14 @@ const FormComponent = styled.section`
             text-align: center;
             font-size: 1em;
             color: #F47216;
+            cursor: pointer;
         }
         .create_account {
             padding-top: 15px;
             text-align: center;
             font-size: 1em;
             color: #FFFF;
+            cursor: pointer;
             span {
                 color: #F47216;
             }
@@ -56,6 +58,7 @@ const FormComponent = styled.section`
                 height: 40px;
                 font-family: 'poppins-medium';
                 font-size: 20px;
+                cursor: pointer;
             }
             .submit:hover {
                 background-color: #9fc214;
