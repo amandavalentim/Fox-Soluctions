@@ -220,9 +220,7 @@ const Head = function() {
                   </nav> 
   
                   <nav className='show-on-mobile'>
-                        <button className='open-menu'>
                             <FaBars className='faBars'/>
-                        </button>
                             {/* <nav className='menu'>
                             <Ul>
                             <li className='close-menu'>
