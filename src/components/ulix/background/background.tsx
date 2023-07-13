@@ -1,4 +1,4 @@
-// Background feito por Gabriel
+// Background feito por Gabriel Marques Correia
 
 'use client';
 import styled from '@emotion/styled';
