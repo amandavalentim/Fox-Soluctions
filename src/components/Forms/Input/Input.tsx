@@ -1,7 +1,6 @@
+//Código desenvolvido por Gustavo Otacílio
 import React from 'react'
 import styled from '@emotion/styled';
-
-
 
 const InputField = styled.input`
       border: none;
