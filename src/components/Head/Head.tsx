@@ -220,7 +220,7 @@ const Head = function() {
                       <div className='nameLogo'>Fox Soluctions</div>
                   </nav> 
   
-                  <nav className='show-on-mobile open'>
+                  {/* <nav className='show-on-mobile open'>
                         <button className='open-menu'>
                             <FaBars className='faBars'/>
                         </button>
@@ -238,17 +238,7 @@ const Head = function() {
                             <li><a href="/">Documentos</a></li>
                             <li><a href="/">Sobre Nós</a></li>
                         </Ul> 
-                        <Ul id='menu'>
-                            <li className='close-menu'>
-                                <button type='button'>
-                                   <AiOutlineClose className='closeAi'/>
-                                </button>
-                            </li>
-                            <li><a href="/">Home</a></li>
-                            <li><a href="/">Documentos</a></li>
-                            <li><a href="/">Sobre Nós</a></li>
-                        </Ul> 
-                  </nav>
+                  </nav> */}
 
                   <nav className='hide-on-mobile'>
                       <div>
@@ -257,7 +247,6 @@ const Head = function() {
                               <li id='documents'>Documentos</li>
                           </Ul>
                       </div>
-                  </nav>
                   </nav>
   
       </HeadComponent>
