@@ -203,6 +203,8 @@ const Ul = styled.ul`
     }
 `;
 
+//Código JS desenvolvido por Espanha Marques
+ 
 document.querySelector('.show-on-mobile')?.addEventListener('click', e => {
 
     document.querySelector('.show-on-mobile')?.classList.add('open');
