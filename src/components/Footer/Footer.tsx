@@ -25,7 +25,7 @@ const FooterComponent = styled.footer`
                 font-size: 21px;
                 color: #fff;
                 cursor: default;
-                .angle-down{
+                .btn-icon{
                     position: absolute;
                     top: 1%;
                     left: 80%;
@@ -86,7 +86,7 @@ const FooterComponent = styled.footer`
         .container-center {
             .box{
                 h3{
-                    .angle-down{
+                    .btn-icon{
                         position: absolute;
                         top: 1%;
                         left: 90%;
@@ -109,7 +109,7 @@ const FooterComponent = styled.footer`
                     width: 250px;
                     text-align: center;
                     font-size: 25px;
-                    .angle-down{
+                    .btn-icon{
                         display: none;
                     }
                 }
@@ -164,7 +164,7 @@ const Footer = function (){
                 {/* Section Contacts*/}
                 <div className='box'>
                     <h3>Contatos 
-                        <button type='button' className='angle-down'><FaAngleDown/></button>
+                        <button type='button' className='btn-icon'><FaAngleDown/></button>
                     </h3>
                     <div className='container-contacts'>
                         <p><span>Endereço: </span>Rua Tamoios, 246, Jardim Aeroporto - São Paulo, SP.</p>
@@ -176,7 +176,7 @@ const Footer = function (){
                 {/* Section Our Company */}
                 <div className='box'>
                     <h3>Nossa Empresa
-                        <button type='button' className='angle-down'><FaAngleDown/></button>
+                        <button type='button' className='btn-icon'><FaAngleDown/></button>
                     </h3>
                     <div className='container-company'>
                     <a href="">Home</a>
@@ -188,7 +188,7 @@ const Footer = function (){
                 {/* Section Social Media */}
                 <div className='box'>
                     <h3>Redes Sociais
-                        <button type='button' className='angle-down'><FaAngleDown/></button>
+                        <button type='button' className='btn-icon'><FaAngleDown/></button>
                     </h3>
                     <div className='container-icons'>
                         <FaFacebookSquare className='facebook'/>
