@@ -4,7 +4,6 @@ import styled from '@emotion/styled';
 import Image from 'next/image';
 import { FaBars } from "react-icons/fa";
 import { AiOutlineClose } from "react-icons/Ai";
-import { Script } from 'vm';
 
 const HeadComponent = styled.head`
     position: relative;
@@ -27,19 +26,13 @@ const HeadComponent = styled.head`
     } */
 
     .faBars {
-        background: none;
-        border: none;
-        position: absolute;
-        left: 275px;
-    }
-
-    .faBars .menu{
         width: 30px;
         height: 30px;
         color: #fff;
         position: absolute;
+        top: 50%;
+        left: 88%;
         transform: translate(-50%, -50%);
-        
     }
 
     .logo-Fox {
@@ -79,7 +72,7 @@ const HeadComponent = styled.head`
         width: 80vw;
         height: 100vh;
         background: linear-gradient(180deg, #07B3FD 0%, #0081E8 100%);
-        z-index: 1;
+        z-index: 2;
         margin: 0;
         transition: right .2s linear;
     }
@@ -210,11 +203,11 @@ const Ul = styled.ul`
     }
 `;
 
-    document.querySelector('.faBars')?.addEventListener('click', e => {
+document.querySelector('.show-on-mobile')?.addEventListener('click', e => {
 
-        console.log("Funciona por favor");
-
-    });
+    document.querySelector('.show-on-mobile')?.classList.add('open');
+ 
+});  
 
 const Head = function() {
     return (
@@ -228,9 +221,19 @@ const Head = function() {
                   </nav> 
   
                   <nav className='show-on-mobile'>
-                        <button type='button' className='faBars'>
-                            <FaBars className='menu'/>
+                        <button type="button" className='open-menu'>
+                            <FaBars className='faBars'/>
                         </button>
+                        <Ul id='menu'>
+                            <li className='close-menu'>
+                                <button type='button'>
+                                   <AiOutlineClose className='closeAi'/>
+                                </button>
+                            </li>
+                            <li><a href="/">Home</a></li>
+                            <li><a href="/">Documentos</a></li>
+                            <li><a href="/">Sobre Nós</a></li>
+                        </Ul> 
                   </nav>
 
                   <nav className='hide-on-mobile'>
