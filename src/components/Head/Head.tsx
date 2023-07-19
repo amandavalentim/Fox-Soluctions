@@ -2,9 +2,7 @@
 'use client';
 import styled from '@emotion/styled';
 import Image from 'next/image';
-import { FaBars } from "react-icons/fa";
-import { AiOutlineClose } from "react-icons/Ai";
-import ButtonJS from './Button';
+import { FaBars } from 'react-icons/fa';
 
 const HeadComponent = styled.head`
     position: relative;
@@ -21,12 +19,31 @@ const HeadComponent = styled.head`
         display: none;
     }
 
-    /* .show-on-mobile {
+    .show-on-mobile {
         display: flex;
         justify-content: space-between;
-    } */
+    }
+
+    .menu {
+        width: 35px;
+        height: 35px;
+    }
+
+    .button-bars {
+        border: none;
+        background: none;
+    }
 
     .faBars {
+        width: 35px;
+        height: 35px;
+        color: #fff;
+        border: none;
+        background: none;
+        display: block;
+    }
+
+    /* .faBars {
         width: 30px;
         height: 30px;
         color: #fff;
@@ -34,14 +51,14 @@ const HeadComponent = styled.head`
         top: 50%;
         left: 88%;
         transform: translate(-50%, -50%);
-    }
+    } */
 
     .logo-Fox {
         position: absolute;
         top: 5px;
         left: 100px;
         top: 40%;
-        left: 48%;
+        left: 52%;
         transform: translate(-50%, -50%);
     }
 
@@ -49,74 +66,11 @@ const HeadComponent = styled.head`
         font-size: 1em;
         position: absolute;
         top: 80%;
-        left: 48%;
+        left: 52%;
         transform: translate(-50%, -50%);
         color: white;
         font-family: 'Roboto-Medium';
     }
-
-    .show-on-mobile{
-        display: block;
-        font-size: 2em;
-        padding: .9rem;
-    }
-
-    /* .show-on-mobile Ul {
-        display: block;
-        position: fixed;
-        top: 0;
-        right: -80vw;
-        width: 80vw;
-        height: 100vh;
-        background: linear-gradient(180deg, #07B3FD 0%, #0081E8 100%);
-        z-index: 2;
-        margin: 0;
-        transition: right .2s linear;
-    }
-
-    .show-on-mobile.open Ul {
-        right: 0;
-    }
-    .show-on-mobile.open a {
-        color: #fff;
-        padding: 20px;
-        display: block;
-        font-weight: 100;
-        border-bottom: #93B413 1px solid;
-        width: 200px;
-    }
-    .show-on-mobile.open .backdrop {
-        opacity: .5;
-        display: block;
-    }
-    .show-on-mobile .backdrop {
-        opacity: 0;
-        background-color: #000;
-        transition: opacity .15s linear;
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        z-index: 1;
-        left: 0;
-        top: 0;
-    }
-    .show-on-mobile .close-menu {
-        display: block;
-        text-align: right;
-        background-color: #0081E8;
-        width: 100%;
-    }
-    .show-on-mobile .close-menu button {
-        background: none;
-        border: none;
-        font-size: 2em;
-        padding: .75rem 1rem;
-    }
-    .txt-close {
-        position: absolute;
-        left: 10px;
-        top: 10px;
-    } */
 
     @media (min-width: 768px) {
 
@@ -202,14 +156,21 @@ const Ul = styled.ul`
 
 //Código JS desenvolvido por Gabriel Marques
  
-document.querySelector('.show-on-mobile')?.addEventListener('click', e => {
+// document.querySelector('.show-on-mobile')?.addEventListener('click', e => {
 
-    document.querySelector('.show-on-mobile')?.classList.add('open');
+//     document.querySelector('.show-on-mobile')?.classList.add('open');
  
-});  
+// });  
+
+document.querySelector('.menu')?.addEventListener('click', e => {
+
+    console.log("Olá Mundo!"); 
+ 
+})
 
 const Head = function() {
     return (
+        
       <HeadComponent>
              
                   <nav className='header'>
@@ -218,10 +179,18 @@ const Head = function() {
                         </a>
                       <div className='nameLogo'>Fox Soluctions</div>
                   </nav> 
-  
+
                   <nav className='show-on-mobile'>
+                    <div className='menu'>
+                        <button type='button' className='button-bars'>
                             <FaBars className='faBars'/>
-                            {/* <nav className='menu'>
+                        </button>
+                    </div>
+                  </nav>
+  
+                  {/* <nav className='show-on-mobile'>
+                            <FaBars className='faBars'/>
+                            <nav className='menu'>
                             <Ul>
                             <li className='close-menu'>
                                 <button type='button'>
@@ -233,9 +202,7 @@ const Head = function() {
                             <li><a href="/">Sobre Nós</a></li>
                         </Ul>  
                             </nav>
-                            */}
-                            
-                        </nav>
+                        </nav> */}
 
                   <nav className='hide-on-mobile'>
                       <div>
@@ -243,10 +210,11 @@ const Head = function() {
                               <li id='home'>Home</li>
                               <li id='documents'>Documentos</li>
                           </Ul>
-                      </div>
+                      </div> 
                   </nav>
   
       </HeadComponent>
+
     )
   }
   
