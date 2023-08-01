@@ -3,7 +3,7 @@
 'use client';
 import styled from '@emotion/styled';
 import React, { useState } from 'react';
-import { FaFacebookSquare, FaInstagram, FaTwitterSquare, FaGithubSquare, FaAngleDown, FaAngleUp, FaAngleLeft, FaAngleRight} from "react-icons/fa";
+import { FaFacebookSquare, FaInstagram, FaTwitterSquare, FaGithubSquare, FaAngleDown, FaAngleRight} from "react-icons/fa";
 
 //Mobile
 const FooterComponent = styled.footer`
@@ -163,7 +163,7 @@ const Footer = function (){
     const [containerContacts, setContainerContacts] = useState(false);
     const [containerCompany, setContainerCompany] = useState(false);
     const [containerIcons, setContainerIcons] = useState(false);
-    
+
     return(
         <FooterComponent>
             <div className='container-center'>
