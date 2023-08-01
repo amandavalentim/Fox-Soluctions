@@ -1,5 +1,9 @@
+<<<<<<< HEAD
+import React, {useState} from 'react'
+=======
 //Código desenvolvido por Gustavo Otacílio
 import React from 'react'
+>>>>>>> da13f23dd96ea014b8f412c5fbf7a3179aeaccd7
 import styled from '@emotion/styled';
 
 const InputField = styled.input`
@@ -75,8 +79,9 @@ const InputField = styled.input`
     defaultValue ?: string
 }             
 function Input(props : InputProps) {
+      const [inputValue, setInputValue] = useState(props.defaultValue);
   return (
-    <InputField type={props.type} name={props.name} id={props.id} placeholder={props.placeholder} value={props.defaultValue ? props.defaultValue:''}/>
+    <InputField type={props.type} name={props.name} id={props.id} placeholder={props.placeholder} onChange={(e)=>setInputValue(e.target.value)} value={inputValue}/>
   )
 }
 
