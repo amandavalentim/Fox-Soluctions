@@ -3,7 +3,7 @@
 import styled from '@emotion/styled';
 import Image from 'next/image';
 import { FaBars } from 'react-icons/fa';
-import {GrClose} from 'react-icons/gr';
+import {FaTimes} from 'react-icons/fa';
 
 const HeadComponent = styled.head`
     position: relative;
@@ -36,12 +36,23 @@ const HeadComponent = styled.head`
     }
 
     .faBars {
-        width: 35px;
+        width: 70px;
         height: 35px;
         color: #fff;
         border: none;
         background: none;
         display: block;
+    }
+
+    .close {
+        color: #fff;
+        font-size: 20px;
+    }
+
+    .button-close {
+        border: none;
+        background: none;
+        color: #fff;
     }
 
     .menu .close-menu {
@@ -77,7 +88,7 @@ const HeadComponent = styled.head`
         right: -80vw;
         width: 80vw;
         height: 100vh;
-        background-color: #fff;
+        background-color: #0081E8;
         z-index: 2;
         margin: 0;
         transition: right .2s linear;
@@ -86,11 +97,10 @@ const HeadComponent = styled.head`
         right: 0;
     }
     .menu.open a {
-        color: #000;
+        color: #FFF;
         padding: 20px;
         display: block;
         font-weight: 100;
-        border-bottom: #CCC 1px solid;
     }
     .menu {
         width: 60px;
@@ -123,6 +133,19 @@ const HeadComponent = styled.head`
         transform: translate(-50%, -50%);
         color: white;
         font-family: 'Roboto-Medium';
+    }
+
+    .criar-usuarios {
+        font-size: 23px;
+    }
+
+    .criar-usuarios:hover {
+        font-size: 30px;
+        background-color: #07B3FD;
+    }
+
+    .lista-de-usuarios {
+        font-size: 15px;
     }
 
     @media (min-width: 768px) {
@@ -221,6 +244,10 @@ const Hello = ()=>{
     document.querySelector('.menu')?.classList.add('open');
 }
 
+const Close = ()=> {
+    document.querySelector('.menu')?.classList.remove('open');
+}
+
 
 const Head = function() {
     return (
@@ -241,7 +268,13 @@ const Head = function() {
                                 </button>
                                     <Ul>
                                         <li>
-                                            <a href="/">Home</a>
+                                            <button className='button-close'>
+                                                <FaTimes onClick={Close} className='close'/>
+                                            </button>
+                                            <a href="/" className='criar-usuarios'>Criar Usuário</a>
+                                            <a href="/" className='lista-de-usuarios'>Lista de Usuários</a>
+                                            <a href="/" className='configurações'>Configurações</a>
+                                            <a href="/" className='sair'>Sair</a>
                                         </li>
                                     </Ul>
                             </nav>
