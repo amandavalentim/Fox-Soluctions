@@ -1,5 +1,4 @@
-//Código desenvolvido por Gustavo Otacílio
-import React, { useState } from 'react'
+import React, {useState} from 'react'
 import styled from '@emotion/styled';
 
 const InputField = styled.input`
@@ -9,8 +8,8 @@ const InputField = styled.input`
       background-color: rgba(7, 179, 253, 0);
       justify-content: center;
       align-items: center;
-      padding-bottom: 10px;
-      margin: 30px;
+      /* padding-bottom: 10px; */
+      margin: 20px;
       outline: none;
       color: #ffff;
       font-family: 'Poppins-Medium';
@@ -36,22 +35,12 @@ const InputField = styled.input`
             }
            
             .box-container {
-                  border: none;
-                  border-bottom: 2px solid #FFFF;
-                  background-color: rgba(7, 179, 253, 0);
-                  justify-content: center;
-                  align-items: center;
                   padding-bottom: 10px;
-                  margin: 30px;
-                  outline: none;
-                  color: #FFFF;
-                  font-family: 'Poppins-Medium';
             }
       }
 
       @media (min-width: 992px){
             width: 40vw;
-            border-bottom: 2px solid #FFFF;
             margin: 30px 0px 30px 97px;      
       }
 

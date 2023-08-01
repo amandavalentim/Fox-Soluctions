@@ -3,7 +3,7 @@
 import styled from '@emotion/styled';
 import Image from 'next/image';
 import { FaBars } from 'react-icons/fa';
-import {GrClose} from 'react-icons/gr';
+import {FaTimes} from 'react-icons/fa';
 
 const HeadComponent = styled.head`
     position: relative;
@@ -36,12 +36,26 @@ const HeadComponent = styled.head`
     }
 
     .faBars {
-        width: 35px;
+        width: 70px;
         height: 35px;
         color: #fff;
         border: none;
         background: none;
         display: block;
+    }
+
+    .close {
+        color: #fff;
+        font-size: 30px;
+        position: absolute;
+        top: -5px;
+        left: 220px;
+    }
+
+    .button-close {
+        border: none;
+        background: none;
+        color: #fff;
     }
 
     .menu .close-menu {
@@ -77,7 +91,7 @@ const HeadComponent = styled.head`
         right: -80vw;
         width: 80vw;
         height: 100vh;
-        background-color: #fff;
+        background-color: #0081E8;
         z-index: 2;
         margin: 0;
         transition: right .2s linear;
@@ -85,12 +99,14 @@ const HeadComponent = styled.head`
     .menu.open ul {
         right: 0;
     }
+    .menu li {
+        width: 250px;
+    }
     .menu.open a {
-        color: #000;
+        color: #FFF;
         padding: 20px;
         display: block;
         font-weight: 100;
-        border-bottom: #CCC 1px solid;
     }
     .menu {
         width: 60px;
@@ -123,6 +139,69 @@ const HeadComponent = styled.head`
         transform: translate(-50%, -50%);
         color: white;
         font-family: 'Roboto-Medium';
+    }
+
+    .criar-usuarios {
+        font-size: 23px;
+    }
+
+    .criar-usuarios:hover {
+        font-size: 23px;
+        background-color: #07AFFA;
+        border-radius: 41px;
+    }
+
+    .lista-de-usuarios {
+        font-size: 23px;
+    }
+
+    .lista-de-usuarios:hover {
+        font-size: 23px;
+        background-color: #07AFFA;
+        border-radius: 41px;
+    }
+
+    .configuraçoes {
+        font-size: 23px;
+    }
+
+    .configuraçoes:hover {
+        font-size: 23px;
+        background-color: #07AFFA;
+        border-radius: 41px;
+    }
+
+    .sair {
+        font-size: 23px;
+    }
+
+    header .hearder-boder {
+        justify-content: space-between;
+    }
+
+    .profile {
+        position: absolute;
+        top: 25px;
+    }
+
+    .conteudo {
+        position: absolute;
+        top: 125px;
+    }
+
+    .name {
+        display: inline;
+        position: absolute;
+        top: 38px;
+        left: 95px;
+        width: 200px;
+    }
+
+    .fox {
+        position: absolute;
+        top: 30px;
+        left: 15px;
+        width: 60px;
     }
 
     @media (min-width: 768px) {
@@ -221,6 +300,10 @@ const Hello = ()=>{
     document.querySelector('.menu')?.classList.add('open');
 }
 
+const Close = ()=> {
+    document.querySelector('.menu')?.classList.remove('open');
+}
+
 
 const Head = function() {
     return (
@@ -239,9 +322,23 @@ const Head = function() {
                                 <button className='button-bars'>
                                     <FaBars className='faBars' onClick={Hello}/>
                                 </button>
+                                {/* <div className='backdrop' onClick={Close}></div> */}
                                     <Ul>
                                         <li>
-                                            <a href="/">Home</a>
+                                            <div className='profile'>
+                                            <a href="/"><img src="/images/group-147.svg" className='fox'/>
+                                            <h1 className='name'>Stella the Fox</h1></a>
+                                            <button className='button-close'>
+                                                <FaTimes onClick={Close} className='close'/>
+                                            </button>
+                                            </div>
+                                            <div className='conteudo'>
+                                            <a href="/" className='criar-usuarios'>Criar Usuário</a>
+                                            <a href="/" className='lista-de-usuarios'>Lista de Usuários</a>
+                                            <a href="/" className='configuraçoes'>Configurações</a>
+                                            <a href="/" className='sair'>Sair</a>
+                                            </div>
+                                            
                                         </li>
                                     </Ul>
                             </nav>

@@ -2,6 +2,7 @@
 'use client'
 import styled from '@emotion/styled';
 import Input from './Input/Input'
+import { FaGoogle } from "react-icons/fa";
 
 const FormComponent = styled.section`
 
@@ -10,7 +11,7 @@ const FormComponent = styled.section`
     }
    
     form {
-        margin-top: 35px;
+        margin-top: 20px;
         position: absolute;
         top: 80%;
         left: 50%;
@@ -23,19 +24,57 @@ const FormComponent = styled.section`
             font-size: 2em;
             color: #ffff;
             position: absolute;
-            top: -30%;
+            top: -55%;
             left: 36%;
-        }         
+        }  
+        
+        /* .css-81eavt {
+            margin: 16px;
+        } */
 
-        .forget {
-            padding: 0px 0px 0px 10px;
+        .link-forget {
+            padding: 0px;
             text-align: center;
-            font-size: 1em;
-            color: #F47216;
+            font-size: .8em;
+            color: #CCC;
             cursor: pointer;
         }
+
+        #txt-or {
+            color: #FFFF;
+            font-size: .9em;
+            text-align: center;
+            /* margin-top: 25px; */
+            /* margin-bottom: 10px;  */
+
+        }
+
+        .google-enter {
+            display: flex;
+            background-color: #93B413;
+            color: white;
+            align-items: center;
+            border-radius: 39px;
+            width: 250px;
+            height: 40px;
+            padding: 10px;
+            justify-content: space-around; 
+            
+            .google-icon { 
+                background: none;
+                border: none;
+                color: white;  
+            }
+            .txt-google {
+                text-align: center;
+            }
+        }
+
         .create_account {
-            padding-top: 15px;
+            /* position: absolute;
+            top: 105%;
+            left: 50%;
+            transform: translate(-50%, -50%); */
             text-align: center;
             font-size: 1em;
             color: #FFFF;
@@ -45,6 +84,10 @@ const FormComponent = styled.section`
             }
         }
         .enter {
+            position: absolute;
+            top: 135%;
+            left: 50%;
+            transform: translate(-50%, -50%);
             border-style: none;
             display: flex;
             align-items: center;
@@ -156,11 +199,21 @@ const Form = function(){
                             <div className='login'>
                                 <Input type="email" name="e-mail" id="e-mail" placeholder='E-mail'/>
                             </div>
+                            <a href="#" className='link-forget'>
+                                <p>Esqueci o Email</p>
+                            </a>
                             <div className='login'>
                                 <Input type="password" name="password" id="password" placeholder='Senha'/>
                             </div>
-                            <div className='forget'>
-                                <h4><span className='orange'>Esqueceu a senha?</span></h4>
+                            <a href="#" className='link-forget'>
+                                <p>Esqueci a senha</p>
+                            </a>
+                            <p id='txt-or'>OU</p>
+                            <div className='google-enter'>
+                                <button className='google-icon'>
+                                    <FaGoogle/>
+                                </button>
+                                <p className='txt-google'>Entrar com Google</p>
                             </div>
                             <div className='create_account'>
                                 <h4>Não tem uma conta? <span className='orange'>Crie uma</span></h4>
