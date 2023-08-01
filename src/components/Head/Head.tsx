@@ -46,7 +46,10 @@ const HeadComponent = styled.head`
 
     .close {
         color: #fff;
-        font-size: 20px;
+        font-size: 30px;
+        position: absolute;
+        top: -5px;
+        left: 220px;
     }
 
     .button-close {
@@ -96,6 +99,9 @@ const HeadComponent = styled.head`
     .menu.open ul {
         right: 0;
     }
+    .menu li {
+        width: 250px;
+    }
     .menu.open a {
         color: #FFF;
         padding: 20px;
@@ -140,12 +146,62 @@ const HeadComponent = styled.head`
     }
 
     .criar-usuarios:hover {
-        font-size: 30px;
-        background-color: #07B3FD;
+        font-size: 23px;
+        background-color: #07AFFA;
+        border-radius: 41px;
     }
 
     .lista-de-usuarios {
-        font-size: 15px;
+        font-size: 23px;
+    }
+
+    .lista-de-usuarios:hover {
+        font-size: 23px;
+        background-color: #07AFFA;
+        border-radius: 41px;
+    }
+
+    .configuraçoes {
+        font-size: 23px;
+    }
+
+    .configuraçoes:hover {
+        font-size: 23px;
+        background-color: #07AFFA;
+        border-radius: 41px;
+    }
+
+    .sair {
+        font-size: 23px;
+    }
+
+    header .hearder-boder {
+        justify-content: space-between;
+    }
+
+    .profile {
+        position: absolute;
+        top: 25px;
+    }
+
+    .conteudo {
+        position: absolute;
+        top: 125px;
+    }
+
+    .name {
+        display: inline;
+        position: absolute;
+        top: 38px;
+        left: 95px;
+        width: 200px;
+    }
+
+    .fox {
+        position: absolute;
+        top: 30px;
+        left: 15px;
+        width: 60px;
     }
 
     @media (min-width: 768px) {
@@ -266,15 +322,23 @@ const Head = function() {
                                 <button className='button-bars'>
                                     <FaBars className='faBars' onClick={Hello}/>
                                 </button>
+                                {/* <div className='backdrop' onClick={Close}></div> */}
                                     <Ul>
                                         <li>
+                                            <div className='profile'>
+                                            <a href="/"><img src="/images/group-147.svg" className='fox'/>
+                                            <h1 className='name'>Stella the Fox</h1></a>
                                             <button className='button-close'>
                                                 <FaTimes onClick={Close} className='close'/>
                                             </button>
+                                            </div>
+                                            <div className='conteudo'>
                                             <a href="/" className='criar-usuarios'>Criar Usuário</a>
                                             <a href="/" className='lista-de-usuarios'>Lista de Usuários</a>
-                                            <a href="/" className='configurações'>Configurações</a>
+                                            <a href="/" className='configuraçoes'>Configurações</a>
                                             <a href="/" className='sair'>Sair</a>
+                                            </div>
+                                            
                                         </li>
                                     </Ul>
                             </nav>
