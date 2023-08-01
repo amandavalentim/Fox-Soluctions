@@ -2,8 +2,8 @@
 
 'use client';
 import styled from '@emotion/styled';
-import React from 'react';
-import { FaFacebookSquare, FaInstagram, FaTwitterSquare, FaGithubSquare, FaAngleDown} from "react-icons/fa";
+import React, { useState } from 'react';
+import { FaFacebookSquare, FaInstagram, FaTwitterSquare, FaGithubSquare, FaAngleDown, FaAngleUp, FaAngleLeft, FaAngleRight} from "react-icons/fa";
 
 //Mobile
 const FooterComponent = styled.footer`
@@ -26,11 +26,14 @@ const FooterComponent = styled.footer`
                 color: #fff;
                 cursor: default;
                 .btn-icon{
+                    padding: 7px;
                     position: absolute;
-                    top: 1%;
                     left: 80%;
-                    transform: translate(40%, 100%);
-                    fill: #fff;
+                    transform: translate(20%, 7%);
+                    color: #fff;
+                    font-size: 20px;
+                    border: none;
+                    background: none;
                 }
             }
             p{
@@ -87,10 +90,9 @@ const FooterComponent = styled.footer`
             .box{
                 h3{
                     .btn-icon{
-                        position: absolute;
-                        top: 1%;
-                        left: 90%;
-                        transform: translate(40%, 100%);
+                    position: absolute;
+                    left: 91%;
+                    transform: translate(20%, 7%);
                     }
                 }
             }
@@ -157,6 +159,11 @@ const FooterComponent = styled.footer`
 `;
 
 const Footer = function (){
+
+    const [containerContacts, setContainerContacts] = useState(false);
+    const [containerCompany, setContainerCompany] = useState(false);
+    const [containerIcons, setContainerIcons] = useState(false);
+    
     return(
         <FooterComponent>
             <div className='container-center'>
@@ -164,38 +171,38 @@ const Footer = function (){
                 {/* Section Contacts*/}
                 <div className='box'>
                     <h3>Contatos 
-                        <button type='button' className='btn-icon'><FaAngleDown/></button>
+                        <button type='button' className='btn-icon' onClick={()=> setContainerContacts(!containerContacts)}>{containerContacts?<FaAngleDown/>:<FaAngleRight/>}</button>
                     </h3>
-                    <div className='container-contacts'>
+                {containerContacts &&   <div className='container-contacts'>
                         <p><span>Endereço: </span>Rua Tamoios, 246, Jardim Aeroporto - São Paulo, SP.</p>
                         <p><span>Telefone: </span> (11) 99999-9999</p>
                         <p><span>Email: </span>foxsoluctions@gmail.com</p>
-                    </div>
+                    </div>}
                 </div>
 
                 {/* Section Our Company */}
                 <div className='box'>
                     <h3>Nossa Empresa
-                        <button type='button' className='btn-icon'><FaAngleDown/></button>
+                        <button type='button' className='btn-icon' onClick={()=> setContainerCompany(!containerCompany)}>{containerCompany?<FaAngleDown/>:<FaAngleRight/>}</button>
                     </h3>
-                    <div className='container-company'>
+                { containerCompany && <div className='container-company'>
                     <a href="">Home</a>
                     <a href="">Documentos</a>
                     <a href="">Sobre Nós</a>
-                    </div>
+                    </div>}
                 </div>
 
                 {/* Section Social Media */}
                 <div className='box'>
                     <h3>Redes Sociais
-                        <button type='button' className='btn-icon'><FaAngleDown/></button>
+                        <button type='button' className='btn-icon' onClick={()=> setContainerIcons(!containerIcons)}>{containerIcons?<FaAngleDown/>:<FaAngleRight/>}</button>
                     </h3>
-                    <div className='container-icons'>
+                { containerIcons && <div className='container-icons'>
                         <FaFacebookSquare className='facebook'/>
                         <FaInstagram className='instagram'/>
                         <FaTwitterSquare className='twitter'/>
                         <FaGithubSquare className='github'/>
-                    </div>
+                    </div>}
                     
                 </div>
             </div>

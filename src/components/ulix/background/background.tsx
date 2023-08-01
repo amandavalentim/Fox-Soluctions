@@ -26,7 +26,7 @@ const BackgroundComponent = styled.div`
     }
 
     @media (min-width: 1600px) {
-        background-image: url("/images/background-tall-screens.svg");
+        background-image: url("/images/group-144.svg");
     }
 `;
 
