@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import styled from '@emotion/styled';
 
 
@@ -76,8 +76,9 @@ const InputField = styled.input`
     defaultValue ?: string
 }             
 function Input(props : InputProps) {
+      const [inputValue, setInputValue] = useState(props.defaultValue);
   return (
-    <InputField type={props.type} name={props.name} id={props.id} placeholder={props.placeholder} value={props.defaultValue ? props.defaultValue:''}/>
+    <InputField type={props.type} name={props.name} id={props.id} placeholder={props.placeholder} onChange={(e)=>setInputValue(e.target.value)} value={inputValue}/>
   )
 }
 
