@@ -2,9 +2,8 @@
 'use client';
 import styled from '@emotion/styled';
 import Image from 'next/image';
-import { FaBars } from "react-icons/fa";
-import { AiOutlineClose } from "react-icons/Ai";
-import { Script } from 'vm';
+import { FaBars } from 'react-icons/fa';
+import {GrClose} from 'react-icons/gr';
 
 const HeadComponent = styled.head`
     position: relative;
@@ -21,85 +20,46 @@ const HeadComponent = styled.head`
         display: none;
     }
 
-    /* .show-on-mobile {
+    .show-on-mobile {
         display: flex;
         justify-content: space-between;
-    } */
+    }
+
+    .menu {
+        width: 35px;
+        height: 35px;
+    }
+
+    .button-bars {
+        border: none;
+        background: none;
+    }
 
     .faBars {
+        width: 35px;
+        height: 35px;
+        color: #fff;
+        border: none;
+        background: none;
+        display: block;
+    }
+
+    .menu .close-menu {
+        display: block;
+        text-align: right;
+        background-color: #eee;
+    }
+    .menu .close-menu button {
         background: none;
         border: none;
-        position: absolute;
-        left: 275px;
-    }
-
-    .faBars .menu{
-        width: 30px;
-        height: 30px;
-        color: #fff;
-        position: absolute;
-        transform: translate(-50%, -50%);
-        
-    }
-
-    .logo-Fox {
-        position: absolute;
-        top: 5px;
-        left: 100px;
-        top: 40%;
-        left: 48%;
-        transform: translate(-50%, -50%);
-    }
-
-    .nameLogo {
-        font-size: 1em;
-        position: absolute;
-        top: 80%;
-        left: 48%;
-        transform: translate(-50%, -50%);
-        color: white;
-        font-family: 'Roboto-Medium';
-    }
-
-    .show-on-mobile .open-menu {
-        display: block;
         font-size: 2em;
-        padding: .9rem;
-        flex: 1;
-        background: none;
-        border: none;
-        color: #fff;
+        padding: .75rem 1rem;
     }
-
-    .show-on-mobile Ul {
-        display: block;
-        position: fixed;
-        top: 0;
-        right: -80vw;
-        width: 80vw;
-        height: 100vh;
-        background: linear-gradient(180deg, #07B3FD 0%, #0081E8 100%);
-        z-index: 1;
-        margin: 0;
-        transition: right .2s linear;
-    }
-
-    .show-on-mobile.open Ul {
-        right: 0;
-    }
-    .show-on-mobile.open a {
-        color: #fff;
-        padding: 20px;
-        display: block;
-        font-weight: 100;
-        border-bottom: #93B413 1px solid;
-        width: 200px;
-    }
-    .show-on-mobile.open .backdrop {
+    .menu.open .backdrop {
         opacity: .5;
         display: block;
     }
-    .show-on-mobile .backdrop {
+    .menu .backdrop {
         opacity: 0;
         background-color: #000;
         transition: opacity .15s linear;
@@ -110,22 +70,59 @@ const HeadComponent = styled.head`
         left: 0;
         top: 0;
     }
-    .show-on-mobile .close-menu {
+    .menu ul {
         display: block;
-        text-align: right;
-        background-color: #0081E8;
-        width: 100%;
+        position: fixed;
+        top: 0;
+        right: -80vw;
+        width: 80vw;
+        height: 100vh;
+        background-color: #fff;
+        z-index: 2;
+        margin: 0;
+        transition: right .2s linear;
     }
-    .show-on-mobile .close-menu button {
+    .menu.open ul {
+        right: 0;
+    }
+    .menu.open a {
+        color: #000;
+        padding: 20px;
+        display: block;
+        font-weight: 100;
+        border-bottom: #CCC 1px solid;
+    }
+    .menu {
+        width: 60px;
+        flex: initial;
+    }
+    .menu .open-menu {
+        display: block;
+        font-size: 2em;
+        padding: .9rem;
+        flex: 1;
         background: none;
         border: none;
-        font-size: 2em;
-        padding: .75rem 1rem;
+        color: #fff;
     }
-    .txt-close {
+
+    .logo-Fox {
         position: absolute;
-        left: 10px;
-        top: 10px;
+        top: 5px;
+        left: 100px;
+        top: 40%;
+        left: 52%;
+        transform: translate(-50%, -50%);
+    }
+
+    .nameLogo {
+        font-size: 1em;
+        position: absolute;
+        top: 80%;
+        left: 52%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-family: 'Roboto-Medium';
     }
 
     @media (min-width: 768px) {
@@ -208,16 +205,26 @@ const Ul = styled.ul`
         color: white;
         font-family: 'Poppins-Medium';
     }
-`;
+`; 
 
-    document.querySelector('.faBars')?.addEventListener('click', e => {
+// document.querySelector('.open-menu').?addEventListener('click', e => {
 
-        console.log("Funciona por favor");
+//     document.querySelector('.menu').classList.add('open');
 
-    });
+// });
+
+//document.querySelector('button-bars')?.addEventListener('click', e => {
+//    console.log('oi')
+//}) 
+
+const Hello = ()=>{
+    document.querySelector('.menu')?.classList.add('open');
+}
+
 
 const Head = function() {
     return (
+        
       <HeadComponent>
              
                   <nav className='header'>
@@ -227,22 +234,18 @@ const Head = function() {
                       <div className='nameLogo'>Fox Soluctions</div>
                   </nav> 
   
-                  {/* <nav className='show-on-mobile open'>
-                        <button className='open-menu'>
-                            <FaBars className='faBars'/>
-                        </button>
-                         <div className="backdrop"></div>
-                        <Ul>
-                            <li className='close-menu'>
-                                <button type='button'>
-                                   <AiOutlineClose className='closeAi'/>
+                  <nav className='show-on-mobile'>
+                            <nav className='menu'>
+                                <button className='button-bars'>
+                                    <FaBars className='faBars' onClick={Hello}/>
                                 </button>
-                            </li>
-                            <li><a href="/">Home</a></li>
-                            <li><a href="/">Documentos</a></li>
-                            <li><a href="/">Sobre Nós</a></li>
-                        </Ul> 
-                  </nav> */}
+                                    <Ul>
+                                        <li>
+                                            <a href="/">Home</a>
+                                        </li>
+                                    </Ul>
+                            </nav>
+                        </nav> 
 
                   <nav className='hide-on-mobile'>
                       <div>
@@ -250,10 +253,11 @@ const Head = function() {
                               <li id='home'>Home</li>
                               <li id='documents'>Documentos</li>
                           </Ul>
-                      </div>
+                      </div> 
                   </nav>
   
       </HeadComponent>
+
     )
   }
   
