@@ -3,6 +3,7 @@
 import styled from '@emotion/styled';
 import Image from 'next/image';
 import { FaBars } from 'react-icons/fa';
+import {GrClose} from 'react-icons/gr';
 
 const HeadComponent = styled.head`
     position: relative;
@@ -43,15 +44,67 @@ const HeadComponent = styled.head`
         display: block;
     }
 
-    /* .faBars {
-        width: 30px;
-        height: 30px;
+    .menu .close-menu {
+        display: block;
+        text-align: right;
+        background-color: #eee;
+    }
+    .menu .close-menu button {
+        background: none;
+        border: none;
+        font-size: 2em;
+        padding: .75rem 1rem;
+    }
+    .menu.open .backdrop {
+        opacity: .5;
+        display: block;
+    }
+    .menu .backdrop {
+        opacity: 0;
+        background-color: #000;
+        transition: opacity .15s linear;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        z-index: 1;
+        left: 0;
+        top: 0;
+    }
+    .menu ul {
+        display: block;
+        position: fixed;
+        top: 0;
+        right: -80vw;
+        width: 80vw;
+        height: 100vh;
+        background-color: #fff;
+        z-index: 2;
+        margin: 0;
+        transition: right .2s linear;
+    }
+    .menu.open ul {
+        right: 0;
+    }
+    .menu.open a {
+        color: #000;
+        padding: 20px;
+        display: block;
+        font-weight: 100;
+        border-bottom: #CCC 1px solid;
+    }
+    .menu {
+        width: 60px;
+        flex: initial;
+    }
+    .menu .open-menu {
+        display: block;
+        font-size: 2em;
+        padding: .9rem;
+        flex: 1;
+        background: none;
+        border: none;
         color: #fff;
-        position: absolute;
-        top: 50%;
-        left: 88%;
-        transform: translate(-50%, -50%);
-    } */
+    }
 
     .logo-Fox {
         position: absolute;
@@ -152,21 +205,22 @@ const Ul = styled.ul`
         color: white;
         font-family: 'Poppins-Medium';
     }
-`;
+`; 
 
-//Código JS desenvolvido por Gabriel Marques
- 
-// document.querySelector('.show-on-mobile')?.addEventListener('click', e => {
+// document.querySelector('.open-menu').?addEventListener('click', e => {
 
-//     document.querySelector('.show-on-mobile')?.classList.add('open');
- 
-// });  
+//     document.querySelector('.menu').classList.add('open');
 
-document.querySelector('.menu')?.addEventListener('click', e => {
+// });
 
-    console.log("Olá Mundo!"); 
- 
-})
+//document.querySelector('button-bars')?.addEventListener('click', e => {
+//    console.log('oi')
+//}) 
+
+const Hello = ()=>{
+    document.querySelector('.menu')?.classList.add('open');
+}
+
 
 const Head = function() {
     return (
@@ -179,30 +233,19 @@ const Head = function() {
                         </a>
                       <div className='nameLogo'>Fox Soluctions</div>
                   </nav> 
-
-                  <nav className='show-on-mobile'>
-                    <div className='menu'>
-                        <button type='button' className='button-bars'>
-                            <FaBars className='faBars'/>
-                        </button>
-                    </div>
-                  </nav>
   
-                  {/* <nav className='show-on-mobile'>
-                            <FaBars className='faBars'/>
+                  <nav className='show-on-mobile'>
                             <nav className='menu'>
-                            <Ul>
-                            <li className='close-menu'>
-                                <button type='button'>
-                                   <AiOutlineClose className='closeAi'/>
+                                <button className='button-bars'>
+                                    <FaBars className='faBars' onClick={Hello}/>
                                 </button>
-                            </li>
-                            <li><a href="/">Home</a></li>
-                            <li><a href="/">Documentos</a></li>
-                            <li><a href="/">Sobre Nós</a></li>
-                        </Ul>  
+                                    <Ul>
+                                        <li>
+                                            <a href="/">Home</a>
+                                        </li>
+                                    </Ul>
                             </nav>
-                        </nav> */}
+                        </nav> 
 
                   <nav className='hide-on-mobile'>
                       <div>
