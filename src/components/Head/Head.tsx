@@ -1,9 +1,10 @@
-//Código desenvolvido por Gustavo Otacílio
+//Código desenvolvido por Gustavo Otacílio e Gabriel Marques Correia
 'use client';
 import styled from '@emotion/styled';
 import Image from 'next/image';
 import { FaBars } from 'react-icons/fa';
 import {FaTimes} from 'react-icons/fa';
+import Link from 'next/link';
 
 const HeadComponent = styled.head`
     position: relative;
@@ -14,6 +15,10 @@ const HeadComponent = styled.head`
     justify-content: space-between;
     align-items: center;
     padding: 20px;
+
+    .backdrop {
+        display: none;
+    }
 
 
     .hide-on-mobile {
@@ -52,6 +57,10 @@ const HeadComponent = styled.head`
         left: 220px;
     }
 
+    .close:hover {
+        color: #F47216;
+    }
+
     .button-close {
         border: none;
         background: none;
@@ -78,9 +87,9 @@ const HeadComponent = styled.head`
         background-color: #000;
         transition: opacity .15s linear;
         position: fixed;
-        width: 100%;
+        width: 20%;
         height: 100vh;
-        z-index: 1;
+        z-index: 2;
         left: 0;
         top: 0;
     }
@@ -92,7 +101,7 @@ const HeadComponent = styled.head`
         width: 80vw;
         height: 100vh;
         background-color: #0081E8;
-        z-index: 2;
+        z-index: 1;
         margin: 0;
         transition: right .2s linear;
     }
@@ -284,19 +293,9 @@ const Ul = styled.ul`
         color: white;
         font-family: 'Poppins-Medium';
     }
-`; 
+`;  
 
-// document.querySelector('.open-menu').?addEventListener('click', e => {
-
-//     document.querySelector('.menu').classList.add('open');
-
-// });
-
-//document.querySelector('button-bars')?.addEventListener('click', e => {
-//    console.log('oi')
-//}) 
-
-const Hello = ()=>{
+const Open = ()=>{
     document.querySelector('.menu')?.classList.add('open');
 }
 
@@ -320,9 +319,9 @@ const Head = function() {
                   <nav className='show-on-mobile'>
                             <nav className='menu'>
                                 <button className='button-bars'>
-                                    <FaBars className='faBars' onClick={Hello}/>
+                                    <FaBars className='faBars' onClick={Open}/>
                                 </button>
-                                {/* <div className='backdrop' onClick={Close}></div> */}
+                                <div className='backdrop' onClick={Close}></div> 
                                     <Ul>
                                         <li>
                                             <div className='profile'>
@@ -347,12 +346,12 @@ const Head = function() {
                   <nav className='hide-on-mobile'>
                       <div>
                           <Ul>
-                              <li id='home'>Home</li>
-                              <li id='documents'>Sobre Nós</li>
+                              <a href="/"><li id='home'>Home</li></a>
+                              <a href="/"><li id='documents'>Sobre Nós</li></a>
                           </Ul>
                       </div> 
                   </nav>
-  
+                  
       </HeadComponent>
 
     )
