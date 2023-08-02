@@ -11,6 +11,5 @@ export default function Home() {
       <Footer/>
       <Form/>
     </main>
-
   )
 }

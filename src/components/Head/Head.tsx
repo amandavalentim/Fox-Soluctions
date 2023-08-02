@@ -303,7 +303,6 @@ const Close = ()=> {
     document.querySelector('.menu')?.classList.remove('open');
 }
 
-
 const Head = function() {
     return (
         
@@ -348,6 +347,11 @@ const Head = function() {
                           <Ul>
                               <a href="/"><li id='home'>Home</li></a>
                               <a href="/"><li id='documents'>Sobre Nós</li></a>
+                              <Link href={'/page2'}>
+                                <button type='button'>
+                                    a
+                                </button>
+                              </Link>
                           </Ul>
                       </div> 
                   </nav>
