@@ -8,7 +8,7 @@ const InputField = styled.input`
       background-color: rgba(7, 179, 253, 0);
       justify-content: center;
       align-items: center;
-      /* padding-bottom: 10px; */
+      /* padding-bottom: 0px; */
       margin: 20px;
       outline: none;
       color: #ffff;
@@ -19,9 +19,7 @@ const InputField = styled.input`
       }
       &:focus{
             border-bottom: 2px solid #93B413;
-
       }
-
 
       @media (min-width: 768px){
             margin: 30px 0px 30px 85px;

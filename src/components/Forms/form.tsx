@@ -24,7 +24,7 @@ const FormComponent = styled.section`
             font-size: 2em;
             color: #ffff;
             position: absolute;
-            top: -55%;
+            top: -40%;
             left: 36%;
         }  
         
@@ -34,40 +34,62 @@ const FormComponent = styled.section`
 
         .link-forget {
             padding: 0px;
+            border: none;
+            outline: none;
             text-align: center;
             font-size: .8em;
             color: #CCC;
             cursor: pointer;
         }
 
+        .link-forget:hover {
+            color: #F47216;
+        }
+
+        .link-forget:focus{
+            color: #F47216;
+        }
+
         #txt-or {
             color: #FFFF;
             font-size: .9em;
             text-align: center;
+            margin: 15px;
             /* margin-top: 25px; */
             /* margin-bottom: 10px;  */
-
         }
 
         .google-enter {
+            position: absolute;
+            top: 80%;
+            left: 50%;
+            transform: translate(-50%, -50%);
             display: flex;
             background-color: #93B413;
             color: white;
+            outline: none;
             align-items: center;
             border-radius: 39px;
             width: 250px;
             height: 40px;
-            padding: 10px;
-            justify-content: space-around; 
+            padding: 20px;
+            justify-content: space-around;
             
-            .google-icon { 
-                background: none;
+            .btn-google { 
+                background-color: white;
                 border: none;
-                color: white;  
+                color: black;  
+                outline: none;
+                border-radius: 30px;
             }
             .txt-google {
                 text-align: center;
             }
+        }
+
+        .google-enter:hover{
+            background-color: #9fc214;
+            font-weight: bold;
         }
 
         .create_account {
@@ -78,6 +100,9 @@ const FormComponent = styled.section`
             text-align: center;
             font-size: 1em;
             color: #FFFF;
+            margin: 5px;
+            margin-top: 20px;
+            padding-top: 55px;
             cursor: pointer;
             span {
                 color: #F47216;
@@ -85,14 +110,14 @@ const FormComponent = styled.section`
         }
         .enter {
             position: absolute;
-            top: 135%;
+            top: 125%;
             left: 50%;
             transform: translate(-50%, -50%);
             border-style: none;
             display: flex;
             align-items: center;
             justify-content: center;
-            padding-top: 50px;
+            padding-top: 5px;
             .submit {
                 border: none;
                 background-color: #93B413;
@@ -103,6 +128,7 @@ const FormComponent = styled.section`
                 font-family: 'poppins-medium';
                 font-size: 20px;
                 cursor: pointer;
+                outline: none;
             }
             .submit:hover {
                 background-color: #9fc214;
@@ -110,7 +136,6 @@ const FormComponent = styled.section`
         }
     }
     
-
     @media (min-width: 768px) {
         /* .hide-on-desktop {
             display: none;
@@ -200,7 +225,7 @@ const Form = function(){
                                 <Input type="email" name="e-mail" id="e-mail" placeholder='E-mail'/>
                             </div>
                             <a href="#" className='link-forget'>
-                                <p>Esqueci o Email</p>
+                                <p>Esqueci o email</p>
                             </a>
                             <div className='login'>
                                 <Input type="password" name="password" id="password" placeholder='Senha'/>
@@ -210,7 +235,7 @@ const Form = function(){
                             </a>
                             <p id='txt-or'>OU</p>
                             <div className='google-enter'>
-                                <button className='google-icon'>
+                                <button className='btn-google'>
                                     <FaGoogle/>
                                 </button>
                                 <p className='txt-google'>Entrar com Google</p>
