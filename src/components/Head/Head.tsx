@@ -150,38 +150,24 @@ const HeadComponent = styled.head`
         font-family: 'Roboto-Medium';
     }
 
-    .criar-usuarios {
+    .home-button {
         font-size: 23px;
     }
 
-    .criar-usuarios:hover {
+    .home-button:hover {
         font-size: 23px;
         background-color: #07AFFA;
         border-radius: 41px;
     }
 
-    .lista-de-usuarios {
+    .sobre-nos-button {
         font-size: 23px;
     }
 
-    .lista-de-usuarios:hover {
+    .sobre-nos-button:hover {
         font-size: 23px;
         background-color: #07AFFA;
         border-radius: 41px;
-    }
-
-    .configuraçoes {
-        font-size: 23px;
-    }
-
-    .configuraçoes:hover {
-        font-size: 23px;
-        background-color: #07AFFA;
-        border-radius: 41px;
-    }
-
-    .sair {
-        font-size: 23px;
     }
 
     header .hearder-boder {
@@ -195,7 +181,8 @@ const HeadComponent = styled.head`
 
     .conteudo {
         position: absolute;
-        top: 125px;
+        top: 25px;
+        width: 255px;
     }
 
     .name {
@@ -336,18 +323,19 @@ const Head = function() {
                                 <div className='backdrop' onClick={Close}></div> 
                                     <Ul>
                                         <li>
-                                            <div className='profile'>
+                                            {/* <div className='profile'>
                                             <a href="/"><img src="/images/group-147.svg" className='fox'/>
                                             <h1 className='name'>Stella the Fox</h1></a>
                                             <button className='button-close'>
                                                 <FaTimes onClick={Close} className='close'/>
                                             </button>
-                                            </div>
+                                            </div> */}
                                             <div className='conteudo'>
-                                            <a href="/" className='criar-usuarios'>Criar Usuário</a>
-                                            <a href="/" className='lista-de-usuarios'>Lista de Usuários</a>
-                                            <a href="/" className='configuraçoes'>Configurações</a>
-                                            <a href="/" className='sair'>Sair</a>
+                                            <button className='button-close'>
+                                                <FaTimes onClick={Close} className='close'/>
+                                            </button>
+                                            <a href="/" className='home-button'>Home</a>
+                                            <a href="/" className='sobre-nos-button'>Sobre Nós</a>
                                             </div>
                                             
                                         </li>
