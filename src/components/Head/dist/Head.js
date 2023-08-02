@@ -53,7 +53,7 @@ var Head = function () {
             React.createElement("div", null,
                 React.createElement(Ul, null,
                     React.createElement("li", { id: 'home' }, "Home"),
-                    React.createElement("li", { id: 'documents' }, "Documentos"))))));
+                    React.createElement("li", { id: 'documents' }, "Sobre N\u00F3s"))))));
 };
 exports["default"] = Head;
 var templateObject_1, templateObject_2;

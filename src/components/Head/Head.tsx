@@ -348,7 +348,7 @@ const Head = function() {
                       <div>
                           <Ul>
                               <li id='home'>Home</li>
-                              <li id='documents'>Documentos</li>
+                              <li id='documents'>Sobre Nós</li>
                           </Ul>
                       </div> 
                   </nav>

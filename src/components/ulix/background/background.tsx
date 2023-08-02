@@ -13,7 +13,7 @@ const BackgroundComponent = styled.div`
     width: 100%;
 
     @media (min-width: 768px){
-    background-image: url("/images/background-tablet-2.svg");
+    background-image: url("/images/tablet.svg");
     }
 
     @media (min-width: 992px){
