@@ -213,6 +213,19 @@ const HeadComponent = styled.head`
         width: 60px;
     }
 
+    .home {
+        background: none;
+        border: none;
+        font-size: 19px;
+    }
+
+    .home:hover {
+        cursor: pointer;
+        background: none;
+        border: none;
+        font-size: 19px;
+    }
+
     @media (min-width: 768px) {
 
         .hide-on-mobile {
@@ -345,13 +358,12 @@ const Head = function() {
                   <nav className='hide-on-mobile'>
                       <div>
                           <Ul>
-                              <a href="/"><li id='home'>Home</li></a>
-                              <a href="/"><li id='documents'>Sobre Nós</li></a>
-                              <Link href={'/page2'}>
-                                <button type='button'>
-                                    a
-                                </button>
+                            <li>
+                                <Link href={'/page2'}>
+                                Home
                               </Link>
+                              </li>
+                              <a href="/"><li id='documents'>Sobre Nós</li></a>
                           </Ul>
                       </div> 
                   </nav>
