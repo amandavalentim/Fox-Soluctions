@@ -21,6 +21,12 @@ const InputField = styled.input`
             border-bottom: 2px solid #93B413;
       }
 
+      /* .box-container {
+            .login {
+                  margin-bottom: 12px;
+            }
+      } */
+
       @media (min-width: 768px){
             margin: 30px 0px 30px 85px;
             width: 40vw;
