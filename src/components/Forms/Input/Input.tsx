@@ -1,5 +1,4 @@
-//Código desenvolvido por Gustavo Otacílio
-import React, { useState } from 'react'
+import React, {useState} from 'react'
 import styled from '@emotion/styled';
 
 const InputField = styled.input`
