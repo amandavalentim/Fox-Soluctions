@@ -24,15 +24,26 @@ const FormComponent = styled.section`
             font-size: 2em;
             color: #ffff;
             position: absolute;
-            top: -40%;
-            left: 36%;
-        }  
-        
-        /* .css-81eavt {
-            margin: 16px;
-        } */
+            top: -180%;
+            left: 20%;
+        } 
 
-        .link-forget {
+        #email {
+            position: absolute;
+            top: -80%;
+            left: 45%;
+            transform: translate(-50%, -50%);
+        }
+
+        #password {
+            position: absolute;
+            top: -30%;
+            left: 33%;
+            transform: translate(-50%, -50%);
+        }
+
+        #link-forget-email, 
+        #link-forget-password {
             padding: 0px;
             border: none;
             outline: none;
@@ -42,11 +53,13 @@ const FormComponent = styled.section`
             cursor: pointer;
         }
 
-        .link-forget:hover {
+        #link-forget-email:hover, 
+        #link-forget-password:hover {
             color: #F47216;
         }
 
-        .link-forget:focus{
+        #link-forget-email:focus, 
+        #link-forget-password:focus{
             color: #F47216;
         }
 
@@ -55,13 +68,15 @@ const FormComponent = styled.section`
             font-size: .9em;
             text-align: center;
             margin: 15px;
-            /* margin-top: 25px; */
-            /* margin-bottom: 10px;  */
+            position: absolute;
+            top: 30%;
+            left: 38%;
+            transform: translate(-50%, -50%);
         }
 
         .google-enter {
             position: absolute;
-            top: 80%;
+            top: 100%;
             left: 50%;
             transform: translate(-50%, -50%);
             display: flex;
@@ -90,6 +105,22 @@ const FormComponent = styled.section`
         .google-enter:hover{
             background-color: #9fc214;
             font-weight: bold;
+        } 
+
+        #link-forget-email {
+            position: absolute;
+            top: -62%;
+            left: 47%;
+            transform: translate(-50%, -50%);
+            width: 100px;
+        }
+
+        #link-forget-password {
+            position: absolute;
+            top: 5%;
+            left: 47%;
+            transform: translate(-50%, -50%);
+            width: 100px;
         }
 
         .create_account {
@@ -110,7 +141,7 @@ const FormComponent = styled.section`
         }
         .enter {
             position: absolute;
-            top: 125%;
+            top: 210%;
             left: 50%;
             transform: translate(-50%, -50%);
             border-style: none;
@@ -157,10 +188,69 @@ const FormComponent = styled.section`
                 padding: 100px 0px 0px 0px;
                 .title {
                     position: absolute;
-                    top: 10%;
+                    top: 8%;
                     left: 50%;
                     transform: translate(-50%, -50%);
-                }             
+                    font-size: 1.5em;
+                } 
+
+                #email {
+                    position: absolute;
+                    top: 23%;
+                    left: 40%;
+                    transform: translate(-50%, -50%);
+                }
+
+                #password {
+                    position: absolute;
+                    top: 35%;
+                    left: 30.3%;
+                    transform: translate(-50%, -50%);
+                }
+
+                .google-enter {
+                    position: absolute;
+                    top: 67%;
+                    left: 49%;
+                }
+
+                #link-forget-email {
+                    position: absolute;
+                    top: 17%;
+                    left: 47%;
+                    transform: translate(-50%, -50%);
+                    padding-top: 100px;
+                }
+
+                #link-forget-password {
+                    position: absolute;
+                    top: 35.6%;
+                    left: 47%;
+                    transform: translate(-50%, -50%);
+                    padding-top: 100px;
+                }
+
+                #txt-or {
+                    position: absolute;
+                    top: 53%;
+                    left: 44%;
+                    transform: translate(-50%, -50%);
+                    font-size: .7em;
+                }
+
+                .create_account {
+                    position: absolute;
+                    top: 68%;
+                    left: 47%;
+                    transform: translate(-50%, -50%);
+                }
+
+                .enter {
+                    position: absolute;
+                    top: 90%;
+                    left: 48%;
+                    transform: translate(-50%, -50%);
+                }
             }
         }
     }
@@ -221,16 +311,16 @@ const Form = function(){
                     <div className='box-container'>
                         <form>
                             <h1 className='title'>Login</h1>
-                            <div className='login'>
+                            <div id='email'>
                                 <Input type="email" name="e-mail" id="e-mail" placeholder='E-mail'/>
                             </div>
-                            <a href="#" className='link-forget'>
+                            <a href="#" id='link-forget-email'>
                                 <p>Esqueci o email</p>
                             </a>
-                            <div className='login'>
+                            <div id='password'>
                                 <Input type="password" name="password" id="password" placeholder='Senha'/>
                             </div>
-                            <a href="#" className='link-forget'>
+                            <a href="#" id='link-forget-password'>
                                 <p>Esqueci a senha</p>
                             </a>
                             <p id='txt-or'>OU</p>
