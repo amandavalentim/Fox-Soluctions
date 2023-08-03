@@ -154,7 +154,7 @@ const HeadComponent = styled.head`
         font-size: 23px;
     }
 
-    .home-button:active {
+    .home-button:hover {
         font-size: 23px;
         background-color: #07AFFA;
         border-radius: 41px;
@@ -164,7 +164,7 @@ const HeadComponent = styled.head`
         font-size: 23px;
     }
 
-    .sobre-nos-button:active {
+    .sobre-nos-button:hover {
         font-size: 23px;
         background-color: #07AFFA;
         border-radius: 41px;
@@ -198,6 +198,19 @@ const HeadComponent = styled.head`
         top: 30px;
         left: 15px;
         width: 60px;
+    }
+
+    .home {
+        background: none;
+        border: none;
+        font-size: 19px;
+    }
+
+    .home:active {
+        cursor: pointer;
+        background: none;
+        border: none;
+        font-size: 19px;
     }
 
     @media (min-width: 768px) {
@@ -280,7 +293,7 @@ const Ul = styled.ul`
         color: white;
         font-family: 'Poppins-Medium';
     }
-`;
+`;  
 
 const Open = ()=>{
     document.querySelector('.menu')?.classList.add('open');
@@ -297,10 +310,10 @@ const Head = function() {
       <HeadComponent>
              
                   <nav className='header'>
-                        <Link href={'/page2'}>
-                        <Image className='logo-Fox' src="/images/logo-fox1.svg" width={100} height={104} alt="logo" />
+                        <a href="/">
+                            <Image className='logo-Fox' src="/images/logo-fox1.svg" width={100} height={104} alt="logo" />
+                        </a>
                       <div className='nameLogo'>Fox Soluctions</div>
-                        </Link>
                   </nav> 
   
                   <nav className='show-on-mobile'>
@@ -311,13 +324,18 @@ const Head = function() {
                                 <div className='backdrop' onClick={Close}></div> 
                                     <Ul>
                                         <li>
+                                            {/* <div className='profile'>
+                                            <a href="/"><img src="/images/group-147.svg" className='fox'/>
+                                            <h1 className='name'>Stella the Fox</h1></a>
+                                            <button className='button-close'>
+                                                <FaTimes onClick={Close} className='close'/>
+                                            </button>
+                                            </div> */}
                                             <div className='conteudo'>
                                             <button className='button-close'>
                                                 <FaTimes onClick={Close} className='close'/>
                                             </button>
-                                            <Link href={'/page2'} className='home-button' onClick={Close}>
-                                                Home
-                                            </Link>
+                                            <a href="/" className='home-button'>Home</a>
                                             <a href="/" className='sobre-nos-button'>Sobre Nós</a>
                                             </div>
                                             
@@ -334,7 +352,11 @@ const Head = function() {
                                 Home
                               </Link>
                               </li>
-                              <a href="/"><li id='documents'>Sobre Nós</li></a>
+                              <li>
+                                <Link href={'/Page3'}>
+                                    Sobre Nós
+                                </Link>
+                              </li>
                           </Ul>
                       </div> 
                   </nav>
