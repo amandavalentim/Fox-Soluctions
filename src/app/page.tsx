@@ -7,7 +7,6 @@ export default function Home() {
       
       <Background/>
       <Form/>
-      <h1>gg</h1>
     </main>
   )
 }

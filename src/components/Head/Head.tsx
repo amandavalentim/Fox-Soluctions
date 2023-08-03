@@ -324,19 +324,20 @@ const Head = function() {
                                 <div className='backdrop' onClick={Close}></div> 
                                     <Ul>
                                         <li>
-                                            {/* <div className='profile'>
-                                            <a href="/"><img src="/images/group-147.svg" className='fox'/>
-                                            <h1 className='name'>Stella the Fox</h1></a>
-                                            <button className='button-close'>
-                                                <FaTimes onClick={Close} className='close'/>
-                                            </button>
-                                            </div> */}
                                             <div className='conteudo'>
                                             <button className='button-close'>
                                                 <FaTimes onClick={Close} className='close'/>
                                             </button>
-                                            <a href="/" className='home-button'>Home</a>
-                                            <a href="/" className='sobre-nos-button'>Sobre Nós</a>
+                                            <li>
+                                                <Link href={'/page2'} onClick={Close} className='home-button'>
+                                                Home
+                                            </Link>
+                                            </li>
+                                            <li>
+                                                <Link href={'/Page3'} className='sobre-nos-button' onClick={Close}>
+                                                    Sobre Nós
+                                                </Link>
+                                            </li>
                                             </div>
                                             
                                         </li>
@@ -348,7 +349,7 @@ const Head = function() {
                       <div>
                           <Ul>
                             <li>
-                                <Link href={'/abc123'}>
+                                <Link href={'/page2'}>
                                 Home
                               </Link>
                               </li>
