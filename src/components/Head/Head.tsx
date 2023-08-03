@@ -284,6 +284,7 @@ const Ul = styled.ul`
 
 const Open = ()=>{
     document.querySelector('.menu')?.classList.add('open');
+    
 }
 
 const Close = ()=> {
@@ -329,7 +330,7 @@ const Head = function() {
                       <div>
                           <Ul>
                             <li>
-                                <Link href={'/page2'}>
+                                <Link href={'/abc123'}>
                                 Home
                               </Link>
                               </li>

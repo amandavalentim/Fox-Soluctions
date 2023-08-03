@@ -43,7 +43,7 @@ var Head = function () {
             React.createElement("div", null,
                 React.createElement(Ul, null,
                     React.createElement("li", null,
-                        React.createElement(link_1["default"], { href: '/page2' }, "Home")),
+                        React.createElement(link_1["default"], { href: '/abc123' }, "Home")),
                     React.createElement("a", { href: "/" },
                         React.createElement("li", { id: 'documents' }, "Sobre N\u00F3s")))))));
 };
