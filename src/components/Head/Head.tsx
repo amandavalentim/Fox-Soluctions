@@ -206,7 +206,7 @@ const HeadComponent = styled.head`
         font-size: 19px;
     }
 
-    .home:hover {
+    .home:active {
         cursor: pointer;
         background: none;
         border: none;
