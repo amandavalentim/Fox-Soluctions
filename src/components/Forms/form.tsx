@@ -44,7 +44,6 @@ const FormComponent = styled.section`
 
         #link-forget-email, 
         #link-forget-password {
-            padding: 0px;
             border: none;
             outline: none;
             text-align: center;
@@ -53,13 +52,19 @@ const FormComponent = styled.section`
             cursor: pointer;
         }
 
-        #link-forget-email:hover, 
+        #link-forget-email:hover {
+            color: #F47216;
+        }
+
         #link-forget-password:hover {
             color: #F47216;
         }
 
-        #link-forget-email:focus, 
-        #link-forget-password:focus{
+        #link-forget-email:focus {
+            color: #F47216;
+        }
+
+        #link-forget-password:focus {
             color: #F47216;
         }
 
@@ -80,7 +85,6 @@ const FormComponent = styled.section`
             left: 50%;
             transform: translate(-50%, -50%);
             display: flex;
-            background-color: #93B413;
             color: white;
             outline: none;
             align-items: center;
@@ -91,18 +95,23 @@ const FormComponent = styled.section`
             justify-content: space-around;
             
             .btn-google { 
-                background-color: white;
+                display: flex;
+                justify-content: space-around;
+                background-color: #93B413;
                 border: none;
                 color: black;  
                 outline: none;
                 border-radius: 30px;
-            }
-            .txt-google {
+                width: 250px;
+                cursor: pointer;
+
+                .txt-google {
                 text-align: center;
+            }
             }
         }
 
-        .google-enter:hover{
+        .btn-google:hover{
             background-color: #9fc214;
             font-weight: bold;
         } 
@@ -219,7 +228,7 @@ const FormComponent = styled.section`
                     top: 17%;
                     left: 47%;
                     transform: translate(-50%, -50%);
-                    padding-top: 100px;
+                    /* padding-top: 100px; */
                 }
 
                 #link-forget-password {
@@ -227,7 +236,7 @@ const FormComponent = styled.section`
                     top: 35.6%;
                     left: 47%;
                     transform: translate(-50%, -50%);
-                    padding-top: 100px;
+                    /* padding-top: 100px; */
                 }
 
                 #txt-or {
@@ -327,8 +336,8 @@ const Form = function(){
                             <div className='google-enter'>
                                 <button className='btn-google'>
                                     <FaGoogle/>
+                                    <p className='txt-google'>Entrar com Google</p>
                                 </button>
-                                <p className='txt-google'>Entrar com Google</p>
                             </div>
                             <div className='create_account'>
                                 <h4>Não tem uma conta? <span className='orange'>Crie uma</span></h4>
