@@ -9,7 +9,7 @@ background-repeat: no-repeat;
 background-size: 100vw;
 height: 100vh;
 
-    .show-on-mobile{
+    .mobile{
         display: flex;
         justify-content: space-between;
     }
@@ -18,15 +18,15 @@ height: 100vh;
         display: none;
     }
 
-    .small-screens {
+    .p {
         display: none;       
     }
 
-    .normal-screens {
+    .n {
         display: none;   
     }
 
-    .tall-screens {
+    .g {
         display: none;    
     }
 
@@ -72,20 +72,6 @@ height: 100vh;
         background-color: #93B413;
         font-size: 1.5em;
     }
-
-    .start:active{
-        position: absolute;
-        width:120px;
-        height: 100px;
-        border-top-right-radius: 50%;
-        border-top-left-radius: 50%;
-        border-bottom-left-radius: 50%;
-        top: 510px;
-        left: 90px;
-        border: none;
-        font-size: 1.5em;
-       background-color: #9fc214;
-    }
     
     * {
         align-items: center;
@@ -98,23 +84,19 @@ height: 100vh;
             justify-content: space-between;
         }
 
-        .tall-screens{
+        .mobile {
             display: none;
         }
 
-        .show-on-mobile {
+        .p {
             display: none;
         }
 
-        .small-screens {
+        .n {
             display: none;
         }
 
-        .normal-screens {
-            display: none;
-        }
-
-        .tall-screens {
+        .g {
             display: none;
         }
 
@@ -142,11 +124,6 @@ height: 100vh;
             left: 340px;
         }
 
-        .start:active {
-            left: 340px;
-            background-color: #9fc214;
-        }
-
         .fox {
             left: 450px;
         }
@@ -155,20 +132,20 @@ height: 100vh;
 
     @media (min-width: 992px) {
 
-        .small-screens {
+        .p {
             display: flex;
             justify-content: space-between;
         }
 
-        .normal-screens {
+        .n {
             display: none;
         }
 
-        .tall-screens {
+        .g {
             display: none;
         }
 
-        .show-on-mobile {
+        .mobile {
             display: none;
         }
 
@@ -207,7 +184,7 @@ height: 100vh;
         .start:active {
             left: 420px;
             top: 630px;
-            width: 190px;
+            width: 90px;
             height: 130px;
             font-size: 2.1em;
             background-color: #9fc214;
@@ -223,7 +200,7 @@ height: 100vh;
 
     @media (min-width: 1200px) {
 
-        .normal-screens {
+        .n{
             display: flex;
             justify-content: space-between;  
         }
@@ -232,15 +209,15 @@ height: 100vh;
             display: none;
         }
 
-        .small-screens {
+        .p {
             display: none;
         }
 
-        .tall-screens {
+        .g {
             display: none;
         }
 
-        .show-on-mobile {
+        .mobile {
             display: none;
         }
 
@@ -265,18 +242,11 @@ height: 100vh;
         }
 
         .start {
-            left: 610px;
-            top: 570px;
-            width: 120px;
             height: 90px;
             color: white;
         }
 
         .start:active {
-            left: 610px;
-            top: 570px;
-            width: 120px;
-            height: 90px;
             color: white;
             background-color: #9fc214;
         }
@@ -291,12 +261,12 @@ height: 100vh;
 
     @media (min-width: 1600px) {
 
-        .tall-screens {
+        .g{
             display: flex;
             justify-content: space-between;
         }
 
-        .small-screens {
+        .p {
             display: none;  
         }
 
@@ -304,11 +274,11 @@ height: 100vh;
             display: none;
         }
 
-        .show-on-mobile {
+        .mobile {
             display: none;
         }
 
-        .normal-screens {
+        .n {
             display: none;
         }
 
@@ -330,7 +300,7 @@ height: 100vh;
             top: 620px;
         }
 
-        .start:active {
+        .start:hover {
             left: 668px;
             top: 620px;
             background-color: #9fc214;
@@ -349,7 +319,7 @@ const PgInitial = function() {
     return (
         <HomeComponent>
 
-            <nav className='show-on-mobile'>
+            <nav className='mobile'>
                     <h1>Bem-Vinde a<br/> <span id='FX'>Fox Soluctions</span>!</h1>
                     <p>
                         Aqui nós buscamos sempre<br/> dar a melhor<br/> experiência possível para<br/> quem utiliza nossa<br/> plataforma, onde você pode<br/> realizar o upload e visualizar<br/> seus documentos!
@@ -375,7 +345,7 @@ const PgInitial = function() {
                     <img src="/images/Stella.png" alt="fox" className='fox'/>
             </nav>
 
-            <nav className='small-screens'>
+            <nav className='p'>
                 <h1>Bem-Vinde a<br/> <span id='FX'>Fox Soluctions</span>!</h1>
                 <p>
                         Aqui nós buscamos sempre dar a melhor<br/> experiência possível para quem utiliza nossa plataforma,<br/> onde você pode realizar<br/> o upload e visualizar seus documentos!
@@ -388,7 +358,7 @@ const PgInitial = function() {
                 <img src="/images/Stella.png" alt="fox" className='fox'/>
             </nav>
 
-            <nav className='normal-screens'>
+            <nav className='n'>
             <h1>Bem-Vinde a<br/> <span id='FX'>Fox Soluctions</span>!</h1>
             <p>
                 Aqui nós buscamos sempre dar a melhor<br/> experiência possível para quem utiliza nossa plataforma,<br/> onde você pode realizar<br/> o upload e visualizar seus documentos!
@@ -401,17 +371,11 @@ const PgInitial = function() {
             <img src="/images/Stella.png" alt="fox" className='fox'/>
             </nav>
 
-            <nav className='tall-screens'>
+            <nav className='g'>
             <h1>Bem-Vinde a<br/> <span id='FX'>Fox Soluctions</span>!</h1>
             <p>
                 Aqui nós buscamos sempre dar a melhor<br/> experiência possível para quem utiliza nossa plataforma,<br/> onde você pode realizar<br/> o upload e visualizar seus documentos!
             </p>
-            <Link href={'/Page3'}>
-                <button type='button' className='start'>
-                    Start
-                </button>
-            </Link>
-            <img src="/images/Stella.png" alt="fox" className='fox'/>
             </nav>
 
             
