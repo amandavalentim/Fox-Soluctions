@@ -1,11 +1,11 @@
-import Footer from '@/components/Footer'
-import PgInitial from '@/components/Home-conteudo'
+import Form from '@/components/Forms'
 import Background from '@/components/ulix/background/background'
 
 export default function page2() {
   return (
     <main>
-      <PgInitial/>
+      <Background/>
+      <Form/>
     </main>
     )
 }

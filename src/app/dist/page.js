@@ -1,10 +1,8 @@
 "use strict";
 exports.__esModule = true;
-var background_1 = require("@/components/ulix/background/background");
-var Forms_1 = require("@/components/Forms");
+var Home_conteudo_1 = require("@/components/Home-conteudo");
 function Home() {
     return (React.createElement("main", null,
-        React.createElement(background_1["default"], null),
-        React.createElement(Forms_1["default"], null)));
+        React.createElement(Home_conteudo_1["default"], null)));
 }
 exports["default"] = Home;

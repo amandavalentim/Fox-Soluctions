@@ -329,7 +329,7 @@ const Head = function() {
                                                 <FaTimes onClick={Close} className='close'/>
                                             </button>
                                             <li>
-                                                <Link href={'/page2'} onClick={Close} className='home-button'>
+                                                <Link href={'/page'} onClick={Close} className='home-button'>
                                                 Home
                                             </Link>
                                             </li>
@@ -349,7 +349,7 @@ const Head = function() {
                       <div>
                           <Ul>
                             <li>
-                                <Link href={'/page2'}>
+                                <Link href={'/page'}>
                                 Home
                               </Link>
                               </li>

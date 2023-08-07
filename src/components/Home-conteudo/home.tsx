@@ -275,7 +275,7 @@ const PgInitial = function() {
                     <p>
                         Aqui nós buscamos sempre<br/> dar a melhor<br/> experiência possível para<br/> quem utiliza nossa<br/> plataforma, onde você pode<br/> realizar o upload e visualizar<br/> seus documentos!
                     </p>
-                        <Link href={'/Page3'}>
+                        <Link href={'/page2'}>
                             <button type='button' className='start'>
                                 Start
                             </button>
@@ -288,7 +288,7 @@ const PgInitial = function() {
                 <p>
                      Aqui nós buscamos sempre dar a melhor<br/> experiência possível para quem utiliza nossa<br/> plataforma, onde você pode realizar o upload<br/> e visualizar seus documentos!
                 </p>
-                    <Link href={'/Page3'}>
+                    <Link href={'/page2'}>
                                 <button type='button' className='start'>
                                     Start
                                 </button>
@@ -301,7 +301,7 @@ const PgInitial = function() {
                 <p>
                     Aqui nós buscamos sempre dar a melhor<br/> experiência possível para quem utiliza nossa plataforma,<br/> onde você pode realizar o upload e visualizar<br/> seus documentos!
                 </p>
-                <Link href={'/Page3'}>
+                <Link href={'/page2'}>
                     <button type='button' className='start'>
                         Start
                     </button>
@@ -314,7 +314,7 @@ const PgInitial = function() {
                 <p>
                      Aqui nós buscamos sempre dar a melhor<br/> experiência possível para quem utiliza nossa<br/> plataforma, onde você pode realizar o upload<br/> e visualizar seus documentos!
                 </p>
-                <Link href={'/Page3'}>
+                <Link href={'/page2'}>
                     <button type='button' className='start'>
                         Start
                     </button>

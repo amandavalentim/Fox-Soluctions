@@ -38,14 +38,14 @@ var Head = function () {
                             React.createElement("button", { className: 'button-close' },
                                 React.createElement(fa_2.FaTimes, { onClick: Close, className: 'close' })),
                             React.createElement("li", null,
-                                React.createElement(link_1["default"], { href: '/page2', onClick: Close, className: 'home-button' }, "Home")),
+                                React.createElement(link_1["default"], { href: '/page', onClick: Close, className: 'home-button' }, "Home")),
                             React.createElement("li", null,
                                 React.createElement(link_1["default"], { href: '/Page3', className: 'sobre-nos-button', onClick: Close }, "Sobre N\u00F3s"))))))),
         React.createElement("nav", { className: 'hide-on-mobile' },
             React.createElement("div", null,
                 React.createElement(Ul, null,
                     React.createElement("li", null,
-                        React.createElement(link_1["default"], { href: '/page2' }, "Home")),
+                        React.createElement(link_1["default"], { href: '/page' }, "Home")),
                     React.createElement("li", null,
                         React.createElement(link_1["default"], { href: '/Page3' }, "Sobre N\u00F3s")))))));
 };

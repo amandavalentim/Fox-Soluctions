@@ -1,12 +1,9 @@
-import Background from '@/components/ulix/background/background'
-import Form from '@/components/Forms'
+import PgInitial from '@/components/Home-conteudo'
 
 export default function Home() {
   return (
     <main>
-      
-      <Background/>
-      <Form/>
+      <PgInitial/>
     </main>
   )
 }
