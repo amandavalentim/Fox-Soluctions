@@ -232,12 +232,12 @@ height: 100vh;
 
         h1 {
             font-size: 2em;
-            left: 530px;
+            left: 550px;
         }
 
         p {
             font-size: 1.8em;
-            left: 330px;
+            left: 350px;
         }
 
         .start {
