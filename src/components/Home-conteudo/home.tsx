@@ -232,33 +232,33 @@ height: 100vh;
 
         h1 {
             font-size: 2em;
-            left: 400px;
+            left: 450px;
         }
 
         p {
             font-size: 1.8em;
-            left: 370px;
+            left: 350px;
         }
 
         .start {
             top: 580px;
-            left: 530px;
+            left: 560px;
         }
 
         .start:hover {
             top: 580px;
-            left: 530px;
+            left: 560px;
             background-color: #9fc214;
         }
 
         .start:active {
             top: 580px;
-            left: 530px;
+            left: 560px;
             background-color: #86a40f;
         }
 
         .fox {
-            left: 650px;
+            left: 680px;
             width: 150px;
             top: 670px;
         }
