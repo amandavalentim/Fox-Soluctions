@@ -1,5 +1,5 @@
 import Background from '@/components/ulix/background/background'
-import Form from '../components/Forms'
+import Form from '@/components/Forms'
 
 export default function Home() {
   return (
