@@ -258,21 +258,21 @@ height: 100vh;
         p {
             text-align: center;
             position: absolute;
-            left: 315px;
+            left: 355px;
             top: 370px;
             font-size: 1.6em;
             color: white;
         }
 
         .start {
-            left: 640px;
+            left: 540px;
             top: 570px;
             width: 120px;
             height: 90px;
         }
 
         .start:active {
-            left: 640px;
+            left: 540px;
             top: 570px;
             width: 120px;
             height: 90px;
@@ -280,9 +280,9 @@ height: 100vh;
         }
 
         .fox {
-            left: 730px;
+            left: 630px;
             width: 160px;
-            top: 664px;
+            top: 660px;
         }
     
     }
