@@ -35,6 +35,7 @@ height: 100vh;
         position: absolute;
         left: 60px;
         top: 200px;
+        color: white;
     }
 
     #FX {
@@ -47,6 +48,7 @@ height: 100vh;
         left: 30px;
         top: 300px;
         font-size: 1.1em;
+        color: white;
     }
 
     .fox {
@@ -122,6 +124,7 @@ height: 100vh;
             left: 280px;
             top: 230px;
             font-size: 1.5em;
+            color: white;
         }
 
         p {
@@ -130,6 +133,7 @@ height: 100vh;
             left: 95px;
             top: 350px;
             font-size: 1.2em;
+            color: white;
         }
 
         .start {
@@ -178,6 +182,7 @@ height: 100vh;
             left: 370px;
             top: 250px;
             font-size: 2em;
+            color: white;
         }
 
         p {
@@ -186,6 +191,7 @@ height: 100vh;
             left: 70px;
             top: 400px;
             font-size: 1.8em;
+            color: white;
         }
 
         .start {
@@ -244,14 +250,16 @@ height: 100vh;
             left: 545px;
             top: 250px;
             font-size: 1.7em;
+            color: white;
         }
 
         p {
             text-align: center;
             position: absolute;
-            left: 270px;
+            left: 220px;
             top: 370px;
             font-size: 1.6em;
+            color: white;
         }
 
         .start {
@@ -270,7 +278,7 @@ height: 100vh;
         }
 
         .fox {
-            left: 700px;
+            left: 200px;
             width: 170px;
             top: 687px;
         }
@@ -304,11 +312,13 @@ height: 100vh;
 
         h1 {
             left: 630px;
+            color: white;
         }
 
         p {
             left: 330px;
             top: 410px;
+            color: white;
         }
 
         .start {
