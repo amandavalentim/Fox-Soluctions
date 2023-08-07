@@ -265,17 +265,19 @@ height: 100vh;
         }
 
         .start {
-            left: 580px;
+            left: 610px;
             top: 570px;
             width: 120px;
             height: 90px;
+            color: white;
         }
 
         .start:active {
-            left: 580px;
+            left: 610px;
             top: 570px;
             width: 120px;
             height: 90px;
+            color: white;
             background-color: #9fc214;
         }
 
