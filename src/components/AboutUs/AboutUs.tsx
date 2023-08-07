@@ -1,12 +1,10 @@
 'use client';
-import styled from '@emotion/styled';
+import styled from'@emotion/styled'
 import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 import Carousel from 'react-bootstrap/Carousel';
 
 const AboutUsComponent = styled.section`
-    background-color: #0A53B5;
-
 
 `;
 
