@@ -36,6 +36,7 @@ height: 100vh;
         left: 60px;
         top: 200px;
         color: white;
+        margin: 10px;
     }
 
     #FX {
@@ -88,6 +89,7 @@ height: 100vh;
     
     * {
         align-items: center;
+        box-sizing: border-box;
     }
 
     @media (min-width: 768px) {
@@ -280,7 +282,7 @@ height: 100vh;
         .fox {
             left: 200px;
             width: 170px;
-            top: 687px;
+            top: 487px;
         }
     
     }
