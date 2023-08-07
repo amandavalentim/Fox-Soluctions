@@ -249,8 +249,8 @@ height: 100vh;
         h1 {
             text-align: center;
             position: absolute;
-            left: 545px;
-            top: 250px;
+            left: 575px;
+            top: 240px;
             font-size: 1.7em;
             color: white;
         }
@@ -258,31 +258,31 @@ height: 100vh;
         p {
             text-align: center;
             position: absolute;
-            left: 220px;
+            left: 315px;
             top: 370px;
             font-size: 1.6em;
             color: white;
         }
 
         .start {
-            left: 590px;
+            left: 640px;
             top: 570px;
-            width: 140px;
-            height: 110px;
+            width: 120px;
+            height: 90px;
         }
 
         .start:active {
-            left: 590px;
+            left: 640px;
             top: 570px;
-            width: 140px;
-            height: 110px;
+            width: 120px;
+            height: 90px;
             background-color: #9fc214;
         }
 
         .fox {
-            left: 200px;
-            width: 170px;
-            top: 487px;
+            left: 730px;
+            width: 160px;
+            top: 664px;
         }
     
     }
