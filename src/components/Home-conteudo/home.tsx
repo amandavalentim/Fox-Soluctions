@@ -154,47 +154,47 @@ height: 100vh;
         background-image: url("/images/background3.svg");
 
         h1 {
-            font-size: 2.2em;
-            top: 260px;
-            left: 358px;
+            font-size: 1.9em;
+            top: 230px;
+            left: 370px;
         }
 
         p {
-            font-size: 1.9em;
-            top: 420px;
-            left: 65px;
+            font-size: 1.5em;
+            top: 370px;
+            left: 140px;
         }
 
         .start {
-            width: 170px;
-            height: 120px;
+            width: 150px;
+            height: 100px;
             font-size: 1.9em;
-            top: 660px;
-            left: 350px;
+            top: 560px;
+            left: 360px;
         }
 
         .start:hover {
-            width: 170px;
-            height: 120px;
+            width: 150px;
+            height: 100px;
             font-size: 1.9em;
-            top: 660px;
-            left: 350px;
+            top: 560px;
+            left: 360px;
             background-color: #9fc214;
         }
 
         .start:active {
-            width: 170px;
-            height: 120px;
+            width: 150px;
+            height: 100px;
             font-size: 1.9em;
-            top: 660px;
-            left: 350px;
+            top: 560px;
+            left: 360px;
             background-color: #86a40f;
         }
 
         .fox {
-            width: 170px;
-            top: 766px;
-            left: 500px;
+            width: 160px;
+            top: 660px;
+            left: 490px;
         }
     }
 
@@ -233,7 +233,7 @@ const PgInitial = function() {
             <nav className='desktop-1'>
                 <h1>Bem-Vinde a<br/> <span id='FX'>Fox Soluctions</span>!</h1>
                 <p>
-                    Aqui nós buscamos sempre dar a melhor<br/> experiência possível para quem utiliza nossaplataforma,<br/> onde você pode realizar o upload e visualizar<br/> seus documentos!
+                    Aqui nós buscamos sempre dar a melhor<br/> experiência possível para quem utiliza nossa plataforma,<br/> onde você pode realizar o upload e visualizar<br/> seus documentos!
                 </p>
                 <Link href={'/Page3'}>
                     <button type='button' className='start'>
