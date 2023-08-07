@@ -265,14 +265,14 @@ height: 100vh;
         }
 
         .start {
-            left: 540px;
+            left: 560px;
             top: 570px;
             width: 120px;
             height: 90px;
         }
 
         .start:active {
-            left: 540px;
+            left: 560px;
             top: 570px;
             width: 120px;
             height: 90px;
@@ -280,7 +280,7 @@ height: 100vh;
         }
 
         .fox {
-            left: 630px;
+            left: 650px;
             width: 160px;
             top: 660px;
         }
