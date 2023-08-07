@@ -29,8 +29,8 @@ height: 100vh;
     h1 {
         text-align: center;
         position: absolute;
-        left: 60px;
-        top: 200px;
+        left: 45px;
+        top: 220px;
         color: white;
         margin: 10px;
     }
@@ -43,7 +43,7 @@ height: 100vh;
         text-align: center;
         position: absolute;
         left: 30px;
-        top: 300px;
+        top: 350px;
         font-size: 1.1em;
         color: white;
     }
@@ -51,7 +51,7 @@ height: 100vh;
     .fox {
         width: 120px;
         position: absolute;
-        top: 613px;
+        top: 700px;
         left: 190px;
     }
 
@@ -62,7 +62,7 @@ height: 100vh;
         border-top-right-radius: 50%;
         border-top-left-radius: 50%;
         border-bottom-left-radius: 50%;
-        top: 510px;
+        top: 610px;
         left: 90px;
         border: none;
         background-color: #93B413;
@@ -77,7 +77,7 @@ height: 100vh;
         border-top-right-radius: 50%;
         border-top-left-radius: 50%;
         border-bottom-left-radius: 50%;
-        top: 510px;
+        top: 610px;
         left: 90px;
         border: none;
         background-color: #86a40f;
@@ -297,7 +297,7 @@ const PgInitial = function() {
             </nav>
 
             <nav className='desktop-1'>
-                <h1>Bem-Vinde a<br/> <span id='FX'>Fox Soluctions</span>!</h1>
+                <h1>Bem-Vinde a <span id='FX'>Fox Soluctions</span>!</h1>
                 <p>
                     Aqui nós buscamos sempre dar a melhor<br/> experiência possível para quem utiliza nossa plataforma,<br/> onde você pode realizar o upload e visualizar<br/> seus documentos!
                 </p>
@@ -310,7 +310,7 @@ const PgInitial = function() {
             </nav>
 
             <nav className='desktop-2'>
-                <h1>Bem-Vinde a<br/> <span id='FX'>Fox Soluctions</span>!</h1>
+                <h1>Bem-Vinde a <span id='FX'>Fox Soluctions</span>!</h1>
                 <p>
                      Aqui nós buscamos sempre dar a melhor<br/> experiência possível para quem utiliza nossa<br/> plataforma, onde você pode realizar o upload<br/> e visualizar seus documentos!
                 </p>

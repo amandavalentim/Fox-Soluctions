@@ -152,22 +152,28 @@ const HeadComponent = styled.head`
 
     .home-button {
         font-size: 23px;
+        color: white;
+        text-decoration: none;
     }
 
-    .home-button:hover {
+    .home-button:focus {
         font-size: 23px;
         background-color: #07AFFA;
         border-radius: 41px;
+        text-decoration: none;
     }
 
     .sobre-nos-button {
         font-size: 23px;
+        color: white;
+        text-decoration: none;
     }
 
-    .sobre-nos-button:hover {
+    .sobre-nos-button:focus {
         font-size: 23px;
         background-color: #07AFFA;
         border-radius: 41px;
+        text-decoration: none;
     }
 
     header .hearder-boder {
@@ -243,6 +249,26 @@ const HeadComponent = styled.head`
             color: white;
             font-family: 'Roboto-Medium';
         }
+
+        .home-button {
+            font-size: 19px;
+        }
+
+        .home-button:focus {
+            font-size: 19px;
+            color: #F47216;
+            background: none;
+        }
+
+        .sobre-nos-button {
+            font-size: 19px;
+        }
+
+        .sobre-nos-button:focus {
+            font-size: 19px;
+            color: #F47216;
+            background: none;
+        }
     }
 
     @media (min-width: 922px) {
@@ -255,7 +281,8 @@ const HeadComponent = styled.head`
 
         .show-on-mobile {
             display: none;
-        }      
+        }     
+        
     }
 
     @media (min-width: 1200px) {
@@ -269,6 +296,7 @@ const HeadComponent = styled.head`
         .show-on-mobile {
             display: none;
         } 
+    
     }
 
     @media (min-width: 1600px) {
@@ -310,9 +338,9 @@ const Head = function() {
       <HeadComponent>
              
                   <nav className='header'>
-                        <a href="/">
+                            <Link href={'/page'}>
                             <Image className='logo-Fox' src="/images/logo-fox1.svg" width={100} height={104} alt="logo" />
-                        </a>
+                            </Link>
                       <div className='nameLogo'>Fox Soluctions</div>
                   </nav> 
   
@@ -346,20 +374,18 @@ const Head = function() {
                         </nav> 
 
                   <nav className='hide-on-mobile'>
-                      <div>
                           <Ul>
                             <li>
-                                <Link href={'/page'}>
+                                <Link href={'/page'} className='home-button'>
                                 Home
                               </Link>
                               </li>
                               <li>
-                                <Link href={'/Page3'}>
+                                <Link href={'/Page3'} className='sobre-nos-button'>
                                     Sobre Nós
                                 </Link>
                               </li>
                           </Ul>
-                      </div> 
                   </nav>
                   
       </HeadComponent>
