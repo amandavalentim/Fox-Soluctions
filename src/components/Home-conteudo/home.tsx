@@ -189,7 +189,7 @@ height: 100vh;
         }
 
         .start {
-            left: 400px;
+            left: 420px;
             top: 630px;
             width: 190px;
             height: 130px;
@@ -197,7 +197,7 @@ height: 100vh;
         }
 
         .start:active {
-            left: 400px;
+            left: 420px;
             top: 630px;
             width: 190px;
             height: 130px;
@@ -208,7 +208,7 @@ height: 100vh;
         .fox {
             top: 777px;
             width: 160px;
-            left: 560px;
+            left: 580px;
         }
 
     }
@@ -241,31 +241,47 @@ height: 100vh;
         h1 {
             text-align: center;
             position: absolute;
-            left: 565px;
+            left: 570px;
             top: 250px;
-            font-size: 1.9em;
+            font-size: 2em;
         }
 
         p {
             text-align: center;
             position: absolute;
-            left: 300px;
+            left: 260px;
             top: 390px;
-            font-size: 1.5em;
+            font-size: 1.8em;
+        }
+
+        .start {
+            left: 610px;
+            top: 610px;
+        }
+
+        .start:active {
+            left: 610px;
+            top: 610px;
+            background-color: #9fc214;
+        }
+
+        .fox {
+            left: 760px;
+            width: 190px;
+            top: 747px;
         }
     
     }
 
     @media (min-width: 1600px) {
 
-        .tall-screns {
+        .tall-screens {
             display: flex;
             justify-content: space-between;
         }
 
         .small-screens {
-            display: flex;
-            justify-content: space-between;  
+            display: none;  
         }
 
         .tablet {
@@ -282,6 +298,31 @@ height: 100vh;
 
         background-image: url("/images/group-144.svg");
 
+        h1 {
+            left: 630px;
+        }
+
+        p {
+            left: 330px;
+            top: 410px;
+        }
+
+        .start {
+            left: 668px;
+            top: 620px;
+        }
+
+        .start:active {
+            left: 668px;
+            top: 620px;
+            background-color: #9fc214;
+        }
+
+        .fox {
+            left: 820px;
+            top: 753px;
+        }
+
     }
 
 `;
@@ -291,9 +332,7 @@ const PgInitial = function() {
         <HomeComponent>
 
             <nav className='show-on-mobile'>
-                    <div className='titulo'>
-                        <h1>Bem-Vinde a<br/> <span id='FX'>Fox Soluctions</span>!</h1>
-                    </div>
+                    <h1>Bem-Vinde a<br/> <span id='FX'>Fox Soluctions</span>!</h1>
                     <p>
                         Aqui nós buscamos sempre<br/> dar a melhor<br/> experiência possível para<br/> quem utiliza nossa<br/> plataforma, onde você pode<br/> realizar o upload e visualizar<br/> seus documentos!
                     </p>
@@ -306,24 +345,19 @@ const PgInitial = function() {
             </nav>
 
             <nav className='tablet'>
-                <div className='titulo'>
-                    <h1>Bem-Vinde a<br/> <span id='FX'>Fox Soluctions</span>!</h1>
-                    <p>
-                        Aqui nós buscamos sempre dar a melhor<br/> experiência possível para quem utiliza nossa plataforma,<br/> onde você pode realizar<br/> o upload e visualizar seus documentos!
-                    </p>
+                <h1>Bem-Vinde a<br/> <span id='FX'>Fox Soluctions</span>!</h1>
+                <p>
+                 Aqui nós buscamos sempre dar a melhor<br/> experiência possível para quem utiliza nossa plataforma,<br/> onde você pode realizar<br/> o upload e visualizar seus documentos!
+                </p>
                         <Link href={'/Page3'}>
                             <button type='button' className='start'>
                                 Start
                             </button>
                         </Link>
                     <img src="/images/Stella.png" alt="fox" className='fox'/>
-                </div>
-
             </nav>
 
             <nav className='small-screens'>
-
-            <div className='titulo'>
                 <h1>Bem-Vinde a<br/> <span id='FX'>Fox Soluctions</span>!</h1>
                 <p>
                         Aqui nós buscamos sempre dar a melhor<br/> experiência possível para quem utiliza nossa plataforma,<br/> onde você pode realizar<br/> o upload e visualizar seus documentos!
@@ -334,21 +368,32 @@ const PgInitial = function() {
                             </button>
                 </Link>
                 <img src="/images/Stella.png" alt="fox" className='fox'/>
-                
-            </div>
-
             </nav>
 
             <nav className='normal-screens'>
-
-            <div className='titulo'>
             <h1>Bem-Vinde a<br/> <span id='FX'>Fox Soluctions</span>!</h1>
-            </div>
-
+            <p>
+                Aqui nós buscamos sempre dar a melhor<br/> experiência possível para quem utiliza nossa plataforma,<br/> onde você pode realizar<br/> o upload e visualizar seus documentos!
+            </p>
+            <Link href={'/Page3'}>
+                <button type='button' className='start'>
+                    Start
+                </button>
+            </Link>
+            <img src="/images/Stella.png" alt="fox" className='fox'/>
             </nav>
 
             <nav className='tall-screens'>
-
+            <h1>Bem-Vinde a<br/> <span id='FX'>Fox Soluctions</span>!</h1>
+            <p>
+                Aqui nós buscamos sempre dar a melhor<br/> experiência possível para quem utiliza nossa plataforma,<br/> onde você pode realizar<br/> o upload e visualizar seus documentos!
+            </p>
+            <Link href={'/Page3'}>
+                <button type='button' className='start'>
+                    Start
+                </button>
+            </Link>
+            <img src="/images/Stella.png" alt="fox" className='fox'/>
             </nav>
 
             
