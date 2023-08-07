@@ -24,7 +24,7 @@ const FormComponent = styled.section`
             font-size: 2em;
             color: #ffff;
             position: absolute;
-            top: -180%;
+            top: 50%;
             left: 20%;
         } 
 
@@ -106,8 +106,8 @@ const FormComponent = styled.section`
                 cursor: pointer;
 
                 .txt-google {
-                text-align: center;
-            }
+                    text-align: center;
+                }
             }
         }
 
@@ -134,15 +134,15 @@ const FormComponent = styled.section`
 
         .create_account {
             /* position: absolute;
-            top: 105%;
+            top: 200%;
             left: 50%;
             transform: translate(-50%, -50%); */
             text-align: center;
             font-size: 1em;
             color: #FFFF;
             margin: 5px;
-            margin-top: 20px;
-            padding-top: 55px;
+            /* margin-top: 20px;
+            padding-top: 55px; */
             cursor: pointer;
             span {
                 color: #F47216;
