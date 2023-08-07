@@ -42,7 +42,7 @@ height: 100vh;
     p {
         text-align: center;
         position: absolute;
-        left: 30px;
+        left: 50px;
         top: 300px;
         font-size: 1.1em;
         color: white;
@@ -51,7 +51,7 @@ height: 100vh;
     .fox {
         width: 120px;
         position: absolute;
-        top: 590px;
+        top: 614px;
         left: 190px;
     }
 
