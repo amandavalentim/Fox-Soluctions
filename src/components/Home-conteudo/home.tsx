@@ -156,13 +156,13 @@ height: 100vh;
         h1 {
             font-size: 1.9em;
             top: 230px;
-            left: 370px;
+            left: 400px;
         }
 
         p {
             font-size: 1.5em;
             top: 370px;
-            left: 140px;
+            left: 190px;
         }
 
         .start {
