@@ -19,8 +19,12 @@ height: 100vh;
     }
 
     .desktop-1 {
-            display: none;
-        }
+        display: none;
+    }
+
+    .desktop-2 {
+        display: none;
+    }
 
     h1 {
         text-align: center;
@@ -100,6 +104,10 @@ height: 100vh;
             display: none;
         }
 
+        .desktop-2 {
+            display: none;
+        }
+
         background-image: url("/images/tablet.svg");
 
         h1 {
@@ -151,6 +159,10 @@ height: 100vh;
             justify-content: space-between;
         }
 
+        .desktop-2 {
+            display: none;
+        }
+
         background-image: url("/images/background3.svg");
 
         h1 {
@@ -195,6 +207,60 @@ height: 100vh;
             width: 160px;
             top: 660px;
             left: 490px;
+        }
+    }
+
+    @media(min-width: 1200px) {
+        .mobile{
+            display: none;
+        }
+
+        .tablet {
+            display: none;
+        }
+
+        .desktop-1 {
+            display: none;
+        }
+
+        .desktop-2 {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        background-image: url("/images/background-2.svg");
+
+        h1 {
+            font-size: 2em;
+            left: 530px;
+        }
+
+        p {
+            font-size: 1.8em;
+            left: 330px;
+        }
+
+        .start {
+            top: 580px;
+            left: 530px;
+        }
+
+        .start:hover {
+            top: 580px;
+            left: 530px;
+            background-color: #9fc214;
+        }
+
+        .start:active {
+            top: 580px;
+            left: 530px;
+            background-color: #86a40f;
+        }
+
+        .fox {
+            left: 650px;
+            width: 150px;
+            top: 670px;
         }
     }
 
@@ -244,7 +310,16 @@ const PgInitial = function() {
             </nav>
 
             <nav className='desktop-2'>
-
+                <h1>Bem-Vinde a<br/> <span id='FX'>Fox Soluctions</span>!</h1>
+                <p>
+                     Aqui nós buscamos sempre dar a melhor<br/> experiência possível para quem utiliza nossa<br/> plataforma, onde você pode realizar o upload<br/> e visualizar seus documentos!
+                </p>
+                <Link href={'/Page3'}>
+                    <button type='button' className='start'>
+                        Start
+                    </button>
+                </Link>
+                <img src="/images/Stella.png" alt="fox" className='fox'/>
             </nav>
             
         </HomeComponent>
