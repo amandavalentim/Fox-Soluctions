@@ -29,8 +29,8 @@ height: 100vh;
     h1 {
         text-align: center;
         position: absolute;
-        left: 45px;
-        top: 220px;
+        left: 60px;
+        top: 200px;
         color: white;
         margin: 10px;
     }
@@ -43,7 +43,7 @@ height: 100vh;
         text-align: center;
         position: absolute;
         left: 30px;
-        top: 350px;
+        top: 300px;
         font-size: 1.1em;
         color: white;
     }
@@ -51,7 +51,7 @@ height: 100vh;
     .fox {
         width: 120px;
         position: absolute;
-        top: 700px;
+        top: 590px;
         left: 190px;
     }
 
@@ -62,7 +62,7 @@ height: 100vh;
         border-top-right-radius: 50%;
         border-top-left-radius: 50%;
         border-bottom-left-radius: 50%;
-        top: 610px;
+        top: 510px;
         left: 90px;
         border: none;
         background-color: #93B413;
@@ -77,7 +77,7 @@ height: 100vh;
         border-top-right-radius: 50%;
         border-top-left-radius: 50%;
         border-bottom-left-radius: 50%;
-        top: 610px;
+        top: 510px;
         left: 90px;
         border: none;
         background-color: #86a40f;
