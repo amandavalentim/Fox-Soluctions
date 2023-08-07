@@ -241,34 +241,38 @@ height: 100vh;
         h1 {
             text-align: center;
             position: absolute;
-            left: 570px;
+            left: 545px;
             top: 250px;
-            font-size: 2em;
+            font-size: 1.7em;
         }
 
         p {
             text-align: center;
             position: absolute;
-            left: 260px;
-            top: 390px;
-            font-size: 1.8em;
+            left: 270px;
+            top: 370px;
+            font-size: 1.6em;
         }
 
         .start {
-            left: 610px;
-            top: 610px;
+            left: 590px;
+            top: 570px;
+            width: 140px;
+            height: 110px;
         }
 
         .start:active {
-            left: 610px;
-            top: 610px;
+            left: 590px;
+            top: 570px;
+            width: 140px;
+            height: 110px;
             background-color: #9fc214;
         }
 
         .fox {
-            left: 760px;
-            width: 190px;
-            top: 747px;
+            left: 700px;
+            width: 170px;
+            top: 687px;
         }
     
     }
