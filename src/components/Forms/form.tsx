@@ -20,95 +20,126 @@ const FormComponent = styled.section`
             
             .title {
                 position: absolute; 
-                top: -525px;
-                left: 42%;
-
+                top: -538px;
+                left: 115px;
+                color: white;
+                font-family: 'Poppins-Bold';
+                font-size: 2em;
             } 
 
             #email {
                 position: absolute; 
-                top: -489px;
-                left: 9%;
+                top: -450px;
+                left: 48px;
             }
 
             #password {
                 position: absolute; 
-                top: -201px;
-                left: 9%;
+                top: -181px;
+                left: 24px;
             }
 
             #link-forget-email {
                 position: absolute;
-                top: -446px;
-                left: 32%;
+                top: -424px;
+                left: 112px;
             }
 
             #link-forget-password {
                 position: absolute;
-                top: -359px;
-                left: 32%;
+                top: -338px;
+                left: 112px;
             }
 
             #link-forget-email, 
             #link-forget-password {
-                
+                color: #CCC;
+                font-size: 12px;
             }
 
             #link-forget-email:hover {
-                
+                color: #F47216;
             }
 
             #link-forget-password:hover {
-                
+                color: #F47216;
             }
 
             #link-forget-email:focus {
-                
+                color: #F47216;
             }
 
             #link-forget-password:focus {
-                
+                color: #F47216;
             }
 
             #txt-or {
                 position: absolute;
-                top: -289px;
+                top: -285px;
                 left: 45%;
+                color: white;
+                font-size: 14px;
+                font-family: 'Poppins-Medium';
             }
 
             .google-enter {
                 position: absolute;
-                top: -230px;
-                left: 41%;
+                top: -220px;
+                left: 59px;
+                display: flex;
+                width: 200px;
     
                 .btn-google { 
-                    position: absolute;
+                    padding: 12px;
+                    border-radius: 39px;
+                    background-color: #93B413;
+                    outline: none;
+                    color: white;
+                    border: none;
+                    font-family: 'Poppins-Medium';
+                    font-size: 15px;
+                    .google-icon {
+                        width: 30px;
+                        height: 20px;
+                        margin-bottom: -5px;
+                        margin-right: 5px;
+                    }
                 }
             }
 
             .btn-google:hover{
-                
+                color: #86a40f;
             } 
 
             .create_account {
                 position: absolute;
-                top: -132px;
-                left: 12%;
+                top: -140px;
+                left: 54px;
+                /* transform: translate(-50%, -50%); */
 
                 #txt-create {
-                    /* position: absolute; */
+                    color: white;
+                    font-size: 14px;
                 }
                 span {
-                    
+                    color: #F47216;
                 }
             }
             .enter {
                 position: absolute;
-                top: -71px;
-                left: 133px;
-                
+                top: -74px;
+                left: 81px;
                 .submit {
-                    /* position: absolute; */
+                    padding: 7px;
+                    border-radius: 20px;
+                    background-color: #93B413;
+                    outline: none;
+                    color: white;
+                    border: none;
+                    font-family: 'Poppins-Medium';
+                    font-size: 17px;
+                    width: 150px;
+                    height: 40px;
                 }
                 .submit:hover {
                     
@@ -225,7 +256,7 @@ const Form = function(){
                             <p id='txt-or'>OU</p>
                             <div className='google-enter'>
                                 <button className='btn-google'>
-                                    <FaGoogle/>
+                                    <FaGoogle className='google-icon'/>
                                     Entrar com Google
                                 </button>
                             </div>
