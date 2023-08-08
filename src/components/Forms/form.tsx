@@ -3,6 +3,7 @@
 import styled from '@emotion/styled';
 import Input from './Input/Input'
 import { FaGoogle } from "react-icons/fa";
+import Link from 'next/link';
 
 const FormComponent = styled.section`
 
@@ -261,7 +262,9 @@ const Form = function(){
                                 </button>
                             </div>
                             <div className='create_account'>
+                                <Link href={'/page4'}>
                                 <h4 id='txt-create'>Não tem uma conta? <span className='orange'>Crie uma</span></h4>
+                                </Link>
                             </div>
                             <div className='enter'>
                                 <button className='submit'>
@@ -276,4 +279,4 @@ const Form = function(){
 
 }
 
-export default Form 
+export default Form;
