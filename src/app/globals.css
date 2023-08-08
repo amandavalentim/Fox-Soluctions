@@ -131,6 +131,12 @@ a {
 }
 
 @font-face {
+  font-family: 'Poppins-Light';
+  src: local('Poppins'), 
+  url(../fonts/Poppins/Poppins-Light.ttf) format('truetype');
+}
+
+@font-face {
   font-family: 'Roboto-Medium';
   src: local('Roboto'), 
   url(../fonts/Roboto/Roboto-Medium.ttf) format('truetype');
