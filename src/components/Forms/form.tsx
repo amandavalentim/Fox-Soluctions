@@ -19,9 +19,11 @@ const FormComponent = styled.section`
             
             .title {
                 position: absolute; 
-                top: -525px;
-                left: 42%;
-
+                top: -538px;
+                left: 115px;
+                color: white;
+                font-family: 'Poppins-Bold';
+                font-size: 2em;
             } 
 
             #email {
@@ -39,49 +41,56 @@ const FormComponent = styled.section`
             #link-forget-email {
                 position: absolute;
                 top: -446px;
-                left: 32%;
+                left: 112px;
             }
 
             #link-forget-password {
                 position: absolute;
                 top: -359px;
-                left: 32%;
+                left: 112px;
             }
 
             #link-forget-email, 
             #link-forget-password {
-                
+                color: #CCC;
+                font-size: 12px;
             }
 
             #link-forget-email:hover {
-                
+                color: #F47216;
             }
 
             #link-forget-password:hover {
-                
+                color: #F47216;
             }
 
             #link-forget-email:focus {
-                
+                color: #F47216;
             }
 
             #link-forget-password:focus {
-                
+                color: #F47216;
             }
 
             #txt-or {
                 position: absolute;
                 top: -289px;
                 left: 45%;
+                color: white;
+                font-size: 14px;
+                font-family: 'Poppins-Medium';
             }
 
             .google-enter {
                 position: absolute;
-                top: -230px;
-                left: 41%;
+                top: -237px;
+                left: 82px;
+                display: flex;
+                width: 160px;
     
                 .btn-google { 
-                    position: absolute;
+                    padding: 10px;
+                    border-radius: 39px;
                 }
             }
 
@@ -95,17 +104,17 @@ const FormComponent = styled.section`
                 left: 12%;
 
                 #txt-create {
-                    /* position: absolute; */
+                    color: white;
                 }
                 span {
-                    
+                    color: #F47216;
                 }
             }
             .enter {
                 position: absolute;
                 top: -71px;
                 left: 133px;
-                
+
                 .submit {
                     /* position: absolute; */
                 }
