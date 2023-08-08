@@ -168,7 +168,7 @@ height: 100vh;
         h1 {
             font-size: 1.9em;
             top: 230px;
-            left: 295px;
+            left: 305px;
         }
 
         p {
@@ -182,7 +182,7 @@ height: 100vh;
             height: 90px;
             font-size: 1.9em;
             top: 590px;
-            left: 420px;
+            left: 430px;
         }
 
         .start:hover {
@@ -190,7 +190,7 @@ height: 100vh;
             height: 90px;
             font-size: 1.9em;
             top: 590px;
-            left: 420px;
+            left: 430px;
             background-color: #9fc214;
         }
 
@@ -199,7 +199,7 @@ height: 100vh;
             height: 90px;
             font-size: 1.9em;
             top: 590px;
-            left: 420px;
+            left: 430px;
             background-color: #86a40f;
         }
 
