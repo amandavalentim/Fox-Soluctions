@@ -7,171 +7,92 @@ import { FaGoogle } from "react-icons/fa";
 const FormComponent = styled.section`
 
     * {
-        box-sizing: border-box;    
+        box-sizing: border-box; 
+        margin: 0px;
+        padding: 0px;
     }
-   
-    form {
-        margin-top: 20px;
-        position: absolute;
-        top: 80%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        .title {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-family: 'poppins-bold';
-            font-size: 2em;
-            color: #ffff;
-            position: absolute;
-            top: 50%;
-            left: 20%;
-        } 
 
-        #email {
-            position: absolute;
-            top: -80%;
-            left: 45%;
-            transform: translate(-50%, -50%);
-        }
-
-        #password {
-            position: absolute;
-            top: -30%;
-            left: 33%;
-            transform: translate(-50%, -50%);
-        }
-
-        #link-forget-email, 
-        #link-forget-password {
-            border: none;
-            outline: none;
-            text-align: center;
-            font-size: .8em;
-            color: #CCC;
-            cursor: pointer;
-        }
-
-        #link-forget-email:hover {
-            color: #F47216;
-        }
-
-        #link-forget-password:hover {
-            color: #F47216;
-        }
-
-        #link-forget-email:focus {
-            color: #F47216;
-        }
-
-        #link-forget-password:focus {
-            color: #F47216;
-        }
-
-        #txt-or {
-            color: #FFFF;
-            font-size: .9em;
-            text-align: center;
-            margin: 15px;
-            position: absolute;
-            top: 30%;
-            left: 38%;
-            transform: translate(-50%, -50%);
-        }
-
-        .google-enter {
-            position: absolute;
-            top: 100%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            display: flex;
-            color: white;
-            outline: none;
-            align-items: center;
-            border-radius: 39px;
-            width: 250px;
-            height: 40px;
-            padding: 20px;
-            justify-content: space-around;
+    .box-container {
+        form {
+            position: relative;
             
-            .btn-google { 
-                display: flex;
-                justify-content: space-around;
-                background-color: #93B413;
-                border: none;
-                color: black;  
-                outline: none;
-                border-radius: 30px;
-                width: 250px;
-                cursor: pointer;
+            .title {
+                
+            } 
 
-                .txt-google {
-                    text-align: center;
+            #email {
+               
+            }
+
+            #password {
+                
+            }
+
+            #link-forget-email {
+                
+            }
+
+            #link-forget-password {
+                
+            }
+
+            #link-forget-email, 
+            #link-forget-password {
+               
+            }
+
+            #link-forget-email:hover {
+              
+            }
+
+            #link-forget-password:hover {
+               
+            }
+
+            #link-forget-email:focus {
+                
+            }
+
+            #link-forget-password:focus {
+                
+            }
+
+            #txt-or {
+                
+            }
+
+            .google-enter {
+                
+                
+                .btn-google { 
+            
+                    .txt-google {
+                        
+                    }
                 }
             }
-        }
 
-        .btn-google:hover{
-            background-color: #9fc214;
-            font-weight: bold;
-        } 
+            .btn-google:hover{
+                
+            } 
 
-        #link-forget-email {
-            position: absolute;
-            top: -62%;
-            left: 47%;
-            transform: translate(-50%, -50%);
-            width: 100px;
-        }
-
-        #link-forget-password {
-            position: absolute;
-            top: 5%;
-            left: 47%;
-            transform: translate(-50%, -50%);
-            width: 100px;
-        }
-
-        .create_account {
-            /* position: absolute;
-            top: 200%;
-            left: 50%;
-            transform: translate(-50%, -50%); */
-            text-align: center;
-            font-size: 1em;
-            color: #FFFF;
-            margin: 5px;
-            /* margin-top: 20px;
-            padding-top: 55px; */
-            cursor: pointer;
-            span {
-                color: #F47216;
+            .create_account {
+                
+                #txt-create {
+                    
+                }
+                span {
+                    
+                }
             }
-        }
-        .enter {
-            position: absolute;
-            top: 210%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            border-style: none;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding-top: 5px;
-            .submit {
-                border: none;
-                background-color: #93B413;
-                color: #FFFF;
-                border-radius: 20px;
-                width: 150px;
-                height: 40px;
-                font-family: 'poppins-medium';
-                font-size: 20px;
-                cursor: pointer;
-                outline: none;
-            }
-            .submit:hover {
-                background-color: #9fc214;
+            .enter {
+                
+                .submit {
+                    
+                }
+                .submit:hover {
+                    
+                }
             }
         }
     }
@@ -340,7 +261,7 @@ const Form = function(){
                                 </button>
                             </div>
                             <div className='create_account'>
-                                <h4>Não tem uma conta? <span className='orange'>Crie uma</span></h4>
+                                <h4 id='txt-create'>Não tem uma conta? <span className='orange'>Crie uma</span></h4>
                             </div>
                             <div className='enter'>
                                 <button className='submit'>
