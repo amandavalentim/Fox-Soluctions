@@ -26,6 +26,10 @@ height: 100vh;
         display: none;
     }
 
+    .desktop-3{
+            display: none;
+        }
+
     h1 {
         text-align: center;
         position: absolute;
@@ -108,6 +112,10 @@ height: 100vh;
             display: none;
         }
 
+        .desktop-3{
+            display: none;
+        }
+
         background-image: url("/images/tablet.svg");
 
         h1 {
@@ -160,6 +168,10 @@ height: 100vh;
         }
 
         .desktop-2 {
+            display: none;
+        }
+
+        .desktop-3{
             display: none;
         }
 
@@ -228,6 +240,10 @@ height: 100vh;
             justify-content: space-between;
         }
 
+        .desktop-3{
+            display: none;
+        }
+
         background-image: url("/images/background-2.svg");
 
         h1 {
@@ -261,6 +277,73 @@ height: 100vh;
             left: 690px;
             width: 150px;
             top: 670px;
+        }
+    }
+
+    @media(min-width: 1600px) {
+        .mobile{
+            display: none;
+        }
+
+        .tablet {
+            display: none;
+        }
+
+        .desktop-1 {
+            display: none;
+        }
+
+        .desktop-2 {
+            display: none;
+        }
+
+        .desktop-3{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        background-image: url("/images/group-144.svg");
+
+        h1 {
+            font-size: 2.3em;
+            left: 480px;
+        }
+
+        p {
+            font-size: 2em;
+            left: 260px;
+        }
+
+        .start {
+            width: 150px;
+            height: 120px;
+            font-size: 2.3em;
+            top: 650px;
+            left: 690px;
+        }
+
+        .start:hover {
+            width: 150px;
+            height: 120px;
+            font-size: 2.3em;
+            top: 650px;
+            left: 690px;
+            background-color: #9fc214;
+        }
+
+        .start:active {
+            width: 150px;
+            height: 120px;
+            font-size: 2.3em;
+            top: 650px;
+            left: 690px;
+            background-color: #86a40f;
+        }
+
+        .fox {
+            width: 180px;
+            top: 763px;
+            left: 810px;
         }
     }
 
@@ -313,6 +396,19 @@ const PgInitial = function() {
                 <h1>Bem-Vinde a <span id='FX'>Fox Soluctions</span>!</h1>
                 <p>
                      Aqui nós buscamos sempre dar a melhor<br/> experiência possível para quem utiliza nossa<br/> plataforma, onde você pode realizar o upload<br/> e visualizar seus documentos!
+                </p>
+                <Link href={'/page2'}>
+                    <button type='button' className='start'>
+                        Start
+                    </button>
+                </Link>
+                <img src="/images/Stella.png" alt="fox" className='fox'/>
+            </nav>
+
+            <nav className='desktop-3'>
+                <h1>Bem-Vinde a <span id='FX'>Fox Soluctions</span>!</h1>
+                <p>
+                     Aqui nós buscamos sempre dar a melhor experiência<br/> possível para quem utiliza nossa plataforma, onde você pode<br/> realizar o upload<br/> e visualizar seus documentos!
                 </p>
                 <Link href={'/page2'}>
                     <button type='button' className='start'>
