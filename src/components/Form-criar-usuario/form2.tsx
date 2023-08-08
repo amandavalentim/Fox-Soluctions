@@ -138,10 +138,7 @@ const FormComponent2 = styled.section `
         background-image: url("/images/tablet-login.svg");
         background-repeat: no-repeat;
 
-        
-
        form {
-        
         
        }
     }
