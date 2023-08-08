@@ -1,18 +1,19 @@
 'use client';
 import styled from'@emotion/styled'
 import React, { useState } from 'react';
-import 'bootstrap/dist/css/bootstrap.css';
-import Carousel from 'react-bootstrap/Carousel';
+import {Swiper, SwiperSlide} from "swiper/react";
+import 'swiper/css';
 
 const AboutUsComponent = styled.section`
     background-color: #0A53B5;
     padding: 10px;
     h3{
-            text-align: center;
-            padding-top: 40px;
-            font-family: 'Poppins-Bold';
-            color: #ffffff;
-        }
+        text-align: center;
+        padding-top: 40px;
+        font-family: 'Poppins-Bold';
+        color: #FFFFFF;
+    }
+
     .container-about-us{
         border-radius: 19px;
         background: linear-gradient(180deg, #0081E8 0%, #07B3FD 100%);
@@ -25,19 +26,80 @@ const AboutUsComponent = styled.section`
                 color: #ffffff;
             }
         }
-        .container-company{
+    }
+
+    .container-company{
+        margin: 20px;
+        .slide-company-item{
             border-radius: 19px;
             background: linear-gradient(180deg, #0081E8 0%, #07B3FD 100%);
-        margin: 20px;
+            
             .mission-card{
-                padding: 50px;
+                p{
+                    text-align: center;
+                    font-family: 'Poppins-Medium';
+                    color: #ffffff;
+                }
+            }
+            .vision-card{
+                p{
+                    text-align: center;
+                    font-family: 'Poppins-Medium';
+                    color: #ffffff;
+                }
+            }
+            .worth-card{
+                p{
+                    font-family: 'Poppins-Medium';
+                    color: #ffffff;
+                }
             }
         }
     }
 
+    .container-visual-identity{
+        .container-why-the-fox{
+            border-radius: 19px;
+            background: linear-gradient(180deg, #0081E8 0%, #07B3FD 100%);
+            margin: 20px;
+            p{
+                text-align: center;
+                padding: 40px;
+                font-family: 'Poppins-Medium';
+                color: #ffffff; 
+            }
+            img{
+                padding: 40px;
+                align-items: center;
+            }
+        }
+        .color-palette{
+            border-radius: 19px;
+            background: linear-gradient(180deg, #0081E8 0%, #07B3FD 100%);
+            margin: 20px;
+            img{
+                padding: 40px;
+                align-items: center;
+            }
+        }
+    }
+
+    .container-developers{
+        border-radius: 19px;
+        background: linear-gradient(180deg, #0081E8 0%, #07B3FD 100%);
+        margin: 20px;
+        img{
+            width: 150px;
+            margin: 50px;
+        }
+        h4{
+            font-family: 'Poppins-Medium';
+            color: #ffffff;
+            text-align: center;
+        }
+    }
+
 `;
-
-
 
 
 const AboutUs = function (){
@@ -51,20 +113,20 @@ const AboutUs = function (){
                 </div>
             </div>
             <div className="container-company">
-                <Carousel>
-                    <Carousel.Item>
+                <Swiper className='swiper-company'>
+                    <SwiperSlide className='slide-company-item'>
                         <h3>Missão</h3>
                         <div className='mission-card'>
                             <p>Facilitar o cotidiano de Pessoas, sendo um sistema intuitivo e com o objetivo de favorecer a  sustentabilidade, diminuindo o uso de papéis físicos</p>
                         </div>
-                    </Carousel.Item>
-                    <Carousel.Item>
+                    </SwiperSlide>
+                    <SwiperSlide className='slide-company-item'>
                         <h3>Visão</h3>
                         <div className='vision-card'>
                             <p>Conseguir atingir o máximo de Pessoas possíveis e ser uma das principais plataformas, a ser utilizada por grandes empresas</p>
                         </div>
-                    </Carousel.Item>
-                    <Carousel.Item>
+                    </SwiperSlide>
+                    <SwiperSlide className='slide-company-item'>
                         <h3>Valores</h3>
                         <div className='worth-card'>
                             <p>Inovação</p>
@@ -72,15 +134,15 @@ const AboutUs = function (){
                             <p>Respeito a natureza</p>
                             <p>Respeito a diversidade</p>
                         </div>
-                    </Carousel.Item>
-                </Carousel>
+                    </SwiperSlide>
+                </Swiper>
             </div>
             <div className='container-visual-identity'>
                 <div className="container-why-the-fox">
                     <h3>Por que a Raposa?</h3>
                     <p>Escolhemos a raposa como representação da nossa plataforma, pois este animal possui o símbolo de criatividade, inteligência e solução de problemas. O que queremos transparecer em nosso sistema.</p>
-                    <img src="/../images/logo-fox.svg" alt="" />
-                    <img src="/../images/stella-aboutUs.svg" alt="" />
+                    <img src="/../images/logo-fox.svg" alt="Logo da Fox Soluctions, raposa laranja e nome do projeto" />
+                    <img src="/../images/stella-aboutUs.svg" alt="Nossa mascote, chamada Stella" />
                 </div>
                 <div className="color-palette">
                     <h3>Nossa Paleta de cores: </h3>
@@ -89,32 +151,32 @@ const AboutUs = function (){
             </div>
             <div className="container-developers">
                 <h3>Desenvolvedores</h3>
-                <Carousel>
-                    <Carousel.Item>
+                <Swiper className='swiper-developers'>
+                    <SwiperSlide className='slide-developers-item'>
                         <img src="/../images/desenvolvedor-amanda.svg" alt="" />
                         <h4>Amanda Valentim</h4>
                         <p>Desenvolvedora Fullstack</p>
                         <div className='amanda-card'>
                             <p>“A Fox Soluctions foi pensada nos minímos detalhes, para auxiliar e tornar o processo de upload de documentos mais prático”</p>
                         </div>
-                    </Carousel.Item>
-                    <Carousel.Item>
+                    </SwiperSlide>
+                    <SwiperSlide className='slide-developers-item'>
                         <img src="/../images/desenvolvedor-gustavo.svg" alt="" />
                         <h4>Gustavo Otacílio</h4>
                         <p>Desenvolvedor Fullstack</p>
                         <div className='gustavo-card'>
                             <p>“Programar essa plataforma foi uma experiência única, e só de imaginar que a Fox Soluctions vai mudar a forma como empresa e candidato interagem, já é uma grande vitória!”</p>
                         </div>
-                    </Carousel.Item>
-                    <Carousel.Item>
+                    </SwiperSlide>
+                    <SwiperSlide className='slide-developers-item'>
                         <img src="/../images/desenvolvedor-gabriel.svg" alt="" />
                         <h4>Gabriel Correia</h4>
                         <p>Desenvolvedor Fullstack</p>
                         <div className='gabriel-card'>
                             <p>“Nossa plataforma oferece facilidade e praticidade no envio de documentos, por isso pensamos na raposa, o símbolo da inteligência e resolução de problemas.” </p>
                         </div>
-                    </Carousel.Item>
-                </Carousel>
+                    </SwiperSlide>
+                </Swiper>
             </div>
         </AboutUsComponent>
     );
