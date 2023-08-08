@@ -168,7 +168,7 @@ height: 100vh;
         h1 {
             font-size: 1.9em;
             top: 230px;
-            left: 285px;
+            left: 295px;
         }
 
         p {
@@ -178,35 +178,35 @@ height: 100vh;
         }
 
         .start {
-            width: 150px;
-            height: 100px;
+            width: 130px;
+            height: 90px;
             font-size: 1.9em;
-            top: 560px;
-            left: 380px;
+            top: 590px;
+            left: 420px;
         }
 
         .start:hover {
-            width: 150px;
-            height: 100px;
+            width: 130px;
+            height: 90px;
             font-size: 1.9em;
-            top: 560px;
-            left: 380px;
+            top: 590px;
+            left: 420px;
             background-color: #9fc214;
         }
 
         .start:active {
-            width: 150px;
-            height: 100px;
+            width: 130px;
+            height: 90px;
             font-size: 1.9em;
-            top: 560px;
-            left: 380px;
+            top: 590px;
+            left: 420px;
             background-color: #86a40f;
         }
 
         .fox {
-            width: 160px;
-            top: 660px;
-            left: 510px;
+            width: 150px;
+            top: 671px;
+            left: 540px;
         }
     }
 
