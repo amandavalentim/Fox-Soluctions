@@ -29,25 +29,25 @@ const FormComponent = styled.section`
 
             #email {
                 position: absolute; 
-                top: -489px;
-                left: 9%;
+                top: -450px;
+                left: 48px;
             }
 
             #password {
                 position: absolute; 
-                top: -201px;
-                left: 9%;
+                top: -181px;
+                left: 24px;
             }
 
             #link-forget-email {
                 position: absolute;
-                top: -446px;
+                top: -424px;
                 left: 112px;
             }
 
             #link-forget-password {
                 position: absolute;
-                top: -359px;
+                top: -338px;
                 left: 112px;
             }
 
@@ -75,7 +75,7 @@ const FormComponent = styled.section`
 
             #txt-or {
                 position: absolute;
-                top: -289px;
+                top: -285px;
                 left: 45%;
                 color: white;
                 font-size: 14px;
@@ -84,28 +84,42 @@ const FormComponent = styled.section`
 
             .google-enter {
                 position: absolute;
-                top: -237px;
-                left: 82px;
+                top: -220px;
+                left: 59px;
                 display: flex;
-                width: 160px;
+                width: 200px;
     
                 .btn-google { 
-                    padding: 10px;
+                    padding: 12px;
                     border-radius: 39px;
+                    background-color: #93B413;
+                    outline: none;
+                    color: white;
+                    border: none;
+                    font-family: 'Poppins-Medium';
+                    font-size: 15px;
+                    .google-icon {
+                        width: 30px;
+                        height: 20px;
+                        margin-bottom: -5px;
+                        margin-right: 5px;
+                    }
                 }
             }
 
             .btn-google:hover{
-                
+                color: #86a40f;
             } 
 
             .create_account {
                 position: absolute;
-                top: -132px;
-                left: 12%;
+                top: -140px;
+                left: 54px;
+                /* transform: translate(-50%, -50%); */
 
                 #txt-create {
                     color: white;
+                    font-size: 14px;
                 }
                 span {
                     color: #F47216;
@@ -113,11 +127,19 @@ const FormComponent = styled.section`
             }
             .enter {
                 position: absolute;
-                top: -71px;
-                left: 133px;
-
+                top: -74px;
+                left: 81px;
                 .submit {
-                    /* position: absolute; */
+                    padding: 7px;
+                    border-radius: 20px;
+                    background-color: #93B413;
+                    outline: none;
+                    color: white;
+                    border: none;
+                    font-family: 'Poppins-Medium';
+                    font-size: 17px;
+                    width: 150px;
+                    height: 40px;
                 }
                 .submit:hover {
                     
@@ -234,7 +256,7 @@ const Form = function(){
                             <p id='txt-or'>OU</p>
                             <div className='google-enter'>
                                 <button className='btn-google'>
-                                    <FaGoogle/>
+                                    <FaGoogle className='google-icon'/>
                                     Entrar com Google
                                 </button>
                             </div>
