@@ -29,26 +29,26 @@ const FormComponent = styled.section`
 
             #email {
                 position: absolute; 
-                top: -456px;
-                left: 46px;
+                top: -453px;
+                left: 29px;
             }
 
             #password {
                 position: absolute; 
-                top: -181px;
-                left: 22px;
+                top: -179px;
+                left: 15px;
             }
 
             #link-forget-email {
                 position: absolute;
-                top: -427px;
-                left: 110px;
+                top: -408px;
+                left: 114px;
             }
 
             #link-forget-password {
                 position: absolute;
-                top: -337px;
-                left: 107px;
+                top: -314px;
+                left: 113px;
             }
 
             #link-forget-email, 
@@ -75,8 +75,8 @@ const FormComponent = styled.section`
 
             #txt-or {
                 position: absolute;
-                top: -285px;
-                left: 45%;
+                top: -271px;
+                left: 146px;
                 color: white;
                 font-size: 14px;
                 font-family: 'Poppins-Medium';
