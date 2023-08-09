@@ -10,6 +10,10 @@ const FormComponent2 = styled.section `
 
     background: linear-gradient(180deg, #0A53B5 0%, #028fcc 100%);
 
+    * {
+        color: white;
+    }
+
     .mobile {
         display: flex;
         justify-content: space-between;
