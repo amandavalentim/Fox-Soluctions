@@ -29,26 +29,26 @@ const FormComponent = styled.section`
 
             #email {
                 position: absolute; 
-                top: -450px;
-                left: 48px;
+                top: -456px;
+                left: 46px;
             }
 
             #password {
                 position: absolute; 
                 top: -181px;
-                left: 24px;
+                left: 22px;
             }
 
             #link-forget-email {
                 position: absolute;
-                top: -424px;
-                left: 112px;
+                top: -427px;
+                left: 110px;
             }
 
             #link-forget-password {
                 position: absolute;
-                top: -338px;
-                left: 112px;
+                top: -337px;
+                left: 107px;
             }
 
             #link-forget-email, 
