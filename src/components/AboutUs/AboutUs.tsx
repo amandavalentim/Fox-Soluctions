@@ -29,16 +29,16 @@ const AboutUsComponent = styled.section`
     }
 
     .container-company{
+        border-radius: 19px;
+        background: linear-gradient(180deg, #0081E8 0%, #07B3FD 100%);
         margin: 20px;
         .slide-company-item{
-            border-radius: 19px;
-            background: linear-gradient(180deg, #0081E8 0%, #07B3FD 100%);
-            
             .mission-card{
                 p{
                     text-align: center;
                     font-family: 'Poppins-Medium';
                     color: #ffffff;
+                    padding: 20px;
                 }
             }
             .vision-card{
@@ -46,12 +46,15 @@ const AboutUsComponent = styled.section`
                     text-align: center;
                     font-family: 'Poppins-Medium';
                     color: #ffffff;
+                    padding: 20px;
                 }
             }
             .worth-card{
+                padding: 28px;
                 p{
                     font-family: 'Poppins-Medium';
                     color: #ffffff;
+                    padding: 9px;
                 }
             }
         }
@@ -62,24 +65,23 @@ const AboutUsComponent = styled.section`
             border-radius: 19px;
             background: linear-gradient(180deg, #0081E8 0%, #07B3FD 100%);
             margin: 20px;
+            text-align: center;
             p{
-                text-align: center;
                 padding: 40px;
                 font-family: 'Poppins-Medium';
                 color: #ffffff; 
             }
             img{
-                padding: 40px;
-                align-items: center;
+                padding: 10px;
             }
         }
         .color-palette{
             border-radius: 19px;
             background: linear-gradient(180deg, #0081E8 0%, #07B3FD 100%);
             margin: 20px;
+            text-align: center;
             img{
                 padding: 40px;
-                align-items: center;
             }
         }
     }
@@ -88,15 +90,30 @@ const AboutUsComponent = styled.section`
         border-radius: 19px;
         background: linear-gradient(180deg, #0081E8 0%, #07B3FD 100%);
         margin: 20px;
+        text-align: center;
         img{
             width: 150px;
-            margin: 50px;
+            height: 150px;
+            margin: 30px;
         }
         h4{
             font-family: 'Poppins-Medium';
             color: #ffffff;
             text-align: center;
         }
+        p{
+            color: #ffffff;
+            font-family: 'Poppins-Regular';
+            margin: 10px;
+        }
+        .card{
+            margin: 30px;
+            p{
+                font-family: 'Poppins-Light';
+                font-style: italic;
+            }
+        }
+
     }
 
 `;
@@ -156,7 +173,7 @@ const AboutUs = function (){
                         <img src="/../images/desenvolvedor-amanda.svg" alt="" />
                         <h4>Amanda Valentim</h4>
                         <p>Desenvolvedora Fullstack</p>
-                        <div className='amanda-card'>
+                        <div className='card'>
                             <p>“A Fox Soluctions foi pensada nos minímos detalhes, para auxiliar e tornar o processo de upload de documentos mais prático”</p>
                         </div>
                     </SwiperSlide>
@@ -164,7 +181,7 @@ const AboutUs = function (){
                         <img src="/../images/desenvolvedor-gustavo.svg" alt="" />
                         <h4>Gustavo Otacílio</h4>
                         <p>Desenvolvedor Fullstack</p>
-                        <div className='gustavo-card'>
+                        <div className='card'>
                             <p>“Programar essa plataforma foi uma experiência única, e só de imaginar que a Fox Soluctions vai mudar a forma como empresa e candidato interagem, já é uma grande vitória!”</p>
                         </div>
                     </SwiperSlide>
@@ -172,7 +189,7 @@ const AboutUs = function (){
                         <img src="/../images/desenvolvedor-gabriel.svg" alt="" />
                         <h4>Gabriel Correia</h4>
                         <p>Desenvolvedor Fullstack</p>
-                        <div className='gabriel-card'>
+                        <div className='card'>
                             <p>“Nossa plataforma oferece facilidade e praticidade no envio de documentos, por isso pensamos na raposa, o símbolo da inteligência e resolução de problemas.” </p>
                         </div>
                     </SwiperSlide>

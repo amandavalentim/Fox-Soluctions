@@ -10,23 +10,30 @@ const BackgroundComponent = styled.div`
     background-position: bottom;
     background-size: cover ;
     height: 100vh;
-    width: 100%;
 
     @media (min-width: 768px){
     background-image: url("/images/tablet.svg");
+    height: 100vh;
+    width: 100%;
     }
 
     @media (min-width: 992px){
     background-image: url("/images/background3.svg");
+    height: 100vh;
+    width: 100%;
     }
 
     @media (min-width: 1200px){
     background-image: url("/images/background-2.svg"); 
     background-position: bottom;
+    height: 100vh;
+    width: 100%;
     }
 
     @media (min-width: 1600px) {
         background-image: url("/images/group-144.svg");
+        height: 100vh;
+        width: 100%;
     }
 `;
 
