@@ -1,3 +1,4 @@
+//Desenvolvido por Amanda Valentim
 'use client';
 import styled from'@emotion/styled'
 import React, { useState } from 'react';
@@ -116,6 +117,20 @@ const AboutUsComponent = styled.section`
 
     }
 
+    //Desktop
+    @media(min-width: 992px){
+        h3{
+            font-size: 40px;
+        }
+        h4{
+            font-size: 35px ;
+        }
+        p{
+            font-size: 26px;
+        }
+        
+    }
+
 `;
 
 
@@ -123,78 +138,85 @@ const AboutUs = function (){
 
     return(
         <AboutUsComponent>
-            <div className='container-about-us'>
-                <h3>Sobre Nós</h3>
-                <div className='content-center'>
-                    <p>A Fox Soluctions foi fundada no ano de 2023 e foi desenvolvida para facilitar e auxiliar Pessoas que utilizam nossa plataforma a realizarem o upload e a visualização de documentos de maneira prática, com o objetivo de inovar e trazer criatividade em sua identidade visual.</p>
+            <nav className='section'>
+                <div className='container-about-us'>
+                    <h3>Sobre Nós</h3>
+                    <div className='content-center'>
+                        <p>A Fox Soluctions foi fundada no ano de 2023 e foi desenvolvida para facilitar e auxiliar Pessoas que utilizam nossa plataforma a realizarem o upload e a visualização de documentos de maneira prática, com o objetivo de inovar e trazer criatividade em sua identidade visual.</p>
+                    </div>
                 </div>
-            </div>
-            <div className="container-company">
-                <Swiper className='swiper-company'>
-                    <SwiperSlide className='slide-company-item'>
-                        <h3>Missão</h3>
-                        <div className='mission-card'>
-                            <p>Facilitar o cotidiano de Pessoas, sendo um sistema intuitivo e com o objetivo de favorecer a  sustentabilidade, diminuindo o uso de papéis físicos</p>
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide className='slide-company-item'>
-                        <h3>Visão</h3>
-                        <div className='vision-card'>
-                            <p>Conseguir atingir o máximo de Pessoas possíveis e ser uma das principais plataformas, a ser utilizada por grandes empresas</p>
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide className='slide-company-item'>
-                        <h3>Valores</h3>
-                        <div className='worth-card'>
-                            <p>Inovação</p>
-                            <p>Criatividade</p>
-                            <p>Respeito a natureza</p>
-                            <p>Respeito a diversidade</p>
-                        </div>
-                    </SwiperSlide>
-                </Swiper>
-            </div>
-            <div className='container-visual-identity'>
-                <div className="container-why-the-fox">
-                    <h3>Por que a Raposa?</h3>
-                    <p>Escolhemos a raposa como representação da nossa plataforma, pois este animal possui o símbolo de criatividade, inteligência e solução de problemas. O que queremos transparecer em nosso sistema.</p>
-                    <img src="/../images/logo-fox.svg" alt="Logo da Fox Soluctions, raposa laranja e nome do projeto" />
-                    <img src="/../images/stella-aboutUs.svg" alt="Nossa mascote, chamada Stella" />
+                <div className="container-company">
+                    <Swiper className='swiper-company'>
+                        <SwiperSlide className='slide-company-item'>
+                            <h3>Missão</h3>
+                            <div className='mission-card'>
+                                <p>Facilitar o cotidiano de Pessoas, sendo um sistema intuitivo e com o objetivo de favorecer a  sustentabilidade, diminuindo o uso de papéis físicos</p>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide className='slide-company-item'>
+                            <h3>Visão</h3>
+                            <div className='vision-card'>
+                                <p>Conseguir atingir o máximo de Pessoas possíveis e ser uma das principais plataformas, a ser utilizada por grandes empresas</p>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide className='slide-company-item'>
+                            <h3>Valores</h3>
+                            <div className='worth-card'>
+                                <p>Inovação</p>
+                                <p>Criatividade</p>
+                                <p>Respeito a natureza</p>
+                                <p>Respeito a diversidade</p>
+                            </div>
+                        </SwiperSlide>
+                    </Swiper>
                 </div>
-                <div className="color-palette">
-                    <h3>Nossa Paleta de cores: </h3>
-                    <img src="/../images/paleta-de-cores.svg" alt="" />
+                <div className='container-visual-identity'>
+                    <div className="container-why-the-fox">
+                        <h3>Por que a Raposa?</h3>
+                        <p>Escolhemos a raposa como representação da nossa plataforma, pois este animal possui o símbolo de criatividade, inteligência e solução de problemas. O que queremos transparecer em nosso sistema.</p>
+                        <img src="/../images/logo-fox.svg" alt="Logo da Fox Soluctions, raposa laranja e nome do projeto" />
+                        <img src="/../images/stella-aboutUs.svg" alt="Nossa mascote, chamada Stella" />
+                    </div>
+                    <div className="color-palette">
+                        <h3>Nossa Paleta de cores: </h3>
+                        <img src="/../images/paleta-de-cores.svg" alt="" />
+                    </div>
                 </div>
-            </div>
-            <div className="container-developers">
-                <h3>Desenvolvedores</h3>
-                <Swiper className='swiper-developers'>
-                    <SwiperSlide className='slide-developers-item'>
-                        <img src="/../images/desenvolvedor-amanda.svg" alt="" />
-                        <h4>Amanda Valentim</h4>
-                        <p>Desenvolvedora Fullstack</p>
-                        <div className='card'>
-                            <p>“A Fox Soluctions foi pensada nos minímos detalhes, para auxiliar e tornar o processo de upload de documentos mais prático”</p>
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide className='slide-developers-item'>
-                        <img src="/../images/desenvolvedor-gustavo.svg" alt="" />
-                        <h4>Gustavo Otacílio</h4>
-                        <p>Desenvolvedor Fullstack</p>
-                        <div className='card'>
-                            <p>“Programar essa plataforma foi uma experiência única, e só de imaginar que a Fox Soluctions vai mudar a forma como empresa e candidato interagem, já é uma grande vitória!”</p>
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide className='slide-developers-item'>
-                        <img src="/../images/desenvolvedor-gabriel.svg" alt="" />
-                        <h4>Gabriel Correia</h4>
-                        <p>Desenvolvedor Fullstack</p>
-                        <div className='card'>
-                            <p>“Nossa plataforma oferece facilidade e praticidade no envio de documentos, por isso pensamos na raposa, o símbolo da inteligência e resolução de problemas.” </p>
-                        </div>
-                    </SwiperSlide>
-                </Swiper>
-            </div>
+                <div className="container-developers">
+                    <h3>Desenvolvedores</h3>
+                    <Swiper className='swiper-developers'>
+                        <SwiperSlide className='slide-developers-item'>
+                            <img src="/../images/desenvolvedor-amanda.svg" alt="" />
+                            <h4>Amanda Valentim</h4>
+                            <p>Desenvolvedora Fullstack</p>
+                            <div className='card'>
+                                <p>“A Fox Soluctions foi pensada nos minímos detalhes, para auxiliar e tornar o processo de upload de documentos mais prático”</p>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide className='slide-developers-item'>
+                            <img src="/../images/desenvolvedor-gustavo.svg" alt="" />
+                            <h4>Gustavo Otacílio</h4>
+                            <p>Desenvolvedor Fullstack</p>
+                            <div className='card'>
+                                <p>“Programar essa plataforma foi uma experiência única, e só de imaginar que a Fox Soluctions vai mudar a forma como empresa e candidato interagem, já é uma grande vitória!”</p>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide className='slide-developers-item'>
+                            <img src="/../images/desenvolvedor-gabriel.svg" alt="" />
+                            <h4>Gabriel Correia</h4>
+                            <p>Desenvolvedor Fullstack</p>
+                            <div className='card'>
+                                <p>“Nossa plataforma oferece facilidade e praticidade no envio de documentos, por isso pensamos na raposa, o símbolo da inteligência e resolução de problemas.” </p>
+                            </div>
+                        </SwiperSlide>
+                    </Swiper>
+                </div>
+            </nav>
+            <nav className='company-desktop'>
+                <div className="container-company-desktop">
+                    
+                </div>
+            </nav>
         </AboutUsComponent>
     );
     
