@@ -29,26 +29,26 @@ const FormComponent = styled.section`
 
             #email {
                 position: absolute; 
-                top: -453px;
-                left: 29px;
+                top: -456px;
+                left: 46px;
             }
 
             #password {
                 position: absolute; 
-                top: -179px;
-                left: 15px;
+                top: -181px;
+                left: 22px;
             }
 
             #link-forget-email {
                 position: absolute;
-                top: -408px;
-                left: 114px;
+                top: -427px;
+                left: 110px;
             }
 
             #link-forget-password {
                 position: absolute;
-                top: -314px;
-                left: 113px;
+                top: -337px;
+                left: 107px;
             }
 
             #link-forget-email, 
@@ -75,8 +75,8 @@ const FormComponent = styled.section`
 
             #txt-or {
                 position: absolute;
-                top: -271px;
-                left: 146px;
+                top: -285px;
+                left: 45%;
                 color: white;
                 font-size: 14px;
                 font-family: 'Poppins-Medium';
@@ -149,8 +149,9 @@ const FormComponent = styled.section`
     }
     
     @media (min-width: 768px) {
-        .hide-on-desktop {
+        /* .hide-on-desktop {
             display: none;
+        } */
 
         .box-container {
             
@@ -194,11 +195,10 @@ const FormComponent = styled.section`
             }
         }
     }
-}
 
     @media (min-width: 992px) {
         .hide-on-desktop {
-            display: none;
+            display: flex;
         }
         .box-container {
             
@@ -207,7 +207,7 @@ const FormComponent = styled.section`
 
     @media (min-width:1200px) {
         .hide-on-desktop {
-            display: none;
+            display: flex;
         }
         .box-container {
             
@@ -216,7 +216,7 @@ const FormComponent = styled.section`
 
     @media (min-width: 1600px) {
         .hide-on-desktop {
-            display: none;
+            display: flex;
         }
         .forget {
             
