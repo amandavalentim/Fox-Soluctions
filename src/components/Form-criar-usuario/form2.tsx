@@ -74,13 +74,13 @@ const FormComponent2 = styled.section `
     p {
         position: absolute;
         top: 660px;
-        left: 170px;
+        left: 150px;
     }
 
     .google-enter {
         position: absolute;
         top: 710px;
-        left: 60px;
+        left: 35px;
     }
 
     .btn-google {
@@ -96,7 +96,7 @@ const FormComponent2 = styled.section `
     .page2 {
         position: absolute;
         top: 790px;
-        left: 48px;
+        left: 25px;
     }
 
     .faGoogle {
@@ -112,7 +112,7 @@ const FormComponent2 = styled.section `
     .button-create {
         position: absolute;
         top: 850px;
-        left: 100px;
+        left: 75px;
     }
 
     .criar {
@@ -166,8 +166,7 @@ const FormComponent2 = styled.section `
         }
     
         .tablet {
-            display: flex;
-            justify-content: space-between;
+            display: none;
         }
     
 
