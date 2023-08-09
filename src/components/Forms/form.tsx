@@ -149,9 +149,8 @@ const FormComponent = styled.section`
     }
     
     @media (min-width: 768px) {
-        /* .hide-on-desktop {
+        .hide-on-desktop {
             display: none;
-        } */
 
         .box-container {
             
@@ -195,10 +194,11 @@ const FormComponent = styled.section`
             }
         }
     }
+}
 
     @media (min-width: 992px) {
         .hide-on-desktop {
-            display: flex;
+            display: none;
         }
         .box-container {
             
@@ -207,7 +207,7 @@ const FormComponent = styled.section`
 
     @media (min-width:1200px) {
         .hide-on-desktop {
-            display: flex;
+            display: none;
         }
         .box-container {
             
@@ -216,7 +216,7 @@ const FormComponent = styled.section`
 
     @media (min-width: 1600px) {
         .hide-on-desktop {
-            display: flex;
+            display: none;
         }
         .forget {
             
