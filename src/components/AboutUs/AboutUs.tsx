@@ -29,6 +29,10 @@ const AboutUsComponent = styled.section`
         }
     }
 
+    .company-show-on-desktop{
+        display: none;
+    }
+
     .container-company{
         border-radius: 19px;
         background: linear-gradient(180deg, #0081E8 0%, #07B3FD 100%);
@@ -128,6 +132,36 @@ const AboutUsComponent = styled.section`
         p{
             font-size: 26px;
         }
+
+        .company-show-on-desktop{
+            display: flex;
+            .mission-card{
+                border-radius: 19px;
+                background: linear-gradient(180deg, #0081E8 0%, #07B3FD 100%);
+                width: 400px;
+                margin: 20px;
+            }
+            .vision-card{
+                border-radius: 19px;
+                background: linear-gradient(180deg, #0081E8 0%, #07B3FD 100%);
+                width: 400px;
+                margin: 20px;
+            }
+            .worth-card{
+                border-radius: 19px;
+                background: linear-gradient(180deg, #0081E8 0%, #07B3FD 100%);
+                width: 400px;
+                
+            }
+            .container-show-on-desktop{
+                color: #ffffff;
+                padding: 20px;
+            }
+        }
+
+        .container-company{
+            display: none;
+        }
         
     }
 
@@ -138,11 +172,27 @@ const AboutUs = function (){
 
     return(
         <AboutUsComponent>
-            <nav className='section'>
                 <div className='container-about-us'>
                     <h3>Sobre Nós</h3>
                     <div className='content-center'>
                         <p>A Fox Soluctions foi fundada no ano de 2023 e foi desenvolvida para facilitar e auxiliar Pessoas que utilizam nossa plataforma a realizarem o upload e a visualização de documentos de maneira prática, com o objetivo de inovar e trazer criatividade em sua identidade visual.</p>
+                    </div>
+                </div>
+                <div className='company-show-on-desktop'>
+                    <div className='mission-card'>
+                        <h3>Missão</h3>
+                        <p className='container-show-on-desktop'>Facilitar o cotidiano de Pessoas, sendo um sistema intuitivo e com o objetivo de favorecer a  sustentabilidade, diminuindo o uso de papéis físicos</p>
+                    </div>
+                    <div className='vision-card'>
+                        <h3>Visão</h3>
+                        <p className='container-show-on-desktop'>Conseguir atingir o máximo de Pessoas possíveis e ser uma das principais plataformas, a ser utilizada por grandes empresas</p>
+                    </div>
+                    <div className='worth-card'>
+                        <h3>Valores</h3>
+                        <p className='container-show-on-desktop'>Inovação</p>
+                        <p className='container-show-on-desktop'>Criatividade</p>
+                        <p className='container-show-on-desktop'>Respeito a natureza</p>
+                        <p className='container-show-on-desktop'>Respeito a diversidade</p>
                     </div>
                 </div>
                 <div className="container-company">
@@ -210,13 +260,7 @@ const AboutUs = function (){
                             </div>
                         </SwiperSlide>
                     </Swiper>
-                </div>
-            </nav>
-            <nav className='company-desktop'>
-                <div className="container-company-desktop">
-                    
-                </div>
-            </nav>
+            </div>
         </AboutUsComponent>
     );
     
