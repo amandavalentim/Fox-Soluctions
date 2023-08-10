@@ -529,7 +529,7 @@ const FormComponent2 = styled.section `
         }
 
         #name::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-            font-size: 1em;
+            font-size: 1.2em;
         }
 
         .email {
@@ -544,7 +544,7 @@ const FormComponent2 = styled.section `
         }
 
         #email::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-            font-size: 1em;
+            font-size: 1.4em;
         }
 
         .phone {
@@ -559,7 +559,7 @@ const FormComponent2 = styled.section `
         }
 
         #phone::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-            font-size: 1em;
+            font-size: 1.2em;
         }
 
         .cpf {
@@ -574,7 +574,7 @@ const FormComponent2 = styled.section `
         }
 
         #cpf::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-            font-size: 1em;
+            font-size: 1.2em;
         }
 
         .senha {
@@ -589,7 +589,7 @@ const FormComponent2 = styled.section `
         }
 
         #password::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-            font-size: 1em;
+            font-size: 1.2em;
         }
 
         .confirmar-senha {
@@ -604,7 +604,7 @@ const FormComponent2 = styled.section `
         }
 
         #confirm-password::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-            font-size: 1em;
+            font-size: 1.2em;
         }
 
         p {
@@ -658,7 +658,7 @@ const FormComponent2 = styled.section `
             font-size: 1.8em;
             position: absolute;
             top: 850px;
-            left: 103px;
+            left: 123px;
         }
 
         .criar {
@@ -774,10 +774,10 @@ const Form2 = function() {
                             </button>
                         </div>
                         <div className='page2'>
-                            <Link href={'/page2'}>
-                                Já tem uma conta? <span>Clique Aqui!</span>
+                            Já tem uma conta? <Link href={'/page2'}>
+                                <span>Clique Aqui!</span>
                             </Link>
-                         </div>
+                        </div>
                          <div className='button-create'>
                              <button className='criar' type='button'>
                                 Criar
@@ -815,10 +815,10 @@ const Form2 = function() {
                             </button>
                         </div>
                         <div className='page2'>
-                            <Link href={'/page2'}>
-                                Já tem uma conta? <span>Clique Aqui!</span>
+                            Já tem uma conta? <Link href={'/page2'}>
+                                <span>Clique Aqui!</span>
                             </Link>
-                         </div>
+                        </div>
                          <div className='button-create'>
                              <button className='criar' type='button'>
                                 Criar
@@ -856,8 +856,8 @@ const Form2 = function() {
                         </button>
                     </div>
                     <div className='page2'>
-                        <Link href={'/page2'}>
-                            Já tem uma conta? <span>Clique Aqui!</span>
+                        Já tem uma conta? <Link href={'/page2'}>
+                            <span>Clique Aqui!</span>
                         </Link>
                     </div>
                     <div className='button-create'>
