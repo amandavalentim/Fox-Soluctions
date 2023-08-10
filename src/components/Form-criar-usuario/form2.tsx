@@ -6,7 +6,7 @@ import Input from '../Forms/Input/Input';
 
 const FormComponent2 = styled.section `
 
-    height: 120vh;
+    height: 130vh;
 
     background: linear-gradient(180deg, #0A53B5 0%, #028fcc 100%);
 
@@ -31,7 +31,7 @@ const FormComponent2 = styled.section `
         font-size: 1.3em;
         position: absolute;
         top: 220px;
-        left: 110px;
+        left: 90px;
     }
 
     .fox {
@@ -77,13 +77,13 @@ const FormComponent2 = styled.section `
 
     p {
         position: absolute;
-        top: 660px;
+        top: 640px;
         left: 150px;
     }
 
     .google-enter {
         position: absolute;
-        top: 710px;
+        top: 680px;
         left: 35px;
     }
 
@@ -109,7 +109,7 @@ const FormComponent2 = styled.section `
 
     .page2 {
         position: absolute;
-        top: 790px;
+        top: 750px;
         left: 35px;
     }
 
@@ -125,7 +125,7 @@ const FormComponent2 = styled.section `
 
     .button-create {
         position: absolute;
-        top: 850px;
+        top: 795px;
         left: 75px;
     }
 
@@ -136,6 +136,10 @@ const FormComponent2 = styled.section `
         background-color: #93B413;
         border: none;
         border-radius: 20px;
+    }
+
+    .fox {
+        width: 90px;
     }
 
     @media(min-width: 768px){
@@ -355,6 +359,37 @@ const FormComponent2 = styled.section `
             top: 560px;
             left: 230px;
         }
+
+        .google-enter {
+            position: absolute;
+            top: 620px;
+            left: 120px;
+        }
+
+        .btn-google:active {
+        width: 250px;
+        height: 40px;
+        font-size: 1.1em;
+        background-color: #86a40f;
+        border: none;
+        border-radius: 39px;
+        padding: 8px;
+       }
+
+       .btn-google:hover {
+        width: 250px;
+        height: 40px;
+        font-size: 1.1em;
+        background-color: #9fc214;
+        border: none;
+        border-radius: 39px;
+        padding: 8px;
+       }
+
+       .page2 {
+        position: absolute;
+        top: 700px;
+       }
     }
 
 `;
@@ -470,6 +505,16 @@ const Form2 = function() {
                             <Input type="password" name="confirm-password" id="confirm-password" placeholder='Confirme sua Senha'/>
                         </div>
                         <p>OU</p>
+                        <div className='google-enter'>
+                            <button className='btn-google' type='button'>
+                                <FaGoogle className='faGoogle'/> Entrar com Google
+                            </button>
+                        </div>
+                        <div className='page2'>
+                            <Link href={'/page2'}>
+                                Já tem uma conta? <span>Clique Aqui!</span>
+                            </Link>
+                         </div>
                 </form>
             </nav>
         </FormComponent2>
