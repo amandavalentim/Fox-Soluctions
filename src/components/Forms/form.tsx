@@ -138,7 +138,7 @@ const FormComponent = styled.section `
         color: #F47216;
     }
 
-    .criar {
+    .logar {
         margin-top: 10%;
         margin-left: 27%;
         width: 170px;
@@ -149,7 +149,7 @@ const FormComponent = styled.section `
         border-radius: 20px;
     }
 
-    .criar:active {
+    .logar:active {
         width: 170px;
         height: 50px;
         font-size: 1.6em;
@@ -160,7 +160,7 @@ const FormComponent = styled.section `
 
     @media(min-width: 768px){
 
-        height: 140vh;
+        height: 125vh;
 
         .mobile {
             display: none;
@@ -179,7 +179,7 @@ const FormComponent = styled.section `
             display: none;
         }
 
-        background-image: url("/images/tablet-create-user.svg");
+        background-image: url("/images/tablet-login.svg");
         background-repeat: no-repeat;
 
         form {
@@ -188,7 +188,7 @@ const FormComponent = styled.section `
         border-radius: 19px;
         background: linear-gradient(180deg, #07B3FD 0%, #0a59c0 100%);
         width: 400px;
-        height: 735px;
+        height: 655px;
         border-color: white;
        }
 
@@ -225,28 +225,29 @@ const FormComponent = styled.section `
        }
 
        #forgot-password {
-        margin-left: 30%;
+        margin-left: 37%;
         margin-top: -5%;
-        font-size: 0.5em;
+        font-size: 1em;
         font-family: 'Poppins-Medium';
         color: #C7C7C7;
     }
 
     #forgot-password:active {
-        margin-left: 30%;
+        margin-left: 37%;
         margin-top: -5%;
-        font-size: 0.5em;
+        font-size: 1em;
         font-family: 'Poppins-Medium';
         color: #F47216;
     }
 
        p {
-        margin-top: 2%;
+        margin-top: 5%;
         margin-left: 46%;
        }
 
        .google-enter {
         margin-left: 14%;
+        margin-top: 5%;
        }
 
        .btn-google {
@@ -268,11 +269,40 @@ const FormComponent = styled.section `
         border-radius: 39px;
         padding: 8px;
        }
+
+       .page2 {
+        font-size: 1.2em;
+        width: 320px;
+        margin-left: 12%;
+       }
+
+       .logar {
+        font-size: 2em;
+        width: 200px;
+        height: 60px;
+        background-color: #93B413;
+        margin-left: 25%;
+       }
+
+       .logar:active {
+        font-size: 2em;
+        width: 200px;
+        height: 60px;
+        background-color: #86a40f;
+        margin-left: 25%;
+       }
+
+       .fox {
+        margin-top: 40%;
+        margin-right: 10%;
+        width: 120px;
+        height: 170px;
+       }
     }
 
     @media(min-width: 992px) {
 
-        height: 138vh;
+        height: 120vh;
 
         .mobile {
             display: none;
@@ -295,33 +325,118 @@ const FormComponent = styled.section `
             display: none;
         }
 
-        background-image: url("/images/992px-create-user.svg");
+        background-image: url("/images/992px-login.svg");
 
         form {
-            position: relative;
-            left: 260px;
-            top: 30px;
             border-radius: 19px;
             background: linear-gradient(180deg, #07B3FD 0%, #0a59c0 100%);
-            width: 500px;
-            height: 830px;
+            width: 520px;
+            height: 720px;
             border-color: white;
        }
 
         h1 {
-            position: absolute;
-            top: 65px;
-            left: 140px;
-            font-size: 2em;
+            font-size: 2.2em;
+            margin-left: 27%;
         }
 
-       .fox {
-        width: 110px;
-        position: absolute;
-        left: 760px;
-        top: 600px;
+        .email {
+            margin-left: -8%;
+        }
+
+        #email::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+            font-size: 1.4em;
+        }
+
+        #forgot-email {
+            font-size: 1.1em;
+            margin-left: 40%;
+        }
+
+        #forgot-email:active {
+            font-size: 1.1em;
+            margin-left: 40%;
+            color: #F47216;
+        }
+
+       .senha {
+        margin-left: -8%;
+       }
+
+       #password::-webkit-input-placeholder {
+        font-size: 1.4em;
+       }
+
+       #forgot-password {
+            font-size: 1.1em;
+            margin-left: 39%;
+        }
+
+        #forgot-password:active {
+            font-size: 1.1em;
+            margin-left: 39%;
+            color: #F47216;
+        }
+
+        p {
+            font-size: 1.5em;
+            margin-top: 7%;
+        }
+
+        .google-enter {
+        margin-left: 17%;
+        margin-top: 5%;
+       }
+
+       .btn-google {
+        width: 340px;
+        height: 65px;
+        font-size: 1.5em;
+        background-color: #93B413;
+        border: none;
+        border-radius: 39px;
+        padding: 8px;
     }
-}
+
+       .btn-google:active {
+        width: 340px;
+        height: 65px;
+        font-size: 1.5em;
+        background-color: #86a40f;
+        border: none;
+        border-radius: 39px;
+        padding: 8px;
+       }
+
+       .faGoogle {
+        width: 50px;
+        height: 30px;
+        margin-bottom: -5px;
+    }
+
+    .page2 {
+        font-size: 1.5em;
+        width: 410px;
+        margin-left: 13%;
+        margin-top: 7%;
+    }
+
+    .logar {
+        margin-left: 31%;
+        margin-top: 6%;
+    }
+
+    .logar:active {
+        margin-left: 31%;
+        margin-top: 6%;
+    }
+
+    .fox {
+        width: 146px;
+        height: 210px;
+        margin-left: -2%;
+    }
+    }
 
     @media(min-width: 1200px) {
 
@@ -351,27 +466,56 @@ const FormComponent = styled.section `
         background-image: url("/images/1200px-create-user.svg");
 
         form {
-            position: relative;
-            left: 345px;
-            top: 30px;
             border-radius: 19px;
             background: linear-gradient(180deg, #07B3FD 0%, #0a59c0 100%);
-            width: 690px;
+            width: 700px;
             height: 1090px;
             border-color: white;
         }
 
         h1 {
-            font-size: 2.8em;
+            font-size: 3em;
             position: absolute;
-            left: 185px;
+            margin-left: 13%;
+            margin-top: 5%;
         }
 
-        .fox {
-            width: 170px;
-            position: absolute;
-            left: 1035px;
-            top: 700px;
+        .email {
+            margin-top: 25%;
+            margin-left: -7%;
+        }
+
+        #email {
+            width: 550px;
+            height: 40px;
+        }
+
+        #email::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+            font-size: 1.7em;
+        }
+
+        #forgot-email {
+            font-size: 1.5em;
+            margin-left: 38%;
+        }
+
+        #forgot-email:active {
+            font-size: 1.5em;
+            margin-left: 38%;
+            color: #F47216;
+        }
+
+        .senha {
+            margin-left: -7%;
+        }
+
+        #password {
+            width: 550px;
+            height: 40px;
+        }
+
+        #password::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+            font-size: 1.7em;
         }
     }
 
@@ -455,8 +599,8 @@ const Form = function() {
                             </Link>
                         </div>
                         <div className='button-create'>
-                            <button className='criar' type='button'>
-                                Criar
+                            <button className='logar' type='button'>
+                                Logar
                             </button>
                         </div>
                     </form>
@@ -479,7 +623,18 @@ const Form = function() {
                                 <FaGoogle className='faGoogle'/> Entrar com Google
                             </button>
                         </div>
+                        <div className='page2'>
+                            Não tem uma conta? <Link href={'/page4'}>
+                                <span>Crie uma!</span>
+                            </Link>
+                        </div>
+                        <div className='button-create'>
+                            <button className='logar' type='button'>
+                                Logar
+                            </button>
+                        </div>
                 </form>
+                <img src="/images/Stella2.png" alt="fox" className='fox'/>
             </nav>
 
             <nav className='desktop1'>
@@ -487,11 +642,30 @@ const Form = function() {
                     <h1>Criar Usuário</h1>
                     <div className='email'>
                         <Input type="email" name="email" id="email" placeholder='Email'/>
+                        <a href=""><h4 id='forgot-email'>Esqueci o Email</h4></a>
                     </div>
                         <div className='senha'>
                             <Input type="password" name="password" id="password" placeholder='Senha'/>
+                            <a href=""><h4 id='forgot-password'>Esqueci a Senha</h4></a>
+                        </div>
+                        <p>OU</p>
+                        <div className='google-enter'>
+                            <button className='btn-google' type='button'>
+                                <FaGoogle className='faGoogle'/> Entrar com Google
+                            </button>
+                        </div>
+                        <div className='page2'>
+                            Não tem uma conta? <Link href={'/page4'}>
+                                <span>Crie uma!</span>
+                            </Link>
+                        </div>
+                        <div className='button-create'>
+                            <button className='logar' type='button'>
+                                Logar
+                            </button>
                         </div>
                 </form>
+                <img src="/images/Stella2.png" alt="fox" className='fox'/>
             </nav>
 
             <nav className='desktop2'>
@@ -499,6 +673,7 @@ const Form = function() {
                     <h1>Criar Usuário</h1>
                     <div className='email'>
                         <Input type="email" name="email" id="email" placeholder='Email'/>
+                        <a href=""><h4 id='forgot-email'>Esqueci o Email</h4></a>
                     </div>
                     <div className='senha'>
                         <Input type="password" name="password" id="password" placeholder='Senha'/>
