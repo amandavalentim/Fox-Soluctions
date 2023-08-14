@@ -6,9 +6,9 @@ import Input from '../Forms/Input/Input';
 
 const FormComponent = styled.section `
 
-    height: 130vh;
+    height: 110vh;
 
-    background: linear-gradient(180deg, #0A53B5 0%, #028fcc 100%);
+    background: linear-gradient(180deg, #07B3FD 0%, #0A53B5 100%);
 
     * {
         color: white;
@@ -37,7 +37,8 @@ const FormComponent = styled.section `
 
     h1 {
         font-size: 1.8em;
-        margin-left: 46%;
+        margin-left: 43%;
+        margin-top: 15%;
     }
 
     .email {
@@ -49,16 +50,20 @@ const FormComponent = styled.section `
         font-size: 1.2em;
     }
 
-    #h41 {
-        margin-left: 27%;
+    #forgot-email {
+        margin-left: 30%;
         margin-top: -5%;
         color: #C7C7C7;
+        font-size: 0.5em;
+        font-family: 'Poppins-Medium';
     }
 
-    #h41:active {
-        margin-left: 27%;
+    #forgot-email:active {
+        margin-left: 30%;
         margin-top: -5%;
+        font-size: 0.5em;
         color: #F47216;
+        font-family: 'Poppins-Medium';
     }
 
     .senha {
@@ -68,6 +73,89 @@ const FormComponent = styled.section `
 
     #password::-webkit-input-placeholder { /* Chrome/Opera/Safari */
         font-size: 1.2em;
+    }
+
+    #forgot-password {
+        margin-left: 30%;
+        margin-top: -5%;
+        font-size: 0.5em;
+        font-family: 'Poppins-Medium';
+        color: #C7C7C7;
+    }
+
+    #forgot-password:active {
+        margin-left: 30%;
+        margin-top: -5%;
+        font-size: 0.5em;
+        font-family: 'Poppins-Medium';
+        color: #F47216;
+    }
+
+    p {
+        font-size: 1.2em;
+        margin-top: 15%;
+        margin-left: 51%;
+    }
+
+    .google-enter {
+        margin-top: 10%;
+        margin-left: 13%;
+    }
+
+    .btn-google {
+        width: 250px;
+        height: 40px;
+        font-size: 1.1em;
+        background-color: #93B413;
+        border: none;
+        border-radius: 39px;
+        padding: 8px;
+    }
+
+    .btn-google:active {
+        width: 250px;
+        height: 40px;
+        font-size: 1.1em;
+        border: none;
+        border-radius: 39px;
+        padding: 8px;
+        background-color: #86a40f;
+    }
+
+    .faGoogle {
+        width: 40px;
+        height: 25px;
+        margin-bottom: -5px;
+    }
+
+    .page2 {
+        margin-top: 10%;
+        margin-left: 11%;
+        width: 280px;
+    }
+
+    span {
+        color: #F47216;
+    }
+
+    .criar {
+        margin-top: 10%;
+        margin-left: 27%;
+        width: 170px;
+        height: 50px;
+        font-size: 1.6em;
+        background-color: #93B413;
+        border: none;
+        border-radius: 20px;
+    }
+
+    .criar:active {
+        width: 170px;
+        height: 50px;
+        font-size: 1.6em;
+        background-color: #86a40f;
+        border: none;
+        border-radius: 20px;
     }
 
     @media(min-width: 768px){
@@ -95,9 +183,8 @@ const FormComponent = styled.section `
         background-repeat: no-repeat;
 
         form {
-        position: relative;
-        left: 190px;
-        top: 30px;
+        margin-left: 25%;
+        margin-top: 3%;
         border-radius: 19px;
         background: linear-gradient(180deg, #07B3FD 0%, #0a59c0 100%);
         width: 400px;
@@ -107,15 +194,79 @@ const FormComponent = styled.section `
 
        h1 {
         font-size: 1.5em;
-        position: absolute;
-        top: 55px;
-        left: 115px;
+        margin-left: 41%;
+        margin-top: 10%;
        }
 
-       .fox {
-        position: absolute;
-        top: 500px;
-        left: 590px;
+       .email {
+            margin-left: -9%;
+            margin-top: 10%;
+       }
+
+       #forgot-email {
+        margin-left: 38%;
+        margin-top: -5%;
+        color: #C7C7C7;
+        font-size: 1em;
+        font-family: 'Poppins-Medium';
+    }
+
+    #forgot-email:active {
+        margin-left: 38%;
+        margin-top: -5%;
+        font-size: 1em;
+        color: #F47216;
+        font-family: 'Poppins-Medium';
+    }
+
+       .senha {
+            margin-left: -9%;
+            margin-top: 5%;
+       }
+
+       #forgot-password {
+        margin-left: 30%;
+        margin-top: -5%;
+        font-size: 0.5em;
+        font-family: 'Poppins-Medium';
+        color: #C7C7C7;
+    }
+
+    #forgot-password:active {
+        margin-left: 30%;
+        margin-top: -5%;
+        font-size: 0.5em;
+        font-family: 'Poppins-Medium';
+        color: #F47216;
+    }
+
+       p {
+        margin-top: 2%;
+        margin-left: 46%;
+       }
+
+       .google-enter {
+        margin-left: 14%;
+       }
+
+       .btn-google {
+        width: 290px;
+        height: 50px;
+        font-size: 1.1em;
+        background-color: #93B413;
+        border: none;
+        border-radius: 39px;
+        padding: 8px;
+    }
+
+       .btn-google:active {
+        width: 290px;
+        height: 50px;
+        font-size: 1.1em;
+        background-color: #86a40f;
+        border: none;
+        border-radius: 39px;
+        padding: 8px;
        }
     }
 
@@ -286,22 +437,47 @@ const Form = function() {
                         <h1>Login</h1>
                         <div className='email'>
                             <Input type="email" name="email" id="email" placeholder='Email'/>
-                            <a href=""><h4 id='h41'>Esqueci o Email</h4></a>
+                            <a href=""><h4 id='forgot-email'>Esqueci o Email</h4></a>
                         </div>
                         <div className='senha'>
                             <Input type="password" name="password" id="password" placeholder='Senha'/>
+                            <a href=""><h4 id='forgot-password'>Esqueci a Senha</h4></a>
+                        </div>
+                        <p>OU</p>
+                        <div className='google-enter'>
+                            <button className='btn-google' type='button'>
+                                <FaGoogle className='faGoogle'/> Entrar com Google
+                            </button>
+                        </div>
+                        <div className='page2'>
+                            Não tem uma conta? <Link href={'/page4'}>
+                                <span>Crie uma!</span>
+                            </Link>
+                        </div>
+                        <div className='button-create'>
+                            <button className='criar' type='button'>
+                                Criar
+                            </button>
                         </div>
                     </form>
             </nav>
 
             <nav className='tablet'>
                 <form>
-                    <h1>Criar Usuário</h1>
+                    <h1>Login</h1>
                     <div className='email'>
                         <Input type="email" name="email" id="email" placeholder='Email'/>
+                        <a href=""><h4 id='forgot-email'>Esqueci o Email</h4></a>
                     </div>
                         <div className='senha'>
                             <Input type="password" name="password" id="password" placeholder='Senha'/>
+                            <a href=""><h4 id='forgot-password'>Esqueci a Senha</h4></a>
+                        </div>
+                        <p>OU</p>
+                        <div className='google-enter'>
+                            <button className='btn-google' type='button'>
+                                <FaGoogle className='faGoogle'/> Entrar com Google
+                            </button>
                         </div>
                 </form>
             </nav>

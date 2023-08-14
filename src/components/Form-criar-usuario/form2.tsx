@@ -992,9 +992,9 @@ const Form2 = function() {
                                     </button>
                             </div>
                             <div className='page2'>
-                                <Link href={'/page2'}>
-                                    Já tem uma conta? <span>Clique Aqui!</span>
-                                </Link>
+                            Já tem uma conta? <Link href={'/page2'}>
+                                <span>Clique Aqui!</span>
+                            </Link>
                             </div>
                             <div className='button-create'>
                                 <button className='criar' type='button'>

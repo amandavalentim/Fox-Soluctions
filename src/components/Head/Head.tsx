@@ -8,7 +8,7 @@ import Link from 'next/link';
 
 const HeadComponent = styled.head`
     position: relative;
-    background-color: #0A53B5 ;
+    background: linear-gradient(180deg, #07B3FD 0%, #0081E8 100%);
     height: 170px;
     width: 100%;
     display: flex;
