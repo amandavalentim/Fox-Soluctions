@@ -140,6 +140,37 @@ const AboutUsComponent = styled.section`
         .company-card{
             border-radius: 19px;
             background: linear-gradient(180deg, #0081E8 0%, #07B3FD 100%);
+            width: 100%;
+            margin: 20px;
+            .content-mission{
+                padding: 30px;
+                p{
+                    color: #ffffff;
+                    font-family: 'Poppins-Regular';
+                    margin: 10px;
+                }
+            }
+            .content-vision{
+                padding: 30px;
+                p{
+                    color: #ffffff;
+                    font-family: 'Poppins-Regular';
+                    margin: 10px;
+                }
+            }
+            .content-worth{
+                padding: 30px;
+                text-align: center;
+                p{
+                    color: #ffffff;
+                    font-family: 'Poppins-Regular';
+                    margin: 10px;
+                }
+            }
+        }
+
+        .container-developers{
+            display: none;
         }
     }
 
@@ -222,6 +253,12 @@ const AboutUs = function (){
                         <h3>Nossa Paleta de cores: </h3>
                         <img src="/../images/paleta-de-cores.svg" alt="" />
                     </div>
+                </div>
+
+                {/* Section Developers in Desktop */}
+                <div className='developers-show-on-desktop'>
+                    <h3>Desenvolvedores</h3>
+                    <div className='content-developers-desktop'></div>
                 </div>
 
                 {/* Section Developers in mobile */}
