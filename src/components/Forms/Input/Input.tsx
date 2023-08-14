@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {FocusEventHandler, LegacyRef, useState} from 'react'
 import styled from '@emotion/styled';
 
 const InputField = styled.input`
@@ -63,6 +63,8 @@ const InputField = styled.input`
    type InputProps = {
     type: string;
     name?:string;
+    onFocus?:FocusEventHandler;
+    onBlur?:FocusEventHandler;
     id ?: string;
     placeholder ?: string;
     defaultValue ?: string
@@ -70,7 +72,7 @@ const InputField = styled.input`
 function Input(props : InputProps) {
       const [inputValue, setInputValue] = useState(props.defaultValue);
   return (
-    <InputField type={props.type} name={props.name} id={props.id} placeholder={props.placeholder} onChange={(e)=>setInputValue(e.target.value)} value={inputValue}/>
+    <InputField type={props.type} name={props.name} id={props.id} onFocus={props.onFocus} onBlur={props.onBlur} placeholder={props.placeholder} onChange={(e)=>setInputValue(e.target.value)} value={inputValue}/>
   )
 }
 

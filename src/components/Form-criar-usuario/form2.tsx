@@ -29,7 +29,11 @@ const FormComponent2 = styled.section `
 
     .desktop2{
             display: none;
-        }
+    }
+
+    .desktop3{
+            display: none;
+    }
 
     h1 {
         font-size: 1.3em;
@@ -49,7 +53,7 @@ const FormComponent2 = styled.section `
         left: 35px;
     }
 
-    .email {
+    .date {
         position: absolute;
         top: 330px;
         left: 35px;
@@ -79,15 +83,21 @@ const FormComponent2 = styled.section `
         left: 35px;
     }
 
+    .email {
+        position: absolute;
+        top: 630px;
+        left: 35px;
+    }
+
     p {
         position: absolute;
-        top: 640px;
+        top: 700px;
         left: 150px;
     }
 
     .google-enter {
         position: absolute;
-        top: 680px;
+        top: 740px;
         left: 35px;
     }
 
@@ -113,7 +123,7 @@ const FormComponent2 = styled.section `
 
     .page2 {
         position: absolute;
-        top: 750px;
+        top: 795px;
         left: 35px;
     }
 
@@ -129,7 +139,7 @@ const FormComponent2 = styled.section `
 
     .button-create {
         position: absolute;
-        top: 795px;
+        top: 835px;
         left: 75px;
     }
 
@@ -186,7 +196,7 @@ const FormComponent2 = styled.section `
         border-radius: 19px;
         background: linear-gradient(180deg, #07B3FD 0%, #0a59c0 100%);
         width: 400px;
-        height: 710px;
+        height: 735px;
         border-color: white;
        }
 
@@ -204,50 +214,57 @@ const FormComponent2 = styled.section `
         left: -40px;
        }
 
-       .email {
+       .date {
         font-size: 1.3em;
         position: absolute;
         top: 165px;
         left: -40px;
        }
 
+       .email {
+        font-size: 1.3em;
+        position: absolute;
+        top: 225px;
+        left: -40px;
+       }
+
        .phone {
         font-size: 1.3em;
         position: absolute;
-        top: 215px;
+        top: 285px;
         left: -40px;
        }
 
        .cpf {
         font-size: 1.3em;
         position: absolute;
-        top: 275px;
+        top: 345px;
         left: -40px;
        }
 
        .senha {
         font-size: 1.3em;
         position: absolute;
-        top: 335px;
+        top: 405px;
         left: -40px;
        }
 
        .confirmar-senha {
         font-size: 1.3em;
         position: absolute;
-        top: 395px;
+        top: 465px;
         left: -40px;
        }
 
        p {
         position: absolute;
-        top: 490px;
+        top: 550px;
         left: 185px;
        }
 
        .google-enter {
         position: absolute;
-        top: 540px;
+        top: 590px;
         left: 75px;
        }
 
@@ -273,13 +290,13 @@ const FormComponent2 = styled.section `
 
        .page2 {
         position: absolute;
-        top: 600px;
+        top: 640px;
         left: 65px;
        }
 
        .criar {
         position: absolute;
-        top: -155px;
+        top: -165px;
         left: 40px;
         background-color: #93B413;
        }
@@ -319,6 +336,10 @@ const FormComponent2 = styled.section `
             display: none;
         }
 
+        .desktop3{
+            display: none;
+        }
+
         background-image: url("/images/992px-create-user.svg");
 
         form {
@@ -349,9 +370,19 @@ const FormComponent2 = styled.section `
             width: 350px;
         }
 
-        .email {
+        .date {
             position: absolute;
             top: 205px;
+            left: -21px;
+        }
+
+        #birthday {
+            width: 350px;
+        }
+
+        .email {
+            position: absolute;
+            top: 270px;
             left: -21px;
         }
 
@@ -361,7 +392,7 @@ const FormComponent2 = styled.section `
 
         .phone {
             position: absolute;
-            top: 270px;
+            top: 335px;
             left: -21px;
         }
 
@@ -371,7 +402,7 @@ const FormComponent2 = styled.section `
 
         .cpf {
             position: absolute;
-            top: 335px;
+            top: 400px;
             left: -21px;
         }
 
@@ -381,7 +412,7 @@ const FormComponent2 = styled.section `
 
         .senha {
             position: absolute;
-            top: 400px;
+            top: 465px;
             left: -21px;
         }
 
@@ -391,7 +422,7 @@ const FormComponent2 = styled.section `
 
         .confirmar-senha {
             position: absolute;
-            top: 465px;
+            top: 520px;
             left: -21px;
         }
 
@@ -399,18 +430,19 @@ const FormComponent2 = styled.section `
             width: 350px;
         }
 
-        p {
-            font-size: 1.3em;
-            position: absolute;
-            top: 560px;
-            left: 230px;
-        }
+    p {
+        font-size: 1.3em;
+        position: absolute;
+        top: 605px;
+        left: 230px;
+    }
 
-        .google-enter {
-            position: absolute;
-            top: 620px;
-            left: 120px;
-        }
+    .google-enter {
+        position: absolute;
+        top: 650px;
+        left: 120px;
+        cursor: pointer;
+    }
 
     .btn-google {
         width: 250px;
@@ -430,6 +462,7 @@ const FormComponent2 = styled.section `
         border: none;
         border-radius: 39px;
         padding: 8px;
+        cursor: pointer;
     }
 
     .btn-google:active {
@@ -444,15 +477,16 @@ const FormComponent2 = styled.section `
 
        .page2 {
         position: absolute;
-        top: 695px;
+        top: 715px;
         left: 108px;
        }
 
        .criar {
         position: absolute;
-        top: -50px;
+        top: -80px;
         left: 90px;
         background-color: #93B413;
+        cursor: pointer;
        }
 
        .criar:hover {
@@ -498,6 +532,10 @@ const FormComponent2 = styled.section `
             justify-content: space-between;
         }
 
+        .desktop3{
+            display: none;
+        }
+
         background-image: url("/images/1200px-create-user.svg");
 
         form {
@@ -532,28 +570,43 @@ const FormComponent2 = styled.section `
             font-size: 1.2em;
         }
 
-        .email {
+        .date {
             position: absolute;
             top: 240px;
             left: -25px;
         }
 
-        #email {
+        #birthday {
             font-size: large;
             width: 500px;
         }
 
-        #email::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        #birthday::-webkit-input-placeholder { /* Chrome/Opera/Safari */
             font-size: 1.4em;
         }
 
-        .phone {
+        .email {
             position: absolute;
             top: 315px;
             left: -25px;
         }
 
-        #phone {
+        #email{
+            font-size: large;
+            width: 500px;
+        }
+
+        #email::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+            font-size: 1.2em;
+        }
+
+        .phone{
+            position: absolute;
+            top: 390px;
+            left: -25px;
+        }
+
+        #phone{
             font-size: large;
             width: 500px;
         }
@@ -562,13 +615,13 @@ const FormComponent2 = styled.section `
             font-size: 1.2em;
         }
 
-        .cpf {
+        .cpf{
             position: absolute;
-            top: 390px;
+            top: 465px;
             left: -25px;
         }
 
-        #cpf {
+        #cpf{
             font-size: large;
             width: 500px;
         }
@@ -579,7 +632,7 @@ const FormComponent2 = styled.section `
 
         .senha {
             position: absolute;
-            top: 465px;
+            top: 540px;
             left: -25px;
         }
 
@@ -594,7 +647,7 @@ const FormComponent2 = styled.section `
 
         .confirmar-senha {
             position: absolute;
-            top: 540px;
+            top: 615px;
             left: -25px;
         }
 
@@ -610,13 +663,14 @@ const FormComponent2 = styled.section `
         p {
             font-size: 1.8em;
             position: absolute;
-            top: 660px;
+            top: 720px;
             left: 310px;
         }
 
         .google-enter {
             position: absolute;
-            top: 740px;
+            top: 785px;
+            cursor: pointer;
         }
 
         .btn-google {
@@ -657,18 +711,19 @@ const FormComponent2 = styled.section `
         .page2 {
             font-size: 1.8em;
             position: absolute;
-            top: 850px;
+            top: 890px;
             left: 123px;
         }
 
         .criar {
             position: absolute;
-            top: 150px;
+            top: 140px;
             left: 140px;
             background-color: #93B413;
             width: 250px;
             height: 80px;
             font-size: 2.7em;
+            cursor: pointer;
         }
 
         .criar:hover {
@@ -697,7 +752,183 @@ const FormComponent2 = styled.section `
             left: 1035px;
             top: 700px;
         }
+    }
 
+    @media(min-width: 1600px) {
+
+        height: 170vh;
+
+        .mobile {
+            display: none;
+        }
+    
+        .tablet {
+            display: none;
+        }
+
+        .desktop1{
+            display: none;
+        }
+
+        .desktop2{
+            display: none;
+        }
+
+        .desktop3 {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        background-image: url("/images/1600px-create-user.svg");
+
+        form {
+            position: relative;
+            left: 350px;
+            top: 45px;
+            border-radius: 19px;
+            background: linear-gradient(180deg, #07B3FD 0%, #0a59c0 100%);
+            width: 890px;
+            height: 1220px;
+            border-color: white;
+        }
+
+        h1 {
+            font-size: 3em;
+            position: absolute;
+            top: 100px;
+            left: 275px;
+        }
+
+        .name {
+            position: absolute;
+            top: 195px;
+            left: -35px;
+        }
+
+        #name {
+            width: 650px;
+        }
+
+        #name::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+            font-size: 1.2em;
+        }
+
+        .email {
+            position: absolute;
+            top: 280px;
+            left: -35px;
+        }
+
+        #email {
+            width: 650px;
+        }
+
+        #email::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+            font-size: 1.2em;
+        }
+
+        .phone {
+            position: absolute;
+            top: 365px;
+            left: -35px;
+        }
+
+        #phone {
+            width: 650px;
+        }
+
+        #phone::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+            font-size: 1.2em;
+        }
+
+        .cpf {
+            position: absolute;
+            top: 450px;
+            left: -35px;
+        }
+
+        #cpf {
+            width: 650px;
+        }
+
+        #cpf::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+            font-size: 1.2em;
+        }
+
+        .senha {
+            position: absolute;
+            top: 535px;
+            left: -35px;
+        }
+
+        #password {
+            width: 650px;
+        }
+
+        #password::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+            font-size: 1.2em;
+        }
+
+        .confirmar-senha {
+            position: absolute;
+            top: 620px;
+            left: -35px;
+        }
+
+        #confirm-password {
+            width: 650px;
+        }
+
+        #confirm-password::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+            font-size: 1.2em;
+        }
+
+        p {
+            font-size: 2.2em;
+            position: absolute;
+            top: 750px;
+            left: 400px;
+        }
+
+        .google-enter {
+            position: absolute;
+            top: 825px;
+            left: 210px;
+        }
+
+        .page2 {
+            font-size: 2em;
+            position: absolute;
+            top: 950px;
+            left: 160px;
+        }
+
+        .criar {
+            position: absolute;
+            top: 270px;
+            left: 250px;
+        }
+
+        .criar:hover {
+            position: absolute;
+            top: 270px;
+            left: 250px;
+            background-color: #9fc214;
+        }
+
+        .criar:active {
+            position: absolute;
+            top: 270px;
+            left: 250px;
+            background-color: #9fc214;
+            background-color: #86a40f;
+        }
+
+        .fox {
+            position: absolute;
+            left: 1240px;
+            top: 850px;
+        }
     }
 
 `;
@@ -711,6 +942,9 @@ const Form2 = function() {
                         <h1>Criar Usuário</h1>
                         <div className='name'>
                             <Input type="string" name="name" id="name" placeholder='Nome Completo'/>
+                        </div>
+                        <div className='date'>
+                            <Input type='date' name='birthday' id='birthday' placeholder='Data de nascimento'/>
                         </div>
                         <div className='email'>
                             <Input type="email" name="email" id="email" placeholder='Email'/>
@@ -752,6 +986,9 @@ const Form2 = function() {
                     <div className='name'>
                         <Input type="string" name="name" id="name" placeholder='Nome Completo'/>
                     </div>
+                    <div className='date'>
+                            <Input type='date' name='birthday' id='birthday' placeholder='Data de nascimento'/>
+                        </div>
                     <div className='email'>
                         <Input type="email" name="email" id="email" placeholder='Email'/>
                     </div>
@@ -792,6 +1029,9 @@ const Form2 = function() {
                     <h1>Criar Usuário</h1>
                     <div className='name'>
                         <Input type="string" name="name" id="name" placeholder='Nome Completo'/>
+                    </div>
+                    <div className='date'>
+                            <Input type='date' name='birthday' id='birthday' placeholder='Data de nascimento'/>
                     </div>
                     <div className='email'>
                         <Input type="email" name="email" id="email" placeholder='Email'/>
@@ -834,6 +1074,9 @@ const Form2 = function() {
                     <div className='name'>
                         <Input type="string" name="name" id="name" placeholder='Nome Completo'/>
                     </div>
+                    <div className='date'>
+                            <Input type='date' name='birthday' id='birthday' placeholder='Data de nascimento'/>
+                    </div>
                     <div className='email'>
                         <Input type="email" name="email" id="email" placeholder='Email'/>
                     </div>
@@ -867,6 +1110,52 @@ const Form2 = function() {
                     </div>
                 </form>
                     <img src="/images/Stella2.png" alt="fox" className='fox'/>
+            </nav>
+
+            <nav className='desktop3'>
+                <form>
+                    <h1>Criar Usuário</h1>
+                    <div className='name'>
+                        <Input type="string" name="name" id="name" placeholder='Nome Completo'/>
+                    </div>
+                    <div className='date'>
+                            <Input type='date' name='birthday' id='birthday' placeholder='Data de nascimento'/>
+                    </div>
+                    <div className='email'>
+                        <Input type="email" name="email" id="email" placeholder='Email'/>
+                    </div>
+                    <div className='phone'>
+                            <Input type="phone" name="phone" id="phone" placeholder='Celular'/>
+                    </div>
+                    <div className='cpf'>
+                        <Input type="number" name="cpf" id="cpf" placeholder='CPF'/>
+                    </div>
+                    <div className='senha'>
+                        <Input type="password" name="password" id="password" placeholder='Senha'/>
+                    </div>
+                    <div className='confirmar-senha'>
+                            <Input type="password" name="confirm-password" id="confirm-password" placeholder='Confirme sua Senha'/>
+                        </div>
+                    <p>OU</p>
+                    <div className='google-enter'>
+                        <button className='btn-google' type='button'>
+                            <FaGoogle className='faGoogle'/> Entrar com Google
+                        </button>
+                    </div>
+                    <div className='page2'>
+                        Já tem uma conta? <Link href={'/page2'}>
+                            <span>Clique Aqui!</span>
+                        </Link>
+                    </div>
+                    <Link href={'/page5'}>
+                        <div className='button-create'>
+                            <button className='criar' type='button'>
+                                Criar
+                            </button>
+                        </div>
+                    </Link>
+                </form>
+                <img src="/images/Stella2.png" alt="fox" className='fox'/>
             </nav>
         </FormComponent2>
     )
