@@ -57,6 +57,8 @@ const FormComponent2 = styled.section `
         position: absolute;
         top: 330px;
         left: 35px;
+        display: flex;
+        flex-direction: column;
     }
 
     .phone {
@@ -303,7 +305,7 @@ const FormComponent2 = styled.section `
 
        .criar:active {
         position: absolute;
-        top: -155px;
+        top: -165px;
         left: 40px;
         background-color: #86a40f;
        }
@@ -491,14 +493,14 @@ const FormComponent2 = styled.section `
 
        .criar:hover {
         position: absolute;
-        top: -50px;
+        top: -80px;
         left: 90px;
         background-color: #9fc214;
        }
 
        .criar:active {
         position: absolute;
-        top: -50px;
+        top: -80px;
         left: 90px;
         background-color: #86a40f;
        }
@@ -728,7 +730,7 @@ const FormComponent2 = styled.section `
 
         .criar:hover {
             position: absolute;
-            top: 150px;
+            top: 140px;
             left: 140px;
             background-color: #9fc214;
             width: 250px;
@@ -738,7 +740,7 @@ const FormComponent2 = styled.section `
 
         .criar:active {
             position: absolute;
-            top: 150px;
+            top: 140px;
             left: 140px;
             background-color: #86a40f;
             width: 250px;
@@ -813,9 +815,23 @@ const FormComponent2 = styled.section `
             font-size: 1.2em;
         }
 
-        .email {
+        .date {
             position: absolute;
             top: 280px;
+            left: -35px;
+        }
+
+        #birthday {
+            width: 650px;
+        }
+
+        #birthday::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+            font-size: 1.2em;
+        }
+
+        .email{
+            position: absolute;
+            top: 365px;
             left: -35px;
         }
 
@@ -829,7 +845,7 @@ const FormComponent2 = styled.section `
 
         .phone {
             position: absolute;
-            top: 365px;
+            top: 450px;
             left: -35px;
         }
 
@@ -843,7 +859,7 @@ const FormComponent2 = styled.section `
 
         .cpf {
             position: absolute;
-            top: 450px;
+            top: 535px;
             left: -35px;
         }
 
@@ -857,7 +873,7 @@ const FormComponent2 = styled.section `
 
         .senha {
             position: absolute;
-            top: 535px;
+            top: 620px;
             left: -35px;
         }
 
@@ -871,7 +887,7 @@ const FormComponent2 = styled.section `
 
         .confirmar-senha {
             position: absolute;
-            top: 620px;
+            top: 705px;
             left: -35px;
         }
 
@@ -886,39 +902,39 @@ const FormComponent2 = styled.section `
         p {
             font-size: 2.2em;
             position: absolute;
-            top: 750px;
+            top: 820px;
             left: 400px;
         }
 
         .google-enter {
             position: absolute;
-            top: 825px;
+            top: 895px;
             left: 210px;
         }
 
         .page2 {
             font-size: 2em;
             position: absolute;
-            top: 950px;
+            top: 1010px;
             left: 160px;
         }
 
         .criar {
             position: absolute;
-            top: 270px;
+            top: 260px;
             left: 250px;
         }
 
         .criar:hover {
             position: absolute;
-            top: 270px;
+            top: 260px;
             left: 250px;
             background-color: #9fc214;
         }
 
         .criar:active {
             position: absolute;
-            top: 270px;
+            top: 260px;
             left: 250px;
             background-color: #9fc214;
             background-color: #86a40f;
@@ -933,6 +949,13 @@ const FormComponent2 = styled.section `
 
 `;
 
+const Small = styled.small`
+font-size: 6px;
+margin:0;
+position:relative;
+top:-20px;
+left: 20px;`;
+
 const Form2 = function() {
     return (
         <FormComponent2>
@@ -945,6 +968,7 @@ const Form2 = function() {
                         </div>
                         <div className='date'>
                             <Input type='date' name='birthday' id='birthday' placeholder='Data de nascimento'/>
+                            <Small>Digite a Data de Nascimento</Small>
                         </div>
                         <div className='email'>
                             <Input type="email" name="email" id="email" placeholder='Email'/>

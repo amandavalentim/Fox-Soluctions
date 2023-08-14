@@ -1,281 +1,351 @@
-//Código desenvolvido por Gustavo Otacílio
 'use client'
 import styled from '@emotion/styled';
-import Input from './Input/Input'
 import { FaGoogle } from "react-icons/fa";
 import Link from 'next/link';
+import Input from '../Forms/Input/Input';
 
-const FormComponent = styled.section`
+const FormComponent = styled.section `
+
+    height: 130vh;
+
+    background: linear-gradient(180deg, #0A53B5 0%, #028fcc 100%);
 
     * {
-        box-sizing: border-box; 
-        margin: 0px;
-        padding: 0px;
+        color: white;
     }
 
-    .box-container {
-        
+    .mobile {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .tablet {
+        display: none;
+    }
+
+    .desktop1 {
+            display: none;
+    }
+
+    .desktop2{
+            display: none;
+    }
+
+    .desktop3{
+            display: none;
+    }
+
+    h1 {
+        font-size: 1.8em;
+        margin-left: 46%;
+    }
+
+    .email {
+        margin-left: 10%;
+        margin-top: 15%;
+    }
+
+    #email::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        font-size: 1.2em;
+    }
+
+    #h41 {
+        margin-left: 27%;
+        margin-top: -5%;
+        color: #C7C7C7;
+    }
+
+    #h41:active {
+        margin-left: 27%;
+        margin-top: -5%;
+        color: #F47216;
+    }
+
+    .senha {
+        margin-left: 10%;
+        margin-top: 10%;
+    }
+
+    #password::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        font-size: 1.2em;
+    }
+
+    @media(min-width: 768px){
+
+        height: 140vh;
+
+        .mobile {
+            display: none;
+        }
+    
+        .tablet {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .desktop1 {
+            display: none;
+        }
+
+        .desktop2{
+            display: none;
+        }
+
+        background-image: url("/images/tablet-create-user.svg");
+        background-repeat: no-repeat;
+
+        form {
+        position: relative;
+        left: 190px;
+        top: 30px;
+        border-radius: 19px;
+        background: linear-gradient(180deg, #07B3FD 0%, #0a59c0 100%);
+        width: 400px;
+        height: 735px;
+        border-color: white;
+       }
+
+       h1 {
+        font-size: 1.5em;
+        position: absolute;
+        top: 55px;
+        left: 115px;
+       }
+
+       .fox {
+        position: absolute;
+        top: 500px;
+        left: 590px;
+       }
+    }
+
+    @media(min-width: 992px) {
+
+        height: 138vh;
+
+        .mobile {
+            display: none;
+        }
+    
+        .tablet {
+            display: none;
+        }
+
+        .desktop1 {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .desktop2{
+            display: none;
+        }
+
+        .desktop3{
+            display: none;
+        }
+
+        background-image: url("/images/992px-create-user.svg");
+
         form {
             position: relative;
-            
-            .title {
-                position: absolute; 
-                top: -538px;
-                left: 115px;
-                color: white;
-                font-family: 'Poppins-Bold';
-                font-size: 2em;
-            } 
+            left: 260px;
+            top: 30px;
+            border-radius: 19px;
+            background: linear-gradient(180deg, #07B3FD 0%, #0a59c0 100%);
+            width: 500px;
+            height: 830px;
+            border-color: white;
+       }
 
-            #email {
-                position: absolute; 
-                top: -456px;
-                left: 46px;
-            }
-
-            #password {
-                position: absolute; 
-                top: -181px;
-                left: 22px;
-            }
-
-            #link-forget-email {
-                position: absolute;
-                top: -427px;
-                left: 110px;
-            }
-
-            #link-forget-password {
-                position: absolute;
-                top: -337px;
-                left: 107px;
-            }
-
-            #link-forget-email, 
-            #link-forget-password {
-                color: #CCC;
-                font-size: 12px;
-            }
-
-            #link-forget-email:hover {
-                color: #F47216;
-            }
-
-            #link-forget-password:hover {
-                color: #F47216;
-            }
-
-            #link-forget-email:focus {
-                color: #F47216;
-            }
-
-            #link-forget-password:focus {
-                color: #F47216;
-            }
-
-            #txt-or {
-                position: absolute;
-                top: -285px;
-                left: 45%;
-                color: white;
-                font-size: 14px;
-                font-family: 'Poppins-Medium';
-            }
-
-            .google-enter {
-                position: absolute;
-                top: -220px;
-                left: 59px;
-                display: flex;
-                width: 200px;
-    
-                .btn-google { 
-                    padding: 12px;
-                    border-radius: 39px;
-                    background-color: #93B413;
-                    outline: none;
-                    color: white;
-                    border: none;
-                    font-family: 'Poppins-Medium';
-                    font-size: 15px;
-                    .google-icon {
-                        width: 30px;
-                        height: 20px;
-                        margin-bottom: -5px;
-                        margin-right: 5px;
-                    }
-                }
-            }
-
-            .btn-google:hover{
-                color: #86a40f;
-            } 
-
-            .create_account {
-                position: absolute;
-                top: -140px;
-                left: 54px;
-                /* transform: translate(-50%, -50%); */
-
-                #txt-create {
-                    color: white;
-                    font-size: 14px;
-                }
-                span {
-                    color: #F47216;
-                }
-            }
-            .enter {
-                position: absolute;
-                top: -74px;
-                left: 81px;
-                .submit {
-                    padding: 7px;
-                    border-radius: 20px;
-                    background-color: #93B413;
-                    outline: none;
-                    color: white;
-                    border: none;
-                    font-family: 'Poppins-Medium';
-                    font-size: 17px;
-                    width: 150px;
-                    height: 40px;
-                }
-                .submit:hover {
-                    
-                }
-            }
+        h1 {
+            position: absolute;
+            top: 65px;
+            left: 140px;
+            font-size: 2em;
         }
+
+       .fox {
+        width: 110px;
+        position: absolute;
+        left: 760px;
+        top: 600px;
     }
-    
-    @media (min-width: 768px) {
-        /* .hide-on-desktop {
+}
+
+    @media(min-width: 1200px) {
+
+        height: 178vh;
+
+        .mobile {
             display: none;
-        } */
-
-        .box-container {
-            
-            form {
-                
-                .title {
-                   
-                } 
-
-                #email {
-                    
-                }
-
-                #password {
-                    
-                }
-
-                .google-enter {
-                    
-                }
-
-                #link-forget-email {
-                    
-                }
-
-                #link-forget-password {
-                    
-                }
-
-                #txt-or {
-                    
-                }
-
-                .create_account {
-                    
-                }
-
-                .enter {
-                    
-                }
-            }
         }
-    }
+    
+        .tablet {
+            display: none;
+        }
 
-    @media (min-width: 992px) {
-        .hide-on-desktop {
+        .desktop1{
+            display: none;
+        }
+
+        .desktop2 {
             display: flex;
+            justify-content: space-between;
         }
-        .box-container {
-            
+
+        .desktop3{
+            display: none;
+        }
+
+        background-image: url("/images/1200px-create-user.svg");
+
+        form {
+            position: relative;
+            left: 345px;
+            top: 30px;
+            border-radius: 19px;
+            background: linear-gradient(180deg, #07B3FD 0%, #0a59c0 100%);
+            width: 690px;
+            height: 1090px;
+            border-color: white;
+        }
+
+        h1 {
+            font-size: 2.8em;
+            position: absolute;
+            left: 185px;
+        }
+
+        .fox {
+            width: 170px;
+            position: absolute;
+            left: 1035px;
+            top: 700px;
         }
     }
 
-    @media (min-width:1200px) {
-        .hide-on-desktop {
-            display: flex;
+    @media(min-width: 1600px) {
+
+        height: 170vh;
+
+        .mobile {
+            display: none;
         }
-        .box-container {
-            
+    
+        .tablet {
+            display: none;
+        }
+
+        .desktop1{
+            display: none;
+        }
+
+        .desktop2{
+            display: none;
+        }
+
+        .desktop3 {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        background-image: url("/images/1600px-create-user.svg");
+
+        form {
+            position: relative;
+            left: 350px;
+            top: 45px;
+            border-radius: 19px;
+            background: linear-gradient(180deg, #07B3FD 0%, #0a59c0 100%);
+            width: 890px;
+            height: 1220px;
+            border-color: white;
+        }
+
+        h1 {
+            font-size: 3em;
+            position: absolute;
+            top: 100px;
+            left: 275px;
+        }
+
+        .fox {
+            position: absolute;
+            left: 1240px;
+            top: 850px;
         }
     }
 
-    @media (min-width: 1600px) {
-        .hide-on-desktop {
-            display: flex;
-        }
-        .forget {
-            
-        }
-        .create_account {
-            
-        }
-        .enter {
-            
-            .submit {
-                
-            }
-        }
-    }
 `;
 
-const Form = function(){
-
-    return(
+const Form = function() {
+    return (
         <FormComponent>
-                <nav className='hide-on-desktop'>
-                    <div className='box-container'>
-                        <form>
-                            <h1 className='title'>Login</h1>
-                            <div id='email'>
-                                <Input type="email" name="e-mail" id="e-mail" placeholder='E-mail'/>
-                            </div>
-                            <a href="#" id='link-forget-email'>
-                                Esqueci o email
-                            </a>
-                            <div id='password'>
-                                <Input type="password" name="password" id="password" placeholder='Senha'/>
-                            </div>
-                            <a href="#" id='link-forget-password'>
-                                Esqueci a senha
-                            </a>
-                            <p id='txt-or'>OU</p>
-                            <div className='google-enter'>
-                                <button className='btn-google'>
-                                    <FaGoogle className='google-icon'/>
-                                    Entrar com Google
-                                </button>
-                            </div>
-                            <div className='create_account'>
-                                <Link href={'/page4'}>
-                                <h4 id='txt-create'>Não tem uma conta? <span className='orange'>Crie uma</span></h4>
-                                </Link>
-                            </div>
-                            <div className='enter'>
-                                <button className='submit'>
-                                    Entrar
-                                </button>
-                            </div>
-                        </form>
+            <nav className='mobile'>
+                    <form>
+                        <h1>Login</h1>
+                        <div className='email'>
+                            <Input type="email" name="email" id="email" placeholder='Email'/>
+                            <a href=""><h4 id='h41'>Esqueci o Email</h4></a>
+                        </div>
+                        <div className='senha'>
+                            <Input type="password" name="password" id="password" placeholder='Senha'/>
+                        </div>
+                    </form>
+            </nav>
+
+            <nav className='tablet'>
+                <form>
+                    <h1>Criar Usuário</h1>
+                    <div className='email'>
+                        <Input type="email" name="email" id="email" placeholder='Email'/>
                     </div>
-                </nav>
+                        <div className='senha'>
+                            <Input type="password" name="password" id="password" placeholder='Senha'/>
+                        </div>
+                </form>
+            </nav>
+
+            <nav className='desktop1'>
+            <form>
+                    <h1>Criar Usuário</h1>
+                    <div className='email'>
+                        <Input type="email" name="email" id="email" placeholder='Email'/>
+                    </div>
+                        <div className='senha'>
+                            <Input type="password" name="password" id="password" placeholder='Senha'/>
+                        </div>
+                </form>
+            </nav>
+
+            <nav className='desktop2'>
+                <form>
+                    <h1>Criar Usuário</h1>
+                    <div className='email'>
+                        <Input type="email" name="email" id="email" placeholder='Email'/>
+                    </div>
+                    <div className='senha'>
+                        <Input type="password" name="password" id="password" placeholder='Senha'/>
+                    </div>
+                </form>
+            </nav>
+
+            <nav className='desktop3'>
+                <form>
+                    <h1>Criar Usuário</h1>
+                    <div className='email'>
+                        <Input type="email" name="email" id="email" placeholder='Email'/>
+                    </div>
+                    <div className='senha'>
+                        <Input type="password" name="password" id="password" placeholder='Senha'/>
+                    </div>
+                    <div className='confirmar-senha'>
+                            <Input type="password" name="confirm-password" id="confirm-password" placeholder='Confirme sua Senha'/>
+                    </div>
+                </form>
+            </nav>
         </FormComponent>
     )
-
 }
 
 export default Form;
