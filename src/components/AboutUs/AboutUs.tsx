@@ -5,6 +5,7 @@ import React, { useState } from 'react';
 import {Swiper, SwiperSlide} from "swiper/react";
 import 'swiper/css';
 
+//Mobile
 const AboutUsComponent = styled.section`
     background-color: #0A53B5;
     padding: 10px;
@@ -37,6 +38,7 @@ const AboutUsComponent = styled.section`
         border-radius: 19px;
         background: linear-gradient(180deg, #0081E8 0%, #07B3FD 100%);
         margin: 20px;
+        display: flex;
         .slide-company-item{
             .mission-card{
                 p{
@@ -124,45 +126,21 @@ const AboutUsComponent = styled.section`
     //Desktop
     @media(min-width: 992px){
         h3{
-            font-size: 40px;
-        }
-        h4{
-            font-size: 35px ;
+            font-size: 30px;
         }
         p{
-            font-size: 26px;
+            font-size: 20px;
         }
-
         .company-show-on-desktop{
             display: flex;
-            .mission-card{
-                border-radius: 19px;
-                background: linear-gradient(180deg, #0081E8 0%, #07B3FD 100%);
-                width: 400px;
-                margin: 20px;
-            }
-            .vision-card{
-                border-radius: 19px;
-                background: linear-gradient(180deg, #0081E8 0%, #07B3FD 100%);
-                width: 400px;
-                margin: 20px;
-            }
-            .worth-card{
-                border-radius: 19px;
-                background: linear-gradient(180deg, #0081E8 0%, #07B3FD 100%);
-                width: 400px;
-                
-            }
-            .container-show-on-desktop{
-                color: #ffffff;
-                padding: 20px;
-            }
         }
-
         .container-company{
             display: none;
         }
-        
+        .company-card{
+            border-radius: 19px;
+            background: linear-gradient(180deg, #0081E8 0%, #07B3FD 100%);
+        }
     }
 
 `;
@@ -172,29 +150,40 @@ const AboutUs = function (){
 
     return(
         <AboutUsComponent>
+                {/* Section About Us */}
                 <div className='container-about-us'>
                     <h3>Sobre Nós</h3>
                     <div className='content-center'>
                         <p>A Fox Soluctions foi fundada no ano de 2023 e foi desenvolvida para facilitar e auxiliar Pessoas que utilizam nossa plataforma a realizarem o upload e a visualização de documentos de maneira prática, com o objetivo de inovar e trazer criatividade em sua identidade visual.</p>
                     </div>
                 </div>
+
+                {/* Section Company in Desktop */}
                 <div className='company-show-on-desktop'>
-                    <div className='mission-card'>
+                    <div className='company-card'>
                         <h3>Missão</h3>
+                        <div className='content-mission'>
                         <p className='container-show-on-desktop'>Facilitar o cotidiano de Pessoas, sendo um sistema intuitivo e com o objetivo de favorecer a  sustentabilidade, diminuindo o uso de papéis físicos</p>
+                        </div>
                     </div>
-                    <div className='vision-card'>
+                    <div className='company-card'>
                         <h3>Visão</h3>
-                        <p className='container-show-on-desktop'>Conseguir atingir o máximo de Pessoas possíveis e ser uma das principais plataformas, a ser utilizada por grandes empresas</p>
+                        <div className='content-vision'>
+                            <p className='container-show-on-desktop'>Conseguir atingir o máximo de Pessoas possíveis e ser uma das principais plataformas, a ser utilizada por grandes empresas</p>
+                        </div>
                     </div>
-                    <div className='worth-card'>
+                    <div className='company-card'>
                         <h3>Valores</h3>
-                        <p className='container-show-on-desktop'>Inovação</p>
-                        <p className='container-show-on-desktop'>Criatividade</p>
-                        <p className='container-show-on-desktop'>Respeito a natureza</p>
-                        <p className='container-show-on-desktop'>Respeito a diversidade</p>
+                        <div className='content-worth'>
+                            <p className='container-show-on-desktop'>Inovação</p>
+                            <p className='container-show-on-desktop'>Criatividade</p>
+                            <p className='container-show-on-desktop'>Respeito a natureza</p>
+                            <p className='container-show-on-desktop'>Respeito a diversidade</p>
+                        </div>
                     </div>
                 </div>
+
+                {/* Section Company in Mobile */}
                 <div className="container-company">
                     <Swiper className='swiper-company'>
                         <SwiperSlide className='slide-company-item'>
@@ -220,6 +209,8 @@ const AboutUs = function (){
                         </SwiperSlide>
                     </Swiper>
                 </div>
+
+                {/* Section Visual Identity */}
                 <div className='container-visual-identity'>
                     <div className="container-why-the-fox">
                         <h3>Por que a Raposa?</h3>
@@ -232,6 +223,8 @@ const AboutUs = function (){
                         <img src="/../images/paleta-de-cores.svg" alt="" />
                     </div>
                 </div>
+
+                {/* Section Developers in mobile */}
                 <div className="container-developers">
                     <h3>Desenvolvedores</h3>
                     <Swiper className='swiper-developers'>
