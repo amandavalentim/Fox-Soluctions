@@ -160,6 +160,7 @@ const FooterComponent = styled.footer`
 
 const Footer = function (){
 
+    //Action Toggle
     const [containerContacts, setContainerContacts] = useState(false);
     const [containerCompany, setContainerCompany] = useState(false);
     const [containerIcons, setContainerIcons] = useState(false);
