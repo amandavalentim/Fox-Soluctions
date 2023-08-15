@@ -337,7 +337,7 @@ const FormComponent = styled.section `
 
         h1 {
             font-size: 2.2em;
-            margin-left: 27%;
+            margin-left: 40%;
         }
 
         .email {
@@ -440,7 +440,7 @@ const FormComponent = styled.section `
 
     @media(min-width: 1200px) {
 
-        height: 178vh;
+        height: 158vh;
 
         .mobile {
             display: none;
@@ -463,20 +463,20 @@ const FormComponent = styled.section `
             display: none;
         }
 
-        background-image: url("/images/1200px-create-user.svg");
+        background-image: url("/images/1200px-login.svg");
 
         form {
             border-radius: 19px;
             background: linear-gradient(180deg, #07B3FD 0%, #0a59c0 100%);
             width: 700px;
-            height: 1090px;
+            height: 930px;
             border-color: white;
         }
 
         h1 {
             font-size: 3em;
             position: absolute;
-            margin-left: 13%;
+            margin-left: 20%;
             margin-top: 5%;
         }
 
@@ -516,6 +516,85 @@ const FormComponent = styled.section `
 
         #password::-webkit-input-placeholder { /* Chrome/Opera/Safari */
             font-size: 1.7em;
+        }
+
+        #forgot-password {
+            font-size: 1.5em;
+            margin-left: 37%;
+        }
+
+        #forgot-password:active {
+            font-size: 1.5em;
+            margin-left: 37%;
+            color: #F47216;
+        }
+
+        p {
+            font-size: 2em;
+            margin-left: 45%;
+        }
+
+        .btn-google {
+            margin-left: 1%;
+            width: 450px;
+            height: 70px;
+            font-size: 2em;
+            background-color: #93B413;
+            border: none;
+            border-radius: 39px;
+            padding: 8px;
+        }
+
+        .btn-google:hover {
+            width: 450px;
+            height: 70px;
+            font-size: 2em;
+            background-color: #9fc214;
+            border: none;
+            border-radius: 39px;
+            padding: 8px;
+        }
+
+        .btn-google:active {
+            width: 450px;
+            height: 70px;
+            font-size: 2em;
+            background-color: #86a40f;
+            border: none;
+            border-radius: 39px;
+            padding: 8px;
+        }
+
+        .faGoogle{
+            width: 60px;
+            height: 35px;
+        }
+
+        .page2 {
+            font-size: 2em;
+            width: 550px;
+        }
+
+        .logar {
+            background-color: #93B413;
+            width: 270px;
+            height: 80px;
+            font-size: 2.7em;
+            cursor: pointer;
+        }
+
+        .logar:hover {
+            background-color: #9fc214;
+            width: 250px;
+            height: 80px;
+            font-size: 2.7em;
+        }
+
+        .logar:active {
+            background-color: #86a40f;
+            width: 250px;
+            height: 80px;
+            font-size: 2.7em;
         }
     }
 
@@ -639,7 +718,7 @@ const Form = function() {
 
             <nav className='desktop1'>
             <form>
-                    <h1>Criar Usuário</h1>
+                    <h1>Logar</h1>
                     <div className='email'>
                         <Input type="email" name="email" id="email" placeholder='Email'/>
                         <a href=""><h4 id='forgot-email'>Esqueci o Email</h4></a>
@@ -670,20 +749,37 @@ const Form = function() {
 
             <nav className='desktop2'>
                 <form>
-                    <h1>Criar Usuário</h1>
+                    <h1>Logar</h1>
                     <div className='email'>
                         <Input type="email" name="email" id="email" placeholder='Email'/>
                         <a href=""><h4 id='forgot-email'>Esqueci o Email</h4></a>
                     </div>
                     <div className='senha'>
                         <Input type="password" name="password" id="password" placeholder='Senha'/>
+                        <a href=""><h4 id='forgot-password'>Esqueci a Senha</h4></a>
                     </div>
+                    <p>OU</p>
+                    <div className='google-enter'>
+                            <button className='btn-google' type='button'>
+                                <FaGoogle className='faGoogle'/> Entrar com Google
+                            </button>
+                        </div>
+                        <div className='page2'>
+                            Não tem uma conta? <Link href={'/page4'}>
+                                <span>Crie uma!</span>
+                            </Link>
+                        </div>
+                        <div className='button-create'>
+                            <button className='logar' type='button'>
+                                Logar
+                            </button>
+                        </div>
                 </form>
             </nav>
 
             <nav className='desktop3'>
                 <form>
-                    <h1>Criar Usuário</h1>
+                    <h1>Logar</h1>
                     <div className='email'>
                         <Input type="email" name="email" id="email" placeholder='Email'/>
                     </div>
