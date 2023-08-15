@@ -496,13 +496,13 @@ const FormComponent = styled.section `
         }
 
         #forgot-email {
-            font-size: 1.3em;
-            margin-left: 40%;
+            font-size: 1.1em;
+            margin-left: 45%;
         }
 
         #forgot-email:active {
-            font-size: 1.5em;
-            margin-left: 40%;
+            font-size: 1.1em;
+            margin-left: 45%;
             color: #F47216;
         }
 
@@ -520,13 +520,13 @@ const FormComponent = styled.section `
         }
 
         #forgot-password {
-            font-size: 1.3em;
-            margin-left: 39%;
+            font-size: 1.1em;
+            margin-left: 45%;
         }
 
         #forgot-password:active {
-            font-size: 1.5em;
-            margin-left: 39%;
+            font-size: 1.1em;
+            margin-left: 45%;
             color: #F47216;
         }
 
@@ -536,10 +536,10 @@ const FormComponent = styled.section `
         }
 
         .btn-google {
-            margin-left: 4%;
-            width: 410px;
+            margin-left: -8%;
+            width: 560px;
             height: 70px;
-            font-size: 2em;
+            font-size: 2.3em;
             background-color: #93B413;
             border: none;
             border-radius: 39px;
@@ -547,10 +547,10 @@ const FormComponent = styled.section `
         }
 
         .btn-google:hover {
-            margin-left: 4%;
-            width: 410px;
+            margin-left: -8%;
+            width: 560px;
             height: 70px;
-            font-size: 2em;
+            font-size: 2.3em;
             background-color: #9fc214;
             border: none;
             border-radius: 39px;
@@ -558,10 +558,10 @@ const FormComponent = styled.section `
         }
 
         .btn-google:active {
-            margin-left: 4%;
-            width: 410px;
+            margin-left: -8%;
+            width: 560px;
             height: 70px;
-            font-size: 2em;
+            font-size: 2.3em;
             background-color: #86a40f;
             border: none;
             border-radius: 39px;
@@ -570,13 +570,13 @@ const FormComponent = styled.section `
 
         .faGoogle{
             width: 60px;
-            height: 35px;
+            height: 40px;
         }
 
         .page2 {
             font-size: 2em;
             width: 550px;
-            margin-left: 12%;
+            margin-left: 18%;
         }
 
         .logar {
