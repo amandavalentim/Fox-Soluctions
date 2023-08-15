@@ -495,13 +495,13 @@ const FormComponent = styled.section `
         }
 
         #forgot-email {
-            font-size: 1.5em;
-            margin-left: 38%;
+            font-size: 1.3em;
+            margin-left: 40%;
         }
 
         #forgot-email:active {
             font-size: 1.5em;
-            margin-left: 38%;
+            margin-left: 40%;
             color: #F47216;
         }
 
@@ -519,13 +519,13 @@ const FormComponent = styled.section `
         }
 
         #forgot-password {
-            font-size: 1.5em;
-            margin-left: 37%;
+            font-size: 1.3em;
+            margin-left: 39%;
         }
 
         #forgot-password:active {
             font-size: 1.5em;
-            margin-left: 37%;
+            margin-left: 39%;
             color: #F47216;
         }
 
@@ -535,8 +535,8 @@ const FormComponent = styled.section `
         }
 
         .btn-google {
-            margin-left: 1%;
-            width: 450px;
+            margin-left: 4%;
+            width: 410px;
             height: 70px;
             font-size: 2em;
             background-color: #93B413;
@@ -573,6 +573,7 @@ const FormComponent = styled.section `
         .page2 {
             font-size: 2em;
             width: 550px;
+            margin-left: 12%;
         }
 
         .logar {
@@ -585,16 +586,21 @@ const FormComponent = styled.section `
 
         .logar:hover {
             background-color: #9fc214;
-            width: 250px;
+            width: 270px;
             height: 80px;
             font-size: 2.7em;
         }
 
         .logar:active {
             background-color: #86a40f;
-            width: 250px;
+            width: 270px;
             height: 80px;
             font-size: 2.7em;
+        }
+
+        .fox {
+            width: 186px;
+            height: 280px;
         }
     }
 
@@ -679,7 +685,7 @@ const Form = function() {
                         </div>
                         <div className='button-create'>
                             <button className='logar' type='button'>
-                                Logar
+                                Entrar
                             </button>
                         </div>
                     </form>
@@ -709,7 +715,7 @@ const Form = function() {
                         </div>
                         <div className='button-create'>
                             <button className='logar' type='button'>
-                                Logar
+                                Entrar
                             </button>
                         </div>
                 </form>
@@ -718,7 +724,7 @@ const Form = function() {
 
             <nav className='desktop1'>
             <form>
-                    <h1>Logar</h1>
+                    <h1>Login</h1>
                     <div className='email'>
                         <Input type="email" name="email" id="email" placeholder='Email'/>
                         <a href=""><h4 id='forgot-email'>Esqueci o Email</h4></a>
@@ -740,7 +746,7 @@ const Form = function() {
                         </div>
                         <div className='button-create'>
                             <button className='logar' type='button'>
-                                Logar
+                                Entrar
                             </button>
                         </div>
                 </form>
@@ -749,7 +755,7 @@ const Form = function() {
 
             <nav className='desktop2'>
                 <form>
-                    <h1>Logar</h1>
+                    <h1>Login</h1>
                     <div className='email'>
                         <Input type="email" name="email" id="email" placeholder='Email'/>
                         <a href=""><h4 id='forgot-email'>Esqueci o Email</h4></a>
@@ -771,10 +777,11 @@ const Form = function() {
                         </div>
                         <div className='button-create'>
                             <button className='logar' type='button'>
-                                Logar
+                                Entrar
                             </button>
                         </div>
                 </form>
+                <img src="/images/Stella2.png" alt="fox" className='fox'/>
             </nav>
 
             <nav className='desktop3'>
