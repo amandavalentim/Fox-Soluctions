@@ -697,8 +697,8 @@ const FormComponent = styled.section `
         }
 
         .btn-google {
-            margin-left: 9%;
-            width: 470px;
+            margin-left: -5%;
+            width: 675px;
             height: 70px;
             font-size: 2.3em;
             background-color: #93B413;
@@ -708,8 +708,8 @@ const FormComponent = styled.section `
         }
 
         .btn-google:hover {
-            margin-left: 9%;
-            width: 470px;
+            margin-left: -5%;
+            width: 675px;
             height: 70px;
             font-size: 2.3em;
             background-color: #9fc214;
@@ -719,8 +719,8 @@ const FormComponent = styled.section `
         }
 
         .btn-google:active {
-            margin-left: 9%;
-            width: 470px;
+            margin-left: -5%;
+            width: 675px;
             height: 70px;
             font-size: 2.3em;
             background-color: #86a40f;

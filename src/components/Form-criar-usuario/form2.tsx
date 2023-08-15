@@ -230,35 +230,35 @@ const FormComponent2 = styled.section `
        .email {
         font-size: 1.3em;
         position: absolute;
-        top: 225px;
+        top: 240px;
         left: -40px;
        }
 
        .phone {
         font-size: 1.3em;
         position: absolute;
-        top: 285px;
+        top: 300px;
         left: -40px;
        }
 
        .cpf {
         font-size: 1.3em;
         position: absolute;
-        top: 345px;
+        top: 360px;
         left: -40px;
        }
 
        .senha {
         font-size: 1.3em;
         position: absolute;
-        top: 405px;
+        top: 420px;
         left: -40px;
        }
 
        .confirmar-senha {
         font-size: 1.3em;
         position: absolute;
-        top: 465px;
+        top: 480px;
         left: -40px;
        }
 
@@ -271,11 +271,11 @@ const FormComponent2 = styled.section `
        .google-enter {
         position: absolute;
         top: 590px;
-        left: 75px;
+        left: 40px;
        }
 
        .btn-google {
-        width: 250px;
+        width: 40vw;
         height: 40px;
         font-size: 1.1em;
         background-color: #93B413;
@@ -285,7 +285,7 @@ const FormComponent2 = styled.section `
     }
 
        .btn-google:active {
-        width: 250px;
+        width: 40vw;
         height: 40px;
         font-size: 1.1em;
         background-color: #86a40f;
@@ -392,7 +392,7 @@ const FormComponent2 = styled.section `
 
         .email {
             position: absolute;
-            top: 270px;
+            top: 280px;
             left: -21px;
         }
 
@@ -402,7 +402,7 @@ const FormComponent2 = styled.section `
 
         .phone {
             position: absolute;
-            top: 335px;
+            top: 345px;
             left: -21px;
         }
 
@@ -412,7 +412,7 @@ const FormComponent2 = styled.section `
 
         .cpf {
             position: absolute;
-            top: 400px;
+            top: 410px;
             left: -21px;
         }
 
@@ -422,7 +422,7 @@ const FormComponent2 = styled.section `
 
         .senha {
             position: absolute;
-            top: 465px;
+            top: 475px;
             left: -21px;
         }
 
@@ -432,7 +432,7 @@ const FormComponent2 = styled.section `
 
         .confirmar-senha {
             position: absolute;
-            top: 520px;
+            top: 530px;
             left: -21px;
         }
 
@@ -450,12 +450,12 @@ const FormComponent2 = styled.section `
     .google-enter {
         position: absolute;
         top: 650px;
-        left: 120px;
+        left: 70px;
         cursor: pointer;
     }
 
     .btn-google {
-        width: 250px;
+        width: 350px;
         height: 40px;
         font-size: 1.1em;
         background-color: #93B413;
@@ -465,7 +465,7 @@ const FormComponent2 = styled.section `
     }
 
     .btn-google:hover {
-        width: 250px;
+        width: 350px;
         height: 40px;
         font-size: 1.1em;
         background-color: #9fc214;
@@ -476,7 +476,7 @@ const FormComponent2 = styled.section `
     }
 
     .btn-google:active {
-        width: 250px;
+        width: 350px;
         height: 40px;
         font-size: 1.1em;
         background-color: #86a40f;
@@ -603,7 +603,7 @@ const FormComponent2 = styled.section `
 
         .email {
             position: absolute;
-            top: 315px;
+            top: 335px;
             left: -25px;
         }
 
@@ -618,7 +618,7 @@ const FormComponent2 = styled.section `
 
         .phone{
             position: absolute;
-            top: 390px;
+            top: 410px;
             left: -25px;
         }
 
@@ -633,7 +633,7 @@ const FormComponent2 = styled.section `
 
         .cpf{
             position: absolute;
-            top: 465px;
+            top: 485px;
             left: -25px;
         }
 
@@ -648,7 +648,7 @@ const FormComponent2 = styled.section `
 
         .senha {
             position: absolute;
-            top: 540px;
+            top: 560px;
             left: -25px;
         }
 
@@ -663,7 +663,7 @@ const FormComponent2 = styled.section `
 
         .confirmar-senha {
             position: absolute;
-            top: 615px;
+            top: 635px;
             left: -25px;
         }
 
@@ -679,18 +679,19 @@ const FormComponent2 = styled.section `
         p {
             font-size: 1.8em;
             position: absolute;
-            top: 720px;
+            top: 740px;
             left: 310px;
         }
 
         .google-enter {
             position: absolute;
-            top: 785px;
+            top: 805px;
+            left: 100px;
             cursor: pointer;
         }
 
         .btn-google {
-            width: 450px;
+            width: 500px;
             height: 70px;
             font-size: 2em;
             background-color: #93B413;
@@ -700,7 +701,7 @@ const FormComponent2 = styled.section `
         }
 
         .btn-google:hover {
-            width: 450px;
+            width: 500px;
             height: 70px;
             font-size: 2em;
             background-color: #9fc214;
@@ -710,7 +711,7 @@ const FormComponent2 = styled.section `
         }
 
         .btn-google:active {
-            width: 450px;
+            width: 500px;
             height: 70px;
             font-size: 2em;
             background-color: #86a40f;
@@ -727,7 +728,7 @@ const FormComponent2 = styled.section `
         .page2 {
             font-size: 1.8em;
             position: absolute;
-            top: 890px;
+            top: 910px;
             left: 123px;
         }
 
@@ -929,7 +930,37 @@ const FormComponent2 = styled.section `
         .google-enter {
             position: absolute;
             top: 895px;
-            left: 210px;
+            left: 120px;
+        }
+
+        .btn-google {
+            width: 650px;
+            height: 70px;
+            font-size: 2em;
+            background-color: #93B413;
+            border: none;
+            border-radius: 39px;
+            padding: 8px;
+        }
+
+        .btn-google:hover {
+            width: 650px;
+            height: 70px;
+            font-size: 2em;
+            background-color: #9fc214;
+            border: none;
+            border-radius: 39px;
+            padding: 8px;
+        }
+
+        .btn-google:active {
+            width: 650px;
+            height: 70px;
+            font-size: 2em;
+            background-color: #86a40f;
+            border: none;
+            border-radius: 39px;
+            padding: 8px;
         }
 
         .page2 {
