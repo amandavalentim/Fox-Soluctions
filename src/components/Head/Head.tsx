@@ -366,11 +366,6 @@ const Head = function() {
                                                     Sobre Nós
                                                 </Link>
                                             </li>
-                                            <li>
-                                                <Link href={'/page4'} className='page4' onClick={Close}>
-                                                    page4
-                                                </Link>
-                                            </li>
                                             </div>
                                         </li>
                                     </Ul>

@@ -956,7 +956,6 @@ const FormComponent2 = styled.section `
             position: absolute;
             top: 260px;
             left: 250px;
-            background-color: #9fc214;
             background-color: #86a40f;
         }
 

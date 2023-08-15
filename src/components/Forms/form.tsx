@@ -293,10 +293,11 @@ const FormComponent = styled.section `
        }
 
        .fox {
-        margin-top: 40%;
-        margin-right: 10%;
-        width: 120px;
-        height: 170px;
+        width: 100px;
+        height: 150px;
+        position: absolute;
+        top: 680px;
+        left: 92px;
        }
     }
 
@@ -434,7 +435,7 @@ const FormComponent = styled.section `
     .fox {
         width: 146px;
         height: 210px;
-        margin-left: -2%;
+        margin-left: 2%;
     }
     }
 
@@ -603,6 +604,8 @@ const FormComponent = styled.section `
         .fox {
             width: 186px;
             height: 280px;
+            margin-left: 4.7%;
+            margin-top: 10%;
         }
     }
 
@@ -744,6 +747,10 @@ const FormComponent = styled.section `
         .logar:hover {
             margin-left: 35%;
         }
+
+        .fox {
+            margin-left: 4.5%;
+        }
     }
 
 `;
@@ -760,7 +767,9 @@ const Form = function() {
                         </div>
                         <div className='senha'>
                             <Input type="password" name="password" id="password" placeholder='Senha'/>
-                            <a href=""><h4 id='forgot-password'>Esqueci a Senha</h4></a>
+                            <Link href={'/page5'}>
+                                <h4 id='forgot-email'>Esqueci a Senha</h4>
+                            </Link>
                         </div>
                         <p>OU</p>
                         <div className='google-enter'>
@@ -782,6 +791,7 @@ const Form = function() {
             </nav>
 
             <nav className='tablet'>
+                <img src="/images/Raposa-login.png" alt="fox" className='fox'/>
                 <form>
                     <h1>Login</h1>
                     <div className='email'>
@@ -790,7 +800,9 @@ const Form = function() {
                     </div>
                         <div className='senha'>
                             <Input type="password" name="password" id="password" placeholder='Senha'/>
-                            <a href=""><h4 id='forgot-password'>Esqueci a Senha</h4></a>
+                            <Link href={'/page5'}>
+                                <h4 id='forgot-email'>Esqueci a Senha</h4>
+                            </Link>
                         </div>
                         <p>OU</p>
                         <div className='google-enter'>
@@ -809,10 +821,10 @@ const Form = function() {
                             </button>
                         </div>
                 </form>
-                <img src="/images/Stella2.png" alt="fox" className='fox'/>
             </nav>
 
             <nav className='desktop1'>
+            <img src="/images/Raposa-login.png" alt="fox" className='fox'/>
             <form>
                     <h1>Login</h1>
                     <div className='email'>
@@ -821,7 +833,9 @@ const Form = function() {
                     </div>
                         <div className='senha'>
                             <Input type="password" name="password" id="password" placeholder='Senha'/>
-                            <a href=""><h4 id='forgot-password'>Esqueci a Senha</h4></a>
+                            <Link href={'/page5'}>
+                                <h4 id='forgot-email'>Esqueci a Senha</h4>
+                            </Link>
                         </div>
                         <p>OU</p>
                         <div className='google-enter'>
@@ -840,7 +854,6 @@ const Form = function() {
                             </button>
                         </div>
                 </form>
-                <img src="/images/Stella2.png" alt="fox" className='fox'/>
             </nav>
 
             <nav className='desktop2'>
@@ -852,7 +865,9 @@ const Form = function() {
                     </div>
                     <div className='senha'>
                         <Input type="password" name="password" id="password" placeholder='Senha'/>
-                        <a href=""><h4 id='forgot-password'>Esqueci a Senha</h4></a>
+                        <Link href={'/page5'}>
+                                <h4 id='forgot-email'>Esqueci a Senha</h4>
+                        </Link>
                     </div>
                     <p>OU</p>
                     <div className='google-enter'>
@@ -871,7 +886,7 @@ const Form = function() {
                             </button>
                         </div>
                 </form>
-                <img src="/images/Stella2.png" alt="fox" className='fox'/>
+                <img src="/images/Raposa-login.png" alt="fox" className='fox'/>
             </nav>
 
             <nav className='desktop3'>
@@ -883,7 +898,9 @@ const Form = function() {
                     </div>
                     <div className='senha'>
                         <Input type="password" name="password" id="password" placeholder='Senha'/>
-                        <a href=""><h4 id='forgot-password'>Esqueci a Senha</h4></a>
+                        <Link href={'/page5'}>
+                                <h4 id='forgot-email'>Esqueci a Senha</h4>
+                            </Link>
                     </div>
                     <p>OU</p>
                     <div className='google-enter'>
@@ -902,7 +919,7 @@ const Form = function() {
                             </button>
                         </div>
                 </form>
-                <img src="/images/Stella2.png" alt="fox" className='fox'/>
+                <img src="/images/Raposa-login.png" alt="fox" className='fox'/>
             </nav>
         </FormComponent>
     )
