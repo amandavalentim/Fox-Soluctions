@@ -91,6 +91,10 @@ const PageComponent = styled.section `
             display: none;
         }
 
+        .desktop3 {
+            display: none;
+        }
+
         background-image: url("/images/tablet-recuperar-senha.svg");
         background-repeat: no-repeat;
 
@@ -168,6 +172,10 @@ const PageComponent = styled.section `
             display: none;
         }
 
+        .desktop3 {
+            display: none;
+        }
+
         background-image: url("/images/992px-recuperar-senha.svg");
 
         form {
@@ -240,6 +248,10 @@ const PageComponent = styled.section `
             justify-content: space-between;
         }
 
+        .desktop3 {
+            display: none;
+        }
+
         background-image: url("/images/1200px-recuperar-senha.svg");
 
         form {
@@ -299,7 +311,85 @@ const PageComponent = styled.section `
             left: 68px;
             top: 650px;
         }
+    }
 
+    @media(min-width: 1600px) {
+
+        .mobile {
+            display: none;
+        }
+
+        .tablet {
+            display: none;
+        }
+
+        .desktop1 {
+            display: none;
+        }
+
+        .desktop2 {
+            display: none;
+        }
+
+        .desktop3 {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        background-image: url("/images/1600px-recuperar-senha.svg");
+
+        form {
+            margin-top: 5%;
+            margin-left: 30.7%;
+            border-radius: 19px;
+            background: linear-gradient(180deg, #07B3FD 0%, #0a59c0 100%);
+            width: 570px;
+            height: 440px;
+            border-color: white;
+        }
+
+        h1 {
+            margin-left: 15.7%;
+        }
+
+        #op {
+        margin-top: 18%;
+        margin-left: 17.5%;
+        width: 370px;
+       }
+
+       .enviar {
+            margin-top: 1%;
+            margin-left: 32.7%;
+            width: 200px;
+            height: 70px;
+            font-size: 2.2em;
+            background-color: #93B413;
+            border: none;
+            border-radius: 20px;
+        }
+
+        .enviar:hover {
+            width: 200px;
+            height: 70px;
+            font-size: 2.2em;
+            background-color: #9fc214;
+            border: none;
+        }
+
+        .enviar:active {
+            width: 200px;
+            height: 70px;
+            font-size: 2.2em;
+            background-color: #86a40f;
+            border: none;
+        }
+
+        .fox {
+            position: absolute;
+            left: 59px;
+            top: 725px;
+        }
     }
  
 `;
@@ -354,6 +444,19 @@ const ForgotPassword = function() {
                             Enviar
                         </button>
                     </Link>
+                </form>
+                <img src="/images/Stella2.png" alt="fox" className='fox'/>
+            </nav>
+
+            <nav className='desktop3'>
+                <form>
+                    <h1>Recupere a sua senha:</h1>
+                        <Input type="string" name="email" id="op" placeholder='Digite o seu email ou telefone'/>
+                        <Link href={'/page6'}>
+                            <button className='enviar' type='button'>
+                                Enviar
+                            </button>
+                        </Link>
                 </form>
                 <img src="/images/Stella2.png" alt="fox" className='fox'/>
             </nav>
