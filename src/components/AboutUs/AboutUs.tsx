@@ -93,6 +93,10 @@ const AboutUsComponent = styled.section`
         }
     }
 
+    .developers-show-on-desktop{
+        display: none;
+    }
+
     .container-developers{
         border-radius: 19px;
         background: linear-gradient(180deg, #0081E8 0%, #07B3FD 100%);
@@ -171,6 +175,34 @@ const AboutUsComponent = styled.section`
 
         .container-developers{
             display: none;
+        }
+
+        .content-developers-desktop{
+            display:flex;
+            text-align: center;
+            .card-developers{
+                border-radius: 19px;
+                background: linear-gradient(180deg, #0081E8 0%, #07B3FD 100%);
+                width: 100%;
+                margin: 20px;
+                img{
+                    padding: 40px;
+                }
+                h4{
+                    color: #ffffff;
+                    font-family: 'Poppins-medium';
+                    font-size: 30px;
+                    margin-bottom: 6px;
+                }
+                p{
+                    color: #ffffff;
+                    font-family: 'Poppins-regular';
+                }
+                .content-developers{
+                    font-style: italic;
+                    margin: 30px;
+                }
+            }
         }
     }
 
@@ -258,7 +290,32 @@ const AboutUs = function (){
                 {/* Section Developers in Desktop */}
                 <div className='developers-show-on-desktop'>
                     <h3>Desenvolvedores</h3>
-                    <div className='content-developers-desktop'></div>
+                    <div className='content-developers-desktop'>
+                        <div className='card-developers'>
+                            <img src="/../images/desenvolvedor-amanda.svg" alt="" />
+                            <h4>Amanda Valentim</h4>
+                            <p>Desenvolvedora Fullstack</p>
+                            <div className='content-developers'>
+                                <p>“A Fox Soluctions foi pensada nos minímos detalhes, para auxiliar e tornar o processo de upload de documentos mais prático”</p>
+                            </div>
+                        </div>
+                        <div className='card-developers'>
+                            <img src="/../images/desenvolvedor-gustavo.svg" alt="" />
+                            <h4>Gustavo Otacílio</h4>
+                            <p>Desenvolvedor Fullstack</p>
+                            <div className='content-developers'>
+                                <p>“Programar essa plataforma foi uma experiência única, e só de imaginar que a Fox Soluctions vai mudar a forma como empresa e candidato interagem, já é uma grande vitória!”</p>
+                            </div>
+                        </div>
+                        <div className='card-developers'>
+                            <img src="/../images/desenvolvedor-gabriel.svg" alt="" />
+                            <h4>Gabriel Correia</h4>
+                            <p>Desenvolvedor Fullstack</p>
+                            <div className='content-developers'>
+                                <p>“Nossa plataforma oferece facilidade e praticidade no envio de documentos, por isso pensamos na raposa, o símbolo da inteligência e resolução de problemas.”</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 {/* Section Developers in mobile */}
