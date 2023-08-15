@@ -546,7 +546,8 @@ const FormComponent = styled.section `
         }
 
         .btn-google:hover {
-            width: 450px;
+            margin-left: 4%;
+            width: 410px;
             height: 70px;
             font-size: 2em;
             background-color: #9fc214;
@@ -556,7 +557,8 @@ const FormComponent = styled.section `
         }
 
         .btn-google:active {
-            width: 450px;
+            margin-left: 4%;
+            width: 410px;
             height: 70px;
             font-size: 2em;
             background-color: #86a40f;
@@ -606,7 +608,7 @@ const FormComponent = styled.section `
 
     @media(min-width: 1600px) {
 
-        height: 170vh;
+        height: 145vh;
 
         .mobile {
             display: none;
@@ -629,30 +631,118 @@ const FormComponent = styled.section `
             justify-content: space-between;
         }
 
-        background-image: url("/images/1600px-create-user.svg");
+        background-image: url("/images/1600px-login.svg");
 
         form {
-            position: relative;
-            left: 350px;
-            top: 45px;
+            margin-left: 22%;
             border-radius: 19px;
             background: linear-gradient(180deg, #07B3FD 0%, #0a59c0 100%);
             width: 890px;
-            height: 1220px;
+            height: 1040px;
             border-color: white;
         }
 
         h1 {
             font-size: 3em;
-            position: absolute;
-            top: 100px;
-            left: 275px;
+            margin-left: 23%;
         }
 
-        .fox {
-            position: absolute;
-            left: 1240px;
-            top: 850px;
+        .email {
+            margin-left: -5%;
+        }
+
+        #email {
+            width: 675px;
+        }
+
+        #forgot-email{
+            margin-left: 42%;
+            margin-top: -8%;
+            font-size: 1.3em;
+        }
+
+        #forgot-email:active{
+            margin-left: 42%;
+            margin-top: -8%;
+            font-size: 1.3em;
+            color: #F47216;
+        }
+
+        .senha {
+            margin-left: -5%;
+        }
+
+        #password {
+            width: 675px;
+        }
+
+        #forgot-password{
+            margin-left: 41%;
+            margin-top: -8%;
+            font-size: 1.3em;
+        }
+
+        #forgot-password:active{
+            margin-left: 41%;
+            margin-top: -8%;
+            font-size: 1.3em;
+            color: #F47216;
+        }
+
+        p {
+            margin-left: 47%;
+        }
+
+        .btn-google {
+            margin-left: 9%;
+            width: 470px;
+            height: 70px;
+            font-size: 2.3em;
+            background-color: #93B413;
+            border: none;
+            border-radius: 39px;
+            padding: 8px;
+        }
+
+        .btn-google:hover {
+            margin-left: 9%;
+            width: 470px;
+            height: 70px;
+            font-size: 2.3em;
+            background-color: #9fc214;
+            border: none;
+            border-radius: 39px;
+            padding: 8px;
+        }
+
+        .btn-google:active {
+            margin-left: 9%;
+            width: 470px;
+            height: 70px;
+            font-size: 2.3em;
+            background-color: #86a40f;
+            border: none;
+            border-radius: 39px;
+            padding: 8px;
+        }
+
+        .faGoogle{
+            width: 60px;
+            height: 39px;
+        }
+
+        .page2 {
+            font-size: 2.2em;
+            width: 580px;
+            margin-left: 18%;
+        }
+
+        .logar {
+            margin-left: 35%;
+        }
+
+        .logar:hover {
+            margin-left: 35%;
         }
     }
 
@@ -789,14 +879,30 @@ const Form = function() {
                     <h1>Logar</h1>
                     <div className='email'>
                         <Input type="email" name="email" id="email" placeholder='Email'/>
+                        <a href=""><h4 id='forgot-email'>Esqueci o Email</h4></a>
                     </div>
                     <div className='senha'>
                         <Input type="password" name="password" id="password" placeholder='Senha'/>
+                        <a href=""><h4 id='forgot-password'>Esqueci a Senha</h4></a>
                     </div>
-                    <div className='confirmar-senha'>
-                            <Input type="password" name="confirm-password" id="confirm-password" placeholder='Confirme sua Senha'/>
-                    </div>
+                    <p>OU</p>
+                    <div className='google-enter'>
+                            <button className='btn-google' type='button'>
+                                <FaGoogle className='faGoogle'/> Entrar com Google
+                            </button>
+                        </div>
+                        <div className='page2'>
+                            Não tem uma conta? <Link href={'/page4'}>
+                                <span>Crie uma!</span>
+                            </Link>
+                        </div>
+                        <div className='button-create'>
+                            <button className='logar' type='button'>
+                                Entrar
+                            </button>
+                        </div>
                 </form>
+                <img src="/images/Stella2.png" alt="fox" className='fox'/>
             </nav>
         </FormComponent>
     )

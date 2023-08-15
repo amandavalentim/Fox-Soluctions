@@ -223,6 +223,10 @@ const FormComponent2 = styled.section `
         left: -40px;
        }
 
+       Small {
+        margin-left: 16%;
+       }
+
        .email {
         font-size: 1.3em;
         position: absolute;
@@ -377,6 +381,10 @@ const FormComponent2 = styled.section `
             top: 205px;
             left: -21px;
         }
+
+        Small {
+        margin-left: 17%;
+       }
 
         #birthday {
             width: 350px;
@@ -577,6 +585,12 @@ const FormComponent2 = styled.section `
             top: 240px;
             left: -25px;
         }
+
+        Small {
+            margin-top: -4%;
+            margin-left: 17%;
+            font-size: 0.8em;
+       }
 
         #birthday {
             font-size: large;
@@ -821,6 +835,12 @@ const FormComponent2 = styled.section `
             left: -35px;
         }
 
+        Small {
+            margin-top: -7%;
+            margin-left: 17%;
+            font-size: 0.8em;
+       }
+
         #birthday {
             width: 650px;
         }
@@ -1012,6 +1032,7 @@ const Form2 = function() {
                     </div>
                     <div className='date'>
                             <Input type='date' name='birthday' id='birthday' placeholder='Data de nascimento'/>
+                            <Small>Digite a Data de Nascimento</Small>
                         </div>
                     <div className='email'>
                         <Input type="email" name="email" id="email" placeholder='Email'/>
@@ -1056,6 +1077,7 @@ const Form2 = function() {
                     </div>
                     <div className='date'>
                             <Input type='date' name='birthday' id='birthday' placeholder='Data de nascimento'/>
+                            <Small>Digite a Data de Nascimento</Small>
                     </div>
                     <div className='email'>
                         <Input type="email" name="email" id="email" placeholder='Email'/>
@@ -1099,7 +1121,8 @@ const Form2 = function() {
                         <Input type="string" name="name" id="name" placeholder='Nome Completo'/>
                     </div>
                     <div className='date'>
-                            <Input type='date' name='birthday' id='birthday' placeholder='Data de nascimento'/>
+                        <Input type='date' name='birthday' id='birthday' placeholder='Data de nascimento'/>
+                        <Small>Digite a Data de Nascimento</Small>
                     </div>
                     <div className='email'>
                         <Input type="email" name="email" id="email" placeholder='Email'/>
@@ -1143,7 +1166,8 @@ const Form2 = function() {
                         <Input type="string" name="name" id="name" placeholder='Nome Completo'/>
                     </div>
                     <div className='date'>
-                            <Input type='date' name='birthday' id='birthday' placeholder='Data de nascimento'/>
+                        <Input type='date' name='birthday' id='birthday' placeholder='Data de nascimento'/>
+                        <Small>Digite a Data de Nascimento</Small>
                     </div>
                     <div className='email'>
                         <Input type="email" name="email" id="email" placeholder='Email'/>
