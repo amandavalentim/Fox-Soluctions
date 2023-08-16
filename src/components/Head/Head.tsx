@@ -338,7 +338,7 @@ const Head = function() {
       <HeadComponent>
              
                   <nav className='header'>
-                            <Link href={'/page'}>
+                            <Link href={'/HomePage'}>
                             <Image className='logo-Fox' src="/images/logo-fox1.svg" width={100} height={104} alt="logo" />
                             </Link>
                       <div className='nameLogo'>Fox Soluctions</div>
@@ -357,12 +357,12 @@ const Head = function() {
                                                 <FaTimes onClick={Close} className='close'/>
                                             </button>
                                             <li>
-                                                <Link href={'/page'} onClick={Close} className='home-button'>
+                                                <Link href={'/HomePage'} onClick={Close} className='home-button'>
                                                 Home
                                             </Link>
                                             </li>
                                             <li>
-                                                <Link href={'/Page3'} className='sobre-nos-button' onClick={Close}>
+                                                <Link href={'/AboutUsPage'} className='sobre-nos-button' onClick={Close}>
                                                     Sobre Nós
                                                 </Link>
                                             </li>
@@ -375,12 +375,12 @@ const Head = function() {
                   <nav className='hide-on-mobile'>
                           <Ul>
                             <li>
-                                <Link href={'/page'} className='home-button'>
+                                <Link href={'/HomePage'} className='home-button'>
                                 Home
                               </Link>
                               </li>
                               <li>
-                                <Link href={'/Page3'} className='sobre-nos-button'>
+                                <Link href={'/AboutUsPage'} className='sobre-nos-button'>
                                     Sobre Nós
                                 </Link>
                               </li>

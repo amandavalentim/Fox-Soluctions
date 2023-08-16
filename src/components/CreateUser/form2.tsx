@@ -1042,7 +1042,7 @@ const Form2 = function() {
                                     </button>
                             </div>
                             <div className='page2'>
-                            Já tem uma conta? <Link href={'/page2'}>
+                            Já tem uma conta? <Link href={'/LoginPage'}>
                                 <span>Clique Aqui!</span>
                             </Link>
                             </div>
@@ -1086,7 +1086,7 @@ const Form2 = function() {
                             </button>
                         </div>
                         <div className='page2'>
-                            Já tem uma conta? <Link href={'/page2'}>
+                            Já tem uma conta? <Link href={'/LoginPage'}>
                                 <span>Clique Aqui!</span>
                             </Link>
                         </div>
@@ -1131,7 +1131,7 @@ const Form2 = function() {
                             </button>
                         </div>
                         <div className='page2'>
-                            Já tem uma conta? <Link href={'/page2'}>
+                            Já tem uma conta? <Link href={'/LoginPage'}>
                                 <span>Clique Aqui!</span>
                             </Link>
                         </div>
@@ -1176,7 +1176,7 @@ const Form2 = function() {
                         </button>
                     </div>
                     <div className='page2'>
-                        Já tem uma conta? <Link href={'/page2'}>
+                        Já tem uma conta? <Link href={'/LoginPage'}>
                             <span>Clique Aqui!</span>
                         </Link>
                     </div>
@@ -1221,7 +1221,7 @@ const Form2 = function() {
                         </button>
                     </div>
                     <div className='page2'>
-                        Já tem uma conta? <Link href={'/page2'}>
+                        Já tem uma conta? <Link href={'/LoginPage'}>
                             <span>Clique Aqui!</span>
                         </Link>
                     </div>
