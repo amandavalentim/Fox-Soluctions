@@ -68,6 +68,8 @@ const PageComponent = styled.section `
     }
 
     .enviar:active {
+        margin-top: 13%;
+        margin-left: 24%;
         width: 170px;
         height: 50px;
         font-size: 1.6em;
@@ -140,6 +142,8 @@ const PageComponent = styled.section `
     }
 
     .enviar:active {
+        margin-top: 13%;
+        margin-left: 23%;
         width: 170px;
         height: 50px;
         font-size: 1.6em;
@@ -230,6 +234,8 @@ const PageComponent = styled.section `
         }
 
         .enviar:active {
+            margin-top: 7%;
+            margin-left: 30%;
             width: 190px;
             height: 60px;
             font-size: 2em;
@@ -306,6 +312,8 @@ const PageComponent = styled.section `
         }
 
         .enviar:hover {
+            margin-top: 4%;
+            margin-left: 30%;
             width: 200px;
             height: 70px;
             font-size: 2.2em;
@@ -314,6 +322,8 @@ const PageComponent = styled.section `
         }
 
         .enviar:active {
+            margin-top: 4%;
+            margin-left: 30%;
             width: 200px;
             height: 70px;
             font-size: 2.2em;
@@ -385,6 +395,8 @@ const PageComponent = styled.section `
         }
 
         .enviar:hover {
+            margin-top: 1%;
+            margin-left: 32.7%;
             width: 200px;
             height: 70px;
             font-size: 2.2em;
@@ -393,6 +405,8 @@ const PageComponent = styled.section `
         }
 
         .enviar:active {
+            margin-top: 1%;
+            margin-left: 32.7%;
             width: 200px;
             height: 70px;
             font-size: 2.2em;

@@ -228,7 +228,7 @@ const FormComponent = styled.section `
         margin-left: 37%;
         margin-top: -5%;
         font-size: 1em;
-        font-family: 'Poppins-Medium';
+        font-family: 'Poppins-Regular';
         color: #C7C7C7;
     }
 
@@ -236,7 +236,7 @@ const FormComponent = styled.section `
         margin-left: 37%;
         margin-top: -5%;
         font-size: 1em;
-        font-family: 'Poppins-Medium';
+        font-family: 'Poppins-Regular';
         color: #F47216;
     }
 
@@ -352,6 +352,7 @@ const FormComponent = styled.section `
         #forgot-email {
             font-size: 1.1em;
             margin-left: 40%;
+            font-family: 'Poppins-Regular';
         }
 
         #forgot-email:active {
@@ -371,6 +372,7 @@ const FormComponent = styled.section `
        #forgot-password {
             font-size: 1.1em;
             margin-left: 39%;
+            font-family: 'Poppins-Regular';
         }
 
         #forgot-password:active {
@@ -891,7 +893,7 @@ const Form = function() {
 
             <nav className='desktop3'>
                 <form>
-                    <h1>Logar</h1>
+                    <h1>Login</h1>
                     <div className='email'>
                         <Input type="email" name="email" id="email" placeholder='Email'/>
                         <a href=""><h4 id='forgot-email'>Esqueci o Email</h4></a>

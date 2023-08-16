@@ -323,6 +323,7 @@ const FormComponent3 = styled.section `
                 margin-left: -55%;
                 margin-top: 6%;
                 color: #86a40f;
+                cursor: pointer;
             }
 
             .rename {
@@ -337,16 +338,36 @@ const FormComponent3 = styled.section `
             .rename:active {
                 font-size: 1.1em;
                 text-align: center;
-                margin-top: -10.5%;
                 margin-left: 45%;
+                margin-top: -8.6%;
                 color: #86a40f;
+                cursor: pointer;
             }
 
             .enviar {
                 width: 200px;
                 height: 60px;
                 font-size: 2em;
-                margin-left: 35%;
+                margin-left: 31%;
+                cursor: pointer;
+            }
+
+            .enviar:hover {
+                width: 200px;
+                height: 60px;
+                font-size: 2em;
+                margin-left: 31%;
+                background-color: #9fc214;
+                cursor: pointer;
+            }
+
+            .enviar:focus {
+                width: 200px;
+                height: 60px;
+                font-size: 2em;
+                margin-left: 31%;
+                background-color: #86a40f;
+                cursor: pointer;
             }
 
             .fox {
