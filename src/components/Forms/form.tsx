@@ -79,7 +79,7 @@ const FormComponent = styled.section `
         margin-left: 30%;
         margin-top: -5%;
         font-size: 0.5em;
-        font-family: 'Poppins-Medium';
+        font-family: 'Poppins-Regular';
         color: #C7C7C7;
     }
 
@@ -87,7 +87,7 @@ const FormComponent = styled.section `
         margin-left: 30%;
         margin-top: -5%;
         font-size: 0.5em;
-        font-family: 'Poppins-Medium';
+        font-family: 'Poppins-Regular';
         color: #F47216;
     }
 
@@ -208,7 +208,7 @@ const FormComponent = styled.section `
         margin-top: -5%;
         color: #C7C7C7;
         font-size: 1em;
-        font-family: 'Poppins-Medium';
+        font-family: 'Poppins-Regular';
     }
 
     #forgot-email:active {
@@ -216,7 +216,7 @@ const FormComponent = styled.section `
         margin-top: -5%;
         font-size: 1em;
         color: #F47216;
-        font-family: 'Poppins-Medium';
+        font-family: 'Poppins-Regular';
     }
 
        .senha {
@@ -477,7 +477,7 @@ const FormComponent = styled.section `
         h1 {
             font-size: 3em;
             position: absolute;
-            margin-left: 28%;
+            margin-left: 21%;
             margin-top: 5%;
         }
 
@@ -532,7 +532,7 @@ const FormComponent = styled.section `
 
         p {
             font-size: 2em;
-            margin-left: 52%;
+            margin-left: 48%;
         }
 
         .btn-google {
