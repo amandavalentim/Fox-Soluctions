@@ -27,7 +27,11 @@ const PageComponent = styled.section `
     }
 
     .desktop2 {
-            display: none;
+        display: none;
+    }
+
+    .desktop3 {
+        display: none;
     }
 
     .fox {
@@ -210,6 +214,17 @@ const PageComponent = styled.section `
             height: 60px;
             font-size: 2em;
             background-color: #93B413;
+            border: none;
+            border-radius: 20px;
+        }
+
+        .enviar:hover {
+            margin-top: 7%;
+            margin-left: 30%;
+            width: 190px;
+            height: 60px;
+            font-size: 2em;
+            background-color: #9fc214;
             border: none;
             border-radius: 20px;
         }

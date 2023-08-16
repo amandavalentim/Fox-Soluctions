@@ -477,7 +477,7 @@ const FormComponent = styled.section `
         h1 {
             font-size: 3em;
             position: absolute;
-            margin-left: 20%;
+            margin-left: 28%;
             margin-top: 5%;
         }
 
@@ -532,7 +532,7 @@ const FormComponent = styled.section `
 
         p {
             font-size: 2em;
-            margin-left: 45%;
+            margin-left: 52%;
         }
 
         .btn-google {
