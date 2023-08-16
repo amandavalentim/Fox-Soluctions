@@ -12,6 +12,7 @@ const FormComponent3 = styled.section `
     .mobile {
         display: block;
         justify-content: space-between;
+        box-sizing: border-box;
     }
 
     h1 {
