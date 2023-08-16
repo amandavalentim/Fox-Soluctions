@@ -86,11 +86,16 @@ const AboutUsComponent = styled.section`
             border-radius: 19px;
             background: linear-gradient(180deg, #0081E8 0%, #07B3FD 100%);
             margin: 20px;
-            text-align: center;
-            img{
-                padding: 40px;
-            }
         }
+    }
+
+    #palette-mobile{
+        display: flex;
+        margin: auto;
+        padding: 50px;
+    }
+    #palette-desktop{
+        display: none;
     }
 
     .developers-show-on-desktop{
@@ -173,8 +178,21 @@ const AboutUsComponent = styled.section`
             }
         }
 
+        #palette-mobile{
+            display: none;
+        }
+        #palette-desktop{
+            display: flex;
+            margin: auto;
+            padding: 50px;
+        }
+
         .container-developers{
             display: none;
+        }
+
+        .developers-show-on-desktop{
+            display: flex;
         }
 
         .content-developers-desktop{
@@ -283,13 +301,14 @@ const AboutUs = function (){
                     </div>
                     <div className="color-palette">
                         <h3>Nossa Paleta de cores: </h3>
-                        <img src="/../images/paleta-de-cores.svg" alt="" />
+                        <img id='palette-mobile' src="/../images/paleta-de-cores.png" alt="" />
+                        <img id='palette-desktop' src="/../images/paleta.png" alt="" />
                     </div>
                 </div>
 
                 {/* Section Developers in Desktop */}
+                <h3>Desenvolvedores</h3>
                 <div className='developers-show-on-desktop'>
-                    <h3>Desenvolvedores</h3>
                     <div className='content-developers-desktop'>
                         <div className='card-developers'>
                             <img src="/../images/desenvolvedor-amanda.svg" alt="" />
@@ -320,7 +339,6 @@ const AboutUs = function (){
 
                 {/* Section Developers in mobile */}
                 <div className="container-developers">
-                    <h3>Desenvolvedores</h3>
                     <Swiper className='swiper-developers'>
                         <SwiperSlide className='slide-developers-item'>
                             <img src="/../images/desenvolvedor-amanda.svg" alt="" />
