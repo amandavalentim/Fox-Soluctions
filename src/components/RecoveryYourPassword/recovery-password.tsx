@@ -1,7 +1,7 @@
 'use client'
 import styled from '@emotion/styled';
 import Link from 'next/link';
-import Input from '../Forms/Input/Input';
+import Input from '../Login/Input/Input';
 
 const PageComponent = styled.section `
 

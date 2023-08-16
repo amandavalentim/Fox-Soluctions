@@ -1,4 +1,4 @@
-import ForgotPassword from "@/components/Recuperar-Senha";
+import ForgotPassword from "@/components/RecoveryYourPassword";
 
 export default function page2() {
     return (
