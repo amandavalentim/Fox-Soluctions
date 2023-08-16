@@ -779,7 +779,7 @@ const Form = function() {
                         </div>
                         <div className='senha'>
                             <Input type="password" name="password" id="password" placeholder='Senha'/>
-                            <Link href={'/page5'}>
+                            <Link href={'/RecoveryYourPasswordPage'}>
                                 <h4 id='forgot-email'>Esqueci a Senha</h4>
                             </Link>
                         </div>
@@ -790,7 +790,7 @@ const Form = function() {
                             </button>
                         </div>
                         <div className='page2'>
-                            Não tem uma conta? <Link href={'/page4'}>
+                            Não tem uma conta? <Link href={'/CreateUserPage'}>
                                 <span>Crie uma!</span>
                             </Link>
                         </div>
@@ -812,7 +812,7 @@ const Form = function() {
                     </div>
                         <div className='senha'>
                             <Input type="password" name="password" id="password" placeholder='Senha'/>
-                            <Link href={'/page5'}>
+                            <Link href={'/RecoveryYourPasswordPage'}>
                                 <h4 id='forgot-email'>Esqueci a Senha</h4>
                             </Link>
                         </div>
@@ -823,7 +823,7 @@ const Form = function() {
                             </button>
                         </div>
                         <div className='page2'>
-                            Não tem uma conta? <Link href={'/page4'}>
+                            Não tem uma conta? <Link href={'/CreateUserPage'}>
                                 <span>Crie uma!</span>
                             </Link>
                         </div>
@@ -845,7 +845,7 @@ const Form = function() {
                     </div>
                         <div className='senha'>
                             <Input type="password" name="password" id="password" placeholder='Senha'/>
-                            <Link href={'/page5'}>
+                            <Link href={'/RecoveryYourPasswordPage'}>
                                 <h4 id='forgot-email'>Esqueci a Senha</h4>
                             </Link>
                         </div>
@@ -856,7 +856,7 @@ const Form = function() {
                             </button>
                         </div>
                         <div className='page2'>
-                            Não tem uma conta? <Link href={'/page4'}>
+                            Não tem uma conta? <Link href={'/CreateUserPage'}>
                                 <span>Crie uma!</span>
                             </Link>
                         </div>
@@ -877,7 +877,7 @@ const Form = function() {
                     </div>
                     <div className='senha'>
                         <Input type="password" name="password" id="password" placeholder='Senha'/>
-                        <Link href={'/page5'}>
+                        <Link href={'/RecoveryYourPasswordPage'}>
                                 <h4 id='forgot-email'>Esqueci a Senha</h4>
                         </Link>
                     </div>
@@ -888,7 +888,7 @@ const Form = function() {
                             </button>
                         </div>
                         <div className='page2'>
-                            Não tem uma conta? <Link href={'/page4'}>
+                            Não tem uma conta? <Link href={'/CreateUserPage'}>
                                 <span>Crie uma!</span>
                             </Link>
                         </div>
@@ -910,7 +910,7 @@ const Form = function() {
                     </div>
                     <div className='senha'>
                         <Input type="password" name="password" id="password" placeholder='Senha'/>
-                        <Link href={'/page5'}>
+                        <Link href={'/RecoveryYourPasswordPage'}>
                                 <h4 id='forgot-email'>Esqueci a Senha</h4>
                             </Link>
                     </div>
@@ -921,7 +921,7 @@ const Form = function() {
                             </button>
                         </div>
                         <div className='page2'>
-                            Não tem uma conta? <Link href={'/page4'}>
+                            Não tem uma conta? <Link href={'/CreateUserPage'}>
                                 <span>Crie uma!</span>
                             </Link>
                         </div>

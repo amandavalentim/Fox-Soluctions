@@ -434,7 +434,7 @@ const ForgotPassword = function() {
                 <img src="/images/raposa-recuperar-senha.png" alt="fox" className='fox'/>
                 <h1>Recupere a sua senha:</h1>
                 <Input type="string" name="email" id="op" placeholder='Digite o seu email ou telefone'/>
-                    <Link href={'/page6'}>
+                    <Link href={'/NewPasswordPage'}>
                         <button className='enviar' type='button'>
                             Enviar
                         </button>
@@ -445,7 +445,7 @@ const ForgotPassword = function() {
                 <form>
                     <h1>Recupere a sua senha:</h1>
                     <Input type="string" name="email" id="op" placeholder='Digite o seu email ou telefone'/>
-                    <Link href={'/page6'}>
+                    <Link href={'/NewPasswordPage'}>
                         <button className='enviar' type='button'>
                             Enviar
                         </button>
@@ -458,7 +458,7 @@ const ForgotPassword = function() {
                 <form>
                     <h1>Recupere a sua senha:</h1>
                     <Input type="string" name="email" id="op" placeholder='Digite o seu email ou telefone'/>
-                    <Link href={'/page6'}>
+                    <Link href={'/NewPasswordPage'}>
                         <button className='enviar' type='button'>
                             Enviar
                         </button>
@@ -471,7 +471,7 @@ const ForgotPassword = function() {
                 <form>
                     <h1>Recupere a sua senha:</h1>
                     <Input type="string" name="email" id="op" placeholder='Digite o seu email ou telefone'/>
-                    <Link href={'/page6'}>
+                    <Link href={'/NewPasswordPage'}>
                         <button className='enviar' type='button'>
                             Enviar
                         </button>
@@ -484,7 +484,7 @@ const ForgotPassword = function() {
                 <form>
                     <h1>Recupere a sua senha:</h1>
                         <Input type="string" name="email" id="op" placeholder='Digite o seu email ou telefone'/>
-                        <Link href={'/page6'}>
+                        <Link href={'/NewPasswordPage'}>
                             <button className='enviar' type='button'>
                                 Enviar
                             </button>

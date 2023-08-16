@@ -538,7 +538,7 @@ const RecoveryCode = function() {
                 <div className='rename'>
                     <a href="" id='a2'>Não é o seu email?<br/> Reescreva</a>
                 </div>
-                <Link href={'/page7'}>
+                <Link href={'/NewPasswordPage'}>
                         <button className='enviar' type='button'>
                             Enviar
                         </button>
@@ -561,7 +561,7 @@ const RecoveryCode = function() {
                         <a href="" id='a2'>Não é o seu email?<br/> Reescreva</a>
                     </div>
                     </div>
-                    <Link href={'/page7'}>
+                    <Link href={'/NewPasswordPage'}>
                         <button className='enviar' type='button'>
                             Enviar
                         </button>
@@ -585,7 +585,7 @@ const RecoveryCode = function() {
                         <a href="" id='a2'>Não é o seu email?<br/> Reescreva</a>
                     </div>
                     </div>
-                    <Link href={'/page7'}>
+                    <Link href={'/NewPasswordPage'}>
                         <button className='enviar' type='button'>
                             Enviar
                         </button>
@@ -609,7 +609,7 @@ const RecoveryCode = function() {
                         <a href="" id='a2'>Não é o seu email?<br/> Reescreva</a>
                     </div>
                     </div>
-                    <Link href={'/page7'}>
+                    <Link href={'/NewPasswordPage'}>
                         <button className='enviar' type='button'>
                             Enviar
                         </button>
@@ -633,7 +633,7 @@ const RecoveryCode = function() {
                         <a href="" id='a2'>Não é o seu email?<br/> Reescreva</a>
                     </div>
                     </div>
-                    <Link href={'/page7'}>
+                    <Link href={'/NewPasswordPage'}>
                         <button className='enviar' type='button'>
                             Enviar
                         </button>
