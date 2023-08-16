@@ -1203,7 +1203,7 @@ const Form2 = function() {
                         <Input type="email" name="email" id="email" placeholder='Email'/>
                     </div>
                     <div className='phone'>
-                            <Input type="phone" name="phone" id="phone" placeholder='Celular'/>
+                        <Input type="phone" name="phone" id="phone" placeholder='Celular'/>
                     </div>
                     <div className='cpf'>
                         <Input type="number" name="cpf" id="cpf" placeholder='CPF'/>
