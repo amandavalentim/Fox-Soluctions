@@ -220,6 +220,7 @@ const PageComponent = styled.section `
             background-color: #93B413;
             border: none;
             border-radius: 20px;
+            cursor: pointer;
         }
 
         .enviar:hover {
@@ -309,6 +310,7 @@ const PageComponent = styled.section `
             background-color: #93B413;
             border: none;
             border-radius: 20px;
+            cursor: pointer;
         }
 
         .enviar:hover {
@@ -392,6 +394,7 @@ const PageComponent = styled.section `
             background-color: #93B413;
             border: none;
             border-radius: 20px;
+            cursor: pointer;
         }
 
         .enviar:hover {

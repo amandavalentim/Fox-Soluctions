@@ -1,4 +1,4 @@
 "use strict";
 exports.__esModule = true;
-var recuperar_senha_1 = require("./recuperar-senha");
-exports["default"] = recuperar_senha_1["default"];
+var recovery_password_1 = require("./recovery-password");
+exports["default"] = recovery_password_1["default"];

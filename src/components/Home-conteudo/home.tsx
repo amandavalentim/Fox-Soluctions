@@ -195,6 +195,7 @@ height: 100vh;
             font-size: 1.9em;
             top: 590px;
             left: 430px;
+            cursor: pointer;
         }
 
         .start:hover {
@@ -204,6 +205,7 @@ height: 100vh;
             top: 590px;
             left: 430px;
             background-color: #9fc214;
+            cursor: pointer;
         }
 
         .start:active {
@@ -213,6 +215,7 @@ height: 100vh;
             top: 590px;
             left: 430px;
             background-color: #86a40f;
+            cursor: pointer;
         }
 
         .fox {
@@ -259,18 +262,21 @@ height: 100vh;
         .start {
             top: 580px;
             left: 570px;
+            cursor: pointer;
         }
 
         .start:hover {
             top: 580px;
             left: 570px;
             background-color: #9fc214;
+            cursor: pointer;
         }
 
         .start:active {
             top: 580px;
             left: 570px;
             background-color: #86a40f;
+            cursor: pointer;
         }
 
         .fox {
@@ -320,6 +326,7 @@ height: 100vh;
             font-size: 2.3em;
             top: 650px;
             left: 690px;
+            cursor: pointer;
         }
 
         .start:hover {
@@ -329,6 +336,7 @@ height: 100vh;
             top: 650px;
             left: 690px;
             background-color: #9fc214;
+            cursor: pointer;
         }
 
         .start:active {
@@ -338,6 +346,7 @@ height: 100vh;
             top: 650px;
             left: 690px;
             background-color: #86a40f;
+            cursor: pointer;
         }
 
         .fox {

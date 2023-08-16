@@ -2,7 +2,6 @@
 import styled from '@emotion/styled';
 import Link from 'next/link';
 import Input from '../Forms/Input/Input';
-import { useEffect } from 'react';
 
 const FormComponent3 = styled.section `
 
@@ -27,17 +26,23 @@ const FormComponent3 = styled.section `
         display: none;
     }
 
+    .desktop3 {
+        display: none;
+    }
+
     h1 {
         text-align: center;
         font-size: 1.2em;
         font-family: 'Poppins-medium';
         margin-left: 1%;
         padding-top: 10%;
+        color: white;
     }
 
     #code {
         padding-top: 20%;
         margin-left: 15%;
+        color: white;
     }
 
     p{
@@ -50,7 +55,7 @@ const FormComponent3 = styled.section `
         font-size: 0.7em;
         text-align: center;
         margin-left: -55%;
-        color: #93B413;
+        color: #C7C7C7;
     }
 
     .resend:active {
@@ -65,7 +70,7 @@ const FormComponent3 = styled.section `
         text-align: center;
         margin-left: 45%;
         margin-top: -10.2%;
-        color: #93B413;
+        color: #C7C7C7;
     }
 
     .rename:active {
@@ -85,6 +90,7 @@ const FormComponent3 = styled.section `
         background-color: #93B413;
         border: none;
         border-radius: 20px;
+        color: white;
     }
 
     .enviar:active {
@@ -120,6 +126,10 @@ const FormComponent3 = styled.section `
             display: none;
         }
 
+        .desktop3 {
+            display: none;
+        }
+
         background-image: url("/images/tablet-recuperar-senha.svg");
         background-repeat: no-repeat;
 
@@ -136,10 +146,12 @@ const FormComponent3 = styled.section `
         h1 {
             font-size: 1.1em;
             margin-left: 3%;
+            color: white;
         }
 
         .input {
             margin-top: -12%;
+            color: white;
         }
 
         #code {
@@ -156,6 +168,7 @@ const FormComponent3 = styled.section `
 
         .enviar {
             margin-top: 11%;
+            color: white;
         }
 
         .fox {
@@ -185,6 +198,10 @@ const FormComponent3 = styled.section `
             display: none;
         }
 
+        .desktop3 {
+                display: none;
+        }
+
         background-image: url("/images/992px-recuperar-senha.svg");
 
         form {
@@ -200,6 +217,7 @@ const FormComponent3 = styled.section `
         .input {
             margin-top: -16%;
             margin-left: -5%;
+            color: white;
         }
 
         #code {
@@ -208,6 +226,7 @@ const FormComponent3 = styled.section `
 
         h1 {
             margin-left: -1%;
+            color: white;
         }
 
         p {
@@ -219,7 +238,7 @@ const FormComponent3 = styled.section `
             font-size: 0.9em;
             text-align: center;
             margin-left: -55%;
-            color: #93B413;
+            color: #C7C7C7;
             cursor: pointer;
         }
 
@@ -236,7 +255,7 @@ const FormComponent3 = styled.section `
             text-align: center;
             margin-left: 45%;
             margin-top: -9.5%;
-            color: #93B413;
+            color: #C7C7C7;
             cursor: pointer;
         }
 
@@ -287,6 +306,10 @@ const FormComponent3 = styled.section `
                 justify-content: space-between;
             }
 
+            .desktop3 {
+                display: none;
+            }
+
             form {
                 margin-top: 3%;
                 margin-left: 31%;
@@ -302,10 +325,12 @@ const FormComponent3 = styled.section `
             h1 {
                 font-size: 1.4em;
                 margin-top: -2%;
+                color: white;
             }
 
             #code {
                 width: 430px;
+                color: white;
             }
 
             .resend {
@@ -313,7 +338,7 @@ const FormComponent3 = styled.section `
                 font-size: 1.1em;
                 text-align: center;
                 margin-left: -55%;
-                color: #93B413;
+                color: #C7C7C7;
                 cursor: pointer;
             }
 
@@ -331,7 +356,7 @@ const FormComponent3 = styled.section `
                 text-align: center;
                 margin-left: 45%;
                 margin-top: -8.6%;
-                color: #93B413;
+                color: #C7C7C7;
                 cursor: pointer;
             }
 
@@ -350,6 +375,7 @@ const FormComponent3 = styled.section `
                 font-size: 2em;
                 margin-left: 31%;
                 cursor: pointer;
+                color: white;
             }
 
             .enviar:hover {
@@ -366,6 +392,125 @@ const FormComponent3 = styled.section `
                 height: 60px;
                 font-size: 2em;
                 margin-left: 31%;
+                background-color: #86a40f;
+                cursor: pointer;
+            }
+
+            .fox {
+                width: 100px;
+                margin-top: 15%;
+            }
+        }
+
+        @media(min-width: 1600px) {
+
+            .mobile {
+                display: none;
+            }
+
+            .tablet {
+                display: none;
+            }
+
+            .desktop1 {
+                display: none;
+            }
+
+            .desktop2 {
+                display: none;
+            }
+
+            .desktop3 {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            background-image: url("/images/1600px-recuperar-senha.svg");
+
+            form {
+                margin-top: 6%;
+                margin-left: 31.5%;
+                border-radius: 19px;
+                background: linear-gradient(180deg, #07B3FD 0%, #0a59c0 100%);
+                width: 550px;
+                height: 430px;
+                border-color: white;
+            }
+
+            h1 {
+                font-size: 1.4em;
+                margin-top: -2%;
+                color: white;
+            }
+
+            p {
+                margin-top: -13%;
+            }
+
+            #code {
+                width: 430px;
+                color: white;
+            }
+
+            .resend {
+                margin-top: 6%;
+                font-size: 1.1em;
+                text-align: center;
+                margin-left: -55%;
+                color: #C7C7C7;
+                cursor: pointer;
+            }
+
+            .resend:active {
+                font-size: 1.1em;
+                text-align: center;
+                margin-left: -55%;
+                margin-top: 6%;
+                color: #86a40f;
+                cursor: pointer;
+            }
+
+            .rename {
+                font-size: 1.1em;
+                text-align: center;
+                margin-left: 45%;
+                margin-top: -8.6%;
+                color: #C7C7C7;
+                cursor: pointer;
+            }
+
+            .rename:active {
+                font-size: 1.1em;
+                text-align: center;
+                margin-left: 45%;
+                margin-top: -8.6%;
+                color: #86a40f;
+                cursor: pointer;
+            }
+
+            .enviar {
+                width: 200px;
+                height: 60px;
+                font-size: 2em;
+                margin-left: 33%;
+                cursor: pointer;
+                color: white;
+            }
+
+            .enviar:hover {
+                width: 200px;
+                height: 60px;
+                font-size: 2em;
+                margin-left: 33%;
+                background-color: #9fc214;
+                cursor: pointer;
+            }
+
+            .enviar:focus {
+                width: 200px;
+                height: 60px;
+                font-size: 2em;
+                margin-left: 33%;
                 background-color: #86a40f;
                 cursor: pointer;
             }
@@ -472,16 +617,32 @@ const RecoveryCode = function() {
                 </form>
                 <img src="/images/raposa-code.png" alt="fox" className='fox'/>
             </nav>
+
+            <nav className='desktop3'>
+                <form>
+                <h1>Digite o código que<br/> enviamos para você:</h1>
+                    <div className='input'>
+                        <Input type="number" name="code" id="code"/>
+                        <p>01:00</p>
+                    </div>
+                    <div className='resends'>
+                    <div className='resend'>
+                        <a href="" id='a1'>Não recebeu?<br/> Reenviar</a>
+                    </div>
+                    <div className='rename'>
+                        <a href="" id='a2'>Não é o seu email?<br/> Reescreva</a>
+                    </div>
+                    </div>
+                    <Link href={'/page7'}>
+                        <button className='enviar' type='button'>
+                            Enviar
+                        </button>
+                    </Link>
+                </form>
+                <img src="/images/raposa-code.png" alt="fox" className='fox'/>
+            </nav>
         </FormComponent3>
     )
 }
 
 export default RecoveryCode;
-
-function getTimeRemaining(e: any): { total: any; hours: any; minutes: any; seconds: any; } {
-    throw new Error('Function not implemented.');
-}
-function setTimer(arg0: string) {
-    throw new Error('Function not implemented.');
-}
-

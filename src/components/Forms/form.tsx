@@ -389,6 +389,7 @@ const FormComponent = styled.section `
         .google-enter {
         margin-left: 17%;
         margin-top: 5%;
+        cursor: pointer;
        }
 
        .btn-google {
@@ -427,6 +428,7 @@ const FormComponent = styled.section `
     .logar {
         margin-left: 31%;
         margin-top: 6%;
+        cursor: pointer;
     }
 
     .logar:active {
@@ -546,6 +548,7 @@ const FormComponent = styled.section `
             border: none;
             border-radius: 39px;
             padding: 8px;
+            cursor: pointer;
         }
 
         .btn-google:hover {
@@ -557,6 +560,7 @@ const FormComponent = styled.section `
             border: none;
             border-radius: 39px;
             padding: 8px;
+            cursor: pointer;
         }
 
         .btn-google:active {
@@ -568,6 +572,7 @@ const FormComponent = styled.section `
             border: none;
             border-radius: 39px;
             padding: 8px;
+            cursor: pointer;
         }
 
         .faGoogle{
@@ -594,6 +599,7 @@ const FormComponent = styled.section `
             width: 270px;
             height: 80px;
             font-size: 2.7em;
+            cursor: pointer;
         }
 
         .logar:active {
@@ -601,6 +607,7 @@ const FormComponent = styled.section `
             width: 270px;
             height: 80px;
             font-size: 2.7em;
+            cursor: pointer;
         }
 
         .fox {
@@ -707,6 +714,7 @@ const FormComponent = styled.section `
             border: none;
             border-radius: 39px;
             padding: 8px;
+            cursor: pointer;
         }
 
         .btn-google:hover {
@@ -718,6 +726,7 @@ const FormComponent = styled.section `
             border: none;
             border-radius: 39px;
             padding: 8px;
+            cursor: pointer;
         }
 
         .btn-google:active {
@@ -729,6 +738,7 @@ const FormComponent = styled.section `
             border: none;
             border-radius: 39px;
             padding: 8px;
+            cursor: pointer;
         }
 
         .faGoogle{
