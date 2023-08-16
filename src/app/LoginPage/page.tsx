@@ -1,6 +1,7 @@
-import Form from '@/components/Forms'
+import Form from "@/components/Login";
 
-export default function page2() {
+
+export default function Login() {
   return (
     <main>
       <Form/>

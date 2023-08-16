@@ -1,8 +1,8 @@
 "use strict";
 exports.__esModule = true;
-var Forms_1 = require("@/components/Forms");
-function page2() {
+var Login_1 = require("@/components/Login");
+function Login() {
     return (React.createElement("main", null,
-        React.createElement(Forms_1["default"], null)));
+        React.createElement(Login_1["default"], null)));
 }
-exports["default"] = page2;
+exports["default"] = Login;
