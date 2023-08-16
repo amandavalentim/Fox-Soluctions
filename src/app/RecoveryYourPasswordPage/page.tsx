@@ -1,6 +1,6 @@
 import ForgotPassword from "@/components/RecoveryYourPassword";
 
-export default function page2() {
+export default function Login() {
     return (
       <main>
         <ForgotPassword/>
