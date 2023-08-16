@@ -2,7 +2,7 @@
 import styled from '@emotion/styled';
 import { FaGoogle } from "react-icons/fa";
 import Link from 'next/link';
-import Input from '../Forms/Input/Input';
+import Input from './Input/Input';
 
 const FormComponent = styled.section `
 
