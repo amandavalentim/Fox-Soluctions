@@ -1,3 +1,4 @@
+//Código desenvolvido por Gabriel
 'use client'
 import styled from '@emotion/styled';
 import Link from 'next/link';
@@ -5,6 +6,7 @@ import Input from '../Login/Input/Input';
 
 const FormComponent3 = styled.section `
 
+    //Mobile
     height: 80vh;
 
     background: linear-gradient(180deg, #04a4e8 0%, #0A53B5 100%);
@@ -107,6 +109,7 @@ const FormComponent3 = styled.section `
         margin-top: 0.1%;
     }
 
+    // Tablet
     @media(min-width: 768px) {
 
         .mobile {
@@ -179,6 +182,7 @@ const FormComponent3 = styled.section `
         }
     }
 
+    // Small Screens
     @media(min-width: 992px) {
 
         .mobile {
@@ -287,6 +291,7 @@ const FormComponent3 = styled.section `
             cursor: pointer;
         }
 
+        // Medium Screens
         @media(min-width: 1200px) {
 
             .mobile {
@@ -402,6 +407,7 @@ const FormComponent3 = styled.section `
             }
         }
 
+        // Large Screens
         @media(min-width: 1600px) {
 
             .mobile {
@@ -528,6 +534,7 @@ const RecoveryCode = function() {
         <FormComponent3>
             <nav className='mobile'>
                 <h1>Digite o código que<br/> enviamos para você:</h1>
+                {/* Content */}
                 <div className='input'>
                     <Input type="number" name="code" id="code"/>
                     <p>01:00</p>
@@ -543,10 +550,12 @@ const RecoveryCode = function() {
                             Enviar
                         </button>
                 </Link>
+                {/* Stella our Mascot */}
                 <img src="/images/raposa-code-mobile.png" alt="fox" className='fox'/>
             </nav>
 
             <nav className='tablet'>
+                {/* Content */}
                 <form>
                     <h1>Digite o código que<br/> enviamos para você:</h1>
                     <div className='input'>
@@ -567,10 +576,12 @@ const RecoveryCode = function() {
                         </button>
                     </Link>
                 </form>
+                {/* Stella our Mascot */}
                 <img src="/images/raposa-code.png" alt="fox" className='fox'/>
             </nav>
 
             <nav className='desktop1'>
+                {/* Content */}
             <form>
                     <h1>Digite o código que<br/> enviamos para você:</h1>
                     <div className='input'>
@@ -591,10 +602,12 @@ const RecoveryCode = function() {
                         </button>
                     </Link>
                 </form>
+                {/* Stella our Mascot */}
                 <img src="/images/raposa-code.png" alt="fox" className='fox'/>
             </nav>
 
             <nav className='desktop2'>
+                {/* Content */}
                 <form>
                     <h1>Digite o código que<br/> enviamos para você:</h1>
                     <div className='input'>
@@ -615,10 +628,12 @@ const RecoveryCode = function() {
                         </button>
                     </Link>
                 </form>
+                {/* Stella our Mascot */}
                 <img src="/images/raposa-code.png" alt="fox" className='fox'/>
             </nav>
 
             <nav className='desktop3'>
+                {/* Content */}
                 <form>
                 <h1>Digite o código que<br/> enviamos para você:</h1>
                     <div className='input'>
@@ -639,6 +654,7 @@ const RecoveryCode = function() {
                         </button>
                     </Link>
                 </form>
+                {/* Stella our Mascot */}
                 <img src="/images/raposa-code.png" alt="fox" className='fox'/>
             </nav>
         </FormComponent3>
