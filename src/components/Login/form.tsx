@@ -775,7 +775,9 @@ const Form = function() {
                         <h1>Login</h1>
                         <div className='email'>
                             <Input type="email" name="email" id="email" placeholder='Email'/>
-                            <a href=""><h4 id='forgot-email'>Esqueci o Email</h4></a>
+                            <Link href={'/RecoveryYourEmailPage'}>
+                                <h4 id='forgot-email'>Esqueci o Email</h4>
+                            </Link>
                         </div>
                         <div className='senha'>
                             <Input type="password" name="password" id="password" placeholder='Senha'/>
@@ -808,7 +810,9 @@ const Form = function() {
                     <h1>Login</h1>
                     <div className='email'>
                         <Input type="email" name="email" id="email" placeholder='Email'/>
-                        <a href=""><h4 id='forgot-email'>Esqueci o Email</h4></a>
+                        <Link href={'/RecoveryYourEmailPage'}>
+                                <h4 id='forgot-email'>Esqueci o Email</h4>
+                            </Link>
                     </div>
                         <div className='senha'>
                             <Input type="password" name="password" id="password" placeholder='Senha'/>
@@ -841,7 +845,9 @@ const Form = function() {
                     <h1>Login</h1>
                     <div className='email'>
                         <Input type="email" name="email" id="email" placeholder='Email'/>
-                        <a href=""><h4 id='forgot-email'>Esqueci o Email</h4></a>
+                        <Link href={'/RecoveryYourEmailPage'}>
+                            <h4 id='forgot-email'>Esqueci o Email</h4>
+                        </Link>
                     </div>
                         <div className='senha'>
                             <Input type="password" name="password" id="password" placeholder='Senha'/>
@@ -873,7 +879,9 @@ const Form = function() {
                     <h1>Login</h1>
                     <div className='email'>
                         <Input type="email" name="email" id="email" placeholder='Email'/>
-                        <a href=""><h4 id='forgot-email'>Esqueci o Email</h4></a>
+                        <Link href={'/RecoveryYourEmailPage'}>
+                            <h4 id='forgot-email'>Esqueci o Email</h4>
+                        </Link>
                     </div>
                     <div className='senha'>
                         <Input type="password" name="password" id="password" placeholder='Senha'/>
@@ -906,7 +914,9 @@ const Form = function() {
                     <h1>Login</h1>
                     <div className='email'>
                         <Input type="email" name="email" id="email" placeholder='Email'/>
-                        <a href=""><h4 id='forgot-email'>Esqueci o Email</h4></a>
+                        <Link href={'/RecoveryYourEmailPage'}>
+                            <h4 id='forgot-email'>Esqueci o Email</h4>
+                        </Link>
                     </div>
                     <div className='senha'>
                         <Input type="password" name="password" id="password" placeholder='Senha'/>

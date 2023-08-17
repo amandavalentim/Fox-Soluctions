@@ -1,17 +1,8 @@
 "use strict";
 exports.__esModule = true;
-var Home_Conte_do_1 = require("@/components/Home-Conte\u00FAdo");
+var Home_container_1 = require("@/components/Home-container");
 function Home() {
     return (React.createElement("main", null,
-        React.createElement(Home_Conte_do_1["default"], null)));
-}
-exports["default"] = Home;
-
-"use strict";
-exports.__esModule = true;
-var home_1 = require("@/components/home");
-function Home() {
-    return (React.createElement("main", null,
-        React.createElement(home_1["default"], null)));
+        React.createElement(Home_container_1["default"], null)));
 }
 exports["default"] = Home;
