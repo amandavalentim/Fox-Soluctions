@@ -1,3 +1,5 @@
+// Código desenvolvido por Gabriel
+
 'use client'
 import styled from '@emotion/styled';
 import Link from 'next/link';
@@ -5,6 +7,7 @@ import Input from '../Login/Input/Input';
 
 const Formcomponent4 = styled.section `
 
+    //Mobile
     height: 92.5vh;
 
     background: linear-gradient(180deg, #04a4e8 0%, #0A53B5 100%);
@@ -76,6 +79,7 @@ const Formcomponent4 = styled.section `
         border-radius: 20px;
     }
 
+    //Tablet
     @media(min-width: 768px) {
 
         height: 80vh;
@@ -164,6 +168,7 @@ const Formcomponent4 = styled.section `
             width: 100px;
         }
 
+        //Small Screens
         @media(min-width: 992px) {
 
             .mobile{
@@ -261,6 +266,7 @@ const Formcomponent4 = styled.section `
             }
         }
 
+        //Medium Screens
         @media(min-width: 1200px) {
 
             .mobile{
@@ -364,6 +370,7 @@ const Formcomponent4 = styled.section `
             }
         }
 
+        //Large Screens
         @media(min-width: 1600px) {
 
             .mobile{
@@ -475,6 +482,7 @@ const NewPassword = function() {
         <Formcomponent4>
             <nav className='mobile'>
                 <h1>Crie a sua nova senha:</h1>
+                {/* Content */}
                 <Input type="number" name="password" id="password" placeholder='Nova Senha'/>
                 <Input type="number" name="confirm-password" id="confirm-password" placeholder='Confirmar nova Senha'/>
                 <Link href={'/LoginPage'}>
@@ -482,10 +490,12 @@ const NewPassword = function() {
                             Confirmar
                         </button>
                 </Link>
+                {/*Stella our Mascot*/}
                 <img src="/images/raposa-new-password.png" alt="fox" className='fox'/>
             </nav>
 
             <nav className='tablet'>
+                {/* Content */}
                 <form>
                     <h1>Crie a sua nova senha:</h1>
                     <Input type="number" name="password" id="password" placeholder='Nova Senha'/>
@@ -495,11 +505,13 @@ const NewPassword = function() {
                                 Confirmar
                             </button>
                     </Link>
+                    {/*Stella our Mascot*/}
                     <img src="/images/Raposa-login.png" alt="fox" className='fox'/>
                 </form>
             </nav>
 
             <nav className='desktop1'>
+                {/* Content */}
                 <form>
                     <h1>Crie a sua nova senha:</h1>
                         <Input type="number" name="password" id="password" placeholder='Nova Senha'/>
@@ -509,11 +521,13 @@ const NewPassword = function() {
                                 Confirmar
                             </button>
                         </Link>
+                        {/*Stella our Mascot*/}
                         <img src="/images/Raposa-login.png" alt="fox" className='fox'/>
                 </form>
             </nav>
 
             <nav className='desktop2'>
+                {/* Content */}
                 <form>
                     <h1>Crie a sua nova senha:</h1>
                         <Input type="number" name="password" id="password" placeholder='Nova Senha'/>
@@ -523,11 +537,13 @@ const NewPassword = function() {
                                 Confirmar
                             </button>
                         </Link>
+                        {/*Stella our Mascot*/}
                         <img src="/images/Raposa-login.png" alt="fox" className='fox'/>
                 </form>
             </nav>
 
             <nav className='desktop3'>
+                {/* Content */}
                 <form>
                     <h1>Crie a sua nova senha:</h1>
                         <Input type="number" name="password" id="password" placeholder='Nova Senha'/>
@@ -537,6 +553,7 @@ const NewPassword = function() {
                                 Confirmar
                             </button>
                         </Link>
+                        {/*Stella our Mascot*/}
                         <img src="/images/Raposa-login.png" alt="fox" className='fox'/>
                 </form>
             </nav>

@@ -1,12 +1,14 @@
+//Código desenvolvido por Gabriel
+
 'use client'
 import styled from '@emotion/styled';
 import { FaGoogle } from "react-icons/fa";
 import Link from 'next/link';
 import Input from '../Login/Input/Input';
 
-
 const FormComponent2 = styled.section `
 
+    // Mobile
     height: 130vh;
 
     background: linear-gradient(180deg, #0A53B5 0%, #028fcc 100%);
@@ -168,6 +170,7 @@ const FormComponent2 = styled.section `
         width: 90px;
     }
 
+    // Tablet
     @media(min-width: 768px){
 
         height: 140vh;
@@ -322,6 +325,7 @@ const FormComponent2 = styled.section `
        }
     }
 
+    // Small Screens
     @media(min-width: 992px) {
 
         height: 138vh;
@@ -522,6 +526,7 @@ const FormComponent2 = styled.section `
     }
 }
 
+    // Medium Screens
     @media(min-width: 1200px) {
 
         height: 178vh;
@@ -772,6 +777,7 @@ const FormComponent2 = styled.section `
         }
     }
 
+    // Large Screens
     @media(min-width: 1600px) {
 
         height: 170vh;

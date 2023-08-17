@@ -1,9 +1,9 @@
-import NewPassword from "@/components/new-password";
+import PgProfile from "@/components/Profile";
 
 export default function page2() {
     return (
       <main>
-        <NewPassword/>
+        <PgProfile/>
       </main>
       )
 }
