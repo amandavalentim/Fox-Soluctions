@@ -7,6 +7,9 @@ import {FaTimes} from 'react-icons/fa';
 import Link from 'next/link';
 
 const HeadComponent = styled.head`
+
+    // Mobile
+
     position: relative;
     background: linear-gradient(180deg, #07B3FD 0%, #0081E8 100%);
     height: 170px;
@@ -219,6 +222,7 @@ const HeadComponent = styled.head`
         font-size: 19px;
     }
 
+    // Tablet
     @media (min-width: 768px) {
 
         .hide-on-mobile {
@@ -271,6 +275,7 @@ const HeadComponent = styled.head`
         }
     }
 
+    // Small Screens
     @media (min-width: 922px) {
         .hide-on-mobile {
             display: flex;
@@ -285,6 +290,7 @@ const HeadComponent = styled.head`
         
     }
 
+    // Medium Screens
     @media (min-width: 1200px) {
         .hide-on-mobile {
             display: flex;
@@ -299,6 +305,7 @@ const HeadComponent = styled.head`
     
     }
 
+    // Large Screens
     @media (min-width: 1600px) {
         .hide-on-mobile {
             display: flex;
@@ -337,7 +344,7 @@ const Head = function() {
         
       <HeadComponent>
              
-                  <nav className='header'>
+                  <nav className='header'>{/* Header content */}
                             <Link href={'/HomePage'}>
                             <Image className='logo-Fox' src="/images/logo-fox1.svg" width={100} height={104} alt="logo" />
                             </Link>
@@ -345,6 +352,7 @@ const Head = function() {
                   </nav> 
   
                   <nav className='show-on-mobile'>
+                    {/* Mobile menu content*/}
                             <nav className='menu'>
                                 <button className='button-bars'>
                                     <FaBars className='faBars' onClick={Open}/>
@@ -373,6 +381,7 @@ const Head = function() {
                         </nav> 
 
                   <nav className='hide-on-mobile'>
+                    {/* Desktops header content */}
                           <Ul>
                             <li>
                                 <Link href={'/HomePage'} className='home-button'>

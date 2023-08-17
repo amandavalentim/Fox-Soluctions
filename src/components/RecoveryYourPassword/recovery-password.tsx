@@ -1,3 +1,5 @@
+// Código desenvolvido por Gabriel
+
 'use client'
 import styled from '@emotion/styled';
 import Link from 'next/link';
@@ -5,6 +7,8 @@ import Input from '../Login/Input/Input';
 
 
 const PageComponent = styled.section `
+
+    // Mobile
 
     * {
         color: white;
@@ -79,6 +83,7 @@ const PageComponent = styled.section `
         border-radius: 20px;
     }
 
+    // Tablet
     @media(min-width: 768px) {
 
         .mobile {
@@ -162,6 +167,7 @@ const PageComponent = styled.section `
         }
     }
 
+    // Small Screens
     @media(min-width: 992px) {
         
         .mobile {
@@ -252,6 +258,7 @@ const PageComponent = styled.section `
         }
     }
 
+    // Medium Screens
     @media (min-width: 1200px) {
 
         .mobile {
@@ -341,6 +348,7 @@ const PageComponent = styled.section `
         }
     }
 
+    // Large Screens
     @media(min-width: 1600px) {
 
         .mobile {
@@ -433,6 +441,7 @@ const ForgotPassword = function() {
 
             <nav className='mobile'>
                 <img src="/images/raposa-recuperar-senha.png" alt="fox" className='fox'/>
+                {/* Mobile page content */}
                 <h1>Recupere a sua senha:</h1>
                 <Input type="string" name="email" id="op" placeholder='Digite o seu email ou telefone'/>
                     <Link href={'/NewPasswordPage'}>
@@ -444,6 +453,7 @@ const ForgotPassword = function() {
 
             <nav className='tablet'>
                 <form>
+                    {/* Recovery Password Form Content */}
                     <h1>Recupere a sua senha:</h1>
                     <Input type="string" name="email" id="op" placeholder='Digite o seu email ou telefone'/>
                     <Link href={'/NewPasswordPage'}>
@@ -457,6 +467,7 @@ const ForgotPassword = function() {
 
             <nav className='desktop1'>
                 <form>
+                    {/* Recovery Password Form Content */}
                     <h1>Recupere a sua senha:</h1>
                     <Input type="string" name="email" id="op" placeholder='Digite o seu email ou telefone'/>
                     <Link href={'/NewPasswordPage'}>
@@ -470,6 +481,7 @@ const ForgotPassword = function() {
 
             <nav className='desktop2'>
                 <form>
+                    {/* Recovery Password Form Content */}
                     <h1>Recupere a sua senha:</h1>
                     <Input type="string" name="email" id="op" placeholder='Digite o seu email ou telefone'/>
                     <Link href={'/NewPasswordPage'}>
@@ -483,6 +495,7 @@ const ForgotPassword = function() {
 
             <nav className='desktop3'>
                 <form>
+                    {/* Recovery Password Form Content */}
                     <h1>Recupere a sua senha:</h1>
                         <Input type="string" name="email" id="op" placeholder='Digite o seu email ou telefone'/>
                         <Link href={'/NewPasswordPage'}>

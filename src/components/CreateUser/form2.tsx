@@ -1017,8 +1017,10 @@ const Form2 = function() {
     return (
         <FormComponent2>
             <nav className='mobile'>
+                {/* Stella our mascot */}
                 <img src="/images/Stella2.png" alt="fox" className='fox'/>
                     <form>
+                         {/* Create User form content */}
                         <h1>Criar Usuário</h1>
                         <div className='name'>
                             <Input type="string" name="name" id="name" placeholder='Nome Completo'/>
@@ -1063,6 +1065,7 @@ const Form2 = function() {
 
             <nav className='tablet'>
                 <form>
+                    {/* Create User form content */}
                     <h1>Criar Usuário</h1>
                     <div className='name'>
                         <Input type="string" name="name" id="name" placeholder='Nome Completo'/>
@@ -1103,11 +1106,13 @@ const Form2 = function() {
                             </button>
                         </div>
                 </form>
+                {/* Stella our mascot */}
                     <img src="/images/Stella2.png" alt="fox" className='fox'/>
             </nav>
 
             <nav className='desktop1'>
             <form>
+                {/* Create User form content */}
                     <h1>Criar Usuário</h1>
                     <div className='name'>
                         <Input type="string" name="name" id="name" placeholder='Nome Completo'/>
@@ -1148,11 +1153,13 @@ const Form2 = function() {
                             </button>
                         </div>
                 </form>
+                {/* Stella our mascot */}
                     <img src="/images/Stella2.png" alt="fox" className='fox'/>
             </nav>
 
             <nav className='desktop2'>
                 <form>
+                    {/* Create User form content */}
                     <h1>Criar Usuário</h1>
                     <div className='name'>
                         <Input type="string" name="name" id="name" placeholder='Nome Completo'/>
@@ -1193,11 +1200,13 @@ const Form2 = function() {
                         </button>
                     </div>
                 </form>
+                {/* Stella our mascot */}
                     <img src="/images/Stella2.png" alt="fox" className='fox'/>
             </nav>
 
             <nav className='desktop3'>
                 <form>
+                    {/* Create User form content */}
                     <h1>Criar Usuário</h1>
                     <div className='name'>
                         <Input type="string" name="name" id="name" placeholder='Nome Completo'/>
@@ -1240,6 +1249,7 @@ const Form2 = function() {
                         </div>
                     </Link>
                 </form>
+                {/* Stella our mascot */}
                 <img src="/images/Stella2.png" alt="fox" className='fox'/>
             </nav>
         </FormComponent2>

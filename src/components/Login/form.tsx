@@ -1,3 +1,5 @@
+// Código desenvolvido por Gabriel
+
 'use client'
 import styled from '@emotion/styled';
 import { FaGoogle } from "react-icons/fa";
@@ -5,6 +7,8 @@ import Link from 'next/link';
 import Input from './Input/Input';
 
 const FormComponent = styled.section `
+
+    //Mobile
 
     height: 110vh;
 
@@ -158,6 +162,7 @@ const FormComponent = styled.section `
         border-radius: 20px;
     }
 
+    // Tablet
     @media(min-width: 768px){
 
         height: 125vh;
@@ -301,6 +306,7 @@ const FormComponent = styled.section `
        }
     }
 
+    // Small Screens
     @media(min-width: 992px) {
 
         height: 120vh;
@@ -443,6 +449,7 @@ const FormComponent = styled.section `
     }
     }
 
+    // Medium Screens
     @media(min-width: 1200px) {
 
         height: 158vh;
@@ -618,6 +625,7 @@ const FormComponent = styled.section `
         }
     }
 
+    // Large Screens
     @media(min-width: 1600px) {
 
         height: 145vh;
@@ -771,6 +779,7 @@ const Form = function() {
     return (
         <FormComponent>
             <nav className='mobile'>
+                {/* Login Form Content*/}
                     <form>
                         <h1>Login</h1>
                         <div className='email'>
@@ -795,16 +804,20 @@ const Form = function() {
                             </Link>
                         </div>
                         <div className='button-create'>
-                            <button className='logar' type='button'>
-                                Entrar
-                            </button>
+                            <Link href={'/ProfilePage'}>
+                                <button className='logar' type='button'>
+                                    Entrar
+                                </button>
+                            </Link>
                         </div>
                     </form>
             </nav>
 
             <nav className='tablet'>
+                {/* Stella our mascot */}
                 <img src="/images/Raposa-login.png" alt="fox" className='fox'/>
                 <form>
+                    {/* Login Form Content*/}
                     <h1>Login</h1>
                     <div className='email'>
                         <Input type="email" name="email" id="email" placeholder='Email'/>
@@ -828,16 +841,20 @@ const Form = function() {
                             </Link>
                         </div>
                         <div className='button-create'>
-                            <button className='logar' type='button'>
-                                Entrar
-                            </button>
+                        <Link href={'/ProfilePage'}>
+                                <button className='logar' type='button'>
+                                    Entrar
+                                </button>
+                            </Link>
                         </div>
                 </form>
             </nav>
 
             <nav className='desktop1'>
+                {/* Stella our mascot */}
             <img src="/images/Raposa-login.png" alt="fox" className='fox'/>
             <form>
+                {/* Login Form Content*/}
                     <h1>Login</h1>
                     <div className='email'>
                         <Input type="email" name="email" id="email" placeholder='Email'/>
@@ -861,15 +878,18 @@ const Form = function() {
                             </Link>
                         </div>
                         <div className='button-create'>
-                            <button className='logar' type='button'>
-                                Entrar
-                            </button>
+                        <Link href={'/ProfilePage'}>
+                                <button className='logar' type='button'>
+                                    Entrar
+                                </button>
+                            </Link>
                         </div>
                 </form>
             </nav>
 
             <nav className='desktop2'>
                 <form>
+                    {/* Login Form Content*/}
                     <h1>Login</h1>
                     <div className='email'>
                         <Input type="email" name="email" id="email" placeholder='Email'/>
@@ -893,16 +913,20 @@ const Form = function() {
                             </Link>
                         </div>
                         <div className='button-create'>
-                            <button className='logar' type='button'>
-                                Entrar
-                            </button>
+                        <Link href={'/ProfilePage'}>
+                                <button className='logar' type='button'>
+                                    Entrar
+                                </button>
+                            </Link>
                         </div>
                 </form>
+                {/* Stella our mascot */}
                 <img src="/images/Raposa-login.png" alt="fox" className='fox'/>
             </nav>
 
             <nav className='desktop3'>
                 <form>
+                    {/* Login Form Content*/}
                     <h1>Login</h1>
                     <div className='email'>
                         <Input type="email" name="email" id="email" placeholder='Email'/>
@@ -926,11 +950,14 @@ const Form = function() {
                             </Link>
                         </div>
                         <div className='button-create'>
-                            <button className='logar' type='button'>
-                                Entrar
-                            </button>
+                        <Link href={'/ProfilePage'}>
+                                <button className='logar' type='button'>
+                                    Entrar
+                                </button>
+                            </Link>
                         </div>
                 </form>
+                {/* Stella our mascot */}
                 <img src="/images/Raposa-login.png" alt="fox" className='fox'/>
             </nav>
         </FormComponent>
