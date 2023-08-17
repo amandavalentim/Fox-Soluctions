@@ -1,4 +1,6 @@
-import PgInitial from "@/components/Home-Conteúdo";
+import PgInitial from "@/components/Home-container";
+
+
 
 export default function Home() {
   return (

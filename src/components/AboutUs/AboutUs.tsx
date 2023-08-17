@@ -1,4 +1,4 @@
-//Desenvolvido por Amanda Valentim
+//developed for Amanda Valentim
 'use client';
 import styled from'@emotion/styled'
 import React, { useState } from 'react';
