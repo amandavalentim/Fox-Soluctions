@@ -1,4 +1,4 @@
-//Código desenvolvido por Gustavo Otacílio e Gabriel Marques Correia
+// Developed code by Gustavo Otacílio and Gabriel Marques Correia
 'use client';
 "use strict";
 var __makeTemplateObject = (this && this.__makeTemplateObject) || function (cooked, raw) {

@@ -1,4 +1,4 @@
-//Código desenvolvido por Gustavo Otacílio e Gabriel Marques Correia
+// Developed code by Gustavo Otacílio and Gabriel Marques Correia
 'use client';
 import styled from '@emotion/styled';
 import Image from 'next/image';

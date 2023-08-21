@@ -1,4 +1,4 @@
-//Código desenvolvido por Gabriel
+// Developed code by Gabriel
 
 'use client'
 import styled from '@emotion/styled';
@@ -9,7 +9,7 @@ import Input from '../Login/Input/Input';
 const FormComponent2 = styled.section `
 
     // Mobile
-    height: 130vh;
+    height: 135vh;
 
     background: linear-gradient(180deg, #0A53B5 0%, #028fcc 100%);
 
@@ -58,7 +58,7 @@ const FormComponent2 = styled.section `
 
     .date {
         position: absolute;
-        top: 330px;
+        top: 320px;
         left: 35px;
         display: flex;
         flex-direction: column;
@@ -94,15 +94,44 @@ const FormComponent2 = styled.section `
         left: 35px;
     }
 
+    .adm {
+        position: absolute;
+        top: 680px;
+        left: -95px;
+    }
+    
+    .adm-txt {
+        position: absolute;
+        top: 15px;
+    }
+
+    .user {
+        position: absolute;
+        top: 680px;
+        left: 90px;
+    }
+    
+    .user-txt {
+        position: absolute;
+        top: 15px;
+    }
+
+    #enterprise-name {
+        position: absolute;
+        top: 30px;
+        left: 130px;
+        display: none;
+    }
+
     p {
         position: absolute;
-        top: 700px;
+        top: 740px;
         left: 150px;
     }
 
     .google-enter {
         position: absolute;
-        top: 740px;
+        top: 775px;
         left: 35px;
     }
 
@@ -128,7 +157,7 @@ const FormComponent2 = styled.section `
 
     .page2 {
         position: absolute;
-        top: 795px;
+        top: 830px;
         left: 35px;
     }
 
@@ -144,7 +173,7 @@ const FormComponent2 = styled.section `
 
     .button-create {
         position: absolute;
-        top: 835px;
+        top: 865px;
         left: 75px;
     }
 
@@ -173,7 +202,7 @@ const FormComponent2 = styled.section `
     // Tablet
     @media(min-width: 768px){
 
-        height: 140vh;
+        height: 145vh;
 
         .mobile {
             display: none;
@@ -202,7 +231,7 @@ const FormComponent2 = styled.section `
         border-radius: 19px;
         background: linear-gradient(180deg, #07B3FD 0%, #0a59c0 100%);
         width: 400px;
-        height: 735px;
+        height: 765px;
         border-color: white;
        }
 
@@ -266,15 +295,46 @@ const FormComponent2 = styled.section `
         left: -40px;
        }
 
+       .adm {
+        position: absolute;
+        top: 530px;
+        left: -170px;
+    }
+    
+    .adm-txt {
+        position: absolute;
+        top: 25px;
+        left: 250px;
+    }
+
+    .user {
+        position: absolute;
+        top: 530px;
+        left: 20px;
+    }
+    
+    .user-txt {
+        position: absolute;
+        top: 25px;
+        left: 250px;
+    }
+
+    #enterprise-name {
+        position: absolute;
+        top: 30px;
+        left: 130px;
+        display: none;
+    }
+
        p {
         position: absolute;
-        top: 550px;
+        top: 590px;
         left: 185px;
        }
 
        .google-enter {
         position: absolute;
-        top: 590px;
+        top: 620px;
         left: 40px;
        }
 
@@ -300,7 +360,7 @@ const FormComponent2 = styled.section `
 
        .page2 {
         position: absolute;
-        top: 640px;
+        top: 670px;
         left: 65px;
        }
 
@@ -445,16 +505,49 @@ const FormComponent2 = styled.section `
             width: 350px;
         }
 
+        .adm {
+        position: absolute;
+        top: 570px;
+        left: -200px;
+    }
+    
+    .adm-txt {
+        position: absolute;
+        top: 25.4px;
+        left: 320px;
+        font-size: 1em;
+    }
+
+    .user {
+        position: absolute;
+        top: 570px;
+        left: 43px;
+    }
+    
+    .user-txt {
+        position: absolute;
+        top: 25.4px;
+        left: 320px;
+        font-size: 1em;
+    }
+
+    #enterprise-name {
+        position: absolute;
+        top: 30px;
+        left: 130px;
+        display: none;
+    }
+
     p {
         font-size: 1.3em;
         position: absolute;
-        top: 605px;
+        top: 630px;
         left: 230px;
     }
 
     .google-enter {
         position: absolute;
-        top: 650px;
+        top: 670px;
         left: 70px;
         cursor: pointer;
     }
@@ -492,13 +585,13 @@ const FormComponent2 = styled.section `
 
        .page2 {
         position: absolute;
-        top: 715px;
+        top: 725px;
         left: 108px;
        }
 
        .criar {
         position: absolute;
-        top: -80px;
+        top: -100px;
         left: 90px;
         background-color: #93B413;
         cursor: pointer;
@@ -682,16 +775,49 @@ const FormComponent2 = styled.section `
             font-size: 1.2em;
         }
 
+        .adm {
+        position: absolute;
+        top: 710px;
+        left: -280px;
+    }
+    
+    .adm-txt {
+        position: absolute;
+        top: 20px;
+        left: 415px;
+        font-size: 1.5em;
+    }
+
+    .user {
+        position: absolute;
+        top: 710px;
+        left: 100px;
+    }
+    
+    .user-txt {
+        position: absolute;
+        top: 20px;
+        left: 415px;
+        font-size: 1.5em;
+    }
+
+    #enterprise-name {
+        position: absolute;
+        top: 30px;
+        left: 130px;
+        display: none;
+    }
+
         p {
             font-size: 1.8em;
             position: absolute;
-            top: 740px;
+            top: 785px;
             left: 310px;
         }
 
         .google-enter {
             position: absolute;
-            top: 805px;
+            top: 840px;
             left: 100px;
             cursor: pointer;
         }
@@ -734,13 +860,13 @@ const FormComponent2 = styled.section `
         .page2 {
             font-size: 1.8em;
             position: absolute;
-            top: 910px;
+            top: 930px;
             left: 123px;
         }
 
         .criar {
             position: absolute;
-            top: 140px;
+            top: 120px;
             left: 140px;
             background-color: #93B413;
             width: 250px;
@@ -751,7 +877,7 @@ const FormComponent2 = styled.section `
 
         .criar:hover {
             position: absolute;
-            top: 140px;
+            top: 120px;
             left: 140px;
             background-color: #9fc214;
             width: 250px;
@@ -761,7 +887,7 @@ const FormComponent2 = styled.section `
 
         .criar:active {
             position: absolute;
-            top: 140px;
+            top: 120px;
             left: 140px;
             background-color: #86a40f;
             width: 250px;
@@ -839,7 +965,7 @@ const FormComponent2 = styled.section `
 
         .date {
             position: absolute;
-            top: 280px;
+            top: 270px;
             left: -35px;
         }
 
@@ -979,7 +1105,7 @@ const FormComponent2 = styled.section `
 
         .criar {
             position: absolute;
-            top: 260px;
+            top: 240px;
             left: 250px;
         }
 
@@ -1044,6 +1170,15 @@ const Form2 = function() {
                         <div className='confirmar-senha'>
                             <Input type="password" name="confirm-password" id="confirm-password" placeholder='Confirme sua Senha'/>
                         </div>
+                        <div className='adm'>
+                            <Input type='radio' name='op' id='adm-enterprise' defaultValue='ADM'/> 
+                            <p className='adm-txt'>Administrador</p>
+                            <Input type='string' name='enterprise-name' id='enterprise-name' placeholder='Nome da Empresa'/>
+                        </div>
+                        <div className='user'>
+                            <Input type='radio' name='op' id='user-hired' defaultValue='User'/> 
+                            <p className='user-txt'>User</p>
+                        </div>
                         <p>OU</p>
                             <div className='google-enter'>
                                     <button className='btn-google' type='button'>
@@ -1089,6 +1224,17 @@ const Form2 = function() {
                         <div className='confirmar-senha'>
                             <Input type="password" name="confirm-password" id="confirm-password" placeholder='Confirme sua Senha'/>
                         </div>
+                        <label>
+                        <div className='adm'>
+                            <Input type='radio' name='op' id='adm-enterprise' defaultValue='ADM'/> 
+                            <p className='adm-txt'>Administrador</p>
+                            <Input type='string' name='enterprise-name' id='enterprise-name' placeholder='Nome da Empresa'/>
+                        </div>
+                        <div className='user'>
+                            <Input type='radio' name='op' id='user-hired' defaultValue='User'/> 
+                            <p className='user-txt'>User</p>
+                        </div>
+                        </label>
                         <p>OU</p>
                         <div className='google-enter'>
                             <button className='btn-google' type='button'>
@@ -1136,6 +1282,17 @@ const Form2 = function() {
                         <div className='confirmar-senha'>
                             <Input type="password" name="confirm-password" id="confirm-password" placeholder='Confirme sua Senha'/>
                         </div>
+                        <label>
+                        <div className='adm'>
+                            <Input type='radio' name='op' id='adm-enterprise' defaultValue='ADM'/> 
+                            <p className='adm-txt'>Administrador</p>
+                            <Input type='string' name='enterprise-name' id='enterprise-name' placeholder='Nome da Empresa'/>
+                        </div>
+                        <div className='user'>
+                            <Input type='radio' name='op' id='user-hired' defaultValue='User'/> 
+                            <p className='user-txt'>User</p>
+                        </div>
+                        </label>
                         <p>OU</p>
                         <div className='google-enter'>
                             <button className='btn-google' type='button'>
@@ -1183,6 +1340,17 @@ const Form2 = function() {
                     <div className='confirmar-senha'>
                         <Input type="password" name="confirm-password" id="confirm-password" placeholder='Confirme sua Senha'/>
                     </div>
+                    <label>
+                        <div className='adm'>
+                            <Input type='radio' name='op' id='adm-enterprise' defaultValue='ADM'/> 
+                            <p className='adm-txt'>Administrador</p>
+                            <Input type='string' name='enterprise-name' id='enterprise-name' placeholder='Nome da Empresa'/>
+                        </div>
+                        <div className='user'>
+                            <Input type='radio' name='op' id='user-hired' defaultValue='User'/> 
+                            <p className='user-txt'>User</p>
+                        </div>
+                        </label>
                     <p>OU</p>
                     <div className='google-enter'>
                         <button className='btn-google' type='button'>
