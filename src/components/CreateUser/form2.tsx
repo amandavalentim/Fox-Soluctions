@@ -9,7 +9,7 @@ import Input from '../Login/Input/Input';
 const FormComponent2 = styled.section `
 
     // Mobile
-    height: 135vh;
+    height: 130vh;
 
     background: linear-gradient(180deg, #0A53B5 0%, #028fcc 100%);
 
@@ -94,26 +94,28 @@ const FormComponent2 = styled.section `
         left: 35px;
     }
 
-    .adm {
+    /* .adm {
         position: absolute;
         top: 680px;
-        left: -95px;
+        left: -35px;
     }
     
     .adm-txt {
         position: absolute;
-        top: 15px;
+        top: 17px;
+        left: 145px;
     }
 
     .user {
         position: absolute;
-        top: 680px;
-        left: 90px;
+        top: 715px;
+        left: 1px;
     }
     
     .user-txt {
         position: absolute;
-        top: 15px;
+        top: 17px;
+        left: 145px;
     }
 
     #enterprise-name {
@@ -121,17 +123,17 @@ const FormComponent2 = styled.section `
         top: 30px;
         left: 130px;
         display: none;
-    }
+    } */
 
     p {
         position: absolute;
-        top: 740px;
+        top: 700px;
         left: 150px;
     }
 
     .google-enter {
         position: absolute;
-        top: 775px;
+        top: 735px;
         left: 35px;
     }
 
@@ -157,7 +159,7 @@ const FormComponent2 = styled.section `
 
     .page2 {
         position: absolute;
-        top: 830px;
+        top: 790px;
         left: 35px;
     }
 
@@ -173,7 +175,7 @@ const FormComponent2 = styled.section `
 
     .button-create {
         position: absolute;
-        top: 865px;
+        top: 825px;
         left: 75px;
     }
 
@@ -295,7 +297,7 @@ const FormComponent2 = styled.section `
         left: -40px;
        }
 
-       .adm {
+       /* .adm {
         position: absolute;
         top: 530px;
         left: -170px;
@@ -324,17 +326,17 @@ const FormComponent2 = styled.section `
         top: 30px;
         left: 130px;
         display: none;
-    }
+    } */
 
        p {
         position: absolute;
-        top: 590px;
+        top: 560px;
         left: 185px;
        }
 
        .google-enter {
         position: absolute;
-        top: 620px;
+        top: 590px;
         left: 40px;
        }
 
@@ -360,13 +362,13 @@ const FormComponent2 = styled.section `
 
        .page2 {
         position: absolute;
-        top: 670px;
+        top: 645px;
         left: 65px;
        }
 
        .criar {
         position: absolute;
-        top: -165px;
+        top: -145px;
         left: 40px;
         background-color: #93B413;
        }
@@ -505,7 +507,7 @@ const FormComponent2 = styled.section `
             width: 350px;
         }
 
-        .adm {
+        /* .adm {
         position: absolute;
         top: 570px;
         left: -200px;
@@ -536,18 +538,18 @@ const FormComponent2 = styled.section `
         top: 30px;
         left: 130px;
         display: none;
-    }
+    } */
 
     p {
         font-size: 1.3em;
         position: absolute;
-        top: 630px;
+        top: 610px;
         left: 230px;
     }
 
     .google-enter {
         position: absolute;
-        top: 670px;
+        top: 650px;
         left: 70px;
         cursor: pointer;
     }
@@ -585,13 +587,13 @@ const FormComponent2 = styled.section `
 
        .page2 {
         position: absolute;
-        top: 725px;
+        top: 705px;
         left: 108px;
        }
 
        .criar {
         position: absolute;
-        top: -100px;
+        top: -80px;
         left: 90px;
         background-color: #93B413;
         cursor: pointer;
@@ -775,7 +777,7 @@ const FormComponent2 = styled.section `
             font-size: 1.2em;
         }
 
-        .adm {
+        /* .adm {
         position: absolute;
         top: 710px;
         left: -280px;
@@ -806,18 +808,18 @@ const FormComponent2 = styled.section `
         top: 30px;
         left: 130px;
         display: none;
-    }
+    } */
 
         p {
             font-size: 1.8em;
             position: absolute;
-            top: 785px;
+            top: 735px;
             left: 310px;
         }
 
         .google-enter {
             position: absolute;
-            top: 840px;
+            top: 790px;
             left: 100px;
             cursor: pointer;
         }
@@ -860,7 +862,7 @@ const FormComponent2 = styled.section `
         .page2 {
             font-size: 1.8em;
             position: absolute;
-            top: 930px;
+            top: 880px;
             left: 123px;
         }
 
@@ -1105,20 +1107,20 @@ const FormComponent2 = styled.section `
 
         .criar {
             position: absolute;
-            top: 240px;
+            top: 260px;
             left: 250px;
         }
 
         .criar:hover {
             position: absolute;
-            top: 260px;
+            top: 240px;
             left: 250px;
             background-color: #9fc214;
         }
 
         .criar:active {
             position: absolute;
-            top: 260px;
+            top: 240px;
             left: 250px;
             background-color: #86a40f;
         }
@@ -1170,6 +1172,7 @@ const Form2 = function() {
                         <div className='confirmar-senha'>
                             <Input type="password" name="confirm-password" id="confirm-password" placeholder='Confirme sua Senha'/>
                         </div>
+                        {/* <label>
                         <div className='adm'>
                             <Input type='radio' name='op' id='adm-enterprise' defaultValue='ADM'/> 
                             <p className='adm-txt'>Administrador</p>
@@ -1179,6 +1182,7 @@ const Form2 = function() {
                             <Input type='radio' name='op' id='user-hired' defaultValue='User'/> 
                             <p className='user-txt'>User</p>
                         </div>
+                        </label> */}
                         <p>OU</p>
                             <div className='google-enter'>
                                     <button className='btn-google' type='button'>
@@ -1224,7 +1228,7 @@ const Form2 = function() {
                         <div className='confirmar-senha'>
                             <Input type="password" name="confirm-password" id="confirm-password" placeholder='Confirme sua Senha'/>
                         </div>
-                        <label>
+                        {/* <label>
                         <div className='adm'>
                             <Input type='radio' name='op' id='adm-enterprise' defaultValue='ADM'/> 
                             <p className='adm-txt'>Administrador</p>
@@ -1234,7 +1238,7 @@ const Form2 = function() {
                             <Input type='radio' name='op' id='user-hired' defaultValue='User'/> 
                             <p className='user-txt'>User</p>
                         </div>
-                        </label>
+                        </label> */}
                         <p>OU</p>
                         <div className='google-enter'>
                             <button className='btn-google' type='button'>
@@ -1282,7 +1286,7 @@ const Form2 = function() {
                         <div className='confirmar-senha'>
                             <Input type="password" name="confirm-password" id="confirm-password" placeholder='Confirme sua Senha'/>
                         </div>
-                        <label>
+                        {/* <label>
                         <div className='adm'>
                             <Input type='radio' name='op' id='adm-enterprise' defaultValue='ADM'/> 
                             <p className='adm-txt'>Administrador</p>
@@ -1292,7 +1296,7 @@ const Form2 = function() {
                             <Input type='radio' name='op' id='user-hired' defaultValue='User'/> 
                             <p className='user-txt'>User</p>
                         </div>
-                        </label>
+                        </label> */}
                         <p>OU</p>
                         <div className='google-enter'>
                             <button className='btn-google' type='button'>
@@ -1340,7 +1344,7 @@ const Form2 = function() {
                     <div className='confirmar-senha'>
                         <Input type="password" name="confirm-password" id="confirm-password" placeholder='Confirme sua Senha'/>
                     </div>
-                    <label>
+                    {/* <label>
                         <div className='adm'>
                             <Input type='radio' name='op' id='adm-enterprise' defaultValue='ADM'/> 
                             <p className='adm-txt'>Administrador</p>
@@ -1350,7 +1354,7 @@ const Form2 = function() {
                             <Input type='radio' name='op' id='user-hired' defaultValue='User'/> 
                             <p className='user-txt'>User</p>
                         </div>
-                        </label>
+                        </label> */}
                     <p>OU</p>
                     <div className='google-enter'>
                         <button className='btn-google' type='button'>
