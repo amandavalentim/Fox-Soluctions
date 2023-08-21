@@ -62,13 +62,6 @@ const ProfileComponents = styled.section `
 
 `;
 
-const Teste = () => {
-    const inputFile = document.querySelector("#photo-input");
-    const pictureImage = document.querySelector(".photo");
-    const pictureImageTxt = "Choose an image";
-    pictureImage.innerHTML = pictureImageTxt;
-}
-
 const PgProfile = function() {
     return (
         <ProfileComponents>
