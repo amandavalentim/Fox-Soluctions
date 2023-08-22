@@ -55,17 +55,17 @@ const FormComponent = styled.section `
     }
 
     #forgot-email {
-        margin-left: 30%;
+        margin-left: 40%;
         margin-top: -5%;
         color: #C7C7C7;
-        font-size: 0.5em;
+        font-size: 1em;
         font-family: 'Poppins-Medium';
     }
 
     #forgot-email:active {
-        margin-left: 30%;
+        margin-left: 40%;
         margin-top: -5%;
-        font-size: 0.5em;
+        font-size: 1em;
         color: #F47216;
         font-family: 'Poppins-Medium';
     }
@@ -80,17 +80,17 @@ const FormComponent = styled.section `
     }
 
     #forgot-password {
-        margin-left: 30%;
+        margin-left: 40%;
         margin-top: -5%;
-        font-size: 0.5em;
+        font-size: 1em;
         font-family: 'Poppins-Regular';
         color: #C7C7C7;
     }
 
     #forgot-password:active {
-        margin-left: 30%;
+        margin-left: 40%;
         margin-top: -5%;
-        font-size: 0.5em;
+        font-size: 1em;
         font-family: 'Poppins-Regular';
         color: #F47216;
     }
@@ -134,7 +134,7 @@ const FormComponent = styled.section `
 
     .page2 {
         margin-top: 10%;
-        margin-left: 11%;
+        margin-left: 15%;
         width: 280px;
     }
 
@@ -801,7 +801,7 @@ const Form = function() {
                             </button>
                         </div>
                         <div className='page2'>
-                            Não tem uma conta? <Link href={'/CreateUserPage'}>
+                            Não tem uma conta? <Link href={'/CreateAccountPage'}>
                                 <span>Crie uma!</span>
                             </Link>
                         </div>
@@ -840,7 +840,7 @@ const Form = function() {
                             </button>
                         </div>
                         <div className='page2'>
-                            Não tem uma conta? <Link href={'/CreateUserPage'}>
+                            Não tem uma conta? <Link href={'/CreateAccountPage'}>
                                 <span>Crie uma!</span>
                             </Link>
                         </div>
@@ -879,7 +879,7 @@ const Form = function() {
                             </button>
                         </div>
                         <div className='page2'>
-                            Não tem uma conta? <Link href={'/CreateUserPage'}>
+                            Não tem uma conta? <Link href={'/CreateAccountPage'}>
                                 <span>Crie uma!</span>
                             </Link>
                         </div>
@@ -916,7 +916,7 @@ const Form = function() {
                             </button>
                         </div>
                         <div className='page2'>
-                            Não tem uma conta? <Link href={'/CreateUserPage'}>
+                            Não tem uma conta? <Link href={'/CreateAccountPage'}>
                                 <span>Crie uma!</span>
                             </Link>
                         </div>
@@ -955,7 +955,7 @@ const Form = function() {
                             </button>
                         </div>
                         <div className='page2'>
-                            Não tem uma conta? <Link href={'/CreateUserPage'}>
+                            Não tem uma conta? <Link href={'/CreateAccountPage'}>
                                 <span>Crie uma!</span>
                             </Link>
                         </div>
