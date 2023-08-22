@@ -1,4 +1,4 @@
-import Form2 from "@/components/CreateUser";
+import Form2 from "@/components/CreateAccount";
 
 export default function page2() {
   return (

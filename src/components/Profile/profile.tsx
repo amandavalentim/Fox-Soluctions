@@ -16,6 +16,7 @@ const ProfileComponents = styled.section `
 
     * {
         color: white;
+        font-family: 'Poppins-medium';
     }
 
     .mobile {
@@ -32,6 +33,10 @@ const ProfileComponents = styled.section `
     }
 
     .desktop2 {
+        display: none;
+    }
+
+    .desktop3 {
         display: none;
     }
 
@@ -52,31 +57,118 @@ const ProfileComponents = styled.section `
     .add-user {
         font-size: 1.4em;
         font-family: 'Poppins-Medium';
-        margin-top: 25%;
-        margin-left: -40%;
+        margin-top: 20%;
+        margin-left: -50%;
+        background: none;
+        border: none;
+        height: 60px;
+        width: 306px;
+    }
+
+    .add-user:active {
+        font-size: 1.4em;
+        font-family: 'Poppins-Medium';
+        margin-top: 20%;
+        margin-left: -50%;
+        background-color: #07AFFA;
+        border: none;
+        border-radius: 19px;
+        height: 60px;
+        width: 306px;
+    }
+
+    #add-user-txt {
+        margin-left: -13%;
     }
 
     .users-list {
         font-size: 1.4em;
         font-family: 'Poppins-Medium';
-        margin-top: 20%;
-        margin-left: -40%;
+        margin-top: 10%;
+        margin-left: -50%;
+        background: none;
+        border: none;
+        height: 60px;
+        width: 306px;
+    }
+
+    .users-list:active {
+        font-size: 1.4em;
+        font-family: 'Poppins-Medium';
+        margin-top: 10%;
+        margin-left: -50%;
+        background-color: #07AFFA;
+        border: none;
+        border-radius: 19px;
+        height: 60px;
+        width: 306px;
+    }
+
+    #users-list-txt {
+        margin-left: -17%;
     }
 
     .settings {
         font-size: 1.4em;
         font-family: 'Poppins-Medium';
-        margin-top: 20%;
-        margin-left: -40%;
+        margin-top: 10%;
+        margin-left: -50%;
+        height: 60px;
+        width: 306px;
+        background: none;
+        border: none;
     }
 
-    .exit {
+    #settings-txt {
+        margin-left: -25%;
+    }
+
+    .settings:active {
         font-size: 1.4em;
         font-family: 'Poppins-Medium';
-        margin-top: 20%;
-        margin-left: -40%;
+        margin-top: 10%;
+        margin-left: -50%;
+        background-color: #07AFFA;
+        border: none;
+        border-radius: 19px;
+        height: 60px;
+        width: 306px;
     }
 
+    .exit-button {
+        font-size: 1.4em;
+        font-family: 'Poppins-Medium';
+        margin-top: 10%;
+        margin-left: -50%;
+        height: 60px;
+        width: 306px;
+        background: none;
+        border: none;
+    }
+
+    .exit-button:active {
+        font-size: 1.4em;
+        font-family: 'Poppins-Medium';
+        margin-top: 10%;
+        margin-left: -50%;
+        background-color: #07AFFA;
+        border: none;
+        border-radius: 19px;
+        height: 60px;
+        width: 306px;
+    }
+
+    #exit-txt {
+        margin-left: -70%;
+    }
+
+    #exit-txt:active {
+        margin-left: -70%;
+        color: red;
+    }
+
+
+    // Tablet
     @media(min-width: 768px) {
 
         height: 63vh;
@@ -106,26 +198,83 @@ const ProfileComponents = styled.section `
 
         .add-user {
             position: absolute;
-            margin-left: 5%;
+            margin-left: 0;
             margin-top: 5%;
+            border: none;
+            background: none;
+        }
+
+        .add-user:active {
+            position: absolute;
+            margin-left: 0;
+            margin-top: 5%;
+            background-color: #07AFFA;
+            border-radius: 19px;
+        }
+
+        #add-user-txt {
+            margin-left: -4%;
         }
 
         .users-list {
             position: absolute;
-            margin-left: 5%;
-            margin-top: 15%;
+            margin-left: 0;
+            margin-top: 14.5%;
+            background: none;
+            border: none;
+        }
+
+        .users-list:active {
+            position: absolute;
+            margin-left: 0;
+            margin-top: 14.5%;
+            background-color: #07AFFA;
+            border-radius: 19px;
+        }
+
+        #users-list-txt {
+            margin-left: -7%;
         }
 
         .settings {
             position: absolute;
-            margin-left: 5%;
-            margin-top: 25%;
+            margin-left: 0;
+            margin-top: 24%;
+            background-color: #07AFFA;
+            border: none;
+            border-radius: 19px;
+            height: 60px;
+            width: 306px;
         }  
+
+        #settings-txt {
+            margin-left: -16%;
+        }
         
-        .exit {
+        .exit-button {
             position: absolute;
-            margin-left: 5%;
-            margin-top: 35%;
+            margin-left: 0;
+            margin-top: 33.5%;
+            background: none;
+            border: none;
+        }
+
+        .exit-button:active {
+            position: absolute;
+            margin-left: 0;
+            margin-top: 33.5%;
+            background-color: #07AFFA;
+            border: none;
+            border-radius: 19px;
+        }
+
+        #exit-txt {
+            margin-left: -60%;
+        }
+
+        #exit-txt:active {
+            margin-left: -60%;
+            color: red;
         }
 
         form {
@@ -228,6 +377,7 @@ const ProfileComponents = styled.section `
             font-weight: bold;
         }
 
+        // Small Screens
         @media(min-width: 992px) {
 
             height: 63vh;
@@ -257,26 +407,97 @@ const ProfileComponents = styled.section `
 
             .add-user {
                 position: absolute;
-                margin-left: 5%;
-                margin-top: 5%;
+                margin-left: 0;
+                margin-top: 4.5%;
+                background: none;
+                border: none;
+                height: 60px;
+                width: 410px;
+            }
+
+            .add-user:active {
+                position: absolute;
+                margin-left: 0;
+                margin-top: 4.5%;
+                background-color: #07AFFA;
+                border: none;
+                border-radius: 19px;
+                height: 60px;
+                width: 410px;
+            }
+
+            #add-user-txt {
+                margin-left: -20%;
             }
 
             .users-list {
                 position: absolute;
-                margin-left: 5%;
-                margin-top: 13%;
+                margin-left: 0;
+                margin-top: 12.3%;
+                background: none;
+                border: none;
+                height: 60px;
+                width: 410px;
+            }
+
+            .users-list:active {
+                position: absolute;
+                margin-left: 0;
+                margin-top: 12.3%;
+                background-color: #07AFFA;
+                border: none;
+                border-radius: 19px;
+                height: 60px;
+                width: 410px;
+            }
+
+            #users-list-txt {
+                margin-left: -23%;
             }
 
             .settings {
                 position: absolute;
-                margin-left: 5%;
-                margin-top: 21%;
+                margin-left: 0;
+                margin-top: 20%;
+                background-color: #07AFFA;
+                border: none;
+                border-radius: 19px;
+                height: 60px;
+                width: 410px;
             }  
 
-            .exit {
+            #settings-txt {
+                margin-left: -30%;
+            }
+
+            .exit-button {
                 position: absolute;
-                margin-left: 5%;
-                margin-top: 29%;
+                margin-left: 0;
+                margin-top: 28%;
+                background: none;
+                border: none;
+                height: 60px;
+                width: 410px;
+            }
+
+            .exit-button:active {
+                position: absolute;
+                margin-left: 0;
+                margin-top: 28%;
+                background-color: #07AFFA;
+                border: none;
+                border-radius: 19px;
+                height: 60px;
+                width: 410px;
+            }
+
+            #exit-txt {
+                margin-left: -63%;
+            }
+
+            #exit-txt:active {
+                margin-left: -63%;
+                color: red;
             }
 
             form {
@@ -383,6 +604,7 @@ const ProfileComponents = styled.section `
             }
         }
 
+        // Medium Screens
         @media(min-width: 1200px) {
 
             height: 75vh;
@@ -412,30 +634,104 @@ const ProfileComponents = styled.section `
 
             .add-user {
                 position: absolute;
-                margin-left: 5%;
+                margin-left: 0;
                 margin-top: 4%;
                 font-size: 2em;
+                background: none;
+                border: none;
+                height: 60px;
+                width: 478px;
+            }
+
+            .add-user:active {
+                position: absolute;
+                margin-left: 0;
+                margin-top: 4%;
+                font-size: 2em;
+                background-color: #07AFFA;
+                border: none;
+                border-radius: 19px;
+                height: 60px;
+                width: 478px;
+            }
+
+            #add-user-txt {
+                margin-left: -5%;
             }
 
             .users-list {
                 position: absolute;
-                margin-left: 5%;
+                margin-left: 0;
                 margin-top: 11%;
                 font-size: 2em;
+                background: none;
+                border: none;
+                height: 60px;
+                width: 478px;
+            }
+
+            .users-list:active {
+                position: absolute;
+                margin-left: 0;
+                margin-top: 11.1%;
+                font-size: 2em;
+                background-color: #07AFFA;
+                border: none;
+                border-radius: 19px;
+                height: 60px;
+                width: 478px;
+            }
+
+            #users-list-txt {
+                margin-left: -8%;
             }
 
             .settings {
                 position: absolute;
-                margin-left: 5%;
+                margin-left: 0;
                 margin-top: 18%;
                 font-size: 2em;
+                background-color: #07AFFA;
+                border: none;
+                border-radius: 19px;
+                height: 60px;
+                width: 478px;
             }  
 
-            .exit {
+            #settings-txt {
+                margin-left: -17%;
+            } 
+
+            .exit-button {
                 position: absolute;
-                margin-left: 5%;
+                margin-left: 0;
                 margin-top: 25%;
                 font-size: 2em;
+                background: none;
+                border: none;
+                height: 60px;
+                width: 478px;
+            }
+
+            #exit-txt {
+                margin-left: -58%;
+            }
+
+            .exit-button:active {
+                position: absolute;
+                margin-left: 0;
+                margin-top: 25%;
+                font-size: 2em;
+                background-color: #07AFFA;
+                border: none;
+                border-radius: 19px;
+                height: 60px;
+                width: 478px;
+            }
+
+            #exit-txt:active {
+                margin-left: -58%;
+                color: red;
             }
 
             form {
@@ -542,6 +838,7 @@ const ProfileComponents = styled.section `
             }
         }
 
+        // Large Screens
         @media(min-width: 1600px) {
 
             height: 73.4vh;
@@ -571,30 +868,96 @@ const ProfileComponents = styled.section `
 
             .add-user {
                 position: absolute;
-                margin-left: 5%;
+                margin-left: 0;
                 margin-top: 4%;
                 font-size: 2em;
+                background: none;
+                border: none;
+                height: 60px;
+                width: 543px;
+            }
+
+            .add-user:active {
+                position: absolute;
+                margin-left: 0;
+                margin-top: 4%;
+                font-size: 2em;
+                background-color: #07AFFA;
+                border-radius: 19px;
+                height: 60px;
+                width: 543px;
+            }
+
+            #add-user-txt {
+                margin-left: -13%;
             }
 
             .users-list {
                 position: absolute;
-                margin-left: 5%;
+                margin-left: 0;
                 margin-top: 11%;
                 font-size: 2em;
+                background: none;
+                height: 60px;
+                width: 543px;
+            }
+
+            .users-list:active {
+                position: absolute;
+                margin-left: 0;
+                margin-top: 11%;
+                font-size: 2em;
+                background-color: #07AFFA;
+                border-radius: 19px;
+                height: 60px;
+                width: 543px;
+            }
+
+            #users-list-txt {
+                margin-left: -15%;
             }
 
             .settings {
                 position: absolute;
-                margin-left: 5%;
+                margin-left: 0;
                 margin-top: 18%;
                 font-size: 2em;
+                background-color: #07AFFA;
+                border: none;
+                border-radius: 19px;
+                height: 60px;
+                width: 543px;
             }  
 
-            .exit {
+            #settings-txt {
+                margin-left: -23%;
+            }  
+
+            .exit-button {
                 position: absolute;
-                margin-left: 5%;
+                margin-left: 0;
                 margin-top: 25%;
                 font-size: 2em;
+                background: none;
+                border-radius: 19px;
+                height: 60px;
+                width: 543px;
+            }
+
+            .exit-button:active {
+                position: absolute;
+                margin-left: 0;
+                margin-top: 25%;
+                font-size: 2em;
+                background-color: #07AFFA;
+                border: none;
+                border-radius: 19px;
+                height: 60px;
+                width: 543px;
+            }
+
+            #exit-txt:active{
+                color: red;
             }
 
             form {
@@ -708,53 +1071,73 @@ const PgProfile = function() {
     return (
         <ProfileComponents>
             <nav className='mobile'>
+                {/* Mobile content Form */}
                 <form className='profile-photo'>
+                    {/* Profile Photo */}
                     <Link href={"/"}>
                         <Image className='photo' src="/images/profile-photo2.png" width={100} height={104}  alt="profile-photo"/>
                     </Link>
-                <h2>Your Name</h2>
+                <h2>Seu Nome</h2>
                 <Link href={'/ProfilePage'}>
-                    <p className='add-user'>Adicionar usuário</p>
+                    <button className='add-user'>
+                        <p id='add-user-txt'>Adicionar usuário</p>
+                    </button>
                 </Link>
                 <Link href={'/ProfilePage'}>
-                    <p className='users-list'>Lista de usuários</p>
+                    <button className='users-list'>
+                        <p id='users-list-txt'>Lista de usuários</p>
+                    </button>
                 </Link>
-                <Link href={'/ProfilePage'}>
-                    <p className='settings'>Configurações</p>
+                <Link href={'/SettingsPage'}>
+                <button className='settings'>
+                        <p id='settings-txt'>Configurações</p>
+                    </button>
                 </Link>
                 <Link href={'/HomePage'}>
-                    <p className='exit'>Sair</p>
+                    <button className='exit-button'>
+                        <p id='exit-txt'>Sair</p>
+                    </button>
                 </Link>
                 </form>
             </nav>
 
             <nav className='tablet'>
+                {/* Menu options */}
                 <div>
                     <Link href={'/ProfilePage'}>
-                        <p className='add-user'>Adicionar usuário</p>
+                        <button className='add-user'>
+                            <p id='add-user-txt'>Adicionar usuário</p>
+                        </button>
                     </Link>
                 </div>
                 <div>
                     <Link href={'/ProfilePage'}>
-                        <p className='users-list'>Lista de usuários</p>
+                        <button className='users-list'>
+                            <p id='users-list-txt'>Lista de usuários</p>
+                        </button>
                     </Link>
                 </div>
                 <div>
-                    <Link href={'/ProfilePage'}>
-                        <p className='settings'>Configurações</p>
-                    </Link>
+                    <button className='settings'>
+                        <p id='settings-txt'>Configurações</p>
+                    </button>
                 </div>
                 <div>
                     <Link href={'/HomePage'}>
-                        <p className='exit'>Sair</p>
+                        <button className='exit-button'>
+                            <p id='exit-txt'>Sair</p>
+                        </button>
                     </Link>
                 </div>
+                {/* Form content Desktops and Tablets */}
                 <form>
+                    {/* User data */}
                     <p className='name'><span>Nome:</span> Seu Nome</p>
                     <p className='email'><span>E-mail:</span> seuemail@gmail.com</p>
                     <p className='birthday'><span>Nascimento:</span> 21/08/2023</p>
                     <p className='cpf'><span>CPF:</span> 000.000.000-00</p>
                     <p className='country'><span>País:</span> Brasil</p>
+                    {/* Profile Photo */}
                     <label>
                     <span className='photo'>
                         <Image className='photo' src="/images/profile-photo2.png" width={100} height={104} alt="profile-photo"/>
@@ -771,32 +1154,42 @@ const PgProfile = function() {
             </nav>
 
             <nav className='desktop1'>
+                {/* Menu options */}
                 <div>
                     <Link href={'/ProfilePage'}>
-                        <p className='add-user'>Adicionar usuário</p>
+                        <button className='add-user'>
+                            <p id='add-user-txt'>Adicionar usuário</p>
+                        </button>
                     </Link>
                 </div>
                 <div>
                     <Link href={'/ProfilePage'}>
-                        <p className='users-list'>Lista de usuários</p>
+                            <button className='users-list'>
+                                <p id='users-list-txt'>Lista de usuários</p>
+                            </button>
                     </Link>
                 </div>
                 <div>
-                    <Link href={'/ProfilePage'}>
-                        <p className='settings'>Configurações</p>
-                    </Link>
+                    <button className='settings'>
+                        <p id='settings-txt'>Configurações</p>
+                    </button>
                 </div>
                 <div>
                     <Link href={'/HomePage'}>
-                        <p className='exit'>Sair</p>
+                            <button className='exit-button'>
+                                <p id='exit-txt'>Sair</p>
+                            </button>
                     </Link>
                 </div>
+                {/* Form content Desktops and Tablets */}
                 <form>
+                    {/* User data */}
                     <p className='name'><span>Nome:</span> Seu Nome</p>
                     <p className='email'><span>E-mail:</span> seuemail@gmail.com</p>
                     <p className='birthday'><span>Nascimento:</span> 21/08/2023</p>
                     <p className='cpf'><span>CPF:</span> 000.000.000-00</p>
                     <p className='country'><span>País:</span> Brasil</p>
+                    {/* Profile Photo */}
                     <label>
                     <span className='photo'>
                         <Image className='photo' src="/images/profile-photo2.png" width={100} height={104} alt="profile-photo"/>
@@ -813,32 +1206,42 @@ const PgProfile = function() {
             </nav>
 
             <nav className='desktop2'>
+                {/* Menu options */}
                 <div>
                     <Link href={'/ProfilePage'}>
-                        <p className='add-user'>Adicionar usuário</p>
+                            <button className='add-user'>
+                                <p id='add-user-txt'>Adicionar usuário</p>
+                            </button>
                     </Link>
                 </div>
                 <div>
                     <Link href={'/ProfilePage'}>
-                        <p className='users-list'>Lista de usuários</p>
+                                <button className='users-list'>
+                                    <p id='users-list-txt'>Lista de usuários</p>
+                                </button>
                     </Link>
                 </div>
                 <div>
-                    <Link href={'/ProfilePage'}>
-                        <p className='settings'>Configurações</p>
-                    </Link>
+                    <button className='settings'>
+                        <p id='settings-txt'>Configurações</p>
+                    </button>
                 </div>
                 <div>
                     <Link href={'/HomePage'}>
-                        <p className='exit'>Sair</p>
+                        <button className='exit-button'>
+                            <p id='exit-txt'>Sair</p>
+                        </button>
                     </Link>
                 </div>
+                {/* Form content Desktops and Tablets */}
                 <form>
+                    {/* User data */}
                     <p className='name'><span>Nome:</span> Seu Nome</p>
                     <p className='email'><span>E-mail:</span> seuemail@gmail.com</p>
                     <p className='birthday'><span>Nascimento:</span> 21/08/2023</p>
                     <p className='cpf'><span>CPF:</span> 000.000.000-00</p>
                     <p className='country'><span>País:</span> Brasil</p>
+                    {/* Profile Photo */}
                     <label>
                     <span className='photo'>
                         <Image className='photo' src="/images/profile-photo2.png" width={100} height={104} alt="profile-photo"/>
@@ -855,32 +1258,42 @@ const PgProfile = function() {
             </nav>
 
             <nav className='desktop3'>
+                {/* Menu options */}
                 <div>
                     <Link href={'/ProfilePage'}>
-                        <p className='add-user'>Adicionar usuário</p>
+                                <button className='add-user'>
+                                    <p id='add-user-txt'>Adicionar usuário</p>
+                                </button>
                     </Link>
                 </div>
                 <div>
                     <Link href={'/ProfilePage'}>
-                        <p className='users-list'>Lista de usuários</p>
+                        <button className='users-list'>
+                            <p id='users-list-txt'>Lista de usuários</p>
+                        </button>
                     </Link>
                 </div>
                 <div>
-                    <Link href={'/ProfilePage'}>
-                        <p className='settings'>Configurações</p>
-                    </Link>
+                    <button className='settings'>
+                        <p id='settings-txt'>Configurações</p>
+                    </button>
                 </div>
                 <div>
                     <Link href={'/HomePage'}>
-                        <p className='exit'>Sair</p>
+                                <button className='exit-button'>
+                                    <p id='exit-txt'>Sair</p>
+                                </button>
                     </Link>
                 </div>
+                {/* Form content Desktops and Tablets */}
                 <form>
+                    {/* User data */}
                     <p className='name'><span>Nome:</span> Seu Nome</p>
                     <p className='email'><span>E-mail:</span> seuemail@gmail.com</p>
                     <p className='birthday'><span>Nascimento:</span> 21/08/2023</p>
                     <p className='cpf'><span>CPF:</span> 000.000.000-00</p>
                     <p className='country'><span>País:</span> Brasil</p>
+                    {/* Profile Photo */}
                     <label>
                     <span className='photo'>
                         <Image className='photo' src="/images/profile-photo2.png" width={100} height={104} alt="profile-photo"/>

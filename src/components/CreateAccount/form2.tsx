@@ -42,7 +42,7 @@ const FormComponent2 = styled.section `
         font-size: 1.3em;
         position: absolute;
         top: 220px;
-        left: 90px;
+        left: 110px;
     }
 
     .fox {
@@ -241,7 +241,7 @@ const FormComponent2 = styled.section `
         font-size: 1.5em;
         position: absolute;
         top: 55px;
-        left: 115px;
+        left: 135px;
        }
 
        .name {
@@ -429,7 +429,7 @@ const FormComponent2 = styled.section `
         h1 {
             position: absolute;
             top: 65px;
-            left: 140px;
+            left: 160px;
             font-size: 2em;
         }
 
@@ -663,7 +663,7 @@ const FormComponent2 = styled.section `
         h1 {
             font-size: 2.8em;
             position: absolute;
-            left: 185px;
+            left: 205px;
         }
 
         .name {
@@ -948,7 +948,7 @@ const FormComponent2 = styled.section `
             font-size: 3em;
             position: absolute;
             top: 100px;
-            left: 275px;
+            left: 290px;
         }
 
         .name {
@@ -1113,14 +1113,14 @@ const FormComponent2 = styled.section `
 
         .criar:hover {
             position: absolute;
-            top: 240px;
+            top: 260px;
             left: 250px;
             background-color: #9fc214;
         }
 
         .criar:active {
             position: absolute;
-            top: 240px;
+            top: 260px;
             left: 250px;
             background-color: #86a40f;
         }
@@ -1149,7 +1149,7 @@ const Form2 = function() {
                 <img src="/images/Stella2.png" alt="fox" className='fox'/>
                     <form>
                          {/* Create User form content */}
-                        <h1>Criar Usuário</h1>
+                        <h1>Criar Conta</h1>
                         <div className='name'>
                             <Input type="string" name="name" id="name" placeholder='Nome Completo'/>
                         </div>
@@ -1205,7 +1205,7 @@ const Form2 = function() {
             <nav className='tablet'>
                 <form>
                     {/* Create User form content */}
-                    <h1>Criar Usuário</h1>
+                    <h1>Criar Conta</h1>
                     <div className='name'>
                         <Input type="string" name="name" id="name" placeholder='Nome Completo'/>
                     </div>
@@ -1263,7 +1263,7 @@ const Form2 = function() {
             <nav className='desktop1'>
             <form>
                 {/* Create User form content */}
-                    <h1>Criar Usuário</h1>
+                    <h1>Criar Conta</h1>
                     <div className='name'>
                         <Input type="string" name="name" id="name" placeholder='Nome Completo'/>
                     </div>
@@ -1321,7 +1321,7 @@ const Form2 = function() {
             <nav className='desktop2'>
                 <form>
                     {/* Create User form content */}
-                    <h1>Criar Usuário</h1>
+                    <h1>Criar Conta</h1>
                     <div className='name'>
                         <Input type="string" name="name" id="name" placeholder='Nome Completo'/>
                     </div>
@@ -1379,7 +1379,7 @@ const Form2 = function() {
             <nav className='desktop3'>
                 <form>
                     {/* Create User form content */}
-                    <h1>Criar Usuário</h1>
+                    <h1>Criar Conta</h1>
                     <div className='name'>
                         <Input type="string" name="name" id="name" placeholder='Nome Completo'/>
                     </div>
@@ -1413,13 +1413,11 @@ const Form2 = function() {
                             <span>Clique Aqui!</span>
                         </Link>
                     </div>
-                    <Link href={'/page5'}>
                         <div className='button-create'>
                             <button className='criar' type='button'>
                                 Criar
                             </button>
                         </div>
-                    </Link>
                 </form>
                 {/* Stella our mascot */}
                 <img src="/images/Stella2.png" alt="fox" className='fox'/>
