@@ -538,6 +538,13 @@ const CreateUserComponent = styled.section `
 
     @media(min-width: 922px) {
 
+        height: 144vh;
+
+        * {
+            color: white;
+            font-family: 'Poppins-Medium';
+        }
+
         .mobile {
             display: none;
         }
@@ -601,10 +608,236 @@ const CreateUserComponent = styled.section `
         form {
             border-radius: 19px;
             background: linear-gradient(180deg, #07B3FD 0%, #0a59c0 100%);
-            width: 628px;
-            height: 575px;
+            width: 838px;
+            height: 590px;
             border-color: white;
        }
+
+       h1 {
+        font-size: 2.3em;
+        margin-left: 34%;
+       }
+
+       .name {
+        margin-left: -5%;
+       }
+
+       #name {
+        width: 320px;
+       }
+
+       #name::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        font-size: 1.3em;
+        }
+
+        .gender {
+            margin-left: -1%;
+            font-family: 'Poppins-Regular';
+        }
+
+        .gender-txt {
+            font-size: 1.3em;
+        }
+
+        .man {
+            margin-top: -2%;
+            margin-left: -5.5%;
+            font-size: 1.1em;
+        }
+
+        .man-op {
+            margin-left: 125%;
+            margin-top: -52%;
+        }
+
+        .woman {
+            margin-top: -6%;
+            margin-left: 12%;
+            font-size: 1.1em;
+        }
+
+        .woman-op {
+            margin-left: 125%;
+            margin-top: -52%;
+        }
+
+        .trans {
+            margin-top: -6%;
+            margin-left: 28%;
+            font-size: 1.1em;
+        }
+
+        .t2-op {
+            margin-left: 125%;
+            margin-top: -52%;
+        }
+
+        .no-binary {
+            margin-top: 0;
+            margin-left: -5.5%;
+            font-size: 1.1em;
+        }
+
+        .nb-op {
+            margin-left: 125%;
+            margin-top: -52%;
+        }
+
+        .transvestite {
+            margin-top: -6%;
+            margin-left: 12%;
+            font-size: 1.1em;
+        }
+
+        .t1-op {
+            margin-left: 125%;
+            margin-top: -52%;
+        }
+
+        .another {
+            margin-top: -6%;
+            margin-left: 28%;
+            font-size: 1.1em;
+        }
+
+        .a-op {
+            margin-left: 125%;
+            margin-top: -52%;
+        }
+
+        .none {
+            margin-top: 0.1%;
+            margin-left: -5.5%;
+            font-size: 1.1em;
+        }
+
+        .n-op {
+            margin-left: 125%;
+            margin-top: -52%;
+        }
+
+        .cpf {
+        margin-left: -5%;
+        margin-top: -1%;
+       }
+
+       #cpf {
+        width: 320px;
+       }
+
+       #cpf::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        font-size: 1.3em;
+        }
+
+        .profile-photo2 {
+            margin-top: -2%;
+            margin-left: 6.5%;
+            font-size: 1.2em;
+        }
+
+        .choose-a-image {
+            margin-left: 6.3%;
+            width: 250px;
+            height: 60px;
+            color: black;
+            font-weight: bold;
+            background-color: white;
+            border: none;
+            border-radius: 10px;
+        }
+
+        .choose-a-image:active {
+            margin-left: 6.3%;
+            width: 250px;
+            height: 60px;
+            color: black;
+            font-weight: bold;
+            background-color: #ffffffca;
+            border: none;
+            border-radius: 10px;
+        }
+
+        label {
+            position: absolute;
+            top: 964px;
+            margin-left: 1.5%;
+            font-size: 1.1em;
+        }
+
+        .email {
+            margin-top: -47%;
+            margin-left: 44%;
+        }
+
+        #email {
+            width: 320px;
+        }
+
+        #email::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        font-size: 1.3em;
+        }
+
+        .country {
+            margin-top: -1%;
+            margin-left: 44%;
+        }
+
+        #country {
+            width: 320px;
+        }
+
+        #country::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        font-size: 1.3em;
+        }
+
+        .social-name {
+            margin-top: -1%;
+            margin-left: 44%;
+        }
+
+        #social-name {
+            width: 320px;
+        }
+
+        #social-name::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        font-size: 1.3em;
+        }
+
+        .birthday {
+            margin-top: -1%;
+            margin-left: 44%;
+        }
+
+        #birthday {
+            width: 320px;
+        }
+
+        #birthday::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        font-size: 1.3em;
+        }
+
+        .small {
+            font-size: 1em;
+            margin-left: 21%;
+        }
+
+        .save-button {
+            width: 200px;
+            height: 60px;
+            margin-top: 5.5%;
+            margin-left: 52%;
+            font-size: 2em;
+            background-color: #93B413;
+        }
+
+        .save-button:active {
+            width: 200px;
+            height: 60px;
+            margin-top: 5.5%;
+            margin-left: 52%;
+            font-size: 2em;
+            background-color: #86a40f;
+        }
     }
 `;
 
@@ -774,6 +1007,71 @@ const CreateUserPg = function() {
                     <Image className='profile-photo' src="/images/profile-photo2.png" width={100} height={104}  alt="profile-photo"/>
                     <p id='your-name'>Seu Nome</p>
                 </header>
+                <form>
+                    <h1>Criar Usuário</h1>
+                        <div className='name'>
+                            <Input type="string" name="name" id="name" placeholder='Nome Completo'/>
+                        </div>
+                    <div className='gender'>
+                        <p className='gender-txt'>Gênero</p>
+                        <div  className='man'>
+                            <Input type='radio' name='gender' id='masculino' defaultValue='M'/>
+                            <p className='man-op'>Masculino</p>
+                        </div>
+                        <div  className='woman'>
+                            <Input type='radio' name='gender' id='feminino' defaultValue='F'/>
+                            <p className='woman-op'>Feminino</p>
+                        </div>
+                        <div  className='trans'>
+                            <Input type='radio' name='gender' id='t2-op' defaultValue='T2'/>
+                            <p className='t2-op'>Trans</p>
+                        </div>
+                        <div className='no-binary'>
+                            <Input type='radio' name='gender' id='nb-op' defaultValue='NB'/>
+                            <p className='nb-op'>Não Binário</p>
+                        </div>
+                        <div  className='transvestite'>
+                            <Input type='radio' name='gender' id='t1-op' defaultValue='T1'/>
+                            <p className='t1-op'>Travesti</p>
+                        </div>
+                        <div  className='another'>
+                            <Input type='radio' name='gender' id='a-op' defaultValue='A'/>
+                            <p className='a-op'>Outros</p>
+                        </div>
+                        <div  className='none'>
+                            <Input type='radio' name='gender' id='n-op' defaultValue='N'/>
+                            <p className='n-op'>Prefiro não dizer</p>
+                        </div>
+                    </div>
+                    <div className='cpf'>
+                        <Input type="number" name="cpf" id="cpf" placeholder='CPF'/>
+                    </div>
+                    <p className='profile-photo2'>Foto de Perfil</p>
+                    <div className='choose-a-image'>
+                        <label>
+                            Escolha uma Imagem
+                                <span className='photo'>
+                                    <input type="file" id='photo-input'/>
+                                </span>
+                        </label>
+                    </div>
+                    <div className='email'>
+                        <Input type="email" name="email" id="email" placeholder='E-mail'/>
+                    </div>
+                    <div className='country'>
+                        <Input type="string" name="country" id="country" placeholder='País'/>
+                    </div>
+                    <div className='social-name'>
+                        <Input type="string" name="social-name" id="social-name" placeholder='Nome Social'/>
+                    </div>
+                    <div className='birthday'>
+                        <Input type='date' name='birthday' id='birthday' placeholder='Data de nascimento'/>
+                        <p className='small'>Digite a data de nascimento</p>
+                    </div>
+                    <button type='button' className='save-button'>
+                        Salvar
+                    </button>
+                </form>
             </nav>
         </CreateUserComponent>
     )
