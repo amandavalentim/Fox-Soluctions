@@ -76,13 +76,13 @@ const FormComponent2 = styled.section `
         left: 35px;
     }
 
-    .senha {
+    .password {
         position: absolute;
         top: 510px;
         left: 35px;
     }
 
-    .confirmar-senha{
+    .confirm-password{
         position: absolute;
         top: 570px;
         left: 35px;
@@ -283,14 +283,14 @@ const FormComponent2 = styled.section `
         left: -40px;
        }
 
-       .senha {
+       .password {
         font-size: 1.3em;
         position: absolute;
         top: 420px;
         left: -40px;
        }
 
-       .confirmar-senha {
+       .confirm-password {
         font-size: 1.3em;
         position: absolute;
         top: 480px;
@@ -487,7 +487,7 @@ const FormComponent2 = styled.section `
             width: 350px;
         }
 
-        .senha {
+        .password {
             position: absolute;
             top: 475px;
             left: -21px;
@@ -497,7 +497,7 @@ const FormComponent2 = styled.section `
             width: 350px;
         }
 
-        .confirmar-senha {
+        .confirm-password {
             position: absolute;
             top: 530px;
             left: -21px;
@@ -747,7 +747,7 @@ const FormComponent2 = styled.section `
             font-size: 1.2em;
         }
 
-        .senha {
+        .password {
             position: absolute;
             top: 560px;
             left: -25px;
@@ -762,7 +762,7 @@ const FormComponent2 = styled.section `
             font-size: 1.2em;
         }
 
-        .confirmar-senha {
+        .confirm-password {
             position: absolute;
             top: 635px;
             left: -25px;
@@ -1027,7 +1027,7 @@ const FormComponent2 = styled.section `
             font-size: 1.2em;
         }
 
-        .senha {
+        .password {
             position: absolute;
             top: 620px;
             left: -35px;
@@ -1041,7 +1041,7 @@ const FormComponent2 = styled.section `
             font-size: 1.2em;
         }
 
-        .confirmar-senha {
+        .confirm-password {
             position: absolute;
             top: 705px;
             left: -35px;
@@ -1166,10 +1166,10 @@ const Form2 = function() {
                         <div className='cpf'>
                             <Input type="number" name="cpf" id="cpf" placeholder='CPF'/>
                         </div>
-                        <div className='senha'>
+                        <div className='password'>
                             <Input type="password" name="password" id="password" placeholder='Senha'/>
                         </div>
-                        <div className='confirmar-senha'>
+                        <div className='confirm-password'>
                             <Input type="password" name="confirm-password" id="confirm-password" placeholder='Confirme sua Senha'/>
                         </div>
                         {/* <label>
@@ -1222,10 +1222,10 @@ const Form2 = function() {
                         <div className='cpf'>
                             <Input type="number" name="cpf" id="cpf" placeholder='CPF'/>
                         </div>
-                        <div className='senha'>
+                        <div className='password'>
                             <Input type="password" name="password" id="password" placeholder='Senha'/>
                         </div>
-                        <div className='confirmar-senha'>
+                        <div className='confirm-password'>
                             <Input type="password" name="confirm-password" id="confirm-password" placeholder='Confirme sua Senha'/>
                         </div>
                         {/* <label>
@@ -1280,10 +1280,10 @@ const Form2 = function() {
                         <div className='cpf'>
                             <Input type="number" name="cpf" id="cpf" placeholder='CPF'/>
                         </div>
-                        <div className='senha'>
+                        <div className='password'>
                             <Input type="password" name="password" id="password" placeholder='Senha'/>
                         </div>
-                        <div className='confirmar-senha'>
+                        <div className='confirm-password'>
                             <Input type="password" name="confirm-password" id="confirm-password" placeholder='Confirme sua Senha'/>
                         </div>
                         {/* <label>
@@ -1338,10 +1338,10 @@ const Form2 = function() {
                     <div className='cpf'>
                         <Input type="number" name="cpf" id="cpf" placeholder='CPF'/>
                     </div>
-                    <div className='senha'>
+                    <div className='password'>
                         <Input type="password" name="password" id="password" placeholder='Senha'/>
                     </div>
-                    <div className='confirmar-senha'>
+                    <div className='confirm-password'>
                         <Input type="password" name="confirm-password" id="confirm-password" placeholder='Confirme sua Senha'/>
                     </div>
                     {/* <label>
@@ -1396,10 +1396,10 @@ const Form2 = function() {
                     <div className='cpf'>
                         <Input type="number" name="cpf" id="cpf" placeholder='CPF'/>
                     </div>
-                    <div className='senha'>
+                    <div className='password'>
                         <Input type="password" name="password" id="password" placeholder='Senha'/>
                     </div>
-                    <div className='confirmar-senha'>
+                    <div className='confirm-password'>
                             <Input type="password" name="confirm-password" id="confirm-password" placeholder='Confirme sua Senha'/>
                         </div>
                     <p>OU</p>

@@ -413,6 +413,7 @@ const ProfileComponents = styled.section `
                 border: none;
                 height: 60px;
                 width: 410px;
+                cursor: pointer;
             }
 
             .add-user:active {
@@ -438,6 +439,7 @@ const ProfileComponents = styled.section `
                 border: none;
                 height: 60px;
                 width: 410px;
+                cursor: pointer;
             }
 
             .users-list:active {
@@ -464,6 +466,7 @@ const ProfileComponents = styled.section `
                 border-radius: 19px;
                 height: 60px;
                 width: 410px;
+                cursor: pointer;
             }  
 
             #settings-txt {
@@ -478,6 +481,7 @@ const ProfileComponents = styled.section `
                 border: none;
                 height: 60px;
                 width: 410px;
+                cursor: pointer;
             }
 
             .exit-button:active {
@@ -557,6 +561,7 @@ const ProfileComponents = styled.section `
                 margin-top: 6%;
                 width: 150px;
                 height: 150px;
+                cursor: pointer;
             }
 
             .changePassword {
@@ -568,6 +573,19 @@ const ProfileComponents = styled.section `
                 border-radius: 19px;
                 width: 250px;
                 height: 50px;
+                cursor: pointer;
+            }
+
+            .changePassword {
+                background-color: #9fc214;
+                border: none;
+                font-size: 1.7em;
+                margin-top: 25%;
+                margin-left: 5%;
+                border-radius: 19px;
+                width: 250px;
+                height: 50px;
+                cursor: pointer;
             }
 
             .changePassword:active {
@@ -583,6 +601,18 @@ const ProfileComponents = styled.section `
 
             .deleteAccount {
                 background-color: red;
+                border: none;
+                font-size: 1.7em;
+                margin-top: 25%;
+                margin-left: 9%;
+                border-radius: 19px;
+                width: 250px;
+                height: 50px;
+                cursor: pointer;
+            }
+
+            .deleteAccount:hover {
+                background-color: #ff0a0a;
                 border: none;
                 font-size: 1.7em;
                 margin-top: 25%;
@@ -641,6 +671,7 @@ const ProfileComponents = styled.section `
                 border: none;
                 height: 60px;
                 width: 478px;
+                cursor: pointer;
             }
 
             .add-user:active {
@@ -668,6 +699,7 @@ const ProfileComponents = styled.section `
                 border: none;
                 height: 60px;
                 width: 478px;
+                cursor: pointer;
             }
 
             .users-list:active {
@@ -696,6 +728,7 @@ const ProfileComponents = styled.section `
                 border-radius: 19px;
                 height: 60px;
                 width: 478px;
+                cursor: pointer;
             }  
 
             #settings-txt {
@@ -727,6 +760,7 @@ const ProfileComponents = styled.section `
                 border-radius: 19px;
                 height: 60px;
                 width: 478px;
+                cursor: pointer;
             }
 
             #exit-txt:active {
@@ -791,6 +825,7 @@ const ProfileComponents = styled.section `
                 margin-top: 6%;
                 width: 180px;
                 height: 180px;
+                cursor: pointer;
             }
 
             .changePassword {
@@ -802,6 +837,19 @@ const ProfileComponents = styled.section `
                 border-radius: 19px;
                 width: 320px;
                 height: 60px;
+                cursor: pointer;
+            }
+
+            .changePassword:hover {
+                background-color: #9fc214;
+                border: none;
+                font-size: 2em;
+                margin-top: 19%;
+                margin-left: 10%;
+                border-radius: 19px;
+                width: 320px;
+                height: 60px;
+                cursor: pointer;
             }
 
             .changePassword:active {
@@ -824,6 +872,19 @@ const ProfileComponents = styled.section `
                 border-radius: 19px;
                 width: 320px;
                 height: 60px;
+                cursor: pointer;
+            }
+
+            .deleteAccount:hover {
+                background-color: #ff0a0a;
+                border: none;
+                font-size: 2em;
+                margin-top: 19%;
+                margin-left: 10%;
+                border-radius: 19px;
+                width: 320px;
+                height: 60px;
+                cursor: pointer;
             }
 
             .deleteAccount:active {
@@ -875,6 +936,7 @@ const ProfileComponents = styled.section `
                 border: none;
                 height: 60px;
                 width: 543px;
+                cursor: pointer;
             }
 
             .add-user:active {
@@ -900,6 +962,7 @@ const ProfileComponents = styled.section `
                 background: none;
                 height: 60px;
                 width: 543px;
+                cursor: pointer;
             }
 
             .users-list:active {
@@ -927,6 +990,7 @@ const ProfileComponents = styled.section `
                 border-radius: 19px;
                 height: 60px;
                 width: 543px;
+                cursor: pointer;
             }  
 
             #settings-txt {
@@ -942,6 +1006,7 @@ const ProfileComponents = styled.section `
                 border-radius: 19px;
                 height: 60px;
                 width: 543px;
+                cursor: pointer;
             }
 
             .exit-button:active {
@@ -1017,6 +1082,7 @@ const ProfileComponents = styled.section `
                 margin-top: 6%;
                 width: 180px;
                 height: 180px;
+                cursor: pointer;
             }
 
             .changePassword {
@@ -1028,6 +1094,19 @@ const ProfileComponents = styled.section `
                 border-radius: 19px;
                 width: 350px;
                 height: 70px;
+                cursor: pointer;
+            }
+
+            .changePassword:hover {
+                background-color: #9fc214;
+                border: none;
+                font-size: 2.2em;
+                margin-top: 21%;
+                margin-left: 13%;
+                border-radius: 19px;
+                width: 350px;
+                height: 70px;
+                cursor: pointer;
             }
 
             .changePassword:active {
@@ -1050,6 +1129,19 @@ const ProfileComponents = styled.section `
                 border-radius: 19px;
                 width: 350px;
                 height: 70px;
+                cursor: pointer;
+            }
+
+            .deleteAccount:hover {
+                background-color: #ff0a0a;
+                border: none;
+                font-size: 2.2em;
+                margin-top: 21%;
+                margin-left: 10%;
+                border-radius: 19px;
+                width: 350px;
+                height: 70px;
+                cursor: pointer;
             }
 
             .deleteAccount:active {
@@ -1078,7 +1170,7 @@ const PgProfile = function() {
                         <Image className='photo' src="/images/profile-photo2.png" width={100} height={104}  alt="profile-photo"/>
                     </Link>
                 <h2>Seu Nome</h2>
-                <Link href={'/ProfilePage'}>
+                <Link href={'/CreateUserPage'}>
                     <button className='add-user'>
                         <p id='add-user-txt'>Adicionar usuário</p>
                     </button>
@@ -1104,7 +1196,7 @@ const PgProfile = function() {
             <nav className='tablet'>
                 {/* Menu options */}
                 <div>
-                    <Link href={'/ProfilePage'}>
+                    <Link href={'/CreateUserPage'}>
                         <button className='add-user'>
                             <p id='add-user-txt'>Adicionar usuário</p>
                         </button>
@@ -1156,7 +1248,7 @@ const PgProfile = function() {
             <nav className='desktop1'>
                 {/* Menu options */}
                 <div>
-                    <Link href={'/ProfilePage'}>
+                    <Link href={'/CreateUserPage'}>
                         <button className='add-user'>
                             <p id='add-user-txt'>Adicionar usuário</p>
                         </button>
@@ -1208,7 +1300,7 @@ const PgProfile = function() {
             <nav className='desktop2'>
                 {/* Menu options */}
                 <div>
-                    <Link href={'/ProfilePage'}>
+                    <Link href={'/CreateUserPage'}>
                             <button className='add-user'>
                                 <p id='add-user-txt'>Adicionar usuário</p>
                             </button>
@@ -1260,7 +1352,7 @@ const PgProfile = function() {
             <nav className='desktop3'>
                 {/* Menu options */}
                 <div>
-                    <Link href={'/ProfilePage'}>
+                    <Link href={'/CreateUserPage'}>
                                 <button className='add-user'>
                                     <p id='add-user-txt'>Adicionar usuário</p>
                                 </button>
