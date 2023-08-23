@@ -771,8 +771,8 @@ const ProfileComponents = styled.section `
             form {
                 position: absolute;
                 background-color: #2F99BF;
-                width: 63vw;
-                height: 77%;
+                width: 65vw;
+                height: 75%;
                 margin-left: 35%;
             }
 
