@@ -14,11 +14,7 @@ const CreateUserComponent = styled.section `
         justify-content: space-between;
     }
 
-    .tablet {
-        display: none;
-    }
-
-    .desktop1 {
+    .tablet-desktops {
         display: none;
     }
 
@@ -221,13 +217,9 @@ const CreateUserComponent = styled.section `
             display: none;
         }
 
-        .tablet {
+        .tablet-desktops {
             display: block;
             justify-content: space-between;
-        }
-
-        .desktop1 {
-            display: none;
         }
 
         background: linear-gradient(180deg, #0A53B5 0%, #0A53B5 100%);
@@ -536,7 +528,7 @@ const CreateUserComponent = styled.section `
        }
     }
 
-    @media(min-width: 922px) {
+    @media(min-width: 992px) {
 
         height: 144vh;
 
@@ -549,11 +541,7 @@ const CreateUserComponent = styled.section `
             display: none;
         }
 
-        .tablet {
-            display: none;
-        }
-
-        .desktop1 {
+        .tablet-desktops {
             display: block;
             justify-content: space-between;
         }
@@ -611,7 +599,7 @@ const CreateUserComponent = styled.section `
             width: 838px;
             height: 590px;
             border-color: white;
-       }
+        }
 
        h1 {
         font-size: 2.3em;
@@ -662,8 +650,8 @@ const CreateUserComponent = styled.section `
         }
 
         .trans {
-            margin-top: -6%;
-            margin-left: 28%;
+            margin-top: -6.1%;
+            margin-left: 12%;
             font-size: 1.1em;
         }
 
@@ -685,7 +673,7 @@ const CreateUserComponent = styled.section `
 
         .transvestite {
             margin-top: -6%;
-            margin-left: 12%;
+            margin-left: 28%;
             font-size: 1.1em;
         }
 
@@ -718,7 +706,7 @@ const CreateUserComponent = styled.section `
 
         .cpf {
         margin-left: -5%;
-        margin-top: -1%;
+        margin-top: -9.5%;
        }
 
        #cpf {
@@ -730,7 +718,7 @@ const CreateUserComponent = styled.section `
         }
 
         .profile-photo2 {
-            margin-top: -2%;
+            margin-top: -1%;
             margin-left: 6.5%;
             font-size: 1.2em;
         }
@@ -759,13 +747,13 @@ const CreateUserComponent = styled.section `
 
         label {
             position: absolute;
-            top: 964px;
+            top: 970px;
             margin-left: 1.5%;
             font-size: 1.1em;
         }
 
         .email {
-            margin-top: -47%;
+            margin-top: -28.7%;
             margin-left: 44%;
         }
 
@@ -824,7 +812,7 @@ const CreateUserComponent = styled.section `
         .save-button {
             width: 200px;
             height: 60px;
-            margin-top: 5.5%;
+            margin-top: 6.1%;
             margin-left: 52%;
             font-size: 2em;
             background-color: #93B413;
@@ -833,9 +821,532 @@ const CreateUserComponent = styled.section `
         .save-button:active {
             width: 200px;
             height: 60px;
-            margin-top: 5.5%;
+            margin-top: 6.1%;
             margin-left: 52%;
             font-size: 2em;
+            background-color: #86a40f;
+        }
+    }
+
+    @media(min-width: 1200px) {
+        
+        height: 162vh;
+
+        * {
+            color: white;
+            font-family: 'Poppins-Medium';
+        }
+
+        .mobile {
+            display: none;
+        }
+
+        .tablet-desktops {
+            display: block;
+            justify-content: space-between;
+        }
+
+        .search {
+            margin-top: 6%;
+        }
+
+        .box-1 {
+            margin-top: -9%;
+            margin-left: 28%;
+        }
+
+        .box-2 {
+            margin-top: -13.5%;
+        }
+
+        .profile-photo {
+            margin-top: 2%;
+        }
+
+        #your-name {
+            margin-left: 80%;
+        }
+
+        form {
+            margin-top: 3.5%;
+            border-radius: 19px;
+            background: linear-gradient(180deg, #07B3FD 0%, #0a59c0 100%);
+            width: 1115px;
+            height: 710px;
+            border-color: white;
+       }
+
+       h1 {
+        font-size: 3em;
+        margin-left: 35%;
+       }
+
+       .name {
+        margin-left: -5%;
+        margin-top: 2%;
+       }
+
+       #name {
+        width: 450px;
+        height: 43px;
+       }
+
+       #name::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        font-size: 2em;
+        }
+
+        .gender-txt {
+            font-size: 2em;
+        }
+
+        .man {
+            margin-top: -1%;
+            margin-left: -5%;
+            font-size: 1.5em;
+        }
+
+        .man-op {
+            margin-left: 160%;
+            margin-top: -76%;
+        }
+
+        .woman {
+            margin-top: -5%;
+            margin-left: 12%;
+            font-size: 1.5em;
+        }
+
+        .woman-op {
+            margin-left: 160%;
+            margin-top: -76%;
+        }
+
+        .transvestite {
+            margin-top: -5%;
+            margin-left: 28%;
+            font-size: 1.5em;
+        }
+
+        .t1-op {
+            margin-left: 160%;
+            margin-top: -76%;
+        }
+
+        .no-binary {
+            margin-top: -1%;
+            margin-left: -5%;
+            font-size: 1.5em;
+        }
+
+        .nb-op {
+            margin-left: 160%;
+            margin-top: -76%;
+        }
+
+        .trans {
+            margin-top: -5%;
+            margin-left: 12%;
+            font-size: 1.5em;
+        }
+
+        .t2-op {
+            margin-left: 160%;
+            margin-top: -76%;
+        }
+
+        .another {
+            margin-top: -5%;
+            margin-left: 28%;
+            font-size: 1.5em;
+        }
+
+        .a-op {
+            margin-left: 160%;
+            margin-top: -76%;
+        }
+
+        .none {
+            margin-top: -1%;
+            margin-left: -5%;
+            font-size: 1.5em;
+        }
+
+        .n-op {
+            margin-left: 160%;
+            margin-top: -76%;
+            width: 300px;
+        }
+
+        .email {
+            margin-left: 42.5%;
+            margin-top: -26.6%;
+        }
+
+       #email {
+        width: 450px;
+        height: 43px;
+       }
+
+       #email::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        font-size: 2em;
+        }
+
+        .country {
+            margin-left: 42.5%;
+            margin-top: -3%;
+        }
+
+       #country {
+        width: 450px;
+        height: 43px;
+       }
+
+       #country::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        font-size: 2em;
+        }
+
+        .social-name {
+            margin-left: 42.5%;
+            margin-top: -3%;
+        }
+
+       #social-name {
+        width: 450px;
+        height: 43px;
+       }
+
+       #social-name::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        font-size: 2em;
+        }
+
+        .birthday {
+            margin-left: 42.5%;
+            margin-top: -3%;
+        }
+
+       #birthday {
+        width: 450px;
+        height: 43px;
+       }
+
+       #birthday::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        font-size: 2em;
+        }
+
+        .cpf {
+        margin-left: -5%;
+        margin-top: -9.4%;
+       }
+
+       #cpf{
+        width: 450px;
+        height: 43px;
+       }
+
+       #cpf::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        font-size: 2em;
+        }
+
+        .profile-photo2 {
+            font-size: 2em;
+            margin-top: -2%;
+        }
+
+        .choose-a-image {
+            margin-left: 6.3%;
+            width: 300px;
+            height: 75px;
+            color: black;
+            font-weight: bold;
+            background-color: white;
+            border: none;
+            border-radius: 10px;
+        }
+
+        .choose-a-image:active {
+            margin-left: 6.3%;
+            width: 300px;
+            height: 75px;
+            color: black;
+            font-weight: bold;
+            background-color: #ffffffca;
+            border: none;
+            border-radius: 10px;
+        }
+
+        label {
+            position: absolute;
+            top: 1070px;
+            margin-left: 1.5%;
+            font-size: 1.3em;
+        }
+
+        .save-button {
+            width: 220px;
+            height: 75px;
+            margin-top: 11.5%;
+            margin-left: 52%;
+            font-size: 2.3em;
+            background-color: #93B413;
+        }
+
+        .save-button:active {
+            width: 220px;
+            height: 75px;
+            margin-top: 11.5%;
+            margin-left: 52%;
+            font-size: 2.3em;
+            background-color: #86a40f;
+        }
+    }
+
+    @media(min-width: 1600px) {
+
+        height: 144vh;
+
+        * {
+            color: white;
+            font-family: 'Poppins-Medium';
+        }
+
+        .mobile {
+            display: none;
+        }
+
+        .tablet-desktops {
+            display: block;
+            justify-content: space-between;
+        }
+
+        .box-2 {
+            margin-top: -11.5%;
+        }
+
+        #your-name {
+            margin-top: -1%;
+        }
+
+        form {
+            width: 1295px;
+            height: 750px;
+        }
+
+        h1 {
+            font-size: 3.2em;
+        }
+
+        .name {
+            margin-left: -5%;
+            margin-top: 2%;
+        }
+
+       #name {
+        width: 510px;
+        height: 45px;
+       }
+
+       #name::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        font-size: 2.2em;
+        }
+
+        .gender-txt {
+            margin-top: 5%;
+            margin-left: 8%;
+            font-size: 2.5em;
+        }
+
+        .man {
+            margin-top: -3%;
+            margin-left: -4.5%;
+        }
+
+        .man-op {
+            margin-top: -107%;
+            margin-left: 205%;
+        }
+
+        .woman {
+            margin-top: -5.7%;
+            margin-left: 11.5%;
+        }
+
+        .woman-op {
+            margin-top: -107%;
+            margin-left: 205%;
+        }
+
+        .transvestite {
+            margin-top: -5.8%;
+            margin-left: 26.5%;
+        }
+
+        .t1-op {
+            margin-top: -107%;
+            margin-left: 205%;
+        }
+
+        .no-binary {
+            margin-top: -2%;
+            margin-left: -4.5%;
+        }
+
+        .nb-op {
+            margin-top: -107%;
+            margin-left: 205%;
+        }
+
+        .trans {
+            margin-top: -5.8%;
+            margin-left: 11.5%;
+        }
+
+        .t2-op {
+            margin-top: -107%;
+            margin-left: 205%;
+        }
+
+        .another {
+            margin-top: -5.8%;
+            margin-left: 26.5%;
+        }
+
+        .a-op {
+            margin-top: -107%;
+            margin-left: 205%;
+        }
+
+        .none {
+            margin-top: -2%;
+            margin-left: -4.5%;
+        }
+
+        .n-op {
+            margin-top: -107%;
+            margin-left: 205%;
+        }
+
+        .email {
+            margin-left: 41.2%;
+            margin-top: -24.5%;
+        }
+
+       #email {
+        width: 510px;
+        height: 45px;
+       }
+
+       #email::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        font-size: 2.2em;
+        }
+
+        .country {
+            margin-left: 41.2%;
+            margin-top: -6%;
+        }
+
+        #country {
+            width: 510px;
+            height: 45px;
+        }
+
+        #country::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+            font-size: 2.2em;
+        }
+
+        .social-name {
+            margin-left: 41.2%;
+            margin-top: -6%;
+        }
+
+        #social-name {
+            width: 510px;
+            height: 45px;
+        }
+
+        #social-name::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+            font-size: 2.2em;
+        }
+
+        .birthday {
+            margin-left: 41.2%;
+            margin-top: -7%;
+        }
+
+        #birthday {
+            width: 510px;
+            height: 45px;
+        }
+
+        #birthday::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+            font-size: 2.2em;
+        }
+
+        .cpf {
+            margin-left: -5%;
+            margin-top: -9.7%;
+        }
+
+        #cpf {
+            width: 510px;
+            height: 45px;
+        }
+
+        #cpf::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+            font-size: 2.2em;
+        }
+
+        .small {
+            margin-top: -10%;
+        }
+
+        .profile-photo2 {
+            margin-top: -5%;
+        }
+
+        .choose-a-image {
+            margin-left: 6.3%;
+            width: 300px;
+            height: 75px;
+            color: black;
+            font-weight: bold;
+            background-color: white;
+            border: none;
+            border-radius: 10px;
+        }
+
+        .choose-a-image:active {
+            margin-left: 6.3%;
+            width: 300px;
+            height: 75px;
+            color: black;
+            font-weight: bold;
+            background-color: #ffffffca;
+            border: none;
+            border-radius: 10px;
+        }
+
+        label {
+            position: absolute;
+            top: 1114px;
+            margin-left: 0.7%;
+            font-size: 1.4em;
+        }
+
+        .save-button {
+            width: 220px;
+            height: 76px;
+            margin-top: 12.7%;
+            margin-left: 52%;
+            font-size: 2.3em;
+            background-color: #93B413;
+        }
+
+        .save-button:active {
+            width: 220px;
+            height: 75px;
+            margin-top: 11.5%;
+            margin-left: 52%;
+            font-size: 2.3em;
             background-color: #86a40f;
         }
     }
@@ -912,7 +1423,7 @@ const CreateUserPg = function() {
                 </form>
             </nav>
 
-            <nav className='tablet'>
+            <nav className='tablet-desktops'>
                 <header>
                  <Image className='search' src="/images/search.png" width={100} height={104}  alt="search"/>
                  <div className='box-1'>
@@ -988,87 +1499,6 @@ const CreateUserPg = function() {
                         </label>
                     </div>
                     <button type='button' className='save-button'> 
-                        Salvar
-                    </button>
-                </form>
-            </nav>
-
-            <nav className='desktop1'>
-                <header>
-                    <Image className='search' src="/images/search.png" width={100} height={104}  alt="search"/>
-                    <div className='box-1'>
-                        <p className='amount-documents'>0</p>
-                        <p className='documents'>documentos</p>
-                    </div>
-                    <div className='box-2'>
-                        <p className='amount-users'>0</p>
-                        <p className='users'>usuários</p>
-                    </div>
-                    <Image className='profile-photo' src="/images/profile-photo2.png" width={100} height={104}  alt="profile-photo"/>
-                    <p id='your-name'>Seu Nome</p>
-                </header>
-                <form>
-                    <h1>Criar Usuário</h1>
-                        <div className='name'>
-                            <Input type="string" name="name" id="name" placeholder='Nome Completo'/>
-                        </div>
-                    <div className='gender'>
-                        <p className='gender-txt'>Gênero</p>
-                        <div  className='man'>
-                            <Input type='radio' name='gender' id='masculino' defaultValue='M'/>
-                            <p className='man-op'>Masculino</p>
-                        </div>
-                        <div  className='woman'>
-                            <Input type='radio' name='gender' id='feminino' defaultValue='F'/>
-                            <p className='woman-op'>Feminino</p>
-                        </div>
-                        <div  className='trans'>
-                            <Input type='radio' name='gender' id='t2-op' defaultValue='T2'/>
-                            <p className='t2-op'>Trans</p>
-                        </div>
-                        <div className='no-binary'>
-                            <Input type='radio' name='gender' id='nb-op' defaultValue='NB'/>
-                            <p className='nb-op'>Não Binário</p>
-                        </div>
-                        <div  className='transvestite'>
-                            <Input type='radio' name='gender' id='t1-op' defaultValue='T1'/>
-                            <p className='t1-op'>Travesti</p>
-                        </div>
-                        <div  className='another'>
-                            <Input type='radio' name='gender' id='a-op' defaultValue='A'/>
-                            <p className='a-op'>Outros</p>
-                        </div>
-                        <div  className='none'>
-                            <Input type='radio' name='gender' id='n-op' defaultValue='N'/>
-                            <p className='n-op'>Prefiro não dizer</p>
-                        </div>
-                    </div>
-                    <div className='cpf'>
-                        <Input type="number" name="cpf" id="cpf" placeholder='CPF'/>
-                    </div>
-                    <p className='profile-photo2'>Foto de Perfil</p>
-                    <div className='choose-a-image'>
-                        <label>
-                            Escolha uma Imagem
-                                <span className='photo'>
-                                    <input type="file" id='photo-input'/>
-                                </span>
-                        </label>
-                    </div>
-                    <div className='email'>
-                        <Input type="email" name="email" id="email" placeholder='E-mail'/>
-                    </div>
-                    <div className='country'>
-                        <Input type="string" name="country" id="country" placeholder='País'/>
-                    </div>
-                    <div className='social-name'>
-                        <Input type="string" name="social-name" id="social-name" placeholder='Nome Social'/>
-                    </div>
-                    <div className='birthday'>
-                        <Input type='date' name='birthday' id='birthday' placeholder='Data de nascimento'/>
-                        <p className='small'>Digite a data de nascimento</p>
-                    </div>
-                    <button type='button' className='save-button'>
                         Salvar
                     </button>
                 </form>
