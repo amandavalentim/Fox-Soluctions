@@ -302,9 +302,7 @@ const CreateUserComponent = styled.section `
         #name::-webkit-input-placeholder { /* Chrome/Opera/Safari */
         font-size: 1.3em;
 
-        #gender {
-            font-size: 5em;
-        }
+        
     }
 
     }
@@ -400,13 +398,7 @@ const CreateUserPg = function() {
                     <div className='name'>
                         <Input type="string" name="name" id="name" placeholder='Nome Completo'/>
                     </div>
-                    <p id='gender'>Gênero</p>
-                    <div className='gender'>
-                        {/* <div className='man'>
-                            <Input type='radio' name='gender' id='masculino' defaultValue='M'/>
-                            <p className='man-op'>Masculino</p>
-                        </div> */}
-                    </div>
+                    <h2>Gênero</h2>
                 </form>
             </nav>
         </CreateUserComponent>
