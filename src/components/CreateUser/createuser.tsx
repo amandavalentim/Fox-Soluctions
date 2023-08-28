@@ -14,21 +14,9 @@ const CreateUserComponent = styled.section `
         justify-content: space-between;
     }
 
-    .tablet {
-            display: none;
-        }
-
-        .desktop1 {
-            display: none;
-        }
-
-        .desktop2 {
-            display: none;
-        }
-
-        .desktop3 {
-            display: none;
-        }
+    .tablet-desktops {
+        display: none;
+    }
 
     * {
         color: white;
@@ -229,21 +217,9 @@ const CreateUserComponent = styled.section `
             display: none;
         }
 
-        .tablet {
+        .tablet-desktops {
             display: block;
             justify-content: space-between;
-        }
-
-        .desktop1 {
-            display: none;
-        }
-
-        .desktop2 {
-            display: none;
-        }
-
-        .desktop3 {
-            display: none;
         }
 
         background: linear-gradient(180deg, #0A53B5 0%, #0A53B5 100%);
@@ -565,21 +541,9 @@ const CreateUserComponent = styled.section `
             display: none;
         }
 
-        .tablet {
-            display: none;
-        }
-
-        .desktop1 {
+        .tablet-desktops {
             display: block;
             justify-content: space-between;
-        }
-
-        .desktop2 {
-            display: none;
-        }
-
-        .desktop3 {
-            display: none;
         }
 
         header {
@@ -903,21 +867,9 @@ const CreateUserComponent = styled.section `
             display: none;
         }
 
-        .tablet {
-            display: none;
-        }
-
-        .desktop1 {
-            display: none;
-        }
-
-        .desktop2 {
+        .tablet-desktops {
             display: block;
             justify-content: space-between;
-        }
-
-        .desktop3 {
-            display: none;
         }
 
         .search {
@@ -1210,19 +1162,7 @@ const CreateUserComponent = styled.section `
             display: none;
         }
 
-        .tablet {
-            display: none;
-        }
-
-        .desktop1 {
-            display: none;
-        }
-
-        .desktop2 {
-            display: none;
-        }
-
-        .desktop3 {
+        .tablet-desktops {
             display: block;
             justify-content: space-between;
         }
@@ -1557,250 +1497,7 @@ const CreateUserPg = function() {
                 </form>
             </nav>
 
-            <nav className='tablet'>
-                <header>
-                 <Image className='search' src="/images/search.png" width={100} height={104}  alt="search"/>
-                 <div className='box-1'>
-                    <p className='amount-documents'>0</p>
-                    <p className='documents'>documentos</p>
-                 </div>
-                 <div className='box-2'>
-                    <p className='amount-users'>0</p>
-                    <p className='users'>usuários</p>
-                 </div>
-                 <Image className='profile-photo' src="/images/profile-photo2.png" width={100} height={104}  alt="profile-photo"/>
-                 <p id='your-name'>Seu Nome</p>
-                </header>
-                <form>
-                    <h1>Criar Usuário</h1>
-                    <div className='name'>
-                        <Input type="string" name="name" id="name" placeholder='Nome Completo'/>
-                    </div>
-                    <div className='gender'>
-                        <p className='gender-txt'>Gênero</p>
-                        <div  className='man'>
-                            <Input type='radio' name='gender' id='masculino' defaultValue='M'/>
-                            <p className='man-op'>Masculino</p>
-                        </div>
-                        <div  className='woman'>
-                            <Input type='radio' name='gender' id='feminino' defaultValue='F'/>
-                            <p className='woman-op'>Feminino</p>
-                        </div>
-                        <div  className='transvestite'>
-                            <Input type='radio' name='gender' id='t1-op' defaultValue='T1'/>
-                            <p className='t1-op'>Travesti</p>
-                        </div>
-                        <div className='no-binary'>
-                            <Input type='radio' name='gender' id='nb-op' defaultValue='NB'/>
-                            <p className='nb-op'>Não Binário</p>
-                        </div>
-                        <div  className='trans'>
-                            <Input type='radio' name='gender' id='t2-op' defaultValue='T2'/>
-                            <p className='t2-op'>Trans</p>
-                        </div>
-                        <div  className='another'>
-                            <Input type='radio' name='gender' id='a-op' defaultValue='A'/>
-                            <p className='a-op'>Outros</p>
-                        </div>
-                        <div  className='none'>
-                            <Input type='radio' name='gender' id='n-op' defaultValue='N'/>
-                            <p className='n-op'>Prefiro não dizer</p>
-                        </div>
-                    </div>
-                    <div className='email'>
-                        <Input type="email" name="email" id="email" placeholder='E-mail'/>
-                    </div>
-                    <div className='country'>
-                        <Input type="string" name="country" id="country" placeholder='País'/>
-                    </div>
-                    <div className='social-name'>
-                        <Input type="string" name="social-name" id="social-name" placeholder='Nome Social'/>
-                    </div>
-                    <div className='birthday'>
-                        <Input type='date' name='birthday' id='birthday' placeholder='Data de nascimento'/>
-                        <p className='small'>Digite a data de nascimento</p>
-                    </div>
-                    <div className='cpf'>
-                        <Input type="number" name="cpf" id="cpf" placeholder='CPF'/>
-                    </div>
-                    <p className='profile-photo2'>Foto de Perfil</p>
-                    <div className='choose-a-image'>
-                        <label>
-                            Escolha uma Imagem
-                                <span className='photo'>
-                                    <input type="file" id='photo-input'/>
-                                </span>
-                        </label>
-                    </div>
-                    <button type='button' className='save-button'> 
-                        Salvar
-                    </button>
-                </form>
-            </nav>
-
-            <nav className='desktop1'>
-                <header>
-                 <Image className='search' src="/images/search.png" width={100} height={104}  alt="search"/>
-                 <div className='box-1'>
-                    <p className='amount-documents'>0</p>
-                    <p className='documents'>documentos</p>
-                 </div>
-                 <div className='box-2'>
-                    <p className='amount-users'>0</p>
-                    <p className='users'>usuários</p>
-                 </div>
-                 <Image className='profile-photo' src="/images/profile-photo2.png" width={100} height={104}  alt="profile-photo"/>
-                 <p id='your-name'>Seu Nome</p>
-                </header>
-                <form>
-                    <h1>Criar Usuário</h1>
-                    <div className='name'>
-                        <Input type="string" name="name" id="name" placeholder='Nome Completo'/>
-                    </div>
-                    <div className='gender'>
-                        <p className='gender-txt'>Gênero</p>
-                        <div  className='man'>
-                            <Input type='radio' name='gender' id='masculino' defaultValue='M'/>
-                            <p className='man-op'>Masculino</p>
-                        </div>
-                        <div  className='woman'>
-                            <Input type='radio' name='gender' id='feminino' defaultValue='F'/>
-                            <p className='woman-op'>Feminino</p>
-                        </div>
-                        <div  className='transvestite'>
-                            <Input type='radio' name='gender' id='t1-op' defaultValue='T1'/>
-                            <p className='t1-op'>Travesti</p>
-                        </div>
-                        <div className='no-binary'>
-                            <Input type='radio' name='gender' id='nb-op' defaultValue='NB'/>
-                            <p className='nb-op'>Não Binário</p>
-                        </div>
-                        <div  className='trans'>
-                            <Input type='radio' name='gender' id='t2-op' defaultValue='T2'/>
-                            <p className='t2-op'>Trans</p>
-                        </div>
-                        <div  className='another'>
-                            <Input type='radio' name='gender' id='a-op' defaultValue='A'/>
-                            <p className='a-op'>Outros</p>
-                        </div>
-                        <div  className='none'>
-                            <Input type='radio' name='gender' id='n-op' defaultValue='N'/>
-                            <p className='n-op'>Prefiro não dizer</p>
-                        </div>
-                    </div>
-                    <div className='email'>
-                        <Input type="email" name="email" id="email" placeholder='E-mail'/>
-                    </div>
-                    <div className='country'>
-                        <Input type="string" name="country" id="country" placeholder='País'/>
-                    </div>
-                    <div className='social-name'>
-                        <Input type="string" name="social-name" id="social-name" placeholder='Nome Social'/>
-                    </div>
-                    <div className='birthday'>
-                        <Input type='date' name='birthday' id='birthday' placeholder='Data de nascimento'/>
-                        <p className='small'>Digite a data de nascimento</p>
-                    </div>
-                    <div className='cpf'>
-                        <Input type="number" name="cpf" id="cpf" placeholder='CPF'/>
-                    </div>
-                    <p className='profile-photo2'>Foto de Perfil</p>
-                    <div className='choose-a-image'>
-                        <label>
-                            Escolha uma Imagem
-                                <span className='photo'>
-                                    <input type="file" id='photo-input'/>
-                                </span>
-                        </label>
-                    </div>
-                    <button type='button' className='save-button'> 
-                        Salvar
-                    </button>
-                </form>
-            </nav>
-
-            <nav className='desktop2'>
-                <header>
-                 <Image className='search' src="/images/search.png" width={100} height={104}  alt="search"/>
-                 <div className='box-1'>
-                    <p className='amount-documents'>0</p>
-                    <p className='documents'>documentos</p>
-                 </div>
-                 <div className='box-2'>
-                    <p className='amount-users'>0</p>
-                    <p className='users'>usuários</p>
-                 </div>
-                 <Image className='profile-photo' src="/images/profile-photo2.png" width={100} height={104}  alt="profile-photo"/>
-                 <p id='your-name'>Seu Nome</p>
-                </header>
-                <form>
-                    <h1>Criar Usuário</h1>
-                    <div className='name'>
-                        <Input type="string" name="name" id="name" placeholder='Nome Completo'/>
-                    </div>
-                    <div className='gender'>
-                        <p className='gender-txt'>Gênero</p>
-                        <div  className='man'>
-                            <Input type='radio' name='gender' id='masculino' defaultValue='M'/>
-                            <p className='man-op'>Masculino</p>
-                        </div>
-                        <div  className='woman'>
-                            <Input type='radio' name='gender' id='feminino' defaultValue='F'/>
-                            <p className='woman-op'>Feminino</p>
-                        </div>
-                        <div  className='transvestite'>
-                            <Input type='radio' name='gender' id='t1-op' defaultValue='T1'/>
-                            <p className='t1-op'>Travesti</p>
-                        </div>
-                        <div className='no-binary'>
-                            <Input type='radio' name='gender' id='nb-op' defaultValue='NB'/>
-                            <p className='nb-op'>Não Binário</p>
-                        </div>
-                        <div  className='trans'>
-                            <Input type='radio' name='gender' id='t2-op' defaultValue='T2'/>
-                            <p className='t2-op'>Trans</p>
-                        </div>
-                        <div  className='another'>
-                            <Input type='radio' name='gender' id='a-op' defaultValue='A'/>
-                            <p className='a-op'>Outros</p>
-                        </div>
-                        <div  className='none'>
-                            <Input type='radio' name='gender' id='n-op' defaultValue='N'/>
-                            <p className='n-op'>Prefiro não dizer</p>
-                        </div>
-                    </div>
-                    <div className='email'>
-                        <Input type="email" name="email" id="email" placeholder='E-mail'/>
-                    </div>
-                    <div className='country'>
-                        <Input type="string" name="country" id="country" placeholder='País'/>
-                    </div>
-                    <div className='social-name'>
-                        <Input type="string" name="social-name" id="social-name" placeholder='Nome Social'/>
-                    </div>
-                    <div className='birthday'>
-                        <Input type='date' name='birthday' id='birthday' placeholder='Data de nascimento'/>
-                        <p className='small'>Digite a data de nascimento</p>
-                    </div>
-                    <div className='cpf'>
-                        <Input type="number" name="cpf" id="cpf" placeholder='CPF'/>
-                    </div>
-                    <p className='profile-photo2'>Foto de Perfil</p>
-                    <div className='choose-a-image'>
-                        <label>
-                            Escolha uma Imagem
-                                <span className='photo'>
-                                    <input type="file" id='photo-input'/>
-                                </span>
-                        </label>
-                    </div>
-                    <button type='button' className='save-button'> 
-                        Salvar
-                    </button>
-                </form>
-            </nav>
-
-            <nav className='desktop3'>
+            <nav className='tablet-desktops'>
                 <header>
                  <Image className='search' src="/images/search.png" width={100} height={104}  alt="search"/>
                  <div className='box-1'>
