@@ -1164,7 +1164,7 @@ const PgProfile = function() {
         <ProfileComponents>
             <nav className='mobile'>
                 {/* Mobile content Form */}
-                <form className='profile-photo'>
+                <div className='profile-photo'>
                     {/* Profile Photo */}
                     <Link href={"/"}>
                         <Image className='photo' src="/images/profile-photo2.png" width={100} height={104}  alt="profile-photo"/>
@@ -1190,7 +1190,7 @@ const PgProfile = function() {
                         <p id='exit-txt'>Sair</p>
                     </button>
                 </Link>
-                </form>
+                </div>
             </nav>
 
             <nav className='tablet'>
@@ -1222,7 +1222,7 @@ const PgProfile = function() {
                     </Link>
                 </div>
                 {/* Form content Desktops and Tablets */}
-                <form>
+                <div>
                     {/* User data */}
                     <p className='name'><span>Nome:</span> Seu Nome</p>
                     <p className='email'><span>E-mail:</span> seuemail@gmail.com</p>
@@ -1242,7 +1242,7 @@ const PgProfile = function() {
                 <button type='button' className='deleteAccount'>
                     Excluir Conta
                 </button>
-                </form>
+                </div>
             </nav>
 
             <nav className='desktop1'>
@@ -1274,7 +1274,7 @@ const PgProfile = function() {
                     </Link>
                 </div>
                 {/* Form content Desktops and Tablets */}
-                <form>
+                <div>
                     {/* User data */}
                     <p className='name'><span>Nome:</span> Seu Nome</p>
                     <p className='email'><span>E-mail:</span> seuemail@gmail.com</p>
@@ -1294,7 +1294,7 @@ const PgProfile = function() {
                 <button type='button' className='deleteAccount'>
                     Excluir Conta
                 </button>
-                </form>
+                </div>
             </nav>
 
             <nav className='desktop2'>
@@ -1326,7 +1326,7 @@ const PgProfile = function() {
                     </Link>
                 </div>
                 {/* Form content Desktops and Tablets */}
-                <form>
+                <div>
                     {/* User data */}
                     <p className='name'><span>Nome:</span> Seu Nome</p>
                     <p className='email'><span>E-mail:</span> seuemail@gmail.com</p>
@@ -1346,7 +1346,7 @@ const PgProfile = function() {
                 <button type='button' className='deleteAccount'>
                     Excluir Conta
                 </button>
-                </form>
+                </div>
             </nav>
 
             <nav className='desktop3'>
@@ -1378,7 +1378,7 @@ const PgProfile = function() {
                     </Link>
                 </div>
                 {/* Form content Desktops and Tablets */}
-                <form>
+                <div>
                     {/* User data */}
                     <p className='name'><span>Nome:</span> Seu Nome</p>
                     <p className='email'><span>E-mail:</span> seuemail@gmail.com</p>
@@ -1387,18 +1387,18 @@ const PgProfile = function() {
                     <p className='country'><span>País:</span> Brasil</p>
                     {/* Profile Photo */}
                     <label>
-                    <span className='photo'>
-                        <Image className='photo' src="/images/profile-photo2.png" width={100} height={104} alt="profile-photo"/>
-                        <input type="file" id='photo-input'/>
-                    </span>
-                </label>
-                <button type='button' className='changePassword'>
-                    Alterar Senha
-                </button>
-                <button type='button' className='deleteAccount'>
-                    Excluir Conta
-                </button>
-                </form>
+                        <span className='photo'>
+                            <Image className='photo' src="/images/profile-photo2.png" width={100} height={104} alt="profile-photo"/>
+                            <input type="file" id='photo-input'/>
+                        </span>
+                    </label>
+                    <button type='button' className='changePassword'>
+                        Alterar Senha
+                    </button>
+                    <button type='button' className='deleteAccount'>
+                        Excluir Conta
+                    </button>
+                </div>
             </nav>
         </ProfileComponents>
     )

@@ -48,11 +48,12 @@ const RecoveryEmailComponent = styled.section`
                 }
             }
         }
-        background-image: url("/images/tablet-recuperar-senha.svg");
+        
     }
 
     //Desktop
-
+    @media(min-width: 992px){
+    }
     //Large Screen
 `
 
