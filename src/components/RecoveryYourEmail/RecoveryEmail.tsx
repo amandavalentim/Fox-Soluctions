@@ -48,13 +48,27 @@ const RecoveryEmailComponent = styled.section`
                 }
             }
         }
-        
+        background-image: url("/images/tablet-recuperar-senha.svg");
+        background-repeat: no-repeat;
     }
 
-    //Desktop
-    @media(min-width: 992px){
+    //Small Screens
+
+    @media(min-width: 992px) {
+        background-image: url("/images/992px-recuperar-senha.svg");
+        height: 90vh;
     }
-    //Large Screen
+
+    //Medium Screen 
+    @media(min-width: 1200px) {
+        background-image: url("/images/1200px-recuperar-senha.svg");
+    }
+
+    //Large Screen 
+    @media(min-width: 1600px) {
+        background-image: url("/images/1600px-recuperar-senha.svg");
+        height: 80vh;
+    }
 `
 
 const RecoveryEmail = function (){
