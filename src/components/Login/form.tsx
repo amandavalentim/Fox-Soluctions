@@ -55,7 +55,7 @@ const FormComponent = styled.section `
     }
 
     #forgot-email {
-        margin-left: 40%;
+        margin-left: 25%;
         margin-top: -5%;
         color: #C7C7C7;
         font-size: 1em;
@@ -63,7 +63,7 @@ const FormComponent = styled.section `
     }
 
     #forgot-email:active {
-        margin-left: 40%;
+        margin-left: 25%;
         margin-top: -5%;
         font-size: 1em;
         color: #F47216;
@@ -80,7 +80,7 @@ const FormComponent = styled.section `
     }
 
     #forgot-password {
-        margin-left: 40%;
+        margin-left: 25%;
         margin-top: -5%;
         font-size: 1em;
         font-family: 'Poppins-Regular';
@@ -88,7 +88,7 @@ const FormComponent = styled.section `
     }
 
     #forgot-password:active {
-        margin-left: 40%;
+        margin-left: 25%;
         margin-top: -5%;
         font-size: 1em;
         font-family: 'Poppins-Regular';
@@ -134,7 +134,7 @@ const FormComponent = styled.section `
 
     .page2 {
         margin-top: 10%;
-        margin-left: 15%;
+        margin-left: 10%;
         width: 280px;
     }
 
