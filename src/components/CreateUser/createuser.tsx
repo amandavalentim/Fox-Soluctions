@@ -300,11 +300,49 @@ const CreateUserComponent = styled.section `
         }
 
         #name::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-        font-size: 1.3em;
+            font-size: 1.3em;
+        }
 
-        
-    }
+        .gender-txt {
+            font-size: 1.5em;
+            margin-top: 1%;
+            margin-left: 10%;
+        }
 
+        span {
+            color: #F47216;
+            margin-left: -50%;
+        }
+
+        .man {
+            width: 30px;
+            margin-left: 10%;
+            margin-top: -3%;
+        }
+
+        #man {
+            width: 10px;
+        }
+
+        .man-op {
+            margin-left: 355%;
+            margin-top: -166.5%;
+        }
+
+        .woman {
+            width: 30px;
+            margin-left: 29%;
+            margin-top: -7%;
+        }
+
+        #woman {
+            width: 10px;
+        }
+
+        .woman-op {
+            margin-left: 355%;
+            margin-top: -166.5%;
+        }
     }
 `;
 
@@ -320,11 +358,11 @@ const CreateUserPg = function() {
                     <p className='gender-txt'>Gênero</p>
                     <div className='gender'>
                         <div  className='man'>
-                            <Input type='radio' name='gender' id='masculino' defaultValue='M'/>
+                            <Input type='radio' name='gender' id='man' defaultValue='M'/>
                             <p className='man-op'>Masculino</p>
                         </div>
                         <div  className='woman'>
-                            <Input type='radio' name='gender' id='feminino' defaultValue='F'/>
+                            <Input type='radio' name='gender' id='woman' defaultValue='F'/>
                             <p className='woman-op'>Feminino</p>
                         </div>
                         <div  className='transvestite'>
@@ -396,9 +434,19 @@ const CreateUserPg = function() {
                 <form>
                     <h1>Criar Usuário</h1>
                     <div className='name'>
-                        <Input type="string" name="name" id="name" placeholder='Nome Completo'/>
+                        <Input type="string" name="name" id="name" placeholder='Nome Completo'/><span>*</span>
                     </div>
-                    <h2>Gênero</h2>
+                    <h2 className='gender-txt'>Gênero</h2>
+                    <div className='gender'>
+                        <div  className='man'>
+                            <Input type='radio' name='gender' id='man' defaultValue='M'/>
+                            <p className='man-op'>Masculino</p>
+                        </div>
+                        <div  className='woman'>
+                            <Input type='radio' name='gender' id='woman' defaultValue='F'/>
+                            <p className='woman-op'>Feminino</p>
+                        </div>
+                    </div>
                 </form>
             </nav>
         </CreateUserComponent>
