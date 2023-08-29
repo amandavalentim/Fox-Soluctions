@@ -863,6 +863,353 @@ const CreateUserComponent = styled.section `
             margin-left: 38%;
         }
     }
+
+    // Medium Screens
+    @media(min-width: 1200px) {
+
+        height: 280vh;
+
+        .mobile {
+            display: none;
+        }
+
+        .tablet-desktops {
+            display: block;
+            justify-content: space-between;
+        }
+
+        header {
+            height: 270px;
+        }
+
+        .search {
+            width: 80px;
+            height: 80px;
+            margin-left: 7%;
+        }
+
+        .box-1 {
+            width: 290px;
+            height: 200px;
+            margin-top: -10.5%;
+            margin-left: 25%;
+        }
+
+        .amount-documents {
+            font-size: 6.2em;
+        }
+
+        .documents {
+            margin-top: -10%;
+            font-size: 1.5em;
+        }
+
+        .box-2 {
+            width: 290px;
+            height: 200px;
+            margin-top: -14.5%;
+            margin-left: 52%;
+        }
+
+        .amount-users {
+            font-size: 6.2em;
+        }
+
+        .users {
+            margin-top: -10%;
+            font-size: 1.5em;
+        }
+
+        .profile-photo {
+            width: 190px;
+            height: 190px;
+            margin-left: 81%;
+        }
+
+        #your-name {
+            font-size: 1.7em;
+            margin-top: -1%;
+            margin-left: 82.2%;
+        }
+
+        form {
+            margin-top: 5%;
+            width: 1110px;
+            height: 1400px;
+        }
+
+        h1 {
+            font-size: 4em;
+            margin-left: 28.5%;
+        }
+
+        .name {
+            margin-top: 3%;
+            margin-left: -3%;
+            font-size: 2.2em;
+        }
+
+        #name {
+            width: 930px;
+            height: 45px;
+        }
+
+        #name::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+            font-size: 2.2em;
+        }
+
+        .gender-txt {
+            font-size: 2.2em;
+        }
+
+        .man {
+            width: 30px;
+            margin-left: 10.2%;
+            margin-top: -1.5%;
+        }
+
+        #man {
+            width: 30px;
+        }
+
+        .man-op {
+            margin-left: 555%;
+            margin-top: -254%;
+            font-size: 1.6em;
+        }
+
+        .woman {
+            width: 30px;
+            margin-left: 27.2%;
+            margin-top: -4.7%;
+        }
+
+        #woman {
+            width: 30px;
+        }
+
+        .woman-op {
+            margin-left: 555%;
+            margin-top: -254%;
+            font-size: 1.6em;
+        }
+
+        .transvestite {
+            width: 30px;
+            margin-left: 43.2%;
+            margin-top: -4.7%;
+        }
+
+        #transvestite {
+            width: 30px;
+        }
+
+        .t1-op {
+            margin-left: 555%;
+            margin-top: -254%;
+            font-size: 1.6em;
+        }
+
+        .no-binary {
+            width: 30px;
+            margin-left: 10.2%;
+            margin-top: 0%;
+        }
+
+        #no-binary {
+            width: 30px;
+        }
+
+        .nb-op {
+            margin-left: 555%;
+            margin-top: -254%;
+            font-size: 1.6em;
+            width: 168px;
+        }
+
+        .trans {
+            width: 30px;
+            margin-left: 27.2%;
+            margin-top: -4.7%;
+        }
+
+        #trans {
+            width: 30px;
+        }
+
+        .t2-op {
+            margin-left: 555%;
+            margin-top: -254%;
+            font-size: 1.6em;
+        }
+
+        .another {
+            width: 30px;
+            margin-left: 43.2%;
+            margin-top: -4.7%;
+        }
+
+        #another {
+            width: 30px;
+        }
+
+        .a-op {
+            margin-left: 555%;
+            margin-top: -254%;
+            font-size: 1.6em;
+        }
+
+        .none {
+            width: 30px;
+            margin-left: 10.2%;
+            margin-top: 0%;
+        }
+
+        #none {
+            width: 30px;
+        }
+
+        .n-op {
+            margin-left: 555%;
+            margin-top: -254%;
+            font-size: 1.6em;
+            width: 234px;
+        }
+
+        .social-name {
+            margin-top: 3%;
+            margin-left: -3%;
+            font-size: 2.2em;
+        }
+
+        #social-name {
+            width: 930px;
+            height: 45px;
+        }
+
+        #social-name::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+            font-size: 2.2em;
+        }
+
+        .date {
+            margin-top: -3%;
+            margin-left: -3%;
+            font-size: 2.2em;
+        }
+
+        #birthday {
+            width: 930px;
+            height: 45px;
+        }
+
+        #birthday::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+            font-size: 2.2em;
+        }
+
+        .small {
+            position: absolute;
+            margin-left: 9%;
+            top: 1030px;
+        }
+
+        .cpf {
+            margin-top: 2%;
+            margin-left: -3%;
+            font-size: 2.2em;
+        }
+
+        #cpf {
+            width: 930px;
+            height: 45px;
+        }
+
+        #cpf::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+            font-size: 2.2em;
+        }
+
+        .email {
+            margin-top: -2%;
+            margin-left: -3%;
+            font-size: 2.2em;
+        }
+
+        #email {
+            width: 930px;
+            height: 45px;
+        }
+
+        #email::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+            font-size: 2.2em;
+        }
+
+        .country {
+            margin-top: -2%;
+            margin-left: -3%;
+            font-size: 2.2em;
+        }
+
+        #country {
+            width: 930px;
+            height: 45px;
+        }
+
+        #country::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+            font-size: 2.2em;
+        }
+
+        .profile-photo2 {
+            font-size: 2.2em;
+        }
+
+        .choose-a-image {
+            width: 230px;
+            height: 65px;
+            background-color: #F47216;
+        }
+
+        .choose-a-image:hover {
+            width: 230px;
+            height: 65px;
+            background-color: #ff7818;
+        }
+
+        .choose-a-image:active {
+            width: 230px;
+            height: 65px;
+            background-color: #d66515;
+        }
+
+        label {
+            position: absolute;
+            margin-left: 1.5%;
+            top: 1703px;
+            font-size: 1.5em;
+        }
+
+        .save {
+            margin-top: 3%;
+            width: 250px;
+            height: 70px;
+            font-size: 2.5em;
+            background-color: #93B413;
+        }
+
+        .save:hover {
+            margin-top: 5%;
+            width: 250px;
+            height: 70px;
+            font-size: 2.5em;
+            background-color: #9fc214;
+        }
+
+        .save:active {
+            margin-top: 5%;
+            width: 250px;
+            height: 70px;
+            font-size: 2.5em;
+            background-color: #86a40f;
+        }
+    }
 `;
 
 const CreateUserPg = function() {
@@ -973,7 +1320,7 @@ const CreateUserPg = function() {
                             <Input type='radio' name='gender' id='no-binary' defaultValue='NB'/>
                             <p className='nb-op'>Não Binário</p>
                         </div>
-                        <div  className='trans'>
+                        <div className='trans'>
                             <Input type='radio' name='gender' id='trans' defaultValue='T2'/>
                             <p className='t2-op'>Trans</p>
                         </div>
@@ -1004,16 +1351,16 @@ const CreateUserPg = function() {
                     </div>
                     <p className='profile-photo2'>Foto de Perfil</p>
                     <div className='choose-a-image'>
-                        <label>
-                            Adicionar +
-                                <span className='photo'>
-                                    <input type="file" id='photo-input'/>
-                                </span>
-                        </label>
+                    <label>
+                        Adicionar +
+                            <span className='photo'>
+                                <input type="file" id='photo-input'/>
+                            </span>
+                    </label>
                     </div>
                     <button type='button' className='save'>
                         Salvar
-                    </button>
+                    </button> 
                 </form>
             </nav>
         </CreateUserComponent>

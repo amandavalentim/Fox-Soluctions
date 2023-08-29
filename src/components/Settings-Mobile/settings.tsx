@@ -14,7 +14,7 @@ const SettingsComponents = styled.section `
     }
 
     span {
-        font-family: "Poppins-Regular";
+        font-family: "Poppins-Medium";
     }
 
     height: 114vh;
@@ -54,7 +54,7 @@ const SettingsComponents = styled.section `
     }
 
     * {
-        font-family: 'Poppins';
+        font-family: 'Poppins-Light';
     }
 
     .name {
