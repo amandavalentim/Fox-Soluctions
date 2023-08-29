@@ -141,3 +141,9 @@ a {
   src: local('Roboto'), 
   url(../fonts/Roboto/Roboto-Medium.ttf) format('truetype');
 }
+
+@font-face {
+  font-family: 'Roboto-Bold';
+  src: local('Roboto'), 
+  url(../fonts/Roboto/Roboto-Bold.ttf) format('truetype');
+}
