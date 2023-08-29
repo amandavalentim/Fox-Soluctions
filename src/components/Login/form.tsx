@@ -361,6 +361,13 @@ const FormComponent = styled.section `
             font-family: 'Poppins-Regular';
         }
 
+        #forgot-email:hover {
+            font-size: 1.1em;
+            margin-left: 40%;
+            font-family: 'Poppins-Regular';
+            color: #dbd7d7;
+        }
+
         #forgot-email:active {
             font-size: 1.1em;
             margin-left: 40%;
@@ -379,6 +386,13 @@ const FormComponent = styled.section `
             font-size: 1.1em;
             margin-left: 39%;
             font-family: 'Poppins-Regular';
+        }
+
+        #forgot-password:hover {
+            font-size: 1.1em;
+            margin-left: 39%;
+            font-family: 'Poppins-Regular';
+            color: #dbd7d7;
         }
 
         #forgot-password:active {
@@ -511,6 +525,12 @@ const FormComponent = styled.section `
             margin-left: 45%;
         }
 
+        #forgot-email:hover {
+            font-size: 1.1em;
+            margin-left: 45%;
+            color: #dbd7d7;
+        }
+
         #forgot-email:active {
             font-size: 1.1em;
             margin-left: 45%;
@@ -533,6 +553,12 @@ const FormComponent = styled.section `
         #forgot-password {
             font-size: 1.1em;
             margin-left: 45%;
+        }
+
+        #forgot-password:hover {
+            font-size: 1.1em;
+            margin-left: 45%;
+            color: #dbd7d7;
         }
 
         #forgot-password:active {
@@ -681,6 +707,13 @@ const FormComponent = styled.section `
             font-size: 1.3em;
         }
 
+        #forgot-email:hover{
+            margin-left: 42%;
+            margin-top: -8%;
+            font-size: 1.3em;
+            color: #dbd7d7;
+        }
+
         #forgot-email:active{
             margin-left: 42%;
             margin-top: -8%;
@@ -700,6 +733,13 @@ const FormComponent = styled.section `
             margin-left: 41%;
             margin-top: -8%;
             font-size: 1.3em;
+        }
+
+        #forgot-password:hover{
+            margin-left: 41%;
+            margin-top: -8%;
+            font-size: 1.3em;
+            color: #dbd7d7;
         }
 
         #forgot-password:active{
