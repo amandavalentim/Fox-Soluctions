@@ -772,7 +772,7 @@ const ProfileComponents = styled.section `
                 position: absolute;
                 background-color: #2F99BF;
                 width: 64vw;
-                height: 74%;
+                height: 76%;
                 margin-left: 35%;
             }
 
