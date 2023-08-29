@@ -9,6 +9,14 @@ const SettingsComponents = styled.section `
 
     // Mobile
 
+    * {
+        color: white;
+    }
+
+    span {
+        font-family: "Poppins-Regular";
+    }
+
     height: 114vh;
 
     background-color: #2F99BF;
