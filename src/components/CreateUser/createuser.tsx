@@ -38,6 +38,16 @@ const CreateUserComponent = styled.section `
         margin-left: 9%;
     }
 
+    .span1 {
+        color: #F47216;
+        margin-left: -32%;
+    }
+
+    .span2 {
+        color: #F47216;
+        margin-left: 0%;
+    }
+
     #name::-webkit-input-placeholder { /* Chrome/Opera/Safari */
         font-size: 1.1em;
     }
@@ -129,16 +139,36 @@ const CreateUserComponent = styled.section `
         margin-left: 7%;
     }
 
+    .span3 {
+        color: #F47216;
+        margin-left: 3%;
+    }
+
     #cpf::-webkit-input-placeholder {
         font-size: 1.1em;
+    }
+
+    .span4 {
+        color: #F47216;
+        margin-left: -70%;
     }
 
     #email::-webkit-input-placeholder {
         font-size: 1.1em;
     }
 
+    .span5 {
+        color: #F47216;
+        margin-left: -65%;
+    }
+
     #country::-webkit-input-placeholder {
         font-size: 1.1em;
+    }
+
+    .span6 {
+        color: #F47216;
+        margin-left: -68%;
     }
 
     .photo {
@@ -297,15 +327,21 @@ const CreateUserComponent = styled.section `
             font-size: 1.3em;
         }
 
+        .span1 {
+            color: #F47216;
+            margin-left: -50%;
+            font-size: 1.3em;
+        }
+
         .gender-txt {
             font-size: 1.5em;
             margin-top: 1%;
             margin-left: 10%;
         }
 
-        span {
+        .span2 {
             color: #F47216;
-            margin-left: -50%;
+            margin-left: 0%;
         }
 
         .man {
@@ -441,6 +477,14 @@ const CreateUserComponent = styled.section `
             font-size: 1.3em;
         }
 
+        .span3 {
+            color: #F47216;
+            margin-left: 39%;
+            position: absolute;
+            top: 865px;
+            font-size: 1.3em;
+        }
+
         .small {
             margin-left: 11%;
             position: absolute;
@@ -460,6 +504,14 @@ const CreateUserComponent = styled.section `
             font-size: 1.3em;
         }
 
+        .span4 {
+            color: #F47216;
+            margin-left: -59%;
+            position: absolute;
+            font-size: 1.3em;
+            margin-top: 2.5%;
+        }
+
         .email {
             margin-top: -4.5%;
             margin-left: -3%;
@@ -473,6 +525,14 @@ const CreateUserComponent = styled.section `
             font-size: 1.3em;
         }
 
+        .span5 {
+            color: #F47216;
+            margin-left: -57%;
+            position: absolute;
+            font-size: 1.3em;
+            margin-top: 2.5%;
+        }
+
         .country {
             margin-top: -4.5%;
             margin-left: -3%;
@@ -484,6 +544,14 @@ const CreateUserComponent = styled.section `
 
         #country::-webkit-input-placeholder { /* Chrome/Opera/Safari */
             font-size: 1.3em;
+        }
+
+        .span6 {
+            color: #F47216;
+            margin-left: -59%;
+            position: absolute;
+            font-size: 1.3em;
+            margin-top: 2.5%;
         }
 
         .profile-photo2 {
@@ -601,14 +669,26 @@ const CreateUserComponent = styled.section `
             font-size: 1.4em;
         }
 
-        span {
-            margin-left: -55%;
+        .span1 {
+            color: #F47216;
+            margin-left: -50%;
+            position: absolute;
+            font-size: 1.4em;
+            margin-top: 2.5%;
         }
 
         .gender-txt {
             font-size: 1.4em;
             margin-left: 8.5%;
             margin-top: -1%;
+        }
+
+        .span2 {
+            color: #F47216;
+            margin-left: 1%;
+            position: absolute;
+            font-size: 1.4em;
+            margin-top: -0.6%;
         }
 
         .man {
@@ -619,6 +699,7 @@ const CreateUserComponent = styled.section `
 
         #man {
             width: 25px;
+            cursor: pointer;
         }
 
         .man-op {
@@ -635,6 +716,7 @@ const CreateUserComponent = styled.section `
 
         #woman {
             width: 25px;
+            cursor: pointer;
         }
 
         .woman-op {
@@ -651,6 +733,7 @@ const CreateUserComponent = styled.section `
 
         #transvestite {
             width: 25px;
+            cursor: pointer;
         }
 
         .t1-op {
@@ -667,6 +750,7 @@ const CreateUserComponent = styled.section `
 
         #no-binary {
             width: 25px;
+            cursor: pointer;
         }
 
         .nb-op {
@@ -684,6 +768,7 @@ const CreateUserComponent = styled.section `
 
         #trans {
             width: 25px;
+            cursor: pointer;
         }
 
         .t2-op {
@@ -700,6 +785,7 @@ const CreateUserComponent = styled.section `
 
         #another {
             width: 25px;
+            cursor: pointer;
         }
 
         .a-op {
@@ -716,6 +802,7 @@ const CreateUserComponent = styled.section `
 
         #none {
             width: 25px;
+            cursor: pointer;
         }
 
         .n-op {
@@ -755,6 +842,14 @@ const CreateUserComponent = styled.section `
             font-size: 1.4em;
         }
 
+        .span3 {
+            color: #F47216;
+            margin-left: 35%;
+            position: absolute;
+            font-size: 1em;
+            margin-top: 16%;
+        }
+
         .small {
             font-size: 0.7em;
             margin-left: 9.5%;
@@ -776,6 +871,14 @@ const CreateUserComponent = styled.section `
             font-size: 1.4em;
         }
 
+        .span4 {
+            color: #F47216;
+            margin-left: -63%;
+            position: absolute;
+            font-size: 1.4em;
+            margin-top: 2%;
+        }
+
         .email {
             margin-top: -3%;
             margin-left: -3%;
@@ -791,6 +894,14 @@ const CreateUserComponent = styled.section `
             font-size: 1.4em;
         }
 
+        .span5 {
+            color: #F47216;
+            margin-left: -61%;
+            position: absolute;
+            font-size: 1.4em;
+            margin-top: 2%;
+        }
+
         .country {
             margin-top: -3%;
             margin-left: -3%;
@@ -804,6 +915,14 @@ const CreateUserComponent = styled.section `
 
         #country::-webkit-input-placeholder { /* Chrome/Opera/Safari */
             font-size: 1.4em;
+        }
+
+        .span6 {
+            color: #F47216;
+            margin-left: -63%;
+            position: absolute;
+            font-size: 1.4em;
+            margin-top: 2%;
         }
 
         .profile-photo2 {
@@ -958,6 +1077,14 @@ const CreateUserComponent = styled.section `
             font-size: 2.2em;
         }
 
+        .span1 {
+            color: #F47216;
+            margin-left: -47%;
+            position: absolute;
+            font-size: 1.4em;
+            margin-top: 0%;
+        }
+
         .gender-txt {
             font-size: 2.2em;
         }
@@ -970,6 +1097,7 @@ const CreateUserComponent = styled.section `
 
         #man {
             width: 30px;
+            cursor: pointer;
         }
 
         .man-op {
@@ -986,6 +1114,7 @@ const CreateUserComponent = styled.section `
 
         #woman {
             width: 30px;
+            cursor: pointer;
         }
 
         .woman-op {
@@ -1002,6 +1131,7 @@ const CreateUserComponent = styled.section `
 
         #transvestite {
             width: 30px;
+            cursor: pointer;
         }
 
         .t1-op {
@@ -1018,6 +1148,7 @@ const CreateUserComponent = styled.section `
 
         #no-binary {
             width: 30px;
+            cursor: pointer;
         }
 
         .nb-op {
@@ -1035,6 +1166,7 @@ const CreateUserComponent = styled.section `
 
         #trans {
             width: 30px;
+            cursor: pointer;
         }
 
         .t2-op {
@@ -1051,6 +1183,7 @@ const CreateUserComponent = styled.section `
 
         #another {
             width: 30px;
+            cursor: pointer;
         }
 
         .a-op {
@@ -1067,6 +1200,7 @@ const CreateUserComponent = styled.section `
 
         #none {
             width: 30px;
+            cursor: pointer;
         }
 
         .n-op {
@@ -1106,6 +1240,13 @@ const CreateUserComponent = styled.section `
             font-size: 2.2em;
         }
 
+        .span3 {
+            color: #F47216;
+            margin-left: 39%;
+            position: absolute;
+            margin-top: 27%;
+        }
+
         .small {
             position: absolute;
             margin-left: 9%;
@@ -1127,6 +1268,14 @@ const CreateUserComponent = styled.section `
             font-size: 2.2em;
         }
 
+        .span4 {
+            color: #F47216;
+            margin-left: -62%;
+            position: absolute;
+            font-size: 1.4em;
+            margin-top: 0.2%;
+        }
+
         .email {
             margin-top: -2%;
             margin-left: -3%;
@@ -1142,6 +1291,14 @@ const CreateUserComponent = styled.section `
             font-size: 2.2em;
         }
 
+        .span5 {
+            color: #F47216;
+            margin-left: -60.5%;
+            position: absolute;
+            font-size: 1.4em;
+            margin-top: 0.2%;
+        }
+
         .country {
             margin-top: -2%;
             margin-left: -3%;
@@ -1155,6 +1312,14 @@ const CreateUserComponent = styled.section `
 
         #country::-webkit-input-placeholder { /* Chrome/Opera/Safari */
             font-size: 2.2em;
+        }
+
+        .span6 {
+            color: #F47216;
+            margin-left: -62.5%;
+            position: absolute;
+            font-size: 1.4em;
+            margin-top: 0.2%;
         }
 
         .profile-photo2 {
@@ -1181,8 +1346,8 @@ const CreateUserComponent = styled.section `
 
         label {
             position: absolute;
-            margin-left: 1.5%;
-            top: 1663px;
+            margin-left: 2.1%;
+            top: 1653px;
             font-size: 1.5em;
         }
 
@@ -1210,6 +1375,338 @@ const CreateUserComponent = styled.section `
             background-color: #86a40f;
         }
     }
+
+    @media(min-width: 1600px) {
+
+        height: 257vh;
+
+        .mobile {
+            display: none;
+        }
+
+        .tablet-desktops {
+            display: block;
+            justify-content: space-between;
+        }
+
+        .search {
+            margin-top: 5.5%;
+        }
+
+        .box-1 {
+            margin-top: -8.6%;
+        }
+
+        .box-2 {
+            margin-top: -12.8%;
+        }
+
+        form {
+            width: 1290px;
+            height: 1550px;
+        }
+
+        h1 {
+            margin-left: 32%;
+        }
+
+        .name {
+            margin-top: 3%;
+            margin-left: -3%;
+            font-size: 2.3em;
+        }
+
+        #name {
+            width: 1045px;
+            height: 45px;
+        }
+
+        #name::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+            font-size: 2.3em;
+        }
+
+        .span1 {
+            color: #F47216;
+            margin-left: -46.5%;
+            position: absolute;
+            font-size: 1.4em;
+            margin-top: 1.2%;
+        }
+
+        .gender-txt {
+            font-size: 2.3em;
+            margin-left: 9.3%;
+            margin-top: -2.5%;
+        }
+
+        .man {
+            margin-top: -2.5%;
+        }
+
+        #man {
+            width: 30px;
+            cursor: pointer;
+        }
+
+        .man-op {
+            margin-top: -360%;
+            margin-left: 655%;
+        }
+
+        .woman {
+            margin-top: -5.3%;
+            margin-left: 25.2%;
+        }
+
+        #woman {
+            width: 30px;
+            cursor: pointer;
+        }
+
+        .woman-op {
+            margin-top: -360%;
+            margin-left: 655%;
+        }
+
+        .transvestite {
+            margin-top: -5.2%;
+            margin-left: 39.2%;
+        }
+
+        #transvestite {
+            width: 30px;
+            cursor: pointer;
+        }
+
+        .t1-op {
+            margin-top: -360%;
+            margin-left: 655%;
+        }
+
+        .no-binary {
+            margin-top: -1%;
+        }
+
+        #no-binary {
+            width: 30px;
+            cursor: pointer;
+        }
+
+        .nb-op {
+            margin-top: -360%;
+            margin-left: 655%;
+        }
+
+        .trans {
+            margin-top: -5.3%;
+            margin-left: 25.2%;
+        }
+
+        #trans {
+            width: 30px;
+            cursor: pointer;
+        }
+
+        .t2-op {
+            margin-top: -360%;
+            margin-left: 655%;
+        }
+
+        .another {
+            margin-top: -5.2%;
+            margin-left: 39.2%;
+        }
+
+        #another {
+            width: 30px;
+            cursor: pointer;
+        }
+
+        .a-op {
+            margin-top: -360%;
+            margin-left: 655%;
+        }
+
+        .none {
+            margin-top: -1%;
+        }
+
+        #none {
+            width: 30px;
+            cursor: pointer;
+        }
+
+        .n-op {
+            margin-top: -360%;
+            margin-left: 655%;
+        }
+
+        .social-name {
+            margin-top: 0%;
+            margin-left: -3%;
+            font-size: 2.3em;
+        }
+
+        #social-name {
+            width: 1045px;
+            height: 45px;
+        }
+
+        #social-name::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+            font-size: 2.3em;
+        }
+
+        .date {
+            margin-top: -5%;
+            margin-left: -3%;
+            font-size: 2.3em;
+        }
+
+        #birthday {
+            width: 1045px;
+            height: 45px;
+        }
+
+        #birthday::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+            font-size: 2.3em;
+        }
+
+        .small {
+            position: absolute;
+            top: 1070px;
+            font-size: 0.6em;
+            margin-left: 10%;
+        }
+
+        .span3 {
+            color: #F47216;
+            margin-left: 32.5%;
+            position: absolute;
+            font-size: 0.8em;
+            margin-top: 28.5%;
+        }
+
+        .cpf {
+            margin-top: -2%;
+            margin-left: -3%;
+            font-size: 2.3em;
+        }
+
+        #cpf {
+            width: 1045px;
+            height: 45px;
+        }
+
+        #cpf::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+            font-size: 2.3em;
+        }
+
+        .span4 {
+            color: #F47216;
+            margin-left: -60.5%;
+            position: absolute;
+            font-size: 1.2em;
+            margin-top: 1.5%;
+        }
+
+        .email {
+            margin-top: -2%;
+            margin-left: -3%;
+            font-size: 2.3em;
+        }
+
+        #email {
+            width: 1045px;
+            height: 45px;
+        }
+
+        #email::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+            font-size: 2.3em;
+        }
+
+        .span5 {
+            color: #F47216;
+            margin-left: -59.3%;
+            position: absolute;
+            font-size: 1.2em;
+            margin-top: 1.3%;
+        }
+
+        .country {
+            margin-top: -2%;
+            margin-left: -3%;
+            font-size: 2.3em;
+        }
+
+        #country {
+            width: 1045px;
+            height: 45px;
+        }
+
+        #country::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+            font-size: 2.3em;
+        }
+
+        .span6 {
+            color: #F47216;
+            margin-left: -60.3%;
+            position: absolute;
+            font-size: 1.2em;
+            margin-top: 1.3%;
+        }
+
+        .profile-photo2 {
+            margin-top: -5%;
+            margin-left: 9.3%;
+        }
+
+        .choose-a-image {
+            margin-left: 9.3%;
+            background-color: #F47216;
+        }
+
+        .choose-a-image:hover {
+            margin-left: 9.3%;
+            background-color: #ff7818;
+        }
+
+        .choose-a-image:active {
+            margin-left: 9.3%;
+            background-color: #d66515;
+        }
+
+        label {
+            position: absolute;
+            top: 1830px;
+            margin-left: 1.4%;
+            cursor: pointer;
+        }
+
+        .save {
+            width: 280px;
+            height: 80px;
+            font-size: 3em;
+            background-color: #93B413;
+            margin-left: 41%;
+            cursor: pointer;
+        }
+
+        .save:hover {
+            width: 280px;
+            height: 80px;
+            font-size: 3em;
+            background-color: #9fc214;
+            margin-left: 41%;
+        }
+
+        .save:active {
+            width: 280px;
+            height: 80px;
+            font-size: 3em;
+            background-color: #86a40f;
+            margin-left: 41%;
+        }
+    }
 `;
 
 const CreateUserPg = function() {
@@ -1219,9 +1716,9 @@ const CreateUserPg = function() {
                 <h1>Criar Usuário</h1>
                 <form>
                     <div className='name'>
-                        <Input type="string" name="name" id="name" placeholder='Nome Completo'/>
+                        <Input type="string" name="name" id="name" placeholder='Nome Completo'/><span className='span1'>*</span>
                     </div>
-                    <p className='gender-txt'>Gênero</p>
+                    <p className='gender-txt'>Gênero <span className='span2'>*</span></p>
                     <div className='gender'>
                         <div  className='man'>
                             <Input type='radio' name='gender' id='man' defaultValue='M'/>
@@ -1257,16 +1754,16 @@ const CreateUserPg = function() {
                     </div>
                     <div className='date'>
                         <Input type='date' name='birthday' id='birthday' placeholder='Data de nascimento'/>
-                        <small>Digite a data de aniversário</small>
+                        <small>Digite a data de aniversário</small><span className='span3'>*</span>
                     </div>
                     <div className='cpf'>
-                        <Input type="number" name="cpf" id="cpf" placeholder='CPF'/>
+                        <Input type="number" name="cpf" id="cpf" placeholder='CPF'/><span className='span4'>*</span>
                     </div>
                     <div className='email'>
-                        <Input type="email" name="email" id="email" placeholder='Email'/>
+                        <Input type="email" name="email" id="email" placeholder='Email'/><span className='span5'>*</span>
                     </div>
                     <div className='country'>
-                        <Input type="string" name="country" id="country" placeholder='País'/>
+                        <Input type="string" name="country" id="country" placeholder='País'/><span className='span6'>*</span>
                     </div>
                     <p className='profile-photo'>Foto de Perfil</p>
                     <div className='choose-a-image'>
@@ -1300,9 +1797,9 @@ const CreateUserPg = function() {
                 <form>
                     <h1>Criar Usuário</h1>
                     <div className='name'>
-                        <Input type="string" name="name" id="name" placeholder='Nome Completo'/><span>*</span>
+                        <Input type="string" name="name" id="name" placeholder='Nome Completo'/><span className='span1'>*</span>
                     </div>
-                    <h2 className='gender-txt'>Gênero</h2>
+                    <h2 className='gender-txt'>Gênero <span className='span2'>*</span></h2>
                     <div className='gender'>
                         <div  className='man'>
                             <Input type='radio' name='gender' id='man' defaultValue='M'/>
@@ -1338,16 +1835,16 @@ const CreateUserPg = function() {
                     </div>
                     <div className='date'>
                         <Input type='date' name='birthday' id='birthday' placeholder='Data de nascimento'/><br/>
-                        <small className='small'>Digite a data de aniversário</small>
+                        <small className='small'>Digite a data de aniversário</small><span className='span3'>*</span>
                     </div>
                     <div className='cpf'>
-                        <Input type="number" name="cpf" id="cpf" placeholder='CPF'/>
+                        <Input type="number" name="cpf" id="cpf" placeholder='CPF'/><span className='span4'>*</span>
                     </div>
                     <div className='email'>
-                        <Input type="email" name="email" id="email" placeholder='Email'/>
+                        <Input type="email" name="email" id="email" placeholder='Email'/><span className='span5'>*</span>
                     </div>
                     <div className='country'>
-                        <Input type="string" name="country" id="country" placeholder='País'/>
+                        <Input type="string" name="country" id="country" placeholder='País'/><span className='span6'>*</span>
                     </div>
                     <p className='profile-photo2'>Foto de Perfil</p>
                     <div className='choose-a-image'>
