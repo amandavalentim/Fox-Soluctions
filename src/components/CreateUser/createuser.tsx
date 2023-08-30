@@ -1182,7 +1182,7 @@ const CreateUserComponent = styled.section `
         label {
             position: absolute;
             margin-left: 1.5%;
-            top: 1703px;
+            top: 1663px;
             font-size: 1.5em;
         }
 
@@ -1195,7 +1195,7 @@ const CreateUserComponent = styled.section `
         }
 
         .save:hover {
-            margin-top: 5%;
+            margin-top: 3%;
             width: 250px;
             height: 70px;
             font-size: 2.5em;
@@ -1203,7 +1203,7 @@ const CreateUserComponent = styled.section `
         }
 
         .save:active {
-            margin-top: 5%;
+            margin-top: 3%;
             width: 250px;
             height: 70px;
             font-size: 2.5em;
