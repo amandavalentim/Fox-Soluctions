@@ -1181,8 +1181,8 @@ const CreateUserComponent = styled.section `
 
         label {
             position: absolute;
-            margin-left: 1.5%;
-            top: 1663px;
+            margin-left: 2.1%;
+            top: 1653px;
             font-size: 1.5em;
         }
 
@@ -1208,6 +1208,18 @@ const CreateUserComponent = styled.section `
             height: 70px;
             font-size: 2.5em;
             background-color: #86a40f;
+        }
+    }
+
+    @media(min-width: 1600px) {
+
+        .mobile {
+            display: none;
+        }
+
+        .tablet-desktops {
+            display: block;
+            justify-content: space-between;
         }
     }
 `;
