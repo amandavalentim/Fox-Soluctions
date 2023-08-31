@@ -17,15 +17,7 @@ height: 100vh;
         justify-content: space-between;
     }
 
-    .tablet {
-        display: none;
-    }
-
-    .desktop-1 {
-        display: none;
-    }
-
-    .desktop-2 {
+    .tablet-desktops {
         display: none;
     }
 
@@ -99,59 +91,54 @@ height: 100vh;
 
     // Tablet
     @media(min-width: 768px) {
+
+        height: 93vh;
+
         .mobile{
             display: none;
         }
 
-        .tablet {
-            display: flex;
+        .tablet-desktops {
+            display: block;
             justify-content: space-between;
-        }
-
-        .desktop-1 {
-            display: none;
-        }
-
-        .desktop-2 {
-            display: none;
-        }
-
-        .desktop-3{
-            display: none;
         }
 
         background-image: url("/images/tablet.svg");
 
         h1 {
-            font-size: 1.7em;
-            left: 265px;
+            font-size: 1.5em;
+            margin-left: 29.5%;
+            margin-top: 3%;
         }
 
         p {
-            font-size: 1.5em;
-            left: 95px;
-            top: 330px;
+            font-size: 1.3em;
+            margin-left: 12%;
+            margin-top: 3%;
         }
 
         .start {
             left: 280px;
+            margin-top: -5%;
             height: 90px;
         }
 
         .start:hover {
             left: 280px;
             height: 90px;
+            margin-top: -5%;
             background-color: #9fc214;
         }
 
         .start:active {
             left: 280px;
             height: 90px;
+            margin-top: -5%;
             background-color: #86a40f;
         }
 
         .fox {
-            top: 598px;
+            margin-top: -7.2%;
             left: 380px;
             width: 135px;
         }
@@ -159,39 +146,29 @@ height: 100vh;
 
     // Small Screens
     @media(min-width: 992px) {
+
+        height: 102.6vh;
+
         .mobile{
             display: none;
         }
 
-        .tablet {
-            display: none;
-        }
-
-        .desktop-1 {
-            display: flex;
+        .tablet-desktops {
+            display: block;
             justify-content: space-between;
-        }
-
-        .desktop-2 {
-            display: none;
-        }
-
-        .desktop-3{
-            display: none;
         }
 
         background-image: url("/images/background3.svg");
 
         h1 {
             font-size: 1.9em;
-            top: 230px;
-            left: 305px;
+            margin-left: 31.5%;
         }
 
         p {
             font-size: 1.5em;
-            top: 370px;
-            left: 190px;
+            margin-left: 17.3%;
+            margin-top: 5%;
         }
 
         .start {
@@ -232,86 +209,68 @@ height: 100vh;
 
     // Medium Screens
     @media(min-width: 1200px) {
+
+        height: 111vh;
+
         .mobile{
             display: none;
         }
 
-        .tablet {
-            display: none;
-        }
-
-        .desktop-1 {
-            display: none;
-        }
-
-        .desktop-2 {
-            display: flex;
+        .tablet-desktops {
+            display: block;
             justify-content: space-between;
-        }
-
-        .desktop-3{
-            display: none;
         }
 
         background-image: url("/images/background-2.svg");
 
         h1 {
             font-size: 2em;
-            left: 430px;
+            margin-left: 35.5%;
         }
 
         p {
             font-size: 1.8em;
-            left: 360px;
+            margin-left: 21.2%;
         }
 
         .start {
-            top: 580px;
-            left: 570px;
+            margin-top: -1.8%;
+            margin-left: 9%;
             cursor: pointer;
         }
 
         .start:hover {
-            top: 580px;
-            left: 570px;
+            margin-top: -1.8%;
+            margin-left: 9%;
             background-color: #9fc214;
             cursor: pointer;
         }
 
         .start:active {
-            top: 580px;
-            left: 570px;
+            margin-top: -1.8%;
+            margin-left: 9%;
             background-color: #86a40f;
             cursor: pointer;
         }
 
         .fox {
-            left: 690px;
+            margin-left: 9.5%;
+            margin-top: -2%;
             width: 150px;
-            top: 670px;
         }
     }
 
     // Large Screens
     @media(min-width: 1600px) {
+
+        height: 94vh;
+
         .mobile{
             display: none;
         }
 
-        .tablet {
-            display: none;
-        }
-
-        .desktop-1 {
-            display: none;
-        }
-
-        .desktop-2 {
-            display: none;
-        }
-
-        .desktop-3{
-            display: flex;
+        .tablet-desktops {
+            display: block;
             justify-content: space-between;
         }
 
@@ -319,20 +278,20 @@ height: 100vh;
 
         h1 {
             font-size: 2.3em;
-            left: 480px;
+            margin-left: 35.5%;
         }
 
         p {
             font-size: 2em;
-            left: 260px;
+            margin-left: 22.5%;
         }
 
         .start {
             width: 150px;
             height: 120px;
             font-size: 2.3em;
-            top: 650px;
-            left: 690px;
+            margin-left: 12%;
+            margin-top: 1%;
             cursor: pointer;
         }
 
@@ -340,8 +299,8 @@ height: 100vh;
             width: 150px;
             height: 120px;
             font-size: 2.3em;
-            top: 650px;
-            left: 690px;
+            margin-left: 12%;
+            margin-top: 1%;
             background-color: #9fc214;
             cursor: pointer;
         }
@@ -350,16 +309,16 @@ height: 100vh;
             width: 150px;
             height: 120px;
             font-size: 2.3em;
-            top: 650px;
-            left: 690px;
+            margin-left: 12%;
+            margin-top: 1%;
             background-color: #86a40f;
             cursor: pointer;
         }
 
         .fox {
             width: 180px;
-            top: 763px;
-            left: 810px;
+            margin-left: 13%;
+            margin-top: 3%;
         }
     }
 
@@ -383,7 +342,7 @@ const PgInitial = function() {
                     <img src="/images/Stella.png" alt="fox" className='fox'/>
             </nav>
 
-            <nav className='tablet'>
+            <nav className='tablet-desktops'>
                 {/* Content */}
                 <h1>Bem-Vinde a<br/> <span id='FX'>Fox Soluctions</span>!</h1>
                 <p>
@@ -395,48 +354,6 @@ const PgInitial = function() {
                                 </button>
                     </Link>
                     <img src="/images/Stella.png" alt="fox" className='fox'/>
-            </nav>
-
-            <nav className='desktop-1'>
-                {/* Content */}
-                <h1>Bem-Vinde a <span id='FX'>Fox Soluctions</span>!</h1>
-                <p>
-                    Aqui nós buscamos sempre dar a melhor<br/> experiência possível para quem utiliza nossa plataforma,<br/> onde você pode realizar o upload e visualizar<br/> seus documentos!
-                </p>
-                <Link href={'/LoginPage'}>
-                    <button type='button' className='start'>
-                        Start
-                    </button>
-                </Link>
-                <img src="/images/Stella.png" alt="fox" className='fox'/>
-            </nav>
-
-            <nav className='desktop-2'>
-                {/* Content */}
-                <h1>Bem-Vinde a <span id='FX'>Fox Soluctions</span>!</h1>
-                <p>
-                     Aqui nós buscamos sempre dar a melhor<br/> experiência possível para quem utiliza nossa<br/> plataforma, onde você pode realizar o upload<br/> e visualizar seus documentos!
-                </p>
-                <Link href={'/LoginPage'}>
-                    <button type='button' className='start'>
-                        Start
-                    </button>
-                </Link>
-                <img src="/images/Stella.png" alt="fox" className='fox'/>
-            </nav>
-
-            <nav className='desktop-3'>
-                {/* Content */}
-                <h1>Bem-Vinde a <span id='FX'>Fox Soluctions</span>!</h1>
-                <p>
-                     Aqui nós buscamos sempre dar a melhor experiência<br/> possível para quem utiliza nossa plataforma, onde você pode<br/> realizar o upload<br/> e visualizar seus documentos!
-                </p>
-                <Link href={'/LoginPage'}>
-                    <button type='button' className='start'>
-                        Start
-                    </button>
-                </Link>
-                <img src="/images/Stella.png" alt="fox" className='fox'/>
             </nav>
             
         </HomeComponent>
