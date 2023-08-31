@@ -22,21 +22,9 @@ const FormComponent2 = styled.section `
         justify-content: space-between;
     }
 
-    .tablet {
-        display: none;
-    }
-
-    .desktop1 {
+    .tablet-desktops {
             display: none;
-    }
-
-    .desktop2{
-            display: none;
-    }
-
-    .desktop3{
-            display: none;
-    }
+        }
 
     h1 {
         font-size: 1.3em;
@@ -210,17 +198,9 @@ const FormComponent2 = styled.section `
             display: none;
         }
     
-        .tablet {
+        .tablet-desktops {
             display: flex;
             justify-content: space-between;
-        }
-
-        .desktop1 {
-            display: none;
-        }
-
-        .desktop2{
-            display: none;
         }
 
         background-image: url("/images/tablet-create-user.svg");
@@ -361,9 +341,9 @@ const FormComponent2 = styled.section `
        }
 
        .page2 {
-        position: absolute;
-        top: 645px;
-        left: 65px;
+        margin-left: 10.5%;
+        margin-top: -36%;
+        font-size: 0.9em;
        }
 
        .criar {
@@ -396,21 +376,9 @@ const FormComponent2 = styled.section `
             display: none;
         }
     
-        .tablet {
-            display: none;
-        }
-
-        .desktop1 {
+        .tablet-desktops {
             display: flex;
             justify-content: space-between;
-        }
-
-        .desktop2{
-            display: none;
-        }
-
-        .desktop3{
-            display: none;
         }
 
         background-image: url("/images/992px-create-user.svg");
@@ -586,9 +554,9 @@ const FormComponent2 = styled.section `
        }
 
        .page2 {
-        position: absolute;
-        top: 705px;
-        left: 108px;
+        margin-top: -17%;
+        margin-left: 18%;
+        font-size: 1em;
        }
 
        .criar {
@@ -630,21 +598,9 @@ const FormComponent2 = styled.section `
             display: none;
         }
     
-        .tablet {
-            display: none;
-        }
-
-        .desktop1{
-            display: none;
-        }
-
-        .desktop2 {
+        .tablet-desktops {
             display: flex;
             justify-content: space-between;
-        }
-
-        .desktop3{
-            display: none;
         }
 
         background-image: url("/images/1200px-create-user.svg");
@@ -832,6 +788,7 @@ const FormComponent2 = styled.section `
             border: none;
             border-radius: 39px;
             padding: 8px;
+            margin-left: -0.5%;
         }
 
         .btn-google:hover {
@@ -842,6 +799,7 @@ const FormComponent2 = styled.section `
             border: none;
             border-radius: 39px;
             padding: 8px;
+            margin-left: -0.5%;
         }
 
         .btn-google:active {
@@ -852,6 +810,7 @@ const FormComponent2 = styled.section `
             border: none;
             border-radius: 39px;
             padding: 8px;
+            margin-left: -0.5%;
         }
 
         .faGoogle{
@@ -860,16 +819,15 @@ const FormComponent2 = styled.section `
         }
         
         .page2 {
-            font-size: 1.8em;
-            position: absolute;
-            top: 880px;
-            left: 123px;
+            font-size: 1.6em;
+            margin-top: 14%;
+            margin-left: 14%;
         }
 
         .criar {
             position: absolute;
-            top: 120px;
-            left: 140px;
+            top: 125px;
+            left: 155px;
             background-color: #93B413;
             width: 250px;
             height: 80px;
@@ -913,20 +871,8 @@ const FormComponent2 = styled.section `
         .mobile {
             display: none;
         }
-    
-        .tablet {
-            display: none;
-        }
 
-        .desktop1{
-            display: none;
-        }
-
-        .desktop2{
-            display: none;
-        }
-
-        .desktop3 {
+        .tablet-desktops {
             display: flex;
             justify-content: space-between;
         }
@@ -1069,40 +1015,42 @@ const FormComponent2 = styled.section `
         }
 
         .btn-google {
-            width: 650px;
+            width: 520px;
             height: 70px;
-            font-size: 2em;
+            font-size: 2.2em;
             background-color: #93B413;
             border: none;
             border-radius: 39px;
             padding: 8px;
+            margin-left: 12%;
         }
 
         .btn-google:hover {
-            width: 650px;
+            width: 520px;
             height: 70px;
-            font-size: 2em;
+            font-size: 2.2em;
             background-color: #9fc214;
             border: none;
             border-radius: 39px;
             padding: 8px;
+            margin-left: 12%;
         }
 
         .btn-google:active {
-            width: 650px;
+            width: 520px;
             height: 70px;
-            font-size: 2em;
+            font-size: 2.2em;
             background-color: #86a40f;
             border: none;
             border-radius: 39px;
             padding: 8px;
+            margin-left: 12%;
         }
 
         .page2 {
-            font-size: 2em;
-            position: absolute;
-            top: 1010px;
-            left: 160px;
+            font-size: 1.7em;
+            margin-top: 24%;
+            margin-left: 20%;
         }
 
         .criar {
@@ -1202,7 +1150,7 @@ const Form2 = function() {
                     </form>
             </nav>
 
-            <nav className='tablet'>
+            <nav className='tablet-desktops'>
                 <form>
                     {/* Create User form content */}
                     <h1>Criar Conta</h1>
@@ -1258,169 +1206,6 @@ const Form2 = function() {
                 </form>
                 {/* Stella our mascot */}
                     <img src="/images/Stella2.png" alt="fox" className='fox'/>
-            </nav>
-
-            <nav className='desktop1'>
-            <form>
-                {/* Create User form content */}
-                    <h1>Criar Conta</h1>
-                    <div className='name'>
-                        <Input type="string" name="name" id="name" placeholder='Nome Completo'/>
-                    </div>
-                    <div className='date'>
-                            <Input type='date' name='birthday' id='birthday' placeholder='Data de nascimento'/>
-                            <Small>Digite a Data de Nascimento</Small>
-                    </div>
-                    <div className='email'>
-                        <Input type="email" name="email" id="email" placeholder='Email'/>
-                    </div>
-                    <div className='phone'>
-                            <Input type="phone" name="phone" id="phone" placeholder='Celular'/>
-                        </div>
-                        <div className='cpf'>
-                            <Input type="number" name="cpf" id="cpf" placeholder='CPF'/>
-                        </div>
-                        <div className='password'>
-                            <Input type="password" name="password" id="password" placeholder='Senha'/>
-                        </div>
-                        <div className='confirm-password'>
-                            <Input type="password" name="confirm-password" id="confirm-password" placeholder='Confirme sua Senha'/>
-                        </div>
-                        {/* <label>
-                        <div className='adm'>
-                            <Input type='radio' name='op' id='adm-enterprise' defaultValue='ADM'/> 
-                            <p className='adm-txt'>Administrador</p>
-                            <Input type='string' name='enterprise-name' id='enterprise-name' placeholder='Nome da Empresa'/>
-                        </div>
-                        <div className='user'>
-                            <Input type='radio' name='op' id='user-hired' defaultValue='User'/> 
-                            <p className='user-txt'>User</p>
-                        </div>
-                        </label> */}
-                        <p>OU</p>
-                        <div className='google-enter'>
-                            <button className='btn-google' type='button'>
-                                <FaGoogle className='faGoogle'/> Entrar com Google
-                            </button>
-                        </div>
-                        <div className='page2'>
-                            Já tem uma conta? <Link href={'/LoginPage'}>
-                                <span>Clique Aqui!</span>
-                            </Link>
-                        </div>
-                         <div className='button-create'>
-                             <button className='criar' type='button'>
-                                Criar
-                            </button>
-                        </div>
-                </form>
-                {/* Stella our mascot */}
-                    <img src="/images/Stella2.png" alt="fox" className='fox'/>
-            </nav>
-
-            <nav className='desktop2'>
-                <form>
-                    {/* Create User form content */}
-                    <h1>Criar Conta</h1>
-                    <div className='name'>
-                        <Input type="string" name="name" id="name" placeholder='Nome Completo'/>
-                    </div>
-                    <div className='date'>
-                        <Input type='date' name='birthday' id='birthday' placeholder='Data de nascimento'/>
-                        <Small>Digite a Data de Nascimento</Small>
-                    </div>
-                    <div className='email'>
-                        <Input type="email" name="email" id="email" placeholder='Email'/>
-                    </div>
-                    <div className='phone'>
-                        <Input type="phone" name="phone" id="phone" placeholder='Celular'/>
-                    </div>
-                    <div className='cpf'>
-                        <Input type="number" name="cpf" id="cpf" placeholder='CPF'/>
-                    </div>
-                    <div className='password'>
-                        <Input type="password" name="password" id="password" placeholder='Senha'/>
-                    </div>
-                    <div className='confirm-password'>
-                        <Input type="password" name="confirm-password" id="confirm-password" placeholder='Confirme sua Senha'/>
-                    </div>
-                    {/* <label>
-                        <div className='adm'>
-                            <Input type='radio' name='op' id='adm-enterprise' defaultValue='ADM'/> 
-                            <p className='adm-txt'>Administrador</p>
-                            <Input type='string' name='enterprise-name' id='enterprise-name' placeholder='Nome da Empresa'/>
-                        </div>
-                        <div className='user'>
-                            <Input type='radio' name='op' id='user-hired' defaultValue='User'/> 
-                            <p className='user-txt'>User</p>
-                        </div>
-                        </label> */}
-                    <p>OU</p>
-                    <div className='google-enter'>
-                        <button className='btn-google' type='button'>
-                            <FaGoogle className='faGoogle'/> Entrar com Google
-                        </button>
-                    </div>
-                    <div className='page2'>
-                        Já tem uma conta? <Link href={'/LoginPage'}>
-                            <span>Clique Aqui!</span>
-                        </Link>
-                    </div>
-                    <div className='button-create'>
-                        <button className='criar' type='button'>
-                            Criar
-                        </button>
-                    </div>
-                </form>
-                {/* Stella our mascot */}
-                    <img src="/images/Stella2.png" alt="fox" className='fox'/>
-            </nav>
-
-            <nav className='desktop3'>
-                <form>
-                    {/* Create User form content */}
-                    <h1>Criar Conta</h1>
-                    <div className='name'>
-                        <Input type="string" name="name" id="name" placeholder='Nome Completo'/>
-                    </div>
-                    <div className='date'>
-                        <Input type='date' name='birthday' id='birthday' placeholder='Data de nascimento'/>
-                        <Small>Digite a Data de Nascimento</Small>
-                    </div>
-                    <div className='email'>
-                        <Input type="email" name="email" id="email" placeholder='Email'/>
-                    </div>
-                    <div className='phone'>
-                        <Input type="phone" name="phone" id="phone" placeholder='Celular'/>
-                    </div>
-                    <div className='cpf'>
-                        <Input type="number" name="cpf" id="cpf" placeholder='CPF'/>
-                    </div>
-                    <div className='password'>
-                        <Input type="password" name="password" id="password" placeholder='Senha'/>
-                    </div>
-                    <div className='confirm-password'>
-                            <Input type="password" name="confirm-password" id="confirm-password" placeholder='Confirme sua Senha'/>
-                        </div>
-                    <p>OU</p>
-                    <div className='google-enter'>
-                        <button className='btn-google' type='button'>
-                            <FaGoogle className='faGoogle'/> Entrar com Google
-                        </button>
-                    </div>
-                    <div className='page2'>
-                        Já tem uma conta? <Link href={'/LoginPage'}>
-                            <span>Clique Aqui!</span>
-                        </Link>
-                    </div>
-                        <div className='button-create'>
-                            <button className='criar' type='button'>
-                                Criar
-                            </button>
-                        </div>
-                </form>
-                {/* Stella our mascot */}
-                <img src="/images/Stella2.png" alt="fox" className='fox'/>
             </nav>
         </FormComponent2>
     )

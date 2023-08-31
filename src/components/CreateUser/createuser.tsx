@@ -244,27 +244,28 @@ const CreateUserComponent = styled.section `
 
         header {
             background-color: #2F99BF;
-            height: 200px;
+            height: 165px;
         }
 
         .search {
             width: 30px;
             height: 30px;
             margin-top: 9%;
-            margin-left: 8%;
+            margin-left: 10%;
         }
 
         .box-1 {
-            margin-top: -9.5%;
-            margin-left: 20%;
+            margin-top: -11%;
+            margin-left: 26%;
             text-align: center;
-            background-color: #0081E8;
-            width: 170px;
-            height: 130px;
+            background-color: #07B3FD;
+            width: 140px;
+            height: 120px;
+            border-radius: 4px;
         }
 
         .amount-documents {
-            font-size: 4em;
+            font-size: 3.2em;
         }
 
         .documents {
@@ -272,16 +273,17 @@ const CreateUserComponent = styled.section `
         }
 
         .box-2 {
-            margin-top: -17%;
-            margin-left: 50%;
+            margin-top: -15.5%;
+            margin-left: 52%;
             text-align: center;
             background-color: #F47216;
-            width: 170px;
-            height: 130px;
+            width: 140px;
+            height: 120px;
+            border-radius: 4px;
         }
 
         .amount-users {
-            font-size: 4em;
+            font-size: 3.2em;
         }
 
         .users {
@@ -291,9 +293,9 @@ const CreateUserComponent = styled.section `
         .profile-photo {
             position: absolute;
             top: 160px;
-            margin-left: 79%;
-            width: 110px;
-            height: 110px;
+            margin-left: 81%;
+            width: 85px;
+            height: 85px;
         }
 
         #your-name {
@@ -309,8 +311,8 @@ const CreateUserComponent = styled.section `
         }
     
         h1 {
-            font-size: 2em;
-            margin-left: 31.5%;
+            font-size: 1.8em;
+            margin-left: 33.5%;
             padding-top: 5%;
         }
 
@@ -334,9 +336,10 @@ const CreateUserComponent = styled.section `
         }
 
         .gender-txt {
-            font-size: 1.5em;
+            font-size: 1.3em;
             margin-top: 1%;
             margin-left: 10%;
+            font-family: 'Poppins-Medium';
         }
 
         .span2 {
@@ -481,14 +484,14 @@ const CreateUserComponent = styled.section `
             color: #F47216;
             margin-left: 39%;
             position: absolute;
-            top: 865px;
+            top: 821px;
             font-size: 1.3em;
         }
 
         .small {
             margin-left: 11%;
             position: absolute;
-            top: 870px;
+            top: 830px;
         }
 
         .cpf {
@@ -557,7 +560,6 @@ const CreateUserComponent = styled.section `
         .profile-photo2 {
             margin-top: -2%;
             margin-left: 10.5%;
-            font-weight: bold;
         }
 
         .choose-a-image {
@@ -585,9 +587,11 @@ const CreateUserComponent = styled.section `
 
         .save {
             margin-top: 3%;
-            margin-left: 36%;
-            width: 170px;
-            font-size: 1.8em;
+            margin-left: 40%;
+            width: 140px;
+            height: 40px;
+            border-radius: 15px;
+            font-size: 1.5em;
             background-color: #93B413;
         }
 
@@ -615,31 +619,32 @@ const CreateUserComponent = styled.section `
         }
 
         .search {
-            width: 60px;
-            height: 60px;
+            width: 40px;
+            height: 40px;
             margin-top: 6%;
-            margin-left: 10%;
+            margin-left: 8%;
         }
 
         .box-1 {
-            margin-left: 30%;
+            margin-left: 32%;
+            margin-top: -8.5%;
         }
 
         .box-2 {
-            margin-left: 55%;
-            margin-top: -12.6%;
+            margin-left: 52%;
+            margin-top: -11.6%;
         }
 
         .profile-photo {
-            width: 150px;
-            height: 150px;
-            margin-top: 2%;
+            width: 100px;
+            height: 100px;
+            margin-top: 3%;
         }
 
         #your-name {
             font-size: 1.2em;
-            margin-left: 81%;
-            margin-top: 0%;
+            margin-left: 80.5%;
+            margin-top: -1.5%;
         }
 
         form {
@@ -650,8 +655,8 @@ const CreateUserComponent = styled.section `
         }
 
         h1 {
-            font-size: 2.5em;
-            margin-left: 33.5%;
+            font-size: 2.2em;
+            margin-left: 34.5%;
         }
 
         .name {
@@ -959,11 +964,11 @@ const CreateUserComponent = styled.section `
         }
 
         .save {
-            width: 200px;
-            height: 60px;
-            font-size: 2em;
+            width: 150px;
+            height: 50px;
+            font-size: 1.6em;
             background-color: #93B413;
-            margin-left: 38%;
+            margin-left: 42%;
         }
 
         .save:hover {
@@ -998,7 +1003,7 @@ const CreateUserComponent = styled.section `
         }
 
         header {
-            height: 270px;
+            height: 230px;
         }
 
         .search {
@@ -1799,7 +1804,7 @@ const CreateUserPg = function() {
                     <div className='name'>
                         <Input type="string" name="name" id="name" placeholder='Nome Completo'/><span className='span1'>*</span>
                     </div>
-                    <h2 className='gender-txt'>Gênero <span className='span2'>*</span></h2>
+                    <p className='gender-txt'>Gênero <span className='span2'>*</span></p>
                     <div className='gender'>
                         <div  className='man'>
                             <Input type='radio' name='gender' id='man' defaultValue='M'/>

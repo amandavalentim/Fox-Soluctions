@@ -210,7 +210,7 @@ height: 100vh;
     // Medium Screens
     @media(min-width: 1200px) {
 
-        height: 111vh;
+        height: 96vh;
 
         .mobile{
             display: none;

@@ -48,6 +48,7 @@ const FormComponent = styled.section `
         color: #C7C7C7;
         font-size: 1em;
         font-family: 'Poppins-Medium';
+        width: 145px;
     }
 
     #forgot-email:active {
@@ -56,6 +57,7 @@ const FormComponent = styled.section `
         font-size: 1em;
         color: #F47216;
         font-family: 'Poppins-Medium';
+        width: 155px;
     }
 
     .senha {
@@ -73,6 +75,7 @@ const FormComponent = styled.section `
         font-size: 1em;
         font-family: 'Poppins-Regular';
         color: #C7C7C7;
+        width: 155px;
     }
 
     #forgot-password:active {
@@ -81,6 +84,7 @@ const FormComponent = styled.section `
         font-size: 1em;
         font-family: 'Poppins-Regular';
         color: #F47216;
+        width: 165px;
     }
 
     p {
@@ -195,6 +199,7 @@ const FormComponent = styled.section `
         color: #C7C7C7;
         font-size: 0.7em;
         font-family: 'Poppins-Regular';
+        width: 110px;
     }
 
     #forgot-email:active {
@@ -203,6 +208,7 @@ const FormComponent = styled.section `
         font-size: 0.7em;
         color: #F47216;
         font-family: 'Poppins-Regular';
+        width: 120px;
     }
 
        .senha {
@@ -216,6 +222,7 @@ const FormComponent = styled.section `
         font-size: 0.7em;
         font-family: 'Poppins-Regular';
         color: #C7C7C7;
+        width: 120px;
     }
 
     #forgot-password:active {
@@ -224,6 +231,7 @@ const FormComponent = styled.section `
         font-size: 0.7em;
         font-family: 'Poppins-Regular';
         color: #F47216;
+        width: 130px;
     }
 
        p {
@@ -334,19 +342,22 @@ const FormComponent = styled.section `
             font-size: 1.1em;
             margin-left: 40.8%;
             font-family: 'Poppins-Regular';
+            width: 160px;
         }
 
         #forgot-email:hover {
-            font-size: 1.1em;
-            margin-left: 40%;
+            font-size: 1.2em;
+            margin-left: 39.5%;
             font-family: 'Poppins-Regular';
             color: #dbd7d7;
+            width: 170px;
         }
 
         #forgot-email:active {
-            font-size: 1.1em;
-            margin-left: 40%;
+            font-size: 1.2em;
+            margin-left: 39.5%;
             color: #F47216;
+            width: 170px;
         }
 
        .senha {
@@ -359,21 +370,24 @@ const FormComponent = styled.section `
 
        #forgot-password {
             font-size: 1.1em;
-            margin-left: 39%;
+            margin-left: 40%;
             font-family: 'Poppins-Regular';
+            width: 170px;
         }
 
         #forgot-password:hover {
-            font-size: 1.1em;
-            margin-left: 39%;
+            font-size: 1.2em;
+            margin-left: 39.5%;
             font-family: 'Poppins-Regular';
             color: #dbd7d7;
+            width: 180px;
         }
 
         #forgot-password:active {
-            font-size: 1.1em;
-            margin-left: 39%;
+            font-size: 1.2em;
+            margin-left: 39.5%;
             color: #F47216;
+            width: 180px;
         }
 
         p {
@@ -489,18 +503,24 @@ const FormComponent = styled.section `
         #forgot-email {
             font-size: 1.1em;
             margin-left: 44%;
+            margin-top: -6%;
+            width: 160px;
         }
 
         #forgot-email:hover {
-            font-size: 1.1em;
-            margin-left: 44%;
+            font-size: 1.2em;
+            margin-left: 43.5%;
+            margin-top: -6.3%;
             color: #dbd7d7;
+            width: 170px;
         }
 
         #forgot-email:active {
-            font-size: 1.1em;
-            margin-left: 44%;
+            font-size: 1.2em;
+            margin-left: 43.5%;
+            margin-top: -6.3%;
             color: #F47216;
+            width: 170px;
         }
 
         .senha {
@@ -518,19 +538,22 @@ const FormComponent = styled.section `
 
         #forgot-password {
             font-size: 1.1em;
-            margin-left: 45%;
+            margin-left: 44%;
+            width: 170px;
         }
 
         #forgot-password:hover {
-            font-size: 1.1em;
-            margin-left: 45%;
+            font-size: 1.2em;
+            margin-left: 43.5%;
             color: #dbd7d7;
+            width: 180px;
         }
 
         #forgot-password:active {
-            font-size: 1.1em;
-            margin-left: 45%;
+            font-size: 1.2em;
+            margin-left: 43.5%;
             color: #F47216;
+            width: 180px;
         }
 
         p {
@@ -580,9 +603,9 @@ const FormComponent = styled.section `
         }
 
         .page2 {
-            font-size: 1.8em;
+            font-size: 1.5em;
             width: 550px;
-            margin-left: 16.5%;
+            margin-left: 23.5%;
         }
 
         .logar {
@@ -620,7 +643,7 @@ const FormComponent = styled.section `
     // Large Screens
     @media(min-width: 1600px) {
 
-        height: 145vh;
+        height: 124vh;
 
         .mobile {
             display: none;
@@ -633,85 +656,94 @@ const FormComponent = styled.section `
 
         background-image: url("/images/1600px-login.svg");
 
-        form {
-            margin-left: 22%;
+        .form {
+            margin-left: 21.6%;
             border-radius: 19px;
             background: linear-gradient(180deg, #07B3FD 0%, #0a59c0 100%);
             width: 890px;
-            height: 1040px;
+            height: 855px;
             border-color: white;
         }
 
         h1 {
-            font-size: 3em;
-            margin-left: 23%;
+            font-size: 2.4em;
+            margin-left: 43%;
+            margin-top: 5%;
         }
 
         .email {
-            margin-left: -5%;
+            margin-left: -4%;
+            margin-top: 12%;
         }
 
         #email {
-            width: 675px;
+            width: 655px;
         }
 
         #forgot-email{
-            margin-left: 42%;
+            margin-left: 44%;
             margin-top: -8%;
-            font-size: 1.3em;
+            font-size: 1em;
+            width: 150px;
         }
 
         #forgot-email:hover{
-            margin-left: 42%;
-            margin-top: -8%;
-            font-size: 1.3em;
+            margin-left: 43.5%;
+            margin-top: -8.3%;
+            font-size: 1.1em;
             color: #dbd7d7;
+            width: 180px;
         }
 
         #forgot-email:active{
-            margin-left: 42%;
-            margin-top: -8%;
-            font-size: 1.3em;
+            margin-left: 43.5%;
+            margin-top: -8.3%;
+            font-size: 1.1em;
             color: #F47216;
+            width: 150px;
         }
 
         .senha {
-            margin-left: -5%;
+            margin-left: -4%;
         }
 
         #password {
-            width: 675px;
+            width: 655px;
         }
 
         #forgot-password{
-            margin-left: 41%;
+            margin-left: 43.5%;
             margin-top: -8%;
-            font-size: 1.3em;
+            font-size: 1em;
+            width: 195px;
         }
 
         #forgot-password:hover{
-            margin-left: 41%;
-            margin-top: -8%;
-            font-size: 1.3em;
+            margin-left: 42.8%;
+            margin-top: -8.3%;
+            font-size: 1.1em;
             color: #dbd7d7;
+            width: 205px;
         }
 
         #forgot-password:active{
-            margin-left: 41%;
-            margin-top: -8%;
-            font-size: 1.3em;
+            margin-left: 42.8%;
+            margin-top: -8.3%;
+            font-size: 1.1em;
             color: #F47216;
+            width: 205px;
         }
 
         p {
-            margin-left: 47%;
+            margin-left: 48.5%;
+            font-size: 1.5em;
         }
 
         .btn-google {
-            margin-left: -5%;
-            width: 675px;
+            margin-left: 7.5%;
+            width: 455px;
             height: 70px;
-            font-size: 2.3em;
+            font-size: 2em;
             background-color: #93B413;
             border: none;
             border-radius: 39px;
@@ -720,10 +752,10 @@ const FormComponent = styled.section `
         }
 
         .btn-google:hover {
-            margin-left: -5%;
-            width: 675px;
+            margin-left: 7.5%;
+            width: 455px;
             height: 70px;
-            font-size: 2.3em;
+            font-size: 2em;
             background-color: #9fc214;
             border: none;
             border-radius: 39px;
@@ -732,10 +764,10 @@ const FormComponent = styled.section `
         }
 
         .btn-google:active {
-            margin-left: -5%;
-            width: 675px;
+            margin-left: 7.5%;
+            width: 455px;
             height: 70px;
-            font-size: 2.3em;
+            font-size: 2em;
             background-color: #86a40f;
             border: none;
             border-radius: 39px;
@@ -749,17 +781,21 @@ const FormComponent = styled.section `
         }
 
         .page2 {
-            font-size: 2.2em;
+            font-size: 1.5em;
             width: 580px;
-            margin-left: 18%;
+            margin-left: 28%;
         }
 
         .logar {
-            margin-left: 35%;
+            margin-left: 40%;
         }
 
         .logar:hover {
-            margin-left: 35%;
+            margin-left: 40%;
+        }
+
+        .logar:active {
+            margin-left: 40%;
         }
 
         .fox {
@@ -785,7 +821,7 @@ const Form = function() {
                         <div className='senha'>
                             <Input type="password" name="password" id="password" placeholder='Senha'/>
                             <Link href={'/RecoveryYourPasswordPage'}>
-                                <h4 id='forgot-email'>Esqueci a Senha</h4>
+                                <h4 id='forgot-password'>Esqueci a Senha</h4>
                             </Link>
                         </div>
                         <p>OU</p>
@@ -809,8 +845,8 @@ const Form = function() {
                     </form>
             </nav>
 
-            <nav className='tablet-destops'>
-            <img src="/images/Raposa-login.png" alt="fox" className='fox'/>
+            <nav className='tablet-desktops'>
+            {/* <img src="/images/Raposa-login.png" alt="fox" className='fox'/> */}
                 <form className='form'>
                     {/* Login Form Content */}
                     <h1>Login</h1>
@@ -823,7 +859,7 @@ const Form = function() {
                     <div className='senha'>
                         <Input type="password" name="password" id="password" placeholder='Senha'/>
                         <Link href={'/RecoveryYourPasswordPage'}>
-                            <h4 id='forgot-email'>Esqueci a Senha</h4>
+                            <h4 id='forgot-password'>Esqueci a Senha</h4>
                         </Link>
                     </div>
                     <p>OU</p>
@@ -843,14 +879,14 @@ const Form = function() {
                                     Entrar
                                 </button>
                             </Link>
-                    </div> 
-                    {/*
+                    </div>
+                {/*
                     
                     
                     
                     
                     
-                     */}
+                */}
                 </form>
             </nav>
             
