@@ -7,13 +7,14 @@ import Image from 'next/image';
 
 //mobile and tablet
 const ProfileComponents = styled.section `
-    background: linear-gradient(180deg, #07B3FD 0%, #0C65C2 100%);
+    background: #2F99BF;
     .profile-mobile{
         padding: 20%;
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
+        background: linear-gradient(180deg, #07B3FD 0%, #0C65C2 100%);
         .menu{
             .menu-btn{
                 text-align:center;
@@ -33,23 +34,55 @@ const ProfileComponents = styled.section `
         display: none;
     }
 
+    //Desktop
     @media(min-width: 992px){
-        width: 500px;
-        height: 80vh;
-        padding: 4%;
+        
         .profile-desktop{
             display: flex;
-            .menu-btn-desktop{
+            .menu-desktop{
+                background: linear-gradient(180deg, #07B3FD 0%, #0C65C2 100%);
+                .menu-btn-desktop{
                 font-size: 1.6em;
                 text-align:center;
                 margin: 50px;
                 padding: 10px;
                 width: 270px;
+                color: #ffffff;
+                font-family: 'Poppins-Regular';
                 cursor: pointer;
-            }
-            .menu-btn-desktop:hover{
+                }
+                .menu-btn-desktop:hover{
                 background: #93B413;
                 border-radius: 20px;
+                }
+            }
+            .container-settings{
+                margin: 5%;
+                font-size: 1.4em;
+                .box-container{
+                    width: 150%;
+                    color: #ffffff;
+                    font-family: 'poppins-Light';
+                    margin: 15px;
+                    span{
+                        font-family: 'poppins-Medium';
+                    }
+                }
+                .settings-btn{
+                    display: flex;
+                    color: #ffffff;
+                    .change-password{
+                        background: #93B413;
+                        padding: 10px;
+                        border-radius: 20px;
+                        justify-content: space-around;
+                    }
+                    .Delete{
+                        background: #FF0000;
+                        padding: 10px;
+                        border-radius: 20px; 
+                    }
+                }
             }
         }
         .profile-mobile{
@@ -112,6 +145,27 @@ const PgProfile = function() {
                         </Link>
                     </div>
                 </div>
+
+                {/* Section Settings */}
+                <div className="container-settings">
+                    <p className='box-container'><span>Nome: </span>Usuário Fulano De Tal</p>
+                    <p className='box-container'><span>E-mail: </span>fulanodetal@gmail.com</p>
+                    <p className='box-container'><span>Nascimento: </span>19/07/1995</p>
+                    <p className='box-container'><span>CPF: </span>000.000.000-00</p>
+                    <p className='box-container'><span>País: </span>Brasil</p>
+                    <div className='settings-btn'>
+                        <div className='password-btn'>
+                            <Link href={'/NewPasswordPage'} className='change-password'>
+                                Alterar Senha
+                            </Link>
+                        </div>
+                        <div className='delete-btn'>
+                            <Link href={'/'} className='Delete'>
+                                Excluir Conta
+                            </Link>
+                        </div>
+                    </div>
+                </div>
                 
             </nav>
         </ProfileComponents>
@@ -120,9 +174,3 @@ const PgProfile = function() {
 }
 
 export default PgProfile;
-
-{/* <Link href={'/HomePage'}>
-                        <button className='exit-button'>
-                            <p id='exit-txt'>Sair</p>
-                        </button>
-                    </Link> */}
