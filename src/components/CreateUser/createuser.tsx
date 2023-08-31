@@ -1007,53 +1007,54 @@ const CreateUserComponent = styled.section `
         }
 
         .search {
-            width: 80px;
-            height: 80px;
+            width: 60px;
+            height: 60px;
             margin-left: 7%;
         }
 
         .box-1 {
-            width: 290px;
-            height: 200px;
-            margin-top: -10.5%;
-            margin-left: 25%;
+            width: 210px;
+            height: 170px;
+            margin-top: -8.5%;
+            margin-left: 30%;
         }
 
         .amount-documents {
-            font-size: 6.2em;
+            font-size: 5.3em;
         }
 
         .documents {
-            margin-top: -10%;
+            margin-top: -17%;
             font-size: 1.5em;
         }
 
         .box-2 {
-            width: 290px;
-            height: 200px;
-            margin-top: -14.5%;
-            margin-left: 52%;
+            width: 210px;
+            height: 170px;
+            margin-top: -12.5%;
+            margin-left: 51.5%;
         }
 
         .amount-users {
-            font-size: 6.2em;
+            font-size: 5.3em;
         }
 
         .users {
-            margin-top: -10%;
+            margin-top: -17%;
             font-size: 1.5em;
         }
 
         .profile-photo {
-            width: 190px;
-            height: 190px;
+            width: 150px;
+            height: 150px;
             margin-left: 81%;
+            margin-top: 2.5%;
         }
 
         #your-name {
-            font-size: 1.7em;
-            margin-top: -1%;
-            margin-left: 82.2%;
+            font-size: 1.6em;
+            margin-top: -2%;
+            margin-left: 81.3%;
         }
 
         form {
@@ -1063,8 +1064,8 @@ const CreateUserComponent = styled.section `
         }
 
         h1 {
-            font-size: 4em;
-            margin-left: 28.5%;
+            font-size: 3.2em;
+            margin-left: 32.5%;
         }
 
         .name {
@@ -1249,13 +1250,13 @@ const CreateUserComponent = styled.section `
             color: #F47216;
             margin-left: 39%;
             position: absolute;
-            margin-top: 27%;
+            margin-top: 25.5%;
         }
 
         .small {
             position: absolute;
             margin-left: 9%;
-            top: 1030px;
+            top: 960px;
         }
 
         .cpf {
@@ -1352,7 +1353,7 @@ const CreateUserComponent = styled.section `
         label {
             position: absolute;
             margin-left: 2.1%;
-            top: 1653px;
+            top: 1603px;
             font-size: 1.5em;
         }
 
