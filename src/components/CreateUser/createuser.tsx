@@ -1070,12 +1070,12 @@ const CreateUserComponent = styled.section `
 
         .name {
             margin-top: 3%;
-            margin-left: -3%;
+            margin-left: 2.8%;
             font-size: 2.2em;
         }
 
         #name {
-            width: 930px;
+            width: 790px;
             height: 45px;
         }
 
@@ -1085,7 +1085,7 @@ const CreateUserComponent = styled.section `
 
         .span1 {
             color: #F47216;
-            margin-left: -47%;
+            margin-left: -36%;
             position: absolute;
             font-size: 1.4em;
             margin-top: 0%;
@@ -1218,12 +1218,12 @@ const CreateUserComponent = styled.section `
 
         .social-name {
             margin-top: 3%;
-            margin-left: -3%;
+            margin-left: 2.8%;
             font-size: 2.2em;
         }
 
         #social-name {
-            width: 930px;
+            width: 790px;
             height: 45px;
         }
 
@@ -1233,12 +1233,12 @@ const CreateUserComponent = styled.section `
 
         .date {
             margin-top: -3%;
-            margin-left: -3%;
+            margin-left: 2.8%;
             font-size: 2.2em;
         }
 
         #birthday {
-            width: 930px;
+            width: 790px;
             height: 45px;
         }
 
@@ -1250,23 +1250,23 @@ const CreateUserComponent = styled.section `
             color: #F47216;
             margin-left: 39%;
             position: absolute;
-            margin-top: 25.5%;
+            margin-top: 21.5%;
         }
 
         .small {
             position: absolute;
             margin-left: 9%;
-            top: 960px;
+            top: 920px;
         }
 
         .cpf {
             margin-top: 2%;
-            margin-left: -3%;
+            margin-left: 2.8%;
             font-size: 2.2em;
         }
 
         #cpf {
-            width: 930px;
+            width: 790px;
             height: 45px;
         }
 
@@ -1276,7 +1276,7 @@ const CreateUserComponent = styled.section `
 
         .span4 {
             color: #F47216;
-            margin-left: -62%;
+            margin-left: -52%;
             position: absolute;
             font-size: 1.4em;
             margin-top: 0.2%;
@@ -1395,12 +1395,18 @@ const CreateUserComponent = styled.section `
             justify-content: space-between;
         }
 
+        header {
+            height: 210px;
+        }
+
         .search {
             margin-top: 5.5%;
         }
 
         .box-1 {
             margin-top: -8.6%;
+            width: 200px;
+            height: 160px;
         }
 
         .box-2 {
