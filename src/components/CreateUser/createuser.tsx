@@ -4,6 +4,7 @@
 import styled from '@emotion/styled';
 import Input from '../Login/Input/Input';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const CreateUserComponent = styled.section `
 
@@ -18,17 +19,75 @@ const CreateUserComponent = styled.section `
         display: none;
     }
 
+    header {
+            background-color: #2F99BF;
+            height: 195px;
+    }
+
+    .search {
+        width: 50px;
+        height: 50px;
+        margin-top: 4%;
+        margin-left: 2%;
+    }
+
+    .box-1 {
+            margin-top: 7%;
+            margin-left: 15%;
+            text-align: center;
+            background-color: #07B3FD;
+            width: 100px;
+            height: 85px;
+            border-radius: 4px;
+        }
+
+        .amount-documents {
+            font-size: 2.7em;
+        }
+
+        .documents {
+            margin-top: -11.5%;
+            font-size: 0.2em;
+        }
+
+        .box-2 {
+            margin-top: -26.5%;
+            margin-left: 53.7%;
+            text-align: center;
+            background-color: #F47216;
+            width: 100px;
+            height: 85px;
+            border-radius: 4px;
+        }
+
+        .amount-users {
+            font-size: 2.7em;
+        }
+
+        .users {
+            margin-top: -11.5%;
+            font-size: 0.2em;
+        }
+
+    .profile-photo {
+        width: 70px;
+        height: 70px;
+        position: absolute;
+        top: 180px;
+        margin-left: 75%;
+    }
+
     * {
         color: white;
         font-family: 'Poppins-Medium';
     }
 
-    height: 200vh;
+    height: 225vh;
 
     background: linear-gradient(180deg, #0A53B5 0%, #0081E8 100%);
 
     h1 {
-        padding-top: 15%;
+        padding-top: 10%;
         margin-left: 26%;
         font-size: 1.3em;
     }
@@ -175,7 +234,7 @@ const CreateUserComponent = styled.section `
         display: none;
     }
 
-    .profile-photo {
+    .profile-photo2 {
         margin-top: 5%;
     }
 
@@ -248,10 +307,10 @@ const CreateUserComponent = styled.section `
         }
 
         .search {
-            width: 30px;
-            height: 30px;
-            margin-top: 9%;
-            margin-left: 10%;
+            width: 50px;
+            height: 50px;
+            margin-top: 6.5%;
+            margin-left: 7%;
         }
 
         .box-1 {
@@ -265,11 +324,12 @@ const CreateUserComponent = styled.section `
         }
 
         .amount-documents {
-            font-size: 3.2em;
+            font-size: 3.5em;
         }
 
         .documents {
             margin-top: -10%;
+            font-size: 0.9em;
         }
 
         .box-2 {
@@ -283,19 +343,20 @@ const CreateUserComponent = styled.section `
         }
 
         .amount-users {
-            font-size: 3.2em;
+            font-size: 3.5em;
         }
 
         .users {
             margin-top: -10%;
+            font-size: 0.9em;
         }
 
         .profile-photo {
             position: absolute;
-            top: 160px;
-            margin-left: 81%;
-            width: 85px;
-            height: 85px;
+            top: 185px;
+            margin-left: 80%;
+            width: 100px;
+            height: 100px;
         }
 
         #your-name {
@@ -597,9 +658,11 @@ const CreateUserComponent = styled.section `
 
         .save:active {
             margin-top: 3%;
-            margin-left: 36%;
-            width: 170px;
-            font-size: 1.8em;
+            margin-left: 40%;
+            width: 140px;
+            height: 40px;
+            border-radius: 15px;
+            font-size: 1.5em;
             background-color: #86a40f;
         }
     }
@@ -636,9 +699,10 @@ const CreateUserComponent = styled.section `
         }
 
         .profile-photo {
-            width: 100px;
-            height: 100px;
-            margin-top: 3%;
+            width: 110px;
+            height: 110px;
+            margin-top: 0%;
+            margin-left: 81%;
         }
 
         #your-name {
@@ -650,8 +714,9 @@ const CreateUserComponent = styled.section `
         form {
             border-radius: 19px;
             background: linear-gradient(180deg, #07B3FD 0%, #0b58bc 100%);
-            width: 842px;
+            width: 800px;
             height: 1040px;
+            margin-left: 10.6%;
         }
 
         h1 {
@@ -661,12 +726,12 @@ const CreateUserComponent = styled.section `
 
         .name {
             margin-top: 3%;
-            margin-left: -3%;
+            margin-left: 2.2%;
             font-size: 1.4em;
         }
 
         #name {
-            width: 700px;
+            width: 580px;
             height: 45px;
         }
 
@@ -676,15 +741,15 @@ const CreateUserComponent = styled.section `
 
         .span1 {
             color: #F47216;
-            margin-left: -50%;
+            margin-left: -38%;
             position: absolute;
             font-size: 1.4em;
-            margin-top: 2.5%;
+            margin-top: 2.1%;
         }
 
         .gender-txt {
             font-size: 1.4em;
-            margin-left: 8.5%;
+            margin-left: 14.2%;
             margin-top: -1%;
         }
 
@@ -698,7 +763,7 @@ const CreateUserComponent = styled.section `
 
         .man {
             width: 30px;
-            margin-left: 9.5%;
+            margin-left: 14.3%;
             margin-top: -1.5%;
         }
 
@@ -715,7 +780,7 @@ const CreateUserComponent = styled.section `
 
         .woman {
             width: 30px;
-            margin-left: 28.5%;
+            margin-left: 33.5%;
             margin-top: -5.7%;
         }
 
@@ -732,8 +797,8 @@ const CreateUserComponent = styled.section `
 
         .transvestite {
             width: 30px;
-            margin-left: 46.5%;
-            margin-top: -5.6%;
+            margin-left: 51.5%;
+            margin-top: -5.9%;
         }
 
         #transvestite {
@@ -749,8 +814,8 @@ const CreateUserComponent = styled.section `
 
         .no-binary {
             width: 30px;
-            margin-left: 9.5%;
-            margin-top: -0.5%;
+            margin-left: 14.3%;
+            margin-top: -1.5%;
         }
 
         #no-binary {
@@ -767,7 +832,7 @@ const CreateUserComponent = styled.section `
 
         .trans {
             width: 30px;
-            margin-left: 28.5%;
+            margin-left: 33.5%;
             margin-top: -5.7%;
         }
 
@@ -784,8 +849,8 @@ const CreateUserComponent = styled.section `
 
         .another {
             width: 30px;
-            margin-left: 46.5%;
-            margin-top: -5.6%;
+            margin-left: 51.5%;
+            margin-top: -5.9%;
         }
 
         #another {
@@ -801,8 +866,8 @@ const CreateUserComponent = styled.section `
 
         .none {
             width: 30px;
-            margin-left: 9.5%;
-            margin-top: -0.5%;
+            margin-left: 14.3%;
+            margin-top: -1.5%;
         }
 
         #none {
@@ -819,12 +884,12 @@ const CreateUserComponent = styled.section `
 
         .social-name {
             margin-top: 0%;
-            margin-left: -3%;
+            margin-left: 2.2%;
             font-size: 1.4em;
         }
 
         #social-name {
-            width: 700px;
+            width: 580px;
             height: 45px;
         }
 
@@ -834,12 +899,12 @@ const CreateUserComponent = styled.section `
 
         .date {
             margin-top: -3%;
-            margin-left: -3%;
+            margin-left: 2.2%;
             font-size: 1.4em;
         }
 
         #birthday {
-            width: 700px;
+            width: 580px;
             height: 45px;
         }
 
@@ -849,7 +914,7 @@ const CreateUserComponent = styled.section `
 
         .span3 {
             color: #F47216;
-            margin-left: 35%;
+            margin-left: 34%;
             position: absolute;
             font-size: 1em;
             margin-top: 16%;
@@ -863,12 +928,12 @@ const CreateUserComponent = styled.section `
 
         .cpf {
             margin-top: 0%;
-            margin-left: -3%;
+            margin-left: 2.2%;
             font-size: 1.4em;
         }
 
         #cpf {
-            width: 700px;
+            width: 580px;
             height: 45px;
         }
 
@@ -878,7 +943,7 @@ const CreateUserComponent = styled.section `
 
         .span4 {
             color: #F47216;
-            margin-left: -63%;
+            margin-left: -52%;
             position: absolute;
             font-size: 1.4em;
             margin-top: 2%;
@@ -886,12 +951,12 @@ const CreateUserComponent = styled.section `
 
         .email {
             margin-top: -3%;
-            margin-left: -3%;
+            margin-left: 2.2%;
             font-size: 1.4em;
         }
 
         #email {
-            width: 700px;
+            width: 580px;
             height: 45px;
         }
 
@@ -901,7 +966,7 @@ const CreateUserComponent = styled.section `
 
         .span5 {
             color: #F47216;
-            margin-left: -61%;
+            margin-left: -50%;
             position: absolute;
             font-size: 1.4em;
             margin-top: 2%;
@@ -909,12 +974,12 @@ const CreateUserComponent = styled.section `
 
         .country {
             margin-top: -3%;
-            margin-left: -3%;
+            margin-left: 2.2%;
             font-size: 1.4em;
         }
 
         #country {
-            width: 700px;
+            width: 580px;
             height: 45px;
         }
 
@@ -924,7 +989,7 @@ const CreateUserComponent = styled.section `
 
         .span6 {
             color: #F47216;
-            margin-left: -63%;
+            margin-left: -52%;
             position: absolute;
             font-size: 1.4em;
             margin-top: 2%;
@@ -1048,7 +1113,7 @@ const CreateUserComponent = styled.section `
             width: 150px;
             height: 150px;
             margin-left: 81%;
-            margin-top: 2.5%;
+            margin-top: 0.5%;
         }
 
         #your-name {
@@ -1070,12 +1135,12 @@ const CreateUserComponent = styled.section `
 
         .name {
             margin-top: 3%;
-            margin-left: -3%;
+            margin-left: 2.8%;
             font-size: 2.2em;
         }
 
         #name {
-            width: 930px;
+            width: 790px;
             height: 45px;
         }
 
@@ -1085,7 +1150,7 @@ const CreateUserComponent = styled.section `
 
         .span1 {
             color: #F47216;
-            margin-left: -47%;
+            margin-left: -36%;
             position: absolute;
             font-size: 1.4em;
             margin-top: 0%;
@@ -1097,7 +1162,7 @@ const CreateUserComponent = styled.section `
 
         .man {
             width: 30px;
-            margin-left: 10.2%;
+            margin-left: 15.2%;
             margin-top: -1.5%;
         }
 
@@ -1114,7 +1179,7 @@ const CreateUserComponent = styled.section `
 
         .woman {
             width: 30px;
-            margin-left: 27.2%;
+            margin-left: 32.2%;
             margin-top: -4.7%;
         }
 
@@ -1131,8 +1196,8 @@ const CreateUserComponent = styled.section `
 
         .transvestite {
             width: 30px;
-            margin-left: 43.2%;
-            margin-top: -4.7%;
+            margin-left: 48.2%;
+            margin-top: -4.6%;
         }
 
         #transvestite {
@@ -1148,7 +1213,7 @@ const CreateUserComponent = styled.section `
 
         .no-binary {
             width: 30px;
-            margin-left: 10.2%;
+            margin-left: 15.2%;
             margin-top: 0%;
         }
 
@@ -1166,7 +1231,7 @@ const CreateUserComponent = styled.section `
 
         .trans {
             width: 30px;
-            margin-left: 27.2%;
+            margin-left: 32.2%;
             margin-top: -4.7%;
         }
 
@@ -1183,8 +1248,8 @@ const CreateUserComponent = styled.section `
 
         .another {
             width: 30px;
-            margin-left: 43.2%;
-            margin-top: -4.7%;
+            margin-left: 48.2%;
+            margin-top: -4.6%;
         }
 
         #another {
@@ -1200,7 +1265,7 @@ const CreateUserComponent = styled.section `
 
         .none {
             width: 30px;
-            margin-left: 10.2%;
+            margin-left: 15.2%;
             margin-top: 0%;
         }
 
@@ -1218,12 +1283,12 @@ const CreateUserComponent = styled.section `
 
         .social-name {
             margin-top: 3%;
-            margin-left: -3%;
+            margin-left: 2.8%;
             font-size: 2.2em;
         }
 
         #social-name {
-            width: 930px;
+            width: 790px;
             height: 45px;
         }
 
@@ -1233,12 +1298,12 @@ const CreateUserComponent = styled.section `
 
         .date {
             margin-top: -3%;
-            margin-left: -3%;
+            margin-left: 2.8%;
             font-size: 2.2em;
         }
 
         #birthday {
-            width: 930px;
+            width: 790px;
             height: 45px;
         }
 
@@ -1250,23 +1315,23 @@ const CreateUserComponent = styled.section `
             color: #F47216;
             margin-left: 39%;
             position: absolute;
-            margin-top: 25.5%;
+            margin-top: 21.5%;
         }
 
         .small {
             position: absolute;
             margin-left: 9%;
-            top: 960px;
+            top: 920px;
         }
 
         .cpf {
             margin-top: 2%;
-            margin-left: -3%;
+            margin-left: 2.8%;
             font-size: 2.2em;
         }
 
         #cpf {
-            width: 930px;
+            width: 790px;
             height: 45px;
         }
 
@@ -1276,7 +1341,7 @@ const CreateUserComponent = styled.section `
 
         .span4 {
             color: #F47216;
-            margin-left: -62%;
+            margin-left: -52%;
             position: absolute;
             font-size: 1.4em;
             margin-top: 0.2%;
@@ -1284,12 +1349,12 @@ const CreateUserComponent = styled.section `
 
         .email {
             margin-top: -2%;
-            margin-left: -3%;
+            margin-left: 2.8%;
             font-size: 2.2em;
         }
 
         #email {
-            width: 930px;
+            width: 790px;
             height: 45px;
         }
 
@@ -1299,20 +1364,20 @@ const CreateUserComponent = styled.section `
 
         .span5 {
             color: #F47216;
-            margin-left: -60.5%;
+            margin-left: -50.5%;
             position: absolute;
-            font-size: 1.4em;
+            font-size: 1.2em;
             margin-top: 0.2%;
         }
 
         .country {
             margin-top: -2%;
-            margin-left: -3%;
+            margin-left: 2.8%;
             font-size: 2.2em;
         }
 
         #country {
-            width: 930px;
+            width: 790px;
             height: 45px;
         }
 
@@ -1322,7 +1387,7 @@ const CreateUserComponent = styled.section `
 
         .span6 {
             color: #F47216;
-            margin-left: -62.5%;
+            margin-left: -52%;
             position: absolute;
             font-size: 1.4em;
             margin-top: 0.2%;
@@ -1395,35 +1460,54 @@ const CreateUserComponent = styled.section `
             justify-content: space-between;
         }
 
+        header {
+            height: 210px;
+        }
+
         .search {
-            margin-top: 5.5%;
+            margin-top: 4.3%;
         }
 
         .box-1 {
-            margin-top: -8.6%;
+            margin-top: -7%;
+            width: 200px;
+            height: 160px;
         }
 
         .box-2 {
-            margin-top: -12.8%;
+            margin-top: -10.1%;
+            width: 200px;
+            height: 160px;
+        }
+
+        .profile-photo {
+            margin-top: 0%;
+            margin-left: 81.5%;
+        }
+
+        #your-name {
+            margin-top: -1.5%;
         }
 
         form {
-            width: 1290px;
+            width: 1190px;
             height: 1550px;
+            margin-left: 12%;
         }
 
         h1 {
-            margin-left: 32%;
+            margin-left: 35.3%;
+            font-size: 3em;
         }
 
         .name {
             margin-top: 3%;
-            margin-left: -3%;
+            margin-left: -0.4%;
             font-size: 2.3em;
         }
 
         #name {
-            width: 1045px;
+            width: 880px;
             height: 45px;
         }
 
@@ -1433,7 +1517,7 @@ const CreateUserComponent = styled.section `
 
         .span1 {
             color: #F47216;
-            margin-left: -46.5%;
+            margin-left: -36.5%;
             position: absolute;
             font-size: 1.4em;
             margin-top: 1.2%;
@@ -1441,12 +1525,13 @@ const CreateUserComponent = styled.section `
 
         .gender-txt {
             font-size: 2.3em;
-            margin-left: 9.3%;
+            margin-left: 13%;
             margin-top: -2.5%;
         }
 
         .man {
             margin-top: -2.5%;
+            margin-left: 12.4%;
         }
 
         #man {
@@ -1460,8 +1545,8 @@ const CreateUserComponent = styled.section `
         }
 
         .woman {
-            margin-top: -5.3%;
-            margin-left: 25.2%;
+            margin-top: -5.7%;
+            margin-left: 28.2%;
         }
 
         #woman {
@@ -1475,8 +1560,8 @@ const CreateUserComponent = styled.section `
         }
 
         .transvestite {
-            margin-top: -5.2%;
-            margin-left: 39.2%;
+            margin-top: -5.7%;
+            margin-left: 42.5%;
         }
 
         #transvestite {
@@ -1491,6 +1576,7 @@ const CreateUserComponent = styled.section `
 
         .no-binary {
             margin-top: -1%;
+            margin-left: 12.4%;
         }
 
         #no-binary {
@@ -1504,8 +1590,8 @@ const CreateUserComponent = styled.section `
         }
 
         .trans {
-            margin-top: -5.3%;
-            margin-left: 25.2%;
+            margin-top: -5.7%;
+            margin-left: 28.2%;
         }
 
         #trans {
@@ -1519,8 +1605,8 @@ const CreateUserComponent = styled.section `
         }
 
         .another {
-            margin-top: -5.2%;
-            margin-left: 39.2%;
+            margin-top: -5.7%;
+            margin-left: 42.5%;
         }
 
         #another {
@@ -1535,6 +1621,7 @@ const CreateUserComponent = styled.section `
 
         .none {
             margin-top: -1%;
+            margin-left: 12.4%;
         }
 
         #none {
@@ -1549,12 +1636,12 @@ const CreateUserComponent = styled.section `
 
         .social-name {
             margin-top: 0%;
-            margin-left: -3%;
+            margin-left: -0.4%;
             font-size: 2.3em;
         }
 
         #social-name {
-            width: 1045px;
+            width: 880px;
             height: 45px;
         }
 
@@ -1564,12 +1651,12 @@ const CreateUserComponent = styled.section `
 
         .date {
             margin-top: -5%;
-            margin-left: -3%;
+            margin-left: -0.4%;
             font-size: 2.3em;
         }
 
         #birthday {
-            width: 1045px;
+            width: 880px;
             height: 45px;
         }
 
@@ -1579,7 +1666,7 @@ const CreateUserComponent = styled.section `
 
         .small {
             position: absolute;
-            top: 1070px;
+            top: 975px;
             font-size: 0.6em;
             margin-left: 10%;
         }
@@ -1589,17 +1676,17 @@ const CreateUserComponent = styled.section `
             margin-left: 32.5%;
             position: absolute;
             font-size: 0.8em;
-            margin-top: 28.5%;
+            margin-top: 25.1%;
         }
 
         .cpf {
             margin-top: -2%;
-            margin-left: -3%;
+            margin-left: -0.4%;
             font-size: 2.3em;
         }
 
         #cpf {
-            width: 1045px;
+            width: 880px;
             height: 45px;
         }
 
@@ -1609,20 +1696,20 @@ const CreateUserComponent = styled.section `
 
         .span4 {
             color: #F47216;
-            margin-left: -60.5%;
+            margin-left: -50.5%;
             position: absolute;
             font-size: 1.2em;
             margin-top: 1.5%;
         }
 
         .email {
-            margin-top: -2%;
-            margin-left: -3%;
+            margin-top: -3.5%;
+            margin-left: -0.4%;
             font-size: 2.3em;
         }
 
         #email {
-            width: 1045px;
+            width: 880px;
             height: 45px;
         }
 
@@ -1632,20 +1719,20 @@ const CreateUserComponent = styled.section `
 
         .span5 {
             color: #F47216;
-            margin-left: -59.3%;
+            margin-left: -48.3%;
             position: absolute;
             font-size: 1.2em;
             margin-top: 1.3%;
         }
 
         .country {
-            margin-top: -2%;
-            margin-left: -3%;
+            margin-top: -3.5%;
+            margin-left: -0.4%;
             font-size: 2.3em;
         }
 
         #country {
-            width: 1045px;
+            width: 880px;
             height: 45px;
         }
 
@@ -1655,35 +1742,35 @@ const CreateUserComponent = styled.section `
 
         .span6 {
             color: #F47216;
-            margin-left: -60.3%;
+            margin-left: -50.3%;
             position: absolute;
             font-size: 1.2em;
             margin-top: 1.3%;
         }
 
         .profile-photo2 {
-            margin-top: -5%;
-            margin-left: 9.3%;
+            margin-top: -3%;
+            margin-left: 13%;
         }
 
         .choose-a-image {
-            margin-left: 9.3%;
+            margin-left: 12.9%;
             background-color: #F47216;
         }
 
         .choose-a-image:hover {
-            margin-left: 9.3%;
+            margin-left: 12.9%;
             background-color: #ff7818;
         }
 
         .choose-a-image:active {
-            margin-left: 9.3%;
+            margin-left: 12.9%;
             background-color: #d66515;
         }
 
         label {
             position: absolute;
-            top: 1830px;
+            top: 1745px;
             margin-left: 1.4%;
             cursor: pointer;
         }
@@ -1719,6 +1806,18 @@ const CreateUserPg = function() {
     return (
         <CreateUserComponent>
             <nav className='mobile'>
+            <header>
+                 <Image className='search' src="/images/search.png" width={100} height={104}  alt="search"/>
+                    <div className='box-1'>
+                        <p className='amount-documents'>0</p>
+                        <p className='documents'>documentos</p>
+                    </div>
+                    <div className='box-2'>
+                        <p className='amount-users'>0</p>
+                        <p className='users'>usuários</p>
+                    </div>
+                    <Image className='profile-photo' src="/images/profile-photo2.png" width={100} height={104}  alt="profile-photo"/>
+                </header>
                 <h1>Criar Usuário</h1>
                 <form>
                     <div className='name'>
@@ -1771,7 +1870,7 @@ const CreateUserPg = function() {
                     <div className='country'>
                         <Input type="string" name="country" id="country" placeholder='País'/><span className='span6'>*</span>
                     </div>
-                    <p className='profile-photo'>Foto de Perfil</p>
+                    <p className='profile-photo2'>Foto de Perfil</p>
                     <div className='choose-a-image'>
                         <label>
                             Adicionar +
@@ -1780,9 +1879,11 @@ const CreateUserPg = function() {
                                 </span>
                         </label>
                     </div>
-                    <button type='button' className='save'>
-                        Salvar
-                    </button>
+                    <Link href={"/SendDocumentsPage"}>
+                        <button type='button' className='save'>
+                            Salvar
+                        </button>
+                    </Link>
                 </form>
             </nav>
 
@@ -1861,9 +1962,11 @@ const CreateUserPg = function() {
                             </span>
                     </label>
                     </div>
-                    <button type='button' className='save'>
-                        Salvar
-                    </button> 
+                    <Link href={"/SendDocumentsPage"}>
+                        <button type='button' className='save'>
+                            Salvar
+                        </button>
+                    </Link>
                 </form>
             </nav>
         </CreateUserComponent>
