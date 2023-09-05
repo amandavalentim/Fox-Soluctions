@@ -1,9 +1,8 @@
-// Developed code by 
+// Developed code by Amanda and Gabriel
 
 'use client'
 import styled from '@emotion/styled';
 import Link from 'next/link';
-import Image from 'next/image';
 
 //mobile and tablet
 const ProfileComponents = styled.section `
@@ -62,25 +61,39 @@ const ProfileComponents = styled.section `
                 .box-container{
                     width: 150%;
                     color: #ffffff;
-                    font-family: 'poppins-Light';
+                    font-family: 'Poppins-Light';
                     margin: 15px;
                     span{
-                        font-family: 'poppins-Medium';
+                        font-family: 'Poppins-Medium';
                     }
+                }
+                a{
+                    margin-top: 20%;
+                    padding: 10px;
+                    border-radius: 20px;
+                    color: #ffffff;
+                    
                 }
                 .settings-btn{
                     display: flex;
-                    color: #ffffff;
+                    justify-content: space-between;
                     .change-password{
                         background: #93B413;
-                        padding: 10px;
-                        border-radius: 20px;
-                        justify-content: space-around;
+                    }
+                    .change-password:hover{
+                        background-color: #A3C325;
+                    }
+                    .change-password:active{
+                        background-color: #86a40f;
                     }
                     .Delete{
-                        background: #FF0000;
-                        padding: 10px;
-                        border-radius: 20px; 
+                        background: #FF0000;  
+                    }
+                    .Delete:hover{
+                        background-color: #D30000;
+                    }
+                    .Delete:active{
+                        background-color: #B62424;
                     }
                 }
             }
@@ -154,16 +167,12 @@ const PgProfile = function() {
                     <p className='box-container'><span>CPF: </span>000.000.000-00</p>
                     <p className='box-container'><span>País: </span>Brasil</p>
                     <div className='settings-btn'>
-                        <div className='password-btn'>
-                            <Link href={'/NewPasswordPage'} className='change-password'>
-                                Alterar Senha
-                            </Link>
-                        </div>
-                        <div className='delete-btn'>
-                            <Link href={'/'} className='Delete'>
-                                Excluir Conta
-                            </Link>
-                        </div>
+                        <Link href={'/NewPasswordPage'} className='change-password'>
+                            Alterar Senha
+                        </Link>
+                        <Link href={'/'} className='Delete'>
+                            Excluir Conta
+                        </Link>
                     </div>
                 </div>
                 
