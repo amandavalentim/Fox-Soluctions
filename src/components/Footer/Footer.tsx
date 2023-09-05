@@ -260,12 +260,10 @@ const Footer = function (){
                     </h3>
                     <div className='container-company-desktop'>
                         <a href="">Home</a>
-                        <a href="">Documentos</a>
                         <a href="">Sobre Nós</a>
                     </div>
                 { containerCompany && <div className='container-company'>
                     <a href="">Home</a>
-                    <a href="">Documentos</a>
                     <a href="">Sobre Nós</a>
                     </div>}
                 </div>
