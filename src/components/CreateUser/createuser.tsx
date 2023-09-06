@@ -1129,14 +1129,14 @@ const CreateUserComponent = styled.section `
         }
 
         h1 {
-            font-size: 2.5em;
+            font-size: 2.4em;
             margin-left: 35.5%;
         }
 
         .name {
             margin-top: 3%;
             margin-left: 8.8%;
-            font-size: 1.6em;
+            font-size: 1.4em;
         }
 
         #name {
@@ -1145,19 +1145,19 @@ const CreateUserComponent = styled.section `
         }
 
         #name::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-            font-size: 1.7em;
+            font-size: 1.5em;
         }
 
         .span1 {
             color: #F47216;
-            margin-left: -30.5%;
+            margin-left: -33%;
             position: absolute;
             font-size: 1.3em;
-            margin-top: 0.8%;
+            margin-top: 1%;
         }
 
         .gender-txt {
-            font-size: 1.7em;
+            font-size: 1.5em;
             margin-left: 20%;
         }
 
@@ -1175,7 +1175,7 @@ const CreateUserComponent = styled.section `
         .man-op {
             margin-left: 555%;
             margin-top: -254%;
-            font-size: 1.2em;
+            font-size: 1.1em;
         }
 
         .woman {
@@ -1192,7 +1192,7 @@ const CreateUserComponent = styled.section `
         .woman-op {
             margin-left: 555%;
             margin-top: -240%;
-            font-size: 1.2em;
+            font-size: 1.1em;
         }
 
         .transvestite {
@@ -1209,13 +1209,13 @@ const CreateUserComponent = styled.section `
         .t1-op {
             margin-left: 555%;
             margin-top: -240%;
-            font-size: 1.2em;
+            font-size: 1.1em;
         }
 
         .no-binary {
             width: 30px;
             margin-left: 20.2%;
-            margin-top: -1.5%;
+            margin-top: -0.5%;
         }
 
         #no-binary {
@@ -1225,8 +1225,8 @@ const CreateUserComponent = styled.section `
 
         .nb-op {
             margin-left: 555%;
-            margin-top: -254%;
-            font-size: 1.2em;
+            margin-top: -245%;
+            font-size: 1.1em;
         }
 
         .trans {
@@ -1242,8 +1242,8 @@ const CreateUserComponent = styled.section `
 
         .t2-op {
             margin-left: 555%;
-            margin-top: -254%;
-            font-size: 1.2em;
+            margin-top: -245%;
+            font-size: 1.1em;
         }
 
         .another {
@@ -1259,14 +1259,14 @@ const CreateUserComponent = styled.section `
 
         .a-op {
             margin-left: 555%;
-            margin-top: -254%;
-            font-size: 1.2em;
+            margin-top: -245%;
+            font-size: 1.1em;
         }
 
         .none {
             width: 30px;
             margin-left: 20.2%;
-            margin-top: -1%;
+            margin-top: 0%;
         }
 
         #none {
@@ -1276,8 +1276,8 @@ const CreateUserComponent = styled.section `
 
         .n-op {
             margin-left: 555%;
-            margin-top: -254%;
-            font-size: 1.2em;
+            margin-top: -245%;
+            font-size: 1.1em;
             width: 234px;
         }
 
@@ -1293,11 +1293,11 @@ const CreateUserComponent = styled.section `
         }
 
         #social-name::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-            font-size: 1.6em;
+            font-size: 1.5em;
         }
 
         .date {
-            margin-top: -2.5%;
+            margin-top: -3.5%;
             margin-left: 8.8%;
             font-size: 1.6em;
         }
@@ -1308,20 +1308,20 @@ const CreateUserComponent = styled.section `
         }
 
         #birthday::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-            font-size: 1.6em;
+            font-size: 1.5em;
         }
 
         .span3 {
             color: #F47216;
             margin-left: 30.5%;
             position: absolute;
-            margin-top: 17.2%;
+            margin-top: 16.5%;
         }
 
         .small {
             position: absolute;
             margin-left: 9%;
-            top: 850px;
+            top: 840px;
         }
 
         .cpf {
@@ -1336,7 +1336,7 @@ const CreateUserComponent = styled.section `
         }
 
         #cpf::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-            font-size: 1.6em;
+            font-size: 1.5em;
         }
 
         .span4 {
@@ -1359,7 +1359,7 @@ const CreateUserComponent = styled.section `
         }
 
         #email::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-            font-size: 1.6em;
+            font-size: 1.5em;
         }
 
         .span5 {
@@ -1382,7 +1382,7 @@ const CreateUserComponent = styled.section `
         }
 
         #country::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-            font-size: 1.6em;
+            font-size: 1.5em;
         }
 
         .span6 {
@@ -1395,55 +1395,64 @@ const CreateUserComponent = styled.section `
 
         .profile-photo2 {
             font-size: 2em;
+            margin-left: 20%;
+            font-size: 1.5em;
         }
 
         .choose-a-image {
-            width: 230px;
-            height: 65px;
+            width: 200px;
+            height: 60px;
+            margin-left: 20%;
             background-color: #F47216;
+            font-size: 1em;
         }
 
         .choose-a-image:hover {
-            width: 230px;
-            height: 65px;
+            width: 200px;
+            height: 60px;
+            margin-left: 20%;
             background-color: #ff7818;
         }
 
         .choose-a-image:active {
-            width: 230px;
-            height: 65px;
+            width: 200px;
+            height: 60px;
+            margin-left: 20%;
             background-color: #d66515;
         }
 
         label {
             position: absolute;
-            margin-left: 2.1%;
+            margin-left: 1.7%;
             top: 1423px;
             font-size: 1.5em;
         }
 
         .save {
-            margin-top: 3%;
-            width: 250px;
+            margin-top: 6%;
+            width: 220px;
             height: 70px;
             font-size: 2.5em;
             background-color: #93B413;
+            margin-left: 41%;
         }
 
         .save:hover {
-            margin-top: 3%;
-            width: 250px;
+            margin-top: 6%;
+            width: 220px;
             height: 70px;
             font-size: 2.5em;
             background-color: #9fc214;
+            margin-left: 41%;
         }
 
         .save:active {
-            margin-top: 3%;
-            width: 250px;
+            margin-top: 6%;
+            width: 220px;
             height: 70px;
             font-size: 2.5em;
             background-color: #86a40f;
+            margin-left: 41%;
         }
     }
 
