@@ -4,6 +4,7 @@
 import styled from '@emotion/styled';
 import React, { useState } from 'react';
 import { FaFacebookSquare, FaInstagram, FaTwitterSquare, FaGithubSquare, FaAngleDown, FaAngleRight} from "react-icons/fa";
+import Link from 'next/link';
 
 //Mobile
 const FooterComponent = styled.footer`
@@ -259,8 +260,12 @@ const Footer = function (){
                         <button type='button' className='btn-icon' onClick={()=> setContainerCompany(!containerCompany)}>{containerCompany?<FaAngleDown/>:<FaAngleRight/>}</button>
                     </h3>
                     <div className='container-company-desktop'>
-                        <a href="">Home</a>
-                        <a href="">Sobre Nós</a>
+                        <Link href={'/HomePage'}>
+                            Home
+                        </Link>
+                        <Link href={'/AboutUsPage'}>
+                            Sobre Nós
+                        </Link>
                     </div>
                 { containerCompany && <div className='container-company'>
                     <a href="">Home</a>

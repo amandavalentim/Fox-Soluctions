@@ -40,20 +40,76 @@ const ProfileComponents = styled.section `
             display: flex;
             .menu-desktop{
                 background: linear-gradient(180deg, #07B3FD 0%, #0C65C2 100%);
+                width: 35%;
                 .menu-btn-desktop{
                 font-size: 1.6em;
-                text-align:center;
-                margin: 50px;
-                padding: 10px;
-                width: 270px;
+                margin: 40px;
+                text-align:center; 
                 color: #ffffff;
                 font-family: 'Poppins-Regular';
-                cursor: pointer;
+                    .create-user-desktop{
+                        display: inline-block;
+                        width: 350px;
+                        padding: 10px;
+                        margin: 2%;
+                    }
+                    .create-user-desktop:hover{
+                        background-color: #93B413;
+                        border-radius: 20px; 
+                    }
+                    .create-user-desktop:active{
+                        background-color: #86a40f;
+                    }
+
+                    .user-list-desktop{
+                        display: inline-block;
+                        width: 350px;
+                        padding: 10px;
+                        margin: 2%;
+                    }
+                    .user-list-desktop:hover{
+                        background-color: #93B413;
+                        border-radius: 20px;  
+                    }
+                    .user-list-desktop:active{
+                        background-color: #86a40f;
+                    }
+
+                    .settings-desktop{
+                        display: inline-block;
+                        width: 350px;
+                        background-color: #93B413;
+                        border-radius: 20px;
+                        padding: 10px; 
+                        margin: 2%;
+                        
+                    }
+                    .settings-desktop:active{
+                        background-color: #86a40f;
+                    }
+
+                    .exit-desktop{
+                        display: inline-block;
+                        width: 350px;
+                        padding: 10px;
+                        margin: 2%;
+                    }
+                    .exit-desktop:hover{
+                        background-color: #93B413;
+                        border-radius: 20px; 
+                    }
+                    .exit-desktop:active{
+                        background-color: #86a40f;
+                    }
                 }
-                .menu-btn-desktop:hover{
+                
+                /* .menu-btn-desktop:hover{
                 background: #93B413;
                 border-radius: 20px;
                 }
+                .menu-btn-desktop:active{
+                     background-color: #86a40f;
+                } */
             }
             .container-settings{
                 margin: 5%;
@@ -138,22 +194,22 @@ const PgProfile = function() {
             <nav className='profile-desktop'>
                 <div className='menu-desktop'>
                     <div className='menu-btn-desktop'>
-                        <Link href={'/CreateUserPage'} className='create-user'>
+                        <Link href={'/CreateUserPage'} className='create-user-desktop'>
                             Criar Usuário
                         </Link>
                     </div>
                     <div className='menu-btn-desktop'>
-                        <Link href={'/HomePage'} className='user-list'>
+                        <Link href={'/HomePage'} className='user-list-desktop'>
                             Lista de Usuários
                         </Link>
                     </div>
                     <div className='menu-btn-desktop'>
-                        <Link href={'/'} className='settings'>
+                        <Link href={'/ProfilePage'} className='settings-desktop'>
                             Configurações
                         </Link>
                     </div>
                     <div className='menu-btn-desktop'>
-                        <Link href={'/HomePage'} className='exit'>
+                        <Link href={'/HomePage'} className='exit-desktop'>
                             Sair
                         </Link>
                     </div>
