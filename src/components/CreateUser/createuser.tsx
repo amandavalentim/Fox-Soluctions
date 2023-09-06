@@ -1412,6 +1412,7 @@ const CreateUserComponent = styled.section `
             height: 60px;
             margin-left: 20%;
             background-color: #ff7818;
+            font-size: 1em;
         }
 
         .choose-a-image:active {
@@ -1419,6 +1420,7 @@ const CreateUserComponent = styled.section `
             height: 60px;
             margin-left: 20%;
             background-color: #d66515;
+            font-size: 1em;
         }
 
         label {
@@ -1506,7 +1508,7 @@ const CreateUserComponent = styled.section `
 
         h1 {
             margin-left: 35.3%;
-            font-size: 3em;
+            font-size: 2.8em;
         }
 
         .name {
@@ -1521,7 +1523,7 @@ const CreateUserComponent = styled.section `
         }
 
         #name::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-            font-size: 2.3em;
+            font-size: 2.1em;
         }
 
         .span1 {
@@ -1536,6 +1538,7 @@ const CreateUserComponent = styled.section `
             font-size: 2.3em;
             margin-left: 13%;
             margin-top: -2.5%;
+            font-size: 2.1em;
         }
 
         .man {
@@ -1549,12 +1552,12 @@ const CreateUserComponent = styled.section `
         }
 
         .man-op {
-            margin-top: -360%;
+            margin-top: -342%;
             margin-left: 655%;
         }
 
         .woman {
-            margin-top: -5.7%;
+            margin-top: -5.2%;
             margin-left: 28.2%;
         }
 
@@ -1564,12 +1567,12 @@ const CreateUserComponent = styled.section `
         }
 
         .woman-op {
-            margin-top: -360%;
+            margin-top: -342%;
             margin-left: 655%;
         }
 
         .transvestite {
-            margin-top: -5.7%;
+            margin-top: -5.3%;
             margin-left: 42.5%;
         }
 
@@ -1579,12 +1582,12 @@ const CreateUserComponent = styled.section `
         }
 
         .t1-op {
-            margin-top: -360%;
+            margin-top: -342%;
             margin-left: 655%;
         }
 
         .no-binary {
-            margin-top: -1%;
+            margin-top: -2.5%;
             margin-left: 12.4%;
         }
 
@@ -1594,12 +1597,12 @@ const CreateUserComponent = styled.section `
         }
 
         .nb-op {
-            margin-top: -360%;
+            margin-top: -342%;
             margin-left: 655%;
         }
 
         .trans {
-            margin-top: -5.7%;
+            margin-top: -5.2%;
             margin-left: 28.2%;
         }
 
@@ -1609,12 +1612,12 @@ const CreateUserComponent = styled.section `
         }
 
         .t2-op {
-            margin-top: -360%;
+            margin-top: -342%;
             margin-left: 655%;
         }
 
         .another {
-            margin-top: -5.7%;
+            margin-top: -5.3%;
             margin-left: 42.5%;
         }
 
@@ -1624,12 +1627,12 @@ const CreateUserComponent = styled.section `
         }
 
         .a-op {
-            margin-top: -360%;
+            margin-top: -342%;
             margin-left: 655%;
         }
 
         .none {
-            margin-top: -1%;
+            margin-top: -2.5%;
             margin-left: 12.4%;
         }
 
@@ -1639,7 +1642,7 @@ const CreateUserComponent = styled.section `
         }
 
         .n-op {
-            margin-top: -360%;
+            margin-top: -342%;
             margin-left: 655%;
         }
 
@@ -1655,11 +1658,11 @@ const CreateUserComponent = styled.section `
         }
 
         #social-name::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-            font-size: 2.3em;
+        font-size: 2.1em;
         }
 
         .date {
-            margin-top: -5%;
+            margin-top: -6%;
             margin-left: -0.4%;
             font-size: 2.3em;
         }
@@ -1670,12 +1673,12 @@ const CreateUserComponent = styled.section `
         }
 
         #birthday::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-            font-size: 2.3em;
+            font-size: 2.1em;
         }
 
         .small {
             position: absolute;
-            top: 975px;
+            top: 895px;
             font-size: 0.6em;
             margin-left: 10%;
         }
@@ -1685,7 +1688,7 @@ const CreateUserComponent = styled.section `
             margin-left: 32.5%;
             position: absolute;
             font-size: 0.8em;
-            margin-top: 25.1%;
+            margin-top: 19.5%;
         }
 
         .cpf {
@@ -1700,7 +1703,7 @@ const CreateUserComponent = styled.section `
         }
 
         #cpf::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-            font-size: 2.3em;
+            font-size: 2.1em;
         }
 
         .span4 {
@@ -1723,7 +1726,7 @@ const CreateUserComponent = styled.section `
         }
 
         #email::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-            font-size: 2.3em;
+            font-size: 2.1em;
         }
 
         .span5 {
@@ -1746,7 +1749,7 @@ const CreateUserComponent = styled.section `
         }
 
         #country::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-            font-size: 2.3em;
+            font-size: 2.1em;
         }
 
         .span6 {
@@ -1760,28 +1763,36 @@ const CreateUserComponent = styled.section `
         .profile-photo2 {
             margin-top: -3%;
             margin-left: 13%;
+            font-size: 2em;
         }
 
         .choose-a-image {
             margin-left: 12.9%;
             background-color: #F47216;
+            width: 260px;
+            height: 70px;
         }
 
         .choose-a-image:hover {
             margin-left: 12.9%;
             background-color: #ff7818;
+            width: 260px;
+            height: 70px;
         }
 
         .choose-a-image:active {
             margin-left: 12.9%;
             background-color: #d66515;
+            width: 260px;
+            height: 70px;
         }
 
         label {
             position: absolute;
-            top: 1745px;
+            top: 1650px;
             margin-left: 1.4%;
             cursor: pointer;
+            font-size: 2em;
         }
 
         .save {

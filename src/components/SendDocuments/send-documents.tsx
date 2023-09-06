@@ -1209,8 +1209,8 @@ const SendDocumentsComponent = styled.section `
             background: none;
             border: none;
             position: absolute;
-            top: 664px;
-            margin-left: 37%;
+            top: 657px;
+            margin-left: 57%;
             font-size: 1.2em;
             cursor: pointer;
         }
@@ -1234,7 +1234,7 @@ const SendDocumentsComponent = styled.section `
             border: none;
             position: absolute;
             top: 777px;
-            margin-left: 55.1%;
+            margin-left: 57.1%;
             font-size: 1.2em;
             cursor: pointer;
         }
@@ -1266,7 +1266,7 @@ const SendDocumentsComponent = styled.section `
             border: none;
             position: absolute;
             top: 865px;
-            margin-left: 31.5%;
+            margin-left: 57.1%;
             font-size: 1.2em;
             cursor: pointer;
         }
@@ -1290,7 +1290,7 @@ const SendDocumentsComponent = styled.section `
             border: none;
             position: absolute;
             top: 976px;
-            margin-left: 23.5%;
+            margin-left: 57.3%;
             font-size: 1.2em;
             cursor: pointer;
         }
@@ -1322,7 +1322,7 @@ const SendDocumentsComponent = styled.section `
             border: none;
             position: absolute;
             top: 1070px;
-            margin-left: 35.8%;
+            margin-left: 57.3%;
             font-size: 1.2em;
             cursor: pointer;
         }
@@ -1333,6 +1333,202 @@ const SendDocumentsComponent = styled.section `
 
         .next5:active {
             fill: #dedcdc;
+        }
+
+        .send-rg2 ul{
+            display: block;
+            position: fixed;
+            right: -90vw;
+            width: 45vw;
+            height: 350px;
+            border-radius: 20px;
+            background: #0A53B5;
+            z-index: 1;
+            top: 22.5%;
+        }
+
+        .send-rg2.open ul{
+            right: 26vw;
+        }
+
+        .close {
+            fill: white;
+            font-size: 1.6em;
+            margin-top: 7%;
+            margin-left: 115%;
+        }
+
+        .button-close {
+            border: none;
+            background: none;
+            color: #fff;
+        }
+
+        .rg-txt {
+            font-size: 1.1em;
+            margin-left: 32.5%;
+            width: 560px;
+        }
+
+        .choose-a-image {
+            background-color: #fff;
+            margin-top: 5%;
+            margin-left: 11.6%;
+            width: 350px;
+        }
+
+        .label {
+            margin-top: 4%;
+            margin-left: 13.5%;
+        }
+
+        .image {
+            margin-top: 28%;
+            margin-left: 44%;
+        }
+
+        .send-cpf2 ul{
+            display: block;
+            position: fixed;
+            right: -90vw;
+            width: 45vw;
+            height: 350px;
+            border-radius: 20px;
+            background: #0A53B5;
+            z-index: 1;
+            top: 22.5%;
+        }
+
+        .send-cpf2.open ul{
+            right: 26vw;
+        }
+
+        .close {
+            fill: white;
+            font-size: 1.6em;
+            margin-top: 7%;
+            margin-left: 115%;
+        }
+
+        .button-close {
+            border: none;
+            background: none;
+            color: #fff;
+        }
+
+        .cpf-txt {
+            font-size: 1.3em;
+            margin-left: 57.5%;
+            width: 560px;
+        }
+
+        .send-date2 ul{
+            display: block;
+            position: fixed;
+            right: -90vw;
+            width: 45vw;
+            height: 350px;
+            border-radius: 20px;
+            background: #0A53B5;
+            z-index: 1;
+            top: 22.5%;
+        }
+
+        .send-date2.open ul{
+            right: 26vw;
+        }
+
+        .close {
+            fill: white;
+            font-size: 1.6em;
+            margin-top: 7%;
+            margin-left: 115%;
+        }
+
+        .button-close {
+            border: none;
+            background: none;
+            color: #fff;
+        }
+
+        .date-txt {
+            font-size: 1.1em;
+            margin-left: 20.5%;
+            width: 560px;
+        }
+
+        .send-cnh2 ul{
+            display: block;
+            position: fixed;
+            right: -90vw;
+            width: 45vw;
+            height: 350px;
+            border-radius: 20px;
+            background: #0A53B5;
+            z-index: 1;
+            top: 22.5%;
+        }
+
+        .send-cnh2.open ul{
+            right: 26vw;
+        }
+
+        .close {
+            fill: white;
+            font-size: 1.6em;
+            margin-top: 7%;
+            margin-left: 115%;
+        }
+
+        .button-close {
+            border: none;
+            background: none;
+            color: #fff;
+        }
+
+        .cnh-txt {
+            font-size: 1.1em;
+            margin-left: -14.5%;
+            width: 560px;
+        }
+
+        .choose-a-image-cnh {
+            margin-top: 8%;
+        }
+
+        .send-ct2 ul{
+            display: block;
+            position: fixed;
+            right: -90vw;
+            width: 45vw;
+            height: 350px;
+            border-radius: 20px;
+            background: #0A53B5;
+            z-index: 1;
+            top: 22.5%;
+        }
+
+        .send-ct2.open ul{
+            right: 26vw;
+        }
+
+        .close {
+            fill: white;
+            font-size: 1.6em;
+            margin-top: 7%;
+            margin-left: 115%;
+        }
+
+        .button-close {
+            border: none;
+            background: none;
+            color: #fff;
+        }
+
+        .ct-txt {
+            font-size: 1.1em;
+            margin-left: 20.5%;
+            width: 560px;
         }
     }
 
@@ -1439,7 +1635,7 @@ const SendDocumentsComponent = styled.section `
             border: none;
             position: absolute;
             top: 712px;
-            margin-left: 40%;
+            margin-left: 55.5%;
             font-size: 1.2em;
             cursor: pointer;
         }
@@ -1463,7 +1659,7 @@ const SendDocumentsComponent = styled.section `
             border: none;
             position: absolute;
             top: 829px;
-            margin-left: 53.5%;
+            margin-left: 55.6%;
             font-size: 1.2em;
             cursor: pointer;
         }
@@ -1495,7 +1691,7 @@ const SendDocumentsComponent = styled.section `
             border: none;
             position: absolute;
             top: 941px;
-            margin-left: 35.9%;
+            margin-left: 55.8%;
             font-size: 1.2em;
             cursor: pointer;
         }
@@ -1519,7 +1715,7 @@ const SendDocumentsComponent = styled.section `
             border: none;
             position: absolute;
             top: 1070px;
-            margin-left: 30%;
+            margin-left: 55.9%;
             font-size: 1.2em;
             cursor: pointer;
         }
@@ -1551,7 +1747,7 @@ const SendDocumentsComponent = styled.section `
             border: none;
             position: absolute;
             top: 1180px;
-            margin-left: 39.3%;
+            margin-left: 56%;
             font-size: 1.2em;
             cursor: pointer;
         }
@@ -1562,6 +1758,208 @@ const SendDocumentsComponent = styled.section `
 
         .next5:active {
             fill: #dedcdc;
+        }
+
+        .send-rg2 ul{
+            display: block;
+            position: fixed;
+            right: -90vw;
+            width: 35vw;
+            height: 350px;
+            border-radius: 20px;
+            background: #0A53B5;
+            z-index: 1;
+            top: 22.5%;
+        }
+
+        .send-rg2.open ul{
+            right: 32.5vw;
+        }
+
+        .close {
+            fill: white;
+            font-size: 1.6em;
+            margin-top: 7%;
+            margin-left: 115%;
+        }
+
+        .button-close {
+            border: none;
+            background: none;
+            color: #fff;
+        }
+
+        .rg-txt {
+            font-size: 1.1em;
+            margin-left: 33.5%;
+            width: 560px;
+        }
+
+        .choose-a-image {
+            height: 170px;
+            margin-left: 13%;
+        }
+
+        .label {
+            margin-top: 2%;
+        }
+
+        .image {
+            margin-top: 30%;
+        }
+
+        .send-cpf2 ul{
+            display: block;
+            position: fixed;
+            right: -90vw;
+            width: 35vw;
+            height: 350px;
+            border-radius: 20px;
+            background: #0A53B5;
+            z-index: 1;
+            top: 22.5%;
+        }
+
+        .send-cpf2.open ul{
+            right: 32.5vw;
+        }
+
+        .close {
+            fill: white;
+            font-size: 1.6em;
+            margin-top: 7%;
+            margin-left: 115%;
+        }
+
+        .button-close {
+            border: none;
+            background: none;
+            color: #fff;
+        }
+
+        .cpf-txt {
+            font-size: 1.3em;
+            margin-left: 58.5%;
+            width: 560px;
+        }
+
+        .send-date2 ul{
+            display: block;
+            position: fixed;
+            right: -90vw;
+            width: 35vw;
+            height: 350px;
+            border-radius: 20px;
+            background: #0A53B5;
+            z-index: 1;
+            top: 22.5%;
+        }
+
+        .send-date2.open ul{
+            right: 32.5vw;
+        }
+
+        .close {
+            fill: white;
+            font-size: 1.6em;
+            margin-top: 7%;
+            margin-left: 115%;
+        }
+
+        .button-close {
+            border: none;
+            background: none;
+            color: #fff;
+        }
+
+        .date-txt {
+            font-size: 1.1em;
+            margin-left: 23.5%;
+            width: 560px;
+        }
+
+        .send-cnh2 ul{
+            display: block;
+            position: fixed;
+            right: -90vw;
+            width: 35vw;
+            height: 350px;
+            border-radius: 20px;
+            background: #0A53B5;
+            z-index: 1;
+            top: 22.5%;
+        }
+
+        .send-cnh2.open ul{
+            right: 32.5vw;
+        }
+
+        .close {
+            fill: white;
+            font-size: 1.6em;
+            margin-top: 7%;
+            margin-left: 115%;
+        }
+
+        .button-close {
+            border: none;
+            background: none;
+            color: #fff;
+        }
+
+        .cnh-txt {
+            font-size: 1.1em;
+            margin-left: -11.5%;
+            width: 560px;
+        }
+
+        .choose-a-image-cnh {
+            height: 170px;
+            margin-left: 13%;
+        }
+
+        .label-cnh {
+            margin-top: 2%;
+            margin-left: 18.3%;
+        }
+
+        .image-cnh{
+            margin-top: 5%;
+        }
+
+        .send-ct2 ul{
+            display: block;
+            position: fixed;
+            right: -90vw;
+            width: 35vw;
+            height: 350px;
+            border-radius: 20px;
+            background: #0A53B5;
+            z-index: 1;
+            top: 22.5%;
+        }
+
+        .send-ct2.open ul{
+            right: 32.5vw;
+        }
+
+        .close {
+            fill: white;
+            font-size: 1.6em;
+            margin-top: 7%;
+            margin-left: 115%;
+        }
+
+        .button-close {
+            border: none;
+            background: none;
+            color: #fff;
+        }
+
+        .ct-txt {
+            font-size: 1.1em;
+            margin-left: 23.5%;
+            width: 560px;
         }
     }
 
@@ -2145,7 +2543,7 @@ const SendDocumentsPg = function() {
                                             <FaTimes className='close' onClick={CloseCt2}/>
                                         </li>
                                         <li>
-                                            <h1 className='ct-txt'>Carteira de Trabalho</h1>
+                                            <h1 className='cnh-txt'>Carteira de Trabalho</h1>
                                         </li>
                                         <div className='choose-a-image'>
                                             <label>
