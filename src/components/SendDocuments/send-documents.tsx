@@ -4,7 +4,8 @@
 import styled from '@emotion/styled';
 import Input from '../Login/Input/Input';
 import Image from 'next/image';
-import {FaAngleRight, FaImages, FaTimes} from "react-icons/fa";
+import {FaAngleLeft, FaAngleRight, FaImages, FaTimes} from "react-icons/fa";
+import Link from 'next/link';
 
 const SendDocumentsComponent = styled.section `
 
@@ -19,7 +20,7 @@ const SendDocumentsComponent = styled.section `
         display: none;
     }
 
-    height: 142vh;
+    height: 155vh;
 
     background: linear-gradient(180deg, #0A53B5 0%, #0081E8 100%);
 
@@ -121,8 +122,8 @@ const SendDocumentsComponent = styled.section `
         border: none;
         position: absolute;
         top: 516px;
-        margin-left: 65%;
-        font-size: 1.2em;
+        margin-left: 63%;
+        font-size: 20px;
     }
 
     .next1 {
@@ -145,8 +146,8 @@ const SendDocumentsComponent = styled.section `
         border: none;
         position: absolute;
         top: 605.4px;
-        margin-left: 66.5%;
-        font-size: 1.2em;
+        margin-left: 65%;
+        font-size: 20px;
     }
 
     .next2 {
@@ -176,8 +177,8 @@ const SendDocumentsComponent = styled.section `
         border: none;
         position: absolute;
         top: 687px;
-        margin-left: 66.4%;
-        font-size: 1.5em;
+        margin-left: 65%;
+        font-size: 20px;
     }
 
     .next3 {
@@ -200,8 +201,8 @@ const SendDocumentsComponent = styled.section `
         border: none;
         position: absolute;
         top: 790px;
-        margin-left: 65.8%;
-        font-size: 1.4em;
+        margin-left: 65%;
+        font-size: 20px;
     }
 
     .next4 {
@@ -231,8 +232,8 @@ const SendDocumentsComponent = styled.section `
         border: none;
         position: absolute;
         top: 880px;
-        margin-left: 66%;
-        font-size: 1.7em;
+        margin-left: 65%;
+        font-size: 20px;
     }
 
     .next5 {
@@ -623,10 +624,68 @@ const SendDocumentsComponent = styled.section `
         display: none;
     }
 
+    .previous {
+        border: none;
+        background-color: #93B413;
+        margin-left: 34%;
+        margin-top: 10%;
+        border-radius: 10px;
+        width: 40px;
+        height: 40px;
+        fill: #fff;
+        font-size: 20px;
+    }
+
+    .previous:active {
+        border: none;
+        background-color: #86a40f;
+        margin-left: 34%;
+        margin-top: 10%;
+        border-radius: 10px;
+        width: 40px;
+        height: 40px;
+        fill: #fff;
+        font-size: 20px;
+    }
+
+    #previous {
+        margin-top: 2%;
+        margin-left: -1%;
+    }
+
+    .next {
+        border: none;
+        background-color: #93B413;
+        margin-left: 5%;
+        margin-top: 10%;
+        border-radius: 10px;
+        width: 40px;
+        height: 40px;
+        fill: #fff;
+        font-size: 20px;
+    }
+
+    .next:active {
+        border: none;
+        background-color: #86a40f;
+        margin-left: 5%;
+        margin-top: 10%;
+        border-radius: 10px;
+        width: 40px;
+        height: 40px;
+        fill: #fff;
+        font-size: 20px;
+    }
+
+    #next {
+        margin-top: 2%;
+        margin-left: -1%;
+    }
+
     // Tablet
     @media(min-width: 768px) {
 
-        height: 180vh;
+        height: 190vh;
 
         .mobile {
             display: none;
@@ -1132,6 +1191,70 @@ const SendDocumentsComponent = styled.section `
             width: 340px;
             margin-left: 24.5%;
         }
+
+        .previous {
+            margin-left: 5%;
+            margin-top: 8%;
+        }
+
+        .previous:active {
+            margin-left: 5%;
+            margin-top: 8%;
+        }
+
+        #previous {
+            margin-top: -3%;
+            padding-top: 1%;
+            font-size: 1.6em;
+        }
+
+        .previous-button {
+            border: none;
+            background-color: #93B413;
+            border-radius: 10px;
+            width: 150px;
+            height: 50px;
+        }
+
+        .previous-button:active {
+            border: none;
+            background-color: #86a40f;
+            border-radius: 10px;
+            width: 150px;
+            height: 50px;
+        }
+
+        .next {
+            margin-left: 75.5%;
+            margin-top: -5.1%;
+        }
+
+        .next:active {
+            margin-left: 75.5%;
+            margin-top: -5.1%;
+        }
+
+        #next {
+            margin-top: -3%;
+            padding-top: 1%;
+            font-size: 1.6em;
+        }
+
+        .next-button {
+            border: none;
+            background-color: #93B413;
+            border-radius: 10px;
+            width: 150px;
+            height: 50px;
+        }
+
+        .next-button:active {
+            border: none;
+            background-color: #86a40f;
+            border-radius: 10px;
+            width: 150px;
+            height: 50px;
+        }
     }
 
     // Small Screens
@@ -1210,7 +1333,7 @@ const SendDocumentsComponent = styled.section `
             border: none;
             position: absolute;
             top: 657px;
-            margin-left: 57%;
+            margin-left: 60%;
             font-size: 1.2em;
             cursor: pointer;
         }
@@ -1233,8 +1356,8 @@ const SendDocumentsComponent = styled.section `
             background: none;
             border: none;
             position: absolute;
-            top: 777px;
-            margin-left: 57.1%;
+            top: 769px;
+            margin-left: 60%;
             font-size: 1.2em;
             cursor: pointer;
         }
@@ -1266,7 +1389,7 @@ const SendDocumentsComponent = styled.section `
             border: none;
             position: absolute;
             top: 865px;
-            margin-left: 57.1%;
+            margin-left: 60%;
             font-size: 1.2em;
             cursor: pointer;
         }
@@ -1290,7 +1413,7 @@ const SendDocumentsComponent = styled.section `
             border: none;
             position: absolute;
             top: 976px;
-            margin-left: 57.3%;
+            margin-left: 60%;
             font-size: 1.2em;
             cursor: pointer;
         }
@@ -1322,7 +1445,7 @@ const SendDocumentsComponent = styled.section `
             border: none;
             position: absolute;
             top: 1070px;
-            margin-left: 57.3%;
+            margin-left: 60%;
             font-size: 1.2em;
             cursor: pointer;
         }
@@ -1356,6 +1479,7 @@ const SendDocumentsComponent = styled.section `
             font-size: 1.6em;
             margin-top: 7%;
             margin-left: 115%;
+            cursor: pointer;
         }
 
         .button-close {
@@ -1375,16 +1499,19 @@ const SendDocumentsComponent = styled.section `
             margin-top: 5%;
             margin-left: 11.6%;
             width: 350px;
+            cursor: pointer;
         }
 
         .label {
             margin-top: 4%;
             margin-left: 13.5%;
+            cursor: pointer;
         }
 
         .image {
             margin-top: 28%;
             margin-left: 44%;
+            cursor: pointer;
         }
 
         .send-cpf2 ul{
@@ -1408,6 +1535,7 @@ const SendDocumentsComponent = styled.section `
             font-size: 1.6em;
             margin-top: 7%;
             margin-left: 115%;
+            cursor: pointer;
         }
 
         .button-close {
@@ -1443,6 +1571,7 @@ const SendDocumentsComponent = styled.section `
             font-size: 1.6em;
             margin-top: 7%;
             margin-left: 115%;
+            cursor: pointer;
         }
 
         .button-close {
@@ -1478,6 +1607,7 @@ const SendDocumentsComponent = styled.section `
             font-size: 1.6em;
             margin-top: 7%;
             margin-left: 115%;
+            cursor: pointer;
         }
 
         .button-close {
@@ -1494,7 +1624,16 @@ const SendDocumentsComponent = styled.section `
 
         .choose-a-image-cnh {
             margin-top: 8%;
+            cursor: pointer;
         }
+
+        .label-cnh {
+            cursor: pointer;
+        }
+
+            .image-cnh {
+                cursor: pointer;
+            }
 
         .send-ct2 ul{
             display: block;
@@ -1517,6 +1656,7 @@ const SendDocumentsComponent = styled.section `
             font-size: 1.6em;
             margin-top: 7%;
             margin-left: 115%;
+            cursor: pointer;
         }
 
         .button-close {
@@ -1530,12 +1670,76 @@ const SendDocumentsComponent = styled.section `
             margin-left: 20.5%;
             width: 560px;
         }
+
+        .previous {
+            margin-left: 5%;
+            margin-top: 5%;
+        }
+
+        .previous:active {
+            margin-left: 5%;
+            margin-top: 5%;
+        }
+
+        #previous {
+            margin-top: -3%;
+            padding-top: 1%;
+            font-size: 1.6em;
+        }
+
+        .previous-button {
+            border: none;
+            background-color: #93B413;
+            border-radius: 10px;
+            width: 150px;
+            height: 50px;
+        }
+
+        .previous-button:active {
+            border: none;
+            background-color: #86a40f;
+            border-radius: 10px;
+            width: 150px;
+            height: 50px;
+        }
+
+        .next {
+            margin-left: 80%;
+            margin-top: -3.9%;
+        }
+
+        .next:active {
+            margin-left: 80%;
+            margin-top: -3.9%;
+        }
+
+        #next {
+            margin-top: -3%;
+            padding-top: 1%;
+            font-size: 1.6em;
+        }
+
+        .next-button {
+            border: none;
+            background-color: #93B413;
+            border-radius: 10px;
+            width: 150px;
+            height: 50px;
+        }
+
+        .next-button:active {
+            border: none;
+            background-color: #86a40f;
+            border-radius: 10px;
+            width: 150px;
+            height: 50px;
+        }
     }
 
     // Medium Screens
     @media(min-width: 1200px) {
 
-        height: 181.5vh;
+        height: 186.5vh;
 
         .mobile {
             display: none;
@@ -1635,7 +1839,7 @@ const SendDocumentsComponent = styled.section `
             border: none;
             position: absolute;
             top: 712px;
-            margin-left: 55.5%;
+            margin-left: 57.5%;
             font-size: 1.2em;
             cursor: pointer;
         }
@@ -1659,7 +1863,7 @@ const SendDocumentsComponent = styled.section `
             border: none;
             position: absolute;
             top: 829px;
-            margin-left: 55.6%;
+            margin-left: 57.5%;
             font-size: 1.2em;
             cursor: pointer;
         }
@@ -1691,7 +1895,7 @@ const SendDocumentsComponent = styled.section `
             border: none;
             position: absolute;
             top: 941px;
-            margin-left: 55.8%;
+            margin-left: 57.5%;
             font-size: 1.2em;
             cursor: pointer;
         }
@@ -1715,7 +1919,7 @@ const SendDocumentsComponent = styled.section `
             border: none;
             position: absolute;
             top: 1070px;
-            margin-left: 55.9%;
+            margin-left: 57.5%;
             font-size: 1.2em;
             cursor: pointer;
         }
@@ -1747,7 +1951,7 @@ const SendDocumentsComponent = styled.section `
             border: none;
             position: absolute;
             top: 1180px;
-            margin-left: 56%;
+            margin-left: 57.5%;
             font-size: 1.2em;
             cursor: pointer;
         }
@@ -1781,6 +1985,7 @@ const SendDocumentsComponent = styled.section `
             font-size: 1.6em;
             margin-top: 7%;
             margin-left: 115%;
+            cursor: pointer;
         }
 
         .button-close {
@@ -1798,14 +2003,17 @@ const SendDocumentsComponent = styled.section `
         .choose-a-image {
             height: 170px;
             margin-left: 13%;
+            cursor: pointer;
         }
 
         .label {
             margin-top: 2%;
+            cursor: pointer;
         }
 
         .image {
             margin-top: 30%;
+            cursor: pointer;
         }
 
         .send-cpf2 ul{
@@ -1829,6 +2037,7 @@ const SendDocumentsComponent = styled.section `
             font-size: 1.6em;
             margin-top: 7%;
             margin-left: 115%;
+            cursor: pointer;
         }
 
         .button-close {
@@ -1864,6 +2073,7 @@ const SendDocumentsComponent = styled.section `
             font-size: 1.6em;
             margin-top: 7%;
             margin-left: 115%;
+            cursor: pointer;
         }
 
         .button-close {
@@ -1899,6 +2109,7 @@ const SendDocumentsComponent = styled.section `
             font-size: 1.6em;
             margin-top: 7%;
             margin-left: 115%;
+            cursor: pointer;
         }
 
         .button-close {
@@ -1916,15 +2127,18 @@ const SendDocumentsComponent = styled.section `
         .choose-a-image-cnh {
             height: 170px;
             margin-left: 13%;
+            cursor: pointer;
         }
 
         .label-cnh {
             margin-top: 2%;
             margin-left: 18.3%;
+            cursor: pointer;
         }
 
         .image-cnh{
             margin-top: 5%;
+            cursor: pointer;
         }
 
         .send-ct2 ul{
@@ -1948,6 +2162,7 @@ const SendDocumentsComponent = styled.section `
             font-size: 1.6em;
             margin-top: 7%;
             margin-left: 115%;
+            cursor: pointer;
         }
 
         .button-close {
@@ -1960,6 +2175,70 @@ const SendDocumentsComponent = styled.section `
             font-size: 1.1em;
             margin-left: 23.5%;
             width: 560px;
+        }
+
+        .previous {
+            margin-left: 6%;
+            margin-top: 4%;
+        }
+
+        .previous:active {
+            margin-left: 6%;
+            margin-top: 4%;
+        }
+
+        #previous {
+            margin-top: -3%;
+            padding-top: 1%;
+            font-size: 1.6em;
+        }
+
+        .previous-button {
+            border: none;
+            background-color: #93B413;
+            border-radius: 10px;
+            width: 150px;
+            height: 50px;
+        }
+
+        .previous-button:active {
+            border: none;
+            background-color: #86a40f;
+            border-radius: 10px;
+            width: 150px;
+            height: 50px;
+        }
+
+        .next {
+            margin-left: 83%;
+            margin-top: -2.8%;
+        }
+
+        .next:active {
+            margin-left: 83%;
+            margin-top: -2.8%;
+        }
+
+        #next {
+            margin-top: -3%;
+            padding-top: 1%;
+            font-size: 1.6em;
+        }
+
+        .next-button {
+            border: none;
+            background-color: #93B413;
+            border-radius: 10px;
+            width: 150px;
+            height: 50px;
+        }
+
+        .next-button:active {
+            border: none;
+            background-color: #86a40f;
+            border-radius: 10px;
+            width: 150px;
+            height: 50px;
         }
     }
 
@@ -2007,7 +2286,7 @@ const SendDocumentsComponent = styled.section `
         }
 
         form {
-            margin-left: 21%;
+            margin-left: 21.3%;
         }
 
         h1 {
@@ -2034,7 +2313,7 @@ const SendDocumentsComponent = styled.section `
             border: none;
             position: absolute;
             top: 712.5px;
-            margin-left: 37%;
+            margin-left: 50%;
             font-size: 1.2em;
             cursor: pointer;
         }
@@ -2058,7 +2337,7 @@ const SendDocumentsComponent = styled.section `
             border: none;
             position: absolute;
             top: 844px;
-            margin-left: 47%;
+            margin-left: 50%;
             font-size: 1.2em;
             cursor: pointer;
         }
@@ -2090,7 +2369,7 @@ const SendDocumentsComponent = styled.section `
             border: none;
             position: absolute;
             top: 968px;
-            margin-left: 34.2%;
+            margin-left: 50%;
             font-size: 1.2em;
             cursor: pointer;
         }
@@ -2114,7 +2393,7 @@ const SendDocumentsComponent = styled.section `
             border: none;
             position: absolute;
             top: 1098.5px;
-            margin-left: 30%;
+            margin-left: 50%;
             font-size: 1.2em;
             cursor: pointer;
         }
@@ -2146,7 +2425,7 @@ const SendDocumentsComponent = styled.section `
             border: none;
             position: absolute;
             top: 1220px;
-            margin-left: 36.8%;
+            margin-left: 50%;
             font-size: 1.2em;
             cursor: pointer;
         }
@@ -2157,6 +2436,222 @@ const SendDocumentsComponent = styled.section `
 
         .next5:active {
             fill: #dedcdc;
+        }
+
+        .send-rg2 ul{
+            display: block;
+            position: fixed;
+            right: -90vw;
+            width: 30vw;
+            height: 350px;
+            border-radius: 20px;
+            background: #0A53B5;
+            z-index: 1;
+            top: 22.5%;
+        }
+
+        .send-rg2.open ul{
+            right: 32.5vw;
+        }
+
+        .close {
+            fill: white;
+            font-size: 1.6em;
+            margin-top: 7%;
+            margin-left: 115%;
+            cursor: pointer;
+        }
+
+        .button-close {
+            border: none;
+            background: none;
+            color: #fff;
+        }
+
+        .rg-txt {
+            font-size: 1.3em;
+            margin-left: 35%;
+            width: 560px;
+        }
+
+        .choose-a-image {
+            margin-left: 13%;
+            cursor: pointer;
+        }
+
+        .label {
+            margin-left: 14.5%;
+            font-size: 1.1em;
+            cursor: pointer;
+        }
+
+        .image {
+            font-size: 1.7em;
+            margin-top: 30%;
+            cursor: pointer;
+        }
+
+        .send-cpf2 ul{
+            display: block;
+            position: fixed;
+            right: -90vw;
+            width: 30vw;
+            height: 350px;
+            border-radius: 20px;
+            background: #0A53B5;
+            z-index: 1;
+            top: 22.5%;
+        }
+
+        .send-cpf2.open ul{
+            right: 32.5vw;
+        }
+
+        .close {
+            fill: white;
+            font-size: 1.6em;
+            margin-top: 7%;
+            margin-left: 115%;
+            cursor: pointer;
+        }
+
+        .button-close {
+            border: none;
+            background: none;
+            color: #fff;
+        }
+
+        .cpf-txt {
+            font-size: 1.5em;
+            margin-left: 60%;
+            width: 560px;
+        }
+
+        .send-date2 ul{
+            display: block;
+            position: fixed;
+            right: -90vw;
+            width: 30vw;
+            height: 350px;
+            border-radius: 20px;
+            background: #0A53B5;
+            z-index: 1;
+            top: 22.5%;
+        }
+
+        .send-date2.open ul{
+            right: 32.5vw;
+        }
+
+        .close {
+            fill: white;
+            font-size: 1.6em;
+            margin-top: 7%;
+            margin-left: 115%;
+            cursor: pointer;
+        }
+
+        .button-close {
+            border: none;
+            background: none;
+            color: #fff;
+        }
+
+        .date-txt {
+            font-size: 1.3em;
+            margin-left: 23%;
+            width: 560px;
+        }
+
+        .send-cnh2 ul{
+            display: block;
+            position: fixed;
+            right: -90vw;
+            width: 30vw;
+            height: 350px;
+            border-radius: 20px;
+            background: #0A53B5;
+            z-index: 1;
+            top: 22.5%;
+        }
+
+        .send-cnh2.open ul{
+            right: 32.5vw;
+        }
+
+        .close {
+            fill: white;
+            font-size: 1.6em;
+            margin-top: 7%;
+            margin-left: 115%;
+            cursor: pointer;
+        }
+
+        .button-close {
+            border: none;
+            background: none;
+            color: #fff;
+        }
+
+        .cnh-txt {
+            font-size: 1.1em;
+            margin-left: -11.5%;
+            width: 560px;
+        }
+
+        .choose-a-image-cnh {
+            height: 170px;
+            margin-left: 13%;
+            cursor: pointer;
+        }
+
+        .label-cnh {
+            margin-top: 2%;
+            margin-left: 18.3%;
+            font-size: 1.2em;
+            cursor: pointer;
+        }
+
+        .image-cnh{
+            margin-top: 5%;
+            cursor: pointer;
+            font-size: 1.7em;
+        }
+
+        .send-ct2 ul{
+            display: block;
+            position: fixed;
+            right: -90vw;
+            width: 30vw;
+            height: 350px;
+            border-radius: 20px;
+            background: #0A53B5;
+            z-index: 1;
+            top: 22.5%;
+        }
+
+        .send-ct2.open ul{
+            right: 32.5vw;
+        }
+
+        .close {
+            fill: white;
+            font-size: 1.6em;
+            margin-top: 7%;
+            margin-left: 115%;
+            cursor: pointer;
+        }
+
+        .button-close {
+            border: none;
+            background: none;
+            color: #fff;
+        }
+
+        .ct-txt {
+            font-size: 1.5em;
+            margin-left: 24%;
+            width: 560px;
         }
     }
 `;
@@ -2391,7 +2886,7 @@ const SendDocumentsPg = function() {
                                     <div className='backdrop5' onClick={CloseCt}></div>
                                     <Ul>
                                         <li>
-                                                <FaTimes className='close' onClick={CloseCt}/>
+                                            <FaTimes className='close' onClick={CloseCt}/>
                                         </li>
                                         <li>
                                             <h1 className='ct-txt'>Carteira de Trabalho</h1>
@@ -2410,6 +2905,16 @@ const SendDocumentsPg = function() {
                             </p> 
                         </div>
                 </form>
+                <button type="button" className='previous'>
+                    <Link href={'CreateUserPage'}>
+                        <FaAngleLeft id='previous'/>
+                    </Link>
+                </button>
+                <button type="button" className='next'>
+                    <Link href={'/'}>
+                        <FaAngleRight id='next'/>
+                    </Link>
+                </button>
             </nav>
 
             <nav className='tablet-desktops'>
@@ -2543,7 +3048,7 @@ const SendDocumentsPg = function() {
                                             <FaTimes className='close' onClick={CloseCt2}/>
                                         </li>
                                         <li>
-                                            <h1 className='cnh-txt'>Carteira de Trabalho</h1>
+                                            <h1 className='ct-txt'>Carteira de Trabalho</h1>
                                         </li>
                                         <div className='choose-a-image'>
                                             <label>
@@ -2559,6 +3064,20 @@ const SendDocumentsPg = function() {
                             </p> 
                         </div>
                 </form>
+                <div className='previous'>
+                    <button type="button" className='previous-button'>
+                        <Link href={'CreateUserPage'}>
+                            <p id='previous'>Anterior</p>
+                        </Link>
+                    </button>
+                </div>
+                <div className='next'>
+                    <button type="button" className='next-button'>
+                        <Link href={'/'}>
+                            <p id="next">Próximo</p>
+                        </Link>
+                    </button>
+                </div>
             </nav>
         </SendDocumentsComponent>
     )
