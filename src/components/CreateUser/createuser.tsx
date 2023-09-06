@@ -25,14 +25,14 @@ const CreateUserComponent = styled.section `
     }
 
     .search {
-        width: 50px;
-        height: 50px;
+        width: 35px;
+        height: 35px;
         margin-top: 4%;
         margin-left: 2%;
     }
 
     .box-1 {
-            margin-top: 7%;
+        margin-top: 9%;
             margin-left: 15%;
             text-align: center;
             background-color: #07B3FD;
@@ -70,11 +70,11 @@ const CreateUserComponent = styled.section `
         }
 
     .profile-photo {
-        width: 70px;
-        height: 70px;
+        width: 60px;
+        height: 60px;
         position: absolute;
         top: 180px;
-        margin-left: 75%;
+        margin-left: 78%;
     }
 
     * {
@@ -1056,7 +1056,7 @@ const CreateUserComponent = styled.section `
     // Medium Screens
     @media(min-width: 1200px) {
 
-        height: 280vh;
+        height: 250vh;
 
         .mobile {
             display: none;
@@ -1125,45 +1125,46 @@ const CreateUserComponent = styled.section `
         form {
             margin-top: 5%;
             width: 1110px;
-            height: 1400px;
+            height: 1250px;
         }
 
         h1 {
-            font-size: 3.2em;
-            margin-left: 32.5%;
+            font-size: 2.4em;
+            margin-left: 35.5%;
         }
 
         .name {
             margin-top: 3%;
-            margin-left: 2.8%;
-            font-size: 2.2em;
+            margin-left: 8.8%;
+            font-size: 1.4em;
         }
 
         #name {
-            width: 790px;
+            width: 650px;
             height: 45px;
         }
 
         #name::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-            font-size: 2.2em;
+            font-size: 1.5em;
         }
 
         .span1 {
             color: #F47216;
-            margin-left: -36%;
+            margin-left: -33%;
             position: absolute;
-            font-size: 1.4em;
-            margin-top: 0%;
+            font-size: 1.3em;
+            margin-top: 1%;
         }
 
         .gender-txt {
-            font-size: 2.2em;
+            font-size: 1.5em;
+            margin-left: 20%;
         }
 
         .man {
             width: 30px;
-            margin-left: 15.2%;
-            margin-top: -1.5%;
+            margin-left: 20.2%;
+            margin-top: -0.5%;
         }
 
         #man {
@@ -1174,13 +1175,13 @@ const CreateUserComponent = styled.section `
         .man-op {
             margin-left: 555%;
             margin-top: -254%;
-            font-size: 1.6em;
+            font-size: 1.1em;
         }
 
         .woman {
             width: 30px;
-            margin-left: 32.2%;
-            margin-top: -4.7%;
+            margin-left: 35.2%;
+            margin-top: -4.1%;
         }
 
         #woman {
@@ -1190,14 +1191,14 @@ const CreateUserComponent = styled.section `
 
         .woman-op {
             margin-left: 555%;
-            margin-top: -254%;
-            font-size: 1.6em;
+            margin-top: -240%;
+            font-size: 1.1em;
         }
 
         .transvestite {
             width: 30px;
-            margin-left: 48.2%;
-            margin-top: -4.6%;
+            margin-left: 49.2%;
+            margin-top: -4.2%;
         }
 
         #transvestite {
@@ -1207,14 +1208,14 @@ const CreateUserComponent = styled.section `
 
         .t1-op {
             margin-left: 555%;
-            margin-top: -254%;
-            font-size: 1.6em;
+            margin-top: -240%;
+            font-size: 1.1em;
         }
 
         .no-binary {
             width: 30px;
-            margin-left: 15.2%;
-            margin-top: 0%;
+            margin-left: 20.2%;
+            margin-top: -0.5%;
         }
 
         #no-binary {
@@ -1224,15 +1225,14 @@ const CreateUserComponent = styled.section `
 
         .nb-op {
             margin-left: 555%;
-            margin-top: -254%;
-            font-size: 1.6em;
-            width: 168px;
+            margin-top: -245%;
+            font-size: 1.1em;
         }
 
         .trans {
             width: 30px;
-            margin-left: 32.2%;
-            margin-top: -4.7%;
+            margin-left: 35.2%;
+            margin-top: -4.1%;
         }
 
         #trans {
@@ -1242,14 +1242,14 @@ const CreateUserComponent = styled.section `
 
         .t2-op {
             margin-left: 555%;
-            margin-top: -254%;
-            font-size: 1.6em;
+            margin-top: -245%;
+            font-size: 1.1em;
         }
 
         .another {
             width: 30px;
-            margin-left: 48.2%;
-            margin-top: -4.6%;
+            margin-left: 49.2%;
+            margin-top: -4.2%;
         }
 
         #another {
@@ -1259,13 +1259,13 @@ const CreateUserComponent = styled.section `
 
         .a-op {
             margin-left: 555%;
-            margin-top: -254%;
-            font-size: 1.6em;
+            margin-top: -245%;
+            font-size: 1.1em;
         }
 
         .none {
             width: 30px;
-            margin-left: 15.2%;
+            margin-left: 20.2%;
             margin-top: 0%;
         }
 
@@ -1276,174 +1276,183 @@ const CreateUserComponent = styled.section `
 
         .n-op {
             margin-left: 555%;
-            margin-top: -254%;
-            font-size: 1.6em;
+            margin-top: -245%;
+            font-size: 1.1em;
             width: 234px;
         }
 
         .social-name {
-            margin-top: 3%;
-            margin-left: 2.8%;
-            font-size: 2.2em;
+            margin-top: -0.5%;
+            margin-left: 8.8%;
+            font-size: 1.6em;
         }
 
         #social-name {
-            width: 790px;
+            width: 650px;
             height: 45px;
         }
 
         #social-name::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-            font-size: 2.2em;
+            font-size: 1.5em;
         }
 
         .date {
-            margin-top: -3%;
-            margin-left: 2.8%;
-            font-size: 2.2em;
+            margin-top: -3.5%;
+            margin-left: 8.8%;
+            font-size: 1.6em;
         }
 
         #birthday {
-            width: 790px;
+            width: 650px;
             height: 45px;
         }
 
         #birthday::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-            font-size: 2.2em;
+            font-size: 1.5em;
         }
 
         .span3 {
             color: #F47216;
-            margin-left: 39%;
+            margin-left: 30.5%;
             position: absolute;
-            margin-top: 21.5%;
+            margin-top: 16.5%;
         }
 
         .small {
             position: absolute;
             margin-left: 9%;
-            top: 920px;
+            top: 840px;
         }
 
         .cpf {
-            margin-top: 2%;
-            margin-left: 2.8%;
-            font-size: 2.2em;
+            margin-top: -1.5%;
+            margin-left: 8.8%;
+            font-size: 1.6em;
         }
 
         #cpf {
-            width: 790px;
+            width: 650px;
             height: 45px;
         }
 
         #cpf::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-            font-size: 2.2em;
+            font-size: 1.5em;
         }
 
         .span4 {
             color: #F47216;
-            margin-left: -52%;
+            margin-left: -43.5%;
             position: absolute;
             font-size: 1.4em;
-            margin-top: 0.2%;
+            margin-top: 0.7%;
         }
 
         .email {
-            margin-top: -2%;
-            margin-left: 2.8%;
-            font-size: 2.2em;
+            margin-top: -2.5%;
+            margin-left: 8.8%;
+            font-size: 1.6em;
         }
 
         #email {
-            width: 790px;
+            width: 650px;
             height: 45px;
         }
 
         #email::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-            font-size: 2.2em;
+            font-size: 1.5em;
         }
 
         .span5 {
             color: #F47216;
-            margin-left: -50.5%;
+            margin-left: -41.5%;
             position: absolute;
             font-size: 1.2em;
-            margin-top: 0.2%;
+            margin-top: 0.9%;
         }
 
         .country {
-            margin-top: -2%;
-            margin-left: 2.8%;
-            font-size: 2.2em;
+            margin-top: -2.5%;
+            margin-left: 8.8%;
+            font-size: 1.6em;
         }
 
         #country {
-            width: 790px;
+            width: 650px;
             height: 45px;
         }
 
         #country::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-            font-size: 2.2em;
+            font-size: 1.5em;
         }
 
         .span6 {
             color: #F47216;
-            margin-left: -52%;
+            margin-left: -43.5%;
             position: absolute;
             font-size: 1.4em;
-            margin-top: 0.2%;
+            margin-top: 0.7%;
         }
 
         .profile-photo2 {
-            font-size: 2.2em;
+            font-size: 2em;
+            margin-left: 20%;
+            font-size: 1.5em;
         }
 
         .choose-a-image {
-            width: 230px;
-            height: 65px;
+            width: 200px;
+            height: 60px;
+            margin-left: 20%;
             background-color: #F47216;
+            font-size: 1em;
         }
 
         .choose-a-image:hover {
-            width: 230px;
-            height: 65px;
+            width: 200px;
+            height: 60px;
+            margin-left: 20%;
             background-color: #ff7818;
         }
 
         .choose-a-image:active {
-            width: 230px;
-            height: 65px;
+            width: 200px;
+            height: 60px;
+            margin-left: 20%;
             background-color: #d66515;
         }
 
         label {
             position: absolute;
-            margin-left: 2.1%;
-            top: 1603px;
+            margin-left: 1.7%;
+            top: 1423px;
             font-size: 1.5em;
         }
 
         .save {
-            margin-top: 3%;
-            width: 250px;
+            margin-top: 6%;
+            width: 220px;
             height: 70px;
             font-size: 2.5em;
             background-color: #93B413;
+            margin-left: 41%;
         }
 
         .save:hover {
-            margin-top: 3%;
-            width: 250px;
+            margin-top: 6%;
+            width: 220px;
             height: 70px;
             font-size: 2.5em;
             background-color: #9fc214;
+            margin-left: 41%;
         }
 
         .save:active {
-            margin-top: 3%;
-            width: 250px;
+            margin-top: 6%;
+            width: 220px;
             height: 70px;
             font-size: 2.5em;
             background-color: #86a40f;
+            margin-left: 41%;
         }
     }
 

@@ -34,14 +34,14 @@ const SendDocumentsComponent = styled.section `
     }
 
     .search {
-        width: 50px;
-        height: 50px;
+        width: 35px;
+        height: 35px;
         margin-top: 4%;
         margin-left: 2%;
     }
 
     .box-1 {
-        margin-top: 7%;
+        margin-top: 9%;
         margin-left: 15%;
         text-align: center;
         background-color: #07B3FD;
@@ -80,11 +80,11 @@ const SendDocumentsComponent = styled.section `
     }
 
     .profile-photo {
-        width: 70px;
-        height: 70px;
+        width: 60px;
+        height: 60px;
         position: absolute;
         top: 180px;
-        margin-left: 75%;
+        margin-left: 78%;
     }
 
     form {
@@ -734,7 +734,7 @@ const SendDocumentsComponent = styled.section `
             border: none;
             position: absolute;
             top: 612px;
-            margin-left: 33%;
+            margin-left: 64.5%;
             font-size: 1.2em;
         }
 
@@ -756,7 +756,7 @@ const SendDocumentsComponent = styled.section `
             border: none;
             position: absolute;
             top: 720px;
-            margin-left: 58.5%;
+            margin-left: 64.5%;
             font-size: 1.2em;
         }
 
@@ -787,7 +787,7 @@ const SendDocumentsComponent = styled.section `
             border: none;
             position: absolute;
             top: 827px;
-            margin-left: 24.7%;
+            margin-left: 64.7%;
             font-size: 1.2em;
         }
 
@@ -809,7 +809,7 @@ const SendDocumentsComponent = styled.section `
             border: none;
             position: absolute;
             top: 935px;
-            margin-left: 13%;
+            margin-left: 65%;
             font-size: 1.2em;
         }
 
@@ -840,7 +840,7 @@ const SendDocumentsComponent = styled.section `
             border: none;
             position: absolute;
             top: 1037px;
-            margin-left: 30.6%;
+            margin-left: 65.2%;
             font-size: 1.2em;
         }
 
@@ -850,6 +850,287 @@ const SendDocumentsComponent = styled.section `
 
         .next5:active {
             fill: #dedcdc;
+        }
+
+        .backdrop-rg {
+            display: none;
+        }
+
+        .send-rg2.open .backdrop-rg {
+            opacity: .5;
+            display: block;
+        }
+
+        .send-rg2 .backdrop-rg {
+            opacity: 0;
+            background-color: #000;
+            transition: opacity .15s linear;
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            z-index: 1;
+            left: 0;
+            top: 0;
+        }
+
+        .send-rg2 ul{
+            display: block;
+            position: fixed;
+            right: -90vw;
+            width: 60vw;
+            height: 350px;
+            border-radius: 20px;
+            background: #0A53B5;
+            z-index: 1;
+            top: 21.5%;
+        }
+
+        .send-rg2.open ul{
+            right: 19vw;
+        }
+
+        .close {
+            fill: white;
+            font-size: 1.6em;
+            margin-top: 7%;
+            margin-left: 115%;
+        }
+
+        .button-close {
+            border: none;
+            background: none;
+            color: #fff;
+        }
+
+        .rg-txt {
+            font-size: 1.1em;
+            margin-left: 29.5%;
+            width: 560px;
+        }
+
+        .choose-a-image {
+            background-color: #fff;
+            margin-top: 5%;
+            margin-left: 11.6%;
+            width: 350px;
+        }
+
+        .label {
+            margin-top: 5%;
+            margin-left: 12.5%;
+        }
+
+        .image {
+            margin-top: 28%;
+            margin-left: 44%;
+        }
+
+        .backdrop-cpf {
+            display: none;
+        }
+
+        .send-cpf2.open .backdrop-cpf {
+            opacity: .5;
+            display: block;
+        }
+
+        .send-cpf2 .backdrop-cpf {
+            opacity: 0;
+            background-color: #000;
+            transition: opacity .15s linear;
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            z-index: 1;
+            left: 0;
+            top: 0;
+        }
+
+        .send-cpf2 ul{
+            display: block;
+            position: fixed;
+            right: -90vw;
+            width: 60vw;
+            height: 350px;
+            border-radius: 20px;
+            background: #0A53B5;
+            z-index: 1;
+            top: 21.5%;
+        }
+
+        .send-cpf2.open ul{
+            right: 19vw;
+        }
+
+        .close {
+            fill: white;
+            font-size: 1.6em;
+            margin-top: 7%;
+            margin-left: 115%;
+        }
+
+        .button-close {
+            border: none;
+            background: none;
+            color: #fff;
+        }
+
+        .cpf-txt {
+            font-size: 1.2em;
+            margin-left: 57.5%;
+        }
+
+        .backdrop-date {
+            display: none;
+        }
+
+        .send-date2.open .backdrop-date {
+            opacity: .5;
+            display: block;
+        }
+
+        .send-date2 .backdrop-date {
+            opacity: 0;
+            background-color: #000;
+            transition: opacity .15s linear;
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            z-index: 1;
+            left: 0;
+            top: 0;
+        }
+
+        .send-date2 ul{
+            display: block;
+            position: fixed;
+            right: -90vw;
+            width: 60vw;
+            height: 350px;
+            border-radius: 20px;
+            background: #0A53B5;
+            z-index: 1;
+            top: 21.5%;
+        }
+
+        .send-date2.open ul{
+            right: 19vw;
+        }
+
+        .date-txt {
+            font-size: 1.1em;
+            width: 340px;
+            margin-left: 16%;
+        }
+
+        .backdrop-cnh {
+            display: none;
+        }
+
+        .send-cnh2.open .backdrop-cnh {
+            opacity: .5;
+            display: block;
+        }
+
+        .send-cnh2 .backdrop-cnh {
+            opacity: 0;
+            background-color: #000;
+            transition: opacity .15s linear;
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            z-index: 1;
+            left: 0;
+            top: 0;
+        }
+
+        .send-cnh2 ul{
+            display: block;
+            position: fixed;
+            right: -90vw;
+            width: 60vw;
+            height: 350px;
+            border-radius: 20px;
+            background: #0A53B5;
+            z-index: 1;
+            top: 21.5%;
+        }
+
+        .send-cnh2.open ul{
+            right: 19vw;
+        }
+
+        .cnh-txt {
+            font-size: 1em;
+            width: 340px;
+            margin-left: 16%;
+        }
+
+        .choose-a-image-cnh {
+            background-color: white;
+            width: 350px;
+            height: 150px;
+            margin-top: 2.5%;
+            margin-left: 11.6%;
+            border-radius: 10px;
+        }
+
+        .label-cnh {
+            padding-top: 5%;
+            margin-left: 16.7%;
+            color: #000;
+            font-size: 1em;
+            font-family: 'Poppins-Medium';
+        }
+
+        .image-cnh {
+            fill: #000;
+            font-size: 1.5em;
+            margin-left: 44%;
+            margin-top: 2%;
+        }
+
+        .backdrop-ct {
+            display: none;
+        }
+
+        .send-ct2.open .backdrop-ct {
+            opacity: .5;
+            display: block;
+        }
+
+        .send-ct2 .backdrop-ct {
+            opacity: 0;
+            background-color: #000;
+            transition: opacity .15s linear;
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            z-index: 1;
+            left: 0;
+            top: 0;
+        }
+
+        .send-ct2 ul{
+            display: block;
+            position: fixed;
+            right: -90vw;
+            width: 60vw;
+            height: 350px;
+            border-radius: 20px;
+            background: #0A53B5;
+            z-index: 1;
+            top: 20.5%;
+        }
+
+        .send-ct2.open ul{
+            right: 19vw;
+        }
+
+        .ct-txt {
+            font-size: 1.1em;
+            width: 340px;
+            margin-left: 24.5%;
         }
     }
 
@@ -1497,8 +1778,18 @@ const OpenRg= ()=>{
     
 }
 
+const OpenRg2= ()=>{
+    document.querySelector('.send-rg2')?.classList.add('open');
+    
+}
+
 const OpenCpf = ()=>{
     document.querySelector('.send-cpf')?.classList.add('open');
+    
+}
+
+const OpenCpf2 = ()=>{
+    document.querySelector('.send-cpf2')?.classList.add('open');
     
 }
 
@@ -1507,8 +1798,18 @@ const OpenDate = ()=>{
     
 }
 
+const OpenDate2 = ()=>{
+    document.querySelector('.send-date2')?.classList.add('open');
+    
+}
+
 const OpenCnh = ()=>{
     document.querySelector('.send-cnh')?.classList.add('open');
+    
+}
+
+const OpenCnh2 = ()=>{
+    document.querySelector('.send-cnh2')?.classList.add('open');
     
 }
 
@@ -1517,23 +1818,49 @@ const OpenCt = ()=>{
     
 }
 
+const OpenCt2 = ()=>{
+    document.querySelector('.send-ct2')?.classList.add('open');
+    
+}
+
 const CloseRg = ()=> {
     document.querySelector('.send-rg')?.classList.remove('open');
+}
+
+const CloseRg2 = ()=> {
+    document.querySelector('.send-rg2')?.classList.remove('open');
 }
 
 const CloseCpf = ()=> {
     document.querySelector('.send-cpf')?.classList.remove('open');
 }
 
+const CloseCpf2 = ()=> {
+    document.querySelector('.send-cpf2')?.classList.remove('open');
+}
+
 const CloseDate = ()=> {
     document.querySelector('.send-date')?.classList.remove('open');
+}
+
+const CloseDate2 = ()=> {
+    document.querySelector('.send-date2')?.classList.remove('open');
 }
 
 const CloseCnh = ()=> {
     document.querySelector('.send-cnh')?.classList.remove('open');
 }
+
+const CloseCnh2 = ()=> {
+    document.querySelector('.send-cnh2')?.classList.remove('open');
+}
+
 const CloseCt = ()=> {
     document.querySelector('.send-ct')?.classList.remove('open');
+}
+
+const CloseCt2 = ()=> {
+    document.querySelector('.send-ct2')?.classList.remove('open');
 }
 
 const SendDocumentsPg = function() {
@@ -1706,31 +2033,131 @@ const SendDocumentsPg = function() {
                         <div className='rg'>
                             <p id='rg-txt'>
                                 RG - Frente e Verso 
-                                <button type='button' className='button1'><FaAngleRight className='next1'/></button>
+                                <nav className='send-rg2'>
+                                    <button type='button' className='button1'><FaAngleRight className='next1' onClick={OpenRg2}/></button>
+                                    <div className="backdrop-rg" onClick={CloseRg2}></div>
+                                    <Ul>
+                                        <li>
+                                            <FaTimes className='close' onClick={CloseRg2}/>
+                                        </li>
+                                        <li>
+                                            <h1 className='rg-txt'>RG - frente e verso</h1>
+                                        </li>
+                                        <div className='choose-a-image'>
+                                            <label>
+                                                <p className='label'>Escolha ou arraste<br/> sua imagem aqui</p>
+                                                <FaImages className='image'/>
+                                                    <span className='photo'>
+                                                        <input type="file" id='photo-input'/>
+                                                    </span>
+                                            </label>
+                                        </div>
+                                    </Ul>
+                                </nav>
                             </p> 
                         </div>
                         <div className='cpf'>
                             <p id='cpf-txt'>
                                 CPF 
-                                <button type='button' className='button2'><FaAngleRight className='next2'/></button>
+                                <nav className='send-cpf2'>
+                                    <button type='button' className='button2' onClick={OpenCpf2}><FaAngleRight className='next2'/></button>
+                                    <div className="backdrop-cpf" onClick={CloseCpf2}></div>
+                                    <Ul>
+                                        <li>
+                                            <FaTimes className='close' onClick={CloseCpf2}/>
+                                        </li>
+                                        <li>
+                                            <h1 className='cpf-txt'>CPF</h1>
+                                        </li>
+                                        <div className='choose-a-image'>
+                                            <label>
+                                                <p className='label'>Escolha ou arraste<br/> sua imagem aqui</p>
+                                                <FaImages className='image'/>
+                                                    <span className='photo'>
+                                                        <input type="file" id='photo-input'/>
+                                                    </span>
+                                            </label>
+                                        </div>
+                                    </Ul>
+                                </nav>
                             </p> 
                         </div>
                         <div className='date'>
                             <p id='date-txt'>
                                 Certidão de nascimento 
-                                <button type='button' className='button3'><FaAngleRight className='next3'/></button>
+                                <nav className='send-date2'>
+                                    <button type='button' className='button3' onClick={OpenDate2}><FaAngleRight className='next3'/></button>
+                                    <div className="backdrop-date" onClick={CloseDate2}></div>
+                                    <Ul>
+                                        <li>
+                                            <FaTimes className='close' onClick={CloseDate2}/>
+                                        </li>
+                                        <li>
+                                            <h1 className='date-txt'>Certidão de nascimento</h1>
+                                        </li>
+                                        <div className='choose-a-image'>
+                                            <label>
+                                                <p className='label'>Escolha ou arraste<br/> sua imagem aqui</p>
+                                                <FaImages className='image'/>
+                                                    <span className='photo'>
+                                                        <input type="file" id='photo-input'/>
+                                                    </span>
+                                            </label>
+                                        </div>
+                                    </Ul>
+                                </nav>
                             </p> 
                         </div>
                         <div className='cnh'>
                             <p id='cnh-txt'>
                                 CNH (opcional) - frente e verso 
-                                <button type='button' className='button4'><FaAngleRight className='next4'/></button>
+                                <nav className='send-cnh2'>
+                                    <button type='button' className='button4' onClick={OpenCnh2}><FaAngleRight className='next4'/></button>
+                                    <div className='backdrop-cnh' onClick={CloseCnh2}></div>
+                                    <Ul>
+                                        <li>
+                                            <FaTimes className='close' onClick={CloseCnh2}/>
+                                        </li>
+                                        <li>
+                                            <h1 className='cnh-txt'>CNH (opcional) - frente e verso</h1>
+                                        </li>
+                                        <div className='choose-a-image-cnh'>
+                                            <label>
+                                                <p className='label-cnh'>Escolha ou arraste<br/> sua imagem aqui</p>
+                                                <FaImages className='image-cnh'/>
+                                                    <span className='photo'>
+                                                        <input type="file" id='photo-input'/>
+                                                    </span>
+                                            </label>
+                                        </div>
+                                    </Ul>
+                                </nav>
                             </p> 
                         </div>
                         <div className='ct'>
                             <p id='ct-txt'>
                                 Carteira de Trabalho 
-                                <button type='button' className='button5'><FaAngleRight className='next5'/></button>
+                                <nav className='send-ct2'>
+                                    <button type='button' className='button5' onClick={OpenCt2}><FaAngleRight className='next5'/></button>
+                                    <div className='backdrop-ct' onClick={CloseCt2}></div>
+                                    <Ul>
+                                        <li>
+                                            <FaTimes className='close' onClick={CloseCt2}/>
+                                        </li>
+                                        <li>
+                                            <h1 className='ct-txt'>Carteira de Trabalho</h1>
+                                        </li>
+                                        <div className='choose-a-image'>
+                                            <label>
+                                                <p className='label'>Escolha ou arraste<br/> sua imagem aqui</p>
+                                                <FaImages className='image'/>
+                                                    <span className='photo'>
+                                                        <input type="file" id='photo-input'/>
+                                                    </span>
+                                            </label>
+                                        </div>
+                                    </Ul>
+                                </nav>
                             </p> 
                         </div>
                 </form>
