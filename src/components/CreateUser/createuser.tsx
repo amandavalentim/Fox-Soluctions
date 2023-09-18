@@ -1827,7 +1827,7 @@ const CreateUserPg = function() {
         <CreateUserComponent>
             <nav className='mobile'>
             <header>
-                 <Image className='search' src="/images/search.png" width={100} height={104}  alt="search"/>
+                <Image className='search' src="/images/search.png" width={100} height={104}  alt="search"/>
                     <div className='box-1'>
                         <p className='amount-documents'>0</p>
                         <p className='documents'>documentos</p>
@@ -1836,7 +1836,7 @@ const CreateUserPg = function() {
                         <p className='amount-users'>0</p>
                         <p className='users'>usuários</p>
                     </div>
-                    <Image className='profile-photo' src="/images/profile-photo2.png" width={100} height={104}  alt="profile-photo"/>
+                <Image className='profile-photo' src="/images/profile-photo2.png" width={100} height={104}  alt="profile-photo"/>
                 </header>
                 <h1>Criar Usuário</h1>
                 <form>
