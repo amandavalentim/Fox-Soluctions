@@ -103,13 +103,6 @@ const ProfileComponents = styled.section `
                     }
                 }
                 
-                /* .menu-btn-desktop:hover{
-                background: #93B413;
-                border-radius: 20px;
-                }
-                .menu-btn-desktop:active{
-                     background-color: #86a40f;
-                } */
             }
             .container-settings{
                 margin: 5%;
@@ -166,6 +159,9 @@ const PgProfile = function() {
         <ProfileComponents>
             {/* Section profile mobile */}
             <nav className='profile-mobile'>
+                <div className="user-image">
+                    
+                </div>
                 <div className='menu'>
                     <div className='menu-btn'>
                         <Link href={'/CreateUserPage'} className='create-user'>
@@ -173,7 +169,7 @@ const PgProfile = function() {
                         </Link>
                     </div>
                     <div className='menu-btn'>
-                        <Link href={'/HomePage'} className='user-list'>
+                        <Link href={'/UserListPage'} className='user-list'>
                             Lista de Usuários
                         </Link>
                     </div>
@@ -199,7 +195,7 @@ const PgProfile = function() {
                         </Link>
                     </div>
                     <div className='menu-btn-desktop'>
-                        <Link href={'/HomePage'} className='user-list-desktop'>
+                        <Link href={'/UserListPage'} className='user-list-desktop'>
                             Lista de Usuários
                         </Link>
                     </div>

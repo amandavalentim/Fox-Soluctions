@@ -327,7 +327,7 @@ const FormComponent = styled.section `
         h1 {
             font-size: 1.9em;
             margin-left: 42.9%;
-            margin-top: 8%;
+            margin-top: 4%;
         }
 
         .email {
@@ -335,11 +335,11 @@ const FormComponent = styled.section `
         }
 
         #email::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-            font-size: 1.4em;
+            font-size: 1.2em;
         }
 
         #forgot-email {
-            font-size: 1.1em;
+            font-size: 1.0em;
             margin-left: 40.8%;
             font-family: 'Poppins-Regular';
             width: 160px;
@@ -365,11 +365,11 @@ const FormComponent = styled.section `
        }
 
        #password::-webkit-input-placeholder {
-        font-size: 1.4em;
+        font-size: 1.2em;
        }
 
        #forgot-password {
-            font-size: 1.1em;
+            font-size: 1.0em;
             margin-left: 40%;
             font-family: 'Poppins-Regular';
             width: 170px;
@@ -391,24 +391,23 @@ const FormComponent = styled.section `
         }
 
         p {
-            font-size: 1.5em;
-            margin-top: 7%;
+            font-size: 1.0em;
+            margin-top: 5%;
         }
 
         .google-enter {
             margin-left: 18.5%;
-            margin-top: 5%;
+            margin-top: 4%;
             cursor: pointer;
        }
 
        .btn-google {
         width: 340px;
-        height: 65px;
-        font-size: 1.5em;
+        height: 45px;
+        font-size: 1.2em;
         background-color: #93B413;
         border: none;
         border-radius: 39px;
-        padding: 8px;
     }
 
        .btn-google:active {
@@ -422,16 +421,17 @@ const FormComponent = styled.section `
        }
 
        .faGoogle {
-        width: 50px;
-        height: 30px;
+        width: 20px;
+        height: 20px;
         margin-bottom: -5px;
+        margin-right: 10%;
     }
 
     .page2 {
-        font-size: 1.4em;
+        font-size: 1em;
         width: 410px;
-        margin-left: 15%;
-        margin-top: 7%;
+        margin-left: 28%;
+        margin-top: 4%;
     }
 
     .logar {

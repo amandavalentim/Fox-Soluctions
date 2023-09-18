@@ -361,19 +361,19 @@ const Head = function() {
                                     <Ul>
                                         <li>
                                             <div className='conteudo'>
-                                            <button className='button-close'>
-                                                <FaTimes onClick={Close} className='close'/>
-                                            </button>
-                                            <li>
-                                                <Link href={'/HomePage'} onClick={Close} className='home-button'>
-                                                Home
-                                            </Link>
-                                            </li>
-                                            <li>
-                                                <Link href={'/AboutUsPage'} className='sobre-nos-button' onClick={Close}>
-                                                    Sobre Nós
-                                                </Link>
-                                            </li>
+                                                <button className='button-close'>
+                                                    <FaTimes onClick={Close} className='close'/>
+                                                </button>
+                                                <li>
+                                                    <Link href={'/HomePage'} onClick={Close} className='home-button'>
+                                                        Home
+                                                    </Link>
+                                                </li>
+                                                <li>
+                                                    <Link href={'/AboutUsPage'} className='sobre-nos-button' onClick={Close}>
+                                                        Sobre Nós
+                                                    </Link>
+                                                </li>
                                             </div>
                                         </li>
                                     </Ul>
