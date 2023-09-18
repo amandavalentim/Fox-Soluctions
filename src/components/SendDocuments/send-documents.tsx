@@ -2,7 +2,6 @@
 
 'use client'
 import styled from '@emotion/styled';
-import Input from '../Login/Input/Input';
 import Image from 'next/image';
 import {FaAngleLeft, FaAngleRight, FaImages, FaTimes} from "react-icons/fa";
 import Link from 'next/link';
@@ -2668,90 +2667,61 @@ const Ul = styled.ul`
 
 const OpenRg= ()=>{
     document.querySelector('.send-rg')?.classList.add('open');
-    
 }
-
 const OpenRg2= ()=>{
     document.querySelector('.send-rg2')?.classList.add('open');
-    
 }
-
 const OpenCpf = ()=>{
     document.querySelector('.send-cpf')?.classList.add('open');
-    
 }
-
 const OpenCpf2 = ()=>{
-    document.querySelector('.send-cpf2')?.classList.add('open');
-    
+    document.querySelector('.send-cpf2')?.classList.add('open');  
 }
-
 const OpenDate = ()=>{
-    document.querySelector('.send-date')?.classList.add('open');
-    
+    document.querySelector('.send-date')?.classList.add('open');  
 }
-
 const OpenDate2 = ()=>{
-    document.querySelector('.send-date2')?.classList.add('open');
-    
+    document.querySelector('.send-date2')?.classList.add('open');   
 }
-
 const OpenCnh = ()=>{
     document.querySelector('.send-cnh')?.classList.add('open');
-    
 }
-
 const OpenCnh2 = ()=>{
-    document.querySelector('.send-cnh2')?.classList.add('open');
-    
+    document.querySelector('.send-cnh2')?.classList.add('open')
 }
-
 const OpenCt = ()=>{
     document.querySelector('.send-ct')?.classList.add('open');
-    
 }
-
 const OpenCt2 = ()=>{
     document.querySelector('.send-ct2')?.classList.add('open');
-    
 }
-
 const CloseRg = ()=> {
     document.querySelector('.send-rg')?.classList.remove('open');
 }
-
 const CloseRg2 = ()=> {
     document.querySelector('.send-rg2')?.classList.remove('open');
 }
-
 const CloseCpf = ()=> {
     document.querySelector('.send-cpf')?.classList.remove('open');
 }
-
 const CloseCpf2 = ()=> {
     document.querySelector('.send-cpf2')?.classList.remove('open');
 }
-
 const CloseDate = ()=> {
     document.querySelector('.send-date')?.classList.remove('open');
 }
-
 const CloseDate2 = ()=> {
     document.querySelector('.send-date2')?.classList.remove('open');
 }
-
 const CloseCnh = ()=> {
     document.querySelector('.send-cnh')?.classList.remove('open');
 }
-
 const CloseCnh2 = ()=> {
     document.querySelector('.send-cnh2')?.classList.remove('open');
 }
-
 const CloseCt = ()=> {
     document.querySelector('.send-ct')?.classList.remove('open');
 }
-
 const CloseCt2 = ()=> {
     document.querySelector('.send-ct2')?.classList.remove('open');
 }
