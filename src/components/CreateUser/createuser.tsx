@@ -1,17 +1,14 @@
-// Developed code by Gabriel
+// Developed code by Amanda and Gabriel
 
 'use client'
 import styled from '@emotion/styled';
 import Input from '../Login/Input/Input';
-import Image from 'next/image';
 import Link from 'next/link';
 import { FaMagnifyingGlass } from 'react-icons/fa6';
 
 const CreateUserComponent = styled.section `
 
     // Mobile
-    display: flex;
-    flex-direction: column;
     .dashboard-mobile{
         background-color: #3A9EB6;
         padding: 10px;
@@ -24,6 +21,7 @@ const CreateUserComponent = styled.section `
                 display: flex;
                 align-items: center;
                 color: #FFFFFF;
+                
             }
             .user-profile-mobile {
                 min-width: 20px;
@@ -62,74 +60,13 @@ const CreateUserComponent = styled.section `
         }
         
     }
-
-    .mobile {
-        display: block;
-        justify-content: space-between;
-    }
+    
+    
 
     .tablet-desktops {
         display: none;
     }
-
-    header {
-        background-color: #2F99BF;
-        height: 195px;
-    }
-
-    .search {
-        width: 35px;
-        height: 35px;
-        margin-top: 4%;
-        margin-left: 2%;
-    }
-
-    .box-1 {
-        margin-top: 9%;
-            margin-left: 15%;
-            text-align: center;
-            background-color: #07B3FD;
-            width: 100px;
-            height: 85px;
-            border-radius: 4px;
-        }
-
-        .amount-documents {
-            font-size: 2.7em;
-        }
-
-        .documents {
-            margin-top: -11.5%;
-            font-size: 0.2em;
-        }
-
-        .box-2 {
-            margin-top: -26.5%;
-            margin-left: 53.7%;
-            text-align: center;
-            background-color: #F47216;
-            width: 100px;
-            height: 85px;
-            border-radius: 4px;
-        }
-
-        .amount-users {
-            font-size: 2.7em;
-        }
-
-        .users {
-            margin-top: -11.5%;
-            font-size: 0.2em;
-        }
-
-    .profile-photo {
-        width: 60px;
-        height: 60px;
-        position: absolute;
-        top: 180px;
-        margin-left: 78%;
-    }
-
+        
     * {
         color: white;
         font-family: 'Poppins-Medium';
@@ -344,78 +281,15 @@ const CreateUserComponent = styled.section `
         height: 202vh;
 
         .mobile {
-            display: none;
+            display: flex;
+            flex-direction: column;
         }
 
         .tablet-desktops {
-            display: block;
-            justify-content: space-between;
+            display: none;
         }
 
         background: linear-gradient(180deg, #0A53B5 0%, #0A53B5 100%);
-
-        header {
-            background-color: #2F99BF;
-            height: 165px;
-        }
-
-        .search {
-            width: 50px;
-            height: 50px;
-            margin-top: 6.5%;
-            margin-left: 7%;
-        }
-
-        .box-1 {
-            margin-top: -11%;
-            margin-left: 26%;
-            text-align: center;
-            background-color: #07B3FD;
-            width: 140px;
-            height: 120px;
-            border-radius: 4px;
-        }
-
-        .amount-documents {
-            font-size: 3.5em;
-        }
-
-        .documents {
-            margin-top: -10%;
-            font-size: 0.9em;
-        }
-
-        .box-2 {
-            margin-top: -15.5%;
-            margin-left: 52%;
-            text-align: center;
-            background-color: #F47216;
-            width: 140px;
-            height: 120px;
-            border-radius: 4px;
-        }
-
-        .amount-users {
-            font-size: 3.5em;
-        }
-
-        .users {
-            margin-top: -10%;
-            font-size: 0.9em;
-        }
-
-        .profile-photo {
-            position: absolute;
-            top: 185px;
-            margin-left: 80%;
-            width: 100px;
-            height: 100px;
-        }
-
-        #your-name {
-            margin-left: 80%;
-            margin-top: -3%;
-        }
 
         form {
             border-radius: 19px;
@@ -730,39 +604,77 @@ const CreateUserComponent = styled.section `
         }
 
         .tablet-desktops {
-            display: block;
+            display: flex;
+            flex-direction: column;
+            .dashboard-desktop{
+            background-color: #3A9EB6;
+            display: flex;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
             justify-content: space-between;
+            .search{
+                margin: 20px;
+                color: #FFFFFF;
+                cursor: pointer;
+            }
+            .search:hover, .search:focus{
+                transform: translateX(1px) scale(1.1);
+                    
+            }
+            .box-desktop{
+                display: flex;
+                text-align: center;
+                flex-direction: row;
+                .documents{
+                    background-color: #07B3FD;
+                    margin: 10px;
+                    padding: 20px;
+                    border-radius: 3px;
+                    width: 150px;
+                    height: 110px;
+                }
+                .documents:hover, .documents:focus{
+                    transform: translateX(1px) scale(1.1);
+                    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+                }
+                h2{
+                    color: #FFFFFF;
+                }
+                p{
+                    color: #FFFFFF;
+                    font-family: 'Poppins-Semibold';
+                    margin: 8px;
+                }
+                .users{
+                    background-color: #F47216;
+                    margin: 10px;
+                    padding: 20px;
+                    border-radius: 3px;
+                    width:  150px;
+                    height: 110px;
+                    
+                }
+                .users:hover, .users:focus{
+                    transform: translateX(1px) scale(1.1);
+                    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+                    
+                }
+            }
+            .user-profile-desktop{
+                margin: 20px;
+                cursor: pointer;
+            }
+            .user-profile-desktop:hover, .user-profile-desktop:focus{
+                transform: translateX(1px) scale(1.1);
+            }
+        }
         }
 
-        .search {
-            width: 40px;
-            height: 40px;
-            margin-top: 6%;
-            margin-left: 8%;
-        }
+       
 
-        .box-1 {
-            margin-left: 32%;
-            margin-top: -8.5%;
-        }
-
-        .box-2 {
-            margin-left: 52%;
-            margin-top: -11.6%;
-        }
-
-        .profile-photo {
-            width: 110px;
-            height: 110px;
-            margin-top: 0%;
-            margin-left: 81%;
-        }
-
-        #your-name {
-            font-size: 1.2em;
-            margin-left: 80.5%;
-            margin-top: -1.5%;
-        }
+        
 
         form {
             border-radius: 19px;
@@ -1120,55 +1032,6 @@ const CreateUserComponent = styled.section `
             justify-content: space-between;
         }
 
-        header {
-            height: 230px;
-        }
-
-        .search {
-            width: 60px;
-            height: 60px;
-            margin-left: 7%;
-        }
-
-        .box-1 {
-            width: 210px;
-            height: 170px;
-            margin-top: -8.5%;
-            margin-left: 30%;
-        }
-
-        .amount-documents {
-            font-size: 5.3em;
-        }
-
-        .documents {
-            margin-top: -17%;
-            font-size: 1.5em;
-        }
-
-        .box-2 {
-            width: 210px;
-            height: 170px;
-            margin-top: -12.5%;
-            margin-left: 51.5%;
-        }
-
-        .amount-users {
-            font-size: 5.3em;
-        }
-
-        .users {
-            margin-top: -17%;
-            font-size: 1.5em;
-        }
-
-        .profile-photo {
-            width: 150px;
-            height: 150px;
-            margin-left: 81%;
-            margin-top: 0.5%;
-        }
-
         #your-name {
             font-size: 1.6em;
             margin-top: -2%;
@@ -1524,30 +1387,6 @@ const CreateUserComponent = styled.section `
             justify-content: space-between;
         }
 
-        header {
-            height: 210px;
-        }
-
-        .search {
-            margin-top: 4.3%;
-        }
-
-        .box-1 {
-            margin-top: -7%;
-            width: 200px;
-            height: 160px;
-        }
-
-        .box-2 {
-            margin-top: -10.1%;
-            width: 200px;
-            height: 160px;
-        }
-
-        .profile-photo {
-            margin-top: 0%;
-            margin-left: 81.5%;
-        }
 
         #your-name {
             margin-top: -1.5%;
@@ -1981,7 +1820,25 @@ const CreateUserPg = function() {
             </nav>
 
             <nav className='tablet-desktops'>
-                <header>
+                <div className='dashboard-desktop'>
+                    <div className='search'>
+                        <FaMagnifyingGlass/>
+                    </div>
+                    <div className='box-desktop'>
+                        <div className='documents'>
+                            <h2 className='number'>10</h2>
+                            <p>Documentos</p>
+                        </div>
+                        <div className='users'>
+                            <h2 className='number'>10</h2>
+                            <p>Usuários</p>
+                        </div>
+                    </div>
+                    <div className='user-profile-desktop'>
+                        <img src="/images/fox-mobile.png" alt="" width='50px' height='50px'/>
+                    </div>
+                </div>
+                    {/* <header>
                  <Image className='search' src="/images/search.png" width={100} height={104}  alt="search"/>
                     <div className='box-1'>
                         <p className='amount-documents'>0</p>
@@ -1993,7 +1850,7 @@ const CreateUserPg = function() {
                     </div>
                     <Image className='profile-photo' src="/images/profile-photo2.png" width={100} height={104}  alt="profile-photo"/>
                     <p id='your-name'>Seu Nome</p>
-                </header>
+                </header> */}
                 <form>
                     <h1>Criar Usuário</h1>
                     <div className='name'>
