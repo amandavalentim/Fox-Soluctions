@@ -103,6 +103,11 @@ const ListComponent = styled.section`
             .search{
                 margin: 20px;
                 color: #FFFFFF;
+                cursor: pointer;
+            }
+            .search:hover, .search:focus{
+                transform: translateX(1px) scale(1.1);
+                    
             }
             .box-desktop{
                 display: flex;
@@ -111,9 +116,14 @@ const ListComponent = styled.section`
                 .documents{
                     background-color: #07B3FD;
                     margin: 10px;
-                    padding: 6px;
+                    padding: 20px;
                     border-radius: 3px;
-                    width: 120px;
+                    width: 150px;
+                    height: 110px;
+                }
+                .documents:hover, .documents:focus{
+                    transform: translateX(1px) scale(1.1);
+                    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
                 }
                 h2{
                     color: #FFFFFF;
@@ -121,17 +131,28 @@ const ListComponent = styled.section`
                 p{
                     color: #FFFFFF;
                     font-family: 'Poppins-Semibold';
+                    margin: 8px;
                 }
                 .users{
                     background-color: #F47216;
                     margin: 10px;
-                    padding: 6px;
+                    padding: 20px;
                     border-radius: 3px;
-                    width: 120px;
+                    width:  150px;
+                    
+                }
+                .users:hover, .users:focus{
+                    transform: translateX(1px) scale(1.1);
+                    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+                    
                 }
             }
             .user-profile-desktop{
                 margin: 20px;
+                cursor: pointer;
+            }
+            .user-profile-desktop:hover, .user-profile-desktop:focus{
+                transform: translateX(1px) scale(1.1);
             }
         }
         .list-mobile{

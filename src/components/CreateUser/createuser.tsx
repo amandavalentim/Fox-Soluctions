@@ -5,11 +5,64 @@ import styled from '@emotion/styled';
 import Input from '../Login/Input/Input';
 import Image from 'next/image';
 import Link from 'next/link';
+import { FaMagnifyingGlass } from 'react-icons/fa6';
 
 const CreateUserComponent = styled.section `
 
     // Mobile
-    
+    display: flex;
+    flex-direction: column;
+    .dashboard-mobile{
+        background-color: #3A9EB6;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        .icon-profile{
+            display: flex; 
+            justify-content: space-between;
+            .search{
+                display: flex;
+                align-items: center;
+                color: #FFFFFF;
+            }
+            .user-profile-mobile {
+                min-width: 20px;
+                min-height: 20px;
+            }
+            
+        }
+        .box-mobile{
+            display: flex; 
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+            .documents{
+                background-color: #07B3FD;
+                margin: 3px;
+                padding: 6px;
+                border-radius: 3px;
+                width: 120px;
+            }
+            .number{
+                text-align: center;
+                color: #FFFFFF;
+            }
+            p{
+                text-align: center;
+                font-family: 'Poppins-Semibold';
+                color: #FFFFFF;
+            }
+            .users{
+                background-color: #F47216;
+                margin: 3px;
+                padding: 6px;
+                border-radius: 3px;
+                width: 120px;
+            }
+        }
+        
+    }
+
     .mobile {
         display: block;
         justify-content: space-between;
@@ -20,8 +73,8 @@ const CreateUserComponent = styled.section `
     }
 
     header {
-            background-color: #2F99BF;
-            height: 195px;
+        background-color: #2F99BF;
+        height: 195px;
     }
 
     .search {
@@ -1826,7 +1879,27 @@ const CreateUserPg = function() {
     return (
         <CreateUserComponent>
             <nav className='mobile'>
-            <header>
+                <div className='dashboard-mobile'>
+                    <div className='icon-profile'>
+                        <div className='search'>
+                            <FaMagnifyingGlass/>
+                        </div>
+                        <div className='user-profile-mobile'>
+                            <img src="/images/fox-mobile.png" alt="" width='40px' height='30px'/>
+                        </div>
+                    </div>
+                    <div className='box-mobile'>
+                        <div className='documents'>
+                            <h2 className='number'>10</h2>
+                            <p>Documentos</p>
+                        </div>
+                        <div className='users'>
+                            <h2 className='number'>10</h2>
+                            <p>Usuários</p>
+                        </div>
+                    </div>
+                </div>
+            {/* <header>
                 <Image className='search' src="/images/search.png" width={100} height={104}  alt="search"/>
                     <div className='box-1'>
                         <p className='amount-documents'>0</p>
@@ -1837,7 +1910,7 @@ const CreateUserPg = function() {
                         <p className='users'>usuários</p>
                     </div>
                 <Image className='profile-photo' src="/images/profile-photo2.png" width={100} height={104}  alt="profile-photo"/>
-                </header>
+                </header> */}
                 <h1>Criar Usuário</h1>
                 <form>
                     <div className='name'>
