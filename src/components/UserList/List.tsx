@@ -9,9 +9,11 @@ const ListComponent = styled.section`
     background: #0C65C2;
     display: flex;
     flex-direction: column;
-    .dashboard{
+    .dashboard-mobile{
         background-color: #3A9EB6;
         padding: 10px;
+        display: flex;
+        flex-direction: column;
         .icon-profile{
             display: flex; 
             justify-content: space-between;
@@ -19,14 +21,15 @@ const ListComponent = styled.section`
                 display: flex;
                 align-items: center;
                 color: #FFFFFF;
+                
             }
             .user-profile-mobile {
-                min-width: 40px;
-                min-height: 40px;
+                min-width: 20px;
+                min-height: 20px;
             }
             
         }
-        .box-dashboard{
+        .box-mobile{
             display: flex; 
             align-items: center;
             justify-content: center;
@@ -57,6 +60,9 @@ const ListComponent = styled.section`
         }
         
     }
+    .dashboard-desktop{
+        display: none;
+    }
 
     .list-mobile{
         background: linear-gradient(180deg, #07B3FD 0%, #0A53B5 100%);
@@ -83,7 +89,51 @@ const ListComponent = styled.section`
 
     //Desktop
     @media (min-width: 922px){
-        display: flex;
+        .dashboard-mobile{
+            display: none;
+        }
+        .dashboard-desktop{
+            background-color: #3A9EB6;
+            display: flex;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+            justify-content: space-between;
+            .search{
+                margin: 20px;
+                color: #FFFFFF;
+            }
+            .box-desktop{
+                display: flex;
+                text-align: center;
+                flex-direction: row;
+                .documents{
+                    background-color: #07B3FD;
+                    margin: 10px;
+                    padding: 6px;
+                    border-radius: 3px;
+                    width: 120px;
+                }
+                h2{
+                    color: #FFFFFF;
+                }
+                p{
+                    color: #FFFFFF;
+                    font-family: 'Poppins-Semibold';
+                }
+                .users{
+                    background-color: #F47216;
+                    margin: 10px;
+                    padding: 6px;
+                    border-radius: 3px;
+                    width: 120px;
+                }
+            }
+            .user-profile-desktop{
+                margin: 20px;
+            }
+        }
         .list-mobile{
             display: none;
         }
@@ -99,54 +149,12 @@ const ListComponent = styled.section`
                 margin: 25px;
                 color: #FFFFFF;
                 font-family: 'Poppins-Bold';
-                
+                font-size: 25px;
             }
             .subtitles-desktop{
                 color: #FFFFFF;
                 font-family: 'Poppins-Semibold';
             }
-            
-        }
-    }
-
-`;
-
-const Ul = styled.section`
-
-    .container-blue{
-        display: flex;
-        justify-content: space-around;
-        background-color: #07AFFA;
-        min-width: 260px;
-        
-    }
-    .name-user{
-        display: flex;
-        align-items: center;
-        font-family: 'Poppins-Regular';
-        color: #FFFFFF;
-    }
-    img{
-        margin: 10px;
-    }
-    .container{
-        display: flex; 
-        justify-content: space-around;
-    }
-    .icon{
-        display: flex;
-        align-items: center;
-        color: #FFFFFF;
-    }
-
-    @media (min-width: 922px){
-        .container-blue-desktop{
-            display: flex;
-            flex-direction: row;
-
-        }
-        .container-desktop{
-            display: flex;
         }
     }
 
@@ -155,17 +163,17 @@ const Ul = styled.section`
 const List = function (){
     return(
         <ListComponent>
-            {/* Section Dashboard */}
-            <div className='dashboard'>
+            {/* Section Dashboard mobile*/}
+            <div className='dashboard-mobile'>
                 <div className='icon-profile'>
                     <div className='search'>
                         <FaMagnifyingGlass/>
                     </div>
                     <div className='user-profile-mobile'>
-                        <img src="/images/fox-mobile.png" alt=""/>
+                        <img src="/images/fox-mobile.png" alt="" width='40px' height='30px'/>
                     </div>
                 </div>
-                <div className='box-dashboard'>
+                <div className='box-mobile'>
                     <div className='documents'>
                         <h2 className='number'>10</h2>
                         <p>Documentos</p>
@@ -177,6 +185,25 @@ const List = function (){
                 </div>
             </div>
 
+            {/* Section Dashboard desktop*/}
+            <div className='dashboard-desktop'>
+                <div className='search'>
+                    <FaMagnifyingGlass/>
+                </div>
+                <div className='box-desktop'>
+                    <div className='documents'>
+                        <h2 className='number'>10</h2>
+                        <p>Documentos</p>
+                    </div>
+                    <div className='users'>
+                        <h2 className='number'>10</h2>
+                        <p>Usuários</p>
+                    </div>
+                </div>
+                <div className='user-profile-desktop'>
+                    <img src="/images/fox-mobile.png" alt="" width='50px' height='50px'/>
+                </div>
+            </div>
             {/* Section Mobile */}
             <div className="list-mobile">
                 <h3>Lista de Usuários</h3>
