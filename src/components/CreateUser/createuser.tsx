@@ -677,7 +677,7 @@ const CreateUserComponent = styled.section `
     // Small Screens
     @media(min-width: 992px) {
 
-        height: 221vh;
+        height: 198vh;
 
         .mobile {
             display: none;
@@ -758,6 +758,7 @@ const CreateUserComponent = styled.section `
             width: 800px;
             height: 1040px;
             margin-left: 10.6%;
+            margin-top: 5%;
         }
 
         h1 {
@@ -1097,7 +1098,7 @@ const CreateUserComponent = styled.section `
     // Medium Screens
     @media(min-width: 1200px) {
 
-        height: 250vh;
+        height: 235vh;
 
         .mobile {
             display: none;
@@ -1461,7 +1462,7 @@ const CreateUserComponent = styled.section `
 
     @media(min-width: 1600px) {
 
-        height: 257vh;
+        height: 205vh;
 
         .mobile {
             display: none;
@@ -1478,49 +1479,49 @@ const CreateUserComponent = styled.section `
         }
 
         form {
-            width: 1190px;
-            height: 1550px;
-            margin-left: 12%;
+            width: 1000px;
+            height: 1250px;
+            margin-left: 17.8%;
         }
 
         h1 {
-            margin-left: 35.3%;
-            font-size: 2.8em;
+            margin-left: 36.5%;
+            font-size: 2.3em;
         }
 
         .name {
             margin-top: 3%;
-            margin-left: -0.4%;
-            font-size: 2.3em;
+            margin-left: -8%;
+            font-size: 1.7em;
         }
 
         #name {
-            width: 880px;
+            width: 840px;
             height: 45px;
         }
 
         #name::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-            font-size: 2.1em;
+            font-size: 1.6em;
         }
 
         .span1 {
             color: #F47216;
-            margin-left: -36.5%;
+            margin-left: -39.5%;
             position: absolute;
-            font-size: 1.4em;
-            margin-top: 1.2%;
+            font-size: 1.3em;
+            margin-top: 2%;
         }
 
         .gender-txt {
             font-size: 2.3em;
-            margin-left: 13%;
-            margin-top: -2.5%;
-            font-size: 2.1em;
+            margin-left: -72.5%;
+            margin-top: -6%;
+            font-size: 1.7em;
         }
 
         .man {
             margin-top: -2.5%;
-            margin-left: 12.4%;
+            margin-left: 5.5%;
         }
 
         #man {
@@ -1529,13 +1530,13 @@ const CreateUserComponent = styled.section `
         }
 
         .man-op {
-            margin-top: -342%;
+            margin-top: -338%;
             margin-left: 655%;
         }
 
         .woman {
-            margin-top: -5.2%;
-            margin-left: 28.2%;
+            margin-top: -6.2%;
+            margin-left: 23%;
         }
 
         #woman {
@@ -1544,13 +1545,13 @@ const CreateUserComponent = styled.section `
         }
 
         .woman-op {
-            margin-top: -342%;
+            margin-top: -338%;
             margin-left: 655%;
         }
 
         .transvestite {
-            margin-top: -5.3%;
-            margin-left: 42.5%;
+            margin-top: -6.2%;
+            margin-left: 40%;
         }
 
         #transvestite {
@@ -1559,13 +1560,13 @@ const CreateUserComponent = styled.section `
         }
 
         .t1-op {
-            margin-top: -342%;
+            margin-top: -338%;
             margin-left: 655%;
         }
 
         .no-binary {
             margin-top: -2.5%;
-            margin-left: 12.4%;
+            margin-left: 5.5%;
         }
 
         #no-binary {
@@ -1574,13 +1575,13 @@ const CreateUserComponent = styled.section `
         }
 
         .nb-op {
-            margin-top: -342%;
+            margin-top: -338%;
             margin-left: 655%;
         }
 
         .trans {
-            margin-top: -5.2%;
-            margin-left: 28.2%;
+            margin-top: -6.2%;
+            margin-left: 23%;
         }
 
         #trans {
@@ -1589,13 +1590,13 @@ const CreateUserComponent = styled.section `
         }
 
         .t2-op {
-            margin-top: -342%;
+            margin-top: -338%;
             margin-left: 655%;
         }
 
         .another {
-            margin-top: -5.3%;
-            margin-left: 42.5%;
+            margin-top: -6.2%;
+            margin-left: 40%;
         }
 
         #another {
@@ -1604,13 +1605,13 @@ const CreateUserComponent = styled.section `
         }
 
         .a-op {
-            margin-top: -342%;
+            margin-top: -338%;
             margin-left: 655%;
         }
 
         .none {
             margin-top: -2.5%;
-            margin-left: 12.4%;
+            margin-left: 5.5%;
         }
 
         #none {
@@ -1619,182 +1620,188 @@ const CreateUserComponent = styled.section `
         }
 
         .n-op {
-            margin-top: -342%;
+            margin-top: -338%;
             margin-left: 655%;
         }
 
         .social-name {
-            margin-top: 0%;
-            margin-left: -0.4%;
-            font-size: 2.3em;
+            margin-top: -2%;
+            margin-left: -8%;
+            font-size: 1.7em;
         }
 
         #social-name {
-            width: 880px;
+            width: 840px;
             height: 45px;
         }
 
         #social-name::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-        font-size: 2.1em;
+        font-size: 1.6em;
         }
 
         .date {
-            margin-top: -6%;
-            margin-left: -0.4%;
+            margin-top: -2.5%;
+            margin-left: -8%;
             font-size: 2.3em;
         }
 
         #birthday {
-            width: 880px;
+            width: 840px;
             height: 45px;
         }
 
         #birthday::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-            font-size: 2.1em;
+            font-size: 1.6em;
         }
 
         .small {
             position: absolute;
-            top: 805px;
-            font-size: 0.6em;
+            top: 820px;
+            font-size: 0.5em;
             margin-left: 10%;
         }
 
         .span3 {
             color: #F47216;
-            margin-left: 32.5%;
+            margin-left: 28.5%;
             position: absolute;
             font-size: 0.8em;
-            margin-top: 14.2%;
+            margin-top: 11.6%;
         }
 
         .cpf {
-            margin-top: -2%;
-            margin-left: -0.4%;
+            margin-top: -7%;
+            margin-left: -8%;
             font-size: 2.3em;
         }
 
         #cpf {
-            width: 880px;
+            width: 840px;
             height: 45px;
         }
 
         #cpf::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-            font-size: 2.1em;
+            font-size: 1.6em;
         }
 
         .span4 {
             color: #F47216;
-            margin-left: -50.5%;
+            margin-left: -49.5%;
             position: absolute;
-            font-size: 1.2em;
-            margin-top: 1.5%;
+            font-size: 0.8em;
+            margin-top: 2.5%;
         }
 
         .email {
-            margin-top: -3.5%;
-            margin-left: -0.4%;
+            margin-top: -7%;
+            margin-left: -8%;
             font-size: 2.3em;
         }
 
         #email {
-            width: 880px;
+            width: 840px;
             height: 45px;
         }
 
         #email::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-            font-size: 2.1em;
+            font-size: 1.6em;
         }
 
         .span5 {
             color: #F47216;
             margin-left: -48.3%;
             position: absolute;
-            font-size: 1.2em;
-            margin-top: 1.3%;
+            font-size: 0.8em;
+            margin-top: 2.3%;
         }
 
         .country {
-            margin-top: -3.5%;
-            margin-left: -0.4%;
+            margin-top: -7%;
+            margin-left: -8%;
             font-size: 2.3em;
         }
 
         #country {
-            width: 880px;
+            width: 840px;
             height: 45px;
         }
 
         #country::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-            font-size: 2.1em;
+            font-size: 1.6em;
         }
 
         .span6 {
             color: #F47216;
-            margin-left: -50.3%;
+            margin-left: -49.3%;
             position: absolute;
-            font-size: 1.2em;
-            margin-top: 1.3%;
+            font-size: 0.8em;
+            margin-top: 2.3%;
         }
 
         .profile-photo2 {
-            margin-top: -3%;
-            margin-left: 13%;
-            font-size: 2em;
+            margin-top: -4.5%;
+            margin-left: -65.3%;
+            font-size: 1.6em;
         }
 
         .choose-a-image {
-            margin-left: 12.9%;
+            margin-left: 7.9%;
             background-color: #F47216;
-            width: 260px;
-            height: 70px;
+            width: 220px;
+            height: 60px;
+            cursor: pointer;
         }
 
         .choose-a-image:hover {
-            margin-left: 12.9%;
+            margin-left: 7.9%;
             background-color: #ff7818;
-            width: 260px;
-            height: 70px;
+            width: 220px;
+            height: 60px;
+            cursor: pointer;
         }
 
         .choose-a-image:active {
-            margin-left: 12.9%;
+            margin-left: 7.9%;
             background-color: #d66515;
-            width: 260px;
-            height: 70px;
+            width: 220px;
+            height: 60px;
+            cursor: pointer;
         }
 
         label {
             position: absolute;
-            top: 1570px;
+            top: 1475px;
             margin-left: 1.4%;
             cursor: pointer;
-            font-size: 2em;
+            font-size: 1.6em;
         }
 
         .save {
-            width: 280px;
-            height: 80px;
-            font-size: 3em;
+            width: 200px;
+            height: 65px;
+            font-size: 2.3em;
             background-color: #93B413;
             margin-left: 41%;
+            margin-top: 3%;
             cursor: pointer;
         }
 
         .save:hover {
-            width: 280px;
-            height: 80px;
-            font-size: 3em;
+            width: 200px;
+            height: 65px;
+            font-size: 2.3em;
             background-color: #9fc214;
             margin-left: 41%;
+            margin-top: 3%;
         }
 
         .save:active {
-            width: 280px;
-            height: 80px;
-            font-size: 3em;
+            width: 200px;
+            height: 65px;
+            font-size: 2.3em;
             background-color: #86a40f;
             margin-left: 41%;
+            margin-top: 3%;
         }
     }
 `;
@@ -1954,7 +1961,8 @@ const CreateUserPg = function() {
                         <div  className='transvestite'>
                             <Input type='radio' name='gender' id='transvestite' defaultValue='T1'/>
                             <p className='t1-op'>Travesti</p>
-                        </div><div className='no-binary'>
+                        </div>
+                        <div className='no-binary'>
                             <Input type='radio' name='gender' id='no-binary' defaultValue='NB'/>
                             <p className='nb-op'>Não Binário</p>
                         </div>
@@ -1970,7 +1978,7 @@ const CreateUserPg = function() {
                             <Input type='radio' name='gender' id='none' defaultValue='N'/>
                             <p className='n-op'>Prefiro não dizer</p>
                         </div>
-                    </div> 
+                    </div>
                     <div className='social-name'>
                         <Input type="string" name="social-name" id="social-name" placeholder='Nome Social'/>
                     </div>

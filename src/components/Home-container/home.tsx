@@ -125,15 +125,15 @@ height: 100vh;
 
         .start:hover {
             left: 280px;
-            height: 90px;
             margin-top: -5%;
+            height: 90px;
             background-color: #9fc214;
         }
 
         .start:active {
             left: 280px;
-            height: 90px;
             margin-top: -5%;
+            height: 90px;
             background-color: #86a40f;
         }
 
