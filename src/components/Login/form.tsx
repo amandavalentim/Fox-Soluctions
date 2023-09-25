@@ -1,4 +1,4 @@
-// Código desenvolvido por Gabriel
+// Developed by Gabriel Marques
 
 'use client'
 import styled from '@emotion/styled';
@@ -43,12 +43,12 @@ const FormComponent = styled.section `
     }
 
     #forgot-email {
-        margin-left: 25%;
+        margin-left: 23%;
         margin-top: -5%;
         color: #C7C7C7;
         font-size: 1em;
         font-family: 'Poppins-Medium';
-        width: 145px;
+        width: 155px;
     }
 
     #forgot-email:active {
@@ -70,7 +70,7 @@ const FormComponent = styled.section `
     }
 
     #forgot-password {
-        margin-left: 25%;
+        margin-left: 23.5%;
         margin-top: -5%;
         font-size: 1em;
         font-family: 'Poppins-Regular';
@@ -79,12 +79,12 @@ const FormComponent = styled.section `
     }
 
     #forgot-password:active {
-        margin-left: 25%;
+        margin-left: 23.5%;
         margin-top: -5%;
         font-size: 1em;
         font-family: 'Poppins-Regular';
         color: #F47216;
-        width: 165px;
+        width: 155px;
     }
 
     p {
@@ -202,21 +202,21 @@ const FormComponent = styled.section `
         }
 
        #forgot-email {
-        margin-left: 40.5%;
+        margin-left: 38%;
         margin-top: -5%;
         color: #C7C7C7;
         font-size: 0.7em;
         font-family: 'Poppins-Regular';
-        width: 110px;
+        width: 125px;
     }
 
     #forgot-email:active {
-        margin-left: 40.5%;
+        margin-left: 38%;
         margin-top: -5%;
         font-size: 0.7em;
         color: #F47216;
         font-family: 'Poppins-Regular';
-        width: 110px;
+        width: 125px;
     }
 
     .senha {
@@ -234,7 +234,7 @@ const FormComponent = styled.section `
     }
 
     #forgot-password {
-        margin-left: 40%;
+        margin-left: 38%;
         margin-top: -5%;
         font-size: 0.7em;
         font-family: 'Poppins-Regular';
@@ -243,7 +243,7 @@ const FormComponent = styled.section `
     }
 
     #forgot-password:active {
-        margin-left: 40%;
+        margin-left: 38%;
         margin-top: -5%;
         font-size: 0.7em;
         font-family: 'Poppins-Regular';
@@ -653,20 +653,22 @@ const FormComponent = styled.section `
 
         .logar:hover {
             background-color: #9fc214;
-            width: 150px;
-            height: 50px;
-            font-size: 1.8em;
+            width: 130px;
+            height: 45px;
+            font-size: 1.6em;
             cursor: pointer;
             margin-left: 38%;
+            margin-top: 2.5%;
         }
 
         .logar:active {
             background-color: #86a40f;
-            width: 150px;
-            height: 50px;
-            font-size: 1.8em;
+            width: 130px;
+            height: 45px;
+            font-size: 1.6em;
             cursor: pointer;
             margin-left: 38%;
+            margin-top: 2.5%;
         }
 
         .fox {
@@ -863,9 +865,9 @@ const Form = function() {
                     <form>
                         <h1>Login</h1>
                         <div className='email'>
-                            <Input type="email" name="email" id="email" placeholder='Email'/>
+                            <Input type="email" name="email" id="email" placeholder='E-mail'/>
                             <Link href={'/RecoveryYourEmailPage'}>
-                                <h4 id='forgot-email'>Esqueci o Email</h4>
+                                <h4 id='forgot-email'>Esqueci o E-mail</h4>
                             </Link>
                         </div>
                         <div className='senha'>
@@ -901,9 +903,9 @@ const Form = function() {
                     {/* Login Form Content */}
                     <h1>Login</h1>
                     <div className='email'>
-                        <Input type="email" name="email" id="email" placeholder='Email'/>
+                        <Input type="email" name="email" id="email" placeholder='E-mail'/>
                         <Link href={'/RecoveryYourEmailPage'}>
-                                <h4 id='forgot-email'>Esqueci o Email</h4>
+                                <h4 id='forgot-email'>Esqueci o E-mail</h4>
                         </Link>
                     </div>
                     <div className='senha'>

@@ -385,7 +385,7 @@ const RecoveryEmail = function (){
                 <div className='container-center'>
                     <form>
                     <img src="/images/Stella-3.png" alt="fox" className='fox'/>
-                        <h3>Recupere Seu Email:</h3>
+                        <h3>Recupere Seu E-mail:</h3>
                         <div className='input-email'>
                             <Input type="string" name="PhoneOrCPF" id="phoneOrCPF" placeholder='Digite Seu Telefone ou CPF'/>
                         </div>
@@ -402,7 +402,7 @@ const RecoveryEmail = function (){
 
             <nav className='tablet-desktops'>
                     <form>
-                        <h3>Recupere Seu Email:</h3>
+                        <h3>Recupere Seu E-mail:</h3>
                         <div className='input-email'>
                             <Input type="string" name="PhoneOrCPF" id="phoneOrCPF" placeholder='Digite Seu Telefone ou CPF'/>
                         </div>

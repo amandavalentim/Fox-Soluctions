@@ -1121,7 +1121,7 @@ const Form2 = function() {
                             <Small>Digite a Data de Nascimento</Small>
                         </div>
                         <div className='email'>
-                            <Input type="email" name="email" id="email" placeholder='Email'/>
+                            <Input type="email" name="email" id="email" placeholder='E-mail'/>
                         </div>
                         <div className='phone'>
                             <Input type="phone" name="phone" id="phone" placeholder='Celular'/>
@@ -1177,7 +1177,7 @@ const Form2 = function() {
                             <Small>Digite a Data de Nascimento</Small>
                         </div>
                     <div className='email'>
-                        <Input type="email" name="email" id="email" placeholder='Email'/>
+                        <Input type="email" name="email" id="email" placeholder='E-mail'/>
                     </div>
                     <div className='phone'>
                             <Input type="phone" name="phone" id="phone" placeholder='Celular'/>

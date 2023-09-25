@@ -1,4 +1,4 @@
-// Developed code by Amanda and Gabriel
+// Developed code by Amanda
 'use client';
 "use strict";
 var __makeTemplateObject = (this && this.__makeTemplateObject) || function (cooked, raw) {
