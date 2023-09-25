@@ -107,7 +107,6 @@ const ListComponent = styled.section`
             }
             .search:hover, .search:focus{
                 transform: translateX(1px) scale(1.1);
-                    
             }
             .box-desktop{
                 display: flex;
