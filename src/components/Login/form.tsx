@@ -726,7 +726,7 @@ const FormComponent = styled.section `
 
         #forgot-email:hover{
             margin-left: 47.5%;
-            margin-top: -8.3%;
+            margin-top: -8%;
             font-size: 1.1em;
             color: #dbd7d7;
             width: 180px;
@@ -734,10 +734,10 @@ const FormComponent = styled.section `
 
         #forgot-email:active{
             margin-left: 47.5%;
-            margin-top: -8.3%;
+            margin-top: -8%;
             font-size: 1.1em;
             color: #F47216;
-            width: 150px;
+            width: 180px;
         }
 
         .senha {

@@ -14,7 +14,7 @@ const PageComponent = styled.section `
         color: white;
     }
 
-    height: 80vh;
+    height: 70vh;
 
     background: linear-gradient(180deg, #04a4e8 0%, #0A53B5 100%);
 
@@ -49,12 +49,13 @@ const PageComponent = styled.section `
         font-size: 1.2em;
         font-family: 'Poppins-medium';
         margin-left: 11%;
+        margin-top: 5%;
     }
 
     #op {
         width: 250px;
         margin-left: 11%;
-        margin-top: 30%;
+        margin-top: 20%;
     }
 
     #op::-webkit-input-placeholder { /* Chrome/Opera/Safari */
@@ -86,6 +87,8 @@ const PageComponent = styled.section `
     // Tablet
     @media(min-width: 768px) {
 
+        height: 62vh;
+
         .mobile {
             display: none;
         }
@@ -111,25 +114,21 @@ const PageComponent = styled.section `
         background-repeat: no-repeat;
 
         form {
-            margin-top: 7%;
-            margin-left: 29%;
+            width: 300px;
             border-radius: 19px;
             background: linear-gradient(180deg, #07B3FD 0%, #0a59c0 100%);
-            width: 320px;
-            height: 350px;
-            border-color: white;
+            margin-top: 5%;
+            margin-left: 29%;
        }
 
        h1 {
-        margin-top: 10%;
-        font-size: 1.1em;
-        margin-left: 15%;
+        padding-top: 10%;
+        margin-left: 10%;
        }
        
        #op {
-        margin-top: 27%;
-        margin-left: 14.2%;
-        width: 230px;
+        width: 235px;
+        margin-top: 15%;
        }
 
        #op::-webkit-input-placeholder { /* Chrome/Opera/Safari */
@@ -137,38 +136,44 @@ const PageComponent = styled.section `
     }
 
     .enviar {
-        margin-top: 13%;
-        margin-left: 23%;
-        width: 170px;
-        height: 50px;
-        font-size: 1.6em;
-        background-color: #93B413;
-        border: none;
-        border-radius: 20px;
+        width: 130px;
+            height: 40px;
+            border-radius: 15px;
+            border: none;
+            background: #93B413;
+            font-size: 1.5em;
+            color: #ffffff;
+            margin: 40px;
+            margin-top: 5%;
+            margin-left: 30%;
     }
 
     .enviar:active {
-        margin-top: 13%;
-        margin-left: 23%;
-        width: 170px;
-        height: 50px;
-        font-size: 1.6em;
-        background-color: #86a40f;
-        border: none;
-        border-radius: 20px;
+        width: 130px;
+            height: 40px;
+            border-radius: 15px;
+            border: none;
+                background-color: #86a40f;
+            font-size: 1.5em;
+            color: #ffffff;
+            margin: 40px;
+            margin-top: 5%;
+            margin-left: 30%;
     }
 
         .fox {
             position: absolute;
-            left: 59px;
-            top: 500px;
-            width: 110px;
-            height: 180px;
+            left: 39px;
+            top: 450px;
+            width: 90px;
+            height: 140px;
         }
     }
 
     // Small Screens
     @media(min-width: 992px) {
+
+        height: 65vh;
         
         .mobile {
             display: none;
@@ -194,67 +199,47 @@ const PageComponent = styled.section `
         background-image: url("/images/992px-recuperar-senha.svg");
 
         form {
+            margin-left: 31.5%;
             margin-top: 7%;
-            margin-left: 27%;
-            border-radius: 19px;
-            background: linear-gradient(180deg, #07B3FD 0%, #0a59c0 100%);
-            width: 470px;
-            height: 350px;
-            border-color: white;
+            width: 350px;
+            height: 280px;
         }
 
         h1 {
-            font-size: 1.5em;
-            margin-left: 17%;
+            margin-left: 14%;
         }
 
         #op {
-            margin-top: 17%;
-            margin-left: 20%;
-            width: 280px;
+            margin-left: 14%;
+            margin-top: 15%;
+            width: 250px;
         }
 
-       #op::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-            font-size: 1.1em;
+        #op::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+            font-size: 0.9em;
         }
 
         .enviar {
-            margin-top: 7%;
-            margin-left: 30%;
-            width: 190px;
-            height: 60px;
-            font-size: 2em;
-            background-color: #93B413;
-            border: none;
-            border-radius: 20px;
             cursor: pointer;
+            margin-left: 32%;
         }
 
         .enviar:hover {
-            margin-top: 7%;
-            margin-left: 30%;
-            width: 190px;
-            height: 60px;
-            font-size: 2em;
             background-color: #9fc214;
-            border: none;
-            border-radius: 20px;
+            cursor: pointer;
+            margin-left: 32%;
         }
 
         .enviar:active {
-            margin-top: 7%;
-            margin-left: 30%;
-            width: 190px;
-            height: 60px;
-            font-size: 2em;
             background-color: #86a40f;
-            border: none;
+            cursor: pointer;
+            margin-left: 32%;
         }
 
         .fox {
             position: absolute;
-            left: 101px;
-            top: 570px;
+            left: 29px;
+            top: 520px;
         }
     }
 
@@ -285,66 +270,73 @@ const PageComponent = styled.section `
         background-image: url("/images/1200px-recuperar-senha.svg");
 
         form {
-            margin-top: 4%;
-            margin-left: 30.7%;
-            border-radius: 19px;
-            background: linear-gradient(180deg, #07B3FD 0%, #0a59c0 100%);
-            width: 510px;
-            height: 400px;
-            border-color: white;
+            width: 400px;
+            height: 295px;
+            margin-top: 4.5%;
+            margin-left: 33.5%;
         }
 
         h1 {
-            font-size: 1.9em;
-            margin-left: 12%;
+            font-size: 1.5em;
+            margin-left: 11.2%;
         }
 
         #op {
-        margin-top: 18%;
-        margin-left: 14.5%;
-        width: 370px;
+            margin-left: 12.5%;
+            margin-top: 15%;
+            width: 300px;
        }
 
        #op::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-            font-size: 1.5em;
+            font-size: 1.1em;
         }
 
         .enviar {
-            margin-top: 4%;
-            margin-left: 30%;
-            width: 200px;
-            height: 70px;
-            font-size: 2.2em;
-            background-color: #93B413;
+            width: 150px;
+            height: 50px;
+            border-radius: 15px;
             border: none;
-            border-radius: 20px;
+            background: #93B413;
+            font-size: 1.7em;
+            color: #ffffff;
+            margin: 40px;
+            margin-top: -1%;
+            margin-left: 32%;
             cursor: pointer;
         }
 
         .enviar:hover {
-            margin-top: 4%;
-            margin-left: 30%;
-            width: 200px;
-            height: 70px;
-            font-size: 2.2em;
-            background-color: #9fc214;
+            width: 150px;
+            height: 50px;
+            border-radius: 15px;
             border: none;
+            background-color: #9fc214;
+            font-size: 1.7em;
+            color: #ffffff;
+            margin: 40px;
+            margin-top: -1%;
+            margin-left: 32%;
+            cursor: pointer;
         }
 
         .enviar:active {
-            margin-top: 4%;
-            margin-left: 30%;
-            width: 200px;
-            height: 70px;
-            font-size: 2.2em;
-            background-color: #86a40f;
+            width: 150px;
+            height: 50px;
+            border-radius: 15px;
             border: none;
+            background-color: #86a40f;
+            font-size: 1.7em;
+            color: #ffffff;
+            margin: 40px;
+            margin-top: -1%;
+            margin-left: 32%;
+            cursor: pointer;
         }
 
         .fox {
             position: absolute;
-            left: 68px;
-            top: 650px;
+            left: -3px;
+            top: 600px;
         }
     }
 
@@ -373,63 +365,78 @@ const PageComponent = styled.section `
         }
 
         background-image: url("/images/1600px-recuperar-senha.svg");
+        height: 60vh;
 
         form {
-            margin-top: 5%;
-            margin-left: 30.7%;
-            border-radius: 19px;
-            background: linear-gradient(180deg, #07B3FD 0%, #0a59c0 100%);
-            width: 570px;
-            height: 440px;
-            border-color: white;
+            width: 450px;
+            height: 330px;
+            margin-left: 35%;
+            margin-top: 4%;
         }
 
         h1 {
-            margin-left: 15.7%;
+            font-size: 1.6em;
+            margin-left: 13.5%;
         }
 
         #op {
-        margin-top: 18%;
-        margin-left: 17.5%;
-        width: 370px;
+            margin-left: 13.5%;
+            margin-top: 15%;
+            width: 330px;
        }
 
+       #op::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+            font-size: 1.2em;
+        }
+
        .enviar {
-            margin-top: 1%;
-            margin-left: 32.7%;
-            width: 200px;
-            height: 70px;
-            font-size: 2.2em;
-            background-color: #93B413;
+            width: 150px;
+            height: 50px;
+            border-radius: 15px;
             border: none;
-            border-radius: 20px;
+            background: #93B413;
+            font-size: 1.7em;
+            color: #ffffff;
+            margin: 40px;
+            margin-top: -15%;
+            margin-left: 33%;
             cursor: pointer;
         }
 
         .enviar:hover {
-            margin-top: 1%;
-            margin-left: 32.7%;
-            width: 200px;
-            height: 70px;
-            font-size: 2.2em;
-            background-color: #9fc214;
+            width: 150px;
+            height: 50px;
+            border-radius: 15px;
             border: none;
+            background-color: #9fc214;
+            font-size: 1.7em;
+            color: #ffffff;
+            margin: 40px;
+            margin-top: -15%;
+            margin-left: 33%;
+            cursor: pointer;
         }
 
         .enviar:active {
-            margin-top: 1%;
-            margin-left: 32.7%;
-            width: 200px;
-            height: 70px;
-            font-size: 2.2em;
-            background-color: #86a40f;
+            width: 150px;
+            height: 50px;
+            border-radius: 15px;
             border: none;
+            background-color: #86a40f;
+            font-size: 1.7em;
+            color: #ffffff;
+            margin: 40px;
+            margin-top: -15%;
+            margin-left: 33%;
+            cursor: pointer;
         }
 
         .fox {
             position: absolute;
-            left: 59px;
-            top: 725px;
+            left: 7px;
+            top: 670px;
+            width: 105px;
+            height: 160px;
         }
     }
  

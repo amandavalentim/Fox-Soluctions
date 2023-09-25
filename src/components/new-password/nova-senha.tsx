@@ -1,4 +1,4 @@
-// Código desenvolvido por Gabriel
+// Developed by Gabriel Marques
 
 'use client'
 import styled from '@emotion/styled';
@@ -8,7 +8,7 @@ import Input from '../Login/Input/Input';
 const Formcomponent4 = styled.section `
 
     //Mobile
-    height: 92.5vh;
+    height: 98vh;
 
     background: linear-gradient(180deg, #04a4e8 0%, #0A53B5 100%);
 
@@ -41,7 +41,7 @@ const Formcomponent4 = styled.section `
     }
 
     #password {
-        margin-top: 23%;
+        margin-top: 20%;
         margin-left: 14%;
     }
 
@@ -59,8 +59,8 @@ const Formcomponent4 = styled.section `
     }
 
     .confirmar {
-        margin-top: 10%;
-        margin-left: 24%;
+        margin-top: 12%;
+        margin-left: 23%;
         width: 170px;
         height: 50px;
         font-size: 1.6em;
@@ -81,8 +81,6 @@ const Formcomponent4 = styled.section `
 
     //Tablet
     @media(min-width: 768px) {
-
-        height: 80vh;
         
         .mobile{
             display: none;
@@ -108,19 +106,25 @@ const Formcomponent4 = styled.section `
         background-image: url("/images/tablet-recuperar-senha.svg");
         background-repeat: no-repeat;
 
+        height: 62vh;
+
         form {
-            margin-top: 6%;
-            margin-left: 29%;
+            margin-top: 4%;
+            margin-left: 30%;
             border-radius: 19px;
             background: linear-gradient(180deg, #07B3FD 0%, #0a59c0 100%);
-            width: 320px;
-            height: 350px;
+            width: 290px;
+            height: 275px;
             border-color: white;
         }
 
+        h1 {
+            font-size: 1.2em;
+        }
+
         #password {
-            margin-top: 20%;
-            margin-left: 13.6%;
+            margin-top: 15%;
+            margin-left: 11%;
             width: 230px;
         }
 
@@ -130,7 +134,7 @@ const Formcomponent4 = styled.section `
 
         #confirm-password {
             margin-top: 5%;
-            margin-left: 13.6%;
+            margin-left: 11%;
             width: 230px;
         }
 
@@ -139,31 +143,31 @@ const Formcomponent4 = styled.section `
         }
 
         .confirmar {
-            margin-top: 5%;
-            margin-left: 24%;
-            width: 170px;
-            height: 50px;
-            font-size: 1.6em;
+            margin-top: -1%;
+            margin-left: 27%;
+            width: 140px;
+            height: 40px;
+            font-size: 1.3em;
             background-color: #93B413;
             border: none;
-            border-radius: 20px;
+            border-radius: 10px;
             color: white;
         }
 
         .confirmar:active {
-            margin-top: 5%;
-            margin-left: 24%;
-            width: 170px;
-            height: 50px;
-            font-size: 1.6em;
+            margin-top: -1%;
+            margin-left: 27%;
+            width: 140px;
+            height: 40px;
+            font-size: 1.3em;
             background-color: #86a40f;
             border: none;
-            border-radius: 20px;
+            border-radius: 10px;
             color: white;
         }
 
         .fox {
-            margin-left: -108%;
+            margin-left: -110%;
             margin-top: -50%;
             width: 100px;
         }
@@ -189,26 +193,27 @@ const Formcomponent4 = styled.section `
             }
 
             background-image: url("/images/992px-recuperar-senha.svg");
+            height: 65vh;
 
             form {
-                margin-top: 5%;
-                margin-left: 31%;
+                margin-top: 4.3%;
+                margin-left: 32.5%;
                 border-radius: 19px;
                 background: linear-gradient(180deg, #07B3FD 0%, #0a59c0 100%);
-                width: 370px;
-                height: 410px;
+                width: 330px;
+                height: 330px;
                 border-color: white;
             }
 
             h1 {
-                font-size: 1.5em;
+                font-size: 1.3em;
                 margin-left: 11%;
             }
 
             #password {
-                margin-top: 20%;
-                margin-left: 13.6%;
-                width: 272px;
+                margin-top: 15%;
+                margin-left: 15%;
+                width: 232px;
             }
 
             #password::-webkit-input-placeholder { /* Chrome/Opera/Safari */
@@ -217,8 +222,8 @@ const Formcomponent4 = styled.section `
 
             #confirm-password {
                 margin-top: 5%;
-                margin-left: 13.6%;
-                width: 272px;
+                margin-left: 15%;
+                width: 232px;
             }
 
             #confirm-password::-webkit-input-placeholder { /* Chrome/Opera/Safari */
@@ -226,43 +231,43 @@ const Formcomponent4 = styled.section `
             }
 
             .confirmar {
-                width: 210px;
-                height: 60px;
-                font-size: 2em;
-                margin-top: 8%;
-                margin-left: 22%;
+                width: 160px;
+                height: 50px;
+                font-size: 1.6em;
+                margin-top: 2%;
+                margin-left: 24.8%;
                 background-color: #93B413;
                 border: none;
-                border-radius: 20px;
+                border-radius: 10px;
                 color: white;
             }
             
             .confirmar:hover {
-                width: 210px;
-                height: 60px;
-                font-size: 2em;
-                margin-top: 8%;
-                margin-left: 22%;
+                width: 160px;
+                height: 50px;
+                font-size: 1.6em;
+                margin-top: 2%;
+                margin-left: 24.8%;
                 background-color: #9fc214;
                 border: none;
-                border-radius: 20px;
+                border-radius: 10px;
                 color: white;
             }
 
             .confirmar:active {
-                width: 210px;
-                height: 60px;
-                font-size: 2em;
-                margin-top: 8%;
-                margin-left: 22%;
+                width: 160px;
+                height: 50px;
+                font-size: 1.6em;
+                margin-top: 2%;
+                margin-left: 24.8%;
                 background-color: #86a40f;
                 border: none;
-                border-radius: 20px;
+                border-radius: 10px;
                 color: white;
             }
 
             .fox {
-                margin-left: -105.5%;
+                margin-left: -103.5%;
             }
         }
 
@@ -294,79 +299,79 @@ const Formcomponent4 = styled.section `
 
             form {
                 margin-top: 2.5%;
-                margin-left: 32%;
+                margin-left: 34.2%;
                 border-radius: 19px;
                 background: linear-gradient(180deg, #07B3FD 0%, #0a59c0 100%);
-                width: 500px;
-                height: 440px;
+                width: 400px;
+                height: 355px;
                 border-color: white;
             }
 
             h1 {
-                font-size: 2em;
-                margin-left: 11%;
+                font-size: 1.6em;
+                margin-left: 10.5%;
             }
 
             #password {
-                margin-top: 15%;
-                margin-left: 12.6%;
-                width: 375px;
+                margin-top: 12%;
+                margin-left: 12%;
+                width: 305px;
                 height: 32px;
             }
 
             #password::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-                font-size: 1.6em;
+                font-size: 1.4em;
             }
 
             #confirm-password {
-                margin-top: 3%;
-                margin-left: 12.6%;
-                width: 375px;
+                margin-top: 1%;
+                margin-left: 12%;
+                width: 305px;
                 height: 32px;
             }
 
             #confirm-password::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-                font-size: 1.6em;
+                font-size: 1.4em;
             }
 
             .confirmar {
-                width: 210px;
-                height: 60px;
-                font-size: 2em;
-                margin-top: 1%;
+                width: 170px;
+                height: 55px;
+                font-size: 1.7em;
+                margin-top: -4%;
                 margin-left: 28%;
                 background-color: #93B413;
                 border: none;
-                border-radius: 20px;
+                border-radius: 10px;
                 color: white;
             }
             
             .confirmar:hover {
-                width: 210px;
-                height: 60px;
-                font-size: 2em;
-                margin-top: 1%;
+                width: 170px;
+                height: 55px;
+                font-size: 1.7em;
+                margin-top: -4%;
                 margin-left: 28%;
                 background-color: #9fc214;
                 border: none;
-                border-radius: 20px;
+                border-radius: 10px;
                 color: white;
             }
 
             .confirmar:active {
-                width: 210px;
-                height: 60px;
-                font-size: 2em;
-                margin-top: 1%;
+                width: 170px;
+                height: 55px;
+                font-size: 1.7em;
+                margin-top: -4%;
                 margin-left: 28%;
                 background-color: #86a40f;
                 border: none;
-                border-radius: 20px;
+                border-radius: 10px;
                 color: white;
             }
 
             .fox {
-                margin-left: -90%;
+                margin-left: -95.5%;
             }
         }
 
@@ -395,84 +400,94 @@ const Formcomponent4 = styled.section `
             }
 
             background-image: url("/images/1600px-recuperar-senha.svg");
+            height: 60vh;
 
             form {
-                margin-top: 3%;
-                margin-left: 33%;
+                margin-top: 2%;
+                margin-left: 35.5%;
                 border-radius: 19px;
                 background: linear-gradient(180deg, #07B3FD 0%, #0a59c0 100%);
-                width: 500px;
-                height: 500px;
+                width: 400px;
+                height: 390px;
                 border-color: white;
             }
 
             h1 {
-                font-size: 2em;
-                margin-left: 11%;
+                font-size: 1.7em;
+                margin-left: 8.5%;
             }
 
             #password {
-                margin-top: 15%;
-                margin-left: 12.6%;
-                width: 375px;
+                position: absolute;
+                margin-left: 2.5%;
+                top: 140px;
+                width: 320px;
                 height: 32px;
             }
 
             #password::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-                font-size: 1.6em;
+                font-size: 1.4em;
             }
 
             #confirm-password {
-                margin-top: 3%;
-                margin-left: 12.6%;
-                width: 375px;
+                position: absolute;
+                margin-left: 2.5%;
+                top: 391px;
+                width: 320px;
                 height: 32px;
             }
 
             #confirm-password::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-                font-size: 1.6em;
+                font-size: 1.4em;
             }
 
             .confirmar {
                 width: 210px;
                 height: 60px;
                 font-size: 2em;
-                margin-top: -1%;
-                margin-left: 28%;
+                position: absolute;
+                margin-left: 5.8%;
+                top: 550px;
                 background-color: #93B413;
                 border: none;
-                border-radius: 20px;
+                border-radius: 15px;
                 color: white;
+                cursor: pointer;
             }
 
             .confirmar:hover {
                 width: 210px;
                 height: 60px;
                 font-size: 2em;
-                margin-top: -1%;
-                margin-left: 28%;
+                position: absolute;
+                margin-left: 5.8%;
+                top: 550px;
                 background-color: #9fc214;
                 border: none;
-                border-radius: 20px;
+                border-radius: 15px;
                 color: white;
+                cursor: pointer;
             }
 
             .confirmar:active {
                 width: 210px;
                 height: 60px;
                 font-size: 2em;
-                margin-top: -1%;
-                margin-left: 28%;
+                position: absolute;
+                margin-left: 5.8%;
+                top: 550px;
                 background-color: #86a40f;
                 border: none;
-                border-radius: 20px;
+                border-radius: 15px;
                 color: white;
+                cursor: pointer;
             }
 
             .fox {
-                margin-left: -90%;
+                margin-left: -25%;
+                margin-top: 15%;
             }
-            }
+        }
     }
 
 `;

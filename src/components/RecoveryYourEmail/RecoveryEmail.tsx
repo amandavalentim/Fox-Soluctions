@@ -3,6 +3,7 @@
 'use client';
 import styled from '@emotion/styled';
 import Input from '../Login/Input/Input';
+import Link from 'next/link';
 
 const RecoveryEmailComponent = styled.section`
 
@@ -38,6 +39,18 @@ const RecoveryEmailComponent = styled.section`
                 border-radius: 20px;
                 border: none;
                 background: #93B413;
+                font-size: 1.6em;
+                color: #ffffff;
+                margin: 40px;
+                margin-top: 5%;
+                margin-left: 28%;
+            }
+            .confirm:active{
+                width: 170px;
+                height: 50px;
+                border-radius: 20px;
+                border: none;
+                background-color: #86a40f;
                 font-size: 1.6em;
                 color: #ffffff;
                 margin: 40px;
@@ -97,17 +110,30 @@ const RecoveryEmailComponent = styled.section`
         }
 
         .confirm{
-                width: 130px;
-                height: 40px;
-                border-radius: 15px;
-                border: none;
-                background: #93B413;
-                font-size: 1.5em;
-                color: #ffffff;
-                margin: 40px;
-                margin-top: 5%;
-                margin-left: 15%;
-            }
+            width: 130px;
+            height: 40px;
+            border-radius: 15px;
+            border: none;
+            background: #93B413;
+            font-size: 1.5em;
+            color: #ffffff;
+            margin: 40px;
+            margin-top: 5%;
+            margin-left: 15%;
+        }
+
+        .confirm:active{
+            width: 130px;
+            height: 40px;
+            border-radius: 15px;
+            border: none;
+                background-color: #86a40f;
+            font-size: 1.5em;
+            color: #ffffff;
+            margin: 40px;
+            margin-top: 5%;
+            margin-left: 15%;
+        }
         
         background-image: url("/images/tablet-recuperar-email.svg");
         background-repeat: no-repeat;
@@ -126,7 +152,7 @@ const RecoveryEmailComponent = styled.section`
 
     @media(min-width: 992px) {
         background-image: url("/images/992px-recuperar-email.svg");
-        height: 75vh;
+        height: 65vh;
 
         .mobile {
             display: none;
@@ -155,12 +181,26 @@ const RecoveryEmailComponent = styled.section`
             width: 250px;
         }
 
+        .confirm {
+            cursor: pointer;
+        }
+
+        .confirm:hover {
+            background-color: #9fc214;
+            cursor: pointer;
+        }
+
+        .confirm:active {
+            background-color: #86a40f;
+            cursor: pointer;
+        }
+
     }
 
     //Medium Screen 
     @media(min-width: 1200px) {
         background-image: url("/images/1200px-recuperar-email.svg");
-        height: 84vh;
+        height: 72vh;
 
         .mobile {
             display: none;
@@ -177,8 +217,8 @@ const RecoveryEmailComponent = styled.section`
         }
 
         h3 {
-            font-size: 1.6em;
-            margin-left: 13.5%;
+            font-size: 1.5em;
+            margin-left: 16%;
         }
 
         .input-email {
@@ -210,18 +250,48 @@ const RecoveryEmailComponent = styled.section`
             margin: 40px;
             margin-top: -1%;
             margin-left: 10%;
+            cursor: pointer;
+        }
+
+        .confirm:hover{
+            width: 130px;
+            height: 40px;
+            border-radius: 15px;
+            border: none;
+            background-color: #9fc214;
+            font-size: 1.5em;
+            color: #ffffff;
+            margin: 40px;
+            margin-top: -1%;
+            margin-left: 10%;
+            cursor: pointer;
+        }
+
+        .confirm:active{
+            width: 130px;
+            height: 40px;
+            border-radius: 15px;
+            border: none;
+            background-color: #86a40f;
+            font-size: 1.5em;
+            color: #ffffff;
+            margin: 40px;
+            margin-top: -1%;
+            margin-left: 10%;
+            cursor: pointer;
         }
 
         .fox2 {
             left: 640px;
             top: 530px;
         }
+
     }
 
     //Large Screen 
     @media(min-width: 1600px) {
-        background-image: url("/images/1600px-recuperar-senha.svg");
-        height: 80vh;
+        background-image: url("/images/1600px-recuperar-email.svg");
+        height: 69vh;
 
         .mobile {
             display: none;
@@ -230,6 +300,80 @@ const RecoveryEmailComponent = styled.section`
         .tablet-desktops {
             display: flex;
             justify-content: space-between;
+        }
+
+        form {
+            width: 450px;
+            height: 330px;
+            margin-left: 35%;
+            margin-top: 4%;
+        }
+
+        h3 {
+            font-size: 1.6em;
+            margin-left: 18.3%;
+        }
+
+        .input-email {
+            margin-left: -22.5%;
+            margin-top: 5%;
+        }
+
+        #phoneOrCPF {
+            width: 330px;
+        }
+
+        #phoneOrCPF::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+            font-size: 1.2em;
+        }
+
+        .confirm{
+            width: 150px;
+            height: 50px;
+            border-radius: 15px;
+            border: none;
+            background: #93B413;
+            font-size: 1.7em;
+            color: #ffffff;
+            margin: 40px;
+            margin-top: -15%;
+            margin-left: 11%;
+            cursor: pointer;
+        }
+
+        .confirm:hover{
+            width: 150px;
+            height: 50px;
+            border-radius: 15px;
+            border: none;
+            background-color: #9fc214;
+            font-size: 1.7em;
+            color: #ffffff;
+            margin: 40px;
+            margin-top: -15%;
+            margin-left: 11%;
+            cursor: pointer;
+        }
+
+        .confirm:active{
+            width: 150px;
+            height: 50px;
+            border-radius: 15px;
+            border: none;
+            background-color: #86a40f;
+            font-size: 1.7em;
+            color: #ffffff;
+            margin: 40px;
+            margin-top: -15%;
+            margin-left: 11%;
+            cursor: pointer;
+        }
+
+        .fox2 {
+            left: 740px;
+            top: 565px;
+            width: 90px;
+            height: 90px;
         }
     }
 `
@@ -247,7 +391,9 @@ const RecoveryEmail = function (){
                         </div>
                         <div className='btn-confirm'>
                             <button className='confirm' type='button'>
-                                Enviar
+                                <Link href={'/ViewEmailPage'}>
+                                    Enviar
+                                </Link>
                             </button>
                         </div>
                     </form>
@@ -262,7 +408,9 @@ const RecoveryEmail = function (){
                         </div>
                         <div className='btn-confirm'>
                             <button className='confirm' type='button'>
-                                Enviar
+                                <Link href={'/ViewEmailPage'}>
+                                    Enviar
+                                </Link>
                             </button>
                         </div>
                     </form>
