@@ -224,6 +224,7 @@ h1 {
         border: none;
         border-radius: 10px;
         color: white;
+        cursor: pointer;
     }
 
     .confirmar:hover {
@@ -236,6 +237,7 @@ h1 {
         border: none;
         border-radius: 10px;
         color: white;
+        cursor: pointer;
     }
 
     .confirmar:active {
@@ -248,6 +250,7 @@ h1 {
         border: none;
         border-radius: 10px;
         color: white;
+        cursor: pointer;
     }
 
     .fox2 {
@@ -306,6 +309,7 @@ h1 {
         width: 160px;
         height: 55px;
         font-size: 1.6em;
+        cursor: pointer;
     }
 
     .confirmar:hover {
@@ -313,6 +317,7 @@ h1 {
         width: 160px;
         height: 55px;
         font-size: 1.6em;
+        cursor: pointer;
     }
 
     .confirmar:active {
@@ -320,6 +325,7 @@ h1 {
         width: 160px;
         height: 55px;
         font-size: 1.6em;
+        cursor: pointer;
     }
 
     .fox2 {
@@ -353,6 +359,21 @@ h1 {
         position: absolute;
         top: 530px;
         margin-left: -14%;
+        cursor: pointer;
+    }
+
+    .confirmar:hover {
+        position: absolute;
+        top: 530px;
+        margin-left: -14%;
+        cursor: pointer;
+    }
+
+    .confirmar:active {
+        position: absolute;
+        top: 530px;
+        margin-left: -14%;
+        cursor: pointer;
     }
 
 }

@@ -133,7 +133,7 @@ const FormComponent3 = styled.section `
             display: none;
         }
 
-        background-image: url("/images/tablet-recuperar-senha.svg");
+        background-image: url("/images/tablet-recovery-code.svg");
         background-repeat: no-repeat;
 
         form {
@@ -175,7 +175,7 @@ const FormComponent3 = styled.section `
         }
 
         .fox {
-            width: 80px;
+            width: 95px;
             height: 120px;
             margin-left: 10%;
             margin-top: 20%;
@@ -206,10 +206,11 @@ const FormComponent3 = styled.section `
                 display: none;
         }
 
-        background-image: url("/images/992px-recuperar-senha.svg");
+        background-image: url("/images/992px-recovery-code.svg");
+        height: 75vh;
 
         form {
-            margin-top: 8%;
+            margin-top: 6.5%;
             margin-left: 30%;
             border-radius: 19px;
             background: linear-gradient(180deg, #07B3FD 0%, #0a59c0 100%);
@@ -316,31 +317,35 @@ const FormComponent3 = styled.section `
             }
 
             form {
-                margin-top: 3%;
-                margin-left: 31%;
+                margin-top: 4%;
+                margin-left: 34.5%;
                 border-radius: 19px;
                 background: linear-gradient(180deg, #07B3FD 0%, #0a59c0 100%);
-                width: 550px;
-                height: 430px;
+                width: 400px;
+                height: 350px;
                 border-color: white;
             }
 
-            background-image: url("/images/1200px-recuperar-senha.svg");
+            background-image: url("/images/1200px-recovery-code.svg");
+            height: 70vh;
 
             h1 {
-                font-size: 1.4em;
+                font-size: 1.2em;
                 margin-top: -2%;
+                margin-left: 0.4%;
                 color: white;
             }
 
             #code {
-                width: 430px;
+                width: 350px;
                 color: white;
+                margin-left: 11%;
+                margin-top: 10%;
             }
 
             .resend {
-                margin-top: 6%;
-                font-size: 1.1em;
+                margin-top: 4%;
+                font-size: 0.95em;
                 text-align: center;
                 margin-left: -55%;
                 color: #C7C7C7;
@@ -348,62 +353,68 @@ const FormComponent3 = styled.section `
             }
 
             .resend:active {
-                font-size: 1.1em;
+                margin-top: 4%;
+                font-size: 0.95em;
                 text-align: center;
                 margin-left: -55%;
-                margin-top: 6%;
                 color: #86a40f;
                 cursor: pointer;
             }
 
             .rename {
-                font-size: 1.1em;
+                font-size: 0.9em;
                 text-align: center;
-                margin-left: 45%;
-                margin-top: -8.6%;
+                margin-left: 47%;
+                margin-top: -10.3%;
                 color: #C7C7C7;
                 cursor: pointer;
             }
 
             .rename:active {
-                font-size: 1.1em;
+                font-size: 0.9em;
                 text-align: center;
-                margin-left: 45%;
-                margin-top: -8.6%;
+                margin-left: 47%;
+                margin-top: -10.3%;
                 color: #86a40f;
                 cursor: pointer;
             }
 
             .enviar {
-                width: 200px;
-                height: 60px;
-                font-size: 2em;
-                margin-left: 31%;
+                width: 140px;
+                height: 40px;
+                font-size: 1.7em;
+                margin-left: 32.5%;
                 cursor: pointer;
                 color: white;
+                border-radius: 12px;
+                margin-top: 5.5%;
             }
 
             .enviar:hover {
-                width: 200px;
-                height: 60px;
-                font-size: 2em;
-                margin-left: 31%;
+                width: 140px;
+                height: 40px;
+                font-size: 1.7em;
+                margin-left: 32.5%;
                 background-color: #9fc214;
                 cursor: pointer;
+                border-radius: 12px;
+                margin-top: 5.5%;
             }
 
             .enviar:focus {
-                width: 200px;
-                height: 60px;
-                font-size: 2em;
-                margin-left: 31%;
+                width: 140px;
+                height: 40px;
+                font-size: 1.7em;
+                margin-left: 32.5%;
                 background-color: #86a40f;
                 cursor: pointer;
+                border-radius: 12px;
+                margin-top: 5.5%;
             }
 
             .fox {
                 width: 100px;
-                margin-top: 15%;
+                margin-top: 13%;
             }
         }
 
@@ -431,15 +442,15 @@ const FormComponent3 = styled.section `
                 justify-content: space-between;
             }
 
-            background-image: url("/images/1600px-recuperar-senha.svg");
+            background-image: url("/images/1600px-recovery-code.svg");
 
             form {
-                margin-top: 6%;
-                margin-left: 31.5%;
+                margin-top: 3.5%;
+                margin-left: 33.5%;
                 border-radius: 19px;
                 background: linear-gradient(180deg, #07B3FD 0%, #0a59c0 100%);
-                width: 550px;
-                height: 430px;
+                width: 480px;
+                height: 400px;
                 border-color: white;
             }
 
@@ -460,7 +471,7 @@ const FormComponent3 = styled.section `
 
             .resend {
                 margin-top: 6%;
-                font-size: 1.1em;
+                font-size: 1em;
                 text-align: center;
                 margin-left: -55%;
                 color: #C7C7C7;
@@ -468,7 +479,7 @@ const FormComponent3 = styled.section `
             }
 
             .resend:active {
-                font-size: 1.1em;
+                font-size: 1em;
                 text-align: center;
                 margin-left: -55%;
                 margin-top: 6%;
@@ -477,46 +488,46 @@ const FormComponent3 = styled.section `
             }
 
             .rename {
-                font-size: 1.1em;
+                font-size: 0.95em;
                 text-align: center;
-                margin-left: 45%;
-                margin-top: -8.6%;
+                margin-left: 46.5%;
+                margin-top: -8.9%;
                 color: #C7C7C7;
                 cursor: pointer;
             }
 
             .rename:active {
-                font-size: 1.1em;
+                font-size: 0.95em;
                 text-align: center;
-                margin-left: 45%;
-                margin-top: -8.6%;
+                margin-left: 46.5%;
+                margin-top: -8.9%;
                 color: #86a40f;
                 cursor: pointer;
             }
 
             .enviar {
-                width: 200px;
-                height: 60px;
-                font-size: 2em;
-                margin-left: 33%;
+                width: 150px;
+                height: 50px;
+                font-size: 1.8em;
+                margin-left: 35%;
                 cursor: pointer;
                 color: white;
             }
 
             .enviar:hover {
-                width: 200px;
-                height: 60px;
-                font-size: 2em;
-                margin-left: 33%;
+                width: 150px;
+                height: 50px;
+                font-size: 1.8em;
+                margin-left: 35%;
                 background-color: #9fc214;
                 cursor: pointer;
             }
 
             .enviar:focus {
-                width: 200px;
-                height: 60px;
-                font-size: 2em;
-                margin-left: 33%;
+                width: 150px;
+                height: 50px;
+                font-size: 1.8em;
+                margin-left: 35%;
                 background-color: #86a40f;
                 cursor: pointer;
             }
@@ -545,7 +556,7 @@ const RecoveryCode = function() {
                 <div className='rename'>
                     <a href="" id='a2'>Não é o seu email?<br/> Reescreva</a>
                 </div>
-                <Link href={'/NewPasswordPage'}>
+                <Link href={'/'}>
                         <button className='enviar' type='button'>
                             Enviar
                         </button>
@@ -570,7 +581,7 @@ const RecoveryCode = function() {
                         <a href="" id='a2'>Não é o seu email?<br/> Reescreva</a>
                     </div>
                     </div>
-                    <Link href={'/NewPasswordPage'}>
+                    <Link href={'/'}>
                         <button className='enviar' type='button'>
                             Enviar
                         </button>
@@ -596,7 +607,7 @@ const RecoveryCode = function() {
                         <a href="" id='a2'>Não é o seu email?<br/> Reescreva</a>
                     </div>
                     </div>
-                    <Link href={'/NewPasswordPage'}>
+                    <Link href={'/'}>
                         <button className='enviar' type='button'>
                             Enviar
                         </button>
@@ -622,7 +633,7 @@ const RecoveryCode = function() {
                         <a href="" id='a2'>Não é o seu email?<br/> Reescreva</a>
                     </div>
                     </div>
-                    <Link href={'/NewPasswordPage'}>
+                    <Link href={'/'}>
                         <button className='enviar' type='button'>
                             Enviar
                         </button>
@@ -648,7 +659,7 @@ const RecoveryCode = function() {
                         <a href="" id='a2'>Não é o seu email?<br/> Reescreva</a>
                     </div>
                     </div>
-                    <Link href={'/NewPasswordPage'}>
+                    <Link href={'/'}>
                         <button className='enviar' type='button'>
                             Enviar
                         </button>

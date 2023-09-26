@@ -52,7 +52,7 @@ const FormComponent = styled.section `
     }
 
     #forgot-email:active {
-        margin-left: 25%;
+        margin-left: 23%;
         margin-top: -5%;
         font-size: 1em;
         color: #F47216;
@@ -202,8 +202,9 @@ const FormComponent = styled.section `
         }
 
        #forgot-email {
-        margin-left: 38%;
-        margin-top: -5%;
+        margin-left: 42%;
+        position: absolute;
+        top: 150px;
         color: #C7C7C7;
         font-size: 0.7em;
         font-family: 'Poppins-Regular';
@@ -211,8 +212,9 @@ const FormComponent = styled.section `
     }
 
     #forgot-email:active {
-        margin-left: 38%;
-        margin-top: -5%;
+        margin-left: 42%;
+        position: absolute;
+        top: 150px;
         font-size: 0.7em;
         color: #F47216;
         font-family: 'Poppins-Regular';
@@ -234,7 +236,8 @@ const FormComponent = styled.section `
     }
 
     #forgot-password {
-        margin-left: 38%;
+        margin-left: 42.5%;
+        position: absolute;
         margin-top: -5%;
         font-size: 0.7em;
         font-family: 'Poppins-Regular';
@@ -243,12 +246,13 @@ const FormComponent = styled.section `
     }
 
     #forgot-password:active {
-        margin-left: 38%;
+        margin-left: 42.5%;
+        position: absolute;
         margin-top: -5%;
         font-size: 0.7em;
         font-family: 'Poppins-Regular';
         color: #F47216;
-        width: 130px;
+        width: 120px;
     }
 
     p {
@@ -362,25 +366,31 @@ const FormComponent = styled.section `
         }
 
         #forgot-email {
+            position: absolute;
             font-size: 0.8em;
-            margin-left: 43.8%;
+            margin-left: 48.5%;
             font-family: 'Poppins-Regular';
-            width: 160px;
+            width: 135px;
+            color: #C7C7C7;
         }
 
         #forgot-email:hover {
-            font-size: 0.8em;
-            margin-left: 43.8%;
+            position: absolute;
+            font-size: 0.9em;
+            margin-left: 47.5%;
             font-family: 'Poppins-Regular';
             color: #dbd7d7;
-            width: 160px;
+            width: 150px;
+            margin-top: -5.8%;
         }
 
         #forgot-email:active {
-            font-size: 0.8em;
-            margin-left: 43.8%;
+            position: absolute;
+            font-size: 0.9em;
+            margin-left: 47.5%;
             color: #F47216;
-            width: 160px;
+            width: 150px;
+            margin-top: -5.8%;
         }
 
        .senha {
@@ -397,30 +407,35 @@ const FormComponent = styled.section `
        }
 
        #forgot-password {
+            position: absolute;
             font-size: 0.8em;
-            margin-left: 43.8%;
+            margin-left: 49.5%;
             font-family: 'Poppins-Regular';
-            width: 160px;
+            width: 115px;
+            color: #C7C7C7;
         }
 
         #forgot-password:hover {
-            font-size: 0.8em;
-            margin-left: 43.8%;
+            position: absolute;
+            font-size: 1em;
+            margin-left: 49.5%;
             font-family: 'Poppins-Regular';
             color: #dbd7d7;
-            width: 180px;
+            width: 130px;
         }
 
         #forgot-password:active {
-            font-size: 0.8em;
-            margin-left: 43.8%;
+            position: absolute;
+            font-size: 1em;
+            margin-left: 49.5%;
             color: #F47216;
-            width: 180px;
+            width: 130px;
         }
 
         p {
             font-size: 1em;
             margin-top: 3%;
+            margin-left: 48%;
         }
 
         .google-enter {
@@ -530,25 +545,25 @@ const FormComponent = styled.section `
 
         #forgot-email {
             font-size: 0.9em;
-            margin-left: 44%;
-            margin-top: -6%;
+            margin-left: 50.5%;
+            margin-top: -4.5%;
             width: 160px;
         }
 
         #forgot-email:hover {
             font-size: 1em;
-            margin-left: 43%;
-            margin-top: -6.3%;
+            margin-left: 49.5%;
+            margin-top: -5%;
             color: #dbd7d7;
-            width: 170px;
+            width: 185px;
         }
 
         #forgot-email:active {
             font-size: 1em;
-            margin-left: 43%;
-            margin-top: -6.3%;
+            margin-left: 49.5%;
+            margin-top: -5%;
             color: #F47216;
-            width: 170px;
+            width: 185px;
         }
 
         .senha {
@@ -566,28 +581,35 @@ const FormComponent = styled.section `
         }
 
         #forgot-password {
+            position: absolute;
+            top: 53.5%;
             font-size: 1.2em;
-            margin-left: 44%;
+            margin-left: 50%;
             width: 170px;
         }
 
         #forgot-password:hover {
+            position: absolute;
+            top: 53.5%;
             font-size: 1.3em;
-            margin-left: 43%;
+            margin-left: 49%;
             color: #dbd7d7;
-            width: 180px;
+            width: 195px;
         }
 
         #forgot-password:active {
+            position: absolute;
+            top: 53.5%;
             font-size: 1.3em;
-            margin-left: 43%;
+            margin-left: 49%;
             color: #F47216;
-            width: 180px;
+            width: 195px;
         }
 
         p {
             font-size: 1.1em;
             margin-left: 47.5%;
+            margin-top: 0%;
         }
 
         .btn-google {
@@ -712,7 +734,7 @@ const FormComponent = styled.section `
 
         .email {
             margin-left: -18%;
-            margin-top: 8.5%;
+            margin-top: 11%;
         }
 
         #email {
@@ -720,30 +742,31 @@ const FormComponent = styled.section `
         }
 
         #forgot-email{
-            margin-left: 48%;
-            margin-top: -8%;
+            margin-left: 55.5%;
+            margin-top: 2%;
             font-size: 1em;
             width: 150px;
         }
 
         #forgot-email:hover{
-            margin-left: 47.5%;
-            margin-top: -8%;
+            margin-left: 54.5%;
+            margin-top: 2%;
             font-size: 1.1em;
+            width: 165px;
             color: #dbd7d7;
-            width: 180px;
         }
 
         #forgot-email:active{
-            margin-left: 47.5%;
-            margin-top: -8%;
+            margin-left: 54.5%;
+            margin-top: 2%;
             font-size: 1.1em;
+            width: 165px;
             color: #F47216;
-            width: 180px;
         }
 
         .senha {
             margin-left: -18%;
+            margin-top: -7.5%;
         }
 
         #password {
@@ -751,31 +774,32 @@ const FormComponent = styled.section `
         }
 
         #forgot-password{
-            margin-left: 47.5%;
-            margin-top: -8%;
+            margin-left: 56%;
+            margin-top: -5.5%;
             font-size: 1.3em;
             width: 195px;
         }
 
         #forgot-password:hover{
-            margin-left: 46.8%;
-            margin-top: -8.3%;
+            margin-left: 55%;
+            margin-top: -5.5%;
             font-size: 1.4em;
+            width: 210px;
             color: #dbd7d7;
-            width: 205px;
         }
 
         #forgot-password:active{
-            margin-left: 46.8%;
-            margin-top: -8.3%;
+            margin-left: 55%;
+            margin-top: -5.5%;
             font-size: 1.4em;
+            width: 210px;
             color: #F47216;
-            width: 205px;
         }
 
         p {
             margin-left: 48%;
             font-size: 1.2em;
+            margin-top: -5%;
         }
 
         .btn-google {
@@ -830,7 +854,7 @@ const FormComponent = styled.section `
             width: 160px;
             height: 50px;
             font-size: 1.7em;
-            margin-top: 3.5%;
+            margin-top: 4.5%;
         }
 
         .logar:hover {
@@ -838,7 +862,7 @@ const FormComponent = styled.section `
             width: 160px;
             height: 50px;
             font-size: 1.7em;
-            margin-top: 3.5%;
+            margin-top: 4.5%;
         }
 
         .logar:active {
@@ -846,7 +870,7 @@ const FormComponent = styled.section `
             width: 160px;
             height: 50px;
             font-size: 1.7em;
-            margin-top: 3.5%;
+            margin-top: 4.5%;
         }
 
         .fox {
@@ -904,15 +928,20 @@ const Form = function() {
                     <h1>Login</h1>
                     <div className='email'>
                         <Input type="email" name="email" id="email" placeholder='E-mail'/>
-                        <Link href={'/RecoveryYourEmailPage'}>
-                                <h4 id='forgot-email'>Esqueci o E-mail</h4>
-                        </Link>
+                        <h4>
+                            <Link href={'/RecoveryYourEmailPage'} id='forgot-email'>
+                                Esqueci o E-mail
+                            </Link>
+                        </h4>
                     </div>
                     <div className='senha'>
                         <Input type="password" name="password" id="password" placeholder='Senha'/>
-                        <Link href={'/RecoveryYourPasswordPage'}>
-                            <h4 id='forgot-password'>Esqueci a Senha</h4>
-                        </Link>
+                        <h4>
+                            <Link href={'/RecoveryYourPasswordPage'} id='forgot-password'>
+                                Esqueci a Senha
+                            </Link>
+                        </h4>
+                        
                     </div>
                     <p>OU</p>
                     <div className='google-enter'>

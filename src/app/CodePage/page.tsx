@@ -1,9 +1,9 @@
-import RecoveryCode from "@/components/Recovery-Code";
+import Code from "@/components/Code";
 
 export default function page2() {
     return (
       <main>
-        <RecoveryCode/>
+        <Code/>
       </main>
       )
   }
