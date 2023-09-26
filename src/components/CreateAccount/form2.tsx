@@ -989,21 +989,21 @@ const FormComponent2 = styled.section `
 
         .criar:hover {
             position: absolute;
-            top: 120px;
-            left: 140px;
+            top: 95px;
+            left: 175px;
             background-color: #9fc214;
-            width: 250px;
-            height: 80px;
+            width: 200px;
+            height: 60px;
             font-size: 2.7em;
         }
 
         .criar:active {
             position: absolute;
-            top: 120px;
-            left: 140px;
+            top: 95px;
+            left: 175px;
             background-color: #86a40f;
-            width: 250px;
-            height: 80px;
+            width: 200px;
+            height: 60px;
             font-size: 2.7em;
         }
 
@@ -1257,26 +1257,33 @@ const Form2 = function() {
                          {/* Create User form content */}
                         <h1>Criar Conta</h1>
                         <div className='name'>
-                            <Input type="string" name="name" id="name" placeholder='Nome Completo'/><span className='span1'>*</span>
+                            <Input type="string" name="name" id="name" placeholder='Nome Completo '/>
+                            {/* <span className='span1'>*</span> */}
                         </div>
                         <div className='date'>
                             <Input type='date' name='birthday' id='birthday' placeholder='Data de nascimento'/>
-                            <Small>Digite a Data de Nascimento<span className='span2'>*</span></Small>
+                            <Small>Digite a Data de Nascimento</Small>
+                            {/* <span className='span2'>*</span> */}
                         </div>
                         <div className='email'>
-                            <Input type="email" name="email" id="email" placeholder='E-mail'/><span className='span3'>*</span>
+                            <Input type="email" name="email" id="email" placeholder='E-mail'/>
+                            {/* <span className='span3'>*</span> */}
                         </div>
                         <div className='phone'>
-                            <Input type="phone" name="phone" id="phone" placeholder='Celular'/><span className='span4'>*</span>
+                            <Input type="phone" name="phone" id="phone" placeholder='Celular'/>
+                            {/* <span className='span4'>*</span> */}
                         </div>
                         <div className='cpf'>
-                            <Input type="number" name="cpf" id="cpf" placeholder='CPF'/><span className='span5'>*</span>
+                            <Input type="number" name="cpf" id="cpf" placeholder='CPF'/>
+                            {/* <span className='span5'>*</span> */}
                         </div>
                         <div className='password'>
-                            <Input type="password" name="password" id="password" placeholder='Senha'/><span className='span6'>*</span>
+                            <Input type="password" name="password" id="password" placeholder='Senha'/>
+                            {/* <span className='span6'>*</span> */}
                         </div>
                         <div className='confirm-password'>
-                            <Input type="password" name="confirm-password" id="confirm-password" placeholder='Confirme sua Senha'/><span className='span7'>*</span>
+                            <Input type="password" name="confirm-password" id="confirm-password" placeholder='Confirme sua Senha'/>
+                            {/* <span className='span7'>*</span> */}
                         </div>
                         {/* <label>
                         <div className='adm'>
@@ -1301,9 +1308,9 @@ const Form2 = function() {
                             </Link>
                             </div>
                             <div className='button-create'>
-                                <button className='criar' type='button'>
-                                    Criar
-                                </button>
+                            <button className='criar' type='button'>
+                                <Link href={"/ProfilePage"}>Criar</Link>
+                            </button>
                             </div>
                     </form>
             </nav>
@@ -1313,26 +1320,33 @@ const Form2 = function() {
                     {/* Create User form content */}
                     <h1>Criar Conta</h1>
                     <div className='name'>
-                        <Input type="string" name="name" id="name" placeholder='Nome Completo'/><span className='span1'>*</span>
+                        <Input type="string" name="name" id="name" placeholder='Nome Completo'/>
+                        {/* <span className='span1'>*</span> */}
                     </div>
                     <div className='date'>
                             <Input type='date' name='birthday' id='birthday' placeholder='Data de nascimento'/>
-                            <Small>Digite a Data de Nascimento</Small><span className='span2'>*</span>
+                            <Small>Digite a Data de Nascimento</Small> 
+                            {/* <span className='span2'>*</span> */}
                         </div>
                     <div className='email'>
-                        <Input type="email" name="email" id="email" placeholder='E-mail'/><span className='span3'>*</span>
+                        <Input type="email" name="email" id="email" placeholder='E-mail'/>
+                        {/* <span className='span3'>*</span> */}
                     </div>
                     <div className='phone'>
-                            <Input type="phone" name="phone" id="phone" placeholder='Celular'/><span className='span4'>*</span>
+                            <Input type="phone" name="phone" id="phone" placeholder='Celular'/>
+                            {/* <span className='span4'>*</span> */}
                         </div>
                         <div className='cpf'>
-                            <Input type="number" name="cpf" id="cpf" placeholder='CPF'/><span className='span5'>*</span>
+                            <Input type="number" name="cpf" id="cpf" placeholder='CPF'/>
+                            {/* <span className='span5'>*</span> */}
                         </div>
                         <div className='password'>
-                            <Input type="password" name="password" id="password" placeholder='Senha'/><span className='span6'>*</span>
+                            <Input type="password" name="password" id="password" placeholder='Senha'/>
+                            {/* <span className='span6'>*</span> */}
                         </div>
                         <div className='confirm-password'>
-                            <Input type="password" name="confirm-password" id="confirm-password" placeholder='Confirme sua Senha'/><span className='span7'>*</span>
+                            <Input type="password" name="confirm-password" id="confirm-password" placeholder='Confirme sua Senha'/>
+                            {/* <span className='span7'>*</span> */}
                         </div>
                         {/* <label>
                         <div className='adm'>
@@ -1358,7 +1372,7 @@ const Form2 = function() {
                         </div>
                          <div className='button-create'>
                              <button className='criar' type='button'>
-                                Criar
+                                <Link href={"/ProfilePage"}>Criar</Link>
                             </button>
                         </div>
                 </form>
