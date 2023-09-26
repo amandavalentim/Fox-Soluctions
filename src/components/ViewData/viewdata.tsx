@@ -2,6 +2,7 @@
 
 'use client';
 import styled from'@emotion/styled'
+import { AiOutlineEye } from "react-icons/ai";
 import Input from '../Login/Input/Input';
 
 
@@ -48,20 +49,40 @@ const Viewdatacomponent = styled.section`
         }
         
     }
-    .documents-mobile{
-        table{
-            border-radius: 19px;
-            background: linear-gradient(180deg, #07B3FD 0%, #0A53B5 100%);
-            margin: 0 auto;
-            width: 80%;
-            tr{
-            }
-            tr:nth-child(even) {
-                background: #07AFFA;
-            }
+
+    .documents{
+        margin: 0 auto;
+        width: 70%;
+        border-radius: 19px;
+        background: linear-gradient(180deg, #07B3FD 0%, #0A53B5 100%);
+        h3{
+            text-align: center;
+            padding: 20px;
+            color: #FFF;
         }
-        
+        .container-blue{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            background: #07AFFA;
+            height: 50px;
+        }
+        p{
+            color: #FFF;
+            margin: 15px;
+        }
+        .view-icon{
+            margin: 15px;
+            color: #FFF;
+        }
+        .container{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            height: 50px;
+        }
     }
+    
     .form-desktop{
         display: none;
     }
@@ -165,37 +186,16 @@ const viewdata = function (){
                 </form>
             </div>
 
-        <div className="documents-mobile">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Documentos Enviados</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Wesley</td>
-                            <td>26</td>
-                            <td>26</td>
-                        </tr>
-                        <tr>
-                            <td>João</td>
-                            <td>80</td>
-                        </tr>
-                        <tr>
-                            <td>Maria</td>
-                            <td>52</td>
-                        </tr>
-                        <tr>
-                            <td>Tereza</td>
-                            <td>36</td>
-                        </tr>
-                        <tr>
-                            <td>Carlos</td>
-                            <td>29</td>
-                        </tr>
-                    </tbody>
-                </table>
+            <div className="documents">
+                <h3>Documentos Enviados</h3>
+                <div className='container-blue'>
+                    <p className='document-type'>CPF</p>
+                    <AiOutlineEye className='view-icon'/>
+                </div>
+                <div className='container'>
+                    <p className='document-type'>CPF</p>
+                    <AiOutlineEye className='view-icon'/>
+                </div>
             </div>
 
         </Viewdatacomponent>
