@@ -3,7 +3,7 @@
 'use client';
 import styled from'@emotion/styled'
 import { FaMagnifyingGlass } from "react-icons/fa6";
-import {FaAngleRight} from "react-icons/fa";
+import {FaAngleRight } from "react-icons/fa";
 
 const ListComponent = styled.section`
     background: #0C65C2;
@@ -235,8 +235,7 @@ const List = function (){
                         </tr>
                     </thead>
                     <tbody id="table-users">
-
-
+                        
                     </tbody>
               </table>
             </div>
