@@ -100,8 +100,8 @@ const Formcomponent4 = styled.section `
         }
 
         .desktop3 {
-                display: none;
-            }
+            display: none;
+        }
 
         background-image: url("/images/tablet-recuperar-senha.svg");
         background-repeat: no-repeat;

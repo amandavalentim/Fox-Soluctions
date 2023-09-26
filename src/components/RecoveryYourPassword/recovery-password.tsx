@@ -450,7 +450,7 @@ const ForgotPassword = function() {
                 <img src="/images/raposa-recuperar-senha.png" alt="fox" className='fox'/>
                 {/* Mobile page content */}
                 <h1>Recupere a sua senha:</h1>
-                <Input type="string" name="email" id="op" placeholder='Digite o seu email ou telefone'/>
+                <Input type="string" name="email" id="op" placeholder='Digite o seu e-mail ou telefone'/>
                     <Link href={'/NewPasswordPage'}>
                         <button className='enviar' type='button'>
                             Enviar
@@ -462,7 +462,7 @@ const ForgotPassword = function() {
                 <form>
                     {/* Recovery Password Form Content */}
                     <h1>Recupere a sua senha:</h1>
-                    <Input type="string" name="email" id="op" placeholder='Digite o seu email ou telefone'/>
+                    <Input type="string" name="email" id="op" placeholder='Digite o seu e-mail ou telefone'/>
                     <Link href={'/NewPasswordPage'}>
                         <button className='enviar' type='button'>
                             Enviar
@@ -476,7 +476,7 @@ const ForgotPassword = function() {
                 <form>
                     {/* Recovery Password Form Content */}
                     <h1>Recupere a sua senha:</h1>
-                    <Input type="string" name="email" id="op" placeholder='Digite o seu email ou telefone'/>
+                    <Input type="string" name="email" id="op" placeholder='Digite o seu e-mail ou telefone'/>
                     <Link href={'/NewPasswordPage'}>
                         <button className='enviar' type='button'>
                             Enviar
@@ -490,7 +490,7 @@ const ForgotPassword = function() {
                 <form>
                     {/* Recovery Password Form Content */}
                     <h1>Recupere a sua senha:</h1>
-                    <Input type="string" name="email" id="op" placeholder='Digite o seu email ou telefone'/>
+                    <Input type="string" name="email" id="op" placeholder='Digite o seu e-mail ou telefone'/>
                     <Link href={'/NewPasswordPage'}>
                         <button className='enviar' type='button'>
                             Enviar
@@ -504,7 +504,7 @@ const ForgotPassword = function() {
                 <form>
                     {/* Recovery Password Form Content */}
                     <h1>Recupere a sua senha:</h1>
-                        <Input type="string" name="email" id="op" placeholder='Digite o seu email ou telefone'/>
+                        <Input type="string" name="email" id="op" placeholder='Digite o seu e-mail ou telefone'/>
                         <Link href={'/NewPasswordPage'}>
                             <button className='enviar' type='button'>
                                 Enviar

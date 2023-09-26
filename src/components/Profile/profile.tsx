@@ -1,4 +1,4 @@
-// Developed code by Amanda and Gabriel
+// Developed code by Amanda
 
 'use client'
 import styled from '@emotion/styled';

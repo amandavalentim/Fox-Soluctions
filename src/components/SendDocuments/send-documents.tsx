@@ -720,7 +720,7 @@ const SendDocumentsComponent = styled.section `
     .next:active {
         border: none;
         background-color: #86a40f;
-        margin-left: 5%;
+        margin-left: 10%;
         margin-top: 10%;
         border-radius: 10px;
         width: 40px;
@@ -894,6 +894,10 @@ const SendDocumentsComponent = styled.section `
             height: 105px;
             margin-top: 10%;
             font-size: 1.4em;
+        }
+
+        .rg-txt {
+            font-size: 5em;
         }
 
         #rg-txt {

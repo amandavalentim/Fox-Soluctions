@@ -1889,7 +1889,7 @@ const CreateUserPg = function() {
                         <Input type="number" name="cpf" id="cpf" placeholder='CPF'/><span className='span4'>*</span>
                     </div>
                     <div className='email'>
-                        <Input type="email" name="email" id="email" placeholder='Email'/><span className='span5'>*</span>
+                        <Input type="email" name="email" id="email" placeholder='E-mail'/><span className='span5'>*</span>
                     </div>
                     <div className='country'>
                         <Input type="string" name="country" id="country" placeholder='País'/><span className='span6'>*</span>
@@ -1990,7 +1990,7 @@ const CreateUserPg = function() {
                         <Input type="number" name="cpf" id="cpf" placeholder='CPF'/><span className='span4'>*</span>
                     </div>
                     <div className='email'>
-                        <Input type="email" name="email" id="email" placeholder='Email'/><span className='span5'>*</span>
+                        <Input type="email" name="email" id="email" placeholder='E-mail'/><span className='span5'>*</span>
                     </div>
                     <div className='country'>
                         <Input type="string" name="country" id="country" placeholder='País'/><span className='span6'>*</span>
