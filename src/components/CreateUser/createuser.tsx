@@ -1,88 +1,76 @@
-// Developed code by Gabriel
+// Developed code by Gabriel and Amanda 
 
 'use client'
 import styled from '@emotion/styled';
 import Input from '../Login/Input/Input';
-import Image from 'next/image';
 import Link from 'next/link';
+import { FaMagnifyingGlass, FaPlus } from 'react-icons/fa6';
 
 const CreateUserComponent = styled.section `
 
     // Mobile
-    
-    .mobile {
-        display: block;
-        justify-content: space-between;
+    .dashboard-mobile{
+        background-color: #3A9EB6;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        .icon-profile{
+            display: flex; 
+            justify-content: space-between;
+            .search{
+                display: flex;
+                align-items: center;
+                color: #FFFFFF;
+                
+            }
+            .user-profile-mobile {
+                min-width: 20px;
+                min-height: 20px;
+            }
+            
+        }
+        .box-mobile{
+            display: flex; 
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+            .documents{
+                background-color: #07B3FD;
+                margin: 3px;
+                padding: 6px;
+                border-radius: 3px;
+                width: 120px;
+            }
+            .number{
+                text-align: center;
+                color: #FFFFFF;
+            }
+            p{
+                text-align: center;
+                font-family: 'Poppins-Semibold';
+                color: #FFFFFF;
+            }
+            .users{
+                background-color: #F47216;
+                margin: 3px;
+                padding: 6px;
+                border-radius: 3px;
+                width: 120px;
+            }
+        }
+        
     }
 
     .tablet-desktops {
         display: none;
     }
-
-    header {
-            background-color: #2F99BF;
-            height: 195px;
-    }
-
-    .search {
-        width: 35px;
-        height: 35px;
-        margin-top: 4%;
-        margin-left: 2%;
-    }
-
-    .box-1 {
-        margin-top: 9%;
-            margin-left: 15%;
-            text-align: center;
-            background-color: #07B3FD;
-            width: 100px;
-            height: 85px;
-            border-radius: 4px;
-        }
-
-        .amount-documents {
-            font-size: 2.7em;
-        }
-
-        .documents {
-            margin-top: -11.5%;
-            font-size: 0.2em;
-        }
-
-        .box-2 {
-            margin-top: -26.5%;
-            margin-left: 53.7%;
-            text-align: center;
-            background-color: #F47216;
-            width: 100px;
-            height: 85px;
-            border-radius: 4px;
-        }
-
-        .amount-users {
-            font-size: 2.7em;
-        }
-
-        .users {
-            margin-top: -11.5%;
-            font-size: 0.2em;
-        }
-
-    .profile-photo {
-        width: 60px;
-        height: 60px;
-        position: absolute;
-        top: 180px;
-        margin-left: 78%;
-    }
-
+        
     * {
         color: white;
         font-family: 'Poppins-Medium';
     }
 
-    height: 225vh;
+    height: 215vh;
 
     background: linear-gradient(180deg, #0A53B5 0%, #0081E8 100%);
 
@@ -198,9 +186,25 @@ const CreateUserComponent = styled.section `
         margin-left: 7%;
     }
 
+    .date {
+        margin-top: 7%;
+    }
+
+    #birthday::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        font-size: 1.1em;
+    }
+
+    small {
+        position: absolute;
+        top: 905px;
+        margin-left: -77%;
+    }
+
     .span3 {
+        position: absolute;
         color: #F47216;
-        margin-left: 3%;
+        margin-left: -10%;
+        top: 900px;
     }
 
     #cpf::-webkit-input-placeholder {
@@ -295,80 +299,79 @@ const CreateUserComponent = styled.section `
         }
 
         .tablet-desktops {
-            display: block;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .dashboard-desktop {
+            background-color: #3A9EB6;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            height: 23vh;
+        }
+
+        .search{
+            display: flex;
+            align-items: center;
+            color: #FFFFFF;
+            margin-top: 1%;
+        }
+
+        .box-desktop {
+            display: flex; 
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+        }
+
+        .documents{
+            background-color: #07B3FD;
+            margin: 3px;
+            padding: 6px;
+            border-radius: 3px;
+            width: 120px;
+            margin-left: 1%;
+        }
+
+        .number {
+            text-align: center;
+            color: #FFFFFF;
+        }
+            
+        p {
+            text-align: center;
+            font-family: 'Poppins-Semibold';
+            color: #FFFFFF;
+        }
+
+        .users {
+            background-color: #F47216;
+            margin: 3px;
+            padding: 6px;
+            border-radius: 3px;
+            width: 120px;
+        }
+
+        .user-profile-desktop {
+            min-width: 20px;
+            min-height: 20px;
+            margin-left: 93%;
+            margin-top: -15%;
+        }
+
+        .icon-profile{
+            display: flex; 
             justify-content: space-between;
         }
 
         background: linear-gradient(180deg, #0A53B5 0%, #0A53B5 100%);
 
-        header {
-            background-color: #2F99BF;
-            height: 165px;
-        }
-
-        .search {
-            width: 50px;
-            height: 50px;
-            margin-top: 6.5%;
-            margin-left: 7%;
-        }
-
-        .box-1 {
-            margin-top: -11%;
-            margin-left: 26%;
-            text-align: center;
-            background-color: #07B3FD;
-            width: 140px;
-            height: 120px;
-            border-radius: 4px;
-        }
-
-        .amount-documents {
-            font-size: 3.5em;
-        }
-
-        .documents {
-            margin-top: -10%;
-            font-size: 0.9em;
-        }
-
-        .box-2 {
-            margin-top: -15.5%;
-            margin-left: 52%;
-            text-align: center;
-            background-color: #F47216;
-            width: 140px;
-            height: 120px;
-            border-radius: 4px;
-        }
-
-        .amount-users {
-            font-size: 3.5em;
-        }
-
-        .users {
-            margin-top: -10%;
-            font-size: 0.9em;
-        }
-
-        .profile-photo {
-            position: absolute;
-            top: 185px;
-            margin-left: 80%;
-            width: 100px;
-            height: 100px;
-        }
-
-        #your-name {
-            margin-left: 80%;
-            margin-top: -3%;
-        }
-
         form {
             border-radius: 19px;
             background: linear-gradient(180deg, #07B3FD 0%, #0b58bc 100%);
             width: 630px;
-            height: 790px;
+            height: 875px;
         }
     
         h1 {
@@ -399,7 +402,7 @@ const CreateUserComponent = styled.section `
         .gender-txt {
             font-size: 1.3em;
             margin-top: 1%;
-            margin-left: 10%;
+            margin-left: -62%;
             font-family: 'Poppins-Medium';
         }
 
@@ -410,7 +413,7 @@ const CreateUserComponent = styled.section `
 
         .man {
             width: 30px;
-            margin-left: 10%;
+            margin-left: 11%;
             margin-top: -3%;
         }
 
@@ -425,8 +428,8 @@ const CreateUserComponent = styled.section `
 
         .woman {
             width: 30px;
-            margin-left: 29%;
-            margin-top: -7%;
+            margin-left: 32%;
+            margin-top: -6.9%;
         }
 
         #woman {
@@ -440,8 +443,8 @@ const CreateUserComponent = styled.section `
 
         .transvestite {
             width: 30px;
-            margin-left: 47%;
-            margin-top: -7%;
+            margin-left: 51.5%;
+            margin-top: -6.8%;
         }
 
         #transvestite {
@@ -455,8 +458,8 @@ const CreateUserComponent = styled.section `
 
         .no-binary {
             width: 30px;
-            margin-left: 10%;
-            margin-top: -3%;
+            margin-left: 11%;
+            margin-top: -1%;
         }
 
         #no-binary {
@@ -466,13 +469,13 @@ const CreateUserComponent = styled.section `
         .nb-op {
             margin-left: 355%;
             margin-top: -166.5%;
-            width: 105px;
+            width: 108px;
         }
 
         .trans {
             width: 30px;
-            margin-left: 29%;
-            margin-top: -7%;
+            margin-left: 32%;
+            margin-top: -6.9%;
         }
 
         #trans {
@@ -486,8 +489,8 @@ const CreateUserComponent = styled.section `
 
         .another {
             width: 30px;
-            margin-left: 47%;
-            margin-top: -7%;
+            margin-left: 51.5%;
+            margin-top: -6.8%;
         }
 
         #another {
@@ -501,8 +504,8 @@ const CreateUserComponent = styled.section `
 
         .none {
             width: 30px;
-            margin-left: 10%;
-            margin-top: -3%;
+            margin-left: 11%;
+            margin-top: -1%;
         }
 
         #none {
@@ -529,7 +532,7 @@ const CreateUserComponent = styled.section `
         }
 
         .date {
-            margin-top: -5%;
+            margin-top: 2%;
             margin-left: -3%;
         }
 
@@ -545,18 +548,18 @@ const CreateUserComponent = styled.section `
             color: #F47216;
             margin-left: 39%;
             position: absolute;
-            top: 821px;
+            top: 800px;
             font-size: 1.3em;
         }
 
         .small {
             margin-left: 11%;
             position: absolute;
-            top: 830px;
+            top: 810px;
         }
 
         .cpf {
-            margin-top: -2%;
+            margin-top: -1.8%;
             margin-left: -3%;
         }
 
@@ -577,7 +580,7 @@ const CreateUserComponent = styled.section `
         }
 
         .email {
-            margin-top: -4.5%;
+            margin-top: -1.8%;
             margin-left: -3%;
         }
 
@@ -598,7 +601,7 @@ const CreateUserComponent = styled.section `
         }
 
         .country {
-            margin-top: -4.5%;
+            margin-top: -1.8%;
             margin-left: -3%;
         }
 
@@ -620,14 +623,14 @@ const CreateUserComponent = styled.section `
 
         .profile-photo2 {
             margin-top: -2%;
-            margin-left: 10.5%;
+            margin-left: -60.5%;
         }
 
         .choose-a-image {
             background-color: #F47216;
             width: 130px;
             height: 40px;
-            margin-left: 10%;
+            margin-left: 10.4%;
             margin-top: 0%;
         }
 
@@ -635,15 +638,19 @@ const CreateUserComponent = styled.section `
             background-color: #d66515;
             width: 130px;
             height: 40px;
-            margin-left: 10%;
+            margin-left: 10.4%;
             margin-top: 0%;
         }
 
         label {
          position: absolute;
          margin-left: 1.7%;
-         margin-top: 0.5%;
+         margin-top: 0.6%;
          color: white;
+        }
+
+        .plus {
+            padding-top: 3.5%;
         }
 
         .save {
@@ -670,58 +677,93 @@ const CreateUserComponent = styled.section `
     // Small Screens
     @media(min-width: 992px) {
 
-        height: 221vh;
+        height: 198vh;
 
         .mobile {
             display: none;
         }
 
         .tablet-desktops {
-            display: block;
+            display: flex;
+            flex-direction: column;
+            .dashboard-desktop{
+            background-color: #3A9EB6;
+            display: flex;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
             justify-content: space-between;
+            .search{
+                margin: 20px;
+                color: #FFFFFF;
+                cursor: pointer;
+            }
+            .search:hover, .search:focus{
+                transform: translateX(1px) scale(1.1);
+                    
+            }
+            .box-desktop{
+                display: flex;
+                text-align: center;
+                flex-direction: row;
+                .documents{
+                    background-color: #07B3FD;
+                    margin: 10px;
+                    padding: 20px;
+                    border-radius: 3px;
+                    width: 150px;
+                    height: 110px;
+                }
+                .documents:hover, .documents:focus{
+                    transform: translateX(1px) scale(1.1);
+                    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+                }
+                h2{
+                    color: #FFFFFF;
+                }
+                p{
+                    color: #FFFFFF;
+                    font-family: 'Poppins-Semibold';
+                    margin: 8px;
+                }
+                .users{
+                    background-color: #F47216;
+                    margin: 10px;
+                    padding: 20px;
+                    border-radius: 3px;
+                    width:  150px;
+                    height: 110px;
+                    
+                }
+                .users:hover, .users:focus{
+                    transform: translateX(1px) scale(1.1);
+                    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+                    
+                }
+            }
+            .user-profile-desktop{
+                margin: 20px;
+                cursor: pointer;
+            }
+            .user-profile-desktop:hover, .user-profile-desktop:focus{
+                transform: translateX(1px) scale(1.1);
+            }
         }
-
-        .search {
-            width: 40px;
-            height: 40px;
-            margin-top: 6%;
-            margin-left: 8%;
         }
-
-        .box-1 {
-            margin-left: 32%;
-            margin-top: -8.5%;
-        }
-
-        .box-2 {
-            margin-left: 52%;
-            margin-top: -11.6%;
-        }
-
-        .profile-photo {
-            width: 110px;
-            height: 110px;
-            margin-top: 0%;
-            margin-left: 81%;
-        }
-
-        #your-name {
-            font-size: 1.2em;
-            margin-left: 80.5%;
-            margin-top: -1.5%;
-        }
-
+        
         form {
             border-radius: 19px;
             background: linear-gradient(180deg, #07B3FD 0%, #0b58bc 100%);
             width: 800px;
             height: 1040px;
             margin-left: 10.6%;
+            margin-top: 5%;
         }
 
         h1 {
-            font-size: 2.2em;
-            margin-left: 34.5%;
+            font-size: 2.1em;
+            margin-left: 35%;
         }
 
         .name {
@@ -741,15 +783,15 @@ const CreateUserComponent = styled.section `
 
         .span1 {
             color: #F47216;
-            margin-left: -38%;
+            margin-left: -38.5%;
             position: absolute;
             font-size: 1.4em;
             margin-top: 2.1%;
         }
 
         .gender-txt {
-            font-size: 1.4em;
-            margin-left: 14.2%;
+            font-size: 1.3em;
+            margin-left: -60%;
             margin-top: -1%;
         }
 
@@ -774,14 +816,14 @@ const CreateUserComponent = styled.section `
 
         .man-op {
             margin-left: 425%;
-            margin-top: -183%;
-            font-size: 1.3em;
+            margin-top: -167%;
+            font-size: 1em;
         }
 
         .woman {
             width: 30px;
-            margin-left: 33.5%;
-            margin-top: -5.7%;
+            margin-left: 32.6%;
+            margin-top: -5.4%;
         }
 
         #woman {
@@ -791,14 +833,14 @@ const CreateUserComponent = styled.section `
 
         .woman-op {
             margin-left: 425%;
-            margin-top: -183%;
-            font-size: 1.3em;
+            margin-top: -166%;
+            font-size: 1em;
         }
 
         .transvestite {
             width: 30px;
-            margin-left: 51.5%;
-            margin-top: -5.9%;
+            margin-left: 50.8%;
+            margin-top: -5.4%;
         }
 
         #transvestite {
@@ -808,14 +850,14 @@ const CreateUserComponent = styled.section `
 
         .t1-op {
             margin-left: 425%;
-            margin-top: -183%;
-            font-size: 1.3em;
+            margin-top: -166%;
+            font-size: 1em;
         }
 
         .no-binary {
             width: 30px;
             margin-left: 14.3%;
-            margin-top: -1.5%;
+            margin-top: -0.5%;
         }
 
         #no-binary {
@@ -825,15 +867,15 @@ const CreateUserComponent = styled.section `
 
         .nb-op {
             margin-left: 425%;
-            margin-top: -183%;
-            font-size: 1.3em;
-            width: 145px;
+            margin-top: -166%;
+            font-size: 1em;
+            width: 109px;
         }
 
         .trans {
             width: 30px;
-            margin-left: 33.5%;
-            margin-top: -5.7%;
+            margin-left: 32.6%;
+            margin-top: -5.4%;
         }
 
         #trans {
@@ -843,14 +885,14 @@ const CreateUserComponent = styled.section `
 
         .t2-op {
             margin-left: 425%;
-            margin-top: -183%;
-            font-size: 1.3em;
+            margin-top: -166%;
+            font-size: 1em;
         }
 
         .another {
             width: 30px;
-            margin-left: 51.5%;
-            margin-top: -5.9%;
+            margin-left: 50.8%;
+            margin-top: -5.4%;
         }
 
         #another {
@@ -860,14 +902,14 @@ const CreateUserComponent = styled.section `
 
         .a-op {
             margin-left: 425%;
-            margin-top: -183%;
-            font-size: 1.3em;
+            margin-top: -166%;
+            font-size: 1em;
         }
 
         .none {
             width: 30px;
             margin-left: 14.3%;
-            margin-top: -1.5%;
+            margin-top: -0.5%;
         }
 
         #none {
@@ -876,9 +918,9 @@ const CreateUserComponent = styled.section `
         }
 
         .n-op {
-            margin-left: 425%;
-            margin-top: -183%;
-            font-size: 1.3em;
+            margin-left: 360%;
+            margin-top: -166%;
+            font-size: 1em;
             width: 190px;
         }
 
@@ -898,7 +940,7 @@ const CreateUserComponent = styled.section `
         }
 
         .date {
-            margin-top: -3%;
+            margin-top: 1%;
             margin-left: 2.2%;
             font-size: 1.4em;
         }
@@ -917,17 +959,17 @@ const CreateUserComponent = styled.section `
             margin-left: 34%;
             position: absolute;
             font-size: 1em;
-            margin-top: 16%;
+            margin-top: 11%;
         }
 
         .small {
             font-size: 0.7em;
             margin-left: 9.5%;
-            margin-top: 16%;
+            margin-top: 11%;
         }
 
         .cpf {
-            margin-top: 0%;
+            margin-top: -2.2%;
             margin-left: 2.2%;
             font-size: 1.4em;
         }
@@ -950,7 +992,7 @@ const CreateUserComponent = styled.section `
         }
 
         .email {
-            margin-top: -3%;
+            margin-top: -2.5%;
             margin-left: 2.2%;
             font-size: 1.4em;
         }
@@ -973,7 +1015,7 @@ const CreateUserComponent = styled.section `
         }
 
         .country {
-            margin-top: -3%;
+            margin-top: -2.5%;
             margin-left: 2.2%;
             font-size: 1.4em;
         }
@@ -996,13 +1038,13 @@ const CreateUserComponent = styled.section `
         }
 
         .profile-photo2 {
-            font-size: 1.4em;
-            margin-left: 8.5%;
-            margin-top: 0%;
+            font-size: 1.2em;
+            margin-left: -53.8%;
+            margin-top: -2%;
         }
 
         .choose-a-image {
-            margin-left: 8.5%;
+            margin-left: 14%;
             width: 150px;
             height: 45px;
             font-size: 1.2em;
@@ -1010,7 +1052,7 @@ const CreateUserComponent = styled.section `
         }
 
         .choose-a-image:hover {
-            margin-left: 8.5%;
+            margin-left: 14%;
             width: 150px;
             height: 45px;
             font-size: 1.2em;
@@ -1019,7 +1061,7 @@ const CreateUserComponent = styled.section `
         }
 
         .choose-a-image:active {
-            margin-left: 8.5%;
+            margin-left: 14%;
             width: 150px;
             height: 45px;
             font-size: 1.2em;
@@ -1063,7 +1105,7 @@ const CreateUserComponent = styled.section `
     // Medium Screens
     @media(min-width: 1200px) {
 
-        height: 250vh;
+        height: 235vh;
 
         .mobile {
             display: none;
@@ -1074,55 +1116,6 @@ const CreateUserComponent = styled.section `
             justify-content: space-between;
         }
 
-        header {
-            height: 230px;
-        }
-
-        .search {
-            width: 60px;
-            height: 60px;
-            margin-left: 7%;
-        }
-
-        .box-1 {
-            width: 210px;
-            height: 170px;
-            margin-top: -8.5%;
-            margin-left: 30%;
-        }
-
-        .amount-documents {
-            font-size: 5.3em;
-        }
-
-        .documents {
-            margin-top: -17%;
-            font-size: 1.5em;
-        }
-
-        .box-2 {
-            width: 210px;
-            height: 170px;
-            margin-top: -12.5%;
-            margin-left: 51.5%;
-        }
-
-        .amount-users {
-            font-size: 5.3em;
-        }
-
-        .users {
-            margin-top: -17%;
-            font-size: 1.5em;
-        }
-
-        .profile-photo {
-            width: 150px;
-            height: 150px;
-            margin-left: 81%;
-            margin-top: 0.5%;
-        }
-
         #your-name {
             font-size: 1.6em;
             margin-top: -2%;
@@ -1131,18 +1124,19 @@ const CreateUserComponent = styled.section `
 
         form {
             margin-top: 5%;
-            width: 1110px;
+            margin-left: 18.4%;
+            width: 850px;
             height: 1250px;
         }
 
         h1 {
             font-size: 2.4em;
-            margin-left: 35.5%;
+            margin-left: 33%;
         }
 
         .name {
             margin-top: 3%;
-            margin-left: 8.8%;
+            margin-left: -2.5%;
             font-size: 1.4em;
         }
 
@@ -1159,18 +1153,24 @@ const CreateUserComponent = styled.section `
             color: #F47216;
             margin-left: -33%;
             position: absolute;
-            font-size: 1.3em;
-            margin-top: 1%;
+            font-size: 1.5em;
+            margin-top: 1.3%;
         }
 
         .gender-txt {
-            font-size: 1.5em;
-            margin-left: 20%;
+            font-size: 1.3em;
+            margin-left: -65%;
+            margin-top: -2%;
+        }
+
+        .span2 {
+            font-size: 1.4em;
+            margin-left: 0.5%;
         }
 
         .man {
             width: 30px;
-            margin-left: 20.2%;
+            margin-left: 10.3%;
             margin-top: -0.5%;
         }
 
@@ -1181,14 +1181,14 @@ const CreateUserComponent = styled.section `
 
         .man-op {
             margin-left: 555%;
-            margin-top: -254%;
+            margin-top: -237%;
             font-size: 1.1em;
         }
 
         .woman {
             width: 30px;
-            margin-left: 35.2%;
-            margin-top: -4.1%;
+            margin-left: 30.5%;
+            margin-top: -5.1%;
         }
 
         #woman {
@@ -1198,14 +1198,14 @@ const CreateUserComponent = styled.section `
 
         .woman-op {
             margin-left: 555%;
-            margin-top: -240%;
+            margin-top: -237%;
             font-size: 1.1em;
         }
 
         .transvestite {
             width: 30px;
-            margin-left: 49.2%;
-            margin-top: -4.2%;
+            margin-left: 49.1%;
+            margin-top: -5.2%;
         }
 
         #transvestite {
@@ -1215,13 +1215,13 @@ const CreateUserComponent = styled.section `
 
         .t1-op {
             margin-left: 555%;
-            margin-top: -240%;
+            margin-top: -237%;
             font-size: 1.1em;
         }
 
         .no-binary {
             width: 30px;
-            margin-left: 20.2%;
+            margin-left: 10.3%;
             margin-top: -0.5%;
         }
 
@@ -1232,14 +1232,15 @@ const CreateUserComponent = styled.section `
 
         .nb-op {
             margin-left: 555%;
-            margin-top: -245%;
+            margin-top: -237%;
             font-size: 1.1em;
+            width: 119px;
         }
 
         .trans {
             width: 30px;
-            margin-left: 35.2%;
-            margin-top: -4.1%;
+            margin-left: 30.5%;
+            margin-top: -5.1%;
         }
 
         #trans {
@@ -1249,14 +1250,14 @@ const CreateUserComponent = styled.section `
 
         .t2-op {
             margin-left: 555%;
-            margin-top: -245%;
+            margin-top: -237%;
             font-size: 1.1em;
         }
 
         .another {
             width: 30px;
-            margin-left: 49.2%;
-            margin-top: -4.2%;
+            margin-left: 49.1%;
+            margin-top: -5.2%;
         }
 
         #another {
@@ -1266,14 +1267,14 @@ const CreateUserComponent = styled.section `
 
         .a-op {
             margin-left: 555%;
-            margin-top: -245%;
+            margin-top: -237%;
             font-size: 1.1em;
         }
 
         .none {
             width: 30px;
-            margin-left: 20.2%;
-            margin-top: 0%;
+            margin-left: 10.3%;
+            margin-top: -0.5%;
         }
 
         #none {
@@ -1282,16 +1283,16 @@ const CreateUserComponent = styled.section `
         }
 
         .n-op {
-            margin-left: 555%;
-            margin-top: -245%;
+            margin-left: 525%;
+            margin-top: -237%;
             font-size: 1.1em;
-            width: 234px;
+            width: 180px;
         }
 
         .social-name {
-            margin-top: -0.5%;
-            margin-left: 8.8%;
-            font-size: 1.6em;
+            margin-top: 3%;
+            margin-left: -2.5%;
+            font-size: 1.4em;
         }
 
         #social-name {
@@ -1304,9 +1305,9 @@ const CreateUserComponent = styled.section `
         }
 
         .date {
-            margin-top: -3.5%;
-            margin-left: 8.8%;
-            font-size: 1.6em;
+            margin-top: 1%;
+            margin-left: -2.5%;
+            font-size: 1.4em;
         }
 
         #birthday {
@@ -1320,21 +1321,21 @@ const CreateUserComponent = styled.section `
 
         .span3 {
             color: #F47216;
-            margin-left: 30.5%;
+            margin-left: 27.3%;
             position: absolute;
-            margin-top: 16.5%;
+            margin-top: 11.8%;
         }
 
         .small {
             position: absolute;
             margin-left: 9%;
-            top: 840px;
+            top: 820px;
         }
 
         .cpf {
-            margin-top: -1.5%;
-            margin-left: 8.8%;
-            font-size: 1.6em;
+            margin-top: -3%;
+            margin-left: -2.5%;
+            font-size: 1.4em;
         }
 
         #cpf {
@@ -1348,366 +1349,20 @@ const CreateUserComponent = styled.section `
 
         .span4 {
             color: #F47216;
-            margin-left: -43.5%;
-            position: absolute;
-            font-size: 1.4em;
-            margin-top: 0.7%;
-        }
-
-        .email {
-            margin-top: -2.5%;
-            margin-left: 8.8%;
-            font-size: 1.6em;
-        }
-
-        #email {
-            width: 650px;
-            height: 45px;
-        }
-
-        #email::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-            font-size: 1.5em;
-        }
-
-        .span5 {
-            color: #F47216;
-            margin-left: -41.5%;
-            position: absolute;
-            font-size: 1.2em;
-            margin-top: 0.9%;
-        }
-
-        .country {
-            margin-top: -2.5%;
-            margin-left: 8.8%;
-            font-size: 1.6em;
-        }
-
-        #country {
-            width: 650px;
-            height: 45px;
-        }
-
-        #country::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-            font-size: 1.5em;
-        }
-
-        .span6 {
-            color: #F47216;
-            margin-left: -43.5%;
-            position: absolute;
-            font-size: 1.4em;
-            margin-top: 0.7%;
-        }
-
-        .profile-photo2 {
-            font-size: 2em;
-            margin-left: 20%;
-            font-size: 1.5em;
-        }
-
-        .choose-a-image {
-            width: 200px;
-            height: 60px;
-            margin-left: 20%;
-            background-color: #F47216;
-            font-size: 1em;
-            cursor: pointer;
-        }
-
-        .choose-a-image:hover {
-            width: 200px;
-            height: 60px;
-            margin-left: 20%;
-            background-color: #ff7818;
-            font-size: 1em;
-            cursor: pointer;
-        }
-
-        .choose-a-image:active {
-            width: 200px;
-            height: 60px;
-            margin-left: 20%;
-            background-color: #d66515;
-            font-size: 1em;
-            cursor: pointer;
-        }
-
-        label {
-            position: absolute;
-            margin-left: 1.7%;
-            top: 1423px;
-            font-size: 1.5em;
-            cursor: pointer;
-        }
-
-        .save {
-            margin-top: 6%;
-            width: 220px;
-            height: 70px;
-            font-size: 2.5em;
-            background-color: #93B413;
-            margin-left: 41%;
-            cursor: pointer;
-        }
-
-        .save:hover {
-            margin-top: 6%;
-            width: 220px;
-            height: 70px;
-            font-size: 2.5em;
-            background-color: #9fc214;
-            margin-left: 41%;
-            cursor: pointer;
-        }
-
-        .save:active {
-            margin-top: 6%;
-            width: 220px;
-            height: 70px;
-            font-size: 2.5em;
-            background-color: #86a40f;
-            margin-left: 41%;
-            cursor: pointer;
-        }
-    }
-
-    @media(min-width: 1400px) {
-        height: 220vh;
-
-        form {
-            height: 1180px;
-            width: 735px;
-            margin-left: 24%;
-        }
-
-        h1 {
-            font-size: 2.4em;
-            margin-left: 32.5%;
-        }
-
-        .name {
-            margin-top: 3%;
-            margin-left: -3.8%;
-            font-size: 1.4em;
-        }
-
-        #name {
-            width: 550px;
-            height: 45px;
-        }
-
-        #name::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-            font-size: 1.5em;
-        }
-
-        .span1 {
-            color: #F47216;
-            margin-left: -25%;
+            margin-left: -44%;
             position: absolute;
             font-size: 1.3em;
-            margin-top: 1%;
-        }
-
-        .gender-txt {
-            font-size: 1.5em;
-            margin-left: 13.5%;
-            margin-top: -5%;
-        }
-
-        .man {
-            width: 30px;
-            margin-left: 9.5%;
-            margin-top: -0.5%;
-        }
-
-        #man {
-            width: 30px;
-            cursor: pointer;
-        }
-
-        .man-op {
-            margin-left: 545%;
-            margin-top: -234%;
-            font-size: 1.1em;
-        }
-
-        .woman {
-            width: 30px;
-            margin-left: 30.2%;
-            margin-top: -5.7%;
-        }
-
-        #woman {
-            width: 30px;
-            cursor: pointer;
-        }
-
-        .woman-op {
-            margin-left: 545%;
-            margin-top: -234%;
-            font-size: 1.1em;
-        }
-
-        .transvestite {
-            width: 30px;
-            margin-left: 49.7%;
-            margin-top: -5.8%;
-        }
-
-        #transvestite {
-            width: 30px;
-            cursor: pointer;
-        }
-
-        .t1-op {
-            margin-left: 545%;
-            margin-top: -234%;
-            font-size: 1.1em;
-        }
-
-        .no-binary {
-            width: 30px;
-            margin-left: 9.5%;
-            margin-top: -0.5%;
-        }
-
-        #no-binary {
-            width: 30px;
-            cursor: pointer;
-        }
-
-        .nb-op {
-            margin-left: 545%;
-            margin-top: -234%;
-            font-size: 1.1em;
-        }
-
-        .trans {
-            width: 30px;
-            margin-left: 30.2%;
-            margin-top: -5.7%;
-        }
-
-        #trans {
-            width: 30px;
-            cursor: pointer;
-        }
-
-        .t2-op {
-            margin-left: 545%;
-            margin-top: -234%;
-            font-size: 1.1em;
-        }
-
-        .another {
-            width: 30px;
-            margin-left: 49.7%;
-            margin-top: -5.8%;
-        }
-
-        #another {
-            width: 30px;
-            cursor: pointer;
-        }
-
-        .a-op {
-            margin-left: 545%;
-            margin-top: -234%;
-            font-size: 1.1em;
-        }
-
-        .none {
-            width: 30px;
-            margin-left: 9.5%;
-            margin-top: -0.5%;
-        }
-
-        #none {
-            width: 30px;
-            cursor: pointer;
-        }
-
-        .n-op {
-            margin-left: 545%;
-            margin-top: -234%;
-            font-size: 1.1em;
-        }
-
-        .social-name {
-            margin-top: -0.5%;
-            margin-left: -3.8%;
-            font-size: 1.4em;
-        }
-
-        #social-name {
-            width: 550px;
-            height: 45px;
-        }
-
-        #social-name::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-            font-size: 1.5em;
-        }
-
-        .date {
-            margin-top: -3.5%;
-            margin-left: -3.8%;
-            font-size: 1.4em;
-        }
-
-        #birthday {
-            width: 550px;
-            height: 45px;
-        }
-
-        #birthday::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-            font-size: 1.5em;
-        }
-
-        .span3 {
-            color: #F47216;
-            margin-left: 24%;
-            position: absolute;
-            margin-top: 13.8%;
-        }
-
-        .small {
-            position: absolute;
-            margin-left: 8.5%;
-            top: 800px;
-        }
-
-        .cpf {
-            margin-top: -1.5%;
-            margin-left: -3.8%;
-            font-size: 1.4em;
-        }
-
-        #cpf {
-            width: 550px;
-            height: 45px;
-        }
-
-        #cpf::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-            font-size: 1.5em;
-        }
-
-        .span4 {
-            color: #F47216;
-            margin-left: -34%;
-            position: absolute;
-            font-size: 1.4em;
-            margin-top: 1.1%;
+            margin-top: 1.3%;
         }
 
         .email {
             margin-top: -3.5%;
-            margin-left: -3.8%;
+            margin-left: -2.5%;
             font-size: 1.4em;
         }
 
         #email {
-            width: 550px;
+            width: 650px;
             height: 45px;
         }
 
@@ -1717,20 +1372,20 @@ const CreateUserComponent = styled.section `
 
         .span5 {
             color: #F47216;
-            margin-left: -32.5%;
+            margin-left: -42.5%;
             position: absolute;
             font-size: 1.2em;
-            margin-top: 1.1%;
+            margin-top: 1.4%;
         }
 
         .country {
-            margin-top: -3.5%;
-            margin-left: -3.8%;
+            margin-top: -3.4%;
+            margin-left: -2.5%;
             font-size: 1.4em;
         }
 
         #country {
-            width: 550px;
+            width: 650px;
             height: 45px;
         }
 
@@ -1740,23 +1395,23 @@ const CreateUserComponent = styled.section `
 
         .span6 {
             color: #F47216;
-            margin-left: -33.5%;
+            margin-left: -44%;
             position: absolute;
-            font-size: 1.4em;
-            margin-top: 1.1%;
+            font-size: 1.3em;
+            margin-top: 1.5%;
         }
 
         .profile-photo2 {
             font-size: 2em;
-            margin-left: 13.2%;
-            font-size: 1.5em;
-            margin-top: -3%;
+            margin-left: -56%;
+            font-size: 1.4em;
+            margin-top: -3.5%;
         }
 
         .choose-a-image {
             width: 200px;
             height: 60px;
-            margin-left: 13.2%;
+            margin-left: 12.5%;
             background-color: #F47216;
             font-size: 1em;
             cursor: pointer;
@@ -1765,7 +1420,7 @@ const CreateUserComponent = styled.section `
         .choose-a-image:hover {
             width: 200px;
             height: 60px;
-            margin-left: 13.2%;
+            margin-left: 12.5%;
             background-color: #ff7818;
             font-size: 1em;
             cursor: pointer;
@@ -1774,7 +1429,7 @@ const CreateUserComponent = styled.section `
         .choose-a-image:active {
             width: 200px;
             height: 60px;
-            margin-left: 13.2%;
+            margin-left: 12.5%;
             background-color: #d66515;
             font-size: 1em;
             cursor: pointer;
@@ -1782,46 +1437,45 @@ const CreateUserComponent = styled.section `
 
         label {
             position: absolute;
-            margin-left: 1.7%;
-            top: 1405px;
-            font-size: 1.6em;
+            margin-left: 1.5%;
+            top: 1395px;
+            font-size: 1.5em;
             cursor: pointer;
         }
 
         .save {
-            margin-top: 8%;
+            margin-top: 6%;
             width: 220px;
             height: 70px;
             font-size: 2.5em;
             background-color: #93B413;
-            margin-left: 36%;
+            margin-left: 39%;
+            margin-left: 41%;
             cursor: pointer;
         }
 
         .save:hover {
-            margin-top: 8%;
+            margin-top: 6%;
             width: 220px;
             height: 70px;
             font-size: 2.5em;
             background-color: #9fc214;
-            margin-left: 36%;
-            cursor: pointer;
+            margin-left: 39%;
         }
 
         .save:active {
-            margin-top: 8%;
+            margin-top: 6%;
             width: 220px;
             height: 70px;
             font-size: 2.5em;
             background-color: #86a40f;
-            margin-left: 36%;
-            cursor: pointer;
+            margin-left: 39%;
         }
     }
 
     @media(min-width: 1600px) {
 
-        height: 257vh;
+        height: 205vh;
 
         .mobile {
             display: none;
@@ -1832,79 +1486,55 @@ const CreateUserComponent = styled.section `
             justify-content: space-between;
         }
 
-        header {
-            height: 210px;
-        }
-
-        .search {
-            margin-top: 4.3%;
-        }
-
-        .box-1 {
-            margin-top: -7%;
-            width: 200px;
-            height: 160px;
-        }
-
-        .box-2 {
-            margin-top: -10.1%;
-            width: 200px;
-            height: 160px;
-        }
-
-        .profile-photo {
-            margin-top: 0%;
-            margin-left: 81.5%;
-        }
 
         #your-name {
             margin-top: -1.5%;
         }
 
         form {
-            width: 1190px;
-            height: 1550px;
-            margin-left: 12%;
+            width: 1000px;
+            height: 1250px;
+            margin-left: 17.8%;
         }
 
         h1 {
-            margin-left: 35.3%;
-            font-size: 2.8em;
+            margin-left: 36.5%;
+            font-size: 2.3em;
         }
 
         .name {
             margin-top: 3%;
-            margin-left: -0.4%;
-            font-size: 2.3em;
+            margin-left: -8%;
+            font-size: 1.7em;
         }
 
         #name {
-            width: 880px;
+            width: 840px;
             height: 45px;
         }
 
         #name::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-            font-size: 2.1em;
+            font-size: 1.6em;
         }
 
         .span1 {
             color: #F47216;
-            margin-left: -36.5%;
+            margin-left: -39.5%;
             position: absolute;
-            font-size: 1.4em;
-            margin-top: 1.2%;
+            font-size: 1.3em;
+            margin-top: 2%;
         }
 
         .gender-txt {
             font-size: 2.3em;
-            margin-left: 13%;
-            margin-top: -2.5%;
-            font-size: 2.1em;
+            margin-left: -72.5%;
+            margin-top: -6%;
+            font-size: 1.7em;
         }
 
         .man {
             margin-top: -2.5%;
-            margin-left: 12.4%;
+            margin-left: 5.5%;
         }
 
         #man {
@@ -1913,13 +1543,13 @@ const CreateUserComponent = styled.section `
         }
 
         .man-op {
-            margin-top: -342%;
+            margin-top: -338%;
             margin-left: 655%;
         }
 
         .woman {
-            margin-top: -5.2%;
-            margin-left: 28.2%;
+            margin-top: -6.2%;
+            margin-left: 23%;
         }
 
         #woman {
@@ -1928,13 +1558,13 @@ const CreateUserComponent = styled.section `
         }
 
         .woman-op {
-            margin-top: -342%;
+            margin-top: -338%;
             margin-left: 655%;
         }
 
         .transvestite {
-            margin-top: -5.3%;
-            margin-left: 42.5%;
+            margin-top: -6.2%;
+            margin-left: 40%;
         }
 
         #transvestite {
@@ -1943,13 +1573,13 @@ const CreateUserComponent = styled.section `
         }
 
         .t1-op {
-            margin-top: -342%;
+            margin-top: -338%;
             margin-left: 655%;
         }
 
         .no-binary {
             margin-top: -2.5%;
-            margin-left: 12.4%;
+            margin-left: 5.5%;
         }
 
         #no-binary {
@@ -1958,13 +1588,13 @@ const CreateUserComponent = styled.section `
         }
 
         .nb-op {
-            margin-top: -342%;
+            margin-top: -338%;
             margin-left: 655%;
         }
 
         .trans {
-            margin-top: -5.2%;
-            margin-left: 28.2%;
+            margin-top: -6.2%;
+            margin-left: 23%;
         }
 
         #trans {
@@ -1973,13 +1603,13 @@ const CreateUserComponent = styled.section `
         }
 
         .t2-op {
-            margin-top: -342%;
+            margin-top: -338%;
             margin-left: 655%;
         }
 
         .another {
-            margin-top: -5.3%;
-            margin-left: 42.5%;
+            margin-top: -6.2%;
+            margin-left: 40%;
         }
 
         #another {
@@ -1988,13 +1618,13 @@ const CreateUserComponent = styled.section `
         }
 
         .a-op {
-            margin-top: -342%;
+            margin-top: -338%;
             margin-left: 655%;
         }
 
         .none {
             margin-top: -2.5%;
-            margin-left: 12.4%;
+            margin-left: 5.5%;
         }
 
         #none {
@@ -2003,189 +1633,187 @@ const CreateUserComponent = styled.section `
         }
 
         .n-op {
-            margin-top: -342%;
+            margin-top: -338%;
             margin-left: 655%;
         }
 
         .social-name {
-            margin-top: 0%;
-            margin-left: -0.4%;
-            font-size: 2.3em;
+            margin-top: -2%;
+            margin-left: -8%;
+            font-size: 1.7em;
         }
 
         #social-name {
-            width: 880px;
+            width: 840px;
             height: 45px;
         }
 
         #social-name::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-        font-size: 2.1em;
+        font-size: 1.6em;
         }
 
         .date {
-            margin-top: -6%;
-            margin-left: -0.4%;
+            margin-top: -2.5%;
+            margin-left: -8%;
             font-size: 2.3em;
         }
 
         #birthday {
-            width: 880px;
+            width: 840px;
             height: 45px;
         }
 
         #birthday::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-            font-size: 2.1em;
+            font-size: 1.6em;
         }
 
         .small {
             position: absolute;
-            top: 895px;
-            font-size: 0.6em;
+            top: 820px;
+            font-size: 0.5em;
             margin-left: 10%;
         }
 
         .span3 {
             color: #F47216;
-            margin-left: 32.5%;
+            margin-left: 28.5%;
             position: absolute;
             font-size: 0.8em;
-            margin-top: 19.5%;
+            margin-top: 11.6%;
         }
 
         .cpf {
-            margin-top: -2%;
-            margin-left: -0.4%;
+            margin-top: -7%;
+            margin-left: -8%;
             font-size: 2.3em;
         }
 
         #cpf {
-            width: 880px;
+            width: 840px;
             height: 45px;
         }
 
         #cpf::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-            font-size: 2.1em;
+            font-size: 1.6em;
         }
 
         .span4 {
             color: #F47216;
-            margin-left: -50.5%;
+            margin-left: -49.5%;
             position: absolute;
-            font-size: 1.2em;
-            margin-top: 1.5%;
+            font-size: 0.8em;
+            margin-top: 2.5%;
         }
 
         .email {
-            margin-top: -3.5%;
-            margin-left: -0.4%;
+            margin-top: -7%;
+            margin-left: -8%;
             font-size: 2.3em;
         }
 
         #email {
-            width: 880px;
+            width: 840px;
             height: 45px;
         }
 
         #email::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-            font-size: 2.1em;
+            font-size: 1.6em;
         }
 
         .span5 {
             color: #F47216;
             margin-left: -48.3%;
             position: absolute;
-            font-size: 1.2em;
-            margin-top: 1.3%;
+            font-size: 0.8em;
+            margin-top: 2.3%;
         }
 
         .country {
-            margin-top: -3.5%;
-            margin-left: -0.4%;
+            margin-top: -7%;
+            margin-left: -8%;
             font-size: 2.3em;
         }
 
         #country {
-            width: 880px;
+            width: 840px;
             height: 45px;
         }
 
         #country::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-            font-size: 2.1em;
+            font-size: 1.6em;
         }
 
         .span6 {
             color: #F47216;
-            margin-left: -50.3%;
+            margin-left: -49.3%;
             position: absolute;
-            font-size: 1.2em;
-            margin-top: 1.3%;
+            font-size: 0.8em;
+            margin-top: 2.3%;
         }
 
         .profile-photo2 {
-            margin-top: -3%;
-            margin-left: 13%;
-            font-size: 2em;
+            margin-top: -4.5%;
+            margin-left: -65.3%;
+            font-size: 1.6em;
         }
 
         .choose-a-image {
-            margin-left: 12.9%;
+            margin-left: 7.9%;
             background-color: #F47216;
-            width: 260px;
-            height: 70px;
+            width: 220px;
+            height: 60px;
             cursor: pointer;
         }
 
         .choose-a-image:hover {
-            margin-left: 12.9%;
+            margin-left: 7.9%;
             background-color: #ff7818;
-            width: 260px;
-            height: 70px;
+            width: 220px;
+            height: 60px;
             cursor: pointer;
         }
 
         .choose-a-image:active {
-            margin-left: 12.9%;
+            margin-left: 7.9%;
             background-color: #d66515;
-            width: 260px;
-            height: 70px;
+            width: 220px;
+            height: 60px;
             cursor: pointer;
         }
 
         label {
             position: absolute;
-            top: 1650px;
+            top: 1475px;
             margin-left: 1.4%;
             cursor: pointer;
-            font-size: 2em;
-            cursor: pointer;
+            font-size: 1.6em;
         }
 
         .save {
-            width: 280px;
-            height: 80px;
-            font-size: 3em;
+            width: 200px;
+            height: 65px;
+            font-size: 2.3em;
             background-color: #93B413;
             margin-left: 41%;
-            cursor: pointer;
             cursor: pointer;
         }
 
         .save:hover {
-            width: 280px;
-            height: 80px;
-            font-size: 3em;
+            width: 200px;
+            height: 65px;
+            font-size: 2.3em;
             background-color: #9fc214;
             margin-left: 41%;
-            cursor: pointer;
+            margin-top: 3%;
         }
 
         .save:active {
-            width: 280px;
-            height: 80px;
-            font-size: 3em;
+            width: 200px;
+            height: 65px;
+            font-size: 2.3em;
             background-color: #86a40f;
             margin-left: 41%;
-            cursor: pointer;
+            margin-top: 3%;
         }
     }
 `;
@@ -2194,8 +1822,28 @@ const CreateUserPg = function() {
     return (
         <CreateUserComponent>
             <nav className='mobile'>
-            <header>
-                 <Image className='search' src="/images/search.png" width={100} height={104}  alt="search"/>
+                <div className='dashboard-mobile'>
+                    <div className='icon-profile'>
+                        <div className='search'>
+                            <FaMagnifyingGlass/>
+                        </div>
+                        <div className='user-profile-mobile'>
+                            <img src="/images/fox-mobile.png" alt="" width='40px' height='30px'/>
+                        </div>
+                    </div>
+                    <div className='box-mobile'>
+                        <div className='documents'>
+                            <h2 className='number'>10</h2>
+                            <p>Documentos</p>
+                        </div>
+                        <div className='users'>
+                            <h2 className='number'>10</h2>
+                            <p>Usuários</p>
+                        </div>
+                    </div>
+                </div>
+            {/* <header>
+                <Image className='search' src="/images/search.png" width={100} height={104}  alt="search"/>
                     <div className='box-1'>
                         <p className='amount-documents'>0</p>
                         <p className='documents'>documentos</p>
@@ -2204,8 +1852,8 @@ const CreateUserPg = function() {
                         <p className='amount-users'>0</p>
                         <p className='users'>usuários</p>
                     </div>
-                    <Image className='profile-photo' src="/images/profile-photo2.png" width={100} height={104}  alt="profile-photo"/>
-                </header>
+                <Image className='profile-photo' src="/images/profile-photo2.png" width={100} height={104}  alt="profile-photo"/>
+                </header> */}
                 <h1>Criar Usuário</h1>
                 <form>
                     <div className='name'>
@@ -2253,7 +1901,7 @@ const CreateUserPg = function() {
                         <Input type="number" name="cpf" id="cpf" placeholder='CPF'/><span className='span4'>*</span>
                     </div>
                     <div className='email'>
-                        <Input type="email" name="email" id="email" placeholder='Email'/><span className='span5'>*</span>
+                        <Input type="email" name="email" id="email" placeholder='E-mail'/><span className='span5'>*</span>
                     </div>
                     <div className='country'>
                         <Input type="string" name="country" id="country" placeholder='País'/><span className='span6'>*</span>
@@ -2261,7 +1909,7 @@ const CreateUserPg = function() {
                     <p className='profile-photo2'>Foto de Perfil</p>
                     <div className='choose-a-image'>
                         <label>
-                            Adicionar +
+                            Adicionar <FaPlus className='plus'/>
                                 <span className='photo'>
                                     <input type="file" id='photo-input'/>
                                 </span>
@@ -2276,7 +1924,25 @@ const CreateUserPg = function() {
             </nav>
 
             <nav className='tablet-desktops'>
-                <header>
+                <div className='dashboard-desktop'>
+                    <div className='search'>
+                        <FaMagnifyingGlass/>
+                    </div>
+                    <div className='box-desktop'>
+                        <div className='documents'>
+                            <h2 className='number'>10</h2>
+                            <p>Documentos</p>
+                        </div>
+                        <div className='users'>
+                            <h2 className='number'>10</h2>
+                            <p>Usuários</p>
+                        </div>
+                    </div>
+                    <div className='user-profile-desktop'>
+                        <img src="/images/fox-mobile.png" alt="" width='50px' height='50px'/>
+                    </div>
+                </div>
+                    {/* <header>
                  <Image className='search' src="/images/search.png" width={100} height={104}  alt="search"/>
                     <div className='box-1'>
                         <p className='amount-documents'>0</p>
@@ -2288,7 +1954,7 @@ const CreateUserPg = function() {
                     </div>
                     <Image className='profile-photo' src="/images/profile-photo2.png" width={100} height={104}  alt="profile-photo"/>
                     <p id='your-name'>Seu Nome</p>
-                </header>
+                </header> */}
                 <form>
                     <h1>Criar Usuário</h1>
                     <div className='name'>
@@ -2336,19 +2002,19 @@ const CreateUserPg = function() {
                         <Input type="number" name="cpf" id="cpf" placeholder='CPF'/><span className='span4'>*</span>
                     </div>
                     <div className='email'>
-                        <Input type="email" name="email" id="email" placeholder='Email'/><span className='span5'>*</span>
+                        <Input type="email" name="email" id="email" placeholder='E-mail'/><span className='span5'>*</span>
                     </div>
                     <div className='country'>
                         <Input type="string" name="country" id="country" placeholder='País'/><span className='span6'>*</span>
                     </div>
                     <p className='profile-photo2'>Foto de Perfil</p>
                     <div className='choose-a-image'>
-                    <label>
-                        Adicionar +
-                            <span className='photo'>
-                                <input type="file" id='photo-input'/>
-                            </span>
-                    </label>
+                        <label>
+                            Adicionar <FaPlus className='plus'/>
+                                <span className='photo'>
+                                    <input type="file" id='photo-input'/>
+                                </span>
+                        </label>
                     </div>
                     <Link href={"/SendDocumentsPage"}>
                         <button type='button' className='save'>

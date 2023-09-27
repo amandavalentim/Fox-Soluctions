@@ -1,4 +1,4 @@
-// Código desenvolvido por Gabriel
+// Developed by Gabriel Marques
 'use client'
 import styled from '@emotion/styled';
 import Link from 'next/link';
@@ -10,7 +10,7 @@ const HomeComponent = styled.div `
 background: #0A53B5;
 background-repeat: no-repeat;
 background-size: 100vw;
-height: 100vh;
+height: 100.5vh;
 
     .mobile{
         display: flex;
@@ -28,7 +28,7 @@ height: 100vh;
     h1 {
         text-align: center;
         position: absolute;
-        left: 60px;
+        left: 50px;
         top: 200px;
         color: white;
         margin: 10px;
@@ -41,7 +41,7 @@ height: 100vh;
     p {
         text-align: center;
         position: absolute;
-        left: 40px;
+        left: 25px;
         top: 300px;
         font-size: 1.1em;
         color: white;
@@ -71,8 +71,8 @@ height: 100vh;
 
     .start:active {
         position: absolute;
-        width: 100px;
-        height: 80px;
+        width:120px;
+        height: 100px;
         border-top-right-radius: 50%;
         border-top-left-radius: 50%;
         border-bottom-left-radius: 50%;
@@ -123,17 +123,10 @@ height: 100vh;
             height: 90px;
         }
 
-        .start:hover {
-            left: 280px;
-            height: 90px;
-            margin-top: -5%;
-            background-color: #9fc214;
-        }
-
         .start:active {
             left: 280px;
-            height: 90px;
             margin-top: -5%;
+            height: 90px;
             background-color: #86a40f;
         }
 
@@ -360,7 +353,7 @@ const PgInitial = function() {
 
             <nav className='mobile'>
                 {/* Content */}
-                    <h1>Bem-Vinde a<br/> <span id='FX'>Fox Soluctions</span>!</h1>
+                    <h1>Bem-Vinde a<br/> <span id='FX'>Fox Solutions</span>!</h1>
                     <p>
                         Aqui nós buscamos sempre<br/> dar a melhor<br/> experiência possível para<br/> quem utiliza nossa<br/> plataforma, onde você pode<br/> realizar o upload e visualizar<br/> seus documentos!
                     </p>
@@ -374,7 +367,7 @@ const PgInitial = function() {
 
             <nav className='tablet-desktops'>
                 {/* Content */}
-                <h1>Bem-Vinde a<br/> <span id='FX'>Fox Soluctions</span>!</h1>
+                <h1>Bem-Vinde a<br/> <span id='FX'>Fox Solutions</span>!</h1>
                 <p>
                      Aqui nós buscamos sempre dar a melhor<br/> experiência possível para quem utiliza nossa<br/> plataforma, onde você pode realizar o upload<br/> e visualizar seus documentos!
                 </p>

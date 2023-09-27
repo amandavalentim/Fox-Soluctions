@@ -374,7 +374,7 @@ const Head = function() {
                             <Link href={'/HomePage'}>
                             <Image className='logo-Fox' src="/images/logo-fox1.svg" width={100} height={104} alt="logo" />
                             </Link>
-                      <div className='nameLogo'>Fox Soluctions</div>
+                      <div className='nameLogo'>Fox Solutions</div>
                   </nav> 
   
                   <nav className='show-on-mobile'>
@@ -387,19 +387,19 @@ const Head = function() {
                                     <Ul>
                                         <li>
                                             <div className='conteudo'>
-                                            <button className='button-close'>
-                                                <FaTimes onClick={Close} className='close'/>
-                                            </button>
-                                            <li>
-                                                <Link href={'/HomePage'} onClick={Close} className='home-button'>
-                                                Home
-                                            </Link>
-                                            </li>
-                                            <li>
-                                                <Link href={'/AboutUsPage'} className='sobre-nos-button' onClick={Close}>
-                                                    Sobre Nós
-                                                </Link>
-                                            </li>
+                                                <button className='button-close'>
+                                                    <FaTimes onClick={Close} className='close'/>
+                                                </button>
+                                                <li>
+                                                    <Link href={'/HomePage'} onClick={Close} className='home-button'>
+                                                        Home
+                                                    </Link>
+                                                </li>
+                                                <li>
+                                                    <Link href={'/AboutUsPage'} className='sobre-nos-button' onClick={Close}>
+                                                        Sobre Nós
+                                                    </Link>
+                                                </li>
                                             </div>
                                         </li>
                                     </Ul>

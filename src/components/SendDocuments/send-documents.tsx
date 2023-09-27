@@ -5,6 +5,7 @@ import styled from '@emotion/styled';
 import Image from 'next/image';
 import {FaAngleLeft, FaAngleRight, FaImages, FaTimes} from "react-icons/fa";
 import Link from 'next/link';
+import { FaMagnifyingGlass } from 'react-icons/fa6';
 
 const SendDocumentsComponent = styled.section `
 
@@ -19,7 +20,59 @@ const SendDocumentsComponent = styled.section `
         display: none;
     }
 
-    height: 155vh;
+    .dashboard-mobile{
+        background-color: #3A9EB6;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        .icon-profile{
+            display: flex; 
+            justify-content: space-between;
+            .search{
+                display: flex;
+                align-items: center;
+                color: #FFFFFF;
+                
+            }
+            .user-profile-mobile {
+                min-width: 20px;
+                min-height: 20px;
+            }
+            
+        }
+        .box-mobile{
+            display: flex; 
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+            .documents{
+                background-color: #07B3FD;
+                margin: 3px;
+                padding: 6px;
+                border-radius: 3px;
+                width: 120px;
+            }
+            .number{
+                text-align: center;
+                color: #FFFFFF;
+            }
+            p{
+                text-align: center;
+                font-family: 'Poppins-Semibold';
+                color: #FFFFFF;
+            }
+            .users{
+                background-color: #F47216;
+                margin: 3px;
+                padding: 6px;
+                border-radius: 3px;
+                width: 120px;
+            }
+        }
+        
+    }
+
+    height: 145vh;
 
     background: linear-gradient(180deg, #0A53B5 0%, #0081E8 100%);
 
@@ -28,7 +81,7 @@ const SendDocumentsComponent = styled.section `
         font-family: 'Poppins-Medium';
     }
 
-    header {
+    /* header {
             background-color: #2F99BF;
             height: 195px;
     }
@@ -85,7 +138,7 @@ const SendDocumentsComponent = styled.section `
         position: absolute;
         top: 180px;
         margin-left: 78%;
-    }
+    } */
 
     form {
         border-radius: 19px;
@@ -120,7 +173,7 @@ const SendDocumentsComponent = styled.section `
         background: none;
         border: none;
         position: absolute;
-        top: 516px;
+        top: 465px;
         margin-left: 63%;
         font-size: 20px;
     }
@@ -144,7 +197,7 @@ const SendDocumentsComponent = styled.section `
         background: none;
         border: none;
         position: absolute;
-        top: 605.4px;
+        top: 550.5px;
         margin-left: 65%;
         font-size: 20px;
     }
@@ -175,7 +228,7 @@ const SendDocumentsComponent = styled.section `
         background: none;
         border: none;
         position: absolute;
-        top: 687px;
+        top: 635px;
         margin-left: 65%;
         font-size: 20px;
     }
@@ -199,7 +252,7 @@ const SendDocumentsComponent = styled.section `
         background: none;
         border: none;
         position: absolute;
-        top: 790px;
+        top: 735px;
         margin-left: 65%;
         font-size: 20px;
     }
@@ -230,7 +283,7 @@ const SendDocumentsComponent = styled.section `
         background: none;
         border: none;
         position: absolute;
-        top: 880px;
+        top: 830px;
         margin-left: 65%;
         font-size: 20px;
     }
@@ -655,7 +708,7 @@ const SendDocumentsComponent = styled.section `
     .next {
         border: none;
         background-color: #93B413;
-        margin-left: 5%;
+        margin-left: 10%;
         margin-top: 10%;
         border-radius: 10px;
         width: 40px;
@@ -667,7 +720,7 @@ const SendDocumentsComponent = styled.section `
     .next:active {
         border: none;
         background-color: #86a40f;
-        margin-left: 5%;
+        margin-left: 10%;
         margin-top: 10%;
         border-radius: 10px;
         width: 40px;
@@ -684,7 +737,7 @@ const SendDocumentsComponent = styled.section `
     // Tablet
     @media(min-width: 768px) {
 
-        height: 190vh;
+        height: 155vh;
 
         .mobile {
             display: none;
@@ -697,7 +750,69 @@ const SendDocumentsComponent = styled.section `
 
         background: linear-gradient(180deg, #0A53B5 0%, #0A53B5 100%);
 
-        header {
+        .dashboard-desktop {
+            background-color: #3A9EB6;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            height: 23vh;
+        }
+
+        .search{
+            display: flex;
+            align-items: center;
+            color: #FFFFFF;
+            margin-top: 1%;
+        }
+
+        .box-desktop {
+            display: flex; 
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+        }
+
+        .documents{
+            background-color: #07B3FD;
+            margin: 3px;
+            padding: 6px;
+            border-radius: 3px;
+            width: 120px;
+            margin-left: 1%;
+        }
+
+        .number {
+            text-align: center;
+            color: #FFFFFF;
+        }
+            
+        p {
+            text-align: center;
+            font-family: 'Poppins-Semibold';
+            color: #FFFFFF;
+        }
+
+        .users {
+            background-color: #F47216;
+            margin: 3px;
+            padding: 6px;
+            border-radius: 3px;
+            width: 120px;
+        }
+
+        .user-profile-desktop {
+            min-width: 20px;
+            min-height: 20px;
+            margin-left: 93%;
+            margin-top: -15%;
+        }
+
+        .icon-profile{
+            display: flex; 
+            justify-content: space-between;
+        }
+
+        /* header {
             background-color: #2F99BF;
             height: 165px;
         }
@@ -758,27 +873,32 @@ const SendDocumentsComponent = styled.section `
         #your-name {
             margin-left: 80%;
             margin-top: -3%;
-        }
+        } */
 
         form {
-            margin-left: 12%;
-            width: 580px;
-            height: 680px;
+            margin-left: 17%;
+            margin-top: 7%;
+            width: 500px;
+            height: 600px;
             border-radius: 19px;
             background: linear-gradient(180deg, #07B3FD 0%, #0A53B5 100%);
         }
 
         h1 {
-            font-size: 1.8em;
-            margin-left: 28.8%;
+            font-size: 1.4em;
+            margin-left: 32.5%;
         }
 
         .rg {
             border-radius: 8px;
             background: #07AFFA;
-            height: 105px;
-            margin-top: 10%;
-            font-size: 1.4em;
+            height: 95px;
+            margin-top: 5%;
+            font-size: 1em;
+        }
+
+        .rg-txt {
+            font-size: 5em;
         }
 
         #rg-txt {
@@ -791,8 +911,8 @@ const SendDocumentsComponent = styled.section `
             background: none;
             border: none;
             position: absolute;
-            top: 612px;
-            margin-left: 64.5%;
+            top: 500px;
+            margin-left: 25%;
             font-size: 1.2em;
         }
 
@@ -806,15 +926,15 @@ const SendDocumentsComponent = styled.section `
 
         .cpf {
             margin-top: -5%;
-            font-size: 1.4em;
+            font-size: 1em;
         }
 
         .button2 {
             background: none;
             border: none;
             position: absolute;
-            top: 720px;
-            margin-left: 64.5%;
+            top: 597px;
+            margin-left: 25.1%;
             font-size: 1.2em;
         }
 
@@ -829,9 +949,9 @@ const SendDocumentsComponent = styled.section `
         .date {
             border-radius: 8px;
             background: #07AFFA;
-            height: 105px;
+            height: 95px;
             margin-top: 5%;
-            font-size: 1.4em;
+            font-size: 1em;
         }
 
         #date-txt {
@@ -844,8 +964,8 @@ const SendDocumentsComponent = styled.section `
             background: none;
             border: none;
             position: absolute;
-            top: 827px;
-            margin-left: 64.7%;
+            top: 682px;
+            margin-left: 25.2%;
             font-size: 1.2em;
         }
 
@@ -859,15 +979,15 @@ const SendDocumentsComponent = styled.section `
 
         .cnh {
             margin-top: -5%;
-            font-size: 1.4em;
+            font-size: 1em;
         }
 
         .button4 {
             background: none;
             border: none;
             position: absolute;
-            top: 935px;
-            margin-left: 65%;
+            top: 780px;
+            margin-left: 25.3%;
             font-size: 1.2em;
         }
 
@@ -882,9 +1002,9 @@ const SendDocumentsComponent = styled.section `
         .ct {
             border-radius: 8px;
             background: #07AFFA;
-            height: 105px;
+            height: 95px;
             margin-top: 5%;
-            font-size: 1.4em;
+            font-size: 1em;
         }
 
         #ct-txt {
@@ -897,8 +1017,8 @@ const SendDocumentsComponent = styled.section `
             background: none;
             border: none;
             position: absolute;
-            top: 1037px;
-            margin-left: 65.2%;
+            top: 862px;
+            margin-left: 25.4%;
             font-size: 1.2em;
         }
 
@@ -1193,73 +1313,73 @@ const SendDocumentsComponent = styled.section `
 
         .previous {
             margin-left: 5%;
-            margin-top: 8%;
+            margin-top: 2%;
         }
 
         .previous:active {
             margin-left: 5%;
-            margin-top: 8%;
+            margin-top: 2%;
         }
 
         #previous {
             margin-top: -3%;
             padding-top: 1%;
-            font-size: 1.6em;
+            font-size: 1.3em;
         }
 
         .previous-button {
             border: none;
             background-color: #93B413;
             border-radius: 10px;
-            width: 150px;
-            height: 50px;
+            width: 120px;
+            height: 40px;
         }
 
         .previous-button:active {
             border: none;
             background-color: #86a40f;
             border-radius: 10px;
-            width: 150px;
-            height: 50px;
+            width: 120px;
+            height: 40px;
         }
 
         .next {
-            margin-left: 75.5%;
+            margin-left: 80%;
             margin-top: -5.1%;
         }
 
         .next:active {
-            margin-left: 75.5%;
+            margin-left: 80%;
             margin-top: -5.1%;
         }
 
         #next {
             margin-top: -3%;
             padding-top: 1%;
-            font-size: 1.6em;
+            font-size: 1.3em;
         }
 
         .next-button {
             border: none;
             background-color: #93B413;
             border-radius: 10px;
-            width: 150px;
-            height: 50px;
+            width: 120px;
+            height: 40px;
         }
 
         .next-button:active {
             border: none;
             background-color: #86a40f;
             border-radius: 10px;
-            width: 150px;
-            height: 50px;
+            width: 120px;
+            height: 40px;
         }
     }
 
     // Small Screens
     @media(min-width: 992px) {
 
-        height: 165vh;
+        height: 145vh;
 
         .mobile {
             display: none;
@@ -1270,7 +1390,7 @@ const SendDocumentsComponent = styled.section `
             justify-content: space-between;
         }
 
-        .search {
+        /* .search {
             width: 40px;
             height: 40px;
             margin-top: 6%;
@@ -1298,27 +1418,90 @@ const SendDocumentsComponent = styled.section `
             font-size: 1.2em;
             margin-left: 80.5%;
             margin-top: -1.5%;
+        } */
+
+            .dashboard-desktop{
+            background-color: #3A9EB6;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            .search{
+                margin: 20px;
+                color: #FFFFFF;
+                cursor: pointer;
+            }
+            .search:hover, .search:focus{
+                transform: translateX(1px) scale(1.1);
+                    
+            }
+            .box-desktop{
+                display: flex;
+                text-align: center;
+                flex-direction: row;
+                .documents{
+                    background-color: #07B3FD;
+                    margin: 10px;
+                    padding: 20px;
+                    border-radius: 3px;
+                    width: 150px;
+                    height: 110px;
+                }
+                .documents:hover, .documents:focus{
+                    transform: translateX(1px) scale(1.1);
+                    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+                }
+                h2{
+                    color: #FFFFFF;
+                }
+                p{
+                    color: #FFFFFF;
+                    font-family: 'Poppins-Semibold';
+                    margin: 8px;
+                }
+                .users{
+                    background-color: #F47216;
+                    margin: 10px;
+                    padding: 20px;
+                    border-radius: 3px;
+                    width:  150px;
+                    height: 110px;
+                    
+                }
+                .users:hover, .users:focus{
+                    transform: translateX(1px) scale(1.1);
+                    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+                    
+                }
+            }
+            .user-profile-desktop{
+                margin: 20px;
+                cursor: pointer;
+            }
+            .user-profile-desktop:hover, .user-profile-desktop:focus{
+                transform: translateX(1px) scale(1.1);
+            }
         }
 
         form {
-            margin-left: 15.1%;
-            width: 705px;
-            height: 680px;
+            margin-left: 20.1%;
+            width: 605px;
+            height: 580px;
             border-radius: 19px;
             background: linear-gradient(180deg, #07B3FD 0%, #0A53B5 100%);
+            margin-top: 5%;
         }
 
         h1 {
-            font-size: 1.9em;
-            margin-left: 32%;
+            font-size: 1.6em;
+            margin-left: 34.5%;
         }
 
         .rg {
             border-radius: 8px;
             background: #07AFFA;
-            height: 115px;
+            height: 100px;
             margin-top: 8%;
-            font-size: 1.3em;
+            font-size: 1.1em;
         }
 
         #rg-txt {
@@ -1331,8 +1514,8 @@ const SendDocumentsComponent = styled.section `
             background: none;
             border: none;
             position: absolute;
-            top: 657px;
-            margin-left: 60%;
+            top: 560px;
+            margin-left: 22%;
             font-size: 1.2em;
             cursor: pointer;
         }
@@ -1347,7 +1530,7 @@ const SendDocumentsComponent = styled.section `
 
         .cpf {
             margin-top: -6.5%;
-            font-size: 1.3em;
+            font-size: 1.1em;
             margin-left: 4%;
         }
 
@@ -1355,8 +1538,8 @@ const SendDocumentsComponent = styled.section `
             background: none;
             border: none;
             position: absolute;
-            top: 769px;
-            margin-left: 60%;
+            top: 659px;
+            margin-left: 22.1%;
             font-size: 1.2em;
             cursor: pointer;
         }
@@ -1372,9 +1555,9 @@ const SendDocumentsComponent = styled.section `
         .date {
             border-radius: 8px;
             background: #07AFFA;
-            height: 105px;
+            height: 100px;
             margin-top: 3.5%;
-            font-size: 1.3em;
+            font-size: 1.1em;
         }
 
         #date-txt {
@@ -1387,8 +1570,8 @@ const SendDocumentsComponent = styled.section `
             background: none;
             border: none;
             position: absolute;
-            top: 865px;
-            margin-left: 60%;
+            top: 742px;
+            margin-left: 22.2%;
             font-size: 1.2em;
             cursor: pointer;
         }
@@ -1403,7 +1586,7 @@ const SendDocumentsComponent = styled.section `
 
         .cnh {
             margin-top: -6.5%;
-            font-size: 1.3em;
+            font-size: 1.1em;
             margin-left: 4%;
         }
 
@@ -1411,8 +1594,8 @@ const SendDocumentsComponent = styled.section `
             background: none;
             border: none;
             position: absolute;
-            top: 976px;
-            margin-left: 60%;
+            top: 843px;
+            margin-left: 22.3%;
             font-size: 1.2em;
             cursor: pointer;
         }
@@ -1428,9 +1611,9 @@ const SendDocumentsComponent = styled.section `
         .ct {
             border-radius: 8px;
             background: #07AFFA;
-            height: 105px;
+            height: 100px;
             margin-top: 3.5%;
-            font-size: 1.3em;
+            font-size: 1.1em;
         }
 
         #ct-txt {
@@ -1443,8 +1626,8 @@ const SendDocumentsComponent = styled.section `
             background: none;
             border: none;
             position: absolute;
-            top: 1070px;
-            margin-left: 60%;
+            top: 925px;
+            margin-left: 22.4%;
             font-size: 1.2em;
             cursor: pointer;
         }
@@ -1672,12 +1855,12 @@ const SendDocumentsComponent = styled.section `
 
         .previous {
             margin-left: 5%;
-            margin-top: 5%;
+            margin-top: 8%;
         }
 
         .previous:active {
             margin-left: 5%;
-            margin-top: 5%;
+            margin-top: 8%;
         }
 
         #previous {
@@ -1738,7 +1921,7 @@ const SendDocumentsComponent = styled.section `
     // Medium Screens
     @media(min-width: 1200px) {
 
-        height: 186.5vh;
+        height: 158vh;
 
         .mobile {
             display: none;
@@ -1749,7 +1932,7 @@ const SendDocumentsComponent = styled.section `
             justify-content: space-between;
         }
 
-        header {
+        /* header {
             height: 230px;
         }
 
@@ -1802,29 +1985,29 @@ const SendDocumentsComponent = styled.section `
             font-size: 1.6em;
             margin-top: -2%;
             margin-left: 81.3%;
-        }
+        } */
 
         form {
-            margin-top: 7%;
-            margin-left: 17%;
-            width: 890px;
-            height: 750px;
+            margin-top: 6%;
+            margin-left: 24.5%;
+            width: 680px;
+            height: 630px;
             border-radius: 19px;
             background: linear-gradient(180deg, #07B3FD 0%, #0A53B5 100%);
         }
 
         h1 {
-            font-size: 2.1em;
+            font-size: 1.8em;
             padding-top: 7%;
-            margin-left: 33.2%;
+            margin-left: 34.5%;
         }
 
         .rg {
             border-radius: 8px;
             background: #07AFFA;
-            height: 115px;
+            height: 100px;
             margin-top: 6%;
-            font-size: 1.3em;
+            font-size: 1.2em;
         }
 
         #rg-txt {
@@ -1837,8 +2020,8 @@ const SendDocumentsComponent = styled.section `
             background: none;
             border: none;
             position: absolute;
-            top: 712px;
-            margin-left: 57.5%;
+            top: 572px;
+            margin-left: 20%;
             font-size: 1.2em;
             cursor: pointer;
         }
@@ -1853,7 +2036,7 @@ const SendDocumentsComponent = styled.section `
 
         .cpf {
             margin-top: -7%;
-            font-size: 1.3em;
+            font-size: 1.2em;
             margin-left: 4%;
         }
 
@@ -1861,8 +2044,8 @@ const SendDocumentsComponent = styled.section `
             background: none;
             border: none;
             position: absolute;
-            top: 829px;
-            margin-left: 57.5%;
+            top: 675px;
+            margin-left: 20.1%;
             font-size: 1.2em;
             cursor: pointer;
         }
@@ -1878,9 +2061,9 @@ const SendDocumentsComponent = styled.section `
         .date {
             border-radius: 8px;
             background: #07AFFA;
-            height: 115px;
+            height: 100px;
             margin-top: 4%;
-            font-size: 1.3em;
+            font-size: 1.2em;
         }
 
         #date-txt {
@@ -1893,8 +2076,8 @@ const SendDocumentsComponent = styled.section `
             background: none;
             border: none;
             position: absolute;
-            top: 941px;
-            margin-left: 57.5%;
+            top: 766px;
+            margin-left: 20.2%;
             font-size: 1.2em;
             cursor: pointer;
         }
@@ -1909,7 +2092,7 @@ const SendDocumentsComponent = styled.section `
 
         .cnh {
             margin-top: -6%;
-            font-size: 1.3em;
+            font-size: 1.2em;
             margin-left: 4%;
         }
 
@@ -1917,8 +2100,8 @@ const SendDocumentsComponent = styled.section `
             background: none;
             border: none;
             position: absolute;
-            top: 1070px;
-            margin-left: 57.5%;
+            top: 877px;
+            margin-left: 20.3%;
             font-size: 1.2em;
             cursor: pointer;
         }
@@ -1934,9 +2117,9 @@ const SendDocumentsComponent = styled.section `
         .ct {
             border-radius: 8px;
             background: #07AFFA;
-            height: 115px;
+            height: 100px;
             margin-top: 4%;
-            font-size: 1.3em;
+            font-size: 1.2em;
         }
 
         #ct-txt {
@@ -1949,8 +2132,8 @@ const SendDocumentsComponent = styled.section `
             background: none;
             border: none;
             position: absolute;
-            top: 1180px;
-            margin-left: 57.5%;
+            top: 968px;
+            margin-left: 20.4%;
             font-size: 1.2em;
             cursor: pointer;
         }
@@ -2563,7 +2746,7 @@ const SendDocumentsComponent = styled.section `
 
     @media(min-width: 1600px) {
 
-        height: 160vh;
+        height: 136vh;
 
         .mobile {
             display: none;
@@ -2574,7 +2757,7 @@ const SendDocumentsComponent = styled.section `
             justify-content: space-between;
         }
 
-        header {
+        /* header {
             height: 210px;
         }
 
@@ -2602,23 +2785,24 @@ const SendDocumentsComponent = styled.section `
         #your-name {
             margin-top: -1.5%;
             height: 700px;
-        }
+        } */
 
         form {
-            margin-left: 21.3%;
+            margin-left: 27.5%;
+            margin-top: 5%;
         }
 
         h1 {
             font-size: 2em;
-            margin-left: 35.5%;
+            margin-left: 33%;
         }
 
         .rg {
             border-radius: 8px;
             background: #07AFFA;
-            height: 130px;
+            height: 100px;
             margin-top: 6%;
-            font-size: 1.1em;
+            font-size: 1.2em;
         }
 
         #rg-txt {
@@ -2631,8 +2815,8 @@ const SendDocumentsComponent = styled.section `
             background: none;
             border: none;
             position: absolute;
-            top: 712.5px;
-            margin-left: 50%;
+            top: 612px;
+            margin-left: 17%;
             font-size: 1.2em;
             cursor: pointer;
         }
@@ -2655,8 +2839,8 @@ const SendDocumentsComponent = styled.section `
             background: none;
             border: none;
             position: absolute;
-            top: 844px;
-            margin-left: 50%;
+            top: 713px;
+            margin-left: 17.1%;
             font-size: 1.2em;
             cursor: pointer;
         }
@@ -2672,7 +2856,7 @@ const SendDocumentsComponent = styled.section `
         .date {
             border-radius: 8px;
             background: #07AFFA;
-            height: 130px;
+            height: 100px;
             margin-top: 4.5%;
             font-size: 1.1em;
         }
@@ -2687,8 +2871,8 @@ const SendDocumentsComponent = styled.section `
             background: none;
             border: none;
             position: absolute;
-            top: 968px;
-            margin-left: 50%;
+            top: 814px;
+            margin-left: 17.2%;
             font-size: 1.2em;
             cursor: pointer;
         }
@@ -2711,8 +2895,8 @@ const SendDocumentsComponent = styled.section `
             background: none;
             border: none;
             position: absolute;
-            top: 1098.5px;
-            margin-left: 50%;
+            top: 915px;
+            margin-left: 17.3%;
             font-size: 1.2em;
             cursor: pointer;
         }
@@ -2728,7 +2912,7 @@ const SendDocumentsComponent = styled.section `
         .ct {
             border-radius: 8px;
             background: #07AFFA;
-            height: 130px;
+            height: 100px;
             margin-top: 4.5%;
             font-size: 1.1em;
         }
@@ -2743,8 +2927,8 @@ const SendDocumentsComponent = styled.section `
             background: none;
             border: none;
             position: absolute;
-            top: 1220px;
-            margin-left: 50%;
+            top: 1014px;
+            margin-left: 17.2%;
             font-size: 1.2em;
             cursor: pointer;
         }
@@ -2985,92 +3169,65 @@ const Ul = styled.ul`
     }
 `;  
 
+
+// JS for make the block for send the documents be showed
 const OpenRg= ()=>{
     document.querySelector('.send-rg')?.classList.add('open');
-    
 }
-
 const OpenRg2= ()=>{
     document.querySelector('.send-rg2')?.classList.add('open');
-    
 }
-
 const OpenCpf = ()=>{
     document.querySelector('.send-cpf')?.classList.add('open');
-    
 }
-
 const OpenCpf2 = ()=>{
-    document.querySelector('.send-cpf2')?.classList.add('open');
-    
+    document.querySelector('.send-cpf2')?.classList.add('open');  
 }
-
 const OpenDate = ()=>{
-    document.querySelector('.send-date')?.classList.add('open');
-    
+    document.querySelector('.send-date')?.classList.add('open');  
 }
-
 const OpenDate2 = ()=>{
-    document.querySelector('.send-date2')?.classList.add('open');
-    
+    document.querySelector('.send-date2')?.classList.add('open');   
 }
-
 const OpenCnh = ()=>{
     document.querySelector('.send-cnh')?.classList.add('open');
-    
 }
-
 const OpenCnh2 = ()=>{
-    document.querySelector('.send-cnh2')?.classList.add('open');
-    
+    document.querySelector('.send-cnh2')?.classList.add('open')
 }
-
 const OpenCt = ()=>{
     document.querySelector('.send-ct')?.classList.add('open');
-    
 }
-
 const OpenCt2 = ()=>{
     document.querySelector('.send-ct2')?.classList.add('open');
-    
 }
-
 const CloseRg = ()=> {
     document.querySelector('.send-rg')?.classList.remove('open');
 }
-
 const CloseRg2 = ()=> {
     document.querySelector('.send-rg2')?.classList.remove('open');
 }
-
 const CloseCpf = ()=> {
     document.querySelector('.send-cpf')?.classList.remove('open');
 }
-
 const CloseCpf2 = ()=> {
     document.querySelector('.send-cpf2')?.classList.remove('open');
 }
-
 const CloseDate = ()=> {
     document.querySelector('.send-date')?.classList.remove('open');
 }
-
 const CloseDate2 = ()=> {
     document.querySelector('.send-date2')?.classList.remove('open');
 }
-
 const CloseCnh = ()=> {
     document.querySelector('.send-cnh')?.classList.remove('open');
 }
-
 const CloseCnh2 = ()=> {
     document.querySelector('.send-cnh2')?.classList.remove('open');
 }
-
 const CloseCt = ()=> {
     document.querySelector('.send-ct')?.classList.remove('open');
 }
-
 const CloseCt2 = ()=> {
     document.querySelector('.send-ct2')?.classList.remove('open');
 }
@@ -3079,7 +3236,27 @@ const SendDocumentsPg = function() {
     return (
         <SendDocumentsComponent>
             <nav className='mobile'>
-            <header>
+            <div className='dashboard-mobile'>
+                    <div className='icon-profile'>
+                        <div className='search'>
+                            <FaMagnifyingGlass/>
+                        </div>
+                        <div className='user-profile-mobile'>
+                            <img src="/images/fox-mobile.png" alt="" width='40px' height='30px'/>
+                        </div>
+                    </div>
+                    <div className='box-mobile'>
+                        <div className='documents'>
+                            <h2 className='number'>10</h2>
+                            <p>Documentos</p>
+                        </div>
+                        <div className='users'>
+                            <h2 className='number'>10</h2>
+                            <p>Usuários</p>
+                        </div>
+                    </div>
+                </div>
+            {/* <header>
                  <Image className='search' src="/images/search.png" width={100} height={104}  alt="search"/>
                     <div className='box-1'>
                         <p className='amount-documents'>0</p>
@@ -3090,7 +3267,7 @@ const SendDocumentsPg = function() {
                         <p className='users'>usuários</p>
                     </div>
                     <Image className='profile-photo' src="/images/profile-photo2.png" width={100} height={104}  alt="profile-photo"/>
-                </header>
+                </header> */}
                 <form>
                     <h1>Faça o Upload</h1>
                         <div className='rg'>
@@ -3237,7 +3414,25 @@ const SendDocumentsPg = function() {
             </nav>
 
             <nav className='tablet-desktops'>
-                <header>
+            <div className='dashboard-desktop'>
+                    <div className='search'>
+                        <FaMagnifyingGlass/>
+                    </div>
+                    <div className='box-desktop'>
+                        <div className='documents'>
+                            <h2 className='number'>10</h2>
+                            <p>Documentos</p>
+                        </div>
+                        <div className='users'>
+                            <h2 className='number'>10</h2>
+                            <p>Usuários</p>
+                        </div>
+                    </div>
+                    <div className='user-profile-desktop'>
+                        <img src="/images/fox-mobile.png" alt="" width='50px' height='50px'/>
+                    </div>
+                </div>
+                {/* <header>
                  <Image className='search' src="/images/search.png" width={100} height={104}  alt="search"/>
                     <div className='box-1'>
                         <p className='amount-documents'>0</p>
@@ -3249,7 +3444,7 @@ const SendDocumentsPg = function() {
                     </div>
                     <Image className='profile-photo' src="/images/profile-photo2.png" width={100} height={104}  alt="profile-photo"/>
                     <p id='your-name'>Seu Nome</p>
-                </header>
+                </header> */}
                 <form>
                     <h1>Faça o Upload</h1>
                         <div className='rg'>
