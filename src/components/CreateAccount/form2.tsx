@@ -44,6 +44,41 @@ const FormComponent2 = styled.section `
         left: 35px;
     }
 
+    .span1 {
+        margin-left: -45%;
+        font-size: 1.05em;
+    }
+
+    .span2 {
+        margin-left: 1%;
+        font-size: 1.05em;
+    }
+
+    .span3 {
+        margin-left: -71%;
+        font-size: 1.05em;
+    }
+
+    .span4 {
+        margin-left: -70%;
+        font-size: 1.05em;
+    }
+
+    .span5 {
+        margin-left: -78%;
+        font-size: 1.05em;
+    }
+
+    .span6 {
+        margin-left: -72%;
+        font-size: 1.05em;
+    }
+
+    .span7 {
+        margin-left: -35%;
+        font-size: 1.05em;
+    }
+
     .date {
         position: absolute;
         top: 320px;
@@ -216,6 +251,42 @@ const FormComponent2 = styled.section `
         height: 735px;
         border-color: white;
        }
+
+       .span1 {
+            margin-left: -46%;
+            font-size: 1em;
+        }
+
+        .span2 {
+            margin-left: 70%;
+            font-size: 1.05em;
+            margin-top: -11%;
+        }
+
+        .span3 {
+            margin-left: -63%;
+            font-size: 1.05em;
+        }
+
+        .span4 {
+            margin-left: -62%;
+            font-size: 1.05em;
+        }
+
+        .span5 {
+            margin-left: -68%;
+            font-size: 1.05em;
+        }
+
+        .span6 {
+            margin-left: -63%;
+            font-size: 1.05em;
+        }
+
+        .span7 {
+            margin-left: -39%;
+            font-size: 1.05em;
+        }
 
        h1 {
         font-size: 1.5em;
@@ -405,6 +476,42 @@ const FormComponent2 = styled.section `
             top: 35px;
             left: 160px;
             font-size: 2em;
+        }
+
+        .span1 {
+            margin-left: -50%;
+            font-size: 1em;
+        }
+
+        .span2 {
+            margin-left: 65%;
+            font-size: 1.05em;
+            margin-top: -10%;
+        }
+
+        .span3 {
+            margin-left: -65%;
+            font-size: 1.05em;
+        }
+
+        .span4 {
+            margin-left: -64%;
+            font-size: 1.05em;
+        }
+
+        .span5 {
+            margin-left: -69%;
+            font-size: 1.05em;
+        }
+
+        .span6 {
+            margin-left: -65%;
+            font-size: 1.05em;
+        }
+
+        .span7 {
+            margin-left: -43%;
+            font-size: 1.05em;
         }
 
         .name {
@@ -623,6 +730,42 @@ const FormComponent2 = styled.section `
             width: 690px;
             height: 1020px;
             border-color: white;
+        }
+
+        .span1 {
+            margin-left: -44%;
+            font-size: 1.5em;
+        }
+
+        .span2 {
+            margin-left: 62%;
+            font-size: 1.2em;
+            margin-top: -8%;
+        }
+
+        .span3 {
+            margin-left: -63%;
+            font-size: 1.5em;
+        }
+
+        .span4 {
+            margin-left: -62%;
+            font-size: 1.5em;
+        }
+
+        .span5 {
+            margin-left: -69%;
+            font-size: 1.5em;
+        }
+
+        .span6 {
+            margin-left: -64%;
+            font-size: 1.5em;
+        }
+
+        .span7 {
+            margin-left: -34%;
+            font-size: 1.5em;
         }
 
         h1 {
@@ -846,21 +989,21 @@ const FormComponent2 = styled.section `
 
         .criar:hover {
             position: absolute;
-            top: 120px;
-            left: 140px;
+            top: 95px;
+            left: 175px;
             background-color: #9fc214;
-            width: 250px;
-            height: 80px;
+            width: 200px;
+            height: 60px;
             font-size: 2.7em;
         }
 
         .criar:active {
             position: absolute;
-            top: 120px;
-            left: 140px;
+            top: 95px;
+            left: 175px;
             background-color: #86a40f;
-            width: 250px;
-            height: 80px;
+            width: 200px;
+            height: 60px;
             font-size: 2.7em;
         }
 
@@ -1114,26 +1257,33 @@ const Form2 = function() {
                          {/* Create User form content */}
                         <h1>Criar Conta</h1>
                         <div className='name'>
-                            <Input type="string" name="name" id="name" placeholder='Nome Completo'/>
+                            <Input type="string" name="name" id="name" placeholder='Nome Completo '/>
+                            {/* <span className='span1'>*</span> */}
                         </div>
                         <div className='date'>
                             <Input type='date' name='birthday' id='birthday' placeholder='Data de nascimento'/>
                             <Small>Digite a Data de Nascimento</Small>
+                            {/* <span className='span2'>*</span> */}
                         </div>
                         <div className='email'>
                             <Input type="email" name="email" id="email" placeholder='E-mail'/>
+                            {/* <span className='span3'>*</span> */}
                         </div>
                         <div className='phone'>
                             <Input type="phone" name="phone" id="phone" placeholder='Celular'/>
+                            {/* <span className='span4'>*</span> */}
                         </div>
                         <div className='cpf'>
                             <Input type="number" name="cpf" id="cpf" placeholder='CPF'/>
+                            {/* <span className='span5'>*</span> */}
                         </div>
                         <div className='password'>
                             <Input type="password" name="password" id="password" placeholder='Senha'/>
+                            {/* <span className='span6'>*</span> */}
                         </div>
                         <div className='confirm-password'>
                             <Input type="password" name="confirm-password" id="confirm-password" placeholder='Confirme sua Senha'/>
+                            {/* <span className='span7'>*</span> */}
                         </div>
                         {/* <label>
                         <div className='adm'>
@@ -1158,9 +1308,9 @@ const Form2 = function() {
                             </Link>
                             </div>
                             <div className='button-create'>
-                                <button className='criar' type='button'>
-                                    Criar
-                                </button>
+                            <button className='criar' type='button'>
+                                <Link href={"/ProfilePage"}>Criar</Link>
+                            </button>
                             </div>
                     </form>
             </nav>
@@ -1171,25 +1321,32 @@ const Form2 = function() {
                     <h1>Criar Conta</h1>
                     <div className='name'>
                         <Input type="string" name="name" id="name" placeholder='Nome Completo'/>
+                        {/* <span className='span1'>*</span> */}
                     </div>
                     <div className='date'>
                             <Input type='date' name='birthday' id='birthday' placeholder='Data de nascimento'/>
-                            <Small>Digite a Data de Nascimento</Small>
+                            <Small>Digite a Data de Nascimento</Small> 
+                            {/* <span className='span2'>*</span> */}
                         </div>
                     <div className='email'>
                         <Input type="email" name="email" id="email" placeholder='E-mail'/>
+                        {/* <span className='span3'>*</span> */}
                     </div>
                     <div className='phone'>
                             <Input type="phone" name="phone" id="phone" placeholder='Celular'/>
+                            {/* <span className='span4'>*</span> */}
                         </div>
                         <div className='cpf'>
                             <Input type="number" name="cpf" id="cpf" placeholder='CPF'/>
+                            {/* <span className='span5'>*</span> */}
                         </div>
                         <div className='password'>
                             <Input type="password" name="password" id="password" placeholder='Senha'/>
+                            {/* <span className='span6'>*</span> */}
                         </div>
                         <div className='confirm-password'>
                             <Input type="password" name="confirm-password" id="confirm-password" placeholder='Confirme sua Senha'/>
+                            {/* <span className='span7'>*</span> */}
                         </div>
                         {/* <label>
                         <div className='adm'>
@@ -1215,7 +1372,7 @@ const Form2 = function() {
                         </div>
                          <div className='button-create'>
                              <button className='criar' type='button'>
-                                Criar
+                                <Link href={"/ProfilePage"}>Criar</Link>
                             </button>
                         </div>
                 </form>

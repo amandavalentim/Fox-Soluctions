@@ -31,7 +31,7 @@ p {
     margin: 15%;
 }
 
-.ok {
+#ok {
     margin-top: 6.5%;
     margin-left: 20%;
     width: 70px;
@@ -42,7 +42,7 @@ p {
     border-radius: 10px;
 }
 
-.ok:active {
+#ok:active {
     margin-top: 6.5%;
     margin-left: 20%;
     width: 70px;
@@ -53,7 +53,7 @@ p {
     border-radius: 10px;
 }
 
-.change {
+#change {
     margin-top: 6.5%;
     margin-left: 14%;
     width: 80px;
@@ -64,7 +64,7 @@ p {
     border-radius: 10px;
 }
 
-.change:active {
+#change:active {
     margin-top: 6.5%;
     margin-left: 14%;
     width: 80px;
@@ -120,20 +120,20 @@ p {
         margin-left: 13%;
     }
 
-    .ok {
+    #ok {
         background-color: #93B413;
     }
 
-    .ok:active {
+    #ok:active {
         background-color: #86a40f;
     }
 
-    .change {
+    #change {
         margin-left: 10%;
         background-color: #93B413;
     }
 
-    .change:active {
+    #change:active {
         margin-left: 10%;
         background-color: #86a40f;
     }
@@ -169,31 +169,37 @@ p {
         margin-left: 34.5%;
     }
 
-    .ok {
+    #ok {
         background-color: #93B413;
+        cursor: pointer;
     }
 
-    .ok:hover {
+    #ok:hover {
         background-color: #9fc214;
+        cursor: pointer;
     }
 
-    .ok:active {
+    #ok:active {
         background-color: #86a40f;
+        cursor: pointer;
     }
 
-    .change {
-        margin-left: 10%;
+    #change {
+        margin-left: 10.5%;
         background-color: #93B413;
+        cursor: pointer;
     }
 
-    .change:hover {
-        margin-left: 10%;
+    #change:hover {
+        margin-left: 10.5%;
         background-color: #9fc214;
+        cursor: pointer;
     }
 
-    .change:active {
-        margin-left: 10%;
+    #change:active {
+        margin-left: 10.5%;
         background-color: #86a40f;
+        cursor: pointer;
     }
 
 }
@@ -230,31 +236,34 @@ p {
         margin-left: 12%;
     }
 
-    .ok {
+    #ok {
         background-color: #93B413;
         width: 80px;
         height: 50px;
         font-size: 1.4em;
         margin-top: 5%;
+        cursor: pointer;
     }
 
-    .ok:hover {
+    #ok:hover {
         background-color: #9fc214;
         width: 80px;
         height: 50px;
         font-size: 1.4em;
         margin-top: 5%;
+        cursor: pointer;
     }
 
-    .ok:active {
+    #ok:active {
         background-color: #86a40f;
         width: 80px;
         height: 50px;
         font-size: 1.4em;
         margin-top: 5%;
+        cursor: pointer;
     }
 
-    .change {
+    #change {
         margin-left: 10%;
         background-color: #93B413;
         width: 90px;
@@ -262,9 +271,10 @@ p {
         font-size: 1.3em;
         margin-top: 5%;
         margin-left: 12.5%;
+        cursor: pointer;
     }
 
-    .change:hover {
+    #change:hover {
         margin-left: 10%;
         background-color: #9fc214;
         width: 90px;
@@ -272,9 +282,10 @@ p {
         font-size: 1.3em;
         margin-top: 5%;
         margin-left: 12.5%;
+        cursor: pointer;
     }
 
-    .change:active {
+    #change:active {
         margin-left: 10%;
         background-color: #86a40f;
         width: 90px;
@@ -282,6 +293,7 @@ p {
         font-size: 1.3em;
         margin-top: 5%;
         margin-left: 12.5%;
+        cursor: pointer;
     }
 
     .fox {
@@ -324,31 +336,34 @@ p {
         margin-left: 13.5%;
     }
 
-    .ok {
+    #ok {
         background-color: #93B413;
         width: 90px;
         height: 60px;
         font-size: 1.5em;
         margin-top: 5%;
+        cursor: pointer;
     }
 
-    .ok:hover {
+    #ok:hover {
         background-color: #9fc214;
         width: 90px;
         height: 60px;
         font-size: 1.5em;
         margin-top: 5%;
+        cursor: pointer;
     }
 
-    .ok:active {
+    #ok:active {
         background-color: #86a40f;
         width: 90px;
         height: 60px;
         font-size: 1.5em;
         margin-top: 5%;
+        cursor: pointer;
     }
 
-    .change {
+    #change {
         margin-left: 10%;
         background-color: #93B413;
         width: 100px;
@@ -356,9 +371,10 @@ p {
         font-size: 1.4em;
         margin-top: 5%;
         margin-left: 12%;
+        cursor: pointer;
     }
 
-    .change:hover {
+    #change:hover {
         margin-left: 10%;
         background-color: #9fc214;
         width: 100px;
@@ -366,9 +382,10 @@ p {
         font-size: 1.4em;
         margin-top: 5%;
         margin-left: 12%;
+        cursor: pointer;
     }
 
-    .change:active {
+    #change:active {
         margin-left: 10%;
         background-color: #86a40f;
         width: 100px;
@@ -376,6 +393,7 @@ p {
         font-size: 1.4em;
         margin-top: 5%;
         margin-left: 12%;
+        cursor: pointer;
     }
 
     .fox {
@@ -398,12 +416,16 @@ const ViewEmail = function() {
                 <form>
                     <h1>Seu e-mail de login é:</h1>
                     <p>********fox@gmail.com</p>
-                    <button type="button" className="ok">
-                    <Link href={'/LoginPage'}>OK</Link>
-                    </button>
-                    <button type="button" className="change">
-                        <Link href={'/NewEmailPage'}>Alterar</Link>
-                    </button>
+                    <Link href={'/LoginPage'} className="ok">
+                        <button type="button" id="ok">
+                            OK
+                        </button>
+                    </Link>
+                    <Link href={'/NewEmailPage'} className="change">
+                        <button type="button" id="change">
+                            Alterar
+                        </button>
+                    </Link>
                 </form>
                 <img src="/images/Stella-view-email.png" alt="fox" className="fox"/>
             </nav>
@@ -413,12 +435,16 @@ const ViewEmail = function() {
                     <form>
                         <h1>Seu e-mail de login é:</h1>
                         <p>********fox@gmail.com</p>
-                    <button type="button" className="ok">
-                    <Link href={'/LoginPage'}>OK</Link>
-                    </button>
-                    <button type="button" className="change">
-                        <Link href={'/NewEmailPage'}>Alterar</Link>
-                    </button>
+                        <Link href={'/LoginPage'} className="ok">
+                            <button type="button" id="ok">
+                                OK
+                            </button>
+                        </Link>
+                        <Link href={'/NewEmailPage'} className="change">
+                            <button type="button" id="change">
+                                Alterar
+                            </button>
+                        </Link>
                     </form>
                 </div>
                 <img src="/images/Raposa-code.png" alt="fox" className="fox"/>
