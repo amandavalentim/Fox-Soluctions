@@ -80,8 +80,14 @@ const ListComponent = styled.section`
         .subtitles-mobile{
             color: #FFFFFF;
         }
-        
-        
+        tr:nth-child(even) {
+            background: #07AFFA;
+        } 
+        #table-users{
+            text-align: center;
+            color: #FFFFFF;
+            font-family: 'Poppins-Regular';
+        }
     }
     .list-desktop{
         display: none;
@@ -175,6 +181,11 @@ const ListComponent = styled.section`
                 color: #FFFFFF;
                 font-family: 'Poppins-Semibold';
             }
+            #table-users{
+                text-align: center;
+                color: #FFFFFF;
+                font-family: 'Poppins-Regular';
+            }
         }
     }
 
@@ -235,7 +246,14 @@ const List = function (){
                         </tr>
                     </thead>
                     <tbody id="table-users">
-                        
+                        <tr>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                        </tr>
                     </tbody>
               </table>
             </div>
@@ -253,8 +271,12 @@ const List = function (){
                         </tr>
                     </thead>
                     <tbody id="table-users">
-
-
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
                     </tbody>
               </table>
             </div>

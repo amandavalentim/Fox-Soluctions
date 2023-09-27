@@ -235,7 +235,7 @@ const AboutUs = function (){
                 <div className='container-about-us'>
                     <h3>Sobre Nós</h3>
                     <div className='content-center'>
-                        <p>A Fox Soluctions foi fundada no ano de 2023 e foi desenvolvida para facilitar e auxiliar Pessoas que utilizam nossa plataforma a realizarem o upload e a visualização de documentos de maneira prática, com o objetivo de inovar e trazer criatividade em sua identidade visual.</p>
+                        <p>A Fox Solutions foi fundada no ano de 2023 e foi desenvolvida para facilitar e auxiliar Pessoas que utilizam nossa plataforma a realizarem o upload e a visualização de documentos de maneira prática, com o objetivo de inovar e trazer criatividade em sua identidade visual.</p>
                     </div>
                 </div>
 
@@ -296,7 +296,7 @@ const AboutUs = function (){
                     <div className="container-why-the-fox">
                         <h3>Por que a Raposa?</h3>
                         <p>Escolhemos a raposa como representação da nossa plataforma, pois este animal possui o símbolo de criatividade, inteligência e solução de problemas. O que queremos transparecer em nosso sistema.</p>
-                        <img src="/../images/logo-fox.svg" alt="Logo da Fox Soluctions, raposa laranja e nome do projeto" />
+                        <img src="/../images/logo-fox.svg" alt="Logo da Fox Solutions, raposa laranja e nome do projeto" />
                         <img src="/../images/stella-aboutUs.svg" alt="Nossa mascote, chamada Stella" />
                     </div>
                     <div className="color-palette">
@@ -315,7 +315,7 @@ const AboutUs = function (){
                             <h4>Amanda Valentim</h4>
                             <p>Desenvolvedora Fullstack</p>
                             <div className='content-developers'>
-                                <p>“A Fox Soluctions foi pensada nos minímos detalhes, para auxiliar e tornar o processo de upload de documentos mais prático”</p>
+                                <p>“A Fox Solutions foi pensada nos minímos detalhes, para auxiliar e tornar o processo de upload de documentos mais prático”</p>
                             </div>
                         </div>
                         <div className='card-developers'>
@@ -323,7 +323,7 @@ const AboutUs = function (){
                             <h4>Gustavo Otacílio</h4>
                             <p>Desenvolvedor Fullstack</p>
                             <div className='content-developers'>
-                                <p>“Programar essa plataforma foi uma experiência única, e só de imaginar que a Fox Soluctions vai mudar a forma como empresa e candidato interagem, já é uma grande vitória!”</p>
+                                <p>“Programar essa plataforma foi uma experiência única, e só de imaginar que a Fox Solutions vai mudar a forma como empresa e candidato interagem, já é uma grande vitória!”</p>
                             </div>
                         </div>
                         <div className='card-developers'>
@@ -345,7 +345,7 @@ const AboutUs = function (){
                             <h4>Amanda Valentim</h4>
                             <p>Desenvolvedora Fullstack</p>
                             <div className='card'>
-                                <p>“A Fox Soluctions foi pensada nos minímos detalhes, para auxiliar e tornar o processo de upload de documentos mais prático”</p>
+                                <p>“A Fox Solutions foi pensada nos minímos detalhes, para auxiliar e tornar o processo de upload de documentos mais prático”</p>
                             </div>
                         </SwiperSlide>
                         <SwiperSlide className='slide-developers-item'>
@@ -353,7 +353,7 @@ const AboutUs = function (){
                             <h4>Gustavo Otacílio</h4>
                             <p>Desenvolvedor Fullstack</p>
                             <div className='card'>
-                                <p>“Programar essa plataforma foi uma experiência única, e só de imaginar que a Fox Soluctions vai mudar a forma como empresa e candidato interagem, já é uma grande vitória!”</p>
+                                <p>“Programar essa plataforma foi uma experiência única, e só de imaginar que a Fox Solutions vai mudar a forma como empresa e candidato interagem, já é uma grande vitória!”</p>
                             </div>
                         </SwiperSlide>
                         <SwiperSlide className='slide-developers-item'>
