@@ -346,6 +346,60 @@ const PageComponent = styled.section `
             left: 68px;
             top: 650px;
         }
+
+    }
+
+    @media(min-width: 1400px) {
+        height: 72vh;
+
+        background-image: url("/images/1400px-recuperar-senha.svg");
+
+        form {
+            margin-left: 32%;
+        }
+
+        .fox {
+            position: absolute;
+            left: 50px;
+            top: 620px;
+        }
+
+        h1 {
+            margin-left: 16%;
+        }
+
+        
+        .enviar {
+            margin-top: 4%;
+            margin-left: 31.8%;
+            width: 200px;
+            height: 70px;
+            font-size: 2.2em;
+            background-color: #93B413;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+        .enviar:hover {
+            margin-top: 4%;
+            margin-left: 31.8%;
+            width: 200px;
+            height: 70px;
+            font-size: 2.2em;
+            background-color: #9fc214;
+            border: none;
+        }
+
+        .enviar:active {
+            margin-top: 4%;
+            margin-left: 31.8%;
+            width: 200px;
+            height: 70px;
+            font-size: 2.2em;
+            background-color: #86a40f;
+            border: none;
+        }
     }
 
     // Large Screens

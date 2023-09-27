@@ -305,6 +305,32 @@ const HeadComponent = styled.head`
     
     }
 
+    @media (min-width: 1400px) {
+        .hide-on-mobile {
+            display: flex;
+            justify-content: space-between;
+            position: absolute;
+            left: 1070px;
+        }
+
+        .show-on-mobile {
+            display: none;
+        } 
+
+        li {
+            width: 200px;
+        }
+
+        .home-button{
+            margin-left: 75%;
+        }
+
+        .sobre-nos-button{
+            margin-left: 35%;
+        }
+    
+    }
+
     // Large Screens
     @media (min-width: 1600px) {
         .hide-on-mobile {

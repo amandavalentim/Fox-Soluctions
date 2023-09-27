@@ -1,4 +1,4 @@
-// Código desenvolvido por Gabriel
+// Developed by Gabriel
 
 'use client'
 import styled from '@emotion/styled';
@@ -640,6 +640,30 @@ const FormComponent = styled.section `
         }
     }
 
+    @media(min-width: 1400px) {
+
+        height: 134vh;
+
+        .mobile {
+            display: none;
+        }
+    
+        .tablet-desktops {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        background-image: url("/images/1400px-login.svg");
+
+        .form {
+            margin-left: 26%;
+        }
+
+        .page2 {
+            margin-left: 25.5%;
+        }
+    }
+
     // Large Screens
     @media(min-width: 1600px) {
 
@@ -880,13 +904,6 @@ const Form = function() {
                                 </button>
                             </Link>
                     </div>
-                {/*
-                    
-                    
-                    
-                    
-                    
-                */}
                 </form>
             </nav>
             

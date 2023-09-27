@@ -2,7 +2,6 @@
 
 'use client'
 import styled from '@emotion/styled';
-import Input from '../Login/Input/Input';
 import Image from 'next/image';
 import {FaAngleLeft, FaAngleRight, FaImages, FaTimes} from "react-icons/fa";
 import Link from 'next/link';
@@ -2239,6 +2238,326 @@ const SendDocumentsComponent = styled.section `
             border-radius: 10px;
             width: 150px;
             height: 50px;
+        }
+    }
+
+    @media(min-width: 1400px) {
+
+        height: 175vh;
+
+        .search {
+            margin-top: 5%;
+            margin-left: 5%;
+        }
+
+        .box-1 {
+            margin-top: -7.5%;
+        }
+
+        .box-2 {
+            margin-left: 55%;
+            margin-top: -11.5%;
+        }
+
+        .users {
+            margin-top: -8%;
+        }
+
+        .documents {
+            margin-top: -8%;
+        }
+
+        form {
+            margin-left: 19.6%;
+        }
+
+        h1 {
+            margin-left: 36%;
+        }
+
+        .button1 {
+            margin-left: 55%;
+        }
+
+        .button2 {
+            margin-left: 55%;
+        }
+
+        .button3 {
+            margin-left: 55%;
+        }
+
+        .button4 {
+            margin-left: 55%;
+        }
+
+        .button5 {
+            margin-left: 55%;
+        }
+
+        .send-rg2 ul{
+            display: block;
+            position: fixed;
+            right: -90vw;
+            width: 30vw;
+            height: 350px;
+            border-radius: 20px;
+            background: #0A53B5;
+            z-index: 1;
+            top: 22.5%;
+        }
+
+        .send-rg2.open ul{
+            right: 32.5vw;
+        }
+
+        .close {
+            fill: white;
+            font-size: 1.6em;
+            margin-top: 7%;
+            margin-left: 115%;
+            cursor: pointer;
+        }
+
+        .button-close {
+            border: none;
+            background: none;
+            color: #fff;
+        }
+
+        .rg-txt {
+            font-size: 1.1em;
+            margin-left: 33.5%;
+            width: 560px;
+        }
+
+        .choose-a-image {
+            height: 170px;
+            margin-left: 10.5%;
+            cursor: pointer;
+        }
+
+        .label {
+            margin-top: 2%;
+            cursor: pointer;
+            margin-left: 17%;
+        }
+
+        .image {
+            margin-top: 30%;
+            cursor: pointer;
+            margin-left: 45%;
+        }
+
+        .send-cpf2 ul{
+            display: block;
+            position: fixed;
+            right: -90vw;
+            width: 30vw;
+            height: 350px;
+            border-radius: 20px;
+            background: #0A53B5;
+            z-index: 1;
+            top: 22.5%;
+        }
+
+        .send-cpf2.open ul{
+            right: 32.5vw;
+        }
+
+        .close {
+            fill: white;
+            font-size: 1.6em;
+            margin-top: 7%;
+            margin-left: 115%;
+            cursor: pointer;
+        }
+
+        .button-close {
+            border: none;
+            background: none;
+            color: #fff;
+        }
+
+        .cpf-txt {
+            font-size: 1.1em;
+            margin-left: 57.5%;
+            width: 560px;
+        }
+
+        .send-date2 ul{
+            display: block;
+            position: fixed;
+            right: -90vw;
+            width: 30vw;
+            height: 350px;
+            border-radius: 20px;
+            background: #0A53B5;
+            z-index: 1;
+            top: 22.5%;
+        }
+
+        .send-date2.open ul{
+            right: 32.5vw;
+        }
+
+        .close {
+            fill: white;
+            font-size: 1.6em;
+            margin-top: 7%;
+            margin-left: 115%;
+            cursor: pointer;
+        }
+
+        .button-close {
+            border: none;
+            background: none;
+            color: #fff;
+        }
+
+        .date-txt {
+            font-size: 1.1em;
+            margin-left: 24.7%;
+            width: 560px;
+        }
+
+        .send-ct2 ul{
+            display: block;
+            position: fixed;
+            right: -90vw;
+            width: 30vw;
+            height: 350px;
+            border-radius: 20px;
+            background: #0A53B5;
+            z-index: 1;
+            top: 22.5%;
+        }
+
+        .send-ct2.open ul{
+            right: 32.5vw;
+        }
+
+        .close {
+            fill: white;
+            font-size: 1.6em;
+            margin-top: 7%;
+            margin-left: 115%;
+            cursor: pointer;
+        }
+
+        .button-close {
+            border: none;
+            background: none;
+            color: #fff;
+        }
+
+        .ct-txt {
+            font-size: 1.1em;
+            margin-left: 29.5%;
+            width: 560px;
+        }
+
+        .send-cnh2 ul{
+            display: block;
+            position: fixed;
+            right: -90vw;
+            width: 30vw;
+            height: 350px;
+            border-radius: 20px;
+            background: #0A53B5;
+            z-index: 1;
+            top: 22.5%;
+        }
+
+        .cnh-txt {
+            font-size: 1.1em;
+            margin-left: -15.5%;
+            width: 560px;
+        }
+
+        .choose-a-image-cnh {
+            height: 170px;
+            margin-left: 11%;
+            cursor: pointer;
+        }
+
+        .label-cnh {
+            margin-top: 2%;
+            margin-left: 22.3%;
+            cursor: pointer;
+        }
+
+        .image-cnh{
+            margin-top: 5%;
+            cursor: pointer;
+        }
+
+        .previous {
+            margin-left: 6%;
+            margin-top: 4%;
+        }
+
+        .previous:active {
+            margin-left: 6%;
+            margin-top: 4%;
+        }
+
+        #previous {
+            margin-top: -3%;
+            padding-top: 1%;
+            font-size: 2em;
+        }
+
+        .previous-button {
+            border: none;
+            background-color: #93B413;
+            border-radius: 10px;
+            width: 170px;
+            height: 60px;
+            cursor: pointer;
+        }
+
+        .previous-button:active {
+            border: none;
+            background-color: #86a40f;
+            border-radius: 10px;
+            width: 170px;
+            height: 60px;
+            cursor: pointer;
+        }
+
+        .next {
+            margin-left: 83%;
+            margin-top: -2.7%;
+        }
+
+        .next:active {
+            margin-left: 83%;
+            margin-top: -2.8%;
+        }
+
+        #next {
+            margin-top: -3%;
+            padding-top: 1%;
+            font-size: 2em;
+        }
+
+        .next-button {
+            border: none;
+            background-color: #93B413;
+            border-radius: 10px;
+            width: 170px;
+            height: 60px;
+            cursor: pointer;
+        }
+
+        .next-button:active {
+            border: none;
+            background-color: #86a40f;
+            border-radius: 10px;
+            width: 170px;
+            height: 60px;
+            cursor: pointer;
         }
     }
 

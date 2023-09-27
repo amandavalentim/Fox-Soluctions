@@ -1006,6 +1006,7 @@ const CreateUserComponent = styled.section `
             width: 150px;
             height: 45px;
             font-size: 1.2em;
+            cursor: pointer;
         }
 
         .choose-a-image:hover {
@@ -1014,6 +1015,7 @@ const CreateUserComponent = styled.section `
             height: 45px;
             font-size: 1.2em;
             background-color: #ff7818;
+            cursor: pointer;
         }
 
         .choose-a-image:active {
@@ -1022,10 +1024,12 @@ const CreateUserComponent = styled.section `
             height: 45px;
             font-size: 1.2em;
             background-color: #d66515;
+            cursor: pointer;
         }
 
         label {
             margin-left: 1.2%;
+            cursor: pointer;
         }
 
         .save {
@@ -1034,6 +1038,7 @@ const CreateUserComponent = styled.section `
             font-size: 1.6em;
             background-color: #93B413;
             margin-left: 42%;
+            cursor: pointer;
         }
 
         .save:hover {
@@ -1042,6 +1047,7 @@ const CreateUserComponent = styled.section `
             font-size: 2em;
             background-color: #9fc214;
             margin-left: 38%;
+            cursor: pointer;
         }
 
         .save:active {
@@ -1050,6 +1056,7 @@ const CreateUserComponent = styled.section `
             font-size: 2em;
             background-color: #86a40f;
             margin-left: 38%;
+            cursor: pointer;
         }
     }
 
@@ -1405,6 +1412,7 @@ const CreateUserComponent = styled.section `
             margin-left: 20%;
             background-color: #F47216;
             font-size: 1em;
+            cursor: pointer;
         }
 
         .choose-a-image:hover {
@@ -1413,6 +1421,7 @@ const CreateUserComponent = styled.section `
             margin-left: 20%;
             background-color: #ff7818;
             font-size: 1em;
+            cursor: pointer;
         }
 
         .choose-a-image:active {
@@ -1421,6 +1430,7 @@ const CreateUserComponent = styled.section `
             margin-left: 20%;
             background-color: #d66515;
             font-size: 1em;
+            cursor: pointer;
         }
 
         label {
@@ -1428,6 +1438,7 @@ const CreateUserComponent = styled.section `
             margin-left: 1.7%;
             top: 1423px;
             font-size: 1.5em;
+            cursor: pointer;
         }
 
         .save {
@@ -1437,6 +1448,7 @@ const CreateUserComponent = styled.section `
             font-size: 2.5em;
             background-color: #93B413;
             margin-left: 41%;
+            cursor: pointer;
         }
 
         .save:hover {
@@ -1446,6 +1458,7 @@ const CreateUserComponent = styled.section `
             font-size: 2.5em;
             background-color: #9fc214;
             margin-left: 41%;
+            cursor: pointer;
         }
 
         .save:active {
@@ -1455,6 +1468,354 @@ const CreateUserComponent = styled.section `
             font-size: 2.5em;
             background-color: #86a40f;
             margin-left: 41%;
+            cursor: pointer;
+        }
+    }
+
+    @media(min-width: 1400px) {
+        height: 220vh;
+
+        form {
+            height: 1180px;
+            width: 735px;
+            margin-left: 24%;
+        }
+
+        h1 {
+            font-size: 2.4em;
+            margin-left: 32.5%;
+        }
+
+        .name {
+            margin-top: 3%;
+            margin-left: -3.8%;
+            font-size: 1.4em;
+        }
+
+        #name {
+            width: 550px;
+            height: 45px;
+        }
+
+        #name::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+            font-size: 1.5em;
+        }
+
+        .span1 {
+            color: #F47216;
+            margin-left: -25%;
+            position: absolute;
+            font-size: 1.3em;
+            margin-top: 1%;
+        }
+
+        .gender-txt {
+            font-size: 1.5em;
+            margin-left: 13.5%;
+            margin-top: -5%;
+        }
+
+        .man {
+            width: 30px;
+            margin-left: 9.5%;
+            margin-top: -0.5%;
+        }
+
+        #man {
+            width: 30px;
+            cursor: pointer;
+        }
+
+        .man-op {
+            margin-left: 545%;
+            margin-top: -234%;
+            font-size: 1.1em;
+        }
+
+        .woman {
+            width: 30px;
+            margin-left: 30.2%;
+            margin-top: -5.7%;
+        }
+
+        #woman {
+            width: 30px;
+            cursor: pointer;
+        }
+
+        .woman-op {
+            margin-left: 545%;
+            margin-top: -234%;
+            font-size: 1.1em;
+        }
+
+        .transvestite {
+            width: 30px;
+            margin-left: 49.7%;
+            margin-top: -5.8%;
+        }
+
+        #transvestite {
+            width: 30px;
+            cursor: pointer;
+        }
+
+        .t1-op {
+            margin-left: 545%;
+            margin-top: -234%;
+            font-size: 1.1em;
+        }
+
+        .no-binary {
+            width: 30px;
+            margin-left: 9.5%;
+            margin-top: -0.5%;
+        }
+
+        #no-binary {
+            width: 30px;
+            cursor: pointer;
+        }
+
+        .nb-op {
+            margin-left: 545%;
+            margin-top: -234%;
+            font-size: 1.1em;
+        }
+
+        .trans {
+            width: 30px;
+            margin-left: 30.2%;
+            margin-top: -5.7%;
+        }
+
+        #trans {
+            width: 30px;
+            cursor: pointer;
+        }
+
+        .t2-op {
+            margin-left: 545%;
+            margin-top: -234%;
+            font-size: 1.1em;
+        }
+
+        .another {
+            width: 30px;
+            margin-left: 49.7%;
+            margin-top: -5.8%;
+        }
+
+        #another {
+            width: 30px;
+            cursor: pointer;
+        }
+
+        .a-op {
+            margin-left: 545%;
+            margin-top: -234%;
+            font-size: 1.1em;
+        }
+
+        .none {
+            width: 30px;
+            margin-left: 9.5%;
+            margin-top: -0.5%;
+        }
+
+        #none {
+            width: 30px;
+            cursor: pointer;
+        }
+
+        .n-op {
+            margin-left: 545%;
+            margin-top: -234%;
+            font-size: 1.1em;
+        }
+
+        .social-name {
+            margin-top: -0.5%;
+            margin-left: -3.8%;
+            font-size: 1.4em;
+        }
+
+        #social-name {
+            width: 550px;
+            height: 45px;
+        }
+
+        #social-name::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+            font-size: 1.5em;
+        }
+
+        .date {
+            margin-top: -3.5%;
+            margin-left: -3.8%;
+            font-size: 1.4em;
+        }
+
+        #birthday {
+            width: 550px;
+            height: 45px;
+        }
+
+        #birthday::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+            font-size: 1.5em;
+        }
+
+        .span3 {
+            color: #F47216;
+            margin-left: 24%;
+            position: absolute;
+            margin-top: 13.8%;
+        }
+
+        .small {
+            position: absolute;
+            margin-left: 8.5%;
+            top: 800px;
+        }
+
+        .cpf {
+            margin-top: -1.5%;
+            margin-left: -3.8%;
+            font-size: 1.4em;
+        }
+
+        #cpf {
+            width: 550px;
+            height: 45px;
+        }
+
+        #cpf::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+            font-size: 1.5em;
+        }
+
+        .span4 {
+            color: #F47216;
+            margin-left: -34%;
+            position: absolute;
+            font-size: 1.4em;
+            margin-top: 1.1%;
+        }
+
+        .email {
+            margin-top: -3.5%;
+            margin-left: -3.8%;
+            font-size: 1.4em;
+        }
+
+        #email {
+            width: 550px;
+            height: 45px;
+        }
+
+        #email::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+            font-size: 1.5em;
+        }
+
+        .span5 {
+            color: #F47216;
+            margin-left: -32.5%;
+            position: absolute;
+            font-size: 1.2em;
+            margin-top: 1.1%;
+        }
+
+        .country {
+            margin-top: -3.5%;
+            margin-left: -3.8%;
+            font-size: 1.4em;
+        }
+
+        #country {
+            width: 550px;
+            height: 45px;
+        }
+
+        #country::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+            font-size: 1.5em;
+        }
+
+        .span6 {
+            color: #F47216;
+            margin-left: -33.5%;
+            position: absolute;
+            font-size: 1.4em;
+            margin-top: 1.1%;
+        }
+
+        .profile-photo2 {
+            font-size: 2em;
+            margin-left: 13.2%;
+            font-size: 1.5em;
+            margin-top: -3%;
+        }
+
+        .choose-a-image {
+            width: 200px;
+            height: 60px;
+            margin-left: 13.2%;
+            background-color: #F47216;
+            font-size: 1em;
+            cursor: pointer;
+        }
+
+        .choose-a-image:hover {
+            width: 200px;
+            height: 60px;
+            margin-left: 13.2%;
+            background-color: #ff7818;
+            font-size: 1em;
+            cursor: pointer;
+        }
+
+        .choose-a-image:active {
+            width: 200px;
+            height: 60px;
+            margin-left: 13.2%;
+            background-color: #d66515;
+            font-size: 1em;
+            cursor: pointer;
+        }
+
+        label {
+            position: absolute;
+            margin-left: 1.7%;
+            top: 1405px;
+            font-size: 1.6em;
+            cursor: pointer;
+        }
+
+        .save {
+            margin-top: 8%;
+            width: 220px;
+            height: 70px;
+            font-size: 2.5em;
+            background-color: #93B413;
+            margin-left: 36%;
+            cursor: pointer;
+        }
+
+        .save:hover {
+            margin-top: 8%;
+            width: 220px;
+            height: 70px;
+            font-size: 2.5em;
+            background-color: #9fc214;
+            margin-left: 36%;
+            cursor: pointer;
+        }
+
+        .save:active {
+            margin-top: 8%;
+            width: 220px;
+            height: 70px;
+            font-size: 2.5em;
+            background-color: #86a40f;
+            margin-left: 36%;
+            cursor: pointer;
         }
     }
 
@@ -1771,6 +2132,7 @@ const CreateUserComponent = styled.section `
             background-color: #F47216;
             width: 260px;
             height: 70px;
+            cursor: pointer;
         }
 
         .choose-a-image:hover {
@@ -1778,6 +2140,7 @@ const CreateUserComponent = styled.section `
             background-color: #ff7818;
             width: 260px;
             height: 70px;
+            cursor: pointer;
         }
 
         .choose-a-image:active {
@@ -1785,6 +2148,7 @@ const CreateUserComponent = styled.section `
             background-color: #d66515;
             width: 260px;
             height: 70px;
+            cursor: pointer;
         }
 
         label {
@@ -1793,6 +2157,7 @@ const CreateUserComponent = styled.section `
             margin-left: 1.4%;
             cursor: pointer;
             font-size: 2em;
+            cursor: pointer;
         }
 
         .save {
@@ -1802,6 +2167,7 @@ const CreateUserComponent = styled.section `
             background-color: #93B413;
             margin-left: 41%;
             cursor: pointer;
+            cursor: pointer;
         }
 
         .save:hover {
@@ -1810,6 +2176,7 @@ const CreateUserComponent = styled.section `
             font-size: 3em;
             background-color: #9fc214;
             margin-left: 41%;
+            cursor: pointer;
         }
 
         .save:active {
@@ -1818,6 +2185,7 @@ const CreateUserComponent = styled.section `
             font-size: 3em;
             background-color: #86a40f;
             margin-left: 41%;
+            cursor: pointer;
         }
     }
 `;

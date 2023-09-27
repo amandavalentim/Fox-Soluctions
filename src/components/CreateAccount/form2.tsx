@@ -837,8 +837,8 @@ const FormComponent2 = styled.section `
 
         .criar:hover {
             position: absolute;
-            top: 120px;
-            left: 140px;
+            top: 125px;
+            left: 155px;
             background-color: #9fc214;
             width: 250px;
             height: 80px;
@@ -847,8 +847,8 @@ const FormComponent2 = styled.section `
 
         .criar:active {
             position: absolute;
-            top: 120px;
-            left: 140px;
+            top: 125px;
+            left: 155px;
             background-color: #86a40f;
             width: 250px;
             height: 80px;
@@ -859,6 +859,32 @@ const FormComponent2 = styled.section `
             width: 170px;
             position: absolute;
             left: 1035px;
+            top: 700px;
+        }
+    }
+
+    @media(min-width: 1400px) {
+        height: 162vh;
+
+        .mobile {
+            display: none;
+        }
+    
+        .tablet-desktops {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        background-image: url("/images/1400px-create-user.svg");
+
+        form {
+            margin-left: 3.5%;
+        }
+
+        .fox {
+            width: 170px;
+            position: absolute;
+            left: 1087px;
             top: 700px;
         }
     }
@@ -1199,9 +1225,11 @@ const Form2 = function() {
                             </Link>
                         </div>
                          <div className='button-create'>
-                             <button className='criar' type='button'>
-                                Criar
-                            </button>
+                            <Link href={'/ProfilePage'}>
+                                <button className='criar' type='button'>
+                                    Criar
+                                </button>
+                            </Link>
                         </div>
                 </form>
                 {/* Stella our mascot */}

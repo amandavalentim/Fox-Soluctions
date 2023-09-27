@@ -370,6 +370,20 @@ const Formcomponent4 = styled.section `
             }
         }
 
+        @media(min-width: 1400px){
+            height: 72vh;
+
+            background-image: url("/images/1400px-recuperar-senha.svg");
+
+            form {
+                margin-left: 32%;
+            }
+
+            .fox {
+                margin-top: -35%;
+            }
+        }
+
         //Large Screens
         @media(min-width: 1600px) {
 

@@ -57,17 +57,184 @@ const RecoveryEmailComponent = styled.section`
     @media(min-width: 992px) {
         background-image: url("/images/992px-recuperar-senha.svg");
         height: 90vh;
+
+        .btn-confirm{
+            text-align: center;
+            .confirm{
+                width: 170px;
+                height: 50px;
+                border-radius: 20px;
+                border: none;
+                background: #93B413;
+                font-size: 1.6em;
+                color: #ffffff;
+                margin: 40px;
+                cursor: pointer;
+            }
+            .confirm:hover{
+                width: 170px;
+                height: 50px;
+                border-radius: 20px;
+                border: none;
+                background-color: #9fc214;
+                font-size: 1.6em;
+                color: #ffffff;
+                margin: 40px;
+                cursor: pointer;
+            }
+            .confirm:active{
+                width: 170px;
+                height: 50px;
+                border-radius: 20px;
+                border: none;
+                background-color: #86a40f;
+                font-size: 1.6em;
+                color: #ffffff;
+                margin: 40px;
+                cursor: pointer;
+            }
+        }
     }
 
     //Medium Screen 
     @media(min-width: 1200px) {
         background-image: url("/images/1200px-recuperar-senha.svg");
+
+        .btn-confirm{
+            text-align: center;
+            .confirm{
+                width: 170px;
+                height: 50px;
+                border-radius: 20px;
+                border: none;
+                background: #93B413;
+                font-size: 1.6em;
+                color: #ffffff;
+                margin: 40px;
+                cursor: pointer;
+            }
+            .confirm:hover{
+                width: 170px;
+                height: 50px;
+                border-radius: 20px;
+                border: none;
+                background-color: #9fc214;
+                font-size: 1.6em;
+                color: #ffffff;
+                margin: 40px;
+                cursor: pointer;
+            }
+            .confirm:active{
+                width: 170px;
+                height: 50px;
+                border-radius: 20px;
+                border: none;
+                background-color: #86a40f;
+                font-size: 1.6em;
+                color: #ffffff;
+                margin: 40px;
+                cursor: pointer;
+            }
+        }
     }
 
+    @media(min-width: 1400px) {
+        height: 72vh;
+
+        background-image: url("/images/1400px-recuperar-senha.svg");
+
+        .container-center {
+            margin-left: 11.5%;
+            padding-top: 5%;
+        }
+
+        .input-email {
+            margin-left: -40%;
+        }
+
+        .btn-confirm{
+            text-align: center;
+            .confirm{
+                width: 170px;
+                height: 50px;
+                border-radius: 20px;
+                border: none;
+                background: #93B413;
+                font-size: 1.6em;
+                color: #ffffff;
+                margin: 40px;
+                cursor: pointer;
+            }
+
+            .confirm:hover{
+                width: 170px;
+                height: 50px;
+                border-radius: 20px;
+                border: none;
+                background-color: #9fc214;
+                font-size: 1.6em;
+                color: #ffffff;
+                margin: 40px;
+                cursor: pointer;
+            }
+
+            .confirm:active{
+                width: 170px;
+                height: 50px;
+                border-radius: 20px;
+                border: none;
+                background-color: #86a40f;
+                font-size: 1.6em;
+                color: #ffffff;
+                margin: 40px;
+                cursor: pointer;
+            }
+        }
+    }
+ 
     //Large Screen 
     @media(min-width: 1600px) {
         background-image: url("/images/1600px-recuperar-senha.svg");
         height: 80vh;
+
+        .btn-confirm{
+            text-align: center;
+            .confirm{
+                width: 170px;
+                height: 50px;
+                border-radius: 20px;
+                border: none;
+                background: #93B413;
+                font-size: 1.6em;
+                color: #ffffff;
+                margin: 40px;
+                cursor: pointer;
+            }
+        }
+
+        .confirm:hover{
+                width: 170px;
+                height: 50px;
+                border-radius: 20px;
+                border: none;
+                background-color: #9fc214;
+                font-size: 1.6em;
+                color: #ffffff;
+                margin: 40px;
+                cursor: pointer;
+            }
+
+            .confirm:active{
+                width: 170px;
+                height: 50px;
+                border-radius: 20px;
+                border: none;
+                background-color: #86a40f;
+                font-size: 1.6em;
+                color: #ffffff;
+                margin: 40px;
+                cursor: pointer;
+            }
     }
 `
 

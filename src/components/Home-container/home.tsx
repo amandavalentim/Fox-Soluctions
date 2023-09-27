@@ -225,12 +225,12 @@ height: 100vh;
 
         h1 {
             font-size: 2em;
-            margin-left: 35.5%;
+            margin-left: 36.5%;
         }
 
         p {
             font-size: 1.8em;
-            margin-left: 21.2%;
+            margin-left: 24%;
         }
 
         .start {
@@ -258,6 +258,36 @@ height: 100vh;
             margin-top: -2%;
             width: 150px;
         }
+    }
+
+    @media(min-width: 1400px) {
+
+        height: 90.2vh;
+
+        h1 {
+            margin-left: 37.5%;
+        }
+
+        p{
+            margin-left: 26%;
+        }
+
+        .fox {
+            margin-top: -0.5%;
+        }
+
+        .start {
+            margin-top: -1.3%;
+        }
+
+        .start:hover{
+            margin-top: -1.3%;
+        }
+
+        .start:active{
+            margin-top: -1.3%;
+        }
+
     }
 
     // Large Screens
