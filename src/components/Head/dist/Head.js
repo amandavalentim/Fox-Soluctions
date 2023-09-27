@@ -26,7 +26,7 @@ var Head = function () {
         React.createElement("nav", { className: 'header' },
             React.createElement(link_1["default"], { href: '/HomePage' },
                 React.createElement(image_1["default"], { className: 'logo-Fox', src: "/images/logo-fox1.svg", width: 100, height: 104, alt: "logo" })),
-            React.createElement("div", { className: 'nameLogo' }, "Fox Soluctions")),
+            React.createElement("div", { className: 'nameLogo' }, "Fox Solutions")),
         React.createElement("nav", { className: 'show-on-mobile' },
             React.createElement("nav", { className: 'menu' },
                 React.createElement("button", { className: 'button-bars' },

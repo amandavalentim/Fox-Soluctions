@@ -348,7 +348,7 @@ const Head = function() {
                             <Link href={'/HomePage'}>
                             <Image className='logo-Fox' src="/images/logo-fox1.svg" width={100} height={104} alt="logo" />
                             </Link>
-                      <div className='nameLogo'>Fox Soluctions</div>
+                      <div className='nameLogo'>Fox Solutions</div>
                   </nav> 
   
                   <nav className='show-on-mobile'>
