@@ -304,6 +304,26 @@ p {
     }
 }
 
+@media(min-width: 1400px) {
+
+    background-image: url("/images/1400px-recuperar-email.svg");    
+
+    form {
+        margin-left: 37%;
+    }
+
+    h1 {
+        margin-left: 6.5%;
+        font-size: 1.5em;
+    }
+
+    p {
+        margin-left: 16%;
+        font-size: 1.3em;
+    }
+
+}
+
 //Large Screen 
 @media(min-width: 1600px) {
 

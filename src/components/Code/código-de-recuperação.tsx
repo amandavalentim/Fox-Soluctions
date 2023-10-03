@@ -418,6 +418,36 @@ const FormComponent3 = styled.section `
             }
         }
 
+        @media(min-width: 1400px) {
+
+            background-image: url("/images/1400px-recovery-code.svg");
+            height: 70vh;
+
+            form {
+                margin-top: 4.5%;
+                margin-left: 35.5%;
+            }
+
+            .rename {
+                font-size: 0.95em;
+                text-align: center;
+                margin-left: 47%;
+                margin-top: -8.8%;
+                color: #C7C7C7;
+                cursor: pointer;
+            }
+
+            .rename:active {
+                font-size: 0.95em;
+                text-align: center;
+                margin-left: 47%;
+                margin-top: -8.8%;
+                color: #86a40f;
+                cursor: pointer;
+            }
+
+        }
+
         // Large Screens
         @media(min-width: 1600px) {
 

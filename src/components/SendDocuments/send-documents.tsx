@@ -2426,7 +2426,7 @@ const SendDocumentsComponent = styled.section `
 
     @media(min-width: 1400px) {
 
-        height: 175vh;
+        height: 150vh;
 
         .search {
             margin-top: 5%;
@@ -2451,7 +2451,7 @@ const SendDocumentsComponent = styled.section `
         }
 
         form {
-            margin-left: 19.6%;
+            margin-left: 27.8%;
         }
 
         h1 {
@@ -2459,23 +2459,28 @@ const SendDocumentsComponent = styled.section `
         }
 
         .button1 {
-            margin-left: 55%;
+            margin-left: 18%;
+            margin-top: 1.1%;
         }
 
         .button2 {
-            margin-left: 55%;
+            margin-left: 18.1%;
+            margin-top: 1.05%;
         }
 
         .button3 {
-            margin-left: 55%;
+            margin-left: 18.2%;
+            margin-top: 0.7%;
         }
 
         .button4 {
-            margin-left: 55%;
+            margin-left: 18.2%;
+            margin-top: 0.6%;
         }
 
         .button5 {
-            margin-left: 55%;
+            margin-left: 18.2%;
+            margin-top: 0.3%;
         }
 
         .send-rg2 ul{
@@ -2716,7 +2721,7 @@ const SendDocumentsComponent = styled.section `
 
         .next:active {
             margin-left: 83%;
-            margin-top: -2.8%;
+            margin-top: -2.7%;
         }
 
         #next {

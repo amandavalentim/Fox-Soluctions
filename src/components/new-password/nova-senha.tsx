@@ -381,7 +381,8 @@ const Formcomponent4 = styled.section `
             background-image: url("/images/1400px-recuperar-senha.svg");
 
             form {
-                margin-left: 32%;
+                margin-left: 35.5%;
+                margin-top: 5%;
             }
 
             .fox {

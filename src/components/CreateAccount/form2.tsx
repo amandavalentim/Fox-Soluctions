@@ -989,13 +989,8 @@ const FormComponent2 = styled.section `
 
         .criar:hover {
             position: absolute;
-<<<<<<< HEAD
-            top: 125px;
-            left: 155px;
-=======
             top: 95px;
             left: 175px;
->>>>>>> 44d15eb027fe80023e9fce4574d0256db45427d4
             background-color: #9fc214;
             width: 200px;
             height: 60px;
@@ -1004,13 +999,8 @@ const FormComponent2 = styled.section `
 
         .criar:active {
             position: absolute;
-<<<<<<< HEAD
-            top: 125px;
-            left: 155px;
-=======
             top: 95px;
             left: 175px;
->>>>>>> 44d15eb027fe80023e9fce4574d0256db45427d4
             background-color: #86a40f;
             width: 200px;
             height: 60px;
@@ -1407,17 +1397,11 @@ const Form2 = function() {
                             </Link>
                         </div>
                          <div className='button-create'>
-<<<<<<< HEAD
                             <Link href={'/ProfilePage'}>
                                 <button className='criar' type='button'>
                                     Criar
                                 </button>
                             </Link>
-=======
-                             <button className='criar' type='button'>
-                                <Link href={"/ProfilePage"}>Criar</Link>
-                            </button>
->>>>>>> 44d15eb027fe80023e9fce4574d0256db45427d4
                         </div>
                 </form>
                 {/* Stella our mascot */}
