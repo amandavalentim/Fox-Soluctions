@@ -258,11 +258,11 @@ height: 100.5vh;
         height: 90.2vh;
 
         h1 {
-            margin-left: 37.5%;
+            margin-left: 39.5%;
         }
 
         p{
-            margin-left: 26%;
+            margin-left: 28%;
         }
 
         .fox {

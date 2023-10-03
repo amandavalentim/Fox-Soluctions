@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 // Developed by Gabriel
-=======
-// Developed by Gabriel Marques
->>>>>>> 44d15eb027fe80023e9fce4574d0256db45427d4
 
 'use client'
 import styled from '@emotion/styled';
