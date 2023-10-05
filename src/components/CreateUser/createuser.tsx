@@ -1461,6 +1461,7 @@ const CreateUserComponent = styled.section `
             font-size: 2.5em;
             background-color: #9fc214;
             margin-left: 39%;
+            margin-left: 41%;
         }
 
         .save:active {
@@ -1470,7 +1471,79 @@ const CreateUserComponent = styled.section `
             font-size: 2.5em;
             background-color: #86a40f;
             margin-left: 39%;
+            margin-left: 41%;
         }
+    }
+
+    @media(min-width: 1400px) {
+
+        height: 208vh;
+
+        form {
+            margin-left: 21%;
+            height: 1180px;
+        }
+
+        h1 {
+            margin-left: 37%;
+        }
+
+        .span1 {
+            margin-left: -32%;
+        }
+
+        .small {
+            position: absolute;
+            margin-left: 8.5%;
+            top: 785px;
+            font-size: 0.8em;
+        }
+
+        .date {
+            margin-top: -1%;
+            margin-left: -2.5%;
+            font-size: 1.4em;
+        }
+
+        #birthday {
+            width: 650px;
+            height: 45px;
+        }
+
+        #birthday::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+            font-size: 1.5em;
+        }
+
+        .span3 {
+            color: #F47216;
+            margin-left: 26%;
+            position: absolute;
+            margin-top: 9.5%;
+        }
+
+        .span4 {
+            margin-left: -41%;
+            margin-top: 1.5%;
+        }
+
+        .span5 {
+            margin-left: -39%;
+            margin-top: 1.5%;
+        }
+
+        .span6 {
+            margin-left: -40.5%;
+            margin-top: 1.5%;
+        }
+
+        label {
+            position: absolute;
+            margin-left: 1.2%;
+            top: 1357px;
+            font-size: 1.7em;
+            cursor: pointer;
+        }
+
     }
 
     @media(min-width: 1600px) {

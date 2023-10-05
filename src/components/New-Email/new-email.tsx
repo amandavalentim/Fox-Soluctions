@@ -334,6 +334,21 @@ h1 {
 
 }
 
+@media(min-width: 1400px) {
+
+    background-image: url("/images/1400px-recuperar-email.svg");
+    height: 70vh;
+
+    form {
+        margin-top: 1.5%;
+    }
+
+    .fox2 {
+        margin-left: -6.9%;
+    }
+
+}
+
 //Large Screens
 @media(min-width: 1600px) {
 

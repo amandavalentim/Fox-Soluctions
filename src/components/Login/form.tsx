@@ -583,7 +583,7 @@ const FormComponent = styled.section `
         #forgot-password {
             position: absolute;
             top: 53.5%;
-            font-size: 1.2em;
+            font-size: 1em;
             margin-left: 50%;
             width: 170px;
         }
@@ -591,7 +591,7 @@ const FormComponent = styled.section `
         #forgot-password:hover {
             position: absolute;
             top: 53.5%;
-            font-size: 1.3em;
+            font-size: 1.1em;
             margin-left: 49%;
             color: #dbd7d7;
             width: 195px;
@@ -600,7 +600,7 @@ const FormComponent = styled.section `
         #forgot-password:active {
             position: absolute;
             top: 53.5%;
-            font-size: 1.3em;
+            font-size: 1.1em;
             margin-left: 49%;
             color: #F47216;
             width: 195px;
@@ -704,7 +704,7 @@ const FormComponent = styled.section `
     // 1476-708
     @media(min-width: 1400px) {
 
-        height: 94vh;
+        height: 88vh;
 
         .mobile {
             display: none;
@@ -718,8 +718,8 @@ const FormComponent = styled.section `
         background-image: url("/images/1400px-login.svg");
 
         .form {
-            margin-left: 31.5%;
-            margin-top: 3.8%;
+            margin-left: 32%;
+            margin-top: 2.5%;
         }
 
         .page2 {
@@ -728,6 +728,10 @@ const FormComponent = styled.section `
 
         .fox {
             margin-left: 23.2%;
+        }
+
+        .fox {
+            margin-left: 24%;
         }
     }
 

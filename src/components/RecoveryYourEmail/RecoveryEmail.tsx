@@ -241,29 +241,18 @@ const RecoveryEmailComponent = styled.section`
 
         background-image: url("/images/1400px-recuperar-senha.svg");
 
-        .container-center {
-            margin-left: 20.5%;
-            padding-top: 10%;
-        }
-
-        form {
-            margin-left: 36%;
-            margin-top: 6.6%;
-            height: 300px;
-            width: 380px;
+        .form {
+            margin-left: 38.8%;
+            margin-top: 6.5%;
         }
 
         h3 {
-            font-size: 1.4em;
+            font-size: 1.3em;
+            margin-left: 14.3%;
         }
 
         .input-email {
-            margin-left: -18.5%;
-            margin-top: 8.5%;
-        }
-
-        #phoneOrCPF {
-            width: 270px;
+            margin-left: -28%;
         }
 
         #phoneOrCPF::-webkit-input-placeholder { /* Chrome/Opera/Safari */
@@ -280,7 +269,7 @@ const RecoveryEmailComponent = styled.section`
                 background: #93B413;
                 font-size: 1.6em;
                 color: #ffffff;
-                margin: 40px;
+                margin-top: -5%;
                 cursor: pointer;
                 margin-top: -2%;
             }
@@ -293,7 +282,7 @@ const RecoveryEmailComponent = styled.section`
                 background-color: #9fc214;
                 font-size: 1.6em;
                 color: #ffffff;
-                margin: 40px;
+                margin-top: -5%;
                 cursor: pointer;
                 margin-top: -2%;
             }
@@ -306,17 +295,17 @@ const RecoveryEmailComponent = styled.section`
                 background-color: #86a40f;
                 font-size: 1.6em;
                 color: #ffffff;
-                margin: 40px;
+                margin-top: -5%;
                 cursor: pointer;
                 margin-top: -2%;
             }
         }
 
         .fox2 {
-            width: 100px;
-            height: 100px;
-            margin-left: 22%;
-            margin-top: 5%;
+            margin-left: 23%;
+            margin-top: 3.5%;
+            width: 90px;
+            height: 90px;
         }
     }
  
@@ -389,7 +378,7 @@ const RecoveryEmail = function (){
             </nav>
 
             <nav className='tablet-desktops'>
-                    <form>
+                    <form className='form'>
                         <h3>Recupere Seu E-mail:</h3>
                         <div className='input-email'>
                             <Input type="string" name="PhoneOrCPF" id="phoneOrCPF" placeholder='Digite Seu Telefone ou CPF'/>

@@ -347,48 +347,50 @@ const PageComponent = styled.section `
         background-image: url("/images/1400px-recuperar-senha.svg");
 
         form {
-            margin-left: 32%;
+            margin-left: 36%;
+            margin-top: 7%;
         }
 
         .fox {
             position: absolute;
-            left: 50px;
+            left: 1px;
             top: 620px;
         }
 
         h1 {
             margin-left: 16%;
+            margin-top: 1%;
         }
 
         
         .enviar {
-            margin-top: 4%;
+            margin-top: -1%;
             margin-left: 31.8%;
-            width: 200px;
-            height: 70px;
-            font-size: 2.2em;
+            width: 150px;
+            height: 50px;
+            font-size: 2em;
             background-color: #93B413;
             border: none;
-            border-radius: 20px;
+            border-radius: 15px;
             cursor: pointer;
         }
 
         .enviar:hover {
-            margin-top: 4%;
+            margin-top: -1%;
             margin-left: 31.8%;
-            width: 200px;
-            height: 70px;
-            font-size: 2.2em;
+            width: 150px;
+            height: 50px;
+            font-size: 2em;
             background-color: #9fc214;
             border: none;
         }
 
         .enviar:active {
-            margin-top: 4%;
+            margin-top: -1%;
             margin-left: 31.8%;
-            width: 200px;
-            height: 70px;
-            font-size: 2.2em;
+            width: 150px;
+            height: 50px;
+            font-size: 2em;
             background-color: #86a40f;
             border: none;
         }
