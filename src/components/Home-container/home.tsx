@@ -262,11 +262,11 @@ height: 100.5vh;
         }
 
         p{
-            margin-left: 26%;
+            margin-left: 23.8%;
         }
 
         .fox {
-            margin-top: -0.5%;
+            margin-top: -1.6%;
         }
 
         .start {

@@ -322,11 +322,11 @@ const HeadComponent = styled.head`
         }
 
         .home-button{
-            margin-left: 75%;
+            margin-left: 55%;
         }
 
         .sobre-nos-button{
-            margin-left: 35%;
+            margin-left: -5%;
         }
     
     }

@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 // Developed by Gabriel
-=======
-// Developed by Gabriel Marques
->>>>>>> 44d15eb027fe80023e9fce4574d0256db45427d4
 
 'use client'
 import styled from '@emotion/styled';
@@ -705,9 +701,10 @@ const FormComponent = styled.section `
         }
     }
 
+    // 1476-708
     @media(min-width: 1400px) {
 
-        height: 134vh;
+        height: 94vh;
 
         .mobile {
             display: none;
@@ -721,11 +718,16 @@ const FormComponent = styled.section `
         background-image: url("/images/1400px-login.svg");
 
         .form {
-            margin-left: 26%;
+            margin-left: 31.5%;
+            margin-top: 3.8%;
         }
 
         .page2 {
-            margin-left: 25.5%;
+            margin-left: 20.5%;
+        }
+
+        .fox {
+            margin-left: 23.2%;
         }
     }
 
