@@ -306,10 +306,20 @@ p {
 
 @media(min-width: 1400px) {
 
+    .mobile {
+        display: none;
+    }
+
+    .tablet-desktops {
+        display: block;
+        justify-content: space-between;
+    }
+
     background-image: url("/images/1400px-recuperar-email.svg");    
 
     form {
         margin-left: 37%;
+        margin-top: -0.8%;
     }
 
     h1 {
@@ -342,7 +352,7 @@ p {
     form {
         width: 390px;
         height: 390px;
-        margin-top: -1.7%;
+        margin-top: -1.5%;
         margin-left: 37%;
     }
 

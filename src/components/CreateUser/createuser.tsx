@@ -85,16 +85,6 @@ const CreateUserComponent = styled.section `
         margin-left: 9%;
     }
 
-    .span1 {
-        color: #F47216;
-        margin-left: -32%;
-    }
-
-    .span2 {
-        color: #F47216;
-        margin-left: 0%;
-    }
-
     #name::-webkit-input-placeholder { /* Chrome/Opera/Safari */
         font-size: 1.1em;
     }
@@ -200,38 +190,16 @@ const CreateUserComponent = styled.section `
         margin-left: -77%;
     }
 
-    .span3 {
-        position: absolute;
-        color: #F47216;
-        margin-left: -10%;
-        top: 900px;
-    }
-
     #cpf::-webkit-input-placeholder {
         font-size: 1.1em;
-    }
-
-    .span4 {
-        color: #F47216;
-        margin-left: -70%;
     }
 
     #email::-webkit-input-placeholder {
         font-size: 1.1em;
     }
 
-    .span5 {
-        color: #F47216;
-        margin-left: -65%;
-    }
-
     #country::-webkit-input-placeholder {
         font-size: 1.1em;
-    }
-
-    .span6 {
-        color: #F47216;
-        margin-left: -68%;
     }
 
     .photo {
@@ -287,6 +255,16 @@ const CreateUserComponent = styled.section `
         height: 50px;
         font-size: 1.5em;
         border-radius: 19px;
+    }
+
+    span {
+        color: #ff7818;
+        margin-left: -5%;
+    }
+
+    .span2 {
+        color: #F47216;
+        margin-left: 0%;
     }
 
     // Tablet
@@ -390,12 +368,6 @@ const CreateUserComponent = styled.section `
         }
 
         #name::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-            font-size: 1.3em;
-        }
-
-        .span1 {
-            color: #F47216;
-            margin-left: -50%;
             font-size: 1.3em;
         }
 
@@ -544,14 +516,6 @@ const CreateUserComponent = styled.section `
             font-size: 1.3em;
         }
 
-        .span3 {
-            color: #F47216;
-            margin-left: 39%;
-            position: absolute;
-            top: 800px;
-            font-size: 1.3em;
-        }
-
         .small {
             margin-left: 11%;
             position: absolute;
@@ -559,7 +523,7 @@ const CreateUserComponent = styled.section `
         }
 
         .cpf {
-            margin-top: -1.8%;
+            margin-top: -5.8%;
             margin-left: -3%;
         }
 
@@ -569,14 +533,6 @@ const CreateUserComponent = styled.section `
 
         #cpf::-webkit-input-placeholder { /* Chrome/Opera/Safari */
             font-size: 1.3em;
-        }
-
-        .span4 {
-            color: #F47216;
-            margin-left: -59%;
-            position: absolute;
-            font-size: 1.3em;
-            margin-top: 2.5%;
         }
 
         .email {
@@ -592,14 +548,6 @@ const CreateUserComponent = styled.section `
             font-size: 1.3em;
         }
 
-        .span5 {
-            color: #F47216;
-            margin-left: -57%;
-            position: absolute;
-            font-size: 1.3em;
-            margin-top: 2.5%;
-        }
-
         .country {
             margin-top: -1.8%;
             margin-left: -3%;
@@ -611,14 +559,6 @@ const CreateUserComponent = styled.section `
 
         #country::-webkit-input-placeholder { /* Chrome/Opera/Safari */
             font-size: 1.3em;
-        }
-
-        .span6 {
-            color: #F47216;
-            margin-left: -59%;
-            position: absolute;
-            font-size: 1.3em;
-            margin-top: 2.5%;
         }
 
         .profile-photo2 {
@@ -671,6 +611,16 @@ const CreateUserComponent = styled.section `
             border-radius: 15px;
             font-size: 1.5em;
             background-color: #86a40f;
+        }
+
+        span {
+            color: #ff7818;
+            margin-left: 0%;
+        }
+
+        .span1 {
+            color: #ff7818;
+            margin-left: 20%;
         }
     }
 
@@ -1795,7 +1745,7 @@ const CreateUserComponent = styled.section `
 
         .span5 {
             color: #F47216;
-            margin-left: -48.3%;
+            margin-left: -47.5%;
             position: absolute;
             font-size: 0.8em;
             margin-top: 2.3%;
@@ -1821,7 +1771,7 @@ const CreateUserComponent = styled.section `
             margin-left: -49.3%;
             position: absolute;
             font-size: 0.8em;
-            margin-top: 2.3%;
+            margin-top: 2.7%;
         }
 
         .profile-photo2 {
@@ -1869,6 +1819,7 @@ const CreateUserComponent = styled.section `
             background-color: #93B413;
             margin-left: 41%;
             cursor: pointer;
+            margin-top: 3%;
         }
 
         .save:hover {
@@ -1915,22 +1866,10 @@ const CreateUserPg = function() {
                         </div>
                     </div>
                 </div>
-            {/* <header>
-                <Image className='search' src="/images/search.png" width={100} height={104}  alt="search"/>
-                    <div className='box-1'>
-                        <p className='amount-documents'>0</p>
-                        <p className='documents'>documentos</p>
-                    </div>
-                    <div className='box-2'>
-                        <p className='amount-users'>0</p>
-                        <p className='users'>usuários</p>
-                    </div>
-                <Image className='profile-photo' src="/images/profile-photo2.png" width={100} height={104}  alt="profile-photo"/>
-                </header> */}
                 <h1>Criar Usuário</h1>
                 <form>
                     <div className='name'>
-                        <Input type="string" name="name" id="name" placeholder='Nome Completo'/><span className='span1'>*</span>
+                        <Input type="string" name="name" id="name" placeholder='Nome Completo'/><span>*</span>
                     </div>
                     <p className='gender-txt'>Gênero <span className='span2'>*</span></p>
                     <div className='gender'>
@@ -1968,16 +1907,16 @@ const CreateUserPg = function() {
                     </div>
                     <div className='date'>
                         <Input type='date' name='birthday' id='birthday' placeholder='Data de nascimento'/>
-                        <small>Digite a data de aniversário</small><span className='span3'>*</span>
+                        <small>Digite a data de aniversário</small><span>*</span>
                     </div>
                     <div className='cpf'>
-                        <Input type="number" name="cpf" id="cpf" placeholder='CPF'/><span className='span4'>*</span>
+                        <Input type="number" name="cpf" id="cpf" placeholder='CPF'/><span>*</span>
                     </div>
                     <div className='email'>
-                        <Input type="email" name="email" id="email" placeholder='E-mail'/><span className='span5'>*</span>
+                        <Input type="email" name="email" id="email" placeholder='E-mail'/><span>*</span>
                     </div>
                     <div className='country'>
-                        <Input type="string" name="country" id="country" placeholder='País'/><span className='span6'>*</span>
+                        <Input type="string" name="country" id="country" placeholder='País'/><span>*</span>
                     </div>
                     <p className='profile-photo2'>Foto de Perfil</p>
                     <div className='choose-a-image'>
@@ -2015,23 +1954,10 @@ const CreateUserPg = function() {
                         <img src="/images/fox-mobile.png" alt="" width='50px' height='50px'/>
                     </div>
                 </div>
-                    {/* <header>
-                 <Image className='search' src="/images/search.png" width={100} height={104}  alt="search"/>
-                    <div className='box-1'>
-                        <p className='amount-documents'>0</p>
-                        <p className='documents'>documentos</p>
-                    </div>
-                    <div className='box-2'>
-                        <p className='amount-users'>0</p>
-                        <p className='users'>usuários</p>
-                    </div>
-                    <Image className='profile-photo' src="/images/profile-photo2.png" width={100} height={104}  alt="profile-photo"/>
-                    <p id='your-name'>Seu Nome</p>
-                </header> */}
                 <form>
                     <h1>Criar Usuário</h1>
                     <div className='name'>
-                        <Input type="string" name="name" id="name" placeholder='Nome Completo'/><span className='span1'>*</span>
+                        <Input type="string" name="name" id="name" placeholder='Nome Completo'/><span>*</span>
                     </div>
                     <p className='gender-txt'>Gênero <span className='span2'>*</span></p>
                     <div className='gender'>
@@ -2069,16 +1995,16 @@ const CreateUserPg = function() {
                     </div>
                     <div className='date'>
                         <Input type='date' name='birthday' id='birthday' placeholder='Data de nascimento'/><br/>
-                        <small className='small'>Digite a data de aniversário</small><span className='span3'>*</span>
+                        <small className='small'>Digite a data de aniversário</small><span>*</span>
                     </div>
                     <div className='cpf'>
-                        <Input type="number" name="cpf" id="cpf" placeholder='CPF'/><span className='span4'>*</span>
+                        <Input type="number" name="cpf" id="cpf" placeholder='CPF'/><span>*</span>
                     </div>
                     <div className='email'>
-                        <Input type="email" name="email" id="email" placeholder='E-mail'/><span className='span5'>*</span>
+                        <Input type="email" name="email" id="email" placeholder='E-mail'/><span>*</span>
                     </div>
                     <div className='country'>
-                        <Input type="string" name="country" id="country" placeholder='País'/><span className='span6'>*</span>
+                        <Input type="string" name="country" id="country" placeholder='País'/><span>*</span>
                     </div>
                     <p className='profile-photo2'>Foto de Perfil</p>
                     <div className='choose-a-image'>

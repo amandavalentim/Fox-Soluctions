@@ -113,6 +113,8 @@ const HeadComponent = styled.head`
     }
     .menu li {
         width: 250px;
+        color: white;
+        font-family: 'Poppins-Medium';
     }
     .menu.open a {
         color: #FFF;
@@ -222,6 +224,10 @@ const HeadComponent = styled.head`
         font-size: 19px;
     }
 
+    ul {
+        list-style: none;
+    }
+
     // Tablet
     @media (min-width: 768px) {
 
@@ -256,6 +262,7 @@ const HeadComponent = styled.head`
 
         .home-button {
             font-size: 19px;
+            margin-left: 8%;
         }
 
         .home-button:focus {
@@ -272,6 +279,16 @@ const HeadComponent = styled.head`
             font-size: 19px;
             color: #F47216;
             background: none;
+        }
+
+        li {
+            width: 100px;
+            color: white;
+            font-family: 'Poppins-Medium';
+        }
+
+        ul {
+            display: flex;
         }
     }
 
@@ -317,16 +334,16 @@ const HeadComponent = styled.head`
             display: none;
         } 
 
+        .home-button {
+            margin-left: 70%;
+        }
+
+        .sobre-nos-button {
+            margin-left: 35%;
+        }
+
         li {
-            width: 200px;
-        }
-
-        .home-button{
-            margin-left: 50%;
-        }
-
-        .sobre-nos-button{
-            margin-left: 5%;
+            width: 150px;
         }
     
     }
@@ -343,18 +360,20 @@ const HeadComponent = styled.head`
         .show-on-mobile {
             display: none;
         } 
-    }
-`;
 
-const Ul = styled.ul`
-    display: flex;
-    list-style: none; 
-    li {
-        width: 100px;
-        color: white;
-        font-family: 'Poppins-Medium';
+        .home-button{
+            margin-left: 15%;
+        }
+
+        .sobre-nos-button{
+            margin-left: -5%;
+        }
+
+        li {
+            width: 100px;
+        }
     }
-`;  
+`; 
 
 const Open = ()=>{
     document.querySelector('.menu')?.classList.add('open');
@@ -384,7 +403,7 @@ const Head = function() {
                                     <FaBars className='faBars' onClick={Open}/>
                                 </button>
                                 <div className='backdrop' onClick={Close}></div> 
-                                    <Ul>
+                                    <ul>
                                         <li>
                                             <div className='conteudo'>
                                                 <button className='button-close'>
@@ -402,13 +421,13 @@ const Head = function() {
                                                 </li>
                                             </div>
                                         </li>
-                                    </Ul>
+                                    </ul>
                             </nav>
                         </nav> 
 
                   <nav className='hide-on-mobile'>
                     {/* Desktops header content */}
-                          <Ul>
+                          <ul className='li'>
                             <li>
                                 <Link href={'/HomePage'} className='home-button'>
                                 Home
@@ -419,7 +438,7 @@ const Head = function() {
                                     Sobre Nós
                                 </Link>
                             </li>
-                          </Ul>
+                          </ul>
                   </nav>
                   
       </HeadComponent>

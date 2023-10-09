@@ -1059,9 +1059,8 @@ const FormComponent2 = styled.section `
         background-image: url("/images/1600px-create-user.svg");
 
         form {
-            position: relative;
-            left: 350px;
-            top: 45px;
+            margin-left: 0%;
+            margin-top: 1%;
             border-radius: 19px;
             background: linear-gradient(180deg, #07B3FD 0%, #0a59c0 100%);
             width: 890px;
@@ -1260,7 +1259,7 @@ const FormComponent2 = styled.section `
 
         .fox {
             position: absolute;
-            left: 1240px;
+            left: 1235px;
             top: 850px;
         }
     }

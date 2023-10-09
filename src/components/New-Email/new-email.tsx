@@ -357,6 +357,7 @@ h1 {
 
     form {
         margin-left: 38%;
+        margin-top: 0%;
     }
 
     .fox2 {
@@ -365,28 +366,28 @@ h1 {
 
     #confirm {
         position: absolute;
-        top: 381px;
+        top: 385px;
         margin-left: -18%;
         width: 283px;
     }
 
     .confirmar {
         position: absolute;
-        top: 530px;
+        top: 545px;
         margin-left: -14%;
         cursor: pointer;
     }
 
     .confirmar:hover {
         position: absolute;
-        top: 530px;
+        top: 545px;
         margin-left: -14%;
         cursor: pointer;
     }
 
     .confirmar:active {
         position: absolute;
-        top: 530px;
+        top: 545px;
         margin-left: -14%;
         cursor: pointer;
     }

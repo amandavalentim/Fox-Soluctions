@@ -518,7 +518,7 @@ const FormComponent = styled.section `
             width: 527px;
             height: 500px;
             border-color: white;
-            margin-left: 29.3%;
+            margin-left: 30%;
             margin-top: 0.5%;
         }
 
@@ -583,7 +583,7 @@ const FormComponent = styled.section `
         #forgot-password {
             position: absolute;
             top: 53.5%;
-            font-size: 1em;
+            font-size: 1.2em;
             margin-left: 50%;
             width: 170px;
         }
@@ -591,7 +591,7 @@ const FormComponent = styled.section `
         #forgot-password:hover {
             position: absolute;
             top: 53.5%;
-            font-size: 1.1em;
+            font-size: 1.3em;
             margin-left: 49%;
             color: #dbd7d7;
             width: 195px;
@@ -600,7 +600,7 @@ const FormComponent = styled.section `
         #forgot-password:active {
             position: absolute;
             top: 53.5%;
-            font-size: 1.1em;
+            font-size: 1.3em;
             margin-left: 49%;
             color: #F47216;
             width: 195px;
@@ -696,7 +696,7 @@ const FormComponent = styled.section `
         .fox {
             width: 120px;
             height: 190px;
-            margin-left: 20.5%;
+            margin-left: 21.3%;
             margin-top: 22%;
         }
     }
@@ -722,12 +722,34 @@ const FormComponent = styled.section `
             margin-top: 2.5%;
         }
 
-        .page2 {
-            margin-left: 20.5%;
+        #forgot-password {
+            position: absolute;
+            top: 53.5%;
+            font-size: 1.2em;
+            margin-left: 50%;
+            width: 170px;
         }
 
-        .fox {
-            margin-left: 23.2%;
+        #forgot-password:hover {
+            position: absolute;
+            top: 53.5%;
+            font-size: 1.3em;
+            margin-left: 49%;
+            color: #dbd7d7;
+            width: 195px;
+        }
+
+        #forgot-password:active {
+            position: absolute;
+            top: 53.5%;
+            font-size: 1.3em;
+            margin-left: 49%;
+            color: #F47216;
+            width: 195px;
+        }
+
+        .page2 {
+            margin-left: 20.5%;
         }
 
         .fox {
@@ -758,6 +780,7 @@ const FormComponent = styled.section `
             width: 620px;
             height: 605px;
             border-color: white;
+            margin-top: 0.5%;
         }
 
         h1 {
