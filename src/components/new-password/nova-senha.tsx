@@ -8,7 +8,7 @@ import Input from '../Login/Input/Input';
 const Formcomponent4 = styled.section `
 
     //Mobile
-    height: 98vh;
+    height: 95vh;
 
     background: linear-gradient(180deg, #04a4e8 0%, #0A53B5 100%);
 
@@ -37,12 +37,12 @@ const Formcomponent4 = styled.section `
         color: white;
         padding-top: 10%;
         font-size: 1.3em;
-        margin-left: 9%;
+        margin-left: 9.7%;
     }
 
     #password {
-        margin-top: 20%;
-        margin-left: 14%;
+        margin-top: 18%;
+        margin-left: 15%;
     }
 
     #password::-webkit-input-placeholder { /* Chrome/Opera/Safari */
@@ -51,7 +51,7 @@ const Formcomponent4 = styled.section `
 
     #confirm-password {
         margin-top: 13%;
-        margin-left: 14%;
+        margin-left: 15%;
     }
 
     #confirm-password::-webkit-input-placeholder { /* Chrome/Opera/Safari */
@@ -59,8 +59,8 @@ const Formcomponent4 = styled.section `
     }
 
     .confirmar {
-        margin-top: 12%;
-        margin-left: 23%;
+        margin-top: 10%;
+        margin-left: 23.3%;
         width: 170px;
         height: 50px;
         font-size: 1.6em;
@@ -207,11 +207,11 @@ const Formcomponent4 = styled.section `
 
             h1 {
                 font-size: 1.3em;
-                margin-left: 11%;
+                margin-left: 11.3%;
             }
 
             #password {
-                margin-top: 15%;
+                margin-top: 12%;
                 margin-left: 15%;
                 width: 232px;
             }
@@ -235,7 +235,7 @@ const Formcomponent4 = styled.section `
                 height: 50px;
                 font-size: 1.6em;
                 margin-top: 2%;
-                margin-left: 24.8%;
+                margin-left: 25%;
                 background-color: #93B413;
                 border: none;
                 border-radius: 10px;
@@ -247,7 +247,7 @@ const Formcomponent4 = styled.section `
                 height: 50px;
                 font-size: 1.6em;
                 margin-top: 2%;
-                margin-left: 24.8%;
+                margin-left: 25%;
                 background-color: #9fc214;
                 border: none;
                 border-radius: 10px;
@@ -259,7 +259,7 @@ const Formcomponent4 = styled.section `
                 height: 50px;
                 font-size: 1.6em;
                 margin-top: 2%;
-                margin-left: 24.8%;
+                margin-left: 25%;
                 background-color: #86a40f;
                 border: none;
                 border-radius: 10px;
@@ -461,7 +461,7 @@ const Formcomponent4 = styled.section `
                 height: 60px;
                 font-size: 2em;
                 position: absolute;
-                margin-left: 5.8%;
+                margin-left: 6%;
                 top: 550px;
                 background-color: #93B413;
                 border: none;
@@ -475,7 +475,7 @@ const Formcomponent4 = styled.section `
                 height: 60px;
                 font-size: 2em;
                 position: absolute;
-                margin-left: 5.8%;
+                margin-left: 6%;
                 top: 550px;
                 background-color: #9fc214;
                 border: none;
@@ -489,7 +489,7 @@ const Formcomponent4 = styled.section `
                 height: 60px;
                 font-size: 2em;
                 position: absolute;
-                margin-left: 5.8%;
+                margin-left: 6%;
                 top: 550px;
                 background-color: #86a40f;
                 border: none;

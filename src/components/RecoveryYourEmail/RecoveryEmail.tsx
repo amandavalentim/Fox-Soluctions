@@ -78,7 +78,7 @@ const RecoveryEmailComponent = styled.section`
             width: 300px;
             border-radius: 19px;
             background: linear-gradient(180deg, #07B3FD 0%, #0a59c0 100%);
-            margin-top: 5%;
+            margin-top: 5.5%;
             margin-left: 29%;
         }
 
@@ -93,12 +93,12 @@ const RecoveryEmailComponent = styled.section`
 
         h3 {
             padding-top: 10%;
-            margin-left: 15.5%;
+            margin-left: 14.5%;
         }
 
         .input-email {
-            margin-left: -15%;
-            margin-top: 5%;
+            margin-left: -14.5%;
+            margin-top: 3.5%;
         }
 
         #phoneOrCPF {
@@ -155,7 +155,7 @@ const RecoveryEmailComponent = styled.section`
         height: 65vh;
 
         form {
-            margin-left: 34%;
+            margin-left: 34.2%;
             height: 250px;
         }
 
@@ -165,7 +165,7 @@ const RecoveryEmailComponent = styled.section`
 
         .input-email {
             margin-left: -19%;
-            margin-top: 5%;
+            margin-top: 3%;
         }
 
         .btn-confirm{
@@ -210,7 +210,7 @@ const RecoveryEmailComponent = styled.section`
 
         .fox2 {
             margin-top: 1%;
-            margin-left: 12%;
+            margin-left: 12.5%;
         }
     }
 
@@ -273,7 +273,7 @@ const RecoveryEmailComponent = styled.section`
         }
 
         .fox2 {
-            margin-top: 0.5%;
+            margin-top: 1.1%;
             margin-left: 20.5%;
         }
     }
@@ -315,7 +315,6 @@ const RecoveryEmailComponent = styled.section`
                 color: #ffffff;
                 margin-top: -5%;
                 cursor: pointer;
-                margin-top: -10%;
             }
 
             .confirm:hover{
@@ -328,7 +327,6 @@ const RecoveryEmailComponent = styled.section`
                 color: #ffffff;
                 margin-top: -5%;
                 cursor: pointer;
-                margin-top: -2%;
             }
 
             .confirm:active{
@@ -341,7 +339,6 @@ const RecoveryEmailComponent = styled.section`
                 color: #ffffff;
                 margin-top: -5%;
                 cursor: pointer;
-                margin-top: -2%;
             }
         }
 

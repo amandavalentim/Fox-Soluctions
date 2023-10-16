@@ -107,13 +107,13 @@ height: 100.5vh;
 
         h1 {
             font-size: 1.5em;
-            margin-left: 29.5%;
+            margin-left: 31%;
             margin-top: 3%;
         }
 
         p {
             font-size: 1.3em;
-            margin-left: 12%;
+            margin-left: 13.8%;
             margin-top: 3%;
         }
 
@@ -131,7 +131,7 @@ height: 100.5vh;
         }
 
         .fox {
-            margin-top: -7.2%;
+            margin-top: -7.6%;
             left: 380px;
             width: 135px;
         }
@@ -140,7 +140,7 @@ height: 100.5vh;
     // Small Screens
     @media(min-width: 992px) {
 
-        height: 102.6vh;
+        height: 88vh;
 
         .mobile{
             display: none;
@@ -155,12 +155,12 @@ height: 100.5vh;
 
         h1 {
             font-size: 1.9em;
-            margin-left: 31.5%;
+            margin-left: 34%;
         }
 
         p {
             font-size: 1.5em;
-            margin-left: 17.3%;
+            margin-left: 19%;
             margin-top: 5%;
         }
 
@@ -168,8 +168,8 @@ height: 100.5vh;
             width: 130px;
             height: 90px;
             font-size: 1.9em;
-            top: 590px;
-            left: 430px;
+            margin-top: 2%;
+            margin-left: 10.5%;
             cursor: pointer;
         }
 
@@ -177,8 +177,8 @@ height: 100.5vh;
             width: 130px;
             height: 90px;
             font-size: 1.9em;
-            top: 590px;
-            left: 430px;
+            margin-top: 2%;
+            margin-left: 10.5%;
             background-color: #9fc214;
             cursor: pointer;
         }
@@ -187,23 +187,23 @@ height: 100.5vh;
             width: 130px;
             height: 90px;
             font-size: 1.9em;
-            top: 590px;
-            left: 430px;
+            margin-top: 2%;
+            margin-left: 10.5%;
             background-color: #86a40f;
             cursor: pointer;
         }
 
         .fox {
             width: 150px;
-            top: 671px;
-            left: 540px;
+            top: 672.5px;
+            left: 510px;
         }
     }
 
     // Medium Screens
     @media(min-width: 1200px) {
 
-        height: 96vh;
+        height: 90.5vh;
 
         .mobile{
             display: none;
@@ -218,37 +218,37 @@ height: 100.5vh;
 
         h1 {
             font-size: 2em;
-            margin-left: 36.5%;
+            margin-left: 37%;
         }
 
         p {
             font-size: 1.8em;
-            margin-left: 24%;
+            margin-left: 22.1%;
         }
 
         .start {
-            margin-top: -1.8%;
-            margin-left: 9%;
+            margin-top: 2.5%;
+            margin-left: 18.5%;
             cursor: pointer;
         }
 
         .start:hover {
-            margin-top: -1.8%;
-            margin-left: 9%;
+            margin-top: 2.5%;
+            margin-left: 18.5%;
             background-color: #9fc214;
             cursor: pointer;
         }
 
         .start:active {
-            margin-top: -1.8%;
-            margin-left: 9%;
+            margin-top: 2.5%;
+            margin-left: 18.5%;
             background-color: #86a40f;
             cursor: pointer;
         }
 
         .fox {
-            margin-left: 9.5%;
-            margin-top: -2%;
+            margin-left: 10.5%;
+            margin-top: -4.55%;
             width: 150px;
         }
     }
@@ -258,27 +258,31 @@ height: 100.5vh;
         height: 90.2vh;
 
         h1 {
-            margin-left: 38.5%;
+            margin-left: 39%;
         }
 
         p{
-            margin-left: 25.5%;
+            margin-left: 24.7%;
         }
 
         .fox {
-            margin-top: -1.6%;
+            margin-top: -1%;
+            margin-left: 13%;
         }
 
         .start {
-            margin-top: -1.3%;
+            margin-top: 4%;
+            margin-left: 20%;
         }
 
         .start:hover{
-            margin-top: -1.3%;
+            margin-top: 4%;
+            margin-left: 20%;
         }
 
         .start:active{
-            margin-top: -1.3%;
+            margin-top: 4%;
+            margin-left: 20%;
         }
 
     }
@@ -301,20 +305,22 @@ height: 100.5vh;
 
         h1 {
             font-size: 2.3em;
-            margin-left: 36.3%;
+            margin-left: 37%;
+            margin-top: 5%;
         }
 
         p {
             font-size: 2em;
-            margin-left: 23.5%;
+            margin-left: 24%;
+            margin-top: 7%;
         }
 
         .start {
             width: 150px;
             height: 120px;
             font-size: 2.3em;
-            margin-left: 12%;
-            margin-top: 1%;
+            margin-left: 20%;
+            margin-top: 8%;
             cursor: pointer;
         }
 
@@ -322,8 +328,8 @@ height: 100.5vh;
             width: 150px;
             height: 120px;
             font-size: 2.3em;
-            margin-left: 12%;
-            margin-top: 1%;
+            margin-left: 20%;
+            margin-top: 8%;
             background-color: #9fc214;
             cursor: pointer;
         }
@@ -332,16 +338,16 @@ height: 100.5vh;
             width: 150px;
             height: 120px;
             font-size: 2.3em;
-            margin-left: 12%;
-            margin-top: 1%;
+            margin-left: 20%;
+            margin-top: 8%;
             background-color: #86a40f;
             cursor: pointer;
         }
 
         .fox {
             width: 180px;
-            margin-left: 13%;
-            margin-top: 3%;
+            margin-left: 14.5%;
+            margin-top: 2.85%;
         }
     }
 

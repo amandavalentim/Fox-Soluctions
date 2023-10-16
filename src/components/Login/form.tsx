@@ -348,12 +348,12 @@ const FormComponent = styled.section `
 
         h1 {
             font-size: 1.6em;
-            margin-left: 42.3%;
+            margin-left: 42%;
             margin-top: 4%;
         }
 
         .email {
-            margin-left: -11%;
+            margin-left: -11.5%;
             margin-top: 2%;
         }
 
@@ -394,7 +394,7 @@ const FormComponent = styled.section `
         }
 
        .senha {
-            margin-left: -11%;
+            margin-left: -11.5%;
             margin-top: 2%;
         }
 
@@ -407,27 +407,31 @@ const FormComponent = styled.section `
        }
 
        #forgot-password {
+            margin-left: 49%;
             position: absolute;
-            font-size: 0.8em;
-            margin-left: 49.5%;
+            margin-top: -5%;
+            font-size: 1em;
             font-family: 'Poppins-Regular';
-            width: 115px;
             color: #C7C7C7;
+            width: 120px;
         }
 
         #forgot-password:hover {
+            margin-left: 48.5%;
             position: absolute;
-            font-size: 1em;
-            margin-left: 49.5%;
+            margin-top: -5%;
+            font-size: 1.1em;
             font-family: 'Poppins-Regular';
             color: #dbd7d7;
             width: 130px;
         }
 
         #forgot-password:active {
+            margin-left: 48.5%;
             position: absolute;
-            font-size: 1em;
-            margin-left: 49.5%;
+            margin-top: -5%;
+            font-size: 1.1em;
+            font-family: 'Poppins-Regular';
             color: #F47216;
             width: 130px;
         }
@@ -435,7 +439,7 @@ const FormComponent = styled.section `
         p {
             font-size: 1em;
             margin-top: 3%;
-            margin-left: 48%;
+            margin-left: 47%;
         }
 
         .google-enter {
@@ -478,14 +482,14 @@ const FormComponent = styled.section `
     }
 
     .logar {
-        margin-left: 36.4%;
-        margin-top: 6%;
+        margin-left: 35%;
+        margin-top: 5.5%;
         cursor: pointer;
     }
 
     .logar:active {
-        margin-left: 36.4%;
-        margin-top: 6%;
+        margin-left: 35%;
+        margin-top: 5.5%;
     }
 
     .fox {
@@ -774,7 +778,7 @@ const FormComponent = styled.section `
         background-image: url("/images/1600px-login.svg");
 
         .form {
-            margin-left: 30%;
+            margin-left: 30.3%;
             border-radius: 19px;
             background: linear-gradient(180deg, #07B3FD 0%, #0a59c0 100%);
             width: 620px;
@@ -931,7 +935,7 @@ const FormComponent = styled.section `
         }
 
         .fox {
-            margin-left: 21.8%;
+            margin-left: 22.1%;
             width: 130px;
         }
     }

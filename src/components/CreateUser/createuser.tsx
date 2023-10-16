@@ -185,9 +185,7 @@ const CreateUserComponent = styled.section `
     }
 
     small {
-        position: absolute;
-        top: 905px;
-        margin-left: -77%;
+        margin-left: 5%;
     }
 
     #cpf::-webkit-input-placeholder {
@@ -239,7 +237,7 @@ const CreateUserComponent = styled.section `
         background-color: #93B413;
         border: none;
         margin-top: 12%;
-        margin-left: 18%;
+        margin-left: 18.5%;
         width: 150px;
         height: 50px;
         font-size: 1.5em;
@@ -250,7 +248,7 @@ const CreateUserComponent = styled.section `
         background-color: #86a40f;
         border: none;
         margin-top: 12%;
-        margin-left: 18%;
+        margin-left: 18.5%;
         width: 150px;
         height: 50px;
         font-size: 1.5em;
@@ -523,7 +521,7 @@ const CreateUserComponent = styled.section `
         }
 
         .cpf {
-            margin-top: -5.8%;
+            margin-top: -2%;
             margin-left: -3%;
         }
 
@@ -707,18 +705,18 @@ const CreateUserComponent = styled.section `
             background: linear-gradient(180deg, #07B3FD 0%, #0b58bc 100%);
             width: 800px;
             height: 1040px;
-            margin-left: 10.6%;
+            margin-left: 11%;
             margin-top: 5%;
         }
 
         h1 {
             font-size: 2.1em;
-            margin-left: 35%;
+            margin-left: 33.5%;
         }
 
         .name {
             margin-top: 3%;
-            margin-left: 2.2%;
+            margin-left: 2%;
             font-size: 1.4em;
         }
 
@@ -876,7 +874,7 @@ const CreateUserComponent = styled.section `
 
         .social-name {
             margin-top: 0%;
-            margin-left: 2.2%;
+            margin-left: 2%;
             font-size: 1.4em;
         }
 
@@ -891,7 +889,7 @@ const CreateUserComponent = styled.section `
 
         .date {
             margin-top: 1%;
-            margin-left: 2.2%;
+            margin-left: 2%;
             font-size: 1.4em;
         }
 
@@ -915,12 +913,12 @@ const CreateUserComponent = styled.section `
         .small {
             font-size: 0.7em;
             margin-left: 9.5%;
-            margin-top: 11%;
+            margin-top: 6%;
         }
 
         .cpf {
             margin-top: -2.2%;
-            margin-left: 2.2%;
+            margin-left: 2%;
             font-size: 1.4em;
         }
 
@@ -943,7 +941,7 @@ const CreateUserComponent = styled.section `
 
         .email {
             margin-top: -2.5%;
-            margin-left: 2.2%;
+            margin-left: 2%;
             font-size: 1.4em;
         }
 
@@ -966,7 +964,7 @@ const CreateUserComponent = styled.section `
 
         .country {
             margin-top: -2.5%;
-            margin-left: 2.2%;
+            margin-left: 2%;
             font-size: 1.4em;
         }
 
@@ -1034,20 +1032,20 @@ const CreateUserComponent = styled.section `
         }
 
         .save:hover {
-            width: 200px;
-            height: 60px;
-            font-size: 2em;
+            width: 150px;
+            height: 50px;
+            font-size: 1.6em;
             background-color: #9fc214;
-            margin-left: 38%;
+            margin-left: 42%;
             cursor: pointer;
         }
 
         .save:active {
-            width: 200px;
-            height: 60px;
-            font-size: 2em;
+            width: 150px;
+            height: 50px;
+            font-size: 1.6em;
             background-color: #86a40f;
-            margin-left: 38%;
+            margin-left: 42%;
             cursor: pointer;
         }
     }
@@ -1081,7 +1079,7 @@ const CreateUserComponent = styled.section `
 
         h1 {
             font-size: 2.4em;
-            margin-left: 33%;
+            margin-left: 33.2%;
         }
 
         .name {
@@ -1279,7 +1277,8 @@ const CreateUserComponent = styled.section `
         .small {
             position: absolute;
             margin-left: 9%;
-            top: 820px;
+            top: 890px;
+            font-size: 0.8em;
         }
 
         .cpf {
@@ -1388,7 +1387,7 @@ const CreateUserComponent = styled.section `
         label {
             position: absolute;
             margin-left: 1.5%;
-            top: 1395px;
+            top: 1410px;
             font-size: 1.5em;
             cursor: pointer;
         }
@@ -1399,8 +1398,7 @@ const CreateUserComponent = styled.section `
             height: 70px;
             font-size: 2.5em;
             background-color: #93B413;
-            margin-left: 39%;
-            margin-left: 41%;
+            margin-left: 38.5%;
             cursor: pointer;
         }
 
@@ -1410,8 +1408,7 @@ const CreateUserComponent = styled.section `
             height: 70px;
             font-size: 2.5em;
             background-color: #9fc214;
-            margin-left: 39%;
-            margin-left: 41%;
+            margin-left: 38.5%;
         }
 
         .save:active {
@@ -1420,8 +1417,7 @@ const CreateUserComponent = styled.section `
             height: 70px;
             font-size: 2.5em;
             background-color: #86a40f;
-            margin-left: 39%;
-            margin-left: 41%;
+            margin-left: 38.5%;
         }
     }
 
@@ -1431,11 +1427,12 @@ const CreateUserComponent = styled.section `
 
         form {
             margin-left: 21%;
+            margin-top: 4.5%;
             height: 1180px;
         }
 
         h1 {
-            margin-left: 37%;
+            margin-left: 34%;
         }
 
         .span1 {
@@ -1445,12 +1442,12 @@ const CreateUserComponent = styled.section `
         .small {
             position: absolute;
             margin-left: 8.5%;
-            top: 785px;
+            top: 885px;
             font-size: 0.8em;
         }
 
         .date {
-            margin-top: -1%;
+            margin-top: -0.5%;
             margin-left: -2.5%;
             font-size: 1.4em;
         }
@@ -1488,9 +1485,39 @@ const CreateUserComponent = styled.section `
 
         label {
             position: absolute;
-            margin-left: 1.2%;
-            top: 1357px;
+            margin-left: 0.5%;
+            top: 1390px;
             font-size: 1.7em;
+            cursor: pointer;
+        }
+
+        .save {
+            margin-top: 3%;
+            width: 220px;
+            height: 70px;
+            font-size: 2.5em;
+            background-color: #93B413;
+            margin-left: 38.5%;
+            cursor: pointer;
+        }
+
+        .save:hover {
+            margin-top: 3%;
+            width: 220px;
+            height: 70px;
+            font-size: 2.5em;
+            background-color: #9fc214;
+            margin-left: 38.5%;
+            cursor: pointer;
+        }
+
+        .save:active {
+            margin-top: 3%;
+            width: 220px;
+            height: 70px;
+            font-size: 2.5em;
+            background-color: #86a40f;
+            margin-left: 38.5%;
             cursor: pointer;
         }
 
@@ -1692,7 +1719,7 @@ const CreateUserComponent = styled.section `
 
         .small {
             position: absolute;
-            top: 820px;
+            top: 890px;
             font-size: 0.5em;
             margin-left: 10%;
         }
@@ -1806,7 +1833,7 @@ const CreateUserComponent = styled.section `
 
         label {
             position: absolute;
-            top: 1475px;
+            top: 1465px;
             margin-left: 1.4%;
             cursor: pointer;
             font-size: 1.6em;
@@ -1994,8 +2021,9 @@ const CreateUserPg = function() {
                         <Input type="string" name="social-name" id="social-name" placeholder='Nome Social'/>
                     </div>
                     <div className='date'>
-                        <Input type='date' name='birthday' id='birthday' placeholder='Data de nascimento'/><br/>
-                        <small className='small'>Digite a data de aniversário</small><span>*</span>
+                        <Input type='date' name='birthday' id='birthday' placeholder='Data de nascimento'/><span>*</span>
+                        <br/>
+                        <small className='small'>Digite a data de aniversário</small>
                     </div>
                     <div className='cpf'>
                         <Input type="number" name="cpf" id="cpf" placeholder='CPF'/><span>*</span>
