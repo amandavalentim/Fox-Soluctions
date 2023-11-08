@@ -117,26 +117,26 @@ const PageComponent = styled.section `
             width: 300px;
             border-radius: 19px;
             background: linear-gradient(180deg, #07B3FD 0%, #0a59c0 100%);
-            margin-top: 5%;
+            margin-top: 6.5%;
             margin-left: 29%;
-       }
+        }
 
-       h1 {
-        padding-top: 10%;
-        margin-left: 10%;
-       }
-       
-       #op {
-        width: 235px;
-        margin-top: 15%;
-       }
+        h1 {
+            padding-top: 5%;
+            margin-left: 8.8%;
+        }
+        
+        #op {
+            width: 235px;
+            margin-top: 10%;
+        }
 
-       #op::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-        font-size: 0.8em;
-    }
+        #op::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+            font-size: 0.8em;
+        }
 
-    .enviar {
-        width: 130px;
+        .enviar {
+            width: 130px;
             height: 40px;
             border-radius: 15px;
             border: none;
@@ -146,20 +146,20 @@ const PageComponent = styled.section `
             margin: 40px;
             margin-top: 5%;
             margin-left: 30%;
-    }
+        }
 
-    .enviar:active {
-        width: 130px;
+        .enviar:active {
+            width: 130px;
             height: 40px;
             border-radius: 15px;
             border: none;
-                background-color: #86a40f;
+            background-color: #86a40f;
             font-size: 1.5em;
             color: #ffffff;
             margin: 40px;
             margin-top: 5%;
             margin-left: 30%;
-    }
+        }
 
         .fox {
             position: absolute;
@@ -206,12 +206,12 @@ const PageComponent = styled.section `
         }
 
         h1 {
-            margin-left: 14%;
+            margin-left: 15%;
         }
 
         #op {
-            margin-left: 14%;
-            margin-top: 15%;
+            margin-left: 15%;
+            margin-top: 13%;
             width: 250px;
         }
 
@@ -358,7 +358,7 @@ const PageComponent = styled.section `
         }
 
         h1 {
-            margin-left: 16%;
+            margin-left: 12%;
             margin-top: 1%;
         }
 
@@ -455,7 +455,7 @@ const PageComponent = styled.section `
             color: #ffffff;
             margin: 40px;
             margin-top: -15%;
-            margin-left: 33%;
+            margin-left: 34%;
             cursor: pointer;
         }
 
@@ -469,7 +469,7 @@ const PageComponent = styled.section `
             color: #ffffff;
             margin: 40px;
             margin-top: -15%;
-            margin-left: 33%;
+            margin-left: 34%;
             cursor: pointer;
         }
 
@@ -483,7 +483,7 @@ const PageComponent = styled.section `
             color: #ffffff;
             margin: 40px;
             margin-top: -15%;
-            margin-left: 33%;
+            margin-left: 34%;
             cursor: pointer;
         }
 

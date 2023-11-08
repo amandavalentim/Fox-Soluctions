@@ -85,16 +85,6 @@ const CreateUserComponent = styled.section `
         margin-left: 9%;
     }
 
-    .span1 {
-        color: #F47216;
-        margin-left: -32%;
-    }
-
-    .span2 {
-        color: #F47216;
-        margin-left: 0%;
-    }
-
     #name::-webkit-input-placeholder { /* Chrome/Opera/Safari */
         font-size: 1.1em;
     }
@@ -195,43 +185,19 @@ const CreateUserComponent = styled.section `
     }
 
     small {
-        position: absolute;
-        top: 905px;
-        margin-left: -77%;
-    }
-
-    .span3 {
-        position: absolute;
-        color: #F47216;
-        margin-left: -10%;
-        top: 900px;
+        margin-left: 5%;
     }
 
     #cpf::-webkit-input-placeholder {
         font-size: 1.1em;
     }
 
-    .span4 {
-        color: #F47216;
-        margin-left: -70%;
-    }
-
     #email::-webkit-input-placeholder {
         font-size: 1.1em;
     }
 
-    .span5 {
-        color: #F47216;
-        margin-left: -65%;
-    }
-
     #country::-webkit-input-placeholder {
         font-size: 1.1em;
-    }
-
-    .span6 {
-        color: #F47216;
-        margin-left: -68%;
     }
 
     .photo {
@@ -271,7 +237,7 @@ const CreateUserComponent = styled.section `
         background-color: #93B413;
         border: none;
         margin-top: 12%;
-        margin-left: 18%;
+        margin-left: 18.5%;
         width: 150px;
         height: 50px;
         font-size: 1.5em;
@@ -282,11 +248,21 @@ const CreateUserComponent = styled.section `
         background-color: #86a40f;
         border: none;
         margin-top: 12%;
-        margin-left: 18%;
+        margin-left: 18.5%;
         width: 150px;
         height: 50px;
         font-size: 1.5em;
         border-radius: 19px;
+    }
+
+    span {
+        color: #ff7818;
+        margin-left: -5%;
+    }
+
+    .span2 {
+        color: #F47216;
+        margin-left: 0%;
     }
 
     // Tablet
@@ -390,12 +366,6 @@ const CreateUserComponent = styled.section `
         }
 
         #name::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-            font-size: 1.3em;
-        }
-
-        .span1 {
-            color: #F47216;
-            margin-left: -50%;
             font-size: 1.3em;
         }
 
@@ -544,14 +514,6 @@ const CreateUserComponent = styled.section `
             font-size: 1.3em;
         }
 
-        .span3 {
-            color: #F47216;
-            margin-left: 39%;
-            position: absolute;
-            top: 800px;
-            font-size: 1.3em;
-        }
-
         .small {
             margin-left: 11%;
             position: absolute;
@@ -559,7 +521,7 @@ const CreateUserComponent = styled.section `
         }
 
         .cpf {
-            margin-top: -1.8%;
+            margin-top: -2%;
             margin-left: -3%;
         }
 
@@ -569,14 +531,6 @@ const CreateUserComponent = styled.section `
 
         #cpf::-webkit-input-placeholder { /* Chrome/Opera/Safari */
             font-size: 1.3em;
-        }
-
-        .span4 {
-            color: #F47216;
-            margin-left: -59%;
-            position: absolute;
-            font-size: 1.3em;
-            margin-top: 2.5%;
         }
 
         .email {
@@ -592,14 +546,6 @@ const CreateUserComponent = styled.section `
             font-size: 1.3em;
         }
 
-        .span5 {
-            color: #F47216;
-            margin-left: -57%;
-            position: absolute;
-            font-size: 1.3em;
-            margin-top: 2.5%;
-        }
-
         .country {
             margin-top: -1.8%;
             margin-left: -3%;
@@ -611,14 +557,6 @@ const CreateUserComponent = styled.section `
 
         #country::-webkit-input-placeholder { /* Chrome/Opera/Safari */
             font-size: 1.3em;
-        }
-
-        .span6 {
-            color: #F47216;
-            margin-left: -59%;
-            position: absolute;
-            font-size: 1.3em;
-            margin-top: 2.5%;
         }
 
         .profile-photo2 {
@@ -671,6 +609,16 @@ const CreateUserComponent = styled.section `
             border-radius: 15px;
             font-size: 1.5em;
             background-color: #86a40f;
+        }
+
+        span {
+            color: #ff7818;
+            margin-left: 0%;
+        }
+
+        .span1 {
+            color: #ff7818;
+            margin-left: 20%;
         }
     }
 
@@ -757,18 +705,18 @@ const CreateUserComponent = styled.section `
             background: linear-gradient(180deg, #07B3FD 0%, #0b58bc 100%);
             width: 800px;
             height: 1040px;
-            margin-left: 10.6%;
+            margin-left: 11%;
             margin-top: 5%;
         }
 
         h1 {
             font-size: 2.1em;
-            margin-left: 35%;
+            margin-left: 33.5%;
         }
 
         .name {
             margin-top: 3%;
-            margin-left: 2.2%;
+            margin-left: 2%;
             font-size: 1.4em;
         }
 
@@ -926,7 +874,7 @@ const CreateUserComponent = styled.section `
 
         .social-name {
             margin-top: 0%;
-            margin-left: 2.2%;
+            margin-left: 2%;
             font-size: 1.4em;
         }
 
@@ -941,7 +889,7 @@ const CreateUserComponent = styled.section `
 
         .date {
             margin-top: 1%;
-            margin-left: 2.2%;
+            margin-left: 2%;
             font-size: 1.4em;
         }
 
@@ -965,12 +913,12 @@ const CreateUserComponent = styled.section `
         .small {
             font-size: 0.7em;
             margin-left: 9.5%;
-            margin-top: 11%;
+            margin-top: 6%;
         }
 
         .cpf {
             margin-top: -2.2%;
-            margin-left: 2.2%;
+            margin-left: 2%;
             font-size: 1.4em;
         }
 
@@ -993,7 +941,7 @@ const CreateUserComponent = styled.section `
 
         .email {
             margin-top: -2.5%;
-            margin-left: 2.2%;
+            margin-left: 2%;
             font-size: 1.4em;
         }
 
@@ -1016,7 +964,7 @@ const CreateUserComponent = styled.section `
 
         .country {
             margin-top: -2.5%;
-            margin-left: 2.2%;
+            margin-left: 2%;
             font-size: 1.4em;
         }
 
@@ -1084,20 +1032,20 @@ const CreateUserComponent = styled.section `
         }
 
         .save:hover {
-            width: 200px;
-            height: 60px;
-            font-size: 2em;
+            width: 150px;
+            height: 50px;
+            font-size: 1.6em;
             background-color: #9fc214;
-            margin-left: 38%;
+            margin-left: 42%;
             cursor: pointer;
         }
 
         .save:active {
-            width: 200px;
-            height: 60px;
-            font-size: 2em;
+            width: 150px;
+            height: 50px;
+            font-size: 1.6em;
             background-color: #86a40f;
-            margin-left: 38%;
+            margin-left: 42%;
             cursor: pointer;
         }
     }
@@ -1131,7 +1079,7 @@ const CreateUserComponent = styled.section `
 
         h1 {
             font-size: 2.4em;
-            margin-left: 33%;
+            margin-left: 33.2%;
         }
 
         .name {
@@ -1329,7 +1277,8 @@ const CreateUserComponent = styled.section `
         .small {
             position: absolute;
             margin-left: 9%;
-            top: 820px;
+            top: 890px;
+            font-size: 0.8em;
         }
 
         .cpf {
@@ -1438,7 +1387,7 @@ const CreateUserComponent = styled.section `
         label {
             position: absolute;
             margin-left: 1.5%;
-            top: 1395px;
+            top: 1410px;
             font-size: 1.5em;
             cursor: pointer;
         }
@@ -1449,8 +1398,7 @@ const CreateUserComponent = styled.section `
             height: 70px;
             font-size: 2.5em;
             background-color: #93B413;
-            margin-left: 39%;
-            margin-left: 41%;
+            margin-left: 38.5%;
             cursor: pointer;
         }
 
@@ -1460,8 +1408,7 @@ const CreateUserComponent = styled.section `
             height: 70px;
             font-size: 2.5em;
             background-color: #9fc214;
-            margin-left: 39%;
-            margin-left: 41%;
+            margin-left: 38.5%;
         }
 
         .save:active {
@@ -1470,8 +1417,7 @@ const CreateUserComponent = styled.section `
             height: 70px;
             font-size: 2.5em;
             background-color: #86a40f;
-            margin-left: 39%;
-            margin-left: 41%;
+            margin-left: 38.5%;
         }
     }
 
@@ -1481,11 +1427,12 @@ const CreateUserComponent = styled.section `
 
         form {
             margin-left: 21%;
+            margin-top: 4.5%;
             height: 1180px;
         }
 
         h1 {
-            margin-left: 37%;
+            margin-left: 34%;
         }
 
         .span1 {
@@ -1495,12 +1442,12 @@ const CreateUserComponent = styled.section `
         .small {
             position: absolute;
             margin-left: 8.5%;
-            top: 785px;
+            top: 885px;
             font-size: 0.8em;
         }
 
         .date {
-            margin-top: -1%;
+            margin-top: -0.5%;
             margin-left: -2.5%;
             font-size: 1.4em;
         }
@@ -1538,9 +1485,39 @@ const CreateUserComponent = styled.section `
 
         label {
             position: absolute;
-            margin-left: 1.2%;
-            top: 1357px;
+            margin-left: 0.5%;
+            top: 1390px;
             font-size: 1.7em;
+            cursor: pointer;
+        }
+
+        .save {
+            margin-top: 3%;
+            width: 220px;
+            height: 70px;
+            font-size: 2.5em;
+            background-color: #93B413;
+            margin-left: 38.5%;
+            cursor: pointer;
+        }
+
+        .save:hover {
+            margin-top: 3%;
+            width: 220px;
+            height: 70px;
+            font-size: 2.5em;
+            background-color: #9fc214;
+            margin-left: 38.5%;
+            cursor: pointer;
+        }
+
+        .save:active {
+            margin-top: 3%;
+            width: 220px;
+            height: 70px;
+            font-size: 2.5em;
+            background-color: #86a40f;
+            margin-left: 38.5%;
             cursor: pointer;
         }
 
@@ -1742,7 +1719,7 @@ const CreateUserComponent = styled.section `
 
         .small {
             position: absolute;
-            top: 820px;
+            top: 890px;
             font-size: 0.5em;
             margin-left: 10%;
         }
@@ -1795,7 +1772,7 @@ const CreateUserComponent = styled.section `
 
         .span5 {
             color: #F47216;
-            margin-left: -48.3%;
+            margin-left: -47.5%;
             position: absolute;
             font-size: 0.8em;
             margin-top: 2.3%;
@@ -1821,7 +1798,7 @@ const CreateUserComponent = styled.section `
             margin-left: -49.3%;
             position: absolute;
             font-size: 0.8em;
-            margin-top: 2.3%;
+            margin-top: 2.7%;
         }
 
         .profile-photo2 {
@@ -1856,7 +1833,7 @@ const CreateUserComponent = styled.section `
 
         label {
             position: absolute;
-            top: 1475px;
+            top: 1465px;
             margin-left: 1.4%;
             cursor: pointer;
             font-size: 1.6em;
@@ -1869,6 +1846,7 @@ const CreateUserComponent = styled.section `
             background-color: #93B413;
             margin-left: 41%;
             cursor: pointer;
+            margin-top: 3%;
         }
 
         .save:hover {
@@ -1915,22 +1893,10 @@ const CreateUserPg = function() {
                         </div>
                     </div>
                 </div>
-            {/* <header>
-                <Image className='search' src="/images/search.png" width={100} height={104}  alt="search"/>
-                    <div className='box-1'>
-                        <p className='amount-documents'>0</p>
-                        <p className='documents'>documentos</p>
-                    </div>
-                    <div className='box-2'>
-                        <p className='amount-users'>0</p>
-                        <p className='users'>usuários</p>
-                    </div>
-                <Image className='profile-photo' src="/images/profile-photo2.png" width={100} height={104}  alt="profile-photo"/>
-                </header> */}
                 <h1>Criar Usuário</h1>
                 <form>
                     <div className='name'>
-                        <Input type="string" name="name" id="name" placeholder='Nome Completo'/><span className='span1'>*</span>
+                        <Input type="string" name="name" id="name" placeholder='Nome Completo'/><span>*</span>
                     </div>
                     <p className='gender-txt'>Gênero <span className='span2'>*</span></p>
                     <div className='gender'>
@@ -1968,16 +1934,16 @@ const CreateUserPg = function() {
                     </div>
                     <div className='date'>
                         <Input type='date' name='birthday' id='birthday' placeholder='Data de nascimento'/>
-                        <small>Digite a data de aniversário</small><span className='span3'>*</span>
+                        <small>Digite a data de aniversário</small><span>*</span>
                     </div>
                     <div className='cpf'>
-                        <Input type="number" name="cpf" id="cpf" placeholder='CPF'/><span className='span4'>*</span>
+                        <Input type="number" name="cpf" id="cpf" placeholder='CPF'/><span>*</span>
                     </div>
                     <div className='email'>
-                        <Input type="email" name="email" id="email" placeholder='E-mail'/><span className='span5'>*</span>
+                        <Input type="email" name="email" id="email" placeholder='E-mail'/><span>*</span>
                     </div>
                     <div className='country'>
-                        <Input type="string" name="country" id="country" placeholder='País'/><span className='span6'>*</span>
+                        <Input type="string" name="country" id="country" placeholder='País'/><span>*</span>
                     </div>
                     <p className='profile-photo2'>Foto de Perfil</p>
                     <div className='choose-a-image'>
@@ -2015,23 +1981,10 @@ const CreateUserPg = function() {
                         <img src="/images/fox-mobile.png" alt="" width='50px' height='50px'/>
                     </div>
                 </div>
-                    {/* <header>
-                 <Image className='search' src="/images/search.png" width={100} height={104}  alt="search"/>
-                    <div className='box-1'>
-                        <p className='amount-documents'>0</p>
-                        <p className='documents'>documentos</p>
-                    </div>
-                    <div className='box-2'>
-                        <p className='amount-users'>0</p>
-                        <p className='users'>usuários</p>
-                    </div>
-                    <Image className='profile-photo' src="/images/profile-photo2.png" width={100} height={104}  alt="profile-photo"/>
-                    <p id='your-name'>Seu Nome</p>
-                </header> */}
                 <form>
                     <h1>Criar Usuário</h1>
                     <div className='name'>
-                        <Input type="string" name="name" id="name" placeholder='Nome Completo'/><span className='span1'>*</span>
+                        <Input type="string" name="name" id="name" placeholder='Nome Completo'/><span>*</span>
                     </div>
                     <p className='gender-txt'>Gênero <span className='span2'>*</span></p>
                     <div className='gender'>
@@ -2068,17 +2021,18 @@ const CreateUserPg = function() {
                         <Input type="string" name="social-name" id="social-name" placeholder='Nome Social'/>
                     </div>
                     <div className='date'>
-                        <Input type='date' name='birthday' id='birthday' placeholder='Data de nascimento'/><br/>
-                        <small className='small'>Digite a data de aniversário</small><span className='span3'>*</span>
+                        <Input type='date' name='birthday' id='birthday' placeholder='Data de nascimento'/><span>*</span>
+                        <br/>
+                        <small className='small'>Digite a data de aniversário</small>
                     </div>
                     <div className='cpf'>
-                        <Input type="number" name="cpf" id="cpf" placeholder='CPF'/><span className='span4'>*</span>
+                        <Input type="number" name="cpf" id="cpf" placeholder='CPF'/><span>*</span>
                     </div>
                     <div className='email'>
-                        <Input type="email" name="email" id="email" placeholder='E-mail'/><span className='span5'>*</span>
+                        <Input type="email" name="email" id="email" placeholder='E-mail'/><span>*</span>
                     </div>
                     <div className='country'>
-                        <Input type="string" name="country" id="country" placeholder='País'/><span className='span6'>*</span>
+                        <Input type="string" name="country" id="country" placeholder='País'/><span>*</span>
                     </div>
                     <p className='profile-photo2'>Foto de Perfil</p>
                     <div className='choose-a-image'>

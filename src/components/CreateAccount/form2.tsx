@@ -9,7 +9,7 @@ import Input from '../Login/Input/Input';
 const FormComponent2 = styled.section `
 
     // Mobile
-    height: 130vh;
+    height: 125vh;
 
     background: linear-gradient(180deg, #0A53B5 0%, #028fcc 100%);
 
@@ -28,9 +28,9 @@ const FormComponent2 = styled.section `
 
     h1 {
         font-size: 1.3em;
-        position: absolute;
-        top: 220px;
-        left: 110px;
+        margin-top: 20%;
+        margin-left: 35%;
+        width: 200px;
     }
 
     .fox {
@@ -39,82 +39,40 @@ const FormComponent2 = styled.section `
     }
 
     .name {
-        position: absolute;
-        top: 270px;
-        left: 35px;
-    }
-
-    .span1 {
-        margin-left: -45%;
-        font-size: 1.05em;
-    }
-
-    .span2 {
-        margin-left: 1%;
-        font-size: 1.05em;
-    }
-
-    .span3 {
-        margin-left: -71%;
-        font-size: 1.05em;
-    }
-
-    .span4 {
-        margin-left: -70%;
-        font-size: 1.05em;
-    }
-
-    .span5 {
-        margin-left: -78%;
-        font-size: 1.05em;
-    }
-
-    .span6 {
-        margin-left: -72%;
-        font-size: 1.05em;
-    }
-
-    .span7 {
-        margin-left: -35%;
-        font-size: 1.05em;
+        margin-top: 5%;
+        margin-left: 11.2%;
     }
 
     .date {
-        position: absolute;
-        top: 320px;
-        left: 35px;
+        margin-top: -5%;
+        margin-left: 11.2%;
         display: flex;
         flex-direction: column;
     }
 
     .phone {
-        position: absolute;
-        top: 390px;
-        left: 35px;
+        margin-top: -5%;
+        margin-left: 11.2%;
     }
 
     .cpf {
-        position: absolute;
-        top: 450px;
-        left: 35px;
+        margin-top: -5%;
+        margin-left: 11.2%;
     }
 
     .password {
-        position: absolute;
-        top: 510px;
-        left: 35px;
+        margin-top: -5%;
+        margin-left: 11.2%;
     }
 
     .confirm-password{
-        position: absolute;
-        top: 570px;
-        left: 35px;
+        margin-top: -5%;
+        margin-left: 11.2%;
     }
 
     .email {
-        position: absolute;
-        top: 630px;
-        left: 35px;
+        margin-top: -5%;
+        margin-left: 11.2%;
     }
 
     /* .adm {
@@ -149,15 +107,13 @@ const FormComponent2 = styled.section `
     } */
 
     p {
-        position: absolute;
-        top: 700px;
-        left: 150px;
+        margin-top: 5%;
+        margin-left: 56%;
     }
 
     .google-enter {
-        position: absolute;
-        top: 735px;
-        left: 35px;
+        margin-top: 6.5%;
+        margin-left: 13.5%;
     }
 
     .btn-google {
@@ -181,9 +137,9 @@ const FormComponent2 = styled.section `
     }
 
     .page2 {
-        position: absolute;
-        top: 790px;
-        left: 35px;
+        margin-top: 5%;
+        margin-left: 10%;
+        width: 270px;
     }
 
     .faGoogle {
@@ -197,9 +153,8 @@ const FormComponent2 = styled.section `
     }
 
     .button-create {
-        position: absolute;
-        top: 825px;
-        left: 75px;
+        margin-top: 5%;
+        margin-left: 28%;
     }
 
     .criar {
@@ -242,111 +197,66 @@ const FormComponent2 = styled.section `
         background-repeat: no-repeat;
 
         form {
-        position: relative;
-        left: 190px;
-        top: 30px;
-        border-radius: 19px;
-        background: linear-gradient(180deg, #07B3FD 0%, #0a59c0 100%);
-        width: 400px;
-        height: 735px;
-        border-color: white;
-       }
-
-       .span1 {
-            margin-left: -46%;
-            font-size: 1em;
+            margin-top: 5%;
+            margin-left: 23.8%;
+            border-radius: 19px;
+            background: linear-gradient(180deg, #07B3FD 0%, #0a59c0 100%);
+            width: 400px;
+            height: 745px;
+            border-color: white;
         }
 
-        .span2 {
-            margin-left: 70%;
-            font-size: 1.05em;
-            margin-top: -11%;
+        h1 {
+            font-size: 1.5em;
+            margin-top: 8%;
+            margin-left: 31%;
         }
 
-        .span3 {
-            margin-left: -63%;
-            font-size: 1.05em;
+        .name {
+            font-size: 1.3em;
+            margin-top: -0.5%;
+            margin-left: -9.8%;
         }
 
-        .span4 {
-            margin-left: -62%;
-            font-size: 1.05em;
+        .date {
+            font-size: 1.3em;
+            margin-top: -5%;
+            margin-left: -9.8%;
         }
 
-        .span5 {
-            margin-left: -68%;
-            font-size: 1.05em;
+        Small {
+            margin-left: 15%;
         }
 
-        .span6 {
-            margin-left: -63%;
-            font-size: 1.05em;
+        .email {
+            font-size: 1.3em;
+            margin-top: -5%;
+            margin-left: -9.8%;
         }
 
-        .span7 {
-            margin-left: -39%;
-            font-size: 1.05em;
+        .phone {
+            font-size: 1.3em;
+            margin-top: -5%;
+            margin-left: -9.8%;
         }
 
-       h1 {
-        font-size: 1.5em;
-        position: absolute;
-        top: 55px;
-        left: 135px;
-       }
+        .cpf {
+            font-size: 1.3em;
+            margin-top: -5%;
+            margin-left: -9.8%;
+        }
 
-       .name {
-        font-size: 1.3em;
-        position: absolute;
-        top: 105px;
-        left: -40px;
-       }
+        .password {
+            font-size: 1.3em;
+            margin-top: -5%;
+            margin-left: -9.8%;
+        }
 
-       .date {
-        font-size: 1.3em;
-        position: absolute;
-        top: 165px;
-        left: -40px;
-       }
-
-       Small {
-        margin-left: 16%;
-       }
-
-       .email {
-        font-size: 1.3em;
-        position: absolute;
-        top: 240px;
-        left: -40px;
-       }
-
-       .phone {
-        font-size: 1.3em;
-        position: absolute;
-        top: 300px;
-        left: -40px;
-       }
-
-       .cpf {
-        font-size: 1.3em;
-        position: absolute;
-        top: 360px;
-        left: -40px;
-       }
-
-       .password {
-        font-size: 1.3em;
-        position: absolute;
-        top: 420px;
-        left: -40px;
-       }
-
-       .confirm-password {
-        font-size: 1.3em;
-        position: absolute;
-        top: 480px;
-        left: -40px;
-       }
+        .confirm-password {
+            font-size: 1.3em;
+            margin-top: -5%;
+            margin-left: -9.8%;
+        }
 
        /* .adm {
         position: absolute;
@@ -379,69 +289,66 @@ const FormComponent2 = styled.section `
         display: none;
     } */
 
-       p {
-        position: absolute;
-        top: 560px;
-        left: 185px;
-       }
+        p {
+            margin-top: -0.5%;
+            margin-left: 47.5%;
+        }
 
-       .google-enter {
-        position: absolute;
-        top: 590px;
-        left: 40px;
-       }
+        .google-enter {
+            margin-top: 3.5%;
+            margin-left: 12%;
+        }
 
-       .btn-google {
-        width: 40vw;
-        height: 40px;
-        font-size: 1.1em;
-        background-color: #93B413;
-        border: none;
-        border-radius: 39px;
-        padding: 8px;
-    }
+        .btn-google {
+            width: 40vw;
+            height: 40px;
+            font-size: 1.1em;
+            background-color: #93B413;
+            border: none;
+            border-radius: 39px;
+            padding-top: 8px;
+            padding-left: 0px;
+        }
 
-       .btn-google:active {
-        width: 40vw;
-        height: 40px;
-        font-size: 1.1em;
-        background-color: #86a40f;
-        border: none;
-        border-radius: 39px;
-        padding: 8px;
-       }
+        .btn-google:active {
+            width: 40vw;
+            height: 40px;
+            font-size: 1.1em;
+            background-color: #86a40f;
+            border: none;
+            padding-top: 8px;
+            padding-left: 0px;
+        }
 
-       .page2 {
-        margin-left: 10.5%;
-        margin-top: -36%;
-        font-size: 0.9em;
-       }
+        .page2 {
+            margin-left: 19.8%;
+            margin-top: 5%;
+            font-size: 0.9em;
+        }
 
-       .criar {
-        position: absolute;
-        top: -145px;
-        left: 70px;
-        background-color: #93B413;
-        width: 110px;
-        height: 40px;
-        border-radius: 15px;
-       }
+        .criar {
+            margin-top: -2%;
+            margin-left: 12%;
+            background-color: #93B413;
+            width: 110px;
+            height: 40px;
+            border-radius: 15px;
+        }
 
-       .criar:active {
-        position: absolute;
-        top: -145px;
-        left: 70px;
-        background-color: #86a40f;
-        width: 110px;
-        height: 40px;
-        border-radius: 15px;
-       }
+        .criar:active {
+            margin-top: -2%;
+            margin-left: 12%;
+            background-color: #86a40f;
+            width: 110px;
+            height: 40px;
+            border-radius: 15px;
+        }
 
-       .fox {
-        position: absolute;
-        top: 500px;
-        left: 590px;
-       }
+        .fox {
+            position: absolute;
+            top: 500px;
+            left: 583px;
+        }
     }
 
     // Small Screens
@@ -461,63 +368,25 @@ const FormComponent2 = styled.section `
         background-image: url("/images/992px-create-user.svg");
 
         form {
-            position: relative;
-            left: 260px;
-            top: 30px;
+            margin-top: 2.5%;
+            margin-left: 25.5%;
             border-radius: 19px;
             background: linear-gradient(180deg, #07B3FD 0%, #0a59c0 100%);
             width: 500px;
-            height: 780px;
+            height: 755px;
             border-color: white;
        }
 
         h1 {
-            position: absolute;
-            top: 35px;
-            left: 160px;
+            margin-top: 5%;
+            margin-left: 30%;
             font-size: 2em;
-        }
-
-        .span1 {
-            margin-left: -50%;
-            font-size: 1em;
-        }
-
-        .span2 {
-            margin-left: 65%;
-            font-size: 1.05em;
-            margin-top: -10%;
-        }
-
-        .span3 {
-            margin-left: -65%;
-            font-size: 1.05em;
-        }
-
-        .span4 {
-            margin-left: -64%;
-            font-size: 1.05em;
-        }
-
-        .span5 {
-            margin-left: -69%;
-            font-size: 1.05em;
-        }
-
-        .span6 {
-            margin-left: -65%;
-            font-size: 1.05em;
-        }
-
-        .span7 {
-            margin-left: -43%;
-            font-size: 1.05em;
+            width: 202px;
         }
 
         .name {
-            position: absolute;
-            top: 90px;
-            left: -21px;
+            margin-top: -0.5%;
+            margin-left: -5%;
         }
 
         #name {
@@ -525,23 +394,21 @@ const FormComponent2 = styled.section `
         }
 
         .date {
-            position: absolute;
-            top: 155px;
-            left: -21px;
+            margin-top: -5%;
+            margin-left: -5%;
         }
 
         Small {
-        margin-left: 17%;
-       }
+            margin-left: 14.5%;
+        }
 
         #birthday {
             width: 350px;
         }
 
         .email {
-            position: absolute;
-            top: 245px;
-            left: -21px;
+            margin-top: -5%;
+            margin-left: -5%;
         }
 
         #email {
@@ -549,9 +416,8 @@ const FormComponent2 = styled.section `
         }
 
         .phone {
-            position: absolute;
-            top: 310px;
-            left: -21px;
+            margin-top: -5%;
+            margin-left: -5%;
         }
 
         #phone {
@@ -559,9 +425,8 @@ const FormComponent2 = styled.section `
         }
 
         .cpf {
-            position: absolute;
-            top: 370px;
-            left: -21px;
+            margin-top: -5%;
+            margin-left: -5%;
         }
 
         #cpf {
@@ -569,9 +434,8 @@ const FormComponent2 = styled.section `
         }
 
         .password {
-            position: absolute;
-            top: 430px;
-            left: -21px;
+            margin-top: -5%;
+            margin-left: -5%;
         }
 
         #password {
@@ -579,9 +443,8 @@ const FormComponent2 = styled.section `
         }
 
         .confirm-password {
-            position: absolute;
-            top: 490px;
-            left: -21px;
+            margin-top: -5%;
+            margin-left: -5%;
         }
 
         #confirm-password {
@@ -621,88 +484,82 @@ const FormComponent2 = styled.section `
         display: none;
     } */
 
-    p {
-        font-size: 1.2em;
-        position: absolute;
-        top: 570px;
-        left: 230px;
-    }
+        p {
+            font-size: 1.2em;
+            margin-top: 1%;
+        }
 
-    .google-enter {
-        position: absolute;
-        top: 611px;
-        left: 70px;
-        cursor: pointer;
-    }
+        .google-enter {
+            margin-top: 4.5%;
+            margin-left: 13%;
+            cursor: pointer;
+        }
 
-    .btn-google {
-        width: 320px;
-        height: 40px;
-        font-size: 1.1em;
-        background-color: #93B413;
-        border: none;
-        border-radius: 39px;
-        padding: 8px;
-        margin-left: 5.5%;
-    }
+        .btn-google {
+            width: 320px;
+            height: 40px;
+            font-size: 1.1em;
+            background-color: #93B413;
+            border: none;
+            border-radius: 39px;
+            padding: 8px;
+            margin-left: 5.5%;
+        }
 
-    .btn-google:hover {
-        width: 320px;
-        height: 40px;
-        font-size: 1.1em;
-        background-color: #9fc214;
-        border: none;
-        border-radius: 39px;
-        padding: 8px;
-        cursor: pointer;
-        margin-left: 5.5%;
-    }
+        .btn-google:hover {
+            width: 320px;
+            height: 40px;
+            font-size: 1.1em;
+            background-color: #9fc214;
+            border: none;
+            border-radius: 39px;
+            padding: 8px;
+            cursor: pointer;
+            margin-left: 5.5%;
+        }
 
-    .btn-google:active {
-        width: 320px;
-        height: 40px;
-        font-size: 1.1em;
-        background-color: #86a40f;
-        border: none;
-        border-radius: 39px;
-        padding: 8px;
-        margin-left: 5.5%;
-       }
+        .btn-google:active {
+            width: 320px;
+            height: 40px;
+            font-size: 1.1em;
+            background-color: #86a40f;
+            border: none;
+            border-radius: 39px;
+            padding: 8px;
+            margin-left: 5.5%;
+        }
 
-       .page2 {
-        margin-top: -24%;
-        margin-left: 17%;
-        font-size: 1em;
-       }
+        .page2 {
+            margin-top: 5%;
+            margin-left: 23%;
+            font-size: 1em;
+        }
 
-       .criar {
-        position: absolute;
-        top: -115px;
-        left: 120px;
-        background-color: #93B413;
-        cursor: pointer;
-       }
+        .criar {
+            margin-top: -0.5%;
+            margin-left: 16%;
+            background-color: #93B413;
+            cursor: pointer;
+        }
 
-       .criar:hover {
-        position: absolute;
-        top: -115px;
-        left: 90px;
-        background-color: #9fc214;
-       }
+        .criar:hover {
+            margin-top: -0.5%;
+            margin-left: 16%;
+            background-color: #9fc214;
+        }
 
-       .criar:active {
-        position: absolute;
-        top: -115px;
-        left: 90px;
-        background-color: #86a40f;
-       }
+        .criar:active {
+            margin-top: -0.5%;
+            margin-left: 16%;
+            background-color: #86a40f;
+        }
 
-       .fox {
-        width: 110px;
-        position: absolute;
-        left: 760px;
-        top: 600px;
-    }
+        .fox {
+            width: 110px;
+            position: absolute;
+            left: 760px;
+            top: 600px;
+        }
 }
 
     // Medium Screens
@@ -722,9 +579,7 @@ const FormComponent2 = styled.section `
         background-image: url("/images/1200px-create-user.svg");
 
         form {
-            position: relative;
-            left: 345px;
-            top: 30px;
+            margin-left: 24.2%;
             border-radius: 19px;
             background: linear-gradient(180deg, #07B3FD 0%, #0a59c0 100%);
             width: 690px;
@@ -732,52 +587,15 @@ const FormComponent2 = styled.section `
             border-color: white;
         }
 
-        .span1 {
-            margin-left: -44%;
-            font-size: 1.5em;
-        }
-
-        .span2 {
-            margin-left: 62%;
-            font-size: 1.2em;
-            margin-top: -8%;
-        }
-
-        .span3 {
-            margin-left: -63%;
-            font-size: 1.5em;
-        }
-
-        .span4 {
-            margin-left: -62%;
-            font-size: 1.5em;
-        }
-
-        .span5 {
-            margin-left: -69%;
-            font-size: 1.5em;
-        }
-
-        .span6 {
-            margin-left: -64%;
-            font-size: 1.5em;
-        }
-
-        .span7 {
-            margin-left: -34%;
-            font-size: 1.5em;
-        }
-
         h1 {
             font-size: 2.4em;
-            position: absolute;
-            left: 220px;
+            width: 250px;
+            margin-left: 33%;
         }
 
         .name {
-            position: absolute;
-            top: 105px;
-            left: -25px;
+            margin-top: 1%;
+            margin-left: -4.1%;
         }
 
         #name {
@@ -790,14 +608,13 @@ const FormComponent2 = styled.section `
         }
 
         .date {
-            position: absolute;
-            top: 185px;
-            left: -25px;
+            margin-top: -5%;
+            margin-left: -4.1%;
         }
 
         Small {
             margin-top: -4%;
-            margin-left: 17%;
+            margin-left: 14.5%;
             font-size: 0.8em;
        }
 
@@ -811,9 +628,8 @@ const FormComponent2 = styled.section `
         }
 
         .email {
-            position: absolute;
-            top: 285px;
-            left: -25px;
+            margin-top: -1.5%;
+            margin-left: -4.1%;
         }
 
         #email{
@@ -826,9 +642,8 @@ const FormComponent2 = styled.section `
         }
 
         .phone{
-            position: absolute;
-            top: 365px;
-            left: -25px;
+            margin-top: -5%;
+            margin-left: -4.1%;
         }
 
         #phone{
@@ -841,9 +656,8 @@ const FormComponent2 = styled.section `
         }
 
         .cpf{
-            position: absolute;
-            top: 450px;
-            left: -25px;
+            margin-top: -5%;
+            margin-left: -4.1%;
         }
 
         #cpf{
@@ -856,9 +670,8 @@ const FormComponent2 = styled.section `
         }
 
         .password {
-            position: absolute;
-            top: 535px;
-            left: -25px;
+            margin-top: -5%;
+            margin-left: -4.1%;
         }
 
         #password {
@@ -871,9 +684,8 @@ const FormComponent2 = styled.section `
         }
 
         .confirm-password {
-            position: absolute;
-            top: 620px;
-            left: -25px;
+            margin-top: -5%;
+            margin-left: -4.1%;
         }
 
         #confirm-password {
@@ -920,15 +732,13 @@ const FormComponent2 = styled.section `
 
         p {
             font-size: 1.7em;
-            position: absolute;
-            top: 710px;
-            left: 320px;
+            margin-top: -1%;
+            margin-left: 48%;
         }
 
         .google-enter {
-            position: absolute;
-            top: 765px;
-            left: 100px;
+            margin-top: 4.5%;
+            margin-left: 14.5%;
             cursor: pointer;
         }
 
@@ -972,14 +782,14 @@ const FormComponent2 = styled.section `
         
         .page2 {
             font-size: 1.6em;
-            margin-top: 10%;
-            margin-left: 14%;
+            margin-top: 3.5%;
+            margin-left: 18.5%;
+            width: 430px;
         }
 
         .criar {
-            position: absolute;
-            top: 95px;
-            left: 175px;
+            margin-top: -2.5%;
+            margin-left: 11%;
             background-color: #93B413;
             width: 200px;
             height: 60px;
@@ -988,9 +798,8 @@ const FormComponent2 = styled.section `
         }
 
         .criar:hover {
-            position: absolute;
-            top: 95px;
-            left: 175px;
+            margin-top: -2.5%;
+            margin-left: 11%;
             background-color: #9fc214;
             width: 200px;
             height: 60px;
@@ -998,9 +807,8 @@ const FormComponent2 = styled.section `
         }
 
         .criar:active {
-            position: absolute;
-            top: 95px;
-            left: 175px;
+            margin-top: -2.5%;
+            margin-left: 11%;
             background-color: #86a40f;
             width: 200px;
             height: 60px;
@@ -1010,13 +818,13 @@ const FormComponent2 = styled.section `
         .fox {
             width: 170px;
             position: absolute;
-            left: 1035px;
+            left: 1021px;
             top: 700px;
         }
     }
 
     @media(min-width: 1400px) {
-        height: 162vh;
+        height: 163vh;
 
         .mobile {
             display: none;
@@ -1030,13 +838,14 @@ const FormComponent2 = styled.section `
         background-image: url("/images/1400px-create-user.svg");
 
         form {
-            margin-left: 3.5%;
+            margin-left: 25.5%;
+            margin-top: 4.2%;
         }
 
         .fox {
             width: 170px;
             position: absolute;
-            left: 1087px;
+            left: 1067px;
             top: 700px;
         }
     }
@@ -1058,9 +867,8 @@ const FormComponent2 = styled.section `
         background-image: url("/images/1600px-create-user.svg");
 
         form {
-            position: relative;
-            left: 350px;
-            top: 45px;
+            margin-left: 22%;
+            margin-top: 3%;
             border-radius: 19px;
             background: linear-gradient(180deg, #07B3FD 0%, #0a59c0 100%);
             width: 890px;
@@ -1070,15 +878,13 @@ const FormComponent2 = styled.section `
 
         h1 {
             font-size: 3em;
-            position: absolute;
-            top: 40px;
-            left: 290px;
+            margin-top: 5%;
+            margin-left: 33.5%;
+            width: 305px;
         }
 
         .name {
-            position: absolute;
-            top: 115px;
-            left: -35px;
+            margin-top: -0.5%;
         }
 
         #name {
@@ -1090,14 +896,12 @@ const FormComponent2 = styled.section `
         }
 
         .date {
-            position: absolute;
-            top: 200px;
-            left: -35px;
+            margin-top: -10%;
         }
 
         Small {
-            margin-top: -7%;
-            margin-left: 17%;
+            margin-top: -5%;
+            margin-left: 15%;
             font-size: 0.8em;
        }
 
@@ -1110,9 +914,7 @@ const FormComponent2 = styled.section `
         }
 
         .email{
-            position: absolute;
-            top: 310px;
-            left: -35px;
+            margin-top: -3%;
         }
 
         #email {
@@ -1124,9 +926,7 @@ const FormComponent2 = styled.section `
         }
 
         .phone {
-            position: absolute;
-            top: 390px;
-            left: -35px;
+            margin-top: -8.5%;
         }
 
         #phone {
@@ -1138,9 +938,7 @@ const FormComponent2 = styled.section `
         }
 
         .cpf {
-            position: absolute;
-            top: 470px;
-            left: -35px;
+            margin-top: -8.5%;
         }
 
         #cpf {
@@ -1152,9 +950,7 @@ const FormComponent2 = styled.section `
         }
 
         .password {
-            position: absolute;
-            top: 550px;
-            left: -35px;
+            margin-top: -8.5%;
         }
 
         #password {
@@ -1166,9 +962,7 @@ const FormComponent2 = styled.section `
         }
 
         .confirm-password {
-            position: absolute;
-            top: 630px;
-            left: -35px;
+            margin-top: -8.5%;
         }
 
         #confirm-password {
@@ -1181,15 +975,12 @@ const FormComponent2 = styled.section `
 
         p {
             font-size: 2.2em;
-            position: absolute;
-            top: 750px;
-            left: 415px;
+            margin-top: -5%;
         }
 
         .google-enter {
-            position: absolute;
-            top: 815px;
-            left: 120px;
+            margin-top: 3%;
+            margin-left: 10%;
         }
 
         .btn-google {
@@ -1227,20 +1018,19 @@ const FormComponent2 = styled.section `
 
         .page2 {
             font-size: 1.7em;
-            margin-top: 14%;
-            margin-left: 20%;
+            margin-top: 3%;
+            margin-left: 25%;
+            width: 500px;
         }
 
         .criar {
-            position: absolute;
-            top: 155px;
-            left: 270px;
+            margin-top: -5%;
+            margin-left: 15.5%;
         }
 
         .criar:hover {
-            position: absolute;
-            top: 155px;
-            left: 270px;
+            margin-top: -5%;
+            margin-left: 15.5%;
             background-color: #9fc214;
             width: 200px;
             height: 60px;
@@ -1248,9 +1038,8 @@ const FormComponent2 = styled.section `
         }
 
         .criar:active {
-            position: absolute;
-            top: 155px;
-            left: 270px;
+            margin-top: -5%;
+            margin-left: 15.5%;
             background-color: #86a40f;
             width: 200px;
             height: 60px;
@@ -1259,7 +1048,7 @@ const FormComponent2 = styled.section `
 
         .fox {
             position: absolute;
-            left: 1240px;
+            left: 1235px;
             top: 850px;
         }
     }

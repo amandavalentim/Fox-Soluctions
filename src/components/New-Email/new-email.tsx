@@ -23,13 +23,13 @@ background: linear-gradient(180deg, #04a4e8 0%, #0A53B5 100%);
 
 h1 {
     font-size: 1.4em;
-    padding-left: 5%;
+    padding-left: 6%;
     padding-top: 10%;
 }
 
 #email {
     margin-top: 20%;
-    margin-left: 9%;
+    margin-left: 9.7%;
     width: 260px;
 }
 
@@ -38,8 +38,8 @@ h1 {
 }
 
 #confirm {
-    margin-top: 15%;
-    margin-left: 9%;
+    margin-top: 11.5%;
+    margin-left: 9.7%;
     width: 260px;
 }
 
@@ -107,11 +107,11 @@ h1 {
 
     h1 {
         font-size: 1.2em;
-        margin-left: 3.5%;
+        margin-left: 3%;
     }
 
     #email {
-        margin-top: 15%;
+        margin-top: 11%;
         margin-left: 11%;
         width: 230px;
     }
@@ -131,7 +131,7 @@ h1 {
     }
 
     .confirmar {
-        margin-top: -2%;
+        margin-top: -1%;
         margin-left: 26%;
         width: 140px;
         height: 40px;
@@ -191,12 +191,12 @@ h1 {
 
     h1 {
         font-size: 1.4em;
-        margin-left: 2.3%;
+        margin-left: 2%;
     }
 
     #email {
         margin-top: 10%;
-        margin-left: 11%;
+        margin-left: 11.5%;
         width: 255px;
     }
 
@@ -206,7 +206,7 @@ h1 {
 
     #confirm {
         margin-top: 5%;
-        margin-left: 11%;
+        margin-left: 11.5%;
         width: 255px;
     }
 
@@ -216,7 +216,7 @@ h1 {
 
     .confirmar {
         margin-top: 1%;
-        margin-left: 28.5%;
+        margin-left: 29%;
         width: 140px;
         height: 40px;
         font-size: 1.4em;
@@ -229,7 +229,7 @@ h1 {
 
     .confirmar:hover {
         margin-top: 1%;
-        margin-left: 28.5%;
+        margin-left: 29%;
         width: 140px;
         height: 40px;
         font-size: 1.4em;
@@ -242,7 +242,7 @@ h1 {
 
     .confirmar:active {
         margin-top: 1%;
-        margin-left: 28.5%;
+        margin-left: 29%;
         width: 140px;
         height: 40px;
         font-size: 1.4em;
@@ -281,7 +281,7 @@ h1 {
     }
 
     h1 {
-        margin-left: 5.5%;
+        margin-left: 5.1%;
     }
 
     #email {
@@ -357,6 +357,7 @@ h1 {
 
     form {
         margin-left: 38%;
+        margin-top: 0%;
     }
 
     .fox2 {
@@ -365,28 +366,28 @@ h1 {
 
     #confirm {
         position: absolute;
-        top: 381px;
+        top: 385px;
         margin-left: -18%;
         width: 283px;
     }
 
     .confirmar {
         position: absolute;
-        top: 530px;
+        top: 545px;
         margin-left: -14%;
         cursor: pointer;
     }
 
     .confirmar:hover {
         position: absolute;
-        top: 530px;
+        top: 545px;
         margin-left: -14%;
         cursor: pointer;
     }
 
     .confirmar:active {
         position: absolute;
-        top: 530px;
+        top: 545px;
         margin-left: -14%;
         cursor: pointer;
     }

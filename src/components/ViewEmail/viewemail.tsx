@@ -22,7 +22,7 @@ height: 70vh;
 
 h1 {
     font-size: 1.4em;
-    padding: 8%;
+    padding: 8.5%;
 }
 
 p {
@@ -32,7 +32,7 @@ p {
 }
 
 #ok {
-    margin-top: 6.5%;
+    margin-top: 5%;
     margin-left: 20%;
     width: 70px;
     height: 40px;
@@ -43,7 +43,7 @@ p {
 }
 
 #ok:active {
-    margin-top: 6.5%;
+    margin-top: 5%;
     margin-left: 20%;
     width: 70px;
     height: 40px;
@@ -54,7 +54,7 @@ p {
 }
 
 #change {
-    margin-top: 6.5%;
+    margin-top: 5%;
     margin-left: 14%;
     width: 80px;
     height: 40px;
@@ -65,7 +65,7 @@ p {
 }
 
 #change:active {
-    margin-top: 6.5%;
+    margin-top: 5%;
     margin-left: 14%;
     width: 80px;
     height: 40px;
@@ -78,7 +78,7 @@ p {
 .fox {
     width: 130px;
     height: 100px;
-    margin-top: 9.8%;
+    margin-top: 10.3%;
     margin-left: 32%;
 }
 
@@ -108,6 +108,7 @@ p {
         border-radius: 19px;
         background: linear-gradient(180deg, #07B3FD 0%, #0a59c0 100%);
         margin-left: 30%;
+        margin-top: -0.2%;
     }
 
     h1 {
@@ -122,10 +123,12 @@ p {
 
     #ok {
         background-color: #93B413;
+        margin-left: 20.3%;
     }
 
     #ok:active {
         background-color: #86a40f;
+        margin-left: 20.3%;
     }
 
     #change {
@@ -227,7 +230,7 @@ p {
     }
 
     h1 {
-        margin-left: 4.5%;
+        margin-left: 4.3%;
         font-size: 1.4em;
     }
 
@@ -306,19 +309,30 @@ p {
 
 @media(min-width: 1400px) {
 
+    .mobile {
+        display: none;
+    }
+
+    .tablet-desktops {
+        display: block;
+        justify-content: space-between;
+    }
+
     background-image: url("/images/1400px-recuperar-email.svg");    
 
     form {
         margin-left: 37%;
+        margin-top: -0.8%;
     }
 
     h1 {
-        margin-left: 6.5%;
+        margin-left: 2%;
         font-size: 1.5em;
+        width: 345px;
     }
 
     p {
-        margin-left: 16%;
+        margin-left: 13%;
         font-size: 1.3em;
     }
 
@@ -342,13 +356,14 @@ p {
     form {
         width: 390px;
         height: 390px;
-        margin-top: -1.7%;
+        margin-top: -1.5%;
         margin-left: 37%;
     }
 
     h1 {
         margin-left: 3.5%;
         font-size: 1.6em;
+        width: 400px;
     }
 
     p {

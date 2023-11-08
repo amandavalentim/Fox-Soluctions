@@ -568,7 +568,7 @@ const SendDocumentsComponent = styled.section `
 
     .cnh-txt {
         margin-top: -5%;
-        margin-left: -15%;
+        margin-left: -17%;
         font-size: 1.2em;
         text-align: center;
     }
@@ -708,7 +708,7 @@ const SendDocumentsComponent = styled.section `
     .next {
         border: none;
         background-color: #93B413;
-        margin-left: 10%;
+        margin-left: 9.5%;
         margin-top: 10%;
         border-radius: 10px;
         width: 40px;
@@ -720,7 +720,7 @@ const SendDocumentsComponent = styled.section `
     .next:active {
         border: none;
         background-color: #86a40f;
-        margin-left: 10%;
+        margin-left: 9.5%;
         margin-top: 10%;
         border-radius: 10px;
         width: 40px;
