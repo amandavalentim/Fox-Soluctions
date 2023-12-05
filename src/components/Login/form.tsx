@@ -341,7 +341,6 @@ const FormComponent = styled.section `
 
         .form {
             display: grid;
-            justify-content: space-between;
             justify-content: center;
             align-items: center;
             border-radius: 19px;
@@ -439,13 +438,9 @@ const FormComponent = styled.section `
 
         p {
             font-size: 1em;
-            /* margin-top: 3%;
-            margin-left: 47%; */
         }
 
         .google-enter {
-            /* margin-left: 10.5%;
-            margin-top: 4%; */
             cursor: pointer;
        }
 
@@ -478,26 +473,15 @@ const FormComponent = styled.section `
     .page2 {
         font-size: 1em;
         width: 410px;
-        /* margin-left: 21%;
-        margin-top: 4%; */
     }
 
     .logar {
-        /* margin-left: 35%;
-        margin-top: 5.5%; */
         cursor: pointer;
-    }
-
-    .logar:active {
-        /* margin-left: 35%;
-        margin-top: 5.5%; */
     }
 
     .fox {
         width: 116px;
         height: 170px;
-        /* margin-left: 15.5%;
-        margin-top: 27%; */
     }
     }
 
@@ -511,37 +495,39 @@ const FormComponent = styled.section `
         }
     
         .tablet-desktops {
-            display: flex;
+            display: grid;
             justify-content: space-between;
+            justify-content: center;
+            align-items: center;
         }
 
         background-image: url("/images/1200px-login.svg");
 
         .form {
+            display: grid;
+            justify-content: center;
+            align-items: center;
             border-radius: 19px;
             background: linear-gradient(180deg, #07B3FD 0%, #0a59c0 100%);
             width: 527px;
             height: 500px;
             border-color: white;
-            margin-left: 30%;
-            margin-top: 0.5%;
+            margin-top: -70%;
         }
 
         h1 {
-            font-size: 1.4em;
-            position: absolute;
-            margin-left: 43.5%;
-            margin-top: 5%;
+            font-size: 1.8em;
         }
 
         .email {
-            margin-top: 10%;
-            margin-left: -13%;
+            font-size: 1.3em;
         }
 
         #email {
             width: 420px;
             height: 40px;
+            margin: 0;
+            font-size: 0.9em;
         }
 
         #email::-webkit-input-placeholder { /* Chrome/Opera/Safari */
@@ -550,35 +536,31 @@ const FormComponent = styled.section `
 
         #forgot-email {
             font-size: 0.9em;
-            margin-left: 50.5%;
-            margin-top: -4.5%;
             width: 160px;
         }
 
         #forgot-email:hover {
             font-size: 1em;
-            margin-left: 49.5%;
-            margin-top: -5%;
             color: #dbd7d7;
             width: 185px;
         }
 
         #forgot-email:active {
             font-size: 1em;
-            margin-left: 49.5%;
-            margin-top: -5%;
             color: #F47216;
             width: 185px;
         }
 
         .senha {
-            margin-top: -1%;
-            margin-left: -13%;
+            font-size: 1.3em;
+            margin-top: -1.5%;
         }
 
         #password {
             width: 420px;
             height: 40px;
+            margin: 0;
+            font-size: 0.9em;
         }
 
         #password::-webkit-input-placeholder { /* Chrome/Opera/Safari */
@@ -586,40 +568,27 @@ const FormComponent = styled.section `
         }
 
         #forgot-password {
-            position: absolute;
-            top: 53.5%;
-            font-size: 1.2em;
-            margin-left: 50%;
+            font-size: 0.9em;
             width: 170px;
         }
 
         #forgot-password:hover {
-            position: absolute;
-            top: 53.5%;
-            font-size: 1.3em;
-            margin-left: 49%;
+            font-size: 1em;
             color: #dbd7d7;
             width: 195px;
         }
 
         #forgot-password:active {
-            position: absolute;
-            top: 53.5%;
-            font-size: 1.3em;
-            margin-left: 49%;
+            font-size: 1em;
             color: #F47216;
             width: 195px;
         }
 
         p {
             font-size: 1.1em;
-            margin-left: 47.5%;
-            margin-top: 0%;
         }
 
         .btn-google {
-            margin-left: 3.5%;
-            margin-top: -1%;
             width: 380px;
             height: 45px;
             font-size: 1.5em;
@@ -631,8 +600,6 @@ const FormComponent = styled.section `
         }
 
         .btn-google:hover {
-            margin-left: 3.5%;
-            margin-top: -1%;
             width: 380px;
             height: 45px;
             font-size: 1.5em;
@@ -644,8 +611,6 @@ const FormComponent = styled.section `
         }
 
         .btn-google:active {
-            margin-left: 3.5%;
-            margin-top: -1%;
             width: 380px;
             height: 45px;
             font-size: 1.5em;
@@ -659,13 +624,11 @@ const FormComponent = styled.section `
         .faGoogle{
             width: 50px;
             height: 30px;
-            margin-left: -4%;
         }
 
         .page2 {
             font-size: 1.2em;
             width: 550px;
-            margin-left: 20%;
         }
 
         .logar {
@@ -674,8 +637,6 @@ const FormComponent = styled.section `
             height: 45px;
             font-size: 1.6em;
             cursor: pointer;
-            margin-left: 38%;
-            margin-top: 2.5%;
         }
 
         .logar:hover {
@@ -684,8 +645,6 @@ const FormComponent = styled.section `
             height: 45px;
             font-size: 1.6em;
             cursor: pointer;
-            margin-left: 38%;
-            margin-top: 2.5%;
         }
 
         .logar:active {
@@ -694,15 +653,12 @@ const FormComponent = styled.section `
             height: 45px;
             font-size: 1.6em;
             cursor: pointer;
-            margin-left: 38%;
-            margin-top: 2.5%;
         }
 
         .fox {
             width: 120px;
             height: 190px;
-            margin-left: 21.3%;
-            margin-top: 22%;
+            margin-left: -22.5%;
         }
     }
 
@@ -716,49 +672,36 @@ const FormComponent = styled.section `
         }
     
         .tablet-desktops {
-            display: flex;
+            display: grid;
             justify-content: space-between;
+            justify-content: center;
+            align-items: center;
         }
 
         background-image: url("/images/1400px-login.svg");
 
         .form {
-            margin-left: 32%;
-            margin-top: 2.5%;
+            margin-top: -64%;
+            display: grid;
+            justify-content: center;
+            align-items: center;
         }
 
         #forgot-password {
-            position: absolute;
-            top: 53.5%;
-            font-size: 1.2em;
-            margin-left: 50%;
+            font-size: 0.9em;
             width: 170px;
         }
 
         #forgot-password:hover {
-            position: absolute;
-            top: 53.5%;
-            font-size: 1.3em;
-            margin-left: 49%;
+            font-size: 0.9em;
             color: #dbd7d7;
             width: 195px;
         }
 
         #forgot-password:active {
-            position: absolute;
-            top: 53.5%;
-            font-size: 1.3em;
-            margin-left: 49%;
+            font-size: 0.9em;
             color: #F47216;
             width: 195px;
-        }
-
-        .page2 {
-            margin-left: 20.5%;
-        }
-
-        .fox {
-            margin-left: 24%;
         }
     }
 
@@ -772,31 +715,27 @@ const FormComponent = styled.section `
         }
     
         .tablet-desktops {
-            display: flex;
+            display: grid;
             justify-content: space-between;
+            justify-content: center;
+            align-items: center;
         }
 
         background-image: url("/images/1600px-login.svg");
 
         .form {
-            margin-left: 30.3%;
+            display: grid;
+            justify-content: center;
+            align-items: center;
             border-radius: 19px;
             background: linear-gradient(180deg, #07B3FD 0%, #0a59c0 100%);
             width: 620px;
             height: 605px;
             border-color: white;
-            margin-top: 0.5%;
         }
 
         h1 {
             font-size: 1.8em;
-            margin-left: 43%;
-            margin-top: 5%;
-        }
-
-        .email {
-            margin-left: -18%;
-            margin-top: 11%;
         }
 
         #email {
@@ -804,31 +743,20 @@ const FormComponent = styled.section `
         }
 
         #forgot-email{
-            margin-left: 55.5%;
-            margin-top: 2%;
             font-size: 1em;
             width: 150px;
         }
 
         #forgot-email:hover{
-            margin-left: 54.5%;
-            margin-top: 2%;
             font-size: 1.1em;
             width: 165px;
             color: #dbd7d7;
         }
 
         #forgot-email:active{
-            margin-left: 54.5%;
-            margin-top: 2%;
             font-size: 1.1em;
             width: 165px;
             color: #F47216;
-        }
-
-        .senha {
-            margin-left: -18%;
-            margin-top: -7.5%;
         }
 
         #password {
@@ -836,36 +764,27 @@ const FormComponent = styled.section `
         }
 
         #forgot-password{
-            margin-left: 56%;
-            margin-top: -5.5%;
-            font-size: 1.3em;
+            font-size: 1em;
             width: 195px;
         }
 
         #forgot-password:hover{
-            margin-left: 55%;
-            margin-top: -5.5%;
-            font-size: 1.4em;
+            font-size: 1.1em;
             width: 210px;
             color: #dbd7d7;
         }
 
         #forgot-password:active{
-            margin-left: 55%;
-            margin-top: -5.5%;
-            font-size: 1.4em;
+            font-size: 1.1em;
             width: 210px;
             color: #F47216;
         }
 
         p {
-            margin-left: 48%;
             font-size: 1.2em;
-            margin-top: -5%;
         }
 
         .btn-google {
-            margin-left: 7.5%;
             width: 405px;
             height: 55px;
             font-size: 1.7em;
@@ -877,7 +796,6 @@ const FormComponent = styled.section `
         }
 
         .btn-google:hover {
-            margin-left: 7.5%;
             width: 405px;
             height: 55px;
             font-size: 1.7em;
@@ -889,7 +807,6 @@ const FormComponent = styled.section `
         }
 
         .btn-google:active {
-            margin-left: 7.5%;
             width: 405px;
             height: 55px;
             font-size: 1.7em;
@@ -908,36 +825,29 @@ const FormComponent = styled.section `
         .page2 {
             font-size: 1.3em;
             width: 580px;
-            margin-left: 23%;
         }
 
         .logar {
-            margin-left: 38%;
             width: 160px;
             height: 50px;
             font-size: 1.7em;
-            margin-top: 4.5%;
         }
 
         .logar:hover {
-            margin-left: 38%;
             width: 160px;
             height: 50px;
             font-size: 1.7em;
-            margin-top: 4.5%;
         }
 
         .logar:active {
-            margin-left: 38%;
             width: 160px;
             height: 50px;
             font-size: 1.7em;
-            margin-top: 4.5%;
         }
 
         .fox {
-            margin-left: 22.1%;
             width: 130px;
+            margin-left: -21%;
         }
     }
 

@@ -8,8 +8,10 @@ import Link from 'next/link';
 const RecoveryEmailComponent = styled.section`
 
     .mobile {
-        display: flex;
+        display: grid;
         justify-content: space-between;
+        justify-content: center;
+        align-items: center;
     }
 
     .tablet-desktops {
@@ -17,19 +19,34 @@ const RecoveryEmailComponent = styled.section`
     }
     
     background: linear-gradient(180deg, #04a4e8 0%, #0A53B5 100%);
+
+    height: 50vh;
+
     .container-center{
+
+        .fox{
+            margin-left: -12.5%;
+            width: 100px;
+        }
+
         h3{
             text-align: center;
             color: #ffffff;
             font-family:'Poppins-Bold';
-            margin-top: -45%;
-            margin-left: 15%;
-            width: 250px;
+            padding: 0;
+            margin-top: -8%;
+            font-size: 1.3em;
+            /* margin-top: -45%;
+            margin-left: 15%; */
+            /* width: 250px; */
         }
         .input-email{
             text-align: center;
-            margin-top: 15%;
-            margin-left: 11%;
+            margin-top: 8%;
+            font-size: 1.3em;
+        }
+        #phoneOrCPF::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+            font-size: 1.3em;
         }
         .btn-confirm{
             text-align: center;
@@ -41,9 +58,10 @@ const RecoveryEmailComponent = styled.section`
                 background: #93B413;
                 font-size: 1.6em;
                 color: #ffffff;
-                margin: 40px;
                 margin-top: 5%;
-                margin-left: 28%;
+                /* margin: 40px; */
+                /* margin-top: 5%; */
+                /* margin-left: 28%; */
             }
             .confirm:active{
                 width: 170px;
@@ -53,9 +71,9 @@ const RecoveryEmailComponent = styled.section`
                 background-color: #86a40f;
                 font-size: 1.6em;
                 color: #ffffff;
-                margin: 40px;
-                margin-top: 5%;
-                margin-left: 28%;
+                /* margin: 40px; */
+                /* margin-top: 5%; */
+                /* margin-left: 28%; */
             }
         }
     }
