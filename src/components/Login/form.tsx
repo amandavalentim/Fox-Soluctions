@@ -10,7 +10,7 @@ const FormComponent = styled.section `
 
     //Mobile
 
-    height: 110vh;
+    height: 47vh;
 
     background: linear-gradient(180deg, #07B3FD 0%, #0A53B5 100%);
 
@@ -19,8 +19,10 @@ const FormComponent = styled.section `
     }
 
     .mobile {
-        display: flex;
+        display: grid;
         justify-content: space-between;
+        justify-content: center;
+        align-items: center;
     }
 
     .tablet-desktops {
@@ -28,14 +30,10 @@ const FormComponent = styled.section `
     }
 
     h1 {
+        text-align: center;
         font-size: 1.8em;
-        margin-left: 43%;
-        margin-top: 15%;
-    }
-
-    .email {
-        margin-left: 10%;
-        margin-top: 15%;
+        margin-left: 5%;
+        padding-top: 5%;
     }
 
     #email::-webkit-input-placeholder { /* Chrome/Opera/Safari */
@@ -43,26 +41,23 @@ const FormComponent = styled.section `
     }
 
     #forgot-email {
-        margin-left: 23%;
         margin-top: -5%;
+        margin-left: 28%;
+        padding: 0;
         color: #C7C7C7;
         font-size: 1em;
         font-family: 'Poppins-Medium';
         width: 155px;
+        text-align: center;
     }
 
     #forgot-email:active {
-        margin-left: 23%;
         margin-top: -5%;
+        margin-left: 28%;
         font-size: 1em;
         color: #F47216;
         font-family: 'Poppins-Medium';
         width: 155px;
-    }
-
-    .senha {
-        margin-left: 10%;
-        margin-top: 10%;
     }
 
     #password::-webkit-input-placeholder { /* Chrome/Opera/Safari */
@@ -70,8 +65,8 @@ const FormComponent = styled.section `
     }
 
     #forgot-password {
-        margin-left: 23.5%;
         margin-top: -5%;
+        margin-left: 32%;
         font-size: 1em;
         font-family: 'Poppins-Regular';
         color: #C7C7C7;
@@ -79,8 +74,8 @@ const FormComponent = styled.section `
     }
 
     #forgot-password:active {
-        margin-left: 23.5%;
         margin-top: -5%;
+        margin-left: 32%;
         font-size: 1em;
         font-family: 'Poppins-Regular';
         color: #F47216;
@@ -89,13 +84,14 @@ const FormComponent = styled.section `
 
     p {
         font-size: 1.2em;
-        margin-top: 15%;
-        margin-left: 51%;
+        margin-top: 5%;
+        margin-left: 2%;
+        text-align: center;
     }
 
     .google-enter {
-        margin-top: 10%;
-        margin-left: 13%;
+        margin-top: 5%;
+        text-align: center;
     }
 
     .btn-google {
@@ -125,9 +121,10 @@ const FormComponent = styled.section `
     }
 
     .page2 {
-        margin-top: 10%;
-        margin-left: 10%;
+        margin-top: 5%;
         width: 280px;
+        text-align: center;
+        margin-left: 5.5%;
     }
 
     span {
@@ -135,8 +132,8 @@ const FormComponent = styled.section `
     }
 
     .logar {
-        margin-top: 10%;
-        margin-left: 27%;
+        margin-top: 5%;
+        margin-left: 25%;
         width: 170px;
         height: 50px;
         font-size: 1.6em;
@@ -164,17 +161,21 @@ const FormComponent = styled.section `
         }
     
         .tablet-desktops {
-            display: block;
+            display: grid;
             justify-content: space-between;
+            justify-content: center;
+            align-items: center;
         }
 
         background-image: url("/images/tablet-login.svg");
         background-repeat: no-repeat;
 
         .form {
-            position: absolute;
-            top: 195px;
-            margin-left: 23.8%;
+            display: grid;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            margin-top: -70%;
             border-radius: 19px;
             background: linear-gradient(180deg, #07B3FD 0%, #0a59c0 100%);
             width: 400px;
@@ -184,17 +185,12 @@ const FormComponent = styled.section `
 
        h1 {
         font-size: 23px;
-        margin-left: 42.5%;
-        margin-top: 6%;
-       }
-
-       .email {
-            margin-left: -5%;
-            margin-top: 3%;
+        margin-left: 2%;
        }
 
        #email {
         width: 270px;
+        margin: 0;
        }
 
        #email::-webkit-input-placeholder { /* Chrome/Opera/Safari */
@@ -202,19 +198,19 @@ const FormComponent = styled.section `
         }
 
        #forgot-email {
-        margin-left: 42%;
-        position: absolute;
-        top: 150px;
+        text-align: center;
+        padding: 0;
+        margin-top: -15%;
+        margin-left: 3%;
         color: #C7C7C7;
-        font-size: 0.7em;
+        font-size: 0.9em;
         font-family: 'Poppins-Regular';
         width: 125px;
     }
 
     #forgot-email:active {
-        margin-left: 42%;
-        position: absolute;
-        top: 150px;
+        margin-top: -15%;
+        margin-left: 3%;
         font-size: 0.7em;
         color: #F47216;
         font-family: 'Poppins-Regular';
@@ -222,8 +218,6 @@ const FormComponent = styled.section `
     }
 
     .senha {
-        margin-left: -5%;
-        margin-top: 3%;
         font-size: 14px;
     }
 
@@ -233,40 +227,42 @@ const FormComponent = styled.section `
 
     #password {
         width: 270px;
+        margin: 0;
     }
 
     #forgot-password {
-        margin-left: 42.5%;
-        position: absolute;
-        margin-top: -5%;
-        font-size: 0.7em;
+        margin-top: -15%;
+        margin-left: 3%;
+        font-size: 1em;
         font-family: 'Poppins-Regular';
         color: #C7C7C7;
         width: 120px;
     }
 
     #forgot-password:active {
-        margin-left: 42.5%;
-        position: absolute;
-        margin-top: -5%;
-        font-size: 0.7em;
+        margin-top: -15%;
+        margin-left: 3%;
+        font-size: 1em;
         font-family: 'Poppins-Regular';
         color: #F47216;
         width: 120px;
     }
 
     p {
-        margin-top: 5%;
-        margin-left: 47.8%;
+        text-align: center;
+        margin-left: 4.5%;
         font-size: 1em;
+        margin-top: -5%;
     }
 
     .google-enter {
-        margin-left: 15.5%;
-        margin-top: 4.5%;
+        margin-top: 4%;
+        text-align: center;
+        margin-top: -5%;
     }
 
     .btn-google {
+        text-align: center;
         width: 280px;
         height: 50px;
         font-size: 1em;
@@ -277,6 +273,7 @@ const FormComponent = styled.section `
     }
 
     .btn-google:active {
+        text-align: center;
         width: 280px;
         height: 50px;
         font-size: 1em;
@@ -289,8 +286,10 @@ const FormComponent = styled.section `
     .page2 {
         font-size: 1.1em;
         width: 320px;
-        margin-left: 14%;
+        margin-left: 0.3%;
         margin-top: 5%;
+        text-align: center;
+        margin-top: -5%;
     }
 
     .logar {
@@ -299,8 +298,9 @@ const FormComponent = styled.section `
         height: 40px;
         border-radius: 19px;
         background-color: #93B413;
-        margin-left: 33%;
-        margin-top: 4%;
+        text-align: center;
+        margin-top: -5%;
+        margin-left: 4.5%;
     }
 
     .logar:active {
@@ -309,56 +309,62 @@ const FormComponent = styled.section `
         height: 40px;
         border-radius: 19px;
         background-color: #86a40f;
-        margin-left: 33%;
-        margin-top: 4%;
+        margin-left: 4.5%;
     }
 
     .fox {
         width: 100px;
         height: 150px;
         margin-top: 40%;
-        margin-left: 11%;
+        margin-left: -25%;
+        padding: 0;
     }
 }
 
     // Small Screens
     @media(min-width: 992px) {
 
-        height: 78.5vh;
+        height: 90vh;
 
         .mobile {
             display: none;
         }
     
         .tablet-desktops {
-            display: flex;
+            display: grid;
             justify-content: space-between;
+            justify-content: center;
+            align-items: center;
         }
 
         background-image: url("/images/992px-login.svg");
 
         .form {
+            display: grid;
+            justify-content: space-between;
+            justify-content: center;
+            align-items: center;
             border-radius: 19px;
             background: linear-gradient(180deg, #07B3FD 0%, #0a59c0 100%);
             width: 450px;
             height: 460px;
             border-color: white;
-            margin-left: 27%;
+            margin-top: -71.5%;
        }
 
         h1 {
             font-size: 1.6em;
-            margin-left: 42%;
-            margin-top: 4%;
+            /* /* margin-left: 42%; */
+            margin-top: -6%; 
         }
 
         .email {
-            margin-left: -11.5%;
-            margin-top: 2%;
+            margin-top: -2%;
         }
 
         #email {
             width: 360px;
+            margin: 0;
         }
 
         #email::-webkit-input-placeholder { /* Chrome/Opera/Safari */
@@ -366,40 +372,38 @@ const FormComponent = styled.section `
         }
 
         #forgot-email {
-            position: absolute;
-            font-size: 0.8em;
-            margin-left: 48.5%;
+            text-align: center;
+            font-size: 0.9em;
+            margin-top: 0.5%;
             font-family: 'Poppins-Regular';
             width: 135px;
             color: #C7C7C7;
         }
 
         #forgot-email:hover {
-            position: absolute;
             font-size: 0.9em;
-            margin-left: 47.5%;
+            margin-top: 0.5%;
+            text-align: center;
             font-family: 'Poppins-Regular';
             color: #dbd7d7;
             width: 150px;
-            margin-top: -5.8%;
         }
 
         #forgot-email:active {
-            position: absolute;
             font-size: 0.9em;
-            margin-left: 47.5%;
+            margin-top: 0.5%;
+            text-align: center;
             color: #F47216;
             width: 150px;
-            margin-top: -5.8%;
         }
 
-       .senha {
-            margin-left: -11.5%;
-            margin-top: 2%;
+        .senha {
+            margin-top: 4%;
         }
 
         #password {
             width: 360px;
+            margin: 0;
         }
 
        #password::-webkit-input-placeholder {
@@ -407,9 +411,8 @@ const FormComponent = styled.section `
        }
 
        #forgot-password {
-            margin-left: 49%;
-            position: absolute;
-            margin-top: -5%;
+            margin-top: 0.5%;
+            text-align: center;
             font-size: 1em;
             font-family: 'Poppins-Regular';
             color: #C7C7C7;
@@ -417,9 +420,8 @@ const FormComponent = styled.section `
         }
 
         #forgot-password:hover {
-            margin-left: 48.5%;
-            position: absolute;
-            margin-top: -5%;
+            text-align: center;
+            margin-top: 0.5%;
             font-size: 1.1em;
             font-family: 'Poppins-Regular';
             color: #dbd7d7;
@@ -427,9 +429,8 @@ const FormComponent = styled.section `
         }
 
         #forgot-password:active {
-            margin-left: 48.5%;
-            position: absolute;
-            margin-top: -5%;
+            text-align: center;
+            margin-top: 0.5%;
             font-size: 1.1em;
             font-family: 'Poppins-Regular';
             color: #F47216;
@@ -438,13 +439,13 @@ const FormComponent = styled.section `
 
         p {
             font-size: 1em;
-            margin-top: 3%;
-            margin-left: 47%;
+            /* margin-top: 3%;
+            margin-left: 47%; */
         }
 
         .google-enter {
-            margin-left: 10.5%;
-            margin-top: 4%;
+            /* margin-left: 10.5%;
+            margin-top: 4%; */
             cursor: pointer;
        }
 
@@ -477,26 +478,26 @@ const FormComponent = styled.section `
     .page2 {
         font-size: 1em;
         width: 410px;
-        margin-left: 21%;
-        margin-top: 4%;
+        /* margin-left: 21%;
+        margin-top: 4%; */
     }
 
     .logar {
-        margin-left: 35%;
-        margin-top: 5.5%;
+        /* margin-left: 35%;
+        margin-top: 5.5%; */
         cursor: pointer;
     }
 
     .logar:active {
-        margin-left: 35%;
-        margin-top: 5.5%;
+        /* margin-left: 35%;
+        margin-top: 5.5%; */
     }
 
     .fox {
         width: 116px;
         height: 170px;
-        margin-left: 15.5%;
-        margin-top: 27%;
+        /* margin-left: 15.5%;
+        margin-top: 27%; */
     }
     }
 
@@ -968,7 +969,8 @@ const Form = function() {
                             </button>
                         </div>
                         <div className='page2'>
-                            Não tem uma conta? <Link href={'/CreateAccountPage'}>
+                            Não tem uma conta? 
+                            <Link href={'/CreateAccountPage'}>
                                 <span>Crie uma!</span>
                             </Link>
                         </div>
