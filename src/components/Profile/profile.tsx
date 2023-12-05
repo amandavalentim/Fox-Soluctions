@@ -174,7 +174,7 @@ const PgProfile = function() {
                         </Link>
                     </div>
                     <div className='menu-btn'>
-                        <Link href={'/'} className='settings'>
+                        <Link href={'/SettingsPage'} className='settings'>
                             Configurações
                         </Link>
                     </div>

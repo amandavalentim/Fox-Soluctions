@@ -20,7 +20,7 @@ var PgProfile = function () {
                 React.createElement("div", { className: 'menu-btn' },
                     React.createElement(link_1["default"], { href: '/UserListPage', className: 'user-list' }, "Lista de Usu\u00E1rios")),
                 React.createElement("div", { className: 'menu-btn' },
-                    React.createElement(link_1["default"], { href: '/', className: 'settings' }, "Configura\u00E7\u00F5es")),
+                    React.createElement(link_1["default"], { href: '/SettingsPage', className: 'settings' }, "Configura\u00E7\u00F5es")),
                 React.createElement("div", { className: 'menu-btn' },
                     React.createElement(link_1["default"], { href: '/HomePage', className: 'exit' }, "Sair")))),
         React.createElement("nav", { className: 'profile-desktop' },

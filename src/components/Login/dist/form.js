@@ -1,4 +1,4 @@
-// Developed by Gabriel
+// Developed by Gabriel Marques Correia
 'use client';
 "use strict";
 var __makeTemplateObject = (this && this.__makeTemplateObject) || function (cooked, raw) {

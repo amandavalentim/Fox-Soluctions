@@ -1,4 +1,4 @@
-// Developed by Gabriel
+// Developed by Gabriel Marques Correia
 
 'use client'
 import styled from '@emotion/styled';

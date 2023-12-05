@@ -10,11 +10,13 @@ const HomeComponent = styled.div `
 background: #0A53B5;
 background-repeat: no-repeat;
 background-size: 100vw;
-height: 100.5vh;
+height: 73.8vh;
 
     .mobile{
-        display: flex;
+        display: grid;
         justify-content: space-between;
+        justify-content: center;
+        align-items: center;
     }
 
     .tablet-desktops {
@@ -26,12 +28,11 @@ height: 100.5vh;
         }
 
     h1 {
-        text-align: center;
-        position: absolute;
-        left: 50px;
-        top: 200px;
         color: white;
-        margin: 10px;
+        font-size: 1.9em;
+        margin: 0;
+        padding-left: 18%;
+        padding-top: 5%;
     }
 
     #FX {
@@ -39,30 +40,29 @@ height: 100.5vh;
     }
 
     p {
-        text-align: center;
-        position: absolute;
-        left: 25px;
-        top: 300px;
-        font-size: 1.1em;
         color: white;
+        font-size: 1.5em;
+        text-align: center;
+        margin: 0;
+        padding-left: 0;
+        padding-top: 12%;
     }
 
     .fox {
-        width: 120px;
+        width: 150px;
         position: absolute;
-        top: 614px;
-        left: 190px;
+        top: 76%;
+        left: 57%;
     }
 
     .start {
-        position: absolute;
-        width:120px;
-        height: 100px;
+        margin-top: 15%;
+        margin-left: 28.5%;
+        width:130px;
+        height: 110px;
         border-top-right-radius: 50%;
         border-top-left-radius: 50%;
         border-bottom-left-radius: 50%;
-        top: 510px;
-        left: 90px;
         border: none;
         background-color: #93B413;
         font-size: 1.5em;
@@ -70,14 +70,13 @@ height: 100.5vh;
     }
 
     .start:active {
-        position: absolute;
+        margin-top: 15%;
+        margin-left: 28.5%;
         width:120px;
         height: 100px;
         border-top-right-radius: 50%;
         border-top-left-radius: 50%;
         border-bottom-left-radius: 50%;
-        top: 510px;
-        left: 90px;
         border: none;
         background-color: #86a40f;
         font-size: 1.5em;
@@ -101,46 +100,52 @@ height: 100.5vh;
         .tablet-desktops {
             display: block;
             justify-content: space-between;
+            justify-content: center;
+            align-items: center;
         }
 
         background-image: url("/images/tablet.svg");
 
         h1 {
             font-size: 1.5em;
-            margin-left: 31%;
-            margin-top: 3%;
+            margin: 0;
+            padding-left: 41%;
+            padding-top: 11%;
         }
 
         p {
             font-size: 1.3em;
-            margin-left: 13.8%;
+            margin-left: 1%;
             margin-top: 3%;
+            padding: 0;
         }
 
         .start {
-            left: 280px;
-            margin-top: -5%;
-            height: 90px;
+            margin-left: 45%;
+            margin-top: 4%;
+            height: 80px;
+            width: 100px;
         }
 
         .start:active {
-            left: 280px;
-            margin-top: -5%;
-            height: 90px;
+            margin-left: 45%;
+            margin-top: 4%;
+            height: 80px;
+            width: 100px;
             background-color: #86a40f;
         }
 
         .fox {
-            margin-top: -7.6%;
-            left: 380px;
-            width: 135px;
+            margin-top: 17.4%;
+            margin-left: -1%;
+            width: 130px;
         }
     }
 
     // Small Screens
     @media(min-width: 992px) {
 
-        height: 88vh;
+        height: 62.5vh;
 
         .mobile{
             display: none;
@@ -149,61 +154,61 @@ height: 100.5vh;
         .tablet-desktops {
             display: block;
             justify-content: space-between;
+            justify-content: center;
+            align-items: center;
         }
 
         background-image: url("/images/background3.svg");
 
         h1 {
-            font-size: 1.9em;
-            margin-left: 34%;
+            font-size: 1.6em;
+            margin: 0;
+            padding-top: 3%;
         }
 
         p {
-            font-size: 1.5em;
-            margin-left: 19%;
-            margin-top: 5%;
+            font-size: 1.4em;
+            margin-left: -1%;
+            margin-top: 2%;
         }
 
         .start {
-            width: 130px;
-            height: 90px;
-            font-size: 1.9em;
+            width: 90px;
+            height: 60px;
+            font-size: 1.7em;
             margin-top: 2%;
-            margin-left: 10.5%;
             cursor: pointer;
         }
 
         .start:hover {
-            width: 130px;
-            height: 90px;
-            font-size: 1.9em;
+            width: 90px;
+            height: 60px;
+            font-size: 1.7em;
             margin-top: 2%;
-            margin-left: 10.5%;
             background-color: #9fc214;
             cursor: pointer;
         }
 
         .start:active {
-            width: 130px;
-            height: 90px;
-            font-size: 1.9em;
+            width: 90px;
+            height: 60px;
+            font-size: 1.7em;
             margin-top: 2%;
-            margin-left: 10.5%;
             background-color: #86a40f;
             cursor: pointer;
         }
 
         .fox {
-            width: 150px;
-            top: 672.5px;
-            left: 510px;
+            width: 100px;
+            margin-top: -1.6%;
+            margin-left: -3%;
         }
     }
 
     // Medium Screens
     @media(min-width: 1200px) {
 
-        height: 90.5vh;
+        height: 70.5vh;
 
         .mobile{
             display: none;
@@ -212,77 +217,77 @@ height: 100.5vh;
         .tablet-desktops {
             display: block;
             justify-content: space-between;
+            justify-content: center;
+            align-items: center;
         }
 
         background-image: url("/images/background-2.svg");
 
         h1 {
-            font-size: 2em;
-            margin-left: 37%;
+            font-size: 1.7em;
+            margin-left: 3.7%;
+            /* margin-left: 37%; */
         }
 
         p {
-            font-size: 1.8em;
-            margin-left: 22.1%;
+            font-size: 1.5em;
+            margin-left: 1.7%;
+            /* margin-left: 22.1%; */
         }
 
         .start {
-            margin-top: 2.5%;
-            margin-left: 18.5%;
+            margin-left: 48%;
             cursor: pointer;
         }
 
         .start:hover {
-            margin-top: 2.5%;
-            margin-left: 18.5%;
+            margin-left: 48%;
             background-color: #9fc214;
             cursor: pointer;
         }
 
         .start:active {
-            margin-top: 2.5%;
-            margin-left: 18.5%;
+            margin-left: 48%;
             background-color: #86a40f;
             cursor: pointer;
         }
 
         .fox {
-            margin-left: 10.5%;
-            margin-top: -4.55%;
-            width: 150px;
+            width: 125px;
+            margin-top: 0.6%;
         }
     }
 
     @media(min-width: 1400px) {
 
-        height: 90.2vh;
+        height: 75vh;
 
         h1 {
-            margin-left: 39%;
+            /* margin-left: 39%; */
         }
 
         p{
-            margin-left: 24.7%;
+            /* margin-left: 24.7%; */
         }
 
         .fox {
-            margin-top: -1%;
-            margin-left: 13%;
+            margin-top: 2.6%;
+            /* margin-left: 13%; */
         }
 
         .start {
-            margin-top: 4%;
-            margin-left: 20%;
+            margin-top: 2%;
+            /* margin-left: 20%; */
         }
 
         .start:hover{
             margin-top: 4%;
-            margin-left: 20%;
+            /* margin-left: 20%; */
         }
 
         .start:active{
             margin-top: 4%;
-            margin-left: 20%;
+            /* margin-left: 20%; */
         }
 
     }
@@ -290,7 +295,7 @@ height: 100.5vh;
     // Large Screens
     @media(min-width: 1600px) {
 
-        height: 94vh;
+        height: 70vh;
 
         .mobile{
             display: none;
@@ -299,55 +304,57 @@ height: 100.5vh;
         .tablet-desktops {
             display: block;
             justify-content: space-between;
+            justify-content: center;
+            align-items: center;
         }
 
         background-image: url("/images/group-144.svg");
 
         h1 {
-            font-size: 2.3em;
-            margin-left: 37%;
-            margin-top: 5%;
+            font-size: 1.9em;
+            margin-left: 1%;
         }
 
         p {
-            font-size: 2em;
-            margin-left: 24%;
-            margin-top: 7%;
+            font-size: 1.7em;
+            margin-left: -3%;
+            /* margin-left: 25.5%;
+            margin-top: 7%; */
         }
 
         .start {
-            width: 150px;
-            height: 120px;
-            font-size: 2.3em;
-            margin-left: 20%;
-            margin-top: 8%;
+            width: 110px;
+            height: 80px;
+            font-size: 1.9em;
+            margin-left: 45.7%;
+            margin-top: 2%;
             cursor: pointer;
         }
 
         .start:hover {
-            width: 150px;
-            height: 120px;
-            font-size: 2.3em;
-            margin-left: 20%;
-            margin-top: 8%;
+            width: 110px;
+            height: 80px;
+            font-size: 1.9em;
+            margin-left: 45.7%;
+            margin-top: 2%;
             background-color: #9fc214;
             cursor: pointer;
         }
 
         .start:active {
-            width: 150px;
-            height: 120px;
-            font-size: 2.3em;
-            margin-left: 20%;
-            margin-top: 8%;
+            width: 110px;
+            height: 80px;
+            font-size: 1.9em;
+            margin-left: 45.7%;
+            margin-top: 2%;
             background-color: #86a40f;
             cursor: pointer;
         }
 
         .fox {
-            width: 180px;
-            margin-left: 14.5%;
-            margin-top: 2.85%;
+            width: 150px;
+            margin-left: -5%;
+            margin-top: -1.7%;
         }
     }
 
@@ -363,26 +370,26 @@ const PgInitial = function() {
                     <p>
                         Aqui nós buscamos sempre<br/> dar a melhor<br/> experiência possível para<br/> quem utiliza nossa<br/> plataforma, onde você pode<br/> realizar o upload e visualizar<br/> seus documentos!
                     </p>
-                        <Link href={'/LoginPage'}>
-                            <button type='button' className='start'>
-                                Start
-                            </button>
-                        </Link>
+                    <Link href={'/LoginPage'}>
+                        <button type='button' className='start'>
+                            Start
+                        </button>
+                    </Link>
                     <img src="/images/Stella.png" alt="fox" className='fox'/>
             </nav>
 
             <nav className='tablet-desktops'>
-                {/* Content */}
+                {/* Content */} 
                 <h1>Bem-Vindos a<br/> <span id='FX'>Fox Solutions</span>!</h1>
                 <p>
                      Aqui nós buscamos sempre dar a melhor<br/> experiência possível para quem utiliza nossa<br/> plataforma, onde você pode realizar o upload<br/> e visualizar seus documentos!
                 </p>
-                    <Link href={'/LoginPage'}>
-                                <button type='button' className='start'>
-                                    Start
-                                </button>
-                    </Link>
-                    <img src="/images/Stella.png" alt="fox" className='fox'/>
+                <Link href={'/LoginPage'}>
+                    <button type='button' className='start'>
+                        Start
+                    </button>
+                </Link>
+                <img src="/images/Stella.png" alt="fox" className='fox'/>
             </nav>
             
         </HomeComponent>
