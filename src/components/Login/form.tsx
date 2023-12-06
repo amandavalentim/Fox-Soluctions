@@ -10,7 +10,7 @@ const FormComponent = styled.section `
 
     //Mobile
 
-    height: 47vh;
+    height: 49vh;
 
     background: linear-gradient(180deg, #07B3FD 0%, #0A53B5 100%);
 
@@ -29,10 +29,16 @@ const FormComponent = styled.section `
         display: none;
     }
 
+    form {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+
     h1 {
         text-align: center;
         font-size: 1.8em;
-        margin-left: 5%;
+        margin-left: 4%;
         padding-top: 5%;
     }
 
@@ -40,24 +46,26 @@ const FormComponent = styled.section `
         font-size: 1.2em;
     }
 
+    h4 {
+        /* margin-top: -5%; */
+        padding: 0;
+        text-align: center;
+    }
+
     #forgot-email {
         margin-top: -5%;
-        margin-left: 28%;
         padding: 0;
         color: #C7C7C7;
         font-size: 1em;
         font-family: 'Poppins-Medium';
-        width: 155px;
-        text-align: center;
     }
 
     #forgot-email:active {
         margin-top: -5%;
-        margin-left: 28%;
+        padding: 0;
         font-size: 1em;
         color: #F47216;
         font-family: 'Poppins-Medium';
-        width: 155px;
     }
 
     #password::-webkit-input-placeholder { /* Chrome/Opera/Safari */
@@ -66,27 +74,31 @@ const FormComponent = styled.section `
 
     #forgot-password {
         margin-top: -5%;
-        margin-left: 32%;
+        padding: 0;
         font-size: 1em;
         font-family: 'Poppins-Regular';
         color: #C7C7C7;
-        width: 155px;
+        text-align: center;
     }
 
     #forgot-password:active {
         margin-top: -5%;
-        margin-left: 32%;
+        padding: 0;
         font-size: 1em;
         font-family: 'Poppins-Regular';
         color: #F47216;
-        width: 155px;
     }
 
     p {
         font-size: 1.2em;
         margin-top: 5%;
-        margin-left: 2%;
         text-align: center;
+    }
+
+    .button-create {
+        text-align: center;
+        margin: 0;
+        padding: 0;
     }
 
     .google-enter {
@@ -102,6 +114,7 @@ const FormComponent = styled.section `
         border: none;
         border-radius: 39px;
         padding: 8px;
+        text-align: center;
     }
 
     .btn-google:active {
@@ -112,6 +125,7 @@ const FormComponent = styled.section `
         border-radius: 39px;
         padding: 8px;
         background-color: #86a40f;
+        text-align: center;
     }
 
     .faGoogle {
@@ -122,9 +136,9 @@ const FormComponent = styled.section `
 
     .page2 {
         margin-top: 5%;
-        width: 280px;
+        /* width: 280px; */
         text-align: center;
-        margin-left: 5.5%;
+        /* margin-left: 5.5%; */
     }
 
     span {
@@ -133,13 +147,14 @@ const FormComponent = styled.section `
 
     .logar {
         margin-top: 5%;
-        margin-left: 25%;
+        /* margin-left: 25%; */
         width: 170px;
         height: 50px;
         font-size: 1.6em;
         background-color: #93B413;
         border: none;
         border-radius: 20px;
+        text-align: center;
     }
 
     .logar:active {
@@ -152,9 +167,11 @@ const FormComponent = styled.section `
     }
 
     // Tablet
-    @media(min-width: 768px){
+    @media(min-width: 704px){
 
-        height: 97vh;
+        height: 79.6vh;
+
+        background: #0A53B5;
 
         .mobile {
             display: none;
@@ -167,15 +184,15 @@ const FormComponent = styled.section `
             align-items: center;
         }
 
-        background-image: url("/images/tablet-login.svg");
-        background-repeat: no-repeat;
+        /* background-image: url("/images/tablet-login.svg");
+        background-repeat: no-repeat; */
 
         .form {
             display: grid;
             text-align: center;
             align-items: center;
             justify-content: center;
-            margin-top: -70%;
+            margin-top: -69.5%;
             border-radius: 19px;
             background: linear-gradient(180deg, #07B3FD 0%, #0a59c0 100%);
             width: 400px;
@@ -324,7 +341,7 @@ const FormComponent = styled.section `
     // Small Screens
     @media(min-width: 992px) {
 
-        height: 90vh;
+        height: 79.6vh;
 
         .mobile {
             display: none;
@@ -337,7 +354,7 @@ const FormComponent = styled.section `
             align-items: center;
         }
 
-        background-image: url("/images/992px-login.svg");
+        /* background-image: url("/images/992px-login.svg"); */
 
         .form {
             display: grid;
@@ -348,7 +365,7 @@ const FormComponent = styled.section `
             width: 450px;
             height: 460px;
             border-color: white;
-            margin-top: -71.5%;
+            margin-top: -67.3%;
        }
 
         h1 {
@@ -488,7 +505,7 @@ const FormComponent = styled.section `
     // Medium Screens
     @media(min-width: 1200px) {
 
-        height: 86.5vh;
+        height: 79.6vh;
 
         .mobile {
             display: none;
@@ -501,7 +518,7 @@ const FormComponent = styled.section `
             align-items: center;
         }
 
-        background-image: url("/images/1200px-login.svg");
+        /* background-image: url("/images/1200px-login.svg"); */
 
         .form {
             display: grid;
@@ -512,7 +529,7 @@ const FormComponent = styled.section `
             width: 527px;
             height: 500px;
             border-color: white;
-            margin-top: -70%;
+            margin-top: -71.2%;
         }
 
         h1 {
@@ -665,7 +682,7 @@ const FormComponent = styled.section `
     // 1476-708
     @media(min-width: 1400px) {
 
-        height: 88vh;
+        height: 79.6vh;
 
         .mobile {
             display: none;
@@ -678,10 +695,10 @@ const FormComponent = styled.section `
             align-items: center;
         }
 
-        background-image: url("/images/1400px-login.svg");
+        /* background-image: url("/images/1400px-login.svg"); */
 
         .form {
-            margin-top: -64%;
+            margin-top: -71.2%;
             display: grid;
             justify-content: center;
             align-items: center;
@@ -708,7 +725,7 @@ const FormComponent = styled.section `
     // Large Screens
     @media(min-width: 1600px) {
 
-        height: 87vh;
+        height: 81.9vh;
 
         .mobile {
             display: none;
@@ -721,7 +738,7 @@ const FormComponent = styled.section `
             align-items: center;
         }
 
-        background-image: url("/images/1600px-login.svg");
+        /* background-image: url("/images/1600px-login.svg"); */
 
         .form {
             display: grid;
@@ -732,6 +749,7 @@ const FormComponent = styled.section `
             width: 620px;
             height: 605px;
             border-color: white;
+            margin-top: -68%;
         }
 
         h1 {
@@ -847,7 +865,7 @@ const FormComponent = styled.section `
 
         .fox {
             width: 130px;
-            margin-left: -21%;
+            margin-left: -20.5%;
         }
     }
 

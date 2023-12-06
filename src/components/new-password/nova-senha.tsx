@@ -8,41 +8,37 @@ import Input from '../Login/Input/Input';
 const Formcomponent4 = styled.section `
 
     //Mobile
-    height: 95vh;
+    height: 61vh;
 
     background: linear-gradient(180deg, #04a4e8 0%, #0A53B5 100%);
 
-    .mobile{
-        display: block;
+    .mobile {
+        display: grid;
         justify-content: space-between;
+        justify-content: center;
+        align-items: center;
     }
 
-    .tablet {
+    .tablet-desktops {
         display: none;
     }
 
-    .desktop1 {
-        display: none;
-    }
-
-    .desktop2 {
-        display: none;
-    }
-
-    .desktop3 {
-        display: none;
+    .a {
+        margin: 0;
+        text-align: center;
     }
 
     h1 {
         color: white;
         padding-top: 10%;
         font-size: 1.3em;
-        margin-left: 9.7%;
+        /* margin-left: 9.7%; */
+        text-align: center;
     }
 
     #password {
         margin-top: 18%;
-        margin-left: 15%;
+        /* margin-left: 15%; */
     }
 
     #password::-webkit-input-placeholder { /* Chrome/Opera/Safari */
@@ -51,7 +47,7 @@ const Formcomponent4 = styled.section `
 
     #confirm-password {
         margin-top: 13%;
-        margin-left: 15%;
+        /* margin-left: 15%; */
     }
 
     #confirm-password::-webkit-input-placeholder { /* Chrome/Opera/Safari */
@@ -60,7 +56,8 @@ const Formcomponent4 = styled.section `
 
     .confirmar {
         margin-top: 10%;
-        margin-left: 23.3%;
+        margin-left: 4%;
+        text-align: center;
         width: 170px;
         height: 50px;
         font-size: 1.6em;
@@ -79,38 +76,31 @@ const Formcomponent4 = styled.section `
         border-radius: 20px;
     }
 
+    .fox {
+        margin-left: -12%;
+    }
+
     //Tablet
     @media(min-width: 768px) {
         
-        .mobile{
+        .mobile {
             display: none;
         }
 
-        .tablet {
-            display: flex;
+        .tablet-desktops {
+            display: grid;
             justify-content: space-between;
+            justify-content: center;
+            align-items: center;
         }
 
-        .desktop1 {
-            display: none;
-        }
+        background: #0A53B5;
 
-        .desktop2 {
-            display: none;
-        }
-
-        .desktop3 {
-            display: none;
-        }
-
-        background-image: url("/images/tablet-recuperar-senha.svg");
-        background-repeat: no-repeat;
-
-        height: 62vh;
+        height: 50vh;
 
         form {
-            margin-top: 4%;
-            margin-left: 30%;
+            margin-top: 11%;
+            /* margin-left: 30%; */
             border-radius: 19px;
             background: linear-gradient(180deg, #07B3FD 0%, #0a59c0 100%);
             width: 290px;
@@ -172,57 +162,50 @@ const Formcomponent4 = styled.section `
             width: 100px;
         }
 
-        //Small Screens
-        @media(min-width: 992px) {
+    //Small Screens
+    @media(min-width: 992px) {
 
-            .mobile{
-                display: none;
-            }
+        height: 60vh;
 
-            .tablet {
-                display: none;
-            }
+        .mobile {
+            display: none;
+        }
 
-            .desktop1 {
-                display: flex;
-                justify-content: space-between;
-            }
+        .tablet-desktops {
+            display: grid;
+            justify-content: space-between;
+            justify-content: center;
+            align-items: center;
+        }
 
-            .desktop2 {
-                display: none;
-            }
+        form {
+            margin-top: 12%;
+            /* margin-left: 32.5%; */
+            border-radius: 19px;
+            background: linear-gradient(180deg, #07B3FD 0%, #0a59c0 100%);
+            width: 330px;
+            height: 330px;
+            border-color: white;
+        }
 
-            background-image: url("/images/992px-recuperar-senha.svg");
-            height: 65vh;
+        h1 {
+            font-size: 1.3em;
+            /* margin-left: 11.3%; */
+        }
 
-            form {
-                margin-top: 4.3%;
-                margin-left: 32.5%;
-                border-radius: 19px;
-                background: linear-gradient(180deg, #07B3FD 0%, #0a59c0 100%);
-                width: 330px;
-                height: 330px;
-                border-color: white;
-            }
+        #password {
+            margin-top: 12%;
+            /* margin-left: 15%; */
+            width: 232px;
+        }
 
-            h1 {
-                font-size: 1.3em;
-                margin-left: 11.3%;
-            }
-
-            #password {
-                margin-top: 12%;
-                margin-left: 15%;
-                width: 232px;
-            }
-
-            #password::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-                font-size: 1.2em;
-            }
+        #password::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+            font-size: 1.2em;
+        }
 
             #confirm-password {
                 margin-top: 5%;
-                margin-left: 15%;
+                /* margin-left: 15%; */
                 width: 232px;
             }
 
@@ -235,7 +218,7 @@ const Formcomponent4 = styled.section `
                 height: 50px;
                 font-size: 1.6em;
                 margin-top: 2%;
-                margin-left: 25%;
+                /* margin-left: 25%; */
                 background-color: #93B413;
                 border: none;
                 border-radius: 10px;
@@ -247,7 +230,7 @@ const Formcomponent4 = styled.section `
                 height: 50px;
                 font-size: 1.6em;
                 margin-top: 2%;
-                margin-left: 25%;
+                /* margin-left: 25%; */
                 background-color: #9fc214;
                 border: none;
                 border-radius: 10px;
@@ -259,7 +242,7 @@ const Formcomponent4 = styled.section `
                 height: 50px;
                 font-size: 1.6em;
                 margin-top: 2%;
-                margin-left: 25%;
+                /* margin-left: 25%; */
                 background-color: #86a40f;
                 border: none;
                 border-radius: 10px;
@@ -267,39 +250,31 @@ const Formcomponent4 = styled.section `
             }
 
             .fox {
-                margin-left: -103.5%;
+                margin-left: -106%;
             }
         }
 
-        //Medium Screens
-        @media(min-width: 1200px) {
+    //Medium Screens
+    @media(min-width: 1200px) {
 
-            .mobile{
-                display: none;
-            }
+        height: 64vh;
 
-            .tablet {
-                display: none;
-            }
+        .mobile {
+            display: none;
+        }
 
-            .desktop1 {
-                display: none;
-            }
+        .tablet-desktops {
+            display: grid;
+            justify-content: space-between;
+            justify-content: center;
+            align-items: center;
+        }
 
-            .desktop2 {
-                display: flex;
-                justify-content: space-between;
-            }
-
-            .desktop3 {
-                display: none;
-            }
-
-            background-image: url("/images/1200px-recuperar-senha.svg");
+            /* background-image: url("/images/1200px-recuperar-senha.svg"); */
 
             form {
-                margin-top: 2.5%;
-                margin-left: 34.2%;
+                margin-top: 10%;
+                /* margin-left: 34.2%; */
                 border-radius: 19px;
                 background: linear-gradient(180deg, #07B3FD 0%, #0a59c0 100%);
                 width: 400px;
@@ -309,12 +284,12 @@ const Formcomponent4 = styled.section `
 
             h1 {
                 font-size: 1.6em;
-                margin-left: 10.5%;
+                /* margin-left: 10.5%; */
             }
 
             #password {
                 margin-top: 12%;
-                margin-left: 12%;
+                /* margin-left: 12%; */
                 width: 305px;
                 height: 32px;
             }
@@ -325,7 +300,7 @@ const Formcomponent4 = styled.section `
 
             #confirm-password {
                 margin-top: 1%;
-                margin-left: 12%;
+                /* margin-left: 12%; */
                 width: 305px;
                 height: 32px;
             }
@@ -339,7 +314,7 @@ const Formcomponent4 = styled.section `
                 height: 55px;
                 font-size: 1.7em;
                 margin-top: -4%;
-                margin-left: 28%;
+                /* margin-left: 28%; */
                 background-color: #93B413;
                 border: none;
                 border-radius: 10px;
@@ -351,7 +326,7 @@ const Formcomponent4 = styled.section `
                 height: 55px;
                 font-size: 1.7em;
                 margin-top: -4%;
-                margin-left: 28%;
+                /* margin-left: 28%; */
                 background-color: #9fc214;
                 border: none;
                 border-radius: 10px;
@@ -363,7 +338,7 @@ const Formcomponent4 = styled.section `
                 height: 55px;
                 font-size: 1.7em;
                 margin-top: -4%;
-                margin-left: 28%;
+                /* margin-left: 28%; */
                 background-color: #86a40f;
                 border: none;
                 border-radius: 10px;
@@ -371,18 +346,29 @@ const Formcomponent4 = styled.section `
             }
 
             .fox {
-                margin-left: -95.5%;
+                margin-left: -94.5%;
             }
         }
 
         @media(min-width: 1400px){
             height: 72vh;
 
-            background-image: url("/images/1400px-recuperar-senha.svg");
+            .mobile {
+                display: none;
+            }
+
+            .tablet-desktops {
+                display: grid;
+                justify-content: space-between;
+                justify-content: center;
+                align-items: center;
+            }
+
+            /* background-image: url("/images/1400px-recuperar-senha.svg"); */
 
             form {
-                margin-left: 35.5%;
-                margin-top: 5%;
+                /* margin-left: 35.5%; */
+                margin-top: 15%;
             }
 
             .fox {
@@ -393,33 +379,23 @@ const Formcomponent4 = styled.section `
         //Large Screens
         @media(min-width: 1600px) {
 
-            .mobile{
+            .mobile {
                 display: none;
             }
 
-            .tablet {
-                display: none;
-            }
-
-            .desktop1 {
-                display: none;
-            }
-
-            .desktop2 {
-                display: none;
-            }
-
-            .desktop3 {
-                display: flex;
+            .tablet-desktops {
+                display: grid;
                 justify-content: space-between;
+                justify-content: center;
+                align-items: center;
             }
 
-            background-image: url("/images/1600px-recuperar-senha.svg");
-            height: 60vh;
+            /* background-image: url("/images/1600px-recuperar-senha.svg"); */
+            height: 65vh;
 
             form {
-                margin-top: 2%;
-                margin-left: 35.5%;
+                margin-top: 15%;
+                /* margin-left: 35.5%; */
                 border-radius: 19px;
                 background: linear-gradient(180deg, #07B3FD 0%, #0a59c0 100%);
                 width: 400px;
@@ -429,7 +405,7 @@ const Formcomponent4 = styled.section `
 
             h1 {
                 font-size: 1.7em;
-                margin-left: 8.5%;
+                /* margin-left: 8.5%; */
             }
 
             #password {
@@ -515,7 +491,7 @@ const NewPassword = function() {
                 {/* Content */}
                 <Input type="number" name="password" id="password" placeholder='Nova Senha'/>
                 <Input type="number" name="confirm-password" id="confirm-password" placeholder='Confirmar nova Senha'/>
-                <Link href={'/LoginPage'}>
+                <Link href={'/LoginPage'} className='a'>
                         <button className='confirmar' type='button'>
                             Confirmar
                         </button>
@@ -524,7 +500,7 @@ const NewPassword = function() {
                 <img src="/images/raposa-new-password.png" alt="fox" className='fox'/>
             </nav>
 
-            <nav className='tablet'>
+            <nav className='tablet-desktops'>
                 {/* Content */}
                 <form>
                     <h1>Crie a sua nova senha:</h1>
@@ -540,53 +516,6 @@ const NewPassword = function() {
                 </form>
             </nav>
 
-            <nav className='desktop1'>
-                {/* Content */}
-                <form>
-                    <h1>Crie a sua nova senha:</h1>
-                        <Input type="number" name="password" id="password" placeholder='Nova Senha'/>
-                        <Input type="number" name="confirm-password" id="confirm-password" placeholder='Confirmar nova Senha'/>
-                        <Link href={'/LoginPage'}>
-                            <button className='confirmar' type='button'>
-                                Confirmar
-                            </button>
-                        </Link>
-                        {/*Stella our Mascot*/}
-                        <img src="/images/Raposa-login.png" alt="fox" className='fox'/>
-                </form>
-            </nav>
-
-            <nav className='desktop2'>
-                {/* Content */}
-                <form>
-                    <h1>Crie a sua nova senha:</h1>
-                        <Input type="number" name="password" id="password" placeholder='Nova Senha'/>
-                        <Input type="number" name="confirm-password" id="confirm-password" placeholder='Confirmar nova Senha'/>
-                        <Link href={'/LoginPage'}>
-                            <button className='confirmar' type='button'>
-                                Confirmar
-                            </button>
-                        </Link>
-                        {/*Stella our Mascot*/}
-                        <img src="/images/Raposa-login.png" alt="fox" className='fox'/>
-                </form>
-            </nav>
-
-            <nav className='desktop3'>
-                {/* Content */}
-                <form>
-                    <h1>Crie a sua nova senha:</h1>
-                        <Input type="number" name="password" id="password" placeholder='Nova Senha'/>
-                        <Input type="number" name="confirm-password" id="confirm-password" placeholder='Confirmar nova Senha'/>
-                        <Link href={'/LoginPage'}>
-                            <button className='confirmar' type='button'>
-                                Confirmar
-                            </button>
-                        </Link>
-                        {/*Stella our Mascot*/}
-                        <img src="/images/Raposa-login.png" alt="fox" className='fox'/>
-                </form>
-            </nav>
         </Formcomponent4>
     )
 }

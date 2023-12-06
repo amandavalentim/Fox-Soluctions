@@ -24,6 +24,11 @@ const RecoveryEmailComponent = styled.section`
 
     .container-center{
 
+        display: grid;
+        justify-content: space-between;
+        justify-content: center;
+        align-items: center;
+
         .fox{
             margin-left: -12.5%;
             width: 100px;
@@ -79,25 +84,32 @@ const RecoveryEmailComponent = styled.section`
     }
 
     //tablet
-    @media(min-width: 450px){
+    @media(min-width: 768px){
 
-        height: 70vh;
+        height: 50.5vh;
 
         .mobile {
             display: none;
         }
 
         .tablet-desktops {
-            display: flex;
+            display: grid;
             justify-content: space-between;
+            justify-content: center;
+            align-items: center;
         }
+
+        background: #0A53B5;
 
         form{
             width: 300px;
             border-radius: 19px;
             background: linear-gradient(180deg, #07B3FD 0%, #0a59c0 100%);
-            margin-top: 5.5%;
-            margin-left: 29%;
+            margin-top: 7.5%;
+            display: grid;
+            justify-content: space-between;
+            justify-content: center;
+            align-items: center;
         }
 
         .input-email{
@@ -111,11 +123,13 @@ const RecoveryEmailComponent = styled.section`
 
         h3 {
             padding-top: 10%;
-            margin-left: 14.5%;
+            text-align: center;
+            /* margin-left: 14.5%; */
         }
 
         .input-email {
-            margin-left: -14.5%;
+            /* margin-left: -14.5%; */
+            text-align: center;
             margin-top: 3.5%;
         }
 
@@ -125,9 +139,7 @@ const RecoveryEmailComponent = styled.section`
 
         .btn-confirm {
             text-align: center;
-        }
-
-        .confirm{
+            .confirm{
             width: 130px;
             height: 40px;
             border-radius: 15px;
@@ -145,23 +157,23 @@ const RecoveryEmailComponent = styled.section`
             height: 40px;
             border-radius: 15px;
             border: none;
-                background-color: #86a40f;
+            background-color: #86a40f;
             font-size: 1.5em;
             color: #ffffff;
             margin: 40px;
             margin-top: 5%;
             margin-left: 15%;
         }
-        
-        background-image: url("/images/tablet-recuperar-email.svg");
-        background-repeat: no-repeat;
+        }
 
         .fox2 {
             width: 70px;
             height: 70px;
-            position: absolute;
-            left: 345px;
-            top: 460px;
+            /* position: absolute; */
+            /* left: 345px;
+            top: 425px; */
+            text-align: center;
+            margin-left: 40%;
         }
 
     }
@@ -169,25 +181,37 @@ const RecoveryEmailComponent = styled.section`
     //Small Screens
 
     @media(min-width: 992px) {
-        background-image: url("/images/992px-recuperar-senha.svg");
+
+        display: grid;
+        justify-content: space-between;
+        justify-content: center;
+        align-items: center;
+
         height: 65vh;
 
         form {
-            margin-left: 34.2%;
+            /* margin-left: 34.2%; */
             height: 250px;
+            display: grid;
+            justify-content: space-between;
+            justify-content: center;
+            align-items: center;
         }
 
         h3 {
-            margin-left: 13.5%;
+            /* margin-left: 13.5%; */
+            text-align: center;
         }
 
         .input-email {
-            margin-left: -19%;
+            /* margin-left: -19%; */
+            text-align: center;
             margin-top: 3%;
         }
 
         .btn-confirm{
             text-align: center;
+            padding-top: 5%;
             .confirm{
                 width: 170px;
                 height: 50px;
@@ -196,9 +220,9 @@ const RecoveryEmailComponent = styled.section`
                 background: #93B413;
                 font-size: 1.6em;
                 color: #ffffff;
-                margin: 40px;
+                margin: 0;
                 cursor: pointer;
-                margin-top: 2.5%;
+                /* margin-top: 2.5%; */
             }
             .confirm:hover{
                 width: 170px;
@@ -228,30 +252,56 @@ const RecoveryEmailComponent = styled.section`
 
         .fox2 {
             margin-top: 1%;
-            margin-left: 12.5%;
+            margin-left: 40%;
+            text-align: center;
         }
     }
 
     //Medium Screen 
     @media(min-width: 1200px) {
-        background-image: url("/images/1200px-recuperar-senha.svg");
+        
+        display: grid;
+        justify-content: space-between;
+        justify-content: center;
+        align-items: center;
+
+        height: 60vh;
 
         form {
-            margin-left: 37%;
-            height: 230px;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            height: 260px;
+            width: 350px;
+            margin-top: 5%;
         }
 
         h3 {
-            margin-left: 13.5%;
+            /* margin-left: 13.5%; */
+            text-align: center;
+            font-size: 1.4em;
+            margin: 0;
+            padding: 0;
         }
 
         .input-email {
-            margin-left: -28%;
-            margin-top: 5%;
+            text-align: center;
+            padding-top: 2%;
+            margin: 0;
+        }
+
+        #phoneOrCPF {
+            width: 250px;
+            margin: 0;
+        }
+
+        #phoneOrCPF::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+            font-size: 1.3em;
         }
 
         .btn-confirm{
             text-align: center;
+            margin: 0;
             .confirm{
                 width: 170px;
                 height: 50px;
@@ -260,9 +310,9 @@ const RecoveryEmailComponent = styled.section`
                 background: #93B413;
                 font-size: 1.6em;
                 color: #ffffff;
-                margin: 40px;
+                /* margin: 40px; */
                 cursor: pointer;
-                margin-top: -10%;
+                margin: 0;
             }
             .confirm:hover{
                 width: 170px;
@@ -284,7 +334,7 @@ const RecoveryEmailComponent = styled.section`
                 background-color: #86a40f;
                 font-size: 1.6em;
                 color: #ffffff;
-                margin: 40px;
+                margin: 0;
                 cursor: pointer;
                 margin-top: -10%;
             }
@@ -292,7 +342,8 @@ const RecoveryEmailComponent = styled.section`
 
         .fox2 {
             margin-top: 1.1%;
-            margin-left: 20.5%;
+            margin-left: 40%;
+            text-align: center;
         }
     }
 
@@ -301,24 +352,35 @@ const RecoveryEmailComponent = styled.section`
     @media(min-width: 1400px) {
         height: 72vh;
 
-        background-image: url("/images/1400px-recuperar-senha.svg");
+        display: grid;
+        justify-content: space-between;
+        justify-content: center;
+        align-items: center;
 
         .form {
-            margin-left: 38.8%;
+            /* margin-left: 38.8%; */
+            text-align: center;
             margin-top: 7%;
+            width: 420px;
+            height: 300px;
         }
 
         h3 {
             font-size: 1.3em;
-            margin-left: 10%;
+            /* margin-left: 10%; */
         }
 
         .input-email {
-            margin-left: -28%;
+            /* margin-left: -28%; */
+            width: 100%;
+        }
+
+        #phoneOrCPF {
+            width: 300px;
         }
 
         #phoneOrCPF::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-            font-size: 1em;
+            font-size: 1.5em;
         }
 
         .btn-confirm{
@@ -361,8 +423,8 @@ const RecoveryEmailComponent = styled.section`
         }
 
         .fox2 {
-            margin-left: 23%;
-            margin-top: 3%;
+            margin-left: 40%;
+            margin-top: 1%;
             width: 90px;
             height: 90px;
         }
@@ -370,16 +432,22 @@ const RecoveryEmailComponent = styled.section`
  
     //Large Screen 
     @media(min-width: 1600px) {
-        background-image: url("/images/1600px-recuperar-email.svg");
+        
         height: 69vh;
 
+        display: grid;
+        justify-content: space-between;
+        justify-content: center;
+        align-items: center;
+
         form {
-            margin-left: 31.5%;
+            /* margin-left: 31.5%; */
+            text-align: center;
         }
 
         .input-email {
             margin-top: -2.5%;
-            margin-left: -39.5%;
+            /* margin-left: -39.5%; */
         }
 
         .btn-confirm{
@@ -426,7 +494,7 @@ const RecoveryEmailComponent = styled.section`
         }
 
         .fox2 {
-            margin-left: 24%;
+            margin-left: 42%;
         }
     }
 `

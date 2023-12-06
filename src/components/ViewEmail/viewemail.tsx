@@ -9,8 +9,10 @@ const ViewEmailComponent = styled.section `
 // Mobile
 
 .mobile {
-    display: block;
+    display: grid;
     justify-content: space-between;
+    justify-content: center;
+    align-items: center;
 }
 
 .tablet-desktops {
@@ -18,17 +20,26 @@ const ViewEmailComponent = styled.section `
 }
 
 background: linear-gradient(180deg, #04a4e8 0%, #0A53B5 100%);
-height: 70vh;
+height: 46.5vh;
 
 h1 {
     font-size: 1.4em;
-    padding: 8.5%;
+    /* padding: 8.5%; */
+    text-align: center;
+    margin-top: 20%;
 }
 
 p {
     text-decoration: underline 3px;
-    font-size: 1.1em;
-    margin: 15%;
+    font-size: 1.5em;
+    margin-top: 23%;
+    text-align: center;
+}
+
+.buttons {
+    text-align: center;
+    margin-left: -23%;
+    margin-top: 5%;
 }
 
 #ok {
@@ -78,8 +89,8 @@ p {
 .fox {
     width: 130px;
     height: 100px;
-    margin-top: 10.3%;
-    margin-left: 32%;
+    margin-top: 18.9%;
+    margin-left: 28%;
 }
 
 // Tablets
@@ -90,16 +101,19 @@ p {
     }
 
     .tablet-desktops {
-        display: block;
+        display: grid;
         justify-content: space-between;
+        justify-content: center;
+        align-items: center;
     }
 
     height: 70vh;
-    background-image: url("/images/tablet-recuperar-email.svg");
-    background-repeat: no-repeat;
+    /* background-image: url("/images/tablet-recuperar-email.svg");
+    background-repeat: no-repeat; */
 
     .form {
         padding-top: 6.2%;
+        text-align: center;
     }
 
     form{
@@ -107,23 +121,28 @@ p {
         height: 300px;
         border-radius: 19px;
         background: linear-gradient(180deg, #07B3FD 0%, #0a59c0 100%);
-        margin-left: 30%;
+        /* margin-left: 30%; */
+        text-align: center;
         margin-top: -0.2%;
     }
 
     h1 {
         font-size: 1.3em;
-        margin-left: 1%;
+        /* margin-left: 1%; */
         padding-top: 10%;
     }
 
     p {
-        margin-left: 13%;
+        /* margin-left: 13%; */
+    }
+
+    .buttons {
+        text-align: center;
     }
 
     #ok {
         background-color: #93B413;
-        margin-left: 20.3%;
+        /* margin-left: 20.3%; */
     }
 
     #ok:active {
@@ -132,7 +151,7 @@ p {
     }
 
     #change {
-        margin-left: 10%;
+        /* margin-left: 10%; */
         background-color: #93B413;
     }
 
@@ -160,16 +179,17 @@ p {
     }
 
     .tablet-desktops {
-        display: block;
+        display: grid;
         justify-content: space-between;
+        justify-content: center;
+        align-items: center;
     }
 
-    background-image: url("/images/992px-recuperar-email.svg");
     height: 65vh;
 
     form {
         margin-top: -0.5%;
-        margin-left: 34.5%;
+        /* margin-left: 34.5%; */
     }
 
     #ok {
@@ -205,6 +225,10 @@ p {
         cursor: pointer;
     }
 
+    .fox {
+        margin-top: 7%;
+    }
+
 }
 
 //Medium Screen 
@@ -215,28 +239,35 @@ p {
     }
 
     .tablet-desktops {
-        display: block;
+        display: grid;
         justify-content: space-between;
+        justify-content: center;
+        align-items: center;
     }
 
-    background-image: url("/images/1200px-recuperar-email.svg");
+    /* background-image: url("/images/1200px-recuperar-email.svg"); */
     height: 72vh;
 
     form {
         width: 350px;
         height: 350px;
         margin-top: -1.7%;
-        margin-left: 35.5%;
+        /* margin-left: 35.5%; */
     }
 
     h1 {
-        margin-left: 4.3%;
+        /* margin-left: 4.3%; */
         font-size: 1.4em;
     }
 
     p {
         font-size: 1.3em;
-        margin-left: 12%;
+        margin-top: 20%;
+        /* margin-left: 12%; */
+    }
+
+    .buttons {
+        margin-top: 10%;
     }
 
     #ok {
@@ -314,25 +345,27 @@ p {
     }
 
     .tablet-desktops {
-        display: block;
+        display: grid;
         justify-content: space-between;
+        justify-content: center;
+        align-items: center;
     }
 
-    background-image: url("/images/1400px-recuperar-email.svg");    
+    /* background-image: url("/images/1400px-recuperar-email.svg");     */
 
     form {
-        margin-left: 37%;
-        margin-top: -0.8%;
+        /* margin-left: 37%; */
+        margin-top: -5%;
     }
 
     h1 {
-        margin-left: 2%;
+        /* margin-left: 2%; */
         font-size: 1.5em;
         width: 345px;
     }
 
     p {
-        margin-left: 13%;
+        /* margin-left: 13%; */
         font-size: 1.3em;
     }
 
@@ -346,29 +379,31 @@ p {
     }
 
     .tablet-desktops {
-        display: block;
+        display: grid;
         justify-content: space-between;
+        justify-content: center;
+        align-items: center;
     }
 
-    background-image: url("/images/1600px-recuperar-email.svg");
+    /* background-image: url("/images/1600px-recuperar-email.svg"); */
     height: 69vh;
 
     form {
         width: 390px;
         height: 390px;
-        margin-top: -1.5%;
-        margin-left: 37%;
+        margin-top: -6%;
+        /* margin-left: 37%; */
     }
 
     h1 {
-        margin-left: 3.5%;
+        /* margin-left: 3.5%; */
         font-size: 1.6em;
         width: 400px;
     }
 
     p {
         font-size: 1.4em;
-        margin-left: 13.5%;
+        /* margin-left: 13.5%; */
     }
 
     #ok {
@@ -451,25 +486,7 @@ const ViewEmail = function() {
                 <form>
                     <h1>Seu e-mail de login é:</h1>
                     <p>********fox@gmail.com</p>
-                    <Link href={'/LoginPage'} className="ok">
-                        <button type="button" id="ok">
-                            OK
-                        </button>
-                    </Link>
-                    <Link href={'/NewEmailPage'} className="change">
-                        <button type="button" id="change">
-                            Alterar
-                        </button>
-                    </Link>
-                </form>
-                <img src="/images/Stella-view-email.png" alt="fox" className="fox"/>
-            </nav>
-
-            <nav className="tablet-desktops">
-                <div className="form">
-                    <form>
-                        <h1>Seu e-mail de login é:</h1>
-                        <p>********fox@gmail.com</p>
+                    <div className="buttons">
                         <Link href={'/LoginPage'} className="ok">
                             <button type="button" id="ok">
                                 OK
@@ -480,6 +497,28 @@ const ViewEmail = function() {
                                 Alterar
                             </button>
                         </Link>
+                    </div>
+                </form>
+                <img src="/images/Stella-view-email.png" alt="fox" className="fox"/>
+            </nav>
+
+            <nav className="tablet-desktops">
+                <div className="form">
+                    <form>
+                        <h1>Seu e-mail de login é:</h1>
+                        <p>********fox@gmail.com</p>
+                        <div className="buttons">
+                        <Link href={'/LoginPage'} className="ok">
+                            <button type="button" id="ok">
+                                OK
+                            </button>
+                        </Link>
+                        <Link href={'/NewEmailPage'} className="change">
+                            <button type="button" id="change">
+                                Alterar
+                            </button>
+                        </Link>
+                    </div>
                     </form>
                 </div>
                 <img src="/images/Raposa-code.png" alt="fox" className="fox"/>

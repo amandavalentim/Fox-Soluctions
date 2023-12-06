@@ -12,7 +12,7 @@ const HeadComponent = styled.head`
 
     position: relative;
     background: linear-gradient(180deg, #07B3FD 0%, #0081E8 100%);
-    height: 170px;
+    height: 140px;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -148,7 +148,7 @@ const HeadComponent = styled.head`
     .nameLogo {
         font-size: 1em;
         position: absolute;
-        top: 80%;
+        top: 87%;
         left: 52%;
         transform: translate(-50%, -50%);
         color: white;
@@ -255,7 +255,7 @@ const HeadComponent = styled.head`
             font-size: 1em;
             position: absolute;
             left: 10%;
-            top: 85%;
+            top: 90%;
             color: white;
             font-family: 'Roboto-Medium';
         }

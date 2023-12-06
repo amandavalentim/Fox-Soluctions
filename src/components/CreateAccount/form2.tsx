@@ -9,7 +9,7 @@ import Input from '../Login/Input/Input';
 const FormComponent2 = styled.section `
 
     // Mobile
-    height: 125vh;
+    height: 84vh;
 
     background: linear-gradient(180deg, #0A53B5 0%, #028fcc 100%);
 
@@ -18,19 +18,22 @@ const FormComponent2 = styled.section `
     }
 
     .mobile {
-        display: flex;
+        display: grid;
         justify-content: space-between;
+        justify-content: center;
+        align-items: center;
     }
 
     .tablet-desktops {
-            display: none;
-        }
+        display: none;
+    }
 
     h1 {
         font-size: 1.3em;
         margin-top: 20%;
-        margin-left: 35%;
-        width: 200px;
+        /* margin-left: 35%; */
+        text-align: center;
+        /* width: 200px; */
     }
 
     .fox {
@@ -40,39 +43,43 @@ const FormComponent2 = styled.section `
 
     .name {
         margin-top: 5%;
-        margin-left: 11.2%;
+        /* margin-left: 11.2%; */
+    }
+
+    small {
+        font-size: 1em;
     }
 
     .date {
         margin-top: -5%;
-        margin-left: 11.2%;
+        /* margin-left: 11.2%; */
         display: flex;
         flex-direction: column;
     }
 
     .phone {
         margin-top: -5%;
-        margin-left: 11.2%;
+        /* margin-left: 11.2%; */
     }
 
     .cpf {
         margin-top: -5%;
-        margin-left: 11.2%;
+        /* margin-left: 11.2%; */
     }
 
     .password {
         margin-top: -5%;
-        margin-left: 11.2%;
+        /* margin-left: 11.2%; */
     }
 
     .confirm-password{
         margin-top: -5%;
-        margin-left: 11.2%;
+        /* margin-left: 11.2%; */
     }
 
     .email {
         margin-top: -5%;
-        margin-left: 11.2%;
+        /* margin-left: 11.2%; */
     }
 
     /* .adm {
@@ -108,12 +115,14 @@ const FormComponent2 = styled.section `
 
     p {
         margin-top: 5%;
-        margin-left: 56%;
+        /* margin-left: 56%; */
+        text-align: center;
     }
 
     .google-enter {
         margin-top: 6.5%;
-        margin-left: 13.5%;
+        /* margin-left: 13.5%; */
+        text-align: center;
     }
 
     .btn-google {
@@ -138,8 +147,9 @@ const FormComponent2 = styled.section `
 
     .page2 {
         margin-top: 5%;
-        margin-left: 10%;
-        width: 270px;
+        /* margin-left: 10%; */
+        text-align: center;
+        /* width: 270px; */
     }
 
     .faGoogle {
@@ -154,7 +164,8 @@ const FormComponent2 = styled.section `
 
     .button-create {
         margin-top: 5%;
-        margin-left: 28%;
+        /* margin-left: 28%; */
+        text-align: center;
     }
 
     .criar {
@@ -187,75 +198,94 @@ const FormComponent2 = styled.section `
         .mobile {
             display: none;
         }
-    
+
         .tablet-desktops {
-            display: flex;
+            display: grid;
             justify-content: space-between;
+            justify-content: center;
+            align-items: center;
         }
 
-        background-image: url("/images/tablet-create-user.svg");
-        background-repeat: no-repeat;
+        /* background-image: url("/images/tablet-create-user.svg");
+        background-repeat: no-repeat; */
 
         form {
             margin-top: 5%;
-            margin-left: 23.8%;
+            /* margin-left: 23.8%; */
             border-radius: 19px;
             background: linear-gradient(180deg, #07B3FD 0%, #0a59c0 100%);
             width: 400px;
             height: 745px;
             border-color: white;
+            display: grid;
+            justify-content: center;
+            align-items: center;
         }
 
         h1 {
             font-size: 1.5em;
             margin-top: 8%;
-            margin-left: 31%;
+            /* margin-left: 31%; */
+            text-align: center;
+        }
+
+        .css-6w74q7 {
+            margin: 0;
+            width: 40vw;
         }
 
         .name {
             font-size: 1.3em;
             margin-top: -0.5%;
-            margin-left: -9.8%;
+            /* margin-left: -9.8%; */
+            text-align: center;
         }
 
         .date {
             font-size: 1.3em;
             margin-top: -5%;
-            margin-left: -9.8%;
+            /* margin-left: -9.8%; */
+            text-align: center;
         }
 
-        Small {
-            margin-left: 15%;
-        }
+        /* small {
+            /* margin-left: 15%; 
+            margin-top: 5%;
+        } */
 
         .email {
             font-size: 1.3em;
-            margin-top: -5%;
-            margin-left: -9.8%;
+            margin-top: -0.5%;
+            /* margin-left: -9.8%; */
+            text-align: center;
         }
 
         .phone {
             font-size: 1.3em;
-            margin-top: -5%;
-            margin-left: -9.8%;
+            margin-top: -0.5%;
+            /* margin-left: -9.8%; */
+            text-align: center;
         }
 
         .cpf {
             font-size: 1.3em;
-            margin-top: -5%;
-            margin-left: -9.8%;
+            margin-top: -0.5%;
+            /* margin-left: -9.8%; */
+            text-align: center;
         }
 
         .password {
             font-size: 1.3em;
-            margin-top: -5%;
-            margin-left: -9.8%;
+            margin-top: -0.5%;
+            /* margin-left: -9.8%; */
+            text-align: center;
         }
 
         .confirm-password {
             font-size: 1.3em;
-            margin-top: -5%;
-            margin-left: -9.8%;
+            margin-top: -0.5%;
+            /* margin-left: -9.8%; */
+            text-align: center;
         }
 
        /* .adm {
@@ -351,7 +381,7 @@ const FormComponent2 = styled.section `
         }
     }
 
-    // Small Screens
+    // small Screens
     @media(min-width: 992px) {
 
         height: 127.5vh;
@@ -398,7 +428,7 @@ const FormComponent2 = styled.section `
             margin-left: -5%;
         }
 
-        Small {
+        small {
             margin-left: 14.5%;
         }
 
@@ -612,7 +642,7 @@ const FormComponent2 = styled.section `
             margin-left: -4.1%;
         }
 
-        Small {
+        small {
             margin-top: -4%;
             margin-left: 14.5%;
             font-size: 0.8em;
@@ -899,7 +929,7 @@ const FormComponent2 = styled.section `
             margin-top: -10%;
         }
 
-        Small {
+        small {
             margin-top: -5%;
             margin-left: 15%;
             font-size: 0.8em;
@@ -1055,13 +1085,6 @@ const FormComponent2 = styled.section `
 
 `;
 
-const Small = styled.small`
-font-size: 6px;
-margin:0;
-position:relative;
-top:-20px;
-left: 20px;`;
-
 const Form2 = function() {
     return (
         <FormComponent2>
@@ -1077,7 +1100,7 @@ const Form2 = function() {
                         </div>
                         <div className='date'>
                             <Input type='date' name='birthday' id='birthday' placeholder='Data de nascimento'/>
-                            <Small>Digite a Data de Nascimento</Small>
+                            <small>Digite a Data de Nascimento</small>
                             {/* <span className='span2'>*</span> */}
                         </div>
                         <div className='email'>
@@ -1140,7 +1163,7 @@ const Form2 = function() {
                     </div>
                     <div className='date'>
                             <Input type='date' name='birthday' id='birthday' placeholder='Data de nascimento'/>
-                            <Small>Digite a Data de Nascimento</Small> 
+                            <small>Digite a Data de Nascimento</small> 
                             {/* <span className='span2'>*</span> */}
                         </div>
                     <div className='email'>

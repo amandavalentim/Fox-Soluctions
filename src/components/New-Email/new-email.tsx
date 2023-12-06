@@ -9,12 +9,14 @@ const NewEmailComponent = styled.section `
 
 // Mobile
 
-height: 70vh;
+height: 51.5vh;
 background: linear-gradient(180deg, #04a4e8 0%, #0A53B5 100%);
 
 .mobile {
-    display: block;
+    display: grid;
     justify-content: space-between;
+    justify-content: center;
+    align-items: center;
 }
 
 .tablet-desktops {
@@ -23,13 +25,24 @@ background: linear-gradient(180deg, #04a4e8 0%, #0A53B5 100%);
 
 h1 {
     font-size: 1.4em;
-    padding-left: 6%;
+    /* padding-left: 6%; */
     padding-top: 10%;
+    text-align: center;
+}
+
+.email {
+    text-align: center;
+    margin: 0;
+}
+
+.email2 {
+    text-align: center;
+    margin: 0;
 }
 
 #email {
     margin-top: 20%;
-    margin-left: 9.7%;
+    /* margin-left: 9.7%; */
     width: 260px;
 }
 
@@ -39,7 +52,7 @@ h1 {
 
 #confirm {
     margin-top: 11.5%;
-    margin-left: 9.7%;
+    /* margin-left: 9.7%; */
     width: 260px;
 }
 
@@ -50,6 +63,7 @@ h1 {
 .confirmar {
     margin-top: 12%;
     margin-left: 23%;
+    text-align: center;
     width: 170px;
     height: 50px;
     font-size: 1.6em;
@@ -72,9 +86,8 @@ h1 {
     width: 110px;
     height: 140px;
     transform: rotatey(160deg);
-    position: absolute;
-    margin-left: 66.5%;
-    top: 420px;
+    /* position: absolute; */
+    margin-left: 80%;
 }
 
 @media(min-width: 768px) {
@@ -84,30 +97,32 @@ h1 {
     }
 
     .tablet-desktops {
-        display: block;
+        display: grid;
         justify-content: space-between;
+        justify-content: center;
+        align-items: center;
     }
 
-    background-image: url("/images/tablet-recuperar-senha.svg");
-    background-repeat: no-repeat;
-    height: 62vh;
+    background: #0A53B5;
+    height: 52.5vh;
 
     .form {
         padding-top: 4.5%;
     }
 
     form {
-        margin-left: 30%;
+        /* margin-left: 30%; */
         border-radius: 19px;
         background: linear-gradient(180deg, #07B3FD 0%, #0a59c0 100%);
         width: 290px;
         height: 275px;
         border-color: white;
+        margin-top: 10%;
     }
 
     h1 {
         font-size: 1.2em;
-        margin-left: 3%;
+        /* margin-left: 3%; */
     }
 
     #email {
@@ -158,8 +173,8 @@ h1 {
         width: 90px;
         height: 115px;
         position: absolute;
-        left: 67.7%;
-        top: 330px;
+        left: 69%;
+        top: 320px;
     }
 
 }
@@ -172,16 +187,18 @@ h1 {
     }
 
     .tablet-desktops {
-        display: block;
+        display: grid;
         justify-content: space-between;
+        justify-content: center;
+        align-items: center;
     }
 
-    background-image: url("/images/992px-recuperar-senha.svg");
-    height: 65vh;
+    /* background-image: url("/images/992px-recuperar-senha.svg"); */
+    height: 52.5vh;
 
     form {
-        margin-top: 1.5%;
-        margin-left: 33%;
+        margin-top: 5.5%;
+        /* margin-left: 33%; */
         border-radius: 19px;
         background: linear-gradient(180deg, #07B3FD 0%, #0a59c0 100%);
         width: 330px;
@@ -191,7 +208,7 @@ h1 {
 
     h1 {
         font-size: 1.4em;
-        margin-left: 2%;
+        /* margin-left: 2%; */
     }
 
     #email {
@@ -254,7 +271,8 @@ h1 {
     }
 
     .fox2 {
-        margin-left: -2.5%;
+        margin-left: -3%;
+        text-align: center;
     }
 
 }
@@ -267,21 +285,22 @@ h1 {
     }
 
     .tablet-desktops {
-        display: block;
-        justify-content: space-between;
+        display: grid;
+        justify-content: center;
+        align-items: center;
     }
 
-    background-image: url("/images/1200px-recuperar-senha.svg");
+    /* background-image: url("/images/1200px-recuperar-senha.svg"); */
 
     form {
         margin-top: -1%;
-        margin-left: 36.5%;
+        /* margin-left: 36.5%; */
         width: 360px;
         height: 325px;
     }
 
     h1 {
-        margin-left: 5.1%;
+        /* margin-left: 5.1%; */
     }
 
     #email {
@@ -329,22 +348,26 @@ h1 {
     }
 
     .fox2 {
-        margin-left: -4.8%;
+        margin-left: -5.8%;
     }
 
 }
 
 @media(min-width: 1400px) {
 
-    background-image: url("/images/1400px-recuperar-email.svg");
+    display: grid;
+    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+
     height: 70vh;
 
     form {
-        margin-top: 1.5%;
+        margin-top: -5%;
     }
 
     .fox2 {
-        margin-left: -6.9%;
+        margin-left: -6.4%;
     }
 
 }
@@ -352,16 +375,26 @@ h1 {
 //Large Screens
 @media(min-width: 1600px) {
 
-    background-image: url("/images/1600px-recuperar-senha.svg");
+    
+    .mobile {
+        display: none;
+    }
+
+    .tablet-desktops {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+
     height: 60vh;
 
     form {
-        margin-left: 38%;
+        /* margin-left: 38%; */
         margin-top: 0%;
     }
 
     .fox2 {
-        margin-left: -7%;
+        margin-left: -7.6%;
     }
 
     #confirm {
@@ -404,8 +437,12 @@ const NewEmail = function() {
             <nav className='mobile'>
                 <form>
                     <h1>Crie o seu novo E-mail:</h1>
-                    <Input type="email" placeholder='Digite o seu novo E-mail' id='email'/>
-                    <Input type="email" placeholder='Confirmar novo E-mail' id='confirm'/>
+                    <div className='email'>
+                        <Input type="email" placeholder='Digite o seu novo E-mail' id='email'/>
+                    </div>
+                    <div className='email2'>
+                        <Input type="email" placeholder='Confirmar novo E-mail' id='confirm'/>
+                    </div>
                     <Link href={'/LoginPage'}>
                         <button className='confirmar' type='button'>
                             Confirmar
