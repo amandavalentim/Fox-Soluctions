@@ -76,136 +76,187 @@ const CreateUserComponent = styled.section `
     * {
         color: white;
         font-family: 'Poppins-Medium';
+        margin: 0;
+        padding: 0;
     }
 
-    height: 215vh;
+    input[type="radio"] {
+        width: 15px;
+        height: 15px;
+    }
+
+    height: 135vh;
 
     background: linear-gradient(180deg, #0A53B5 0%, #0081E8 100%);
 
     h1 {
         padding-top: 10%;
-        margin-left: 26%;
+        /* margin-left: 26%; */
         font-size: 1.3em;
+        text-align: center;
     }
 
     form {
         margin-top: 10%;
-        margin-left: 9%;
+        /* margin-left: 9%; */
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .name {
+        text-align: center;
     }
 
     #name::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-        font-size: 1.1em;
+        font-size: 1.3em;
     }
 
     .gender {
-        margin-left: -15%;
+        margin-left: -23%;
         font-family: 'Poppins-Regular';
+        text-align: center;
     }
 
     .gender-txt {
         font-size: 1.1em;
         margin-top: 8%;
-        margin-left: 7%;
+        /* margin-left: 7%; */
         font-family: 'Poppins-Medium';
+        text-align: center;
     }
 
     .man {
         margin-left: -15%;
+        margin-top: 5%;
     }
 
     .man-op {
         margin-left: 40%;
-        margin-top: -10.5%;
+        margin-top: -7.4%;
     }
 
     .woman {
         margin-left: -15%;
+        margin-top: 5%;
     }
 
     .woman-op {
         margin-left: 40%;
-        margin-top: -10.5%;
+        margin-top: -7.4%;
     }
 
     .transvestite {
         margin-left: -15%;
+        margin-top: 5%;
     }
 
     .t1-op {
         margin-left: 40%;
-        margin-top: -10.5%;
+        margin-top: -7.4%;
     }
 
     .no-binary {
         margin-left: -15%;
+        margin-top: 5%;
     }
 
     .nb-op {
         margin-left: 40%;
-        margin-top: -10.5%;
+        margin-top: -7.4%;
     }
 
     .trans {
         margin-left: -15%;
+        margin-top: 5%;
     }
 
     .t2-op {
         margin-left: 40%;
-        margin-top: -10.5%;
+        margin-top: -7.4%;
     }
 
     .another {
         margin-left: -15%;
+        margin-top: 5%;
     }
 
     .a-op {
         margin-left: 40%;
-        margin-top: -10.5%;
+        margin-top: -7.4%;
     }
 
     .none {
         margin-left: -15%;
+        margin-top: 5%;
     }
 
     .n-op {
-        margin-left: 40%;
-        margin-top: -10.5%;
+        margin-left: 45%;
+        margin-top: -7.4%;
     }
 
     .social-name {
         margin-top: 7%;
+        text-align: center;
     }
 
     #social-name::-webkit-input-placeholder {
-        font-size: 1.1em;
-    }
-
-    Small {
-        margin-left: 7%;
+        font-size: 1.3em;
     }
 
     .date {
-        margin-top: 7%;
+        /* margin-top: 7%; */
+        text-align: center;
+        margin: 0;
+    }
+
+    #birthday {
+        margin-top: 15%;
+    }
+
+    .small2 {
+        margin-top: 1%;
+        text-align: center;
+        margin-left: -18%;
+        font-size: 1em;
+    }
+
+    #span5 {
+        margin-left: 70%;
+        text-align: center;
+        margin-top: -10%;
     }
 
     #birthday::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-        font-size: 1.1em;
+        font-size: 1.3em;
     }
 
-    small {
-        margin-left: 5%;
+    .cpf {
+        margin-top: 15%;
+        text-align: center;
     }
 
     #cpf::-webkit-input-placeholder {
-        font-size: 1.1em;
+        font-size: 1.4em;
+    }
+
+    .email {
+        margin-top: 15%;
+        text-align: center;
     }
 
     #email::-webkit-input-placeholder {
-        font-size: 1.1em;
+        font-size: 1.4em;
+    }
+
+    .country {
+        margin-top: 15%;
+        text-align: center;
     }
 
     #country::-webkit-input-placeholder {
-        font-size: 1.1em;
+        font-size: 1.4em;
     }
 
     .photo {
@@ -213,7 +264,7 @@ const CreateUserComponent = styled.section `
     }
 
     .profile-photo2 {
-        margin-top: 5%;
+        margin-top: 15%;
     }
 
     .choose-a-image {
@@ -245,7 +296,8 @@ const CreateUserComponent = styled.section `
         background-color: #93B413;
         border: none;
         margin-top: 12%;
-        margin-left: 18.5%;
+        margin-left: 28.5%;
+        text-align: center;
         width: 150px;
         height: 50px;
         font-size: 1.5em;
@@ -265,7 +317,7 @@ const CreateUserComponent = styled.section `
 
     span {
         color: #ff7818;
-        margin-left: -5%;
+        margin-left: 0%;
     }
 
     .span2 {
@@ -276,15 +328,17 @@ const CreateUserComponent = styled.section `
     // Tablet
     @media(min-width: 768px) {
 
-        height: 202vh;
+        height: 136vh;
 
         .mobile {
             display: none;
         }
 
         .tablet-desktops {
-            display: flex;
-            flex-direction: column;
+            display: block;
+            justify-content: space-between;
+            justify-content: center;
+            align-items: center;
         }
 
         .dashboard-desktop {
@@ -353,20 +407,22 @@ const CreateUserComponent = styled.section `
 
         form {
             border-radius: 19px;
+            margin-left: 9.2%;
             background: linear-gradient(180deg, #07B3FD 0%, #0b58bc 100%);
             width: 630px;
             height: 875px;
+            text-align: center;
         }
     
         h1 {
             font-size: 1.8em;
-            margin-left: 33.5%;
+            /* margin-left: 33.5%; */
             padding-top: 5%;
         }
 
         .name {
             margin-top: 1%;
-            margin-left: -3%;
+            /* margin-left: -3%; */
         }
 
         #name {
@@ -374,19 +430,36 @@ const CreateUserComponent = styled.section `
         }
 
         #name::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-            font-size: 1.3em;
+            font-size: 1.5em;
         }
 
         .gender-txt {
             font-size: 1.3em;
             margin-top: 1%;
-            margin-left: -62%;
+            /* margin-left: -62%; */
             font-family: 'Poppins-Medium';
+            text-align: center;
         }
 
         .span2 {
             color: #F47216;
             margin-left: 0%;
+        }
+
+        input[type="radio"] {
+            width: 15px;
+            height: 15px;
+        }
+
+        .gender {
+            text-align: center;
+            margin-left: -10%;
+            margin-top: 3%;
+        }
+
+        .css-6w74q7 {
+            margin: 0;
+            width: 40vw;
         }
 
         .man {
@@ -395,110 +468,90 @@ const CreateUserComponent = styled.section `
             margin-top: -3%;
         }
 
-        #man {
-            width: 10px;
-        }
-
         .man-op {
-            margin-left: 355%;
-            margin-top: -166.5%;
+            margin-left: 155%;
+            margin-top: -95.5%;
+            font-size: 1.2em;
         }
 
         .woman {
             width: 30px;
-            margin-left: 32%;
-            margin-top: -6.9%;
-        }
-
-        #woman {
-            width: 10px;
+            margin-left: 43%;
+            margin-top: -4.5%;
         }
 
         .woman-op {
-            margin-left: 355%;
-            margin-top: -166.5%;
+            margin-left: 155%;
+            margin-top: -95.5%;
+            font-size: 1.2em;
         }
 
         .transvestite {
             width: 30px;
-            margin-left: 51.5%;
-            margin-top: -6.8%;
-        }
-
-        #transvestite {
-            width: 10px;
+            margin-left: 73%;
+            margin-top: -4.5%;
         }
 
         .t1-op {
-            margin-left: 355%;
-            margin-top: -166.5%;
+            margin-left: 155%;
+            margin-top: -95.5%;
+            font-size: 1.2em;
         }
 
         .no-binary {
             width: 30px;
             margin-left: 11%;
-            margin-top: -1%;
-        }
-
-        #no-binary {
-            width: 10px;
+            margin-top: 3%;
         }
 
         .nb-op {
-            margin-left: 355%;
-            margin-top: -166.5%;
-            width: 108px;
+            margin-left: 155%;
+            margin-top: -95.5%;
+            font-size: 1.2em;
+            width: 113px;
         }
 
         .trans {
             width: 30px;
-            margin-left: 32%;
-            margin-top: -6.9%;
-        }
-
-        #trans {
-            width: 10px;
+            margin-left: 43%;
+            margin-top: -4.5%;
         }
 
         .t2-op {
-            margin-left: 355%;
-            margin-top: -166.5%;
+            margin-left: 155%;
+            margin-top: -95.5%;
+            font-size: 1.2em;
         }
 
         .another {
             width: 30px;
-            margin-left: 51.5%;
-            margin-top: -6.8%;
-        }
-
-        #another {
-            width: 10px;
+            margin-left: 73%;
+            margin-top: -4.5%;
         }
 
         .a-op {
-            margin-left: 355%;
-            margin-top: -166.5%;
+            margin-left: 155%;
+            margin-top: -95.5%;
+            font-size: 1.2em;
         }
 
         .none {
             width: 30px;
             margin-left: 11%;
-            margin-top: -1%;
-        }
-
-        #none {
-            width: 10px;
+            margin-top: 3%;
         }
 
         .n-op {
-            margin-left: 355%;
-            margin-top: -166.5%;
-            width: 150px;
+            margin-left: 155%;
+            margin-top: -95.5%;
+            font-size: 1.2em;
+            width: 158px;
         }
 
         .social-name {
             margin-top: 1%;
-            margin-left: -3%;
+            /* margin-left: -3%; */
+            text-align: center;
         }
 
         #social-name {
@@ -510,8 +563,9 @@ const CreateUserComponent = styled.section `
         }
 
         .date {
-            margin-top: 2%;
-            margin-left: -3%;
+            margin-top: -13%;
+            /* margin-left: -3%; */
+            text-align: center;
         }
 
         #birthday {
@@ -519,18 +573,20 @@ const CreateUserComponent = styled.section `
         }
 
         #birthday::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-            font-size: 1.3em;
+            font-size: 1.5em;
         }
 
-        .small {
-            margin-left: 11%;
-            position: absolute;
-            top: 810px;
+        .small2 {
+            margin-left: -47%;
+            font-size: 1.2em;
+            /* position: absolute;
+            top: 810px; */
         }
 
         .cpf {
-            margin-top: -2%;
-            margin-left: -3%;
+            margin-top: -0.5%;
+            /* margin-left: -3%; */
+            text-align: center;
         }
 
         #cpf {
@@ -538,12 +594,13 @@ const CreateUserComponent = styled.section `
         }
 
         #cpf::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-            font-size: 1.3em;
+            font-size: 1.5em;
         }
 
         .email {
-            margin-top: -1.8%;
-            margin-left: -3%;
+            margin-top: 1%;
+            /* margin-left: -3%; */
+            text-align: center;
         }
 
         #email {
@@ -551,12 +608,13 @@ const CreateUserComponent = styled.section `
         }
 
         #email::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-            font-size: 1.3em;
+            font-size: 1.5em;
         }
 
         .country {
-            margin-top: -1.8%;
-            margin-left: -3%;
+            margin-top: 1%;
+            /* margin-left: -3%; */
+            text-align: center;
         }
 
         #country {
@@ -564,35 +622,36 @@ const CreateUserComponent = styled.section `
         }
 
         #country::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-            font-size: 1.3em;
+            font-size: 1.5em;
         }
 
         .profile-photo2 {
             margin-top: -2%;
-            margin-left: -60.5%;
+            margin-left: -73.5%;
+            font-size: 1.3em;
         }
 
         .choose-a-image {
             background-color: #F47216;
             width: 130px;
             height: 40px;
-            margin-left: 10.4%;
-            margin-top: 0%;
+            margin-left: 0.4%;
+            margin-top: -5%;
         }
 
         .choose-a-image:active {
             background-color: #d66515;
             width: 130px;
             height: 40px;
-            margin-left: 10.4%;
-            margin-top: 0%;
+            margin-left: 0.4%;
+            margin-top: -5%;
         }
 
         label {
-         position: absolute;
-         margin-left: 1.7%;
-         margin-top: 0.6%;
-         color: white;
+            position: absolute;
+            margin-left: -6.3%;
+            margin-top: 0.6%;
+            color: white;
         }
 
         .plus {
@@ -600,8 +659,9 @@ const CreateUserComponent = styled.section `
         }
 
         .save {
-            margin-top: 3%;
-            margin-left: 40%;
+            margin-top: -5%;
+            margin-left: 0%;
+            text-align: center;
             width: 140px;
             height: 40px;
             border-radius: 15px;
@@ -610,8 +670,9 @@ const CreateUserComponent = styled.section `
         }
 
         .save:active {
-            margin-top: 3%;
-            margin-left: 40%;
+            margin-top: -5%;
+            margin-left: 0%;
+            text-align: center;
             width: 140px;
             height: 40px;
             border-radius: 15px;
@@ -633,15 +694,17 @@ const CreateUserComponent = styled.section `
     // Small Screens
     @media(min-width: 992px) {
 
-        height: 198vh;
+        height: 187vh;
 
         .mobile {
             display: none;
         }
 
         .tablet-desktops {
-            display: flex;
-            flex-direction: column;
+            display: block;
+            justify-content: space-between;
+            justify-content: center;
+            align-items: center;
             .dashboard-desktop{
             background-color: #3A9EB6;
             display: flex;
@@ -719,12 +782,13 @@ const CreateUserComponent = styled.section `
 
         h1 {
             font-size: 2.1em;
-            margin-left: 33.5%;
+            /* margin-left: 33.5%; */
+            text-align: center;
         }
 
         .name {
             margin-top: 3%;
-            margin-left: 2%;
+            /* margin-left: 2%; */
             font-size: 1.4em;
         }
 
@@ -739,150 +803,147 @@ const CreateUserComponent = styled.section `
 
         .span1 {
             color: #F47216;
-            margin-left: -38.5%;
+            /* margin-left: -38.5%; */
             position: absolute;
             font-size: 1.4em;
             margin-top: 2.1%;
         }
 
+        input[type="radio"] {
+            width: 15px;
+            height: 15px;
+        }
+
         .gender-txt {
-            font-size: 1.3em;
-            margin-left: -60%;
+            font-size: 1.6em;
+            /* margin-left: -60%; */
             margin-top: -1%;
         }
 
         .span2 {
             color: #F47216;
-            margin-left: 1%;
+            /* margin-left: 1%; */
             position: absolute;
             font-size: 1.4em;
             margin-top: -0.6%;
         }
 
+        .gender {
+            text-align: center;
+            /* margin-left: -10%; */
+            margin-top: -3.5%;
+        }
+
         .man {
             width: 30px;
-            margin-left: 14.3%;
+            /* margin-left: 14.3%; */
             margin-top: -1.5%;
         }
 
         #man {
-            width: 25px;
             cursor: pointer;
         }
 
         .man-op {
-            margin-left: 425%;
-            margin-top: -167%;
-            font-size: 1em;
+            /* margin-left: 425%; */
+            margin-top: -92%;
+            font-size: 1.2em;
         }
 
         .woman {
             width: 30px;
-            margin-left: 32.6%;
-            margin-top: -5.4%;
+            margin-left: 44.3%;
+            margin-top: -4%;
         }
 
         #woman {
-            width: 25px;
             cursor: pointer;
         }
 
         .woman-op {
-            margin-left: 425%;
-            margin-top: -166%;
-            font-size: 1em;
+            /* margin-left: 425%; */
+            margin-top: -92%;
+            font-size: 1.2em;
         }
 
         .transvestite {
             width: 30px;
-            margin-left: 50.8%;
-            margin-top: -5.4%;
+            margin-left: 77.3%;
+            margin-top: -4%;
         }
 
         #transvestite {
-            width: 25px;
             cursor: pointer;
         }
 
         .t1-op {
-            margin-left: 425%;
-            margin-top: -166%;
-            font-size: 1em;
+            margin-top: -92%;
+            font-size: 1.2em;
         }
 
         .no-binary {
             width: 30px;
-            margin-left: 14.3%;
-            margin-top: -0.5%;
+            /* margin-left: 14.3%; */
+            margin-top: 1.5%;
         }
 
         #no-binary {
-            width: 25px;
             cursor: pointer;
         }
 
         .nb-op {
-            margin-left: 425%;
-            margin-top: -166%;
-            font-size: 1em;
-            width: 109px;
+            margin-top: -92%;
+            font-size: 1.2em;
         }
 
         .trans {
             width: 30px;
-            margin-left: 32.6%;
-            margin-top: -5.4%;
+            margin-left: 44.3%;
+            margin-top: -4%;
         }
 
         #trans {
-            width: 25px;
             cursor: pointer;
         }
 
         .t2-op {
-            margin-left: 425%;
-            margin-top: -166%;
-            font-size: 1em;
+            margin-top: -93%;
+            font-size: 1.2em;
         }
 
         .another {
             width: 30px;
-            margin-left: 50.8%;
-            margin-top: -5.4%;
+            margin-left: 77.3%;
+            margin-top: -4%;
         }
 
         #another {
-            width: 25px;
             cursor: pointer;
         }
 
         .a-op {
-            margin-left: 425%;
-            margin-top: -166%;
-            font-size: 1em;
+            margin-top: -93%;
+            font-size: 1.2em;
         }
 
         .none {
             width: 30px;
-            margin-left: 14.3%;
-            margin-top: -0.5%;
+            /* margin-left: 14.3%; */
+            margin-top: 1.5%;
         }
 
         #none {
-            width: 25px;
             cursor: pointer;
         }
 
         .n-op {
-            margin-left: 360%;
-            margin-top: -166%;
-            font-size: 1em;
-            width: 190px;
+            margin-top: -93%;
+            font-size: 1.2em;
         }
 
         .social-name {
             margin-top: 0%;
-            margin-left: 2%;
+            /* margin-left: 2%; */
             font-size: 1.4em;
         }
 
@@ -897,13 +958,14 @@ const CreateUserComponent = styled.section `
 
         .date {
             margin-top: 1%;
-            margin-left: 2%;
+            /* margin-left: 2%; */
             font-size: 1.4em;
         }
 
         #birthday {
             width: 580px;
             height: 45px;
+            margin-top: -3%;
         }
 
         #birthday::-webkit-input-placeholder { /* Chrome/Opera/Safari */
@@ -912,21 +974,21 @@ const CreateUserComponent = styled.section `
 
         .span3 {
             color: #F47216;
-            margin-left: 34%;
+            /* margin-left: 34%; */
             position: absolute;
             font-size: 1em;
             margin-top: 11%;
         }
 
-        .small {
-            font-size: 0.7em;
-            margin-left: 9.5%;
+        .small2 {
+            font-size: 0.9em;
+            margin-left: -52%;
             margin-top: 6%;
         }
 
         .cpf {
             margin-top: -2.2%;
-            margin-left: 2%;
+            /* margin-left: 2%; */
             font-size: 1.4em;
         }
 
@@ -941,7 +1003,7 @@ const CreateUserComponent = styled.section `
 
         .span4 {
             color: #F47216;
-            margin-left: -52%;
+            /* margin-left: -52%; */
             position: absolute;
             font-size: 1.4em;
             margin-top: 2%;
@@ -949,7 +1011,7 @@ const CreateUserComponent = styled.section `
 
         .email {
             margin-top: -2.5%;
-            margin-left: 2%;
+            /* margin-left: 2%; */
             font-size: 1.4em;
         }
 
@@ -964,7 +1026,7 @@ const CreateUserComponent = styled.section `
 
         .span5 {
             color: #F47216;
-            margin-left: -50%;
+            /* margin-left: -50%; */
             position: absolute;
             font-size: 1.4em;
             margin-top: 2%;
@@ -972,7 +1034,7 @@ const CreateUserComponent = styled.section `
 
         .country {
             margin-top: -2.5%;
-            margin-left: 2%;
+            /* margin-left: 2%; */
             font-size: 1.4em;
         }
 
@@ -987,20 +1049,21 @@ const CreateUserComponent = styled.section `
 
         .span6 {
             color: #F47216;
-            margin-left: -52%;
+            /* margin-left: -52%; */
             position: absolute;
             font-size: 1.4em;
             margin-top: 2%;
         }
 
         .profile-photo2 {
-            font-size: 1.2em;
-            margin-left: -53.8%;
-            margin-top: -2%;
+            font-size: 1.4em;
+            margin-left: -75.8%;
+            margin-top: -7%;
         }
 
         .choose-a-image {
-            margin-left: 14%;
+            margin-left: 0%;
+            margin-top: -9%;
             width: 150px;
             height: 45px;
             font-size: 1.2em;
@@ -1008,7 +1071,8 @@ const CreateUserComponent = styled.section `
         }
 
         .choose-a-image:hover {
-            margin-left: 14%;
+            margin-left: 0%;
+            margin-top: -9%;
             width: 150px;
             height: 45px;
             font-size: 1.2em;
@@ -1017,7 +1081,8 @@ const CreateUserComponent = styled.section `
         }
 
         .choose-a-image:active {
-            margin-left: 14%;
+            margin-left: 0%;
+            margin-top: -9%;
             width: 150px;
             height: 45px;
             font-size: 1.2em;
@@ -1026,7 +1091,7 @@ const CreateUserComponent = styled.section `
         }
 
         label {
-            margin-left: 1.2%;
+            margin-left: -5.8%;;
             cursor: pointer;
         }
 
@@ -1035,7 +1100,7 @@ const CreateUserComponent = styled.section `
             height: 50px;
             font-size: 1.6em;
             background-color: #93B413;
-            margin-left: 42%;
+            /* margin-left: 42%; */
             cursor: pointer;
         }
 
@@ -1070,6 +1135,7 @@ const CreateUserComponent = styled.section `
         .tablet-desktops {
             display: block;
             justify-content: space-between;
+            justify-content: center;
         }
 
         #your-name {
@@ -1087,12 +1153,13 @@ const CreateUserComponent = styled.section `
 
         h1 {
             font-size: 2.4em;
-            margin-left: 33.2%;
+            /* margin-left: 33.2%; */
+            text-align: center;
         }
 
         .name {
             margin-top: 3%;
-            margin-left: -2.5%;
+            /* margin-left: -2.5%; */
             font-size: 1.4em;
         }
 
@@ -1107,7 +1174,7 @@ const CreateUserComponent = styled.section `
 
         .span1 {
             color: #F47216;
-            margin-left: -33%;
+            /* margin-left: -33%; */
             position: absolute;
             font-size: 1.5em;
             margin-top: 1.3%;
@@ -1115,7 +1182,7 @@ const CreateUserComponent = styled.section `
 
         .gender-txt {
             font-size: 1.3em;
-            margin-left: -65%;
+            /* margin-left: -65%; */
             margin-top: -2%;
         }
 
@@ -1247,7 +1314,7 @@ const CreateUserComponent = styled.section `
 
         .social-name {
             margin-top: 3%;
-            margin-left: -2.5%;
+            /* margin-left: -2.5%; */
             font-size: 1.4em;
         }
 
@@ -1262,7 +1329,7 @@ const CreateUserComponent = styled.section `
 
         .date {
             margin-top: 1%;
-            margin-left: -2.5%;
+            /* margin-left: -2.5%; */
             font-size: 1.4em;
         }
 
@@ -1291,7 +1358,7 @@ const CreateUserComponent = styled.section `
 
         .cpf {
             margin-top: -3%;
-            margin-left: -2.5%;
+            /* margin-left: -2.5%; */
             font-size: 1.4em;
         }
 
@@ -1314,7 +1381,7 @@ const CreateUserComponent = styled.section `
 
         .email {
             margin-top: -3.5%;
-            margin-left: -2.5%;
+            /* margin-left: -2.5%; */
             font-size: 1.4em;
         }
 
@@ -1337,7 +1404,7 @@ const CreateUserComponent = styled.section `
 
         .country {
             margin-top: -3.4%;
-            margin-left: -2.5%;
+            /* margin-left: -2.5%; */
             font-size: 1.4em;
         }
 
@@ -1360,7 +1427,7 @@ const CreateUserComponent = styled.section `
 
         .profile-photo2 {
             font-size: 2em;
-            margin-left: -56%;
+            /* margin-left: -56%; */
             font-size: 1.4em;
             margin-top: -3.5%;
         }
@@ -1368,7 +1435,7 @@ const CreateUserComponent = styled.section `
         .choose-a-image {
             width: 200px;
             height: 60px;
-            margin-left: 12.5%;
+            /* margin-left: 12.5%; */
             background-color: #F47216;
             font-size: 1em;
             cursor: pointer;
@@ -1394,7 +1461,7 @@ const CreateUserComponent = styled.section `
 
         label {
             position: absolute;
-            margin-left: 1.5%;
+            /* margin-left: 1.5%; */
             top: 1410px;
             font-size: 1.5em;
             cursor: pointer;
@@ -1942,8 +2009,8 @@ const CreateUserPg = function() {
                     </div>
                     <div className='date'>
                         <Input type='date' name='birthday' id='birthday' placeholder='Data de nascimento'/>
-                        <small>Digite a data de aniversário</small><span>*</span>
                     </div>
+                        <small className='small2'>Digite a data de aniversário</small><span id='span5'>*</span>
                     <div className='cpf'>
                         <Input type="number" name="cpf" id="cpf" placeholder='CPF'/><span>*</span>
                     </div>
@@ -2004,6 +2071,7 @@ const CreateUserPg = function() {
                             <Input type='radio' name='gender' id='woman' defaultValue='F'/>
                             <p className='woman-op'>Feminino</p>
                         </div>
+                        {/* 
                         <div  className='transvestite'>
                             <Input type='radio' name='gender' id='transvestite' defaultValue='T1'/>
                             <p className='t1-op'>Travesti</p>
@@ -2023,7 +2091,7 @@ const CreateUserPg = function() {
                         <div  className='none'>
                             <Input type='radio' name='gender' id='none' defaultValue='N'/>
                             <p className='n-op'>Prefiro não dizer</p>
-                        </div>
+                        </div> */}
                     </div>
                     <div className='social-name'>
                         <Input type="string" name="social-name" id="social-name" placeholder='Nome Social'/>
@@ -2031,7 +2099,7 @@ const CreateUserPg = function() {
                     <div className='date'>
                         <Input type='date' name='birthday' id='birthday' placeholder='Data de nascimento'/><span>*</span>
                         <br/>
-                        <small className='small'>Digite a data de aniversário</small>
+                        <small className='small2'>Digite a data de aniversário</small>
                     </div>
                     <div className='cpf'>
                         <Input type="number" name="cpf" id="cpf" placeholder='CPF'/><span>*</span>
