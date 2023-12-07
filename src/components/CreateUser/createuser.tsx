@@ -9,6 +9,14 @@ import { FaMagnifyingGlass, FaPlus } from 'react-icons/fa6';
 const CreateUserComponent = styled.section `
 
     // Mobile
+
+    .mobile {
+        display: grid;
+        justify-content: space-between;
+        justify-content: center;
+        align-items: center;
+    }
+
     .dashboard-mobile{
         background-color: #3A9EB6;
         padding: 10px;

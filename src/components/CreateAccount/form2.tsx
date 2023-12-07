@@ -47,7 +47,9 @@ const FormComponent2 = styled.section `
     }
 
     small {
-        font-size: 1em;
+        font-size: 0.9em;
+        margin-top: -5%;
+        margin-left: 6.3%;
     }
 
     .date {
@@ -78,7 +80,7 @@ const FormComponent2 = styled.section `
     }
 
     .email {
-        margin-top: -5%;
+        margin-top: 1%;
         /* margin-left: 11.2%; */
     }
 
@@ -163,7 +165,7 @@ const FormComponent2 = styled.section `
     }
 
     .button-create {
-        margin-top: 5%;
+        /* margin-top: 5%; */
         /* margin-left: 28%; */
         text-align: center;
     }
@@ -193,7 +195,7 @@ const FormComponent2 = styled.section `
     // Tablet
     @media(min-width: 768px){
 
-        height: 145vh;
+        height: 120.5vh;
 
         .mobile {
             display: none;
@@ -210,7 +212,7 @@ const FormComponent2 = styled.section `
         background-repeat: no-repeat; */
 
         form {
-            margin-top: 5%;
+            margin-top: 10%;
             /* margin-left: 23.8%; */
             border-radius: 19px;
             background: linear-gradient(180deg, #07B3FD 0%, #0a59c0 100%);
@@ -243,15 +245,16 @@ const FormComponent2 = styled.section `
 
         .date {
             font-size: 1.3em;
-            margin-top: -5%;
+            margin-top: 2%;
             /* margin-left: -9.8%; */
             text-align: center;
         }
 
-        /* small {
-            /* margin-left: 15%; 
-            margin-top: 5%;
-        } */
+        small {
+            margin-left: -31%; 
+            margin-top: 1%;
+            font-size: 0.75em;
+        } 
 
         .email {
             font-size: 1.3em;
@@ -321,12 +324,12 @@ const FormComponent2 = styled.section `
 
         p {
             margin-top: -0.5%;
-            margin-left: 47.5%;
+            /* margin-left: 47.5%; */
         }
 
         .google-enter {
-            margin-top: 3.5%;
-            margin-left: 12%;
+            margin-top: -1%;
+            /* margin-left: 12%; */
         }
 
         .btn-google {
@@ -351,14 +354,14 @@ const FormComponent2 = styled.section `
         }
 
         .page2 {
-            margin-left: 19.8%;
-            margin-top: 5%;
-            font-size: 0.9em;
+            /* margin-left: 19.8%; */
+            margin-top: -1%;
+            font-size: 1.1em;
         }
 
         .criar {
-            margin-top: -2%;
-            margin-left: 12%;
+            margin-top: -100%;
+            /* margin-left: 12%; */
             background-color: #93B413;
             width: 110px;
             height: 40px;
@@ -367,7 +370,7 @@ const FormComponent2 = styled.section `
 
         .criar:active {
             margin-top: -2%;
-            margin-left: 12%;
+            /* margin-left: 12%; */
             background-color: #86a40f;
             width: 110px;
             height: 40px;
@@ -375,31 +378,35 @@ const FormComponent2 = styled.section `
         }
 
         .fox {
-            position: absolute;
+            margin-left: 76%;
+            margin-top: 55%;
+            /* position: absolute;
             top: 500px;
-            left: 583px;
+            left: 583px; */
         }
     }
 
     // small Screens
     @media(min-width: 992px) {
 
-        height: 127.5vh;
+        height: 125.5vh;
 
         .mobile {
             display: none;
         }
     
         .tablet-desktops {
-            display: flex;
+            display: grid;
             justify-content: space-between;
+            justify-content: center;
+            align-items: center;
         }
 
-        background-image: url("/images/992px-create-user.svg");
+        /* background-image: url("/images/992px-create-user.svg"); */
 
         form {
-            margin-top: 2.5%;
-            margin-left: 25.5%;
+            margin-top: 10%;
+            /* margin-left: 25.5%; */
             border-radius: 19px;
             background: linear-gradient(180deg, #07B3FD 0%, #0a59c0 100%);
             width: 500px;
@@ -409,14 +416,14 @@ const FormComponent2 = styled.section `
 
         h1 {
             margin-top: 5%;
-            margin-left: 30%;
+            /* margin-left: 30%; */
             font-size: 2em;
-            width: 202px;
+            /* width: 202px; */
         }
 
         .name {
             margin-top: -0.5%;
-            margin-left: -5%;
+            /* margin-left: -5%; */
         }
 
         #name {
@@ -425,11 +432,11 @@ const FormComponent2 = styled.section `
 
         .date {
             margin-top: -5%;
-            margin-left: -5%;
+            /* margin-left: -5%; */
         }
 
         small {
-            margin-left: 14.5%;
+            margin-left: -40%;
         }
 
         #birthday {
@@ -438,7 +445,7 @@ const FormComponent2 = styled.section `
 
         .email {
             margin-top: -5%;
-            margin-left: -5%;
+            /* margin-left: -5%; */
         }
 
         #email {
@@ -447,7 +454,7 @@ const FormComponent2 = styled.section `
 
         .phone {
             margin-top: -5%;
-            margin-left: -5%;
+            /* margin-left: -5%; */
         }
 
         #phone {
@@ -456,7 +463,7 @@ const FormComponent2 = styled.section `
 
         .cpf {
             margin-top: -5%;
-            margin-left: -5%;
+            /* margin-left: -5%; */
         }
 
         #cpf {
@@ -465,7 +472,7 @@ const FormComponent2 = styled.section `
 
         .password {
             margin-top: -5%;
-            margin-left: -5%;
+            /* margin-left: -5%; */
         }
 
         #password {
@@ -474,7 +481,7 @@ const FormComponent2 = styled.section `
 
         .confirm-password {
             margin-top: -5%;
-            margin-left: -5%;
+            /* margin-left: -5%; */
         }
 
         #confirm-password {
@@ -516,12 +523,12 @@ const FormComponent2 = styled.section `
 
         p {
             font-size: 1.2em;
-            margin-top: 1%;
+            margin-top: -1%;
         }
 
         .google-enter {
-            margin-top: 4.5%;
-            margin-left: 13%;
+            margin-top: -5%;
+            /* margin-left: 13%; */
             cursor: pointer;
         }
 
@@ -533,7 +540,7 @@ const FormComponent2 = styled.section `
             border: none;
             border-radius: 39px;
             padding: 8px;
-            margin-left: 5.5%;
+            /* margin-left: 5.5%; */
         }
 
         .btn-google:hover {
@@ -545,7 +552,7 @@ const FormComponent2 = styled.section `
             border-radius: 39px;
             padding: 8px;
             cursor: pointer;
-            margin-left: 5.5%;
+            /* margin-left: 5.5%; */
         }
 
         .btn-google:active {
@@ -556,39 +563,41 @@ const FormComponent2 = styled.section `
             border: none;
             border-radius: 39px;
             padding: 8px;
-            margin-left: 5.5%;
+            /* margin-left: 5.5%; */
         }
 
         .page2 {
-            margin-top: 5%;
-            margin-left: 23%;
-            font-size: 1em;
+            margin-top: -3%;
+            /* margin-left: 23%; */
+            font-size: 1.2em;
         }
 
         .criar {
-            margin-top: -0.5%;
-            margin-left: 16%;
+            margin-top: -100%;
+            /* margin-left: 16%; */
             background-color: #93B413;
             cursor: pointer;
         }
 
         .criar:hover {
             margin-top: -0.5%;
-            margin-left: 16%;
+            /* margin-left: 16%; */
             background-color: #9fc214;
         }
 
         .criar:active {
             margin-top: -0.5%;
-            margin-left: 16%;
+            /* margin-left: 16%; */
             background-color: #86a40f;
         }
 
         .fox {
             width: 110px;
-            position: absolute;
+            margin-top: 45%;
+            margin-left: 74.5%;
+            /* position: absolute;
             left: 760px;
-            top: 600px;
+            top: 600px; */
         }
 }
 
@@ -602,14 +611,16 @@ const FormComponent2 = styled.section `
         }
     
         .tablet-desktops {
-            display: flex;
+            display: grid;
             justify-content: space-between;
+            justify-content: center;
+            align-items: center;
         }
 
-        background-image: url("/images/1200px-create-user.svg");
+        /* background-image: url("/images/1200px-create-user.svg"); */
 
         form {
-            margin-left: 24.2%;
+            /* margin-left: 24.2%; */
             border-radius: 19px;
             background: linear-gradient(180deg, #07B3FD 0%, #0a59c0 100%);
             width: 690px;
@@ -619,13 +630,13 @@ const FormComponent2 = styled.section `
 
         h1 {
             font-size: 2.4em;
-            width: 250px;
-            margin-left: 33%;
+            /* width: 250px; */
+            /* margin-left: 33%; */
         }
 
         .name {
             margin-top: 1%;
-            margin-left: -4.1%;
+            /* margin-left: -4.1%; */
         }
 
         #name {
@@ -639,12 +650,12 @@ const FormComponent2 = styled.section `
 
         .date {
             margin-top: -5%;
-            margin-left: -4.1%;
+            /* margin-left: -4.1%; */
         }
 
         small {
-            margin-top: -4%;
-            margin-left: 14.5%;
+            margin-top: 1%;
+            margin-left: -55%;
             font-size: 0.8em;
        }
 
@@ -658,8 +669,8 @@ const FormComponent2 = styled.section `
         }
 
         .email {
-            margin-top: -1.5%;
-            margin-left: -4.1%;
+            margin-top: -5%;
+            /* margin-left: -4.1%; */
         }
 
         #email{
@@ -673,7 +684,7 @@ const FormComponent2 = styled.section `
 
         .phone{
             margin-top: -5%;
-            margin-left: -4.1%;
+            /* margin-left: -4.1%; */
         }
 
         #phone{
@@ -687,7 +698,7 @@ const FormComponent2 = styled.section `
 
         .cpf{
             margin-top: -5%;
-            margin-left: -4.1%;
+            /* margin-left: -4.1%; */
         }
 
         #cpf{
@@ -701,7 +712,7 @@ const FormComponent2 = styled.section `
 
         .password {
             margin-top: -5%;
-            margin-left: -4.1%;
+            /* margin-left: -4.1%; */
         }
 
         #password {
@@ -715,7 +726,7 @@ const FormComponent2 = styled.section `
 
         .confirm-password {
             margin-top: -5%;
-            margin-left: -4.1%;
+            /* margin-left: -4.1%; */
         }
 
         #confirm-password {
@@ -763,12 +774,12 @@ const FormComponent2 = styled.section `
         p {
             font-size: 1.7em;
             margin-top: -1%;
-            margin-left: 48%;
+            /* margin-left: 48%; */
         }
 
         .google-enter {
-            margin-top: 4.5%;
-            margin-left: 14.5%;
+            margin-top: -4.5%;
+            /* margin-left: 14.5%; */
             cursor: pointer;
         }
 
@@ -780,7 +791,7 @@ const FormComponent2 = styled.section `
             border: none;
             border-radius: 39px;
             padding: 8px;
-            margin-left: -0.5%;
+            /* margin-left: -0.5%; */
         }
 
         .btn-google:hover {
@@ -791,7 +802,7 @@ const FormComponent2 = styled.section `
             border: none;
             border-radius: 39px;
             padding: 8px;
-            margin-left: -0.5%;
+            /* margin-left: -0.5%; */
         }
 
         .btn-google:active {
@@ -802,7 +813,7 @@ const FormComponent2 = styled.section `
             border: none;
             border-radius: 39px;
             padding: 8px;
-            margin-left: -0.5%;
+            /* margin-left: -0.5%; */
         }
 
         .faGoogle{
@@ -812,14 +823,14 @@ const FormComponent2 = styled.section `
         
         .page2 {
             font-size: 1.6em;
-            margin-top: 3.5%;
-            margin-left: 18.5%;
-            width: 430px;
+            margin-top: -5%;
+            /* margin-left: 18.5%; */
+            /* width: 430px; */
         }
 
         .criar {
-            margin-top: -2.5%;
-            margin-left: 11%;
+            margin-top: -5%;
+            /* margin-left: 11%; */
             background-color: #93B413;
             width: 200px;
             height: 60px;
@@ -828,8 +839,8 @@ const FormComponent2 = styled.section `
         }
 
         .criar:hover {
-            margin-top: -2.5%;
-            margin-left: 11%;
+            margin-top: -5%;
+            /* margin-left: 11%; */
             background-color: #9fc214;
             width: 200px;
             height: 60px;
@@ -837,8 +848,8 @@ const FormComponent2 = styled.section `
         }
 
         .criar:active {
-            margin-top: -2.5%;
-            margin-left: 11%;
+            margin-top: -5%;
+            /* margin-left: 11%; */
             background-color: #86a40f;
             width: 200px;
             height: 60px;
@@ -847,58 +858,64 @@ const FormComponent2 = styled.section `
 
         .fox {
             width: 170px;
-            position: absolute;
+            margin-top: 40%;
+            margin-left: 75.5%;
+            /* position: absolute;
             left: 1021px;
-            top: 700px;
+            top: 700px; */
         }
     }
 
     @media(min-width: 1400px) {
-        height: 163vh;
+        height: 166.5vh;
 
         .mobile {
             display: none;
         }
     
         .tablet-desktops {
-            display: flex;
+            display: grid;
             justify-content: space-between;
+            justify-content: center;
+            align-items: center;
         }
 
-        background-image: url("/images/1400px-create-user.svg");
+        /* background-image: url("/images/1400px-create-user.svg"); */
 
         form {
-            margin-left: 25.5%;
-            margin-top: 4.2%;
+            /* margin-left: 25.5%; */
+            margin-top: 10%;
         }
 
         .fox {
             width: 170px;
-            position: absolute;
+            /* position: absolute;
             left: 1067px;
-            top: 700px;
+            top: 700px; */
         }
     }
 
     // Large Screens
     @media(min-width: 1600px) {
 
-        height: 152vh;
+        height: 162vh;
 
         .mobile {
             display: none;
         }
 
         .tablet-desktops {
-            display: flex;
+            display: grid;
             justify-content: space-between;
+            justify-content: center;
+            align-items: center;
         }
 
-        background-image: url("/images/1600px-create-user.svg");
+        /* background-image: url("/images/1600px-create-user.svg"); */
 
         form {
-            margin-left: 22%;
-            margin-top: 3%;
+            /* margin-left: 22%; */
+            margin-top: 10%;
             border-radius: 19px;
             background: linear-gradient(180deg, #07B3FD 0%, #0a59c0 100%);
             width: 890px;
@@ -909,8 +926,8 @@ const FormComponent2 = styled.section `
         h1 {
             font-size: 3em;
             margin-top: 5%;
-            margin-left: 33.5%;
-            width: 305px;
+            /* margin-left: 33.5%; */
+            /* width: 305px; */
         }
 
         .name {
@@ -926,13 +943,13 @@ const FormComponent2 = styled.section `
         }
 
         .date {
-            margin-top: -10%;
+            margin-top: -3%;
         }
 
         small {
-            margin-top: -5%;
-            margin-left: 15%;
-            font-size: 0.8em;
+            margin-top: 1%;
+            margin-left: -57%;
+            font-size: 1em;
        }
 
         #birthday {
@@ -944,7 +961,7 @@ const FormComponent2 = styled.section `
         }
 
         .email{
-            margin-top: -3%;
+            margin-top: -5%;
         }
 
         #email {
@@ -956,7 +973,7 @@ const FormComponent2 = styled.section `
         }
 
         .phone {
-            margin-top: -8.5%;
+            margin-top: -4%;
         }
 
         #phone {
@@ -968,7 +985,7 @@ const FormComponent2 = styled.section `
         }
 
         .cpf {
-            margin-top: -8.5%;
+            margin-top: -4%;
         }
 
         #cpf {
@@ -980,7 +997,7 @@ const FormComponent2 = styled.section `
         }
 
         .password {
-            margin-top: -8.5%;
+            margin-top: -4%;
         }
 
         #password {
@@ -992,7 +1009,7 @@ const FormComponent2 = styled.section `
         }
 
         .confirm-password {
-            margin-top: -8.5%;
+            margin-top: -4%;
         }
 
         #confirm-password {
@@ -1009,8 +1026,8 @@ const FormComponent2 = styled.section `
         }
 
         .google-enter {
-            margin-top: 3%;
-            margin-left: 10%;
+            margin-top: -5%;
+            /* margin-left: 10%; */
         }
 
         .btn-google {
@@ -1021,7 +1038,7 @@ const FormComponent2 = styled.section `
             border: none;
             border-radius: 39px;
             padding: 8px;
-            margin-left: 12%;
+            /* margin-left: 12%; */
         }
 
         .btn-google:hover {
@@ -1032,7 +1049,7 @@ const FormComponent2 = styled.section `
             border: none;
             border-radius: 39px;
             padding: 8px;
-            margin-left: 12%;
+            /* margin-left: 12%; */
         }
 
         .btn-google:active {
@@ -1043,24 +1060,24 @@ const FormComponent2 = styled.section `
             border: none;
             border-radius: 39px;
             padding: 8px;
-            margin-left: 12%;
+            /* margin-left: 12%; */
         }
 
         .page2 {
             font-size: 1.7em;
-            margin-top: 3%;
-            margin-left: 25%;
-            width: 500px;
+            margin-top: -5%;
+            /* margin-left: 25%; */
+            /* width: 500px; */
         }
 
         .criar {
-            margin-top: -5%;
-            margin-left: 15.5%;
+            margin-top: -8%;
+            /* margin-left: 15.5%; */
         }
 
         .criar:hover {
-            margin-top: -5%;
-            margin-left: 15.5%;
+            margin-top: -8%;
+            /* margin-left: 15.5%; */
             background-color: #9fc214;
             width: 200px;
             height: 60px;
@@ -1068,8 +1085,8 @@ const FormComponent2 = styled.section `
         }
 
         .criar:active {
-            margin-top: -5%;
-            margin-left: 15.5%;
+            margin-top: -8%;
+            /* margin-left: 15.5%; */
             background-color: #86a40f;
             width: 200px;
             height: 60px;
@@ -1077,9 +1094,11 @@ const FormComponent2 = styled.section `
         }
 
         .fox {
-            position: absolute;
+            margin-top: 35%;
+            margin-left: 78.3%;
+            /* position: absolute;
             left: 1235px;
-            top: 850px;
+            top: 850px; */
         }
     }
 
