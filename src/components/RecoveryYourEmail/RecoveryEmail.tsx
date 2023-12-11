@@ -55,6 +55,7 @@ const RecoveryEmailComponent = styled.section`
         }
         .btn-confirm{
             text-align: center;
+            margin-top: 5%;
             .confirm{
                 width: 170px;
                 height: 50px;
@@ -63,7 +64,6 @@ const RecoveryEmailComponent = styled.section`
                 background: #93B413;
                 font-size: 1.6em;
                 color: #ffffff;
-                margin-top: 5%;
                 /* margin: 40px; */
                 /* margin-top: 5%; */
                 /* margin-left: 28%; */
@@ -76,6 +76,7 @@ const RecoveryEmailComponent = styled.section`
                 background-color: #86a40f;
                 font-size: 1.6em;
                 color: #ffffff;
+                /* margin-top: 5%; */
                 /* margin: 40px; */
                 /* margin-top: 5%; */
                 /* margin-left: 28%; */
@@ -103,6 +104,7 @@ const RecoveryEmailComponent = styled.section`
 
         form{
             width: 300px;
+            height: 214px;
             border-radius: 19px;
             background: linear-gradient(180deg, #07B3FD 0%, #0a59c0 100%);
             margin-top: 7.5%;
@@ -122,7 +124,7 @@ const RecoveryEmailComponent = styled.section`
         }
 
         h3 {
-            padding-top: 10%;
+            padding-top: 5%;
             text-align: center;
             /* margin-left: 14.5%; */
         }
@@ -130,7 +132,7 @@ const RecoveryEmailComponent = styled.section`
         .input-email {
             /* margin-left: -14.5%; */
             text-align: center;
-            margin-top: 3.5%;
+            margin-top: -5%;
         }
 
         #phoneOrCPF {
@@ -147,9 +149,7 @@ const RecoveryEmailComponent = styled.section`
             background: #93B413;
             font-size: 1.5em;
             color: #ffffff;
-            margin: 40px;
-            margin-top: 5%;
-            margin-left: 15%;
+            margin-top: -55%;
         }
 
         .confirm:active{
@@ -160,9 +160,7 @@ const RecoveryEmailComponent = styled.section`
             background-color: #86a40f;
             font-size: 1.5em;
             color: #ffffff;
-            margin: 40px;
-            margin-top: 5%;
-            margin-left: 15%;
+            margin-top: -55%;
         }
         }
 
@@ -211,7 +209,7 @@ const RecoveryEmailComponent = styled.section`
 
         .btn-confirm{
             text-align: center;
-            padding-top: 5%;
+            /* padding-top: 5%; */
             .confirm{
                 width: 170px;
                 height: 50px;
@@ -232,9 +230,9 @@ const RecoveryEmailComponent = styled.section`
                 background-color: #9fc214;
                 font-size: 1.6em;
                 color: #ffffff;
-                margin: 40px;
+                margin: 0;
                 cursor: pointer;
-                margin-top: 2.5%;
+                /* margin-top: 2.5%; */
             }
             .confirm:active{
                 width: 170px;
@@ -244,9 +242,9 @@ const RecoveryEmailComponent = styled.section`
                 background-color: #86a40f;
                 font-size: 1.6em;
                 color: #ffffff;
-                margin: 40px;
+                margin: 0;
                 cursor: pointer;
-                margin-top: 2.5%;
+                /* margin-top: 2.5%; */
             }
         }
 
@@ -322,9 +320,9 @@ const RecoveryEmailComponent = styled.section`
                 background-color: #9fc214;
                 font-size: 1.6em;
                 color: #ffffff;
-                margin: 40px;
+                margin: 0;
                 cursor: pointer;
-                margin-top: -10%;
+                /* margin-top: -10%; */
             }
             .confirm:active{
                 width: 170px;
@@ -336,7 +334,7 @@ const RecoveryEmailComponent = styled.section`
                 color: #ffffff;
                 margin: 0;
                 cursor: pointer;
-                margin-top: -10%;
+                /* margin-top: -10%; */
             }
         }
 
@@ -393,7 +391,7 @@ const RecoveryEmailComponent = styled.section`
                 background: #93B413;
                 font-size: 1.6em;
                 color: #ffffff;
-                margin-top: -5%;
+                /* margin-top: -5%; */
                 cursor: pointer;
             }
 
@@ -405,7 +403,7 @@ const RecoveryEmailComponent = styled.section`
                 background-color: #9fc214;
                 font-size: 1.6em;
                 color: #ffffff;
-                margin-top: -5%;
+                /* margin-top: -5%; */
                 cursor: pointer;
             }
 
@@ -417,7 +415,7 @@ const RecoveryEmailComponent = styled.section`
                 background-color: #86a40f;
                 font-size: 1.6em;
                 color: #ffffff;
-                margin-top: -5%;
+                /* margin-top: -5%; */
                 cursor: pointer;
             }
         }

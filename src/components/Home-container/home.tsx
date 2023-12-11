@@ -147,7 +147,7 @@ height: 84.2vh;
     // Small Screens
     @media(min-width: 992px) {
 
-        height: 79.6vh;
+        height: 79.1vh;
 
         .mobile{
             display: none;
@@ -165,7 +165,7 @@ height: 84.2vh;
         h1 {
             font-size: 1.6em;
             margin: 0;
-            padding-top: 10%;
+            padding-top: 5%;
             /* padding-left: 42%; */
         }
 
@@ -271,11 +271,13 @@ height: 84.2vh;
         height: 80vh;
 
         h1 {
-            /* margin-left: 39%; */
+            margin-left: 0%;
+            text-align: center;
         }
 
         p{
-            /* margin-left: 24.7%; */
+            margin-left: 0%;
+            text-align: center;
         }
 
         .fox {

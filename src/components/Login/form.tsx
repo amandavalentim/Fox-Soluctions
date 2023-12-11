@@ -169,7 +169,7 @@ const FormComponent = styled.section `
     // Tablet
     @media(min-width: 704px){
 
-        height: 79.6vh;
+        height: 88vh;
 
         background: #0A53B5;
 
@@ -226,10 +226,12 @@ const FormComponent = styled.section `
     }
 
     #forgot-email:active {
+        text-align: center;
+        padding: 0;
         margin-top: -15%;
         margin-left: 3%;
-        font-size: 0.7em;
         color: #F47216;
+        font-size: 0.9em;
         font-family: 'Poppins-Regular';
         width: 125px;
     }
@@ -341,7 +343,7 @@ const FormComponent = styled.section `
     // Small Screens
     @media(min-width: 992px) {
 
-        height: 79.6vh;
+        height: 83.8vh;
 
         .mobile {
             display: none;
@@ -365,7 +367,7 @@ const FormComponent = styled.section `
             width: 450px;
             height: 460px;
             border-color: white;
-            margin-top: -67.3%;
+            margin-top: -70.3%;
        }
 
         h1 {
@@ -397,20 +399,21 @@ const FormComponent = styled.section `
         }
 
         #forgot-email:hover {
+            text-align: center;
             font-size: 0.9em;
             margin-top: 0.5%;
-            text-align: center;
             font-family: 'Poppins-Regular';
+            width: 135px;
             color: #dbd7d7;
-            width: 150px;
         }
 
         #forgot-email:active {
+            text-align: center;
             font-size: 0.9em;
             margin-top: 0.5%;
-            text-align: center;
+            font-family: 'Poppins-Regular';
+            width: 135px;
             color: #F47216;
-            width: 150px;
         }
 
         .senha {
@@ -436,18 +439,18 @@ const FormComponent = styled.section `
         }
 
         #forgot-password:hover {
-            text-align: center;
             margin-top: 0.5%;
-            font-size: 1.1em;
+            text-align: center;
+            font-size: 1em;
             font-family: 'Poppins-Regular';
             color: #dbd7d7;
             width: 130px;
         }
 
         #forgot-password:active {
-            text-align: center;
             margin-top: 0.5%;
-            font-size: 1.1em;
+            text-align: center;
+            font-size: 1em;
             font-family: 'Poppins-Regular';
             color: #F47216;
             width: 130px;
@@ -505,7 +508,7 @@ const FormComponent = styled.section `
     // Medium Screens
     @media(min-width: 1200px) {
 
-        height: 79.6vh;
+        height: 74.5vh;
 
         .mobile {
             display: none;

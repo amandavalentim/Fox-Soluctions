@@ -88,6 +88,7 @@ h1 {
     transform: rotatey(160deg);
     /* position: absolute; */
     margin-left: 80%;
+    margin-top: -5%;
 }
 
 @media(min-width: 768px) {
