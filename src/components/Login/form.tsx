@@ -508,7 +508,7 @@ const FormComponent = styled.section `
     // Medium Screens
     @media(min-width: 1200px) {
 
-        height: 74.5vh;
+        height: 85vh;
 
         .mobile {
             display: none;
@@ -683,9 +683,9 @@ const FormComponent = styled.section `
     }
 
     // 1476-708
-    @media(min-width: 1400px) {
+    @media(min-width: 1380px) {
 
-        height: 79.6vh;
+        height: 74.6vh;
 
         .mobile {
             display: none;

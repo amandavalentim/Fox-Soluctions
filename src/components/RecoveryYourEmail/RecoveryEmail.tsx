@@ -340,8 +340,10 @@ const RecoveryEmailComponent = styled.section`
 
         .fox2 {
             margin-top: 1.1%;
-            margin-left: 40%;
+            margin-left: 38%;
             text-align: center;
+            width: 90px;
+            height: 85px;
         }
     }
 
