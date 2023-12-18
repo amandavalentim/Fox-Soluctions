@@ -177,6 +177,7 @@ const FormComponent2 = styled.section `
         background-color: #93B413;
         border: none;
         border-radius: 15px;
+        margin-top: 6%;
     }
 
     .criar:active {
@@ -186,6 +187,7 @@ const FormComponent2 = styled.section `
         background-color: #86a40f;
         border: none;
         border-radius: 15px;
+        margin-top: 6%;
     }
 
     .fox {

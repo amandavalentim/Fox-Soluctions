@@ -11,7 +11,7 @@ const CreateUserComponent = styled.section `
     // Mobile
 
     .mobile {
-        display: grid;
+        display: block;
         justify-content: space-between;
         justify-content: center;
         align-items: center;
@@ -328,7 +328,7 @@ const CreateUserComponent = styled.section `
     // Tablet
     @media(min-width: 768px) {
 
-        height: 136vh;
+        height: 163vh;
 
         .mobile {
             display: none;
@@ -411,6 +411,7 @@ const CreateUserComponent = styled.section `
             background: linear-gradient(180deg, #07B3FD 0%, #0b58bc 100%);
             width: 630px;
             height: 875px;
+            margin-top: 5%;
             text-align: center;
         }
     
@@ -650,7 +651,7 @@ const CreateUserComponent = styled.section `
         label {
             position: absolute;
             margin-left: -6.3%;
-            margin-top: 0.6%;
+            margin-top: 1%;
             color: white;
         }
 
@@ -1091,7 +1092,8 @@ const CreateUserComponent = styled.section `
         }
 
         label {
-            margin-left: -5.8%;;
+            margin-left: -5.8%;
+            margin-top: 0.5%;
             cursor: pointer;
         }
 
@@ -1109,7 +1111,7 @@ const CreateUserComponent = styled.section `
             height: 50px;
             font-size: 1.6em;
             background-color: #9fc214;
-            margin-left: 42%;
+            /* margin-left: 42%; */
             cursor: pointer;
         }
 
@@ -1118,7 +1120,7 @@ const CreateUserComponent = styled.section `
             height: 50px;
             font-size: 1.6em;
             background-color: #86a40f;
-            margin-left: 42%;
+            /* margin-left: 42%; */
             cursor: pointer;
         }
     }
@@ -1126,7 +1128,7 @@ const CreateUserComponent = styled.section `
     // Medium Screens
     @media(min-width: 1200px) {
 
-        height: 235vh;
+        height: 225vh;
 
         .mobile {
             display: none;
@@ -1181,9 +1183,9 @@ const CreateUserComponent = styled.section `
         }
 
         .gender-txt {
-            font-size: 1.3em;
+            font-size: 1.7em;
             /* margin-left: -65%; */
-            margin-top: -2%;
+            margin-top: -5%;
         }
 
         .span2 {
@@ -1191,129 +1193,127 @@ const CreateUserComponent = styled.section `
             margin-left: 0.5%;
         }
 
+        input[type="radio"] {
+            width: 20px;
+            height: 20px;
+        }
+
         .man {
             width: 30px;
             margin-left: 10.3%;
-            margin-top: -0.5%;
+            margin-top: 0%;
         }
 
-        #man {
-            width: 30px;
+        #man-op {
             cursor: pointer;
         }
 
         .man-op {
-            margin-left: 555%;
-            margin-top: -237%;
-            font-size: 1.1em;
+            margin-left: 115%;
+            margin-top: -108%;
+            font-size: 1.3em;
         }
 
         .woman {
             width: 30px;
-            margin-left: 30.5%;
-            margin-top: -5.1%;
+            margin-left: 46%;
+            margin-top: -3.5%;
         }
 
-        #woman {
-            width: 30px;
+        #woman-op {
             cursor: pointer;
         }
 
         .woman-op {
-            margin-left: 555%;
-            margin-top: -237%;
-            font-size: 1.1em;
+            margin-left: 115%;
+            margin-top: -108%;
+            font-size: 1.3em;
         }
 
         .transvestite {
             width: 30px;
-            margin-left: 49.1%;
-            margin-top: -5.2%;
+            margin-left: 81%;
+            margin-top: -3.5%;
         }
 
-        #transvestite {
-            width: 30px;
+        #t1-op {
             cursor: pointer;
         }
 
         .t1-op {
-            margin-left: 555%;
-            margin-top: -237%;
-            font-size: 1.1em;
+            margin-left: 115%;
+            margin-top: -108%;
+            font-size: 1.3em;
         }
 
         .no-binary {
             width: 30px;
             margin-left: 10.3%;
-            margin-top: -0.5%;
+            margin-top: 5%;
         }
 
         #no-binary {
-            width: 30px;
             cursor: pointer;
         }
 
         .nb-op {
-            margin-left: 555%;
-            margin-top: -237%;
-            font-size: 1.1em;
-            width: 119px;
+            margin-left: 115%;
+            margin-top: -106.5%;
+            font-size: 1.3em;
+            width: 123px;
         }
 
         .trans {
             width: 30px;
-            margin-left: 30.5%;
-            margin-top: -5.1%;
+            margin-left: 46%;
+            margin-top: -3.5%;
         }
 
         #trans {
-            width: 30px;
             cursor: pointer;
         }
 
         .t2-op {
-            margin-left: 555%;
-            margin-top: -237%;
-            font-size: 1.1em;
+            margin-left: 115%;
+            margin-top: -106.5%;
+            font-size: 1.3em;
         }
 
         .another {
             width: 30px;
-            margin-left: 49.1%;
-            margin-top: -5.2%;
+            margin-left: 81%;
+            margin-top: -3.5%;
         }
 
         #another {
-            width: 30px;
             cursor: pointer;
         }
 
         .a-op {
-            margin-left: 555%;
-            margin-top: -237%;
-            font-size: 1.1em;
+            margin-left: 115%;
+            margin-top: -106.5%;
+            font-size: 1.3em;
         }
 
         .none {
             width: 30px;
             margin-left: 10.3%;
-            margin-top: -0.5%;
+            margin-top: 5%;
         }
 
         #none {
-            width: 30px;
             cursor: pointer;
         }
 
         .n-op {
-            margin-left: 525%;
-            margin-top: -237%;
-            font-size: 1.1em;
-            width: 180px;
+            margin-left: 115%;
+            margin-top: -106.5%;
+            font-size: 1.3em;
+            width: 171px;
         }
 
         .social-name {
-            margin-top: 3%;
+            margin-top: -2%;
             /* margin-left: -2.5%; */
             font-size: 1.4em;
         }
@@ -1328,7 +1328,7 @@ const CreateUserComponent = styled.section `
         }
 
         .date {
-            margin-top: 1%;
+            margin-top: -1.5%;
             /* margin-left: -2.5%; */
             font-size: 1.4em;
         }
@@ -1349,15 +1349,15 @@ const CreateUserComponent = styled.section `
             margin-top: 11.8%;
         }
 
-        .small {
-            position: absolute;
-            margin-left: 9%;
+        .small2 {
+            /* position: absolute; */
+            margin-left: -62%;
             top: 890px;
             font-size: 0.8em;
         }
 
         .cpf {
-            margin-top: -3%;
+            margin-top: -5%;
             /* margin-left: -2.5%; */
             font-size: 1.4em;
         }
@@ -1428,13 +1428,13 @@ const CreateUserComponent = styled.section `
         .profile-photo2 {
             font-size: 2em;
             /* margin-left: -56%; */
-            font-size: 1.4em;
+            font-size: 1.5em;
             margin-top: -3.5%;
         }
 
         .choose-a-image {
-            width: 200px;
-            height: 60px;
+            width: 180px;
+            height: 55px;
             /* margin-left: 12.5%; */
             background-color: #F47216;
             font-size: 1em;
@@ -1442,38 +1442,39 @@ const CreateUserComponent = styled.section `
         }
 
         .choose-a-image:hover {
-            width: 200px;
-            height: 60px;
-            margin-left: 12.5%;
+            width: 180px;
+            height: 55px;
+            /* margin-left: 12.5%; */
             background-color: #ff7818;
             font-size: 1em;
             cursor: pointer;
         }
 
         .choose-a-image:active {
-            width: 200px;
-            height: 60px;
-            margin-left: 12.5%;
+            width: 180px;
+            height: 55px;
+            /* margin-left: 12.5%; */
             background-color: #d66515;
             font-size: 1em;
             cursor: pointer;
         }
 
         label {
-            position: absolute;
-            /* margin-left: 1.5%; */
-            top: 1410px;
+            /* position: absolute; */
+            margin-left: -5.5%;
+            /* top: 1410px; */
+            margin-top: 0.7%;
             font-size: 1.5em;
             cursor: pointer;
         }
 
         .save {
-            margin-top: 6%;
+            margin-top: 0%;
             width: 220px;
             height: 70px;
             font-size: 2.5em;
             background-color: #93B413;
-            margin-left: 38.5%;
+            margin-left: 5%;
             cursor: pointer;
         }
 
@@ -1507,23 +1508,23 @@ const CreateUserComponent = styled.section `
         }
 
         h1 {
-            margin-left: 34%;
+            /* margin-left: 34%; */
         }
 
         .span1 {
-            margin-left: -32%;
+            /* margin-left: -32%; */
         }
 
-        .small {
-            position: absolute;
-            margin-left: 8.5%;
+        .small2 {
+            /* position: absolute; */
+            margin-left: -62%;
             top: 885px;
             font-size: 0.8em;
         }
 
         .date {
             margin-top: -0.5%;
-            margin-left: -2.5%;
+            /* margin-left: -2.5%; */
             font-size: 1.4em;
         }
 
@@ -1538,30 +1539,31 @@ const CreateUserComponent = styled.section `
 
         .span3 {
             color: #F47216;
-            margin-left: 26%;
+            /* margin-left: 26%; */
             position: absolute;
             margin-top: 9.5%;
         }
 
         .span4 {
-            margin-left: -41%;
+            /* margin-left: -41%; */
             margin-top: 1.5%;
         }
 
         .span5 {
-            margin-left: -39%;
+            /* margin-left: -39%; */
             margin-top: 1.5%;
         }
 
         .span6 {
-            margin-left: -40.5%;
+            /* margin-left: -40.5%; */
             margin-top: 1.5%;
         }
 
         label {
-            position: absolute;
-            margin-left: 0.5%;
-            top: 1390px;
+            /* position: absolute; */
+            /* margin-left: 0.5%; */
+            /* top: 1390px; */
+            margin-top: 0.5%;
             font-size: 1.7em;
             cursor: pointer;
         }
@@ -1572,7 +1574,7 @@ const CreateUserComponent = styled.section `
             height: 70px;
             font-size: 2.5em;
             background-color: #93B413;
-            margin-left: 38.5%;
+            /* margin-left: 38.5%; */
             cursor: pointer;
         }
 
@@ -1582,7 +1584,7 @@ const CreateUserComponent = styled.section `
             height: 70px;
             font-size: 2.5em;
             background-color: #9fc214;
-            margin-left: 38.5%;
+            /* margin-left: 38.5%; */
             cursor: pointer;
         }
 
@@ -1592,7 +1594,7 @@ const CreateUserComponent = styled.section `
             height: 70px;
             font-size: 2.5em;
             background-color: #86a40f;
-            margin-left: 38.5%;
+            /* margin-left: 38.5%; */
             cursor: pointer;
         }
 
@@ -1623,13 +1625,13 @@ const CreateUserComponent = styled.section `
         }
 
         h1 {
-            margin-left: 36.5%;
+            /* margin-left: 36.5%; */
             font-size: 2.3em;
         }
 
         .name {
-            margin-top: 3%;
-            margin-left: -8%;
+            margin-top: -3%;
+            /* margin-left: -8%; */
             font-size: 1.7em;
         }
 
@@ -1644,7 +1646,7 @@ const CreateUserComponent = styled.section `
 
         .span1 {
             color: #F47216;
-            margin-left: -39.5%;
+            /* margin-left: -39.5%; */
             position: absolute;
             font-size: 1.3em;
             margin-top: 2%;
@@ -1652,119 +1654,118 @@ const CreateUserComponent = styled.section `
 
         .gender-txt {
             font-size: 2.3em;
-            margin-left: -72.5%;
+            /* margin-left: -72.5%; */
             margin-top: -6%;
             font-size: 1.7em;
         }
 
+        input[type="radio"] {
+            width: 20px;
+            height: 20px;
+        }
+
         .man {
             margin-top: -2.5%;
-            margin-left: 5.5%;
+            margin-left: 18%;
         }
 
         #man {
-            width: 30px;
             cursor: pointer;
         }
 
         .man-op {
-            margin-top: -338%;
-            margin-left: 655%;
+            margin-top: -110%;
+            margin-left: 135%;
         }
 
         .woman {
-            margin-top: -6.2%;
-            margin-left: 23%;
+            margin-top: -2.8%;
+            margin-left: 47%;
+            /* margin-left: 18%; */
         }
 
         #woman {
-            width: 30px;
             cursor: pointer;
         }
 
         .woman-op {
-            margin-top: -338%;
-            margin-left: 655%;
+            margin-top: -110%;
+            margin-left: 135%;
         }
 
         .transvestite {
-            margin-top: -6.2%;
-            margin-left: 40%;
+            margin-top: -2.7%;
+            margin-left: 76.5%;
         }
 
         #transvestite {
-            width: 30px;
             cursor: pointer;
         }
 
         .t1-op {
-            margin-top: -338%;
-            margin-left: 655%;
+            margin-top: -110%;
+            margin-left: 135%;
         }
 
         .no-binary {
-            margin-top: -2.5%;
-            margin-left: 5.5%;
+            margin-top: 4%;
+            margin-left: 18%;
         }
 
         #no-binary {
-            width: 30px;
             cursor: pointer;
         }
 
         .nb-op {
-            margin-top: -338%;
-            margin-left: 655%;
+            margin-top: -110%;
+            margin-left: 135%;
         }
 
         .trans {
-            margin-top: -6.2%;
-            margin-left: 23%;
+            margin-top: -2.9%;
+            margin-left: 47%;
         }
 
         #trans {
-            width: 30px;
             cursor: pointer;
         }
 
         .t2-op {
-            margin-top: -338%;
-            margin-left: 655%;
+            margin-top: -110%;
+            margin-left: 135%;
         }
 
         .another {
-            margin-top: -6.2%;
-            margin-left: 40%;
+            margin-top: -2.7%;
+            margin-left: 76.5%;
         }
 
         #another {
-            width: 30px;
             cursor: pointer;
         }
 
         .a-op {
-            margin-top: -338%;
-            margin-left: 655%;
+            margin-top: -110%;
+            margin-left: 135%;
         }
 
         .none {
-            margin-top: -2.5%;
-            margin-left: 5.5%;
+            margin-top: 4%;
+            margin-left: 18%;
         }
 
         #none {
-            width: 30px;
             cursor: pointer;
         }
 
         .n-op {
-            margin-top: -338%;
-            margin-left: 655%;
+            margin-top: -110%;
+            margin-left: 135%;
         }
 
         .social-name {
             margin-top: -2%;
-            margin-left: -8%;
+            margin-left: -2%;
             font-size: 1.7em;
         }
 
@@ -1778,8 +1779,8 @@ const CreateUserComponent = styled.section `
         }
 
         .date {
-            margin-top: -2.5%;
-            margin-left: -8%;
+            margin-top: -5%;
+            /* margin-left: -8%; */
             font-size: 2.3em;
         }
 
@@ -1792,24 +1793,24 @@ const CreateUserComponent = styled.section `
             font-size: 1.6em;
         }
 
-        .small {
-            position: absolute;
-            top: 890px;
+        .small2 {
             font-size: 0.5em;
-            margin-left: 10%;
+            margin-left: -70%;
+            padding-top: -5%;
+            /* margin-top: 25%; */
         }
 
         .span3 {
             color: #F47216;
-            margin-left: 28.5%;
-            position: absolute;
+            /* margin-left: 28.5%; */
+            /* position: absolute; */
             font-size: 0.8em;
             margin-top: 11.6%;
         }
 
         .cpf {
             margin-top: -7%;
-            margin-left: -8%;
+            /* margin-left: -8%; */
             font-size: 2.3em;
         }
 
@@ -1824,15 +1825,15 @@ const CreateUserComponent = styled.section `
 
         .span4 {
             color: #F47216;
-            margin-left: -49.5%;
-            position: absolute;
+            /* margin-left: -49.5%; */
+            /* position: absolute; */
             font-size: 0.8em;
             margin-top: 2.5%;
         }
 
         .email {
             margin-top: -7%;
-            margin-left: -8%;
+            /* margin-left: -8%; */
             font-size: 2.3em;
         }
 
@@ -1847,7 +1848,7 @@ const CreateUserComponent = styled.section `
 
         .span5 {
             color: #F47216;
-            margin-left: -47.5%;
+            /* margin-left: -47.5%; */
             position: absolute;
             font-size: 0.8em;
             margin-top: 2.3%;
@@ -1855,7 +1856,7 @@ const CreateUserComponent = styled.section `
 
         .country {
             margin-top: -7%;
-            margin-left: -8%;
+            /* margin-left: -8%; */
             font-size: 2.3em;
         }
 
@@ -1870,46 +1871,47 @@ const CreateUserComponent = styled.section `
 
         .span6 {
             color: #F47216;
-            margin-left: -49.3%;
-            position: absolute;
+            /* margin-left: -49.3%; */
+            /* position: absolute; */
             font-size: 0.8em;
             margin-top: 2.7%;
         }
 
         .profile-photo2 {
             margin-top: -4.5%;
-            margin-left: -65.3%;
+            margin-left: -80%;
             font-size: 1.6em;
         }
 
         .choose-a-image {
-            margin-left: 7.9%;
+            /* margin-left: 7.9%; */
             background-color: #F47216;
             width: 220px;
-            height: 60px;
+            height: 50px;
             cursor: pointer;
         }
 
         .choose-a-image:hover {
-            margin-left: 7.9%;
+            /* margin-left: 7.9%; */
             background-color: #ff7818;
             width: 220px;
-            height: 60px;
+            height: 50px;
             cursor: pointer;
         }
 
         .choose-a-image:active {
-            margin-left: 7.9%;
+            /* margin-left: 7.9%; */
             background-color: #d66515;
             width: 220px;
-            height: 60px;
+            height: 50px;
             cursor: pointer;
         }
 
         label {
-            position: absolute;
-            top: 1465px;
-            margin-left: 1.4%;
+            /* position: absolute; */
+            /* top: 1465px; */
+            /* margin-left: 1.4%; */
+            margin-top: 0.3%;
             cursor: pointer;
             font-size: 1.6em;
         }
@@ -1919,9 +1921,9 @@ const CreateUserComponent = styled.section `
             height: 65px;
             font-size: 2.3em;
             background-color: #93B413;
-            margin-left: 41%;
+            margin-left: 1%;
             cursor: pointer;
-            margin-top: 3%;
+            margin-top: -5%;
         }
 
         .save:hover {
@@ -1929,8 +1931,8 @@ const CreateUserComponent = styled.section `
             height: 65px;
             font-size: 2.3em;
             background-color: #9fc214;
-            margin-left: 41%;
-            margin-top: 3%;
+            margin-left: 1%;
+            margin-top: -5%;
         }
 
         .save:active {
@@ -1938,8 +1940,8 @@ const CreateUserComponent = styled.section `
             height: 65px;
             font-size: 2.3em;
             background-color: #86a40f;
-            margin-left: 41%;
-            margin-top: 3%;
+            margin-left: 1%;
+            margin-top: -5%;
         }
     }
 `;
@@ -2071,7 +2073,6 @@ const CreateUserPg = function() {
                             <Input type='radio' name='gender' id='woman' defaultValue='F'/>
                             <p className='woman-op'>Feminino</p>
                         </div>
-                        {/* 
                         <div  className='transvestite'>
                             <Input type='radio' name='gender' id='transvestite' defaultValue='T1'/>
                             <p className='t1-op'>Travesti</p>
@@ -2091,7 +2092,7 @@ const CreateUserPg = function() {
                         <div  className='none'>
                             <Input type='radio' name='gender' id='none' defaultValue='N'/>
                             <p className='n-op'>Prefiro não dizer</p>
-                        </div> */}
+                        </div>
                     </div>
                     <div className='social-name'>
                         <Input type="string" name="social-name" id="social-name" placeholder='Nome Social'/>

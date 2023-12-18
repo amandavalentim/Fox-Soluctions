@@ -13,7 +13,9 @@ const SendDocumentsComponent = styled.section `
     
     .mobile {
         display: block;
-        justify-content: space-between;
+            justify-content: space-between;
+            justify-content: center;
+            align-items: center;
     }
 
     .tablet-desktops {
@@ -72,7 +74,7 @@ const SendDocumentsComponent = styled.section `
         
     }
 
-    height: 145vh;
+    height: 96vh;
 
     background: linear-gradient(180deg, #0A53B5 0%, #0081E8 100%);
 
@@ -143,14 +145,15 @@ const SendDocumentsComponent = styled.section `
     form {
         border-radius: 19px;
         background: linear-gradient(180deg, #07B3FD 0%, #0A53B5 100%);
-        height: 540px;
+        height: 525px;
         width: 250px;
         margin-top: 10%;
-        margin-left: 11%;
+        margin-left: 17.5%;
+        text-align: center;
     }
 
     h1 {
-        margin-left: 15.5%;
+        /* margin-left: 15.5%; */
         padding-top: 10%;
         font-size: 1.3em;
     }
@@ -160,12 +163,13 @@ const SendDocumentsComponent = styled.section `
         background: #07AFFA;
         height: 90px;
         margin-top: 10%;
-        font-size: 1em;
+        font-size: 1.1em;
+        text-align: center;
     }
 
     #rg-txt {
         padding-top: 13%;
-        margin-left: 5%;
+        /* margin-left: 5%; */
         color: white;
     }
 
@@ -173,8 +177,8 @@ const SendDocumentsComponent = styled.section `
         background: none;
         border: none;
         position: absolute;
-        top: 465px;
-        margin-left: 63%;
+        top: 430px;
+        margin-left: 25%;
         font-size: 20px;
     }
 
@@ -188,17 +192,18 @@ const SendDocumentsComponent = styled.section `
 
     .cpf {
         padding-top: 12%;
-        margin-left: 3%;
+        /* margin-left: 3%; */
         color: white;
-        font-size: 1em;
+        font-size: 1.1em;
+        text-align: center;
     }
 
     .button2 {
         background: none;
         border: none;
         position: absolute;
-        top: 550.5px;
-        margin-left: 65%;
+        top: 515px;
+        margin-left: 25%;
         font-size: 20px;
     }
 
@@ -215,21 +220,22 @@ const SendDocumentsComponent = styled.section `
         background: #07AFFA;
         height: 90px;
         margin-top: 10%;
-        font-size: 0.8em;
+        font-size: 0.9em;
     }
 
     #date-txt {
         padding-top: 14%;
-        margin-left: 3%;
+        /* margin-left: 3%; */
         color: white;
+        text-align: center;
     }
 
     .button3 {
         background: none;
         border: none;
         position: absolute;
-        top: 635px;
-        margin-left: 65%;
+        top: 600px;
+        margin-left: 25%;
         font-size: 20px;
     }
 
@@ -243,7 +249,8 @@ const SendDocumentsComponent = styled.section `
 
     .cnh {
         padding-top: 12%;
-        margin-left: 3%;
+        /* margin-left: 3%; */
+        text-align: center;
         color: white;
         font-size: 0.9em;
     }
@@ -252,8 +259,8 @@ const SendDocumentsComponent = styled.section `
         background: none;
         border: none;
         position: absolute;
-        top: 735px;
-        margin-left: 65%;
+        top: 696px;
+        margin-left: 25%;
         font-size: 20px;
     }
 
@@ -270,12 +277,12 @@ const SendDocumentsComponent = styled.section `
         background: #07AFFA;
         height: 90px;
         margin-top: 10%;
-        font-size: 0.8em;
+        font-size: 1em;
     }
 
     #ct-txt {
         padding-top: 14%;
-        margin-left: 3%;
+        text-align: center;
         color: white;
     }
 
@@ -283,8 +290,8 @@ const SendDocumentsComponent = styled.section `
         background: none;
         border: none;
         position: absolute;
-        top: 830px;
-        margin-left: 65%;
+        top: 790px;
+        margin-left: 25%;
         font-size: 20px;
     }
 
@@ -708,7 +715,7 @@ const SendDocumentsComponent = styled.section `
     .next {
         border: none;
         background-color: #93B413;
-        margin-left: 9.5%;
+        margin-left: 12%;
         margin-top: 10%;
         border-radius: 10px;
         width: 40px;
@@ -720,7 +727,7 @@ const SendDocumentsComponent = styled.section `
     .next:active {
         border: none;
         background-color: #86a40f;
-        margin-left: 9.5%;
+        margin-left: 12%;
         margin-top: 10%;
         border-radius: 10px;
         width: 40px;
@@ -737,7 +744,7 @@ const SendDocumentsComponent = styled.section `
     // Tablet
     @media(min-width: 768px) {
 
-        height: 155vh;
+        height: 133vh;
 
         .mobile {
             display: none;
@@ -746,6 +753,8 @@ const SendDocumentsComponent = styled.section `
         .tablet-desktops {
             display: block;
             justify-content: space-between;
+            justify-content: center;
+            align-items: center;
         }
 
         background: linear-gradient(180deg, #0A53B5 0%, #0A53B5 100%);
@@ -882,11 +891,12 @@ const SendDocumentsComponent = styled.section `
             height: 600px;
             border-radius: 19px;
             background: linear-gradient(180deg, #07B3FD 0%, #0A53B5 100%);
+            text-align: center;
         }
 
         h1 {
             font-size: 1.4em;
-            margin-left: 32.5%;
+            /* margin-left: 32.5%; */
         }
 
         .rg {
@@ -894,7 +904,8 @@ const SendDocumentsComponent = styled.section `
             background: #07AFFA;
             height: 95px;
             margin-top: 5%;
-            font-size: 1em;
+            font-size: 1.2em;
+            text-align: center;
         }
 
         .rg-txt {
@@ -903,7 +914,7 @@ const SendDocumentsComponent = styled.section `
 
         #rg-txt {
             padding-top: 6.5%;
-            margin-left: 3%;
+            /* margin-left: 3%; */
             color: white;
         }
 
@@ -911,7 +922,7 @@ const SendDocumentsComponent = styled.section `
             background: none;
             border: none;
             position: absolute;
-            top: 500px;
+            top: 492px;
             margin-left: 25%;
             font-size: 1.2em;
         }
@@ -926,14 +937,15 @@ const SendDocumentsComponent = styled.section `
 
         .cpf {
             margin-top: -5%;
-            font-size: 1em;
+            font-size: 1.2em;
+            text-align: center;
         }
 
         .button2 {
             background: none;
             border: none;
             position: absolute;
-            top: 597px;
+            top: 589px;
             margin-left: 25.1%;
             font-size: 1.2em;
         }
@@ -951,20 +963,22 @@ const SendDocumentsComponent = styled.section `
             background: #07AFFA;
             height: 95px;
             margin-top: 5%;
-            font-size: 1em;
+            font-size: 1.1em;
+            text-align: center;
         }
 
         #date-txt {
             padding-top: 6.5%;
-            margin-left: 3%;
+            /* margin-left: 3%; */
             color: white;
+            text-align: center;
         }
 
         .button3 {
             background: none;
             border: none;
             position: absolute;
-            top: 682px;
+            top: 676px;
             margin-left: 25.2%;
             font-size: 1.2em;
         }
@@ -986,8 +1000,8 @@ const SendDocumentsComponent = styled.section `
             background: none;
             border: none;
             position: absolute;
-            top: 780px;
-            margin-left: 25.3%;
+            top: 775px;
+            margin-left: 25.7%;
             font-size: 1.2em;
         }
 
@@ -1009,7 +1023,8 @@ const SendDocumentsComponent = styled.section `
 
         #ct-txt {
             padding-top: 6%;
-            margin-left: 3%;
+            /* margin-left: 3%; */
+            text-align: center;
             color: white;
         }
 
@@ -1017,8 +1032,8 @@ const SendDocumentsComponent = styled.section `
             background: none;
             border: none;
             position: absolute;
-            top: 862px;
-            margin-left: 25.4%;
+            top: 855px;
+            margin-left: 26%;
             font-size: 1.2em;
         }
 
@@ -1379,7 +1394,7 @@ const SendDocumentsComponent = styled.section `
     // Small Screens
     @media(min-width: 992px) {
 
-        height: 145vh;
+        height: 140vh;
 
         .mobile {
             display: none;
@@ -1388,6 +1403,8 @@ const SendDocumentsComponent = styled.section `
         .tablet-desktops {
             display: block;
             justify-content: space-between;
+            justify-content: center;
+            align-items: center;
         }
 
         /* .search {
@@ -1489,11 +1506,13 @@ const SendDocumentsComponent = styled.section `
             border-radius: 19px;
             background: linear-gradient(180deg, #07B3FD 0%, #0A53B5 100%);
             margin-top: 5%;
+            text-align: center;
         }
 
         h1 {
             font-size: 1.6em;
-            margin-left: 34.5%;
+            /* margin-left: 34.5%; */
+            text-align: center;
         }
 
         .rg {
@@ -1501,12 +1520,13 @@ const SendDocumentsComponent = styled.section `
             background: #07AFFA;
             height: 100px;
             margin-top: 8%;
-            font-size: 1.1em;
+            font-size: 1.4em;
         }
 
         #rg-txt {
             padding-top: 5.5%;
-            margin-left: 4%;
+            /* margin-left: 4%; */
+            text-align: center;
             color: white;
         }
 
@@ -1514,8 +1534,8 @@ const SendDocumentsComponent = styled.section `
             background: none;
             border: none;
             position: absolute;
-            top: 560px;
-            margin-left: 22%;
+            top: 534px;
+            margin-left: 25%;
             font-size: 1.2em;
             cursor: pointer;
         }
@@ -1530,16 +1550,17 @@ const SendDocumentsComponent = styled.section `
 
         .cpf {
             margin-top: -6.5%;
-            font-size: 1.1em;
-            margin-left: 4%;
+            font-size: 1.5em;
+            text-align: center;
+            /* margin-left: 4%; */
         }
 
         .button2 {
             background: none;
             border: none;
             position: absolute;
-            top: 659px;
-            margin-left: 22.1%;
+            top: 632px;
+            margin-left: 25.1%;
             font-size: 1.2em;
             cursor: pointer;
         }
@@ -1557,12 +1578,13 @@ const SendDocumentsComponent = styled.section `
             background: #07AFFA;
             height: 100px;
             margin-top: 3.5%;
-            font-size: 1.1em;
+            font-size: 1.5em;
         }
 
         #date-txt {
             padding-top: 5.3%;
-            margin-left: 4%;
+            /* margin-left: 4%; */
+            text-align: center;
             color: white;
         }
 
@@ -1570,8 +1592,8 @@ const SendDocumentsComponent = styled.section `
             background: none;
             border: none;
             position: absolute;
-            top: 742px;
-            margin-left: 22.2%;
+            top: 722px;
+            margin-left: 25.1%;
             font-size: 1.2em;
             cursor: pointer;
         }
@@ -1586,16 +1608,17 @@ const SendDocumentsComponent = styled.section `
 
         .cnh {
             margin-top: -6.5%;
-            font-size: 1.1em;
-            margin-left: 4%;
+            font-size: 1.5em;
+            /* margin-left: 4%; */
+            text-align: center;
         }
 
         .button4 {
             background: none;
             border: none;
             position: absolute;
-            top: 843px;
-            margin-left: 22.3%;
+            top: 823px;
+            margin-left: 25.1%;
             font-size: 1.2em;
             cursor: pointer;
         }
@@ -1613,12 +1636,13 @@ const SendDocumentsComponent = styled.section `
             background: #07AFFA;
             height: 100px;
             margin-top: 3.5%;
-            font-size: 1.1em;
+            font-size: 1.5em;
         }
 
         #ct-txt {
             padding-top: 5%;
-            margin-left: 4%;
+            /* margin-left: 4%; */
+            text-align: center;
             color: white;
         }
 
@@ -1626,8 +1650,8 @@ const SendDocumentsComponent = styled.section `
             background: none;
             border: none;
             position: absolute;
-            top: 925px;
-            margin-left: 22.4%;
+            top: 908px;
+            margin-left: 25.2%;
             font-size: 1.2em;
             cursor: pointer;
         }
@@ -1921,7 +1945,7 @@ const SendDocumentsComponent = styled.section `
     // Medium Screens
     @media(min-width: 1200px) {
 
-        height: 158vh;
+        height: 151vh;
 
         .mobile {
             display: none;
@@ -1930,6 +1954,8 @@ const SendDocumentsComponent = styled.section `
         .tablet-desktops {
             display: block;
             justify-content: space-between;
+            justify-content: center;
+            align-items: center;
         }
 
         /* header {
@@ -1994,12 +2020,14 @@ const SendDocumentsComponent = styled.section `
             height: 630px;
             border-radius: 19px;
             background: linear-gradient(180deg, #07B3FD 0%, #0A53B5 100%);
+            text-align: center;
         }
 
         h1 {
             font-size: 1.8em;
             padding-top: 7%;
-            margin-left: 34.5%;
+            /* margin-left: 34.5%; */
+            text-align: center;
         }
 
         .rg {
@@ -2007,12 +2035,13 @@ const SendDocumentsComponent = styled.section `
             background: #07AFFA;
             height: 100px;
             margin-top: 6%;
-            font-size: 1.2em;
+            font-size: 1.6em;
         }
 
         #rg-txt {
             padding-top: 4.5%;
-            margin-left: 4%;
+            /* margin-left: 4%; */
+            text-align: center;
             color: white;
         }
 
@@ -2020,8 +2049,8 @@ const SendDocumentsComponent = styled.section `
             background: none;
             border: none;
             position: absolute;
-            top: 572px;
-            margin-left: 20%;
+            top: 545px;
+            margin-left: 21%;
             font-size: 1.2em;
             cursor: pointer;
         }
@@ -2036,16 +2065,17 @@ const SendDocumentsComponent = styled.section `
 
         .cpf {
             margin-top: -7%;
-            font-size: 1.2em;
-            margin-left: 4%;
+            font-size: 1.6em;
+            /* margin-left: 4%; */
+            text-align: center;
         }
 
         .button2 {
             background: none;
             border: none;
             position: absolute;
-            top: 675px;
-            margin-left: 20.1%;
+            top: 648px;
+            margin-left: 21.1%;
             font-size: 1.2em;
             cursor: pointer;
         }
@@ -2063,12 +2093,13 @@ const SendDocumentsComponent = styled.section `
             background: #07AFFA;
             height: 100px;
             margin-top: 4%;
-            font-size: 1.2em;
+            font-size: 1.6em;
         }
 
         #date-txt {
             padding-top: 4.5%;
-            margin-left: 4%;
+            /* margin-left: 4%; */
+            text-align: center;
             color: white;
         }
 
@@ -2076,8 +2107,8 @@ const SendDocumentsComponent = styled.section `
             background: none;
             border: none;
             position: absolute;
-            top: 766px;
-            margin-left: 20.2%;
+            top: 746px;
+            margin-left: 21.15%;
             font-size: 1.2em;
             cursor: pointer;
         }
@@ -2092,16 +2123,17 @@ const SendDocumentsComponent = styled.section `
 
         .cnh {
             margin-top: -6%;
-            font-size: 1.2em;
-            margin-left: 4%;
+            font-size: 1.6em;
+            /* margin-left: 4%; */
+            text-align: center;
         }
 
         .button4 {
             background: none;
             border: none;
             position: absolute;
-            top: 877px;
-            margin-left: 20.3%;
+            top: 855px;
+            margin-left: 21.25%;
             font-size: 1.2em;
             cursor: pointer;
         }
@@ -2119,12 +2151,13 @@ const SendDocumentsComponent = styled.section `
             background: #07AFFA;
             height: 100px;
             margin-top: 4%;
-            font-size: 1.2em;
+            font-size: 1.6em;
         }
 
         #ct-txt {
             padding-top: 4.5%;
-            margin-left: 4%;
+            /* margin-left: 4%; */
+            text-align: center;
             color: white;
         }
 
@@ -2132,8 +2165,8 @@ const SendDocumentsComponent = styled.section `
             background: none;
             border: none;
             position: absolute;
-            top: 968px;
-            margin-left: 20.4%;
+            top: 950px;
+            margin-left: 21.3%;
             font-size: 1.2em;
             cursor: pointer;
         }
@@ -2426,7 +2459,14 @@ const SendDocumentsComponent = styled.section `
 
     @media(min-width: 1400px) {
 
-        height: 150vh;
+        height: 155vh;
+
+        .tablet-desktops {
+            display: block;
+            justify-content: space-between;
+            justify-content: center;
+            align-items: center;
+        }
 
         .search {
             margin-top: 5%;
@@ -2455,32 +2495,37 @@ const SendDocumentsComponent = styled.section `
         }
 
         h1 {
-            margin-left: 36%;
+            /* margin-left: 36%; */
         }
 
         .button1 {
-            margin-left: 18%;
-            margin-top: 1.1%;
+            margin-left: 20%;
+            position: absolute;
+            top: 550px;
         }
 
         .button2 {
-            margin-left: 18.1%;
-            margin-top: 1.05%;
+            margin-left: 20.05%;
+            position: absolute;
+            top: 653px;
         }
 
         .button3 {
-            margin-left: 18.2%;
-            margin-top: 0.7%;
+            margin-left: 20.1%;
+            position: absolute;
+            top: 750px;
         }
 
         .button4 {
-            margin-left: 18.2%;
-            margin-top: 0.6%;
+            margin-left: 20.2%;
+            position: absolute;
+            top: 860px;
         }
 
         .button5 {
-            margin-left: 18.2%;
-            margin-top: 0.3%;
+            margin-left: 20.2%;
+            position: absolute;
+            top: 958px;
         }
 
         .send-rg2 ul{
@@ -2751,7 +2796,7 @@ const SendDocumentsComponent = styled.section `
 
     @media(min-width: 1600px) {
 
-        height: 136vh;
+        height: 135vh;
 
         .mobile {
             display: none;
@@ -2760,6 +2805,8 @@ const SendDocumentsComponent = styled.section `
         .tablet-desktops {
             display: block;
             justify-content: space-between;
+            justify-content: center;
+            align-items: center;
         }
 
         /* header {
@@ -2794,12 +2841,13 @@ const SendDocumentsComponent = styled.section `
 
         form {
             margin-left: 27.5%;
-            margin-top: 5%;
+            margin-top: 3.5%;
+            text-align: center;
         }
 
         h1 {
             font-size: 2em;
-            margin-left: 33%;
+            /* margin-left: 33%; */
         }
 
         .rg {
@@ -2807,12 +2855,13 @@ const SendDocumentsComponent = styled.section `
             background: #07AFFA;
             height: 100px;
             margin-top: 6%;
-            font-size: 1.2em;
+            font-size: 1.5em;
         }
 
         #rg-txt {
             padding-top: 5.7%;
-            margin-left: 4%;
+            /* margin-left: 4%; */
+            text-align: center;
             color: white;
         }
 
@@ -2820,8 +2869,8 @@ const SendDocumentsComponent = styled.section `
             background: none;
             border: none;
             position: absolute;
-            top: 612px;
-            margin-left: 17%;
+            top: 548px;
+            margin-left: 18%;
             font-size: 1.2em;
             cursor: pointer;
         }
@@ -2836,16 +2885,17 @@ const SendDocumentsComponent = styled.section `
 
         .cpf {
             margin-top: -6%;
-            font-size: 1.1em;
-            margin-left: 4%;
+            font-size: 1.5em;
+            /* margin-left: 4%; */
+            text-align: center;
         }
 
         .button2 {
             background: none;
             border: none;
             position: absolute;
-            top: 713px;
-            margin-left: 17.1%;
+            top: 650px;
+            margin-left: 18.1%;
             font-size: 1.2em;
             cursor: pointer;
         }
@@ -2863,12 +2913,13 @@ const SendDocumentsComponent = styled.section `
             background: #07AFFA;
             height: 100px;
             margin-top: 4.5%;
-            font-size: 1.1em;
+            font-size: 1.5em;
         }
 
         #date-txt {
             padding-top: 5.7%;
-            margin-left: 4%;
+            /* margin-left: 4%; */
+            text-align: center;
             color: white;
         }
 
@@ -2876,8 +2927,8 @@ const SendDocumentsComponent = styled.section `
             background: none;
             border: none;
             position: absolute;
-            top: 814px;
-            margin-left: 17.2%;
+            top: 755px;
+            margin-left: 18.2%;
             font-size: 1.2em;
             cursor: pointer;
         }
@@ -2892,16 +2943,17 @@ const SendDocumentsComponent = styled.section `
 
         .cnh {
             margin-top: -6%;
-            font-size: 1.1em;
-            margin-left: 4%;
+            font-size: 1.5em;
+            /* margin-left: 4%; */
+            text-align: center;
         }
 
         .button4 {
             background: none;
             border: none;
             position: absolute;
-            top: 915px;
-            margin-left: 17.3%;
+            top: 857px;
+            margin-left: 18.3%;
             font-size: 1.2em;
             cursor: pointer;
         }
@@ -2919,12 +2971,13 @@ const SendDocumentsComponent = styled.section `
             background: #07AFFA;
             height: 100px;
             margin-top: 4.5%;
-            font-size: 1.1em;
+            font-size: 1.5em;
         }
 
         #ct-txt {
             padding-top: 5.7%;
-            margin-left: 4%;
+            /* margin-left: 4%; */
+            text-align: center;
             color: white;
         }
 
@@ -2932,8 +2985,8 @@ const SendDocumentsComponent = styled.section `
             background: none;
             border: none;
             position: absolute;
-            top: 1014px;
-            margin-left: 17.2%;
+            top: 961px;
+            margin-left: 18.4%;
             font-size: 1.2em;
             cursor: pointer;
         }

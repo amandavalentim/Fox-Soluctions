@@ -169,7 +169,7 @@ const FormComponent = styled.section `
     // Tablet
     @media(min-width: 704px){
 
-        height: 88vh;
+        height: 83vh;
 
         background: #0A53B5;
 
@@ -508,7 +508,7 @@ const FormComponent = styled.section `
     // Medium Screens
     @media(min-width: 1200px) {
 
-        height: 85vh;
+        height: 84vh;
 
         .mobile {
             display: none;
@@ -532,7 +532,7 @@ const FormComponent = styled.section `
             width: 527px;
             height: 500px;
             border-color: white;
-            margin-top: -71.2%;
+            margin-top: -68.5%;
         }
 
         h1 {
@@ -728,7 +728,7 @@ const FormComponent = styled.section `
     // Large Screens
     @media(min-width: 1600px) {
 
-        height: 81.9vh;
+        height: 95vh;
 
         .mobile {
             display: none;
@@ -752,7 +752,7 @@ const FormComponent = styled.section `
             width: 620px;
             height: 605px;
             border-color: white;
-            margin-top: -68%;
+            margin-top: -60%;
         }
 
         h1 {
