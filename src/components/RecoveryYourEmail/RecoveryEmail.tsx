@@ -41,11 +41,10 @@ const RecoveryEmailComponent = styled.section`
             padding: 0;
             margin-top: -8%;
             font-size: 1.3em;
-            /* margin-top: -45%;
-            margin-left: 15%; */
-            /* width: 250px; */
         }
         .input-email{
+            display: flex;
+            justify-content: center;
             text-align: center;
             margin-top: 8%;
             font-size: 1.3em;
@@ -64,9 +63,6 @@ const RecoveryEmailComponent = styled.section`
                 background: #93B413;
                 font-size: 1.6em;
                 color: #ffffff;
-                /* margin: 40px; */
-                /* margin-top: 5%; */
-                /* margin-left: 28%; */
             }
             .confirm:active{
                 width: 170px;
@@ -76,10 +72,6 @@ const RecoveryEmailComponent = styled.section`
                 background-color: #86a40f;
                 font-size: 1.6em;
                 color: #ffffff;
-                /* margin-top: 5%; */
-                /* margin: 40px; */
-                /* margin-top: 5%; */
-                /* margin-left: 28%; */
             }
         }
     }
@@ -116,7 +108,16 @@ const RecoveryEmailComponent = styled.section`
 
         .input-email{
             margin-top: 5%;
-            margin-left: -28%;
+            /* margin-left: -28%; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .css-6w74q7 {
+            margin: 0;
+            width: 40vw;
         }
 
         #PhoneOrCPF{
@@ -366,7 +367,7 @@ const RecoveryEmailComponent = styled.section`
         }
 
         h3 {
-            font-size: 1.3em;
+            font-size: 1.6em;
             /* margin-left: 10%; */
         }
 

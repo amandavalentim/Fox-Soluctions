@@ -38,7 +38,9 @@ const FormComponent = styled.section `
     h1 {
         text-align: center;
         font-size: 1.8em;
-        margin-left: 4%;
+        /* margin-left: 4%; */
+        display: flex;
+        justify-content: center;
         padding-top: 5%;
     }
 
@@ -48,7 +50,7 @@ const FormComponent = styled.section `
 
     h4 {
         /* margin-top: -5%; */
-        padding: 0;
+        /* padding: 0; */
         text-align: center;
     }
 
@@ -202,7 +204,10 @@ const FormComponent = styled.section `
 
        h1 {
         font-size: 23px;
-        margin-left: 2%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        padding: 0;
        }
 
        #email {
@@ -218,7 +223,7 @@ const FormComponent = styled.section `
         text-align: center;
         padding: 0;
         margin-top: -15%;
-        margin-left: 3%;
+        /* margin-left: 3%; */
         color: #C7C7C7;
         font-size: 0.9em;
         font-family: 'Poppins-Regular';
@@ -229,7 +234,7 @@ const FormComponent = styled.section `
         text-align: center;
         padding: 0;
         margin-top: -15%;
-        margin-left: 3%;
+        /* margin-left: 3%; */
         color: #F47216;
         font-size: 0.9em;
         font-family: 'Poppins-Regular';
@@ -251,7 +256,7 @@ const FormComponent = styled.section `
 
     #forgot-password {
         margin-top: -15%;
-        margin-left: 3%;
+        /* margin-left: 3%; */
         font-size: 1em;
         font-family: 'Poppins-Regular';
         color: #C7C7C7;
@@ -260,7 +265,7 @@ const FormComponent = styled.section `
 
     #forgot-password:active {
         margin-top: -15%;
-        margin-left: 3%;
+        /* margin-left: 3%; */
         font-size: 1em;
         font-family: 'Poppins-Regular';
         color: #F47216;
@@ -269,7 +274,7 @@ const FormComponent = styled.section `
 
     p {
         text-align: center;
-        margin-left: 4.5%;
+        /* margin-left: 4.5%; */
         font-size: 1em;
         margin-top: -5%;
     }
@@ -305,7 +310,7 @@ const FormComponent = styled.section `
     .page2 {
         font-size: 1.1em;
         width: 320px;
-        margin-left: 0.3%;
+        /* margin-left: 0.3%; */
         margin-top: 5%;
         text-align: center;
         margin-top: -5%;
@@ -319,7 +324,7 @@ const FormComponent = styled.section `
         background-color: #93B413;
         text-align: center;
         margin-top: -5%;
-        margin-left: 4.5%;
+        /* margin-left: 4.5%; */
     }
 
     .logar:active {
@@ -328,7 +333,7 @@ const FormComponent = styled.section `
         height: 40px;
         border-radius: 19px;
         background-color: #86a40f;
-        margin-left: 4.5%;
+        /* margin-left: 4.5%; */
     }
 
     .fox {
@@ -343,7 +348,7 @@ const FormComponent = styled.section `
     // Small Screens
     @media(min-width: 992px) {
 
-        height: 83.8vh;
+        height: 78vh;
 
         .mobile {
             display: none;
@@ -372,8 +377,7 @@ const FormComponent = styled.section `
 
         h1 {
             font-size: 1.6em;
-            /* /* margin-left: 42%; */
-            margin-top: -6%; 
+            margin-top: 0%; 
         }
 
         .email {
@@ -483,7 +487,7 @@ const FormComponent = styled.section `
         padding: 8px;
        }
 
-       .faGoogle {
+    .faGoogle {
         width: 25px;
         height: 25px;
         margin-bottom: -5px;
@@ -532,7 +536,7 @@ const FormComponent = styled.section `
             width: 527px;
             height: 500px;
             border-color: white;
-            margin-top: -68.5%;
+            margin-top: -70%;
         }
 
         h1 {
@@ -685,7 +689,7 @@ const FormComponent = styled.section `
     // 1476-708
     @media(min-width: 1380px) {
 
-        height: 74.6vh;
+        height: 79.3vh;
 
         .mobile {
             display: none;
@@ -701,7 +705,7 @@ const FormComponent = styled.section `
         /* background-image: url("/images/1400px-login.svg"); */
 
         .form {
-            margin-top: -71.2%;
+            margin-top: -72%;
             display: grid;
             justify-content: center;
             align-items: center;
@@ -728,7 +732,7 @@ const FormComponent = styled.section `
     // Large Screens
     @media(min-width: 1600px) {
 
-        height: 95vh;
+        height: 81.65vh;
 
         .mobile {
             display: none;
@@ -750,9 +754,9 @@ const FormComponent = styled.section `
             border-radius: 19px;
             background: linear-gradient(180deg, #07B3FD 0%, #0a59c0 100%);
             width: 620px;
-            height: 605px;
+            height: 580px;
             border-color: white;
-            margin-top: -60%;
+            margin-top: -67%;
         }
 
         h1 {

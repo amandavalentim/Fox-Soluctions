@@ -56,7 +56,7 @@ const Formcomponent4 = styled.section `
 
     .confirmar {
         margin-top: 10%;
-        margin-left: 4%;
+        /* margin-left: 4%; */
         text-align: center;
         width: 170px;
         height: 50px;
@@ -98,6 +98,13 @@ const Formcomponent4 = styled.section `
 
         height: 50vh;
 
+        .form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
         form {
             margin-top: 11%;
             /* margin-left: 30%; */
@@ -106,15 +113,21 @@ const Formcomponent4 = styled.section `
             width: 290px;
             height: 275px;
             border-color: white;
+            text-align: center;
         }
 
         h1 {
             font-size: 1.2em;
         }
 
+        .css-6w74q7 {
+            margin: 0;
+            width: 40vw;
+        }
+
         #password {
-            margin-top: 15%;
-            margin-left: 11%;
+            margin-top: 10%;
+            /* margin-left: 11%; */
             width: 230px;
         }
 
@@ -123,8 +136,8 @@ const Formcomponent4 = styled.section `
         }
 
         #confirm-password {
-            margin-top: 5%;
-            margin-left: 11%;
+            margin-top: 15%;
+            /* margin-left: 11%; */
             width: 230px;
         }
 
@@ -133,8 +146,8 @@ const Formcomponent4 = styled.section `
         }
 
         .confirmar {
-            margin-top: -1%;
-            margin-left: 27%;
+            margin-top: 10%;
+            /* margin-left: 27%; */
             width: 140px;
             height: 40px;
             font-size: 1.3em;
@@ -145,8 +158,8 @@ const Formcomponent4 = styled.section `
         }
 
         .confirmar:active {
-            margin-top: -1%;
-            margin-left: 27%;
+            margin-top: 10%;
+            /* margin-left: 27%; */
             width: 140px;
             height: 40px;
             font-size: 1.3em;
@@ -157,8 +170,8 @@ const Formcomponent4 = styled.section `
         }
 
         .fox {
-            margin-left: -110%;
-            margin-top: -50%;
+            margin-left: -34.5%;
+            margin-top: -77%;
             width: 100px;
         }
 
@@ -176,6 +189,13 @@ const Formcomponent4 = styled.section `
             justify-content: space-between;
             justify-content: center;
             align-items: center;
+        }
+
+        .form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
         }
 
         form {
@@ -204,7 +224,7 @@ const Formcomponent4 = styled.section `
         }
 
             #confirm-password {
-                margin-top: 5%;
+                margin-top: 15%;
                 /* margin-left: 15%; */
                 width: 232px;
             }
@@ -217,7 +237,7 @@ const Formcomponent4 = styled.section `
                 width: 160px;
                 height: 50px;
                 font-size: 1.6em;
-                margin-top: 2%;
+                margin-top: 15%;
                 /* margin-left: 25%; */
                 background-color: #93B413;
                 border: none;
@@ -229,7 +249,7 @@ const Formcomponent4 = styled.section `
                 width: 160px;
                 height: 50px;
                 font-size: 1.6em;
-                margin-top: 2%;
+                margin-top: 15%;
                 /* margin-left: 25%; */
                 background-color: #9fc214;
                 border: none;
@@ -241,7 +261,7 @@ const Formcomponent4 = styled.section `
                 width: 160px;
                 height: 50px;
                 font-size: 1.6em;
-                margin-top: 2%;
+                margin-top: 15%;
                 /* margin-left: 25%; */
                 background-color: #86a40f;
                 border: none;
@@ -250,7 +270,7 @@ const Formcomponent4 = styled.section `
             }
 
             .fox {
-                margin-left: -106%;
+                margin-left: -30.6%;
             }
         }
 
@@ -271,6 +291,13 @@ const Formcomponent4 = styled.section `
         }
 
             /* background-image: url("/images/1200px-recuperar-senha.svg"); */
+
+            .form {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
 
             form {
                 margin-top: 10%;
@@ -299,7 +326,7 @@ const Formcomponent4 = styled.section `
             }
 
             #confirm-password {
-                margin-top: 1%;
+                margin-top: 15%;
                 /* margin-left: 12%; */
                 width: 305px;
                 height: 32px;
@@ -313,7 +340,7 @@ const Formcomponent4 = styled.section `
                 width: 170px;
                 height: 55px;
                 font-size: 1.7em;
-                margin-top: -4%;
+                margin-top: 8%;
                 /* margin-left: 28%; */
                 background-color: #93B413;
                 border: none;
@@ -325,7 +352,7 @@ const Formcomponent4 = styled.section `
                 width: 170px;
                 height: 55px;
                 font-size: 1.7em;
-                margin-top: -4%;
+                margin-top: 8%;
                 /* margin-left: 28%; */
                 background-color: #9fc214;
                 border: none;
@@ -346,7 +373,7 @@ const Formcomponent4 = styled.section `
             }
 
             .fox {
-                margin-left: -94.5%;
+                margin-left: -25%;
             }
         }
 
@@ -372,7 +399,7 @@ const Formcomponent4 = styled.section `
             }
 
             .fox {
-                margin-top: -35%;
+                margin-top: -75%;
             }
         }
 
@@ -393,6 +420,13 @@ const Formcomponent4 = styled.section `
             /* background-image: url("/images/1600px-recuperar-senha.svg"); */
             height: 65vh;
 
+            .form {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+
             form {
                 margin-top: 15%;
                 /* margin-left: 35.5%; */
@@ -409,9 +443,6 @@ const Formcomponent4 = styled.section `
             }
 
             #password {
-                position: absolute;
-                margin-left: 2.5%;
-                top: 140px;
                 width: 320px;
                 height: 32px;
             }
@@ -421,9 +452,6 @@ const Formcomponent4 = styled.section `
             }
 
             #confirm-password {
-                position: absolute;
-                margin-left: 2.5%;
-                top: 391px;
                 width: 320px;
                 height: 32px;
             }
@@ -435,10 +463,8 @@ const Formcomponent4 = styled.section `
             .confirmar {
                 width: 210px;
                 height: 60px;
+                margin-top: 10%;
                 font-size: 2em;
-                position: absolute;
-                margin-left: 6%;
-                top: 550px;
                 background-color: #93B413;
                 border: none;
                 border-radius: 15px;
@@ -449,10 +475,8 @@ const Formcomponent4 = styled.section `
             .confirmar:hover {
                 width: 210px;
                 height: 60px;
+                margin-top: 10%;
                 font-size: 2em;
-                position: absolute;
-                margin-left: 6%;
-                top: 550px;
                 background-color: #9fc214;
                 border: none;
                 border-radius: 15px;
@@ -463,10 +487,8 @@ const Formcomponent4 = styled.section `
             .confirmar:active {
                 width: 210px;
                 height: 60px;
+                margin-top: 10%;
                 font-size: 2em;
-                position: absolute;
-                margin-left: 6%;
-                top: 550px;
                 background-color: #86a40f;
                 border: none;
                 border-radius: 15px;
@@ -476,12 +498,17 @@ const Formcomponent4 = styled.section `
 
             .fox {
                 margin-left: -25%;
-                margin-top: 15%;
+                margin-top: -95%;
             }
         }
     }
 
 `;
+
+// .button {
+//     display: flex;
+//     justify-content: center;
+// }
 
 const NewPassword = function() {
     return (
@@ -502,18 +529,20 @@ const NewPassword = function() {
 
             <nav className='tablet-desktops'>
                 {/* Content */}
-                <form>
-                    <h1>Crie a sua nova senha:</h1>
-                    <Input type="number" name="password" id="password" placeholder='Nova Senha'/>
-                    <Input type="number" name="confirm-password" id="confirm-password" placeholder='Confirmar nova Senha'/>
-                    <Link href={'/LoginPage'}>
-                            <button className='confirmar' type='button'>
-                                Confirmar
-                            </button>
-                    </Link>
-                    {/*Stella our Mascot*/}
-                    <img src="/images/Raposa-login.png" alt="fox" className='fox'/>
-                </form>
+                <div className="form">
+                    <form>
+                        <h1>Crie a sua nova senha:</h1>
+                        <Input type="number" name="password" id="password" placeholder='Nova Senha'/>
+                        <Input type="number" name="confirm-password" id="confirm-password" placeholder='Confirmar nova Senha'/>
+                        <Link href={'/LoginPage'}>
+                                <button className='confirmar' type='button'>
+                                    Confirmar
+                                </button>
+                        </Link>
+                    </form>
+                </div>
+                {/*Stella our Mascot*/}
+                <img src="/images/Raposa-login.png" alt="fox" className='fox'/>
             </nav>
 
         </Formcomponent4>

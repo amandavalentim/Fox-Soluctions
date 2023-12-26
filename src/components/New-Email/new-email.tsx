@@ -25,7 +25,6 @@ background: linear-gradient(180deg, #04a4e8 0%, #0A53B5 100%);
 
 h1 {
     font-size: 1.4em;
-    /* padding-left: 6%; */
     padding-top: 10%;
     text-align: center;
 }
@@ -42,7 +41,6 @@ h1 {
 
 #email {
     margin-top: 20%;
-    /* margin-left: 9.7%; */
     width: 260px;
 }
 
@@ -52,7 +50,6 @@ h1 {
 
 #confirm {
     margin-top: 11.5%;
-    /* margin-left: 9.7%; */
     width: 260px;
 }
 
@@ -60,9 +57,14 @@ h1 {
     font-size: 1.1em;
 }
 
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .confirmar {
     margin-top: 12%;
-    margin-left: 23%;
     text-align: center;
     width: 170px;
     height: 50px;
@@ -109,6 +111,10 @@ h1 {
 
     .form {
         padding-top: 4.5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
 
     form {
@@ -123,12 +129,15 @@ h1 {
 
     h1 {
         font-size: 1.2em;
-        /* margin-left: 3%; */
+    }
+
+    .css-6w74q7 {
+        margin: 0;
     }
 
     #email {
         margin-top: 11%;
-        margin-left: 11%;
+        /* margin-left: 11%; */
         width: 230px;
     }
 
@@ -137,8 +146,8 @@ h1 {
     }
 
     #confirm {
-        margin-top: 5%;
-        margin-left: 11%;
+        margin-top: 13%;
+        /* margin-left: 11%; */
         width: 230px;
     }
 
@@ -146,9 +155,14 @@ h1 {
         font-size: 1em;
     }
 
+    .button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     .confirmar {
-        margin-top: -1%;
-        margin-left: 26%;
+        margin-top: 25%;
         width: 140px;
         height: 40px;
         font-size: 1.4em;
@@ -160,7 +174,6 @@ h1 {
 
     .confirmar:active {
         margin-top: -2%;
-        margin-left: 26%;
         width: 140px;
         height: 40px;
         font-size: 1.4em;
@@ -197,6 +210,12 @@ h1 {
     /* background-image: url("/images/992px-recuperar-senha.svg"); */
     height: 52.5vh;
 
+    .form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     form {
         margin-top: 5.5%;
         /* margin-left: 33%; */
@@ -214,7 +233,7 @@ h1 {
 
     #email {
         margin-top: 10%;
-        margin-left: 11.5%;
+        /* margin-left: 11.5%; */
         width: 255px;
     }
 
@@ -223,8 +242,8 @@ h1 {
     }
 
     #confirm {
-        margin-top: 5%;
-        margin-left: 11.5%;
+        margin-top: 15%;
+        /* margin-left: 11.5%; */
         width: 255px;
     }
 
@@ -233,8 +252,8 @@ h1 {
     }
 
     .confirmar {
-        margin-top: 1%;
-        margin-left: 29%;
+        margin-top: 25%;
+        /* margin-left: 29%; */
         width: 140px;
         height: 40px;
         font-size: 1.4em;
@@ -246,8 +265,8 @@ h1 {
     }
 
     .confirmar:hover {
-        margin-top: 1%;
-        margin-left: 29%;
+        margin-top: 25%;
+        /* margin-left: 29%; */
         width: 140px;
         height: 40px;
         font-size: 1.4em;
@@ -259,8 +278,8 @@ h1 {
     }
 
     .confirmar:active {
-        margin-top: 1%;
-        margin-left: 29%;
+        margin-top: 25%;
+        /* margin-left: 29%; */
         width: 140px;
         height: 40px;
         font-size: 1.4em;
@@ -293,6 +312,13 @@ h1 {
 
     /* background-image: url("/images/1200px-recuperar-senha.svg"); */
 
+    .form{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
     form {
         margin-top: -1%;
         /* margin-left: 36.5%; */
@@ -306,7 +332,7 @@ h1 {
 
     #email {
         margin-top: 10%;
-        margin-left: 11%;
+        /* margin-left: 11%; */
         width: 283px;
     }
 
@@ -315,8 +341,8 @@ h1 {
     }
 
     #confirm {
-        margin-top: 1%;
-        margin-left: 11%;
+        margin-top: 15%;
+        /* margin-left: 11%; */
         width: 283px;
     }
 
@@ -325,7 +351,7 @@ h1 {
     }
 
     .confirmar {
-        margin-top: -5%;
+        margin-top: 22%;
         width: 160px;
         height: 55px;
         font-size: 1.6em;
@@ -333,7 +359,7 @@ h1 {
     }
 
     .confirmar:hover {
-        margin-top: -5%;
+        margin-top: 22%;
         width: 160px;
         height: 55px;
         font-size: 1.6em;
@@ -341,7 +367,7 @@ h1 {
     }
 
     .confirmar:active {
-        margin-top: -5%;
+        margin-top: 22%;
         width: 160px;
         height: 55px;
         font-size: 1.6em;
@@ -389,6 +415,13 @@ h1 {
 
     height: 60vh;
 
+    .form{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
     form {
         /* margin-left: 38%; */
         margin-top: 0%;
@@ -398,31 +431,25 @@ h1 {
         margin-left: -7.6%;
     }
 
+    #email {
+        margin-top: 10%;
+        /* margin-left: 11%; */
+        width: 283px;
+    }
+
     #confirm {
-        position: absolute;
-        top: 385px;
-        margin-left: -18%;
         width: 283px;
     }
 
     .confirmar {
-        position: absolute;
-        top: 545px;
-        margin-left: -14%;
         cursor: pointer;
     }
 
     .confirmar:hover {
-        position: absolute;
-        top: 545px;
-        margin-left: -14%;
         cursor: pointer;
     }
 
     .confirmar:active {
-        position: absolute;
-        top: 545px;
-        margin-left: -14%;
         cursor: pointer;
     }
 
@@ -444,11 +471,13 @@ const NewEmail = function() {
                     <div className='email2'>
                         <Input type="email" placeholder='Confirmar novo E-mail' id='confirm'/>
                     </div>
-                    <Link href={'/LoginPage'}>
-                        <button className='confirmar' type='button'>
-                            Confirmar
-                        </button>
-                    </Link>
+                    <div className="button">
+                        <Link href={'/LoginPage'}>
+                            <button className='confirmar' type='button'>
+                                Confirmar
+                            </button>
+                        </Link>
+                    </div>
                 </form>
                 <img src="/images/Stella2.png" alt="fox" className='fox'/>
             </nav>
@@ -459,11 +488,13 @@ const NewEmail = function() {
                         <h1>Crie o seu novo E-mail:</h1>
                         <Input type="email" placeholder='Digite o seu novo E-mail' id='email'/>
                         <Input type="email" placeholder='Confirmar novo E-mail' id='confirm'/>
-                        <Link href={'/LoginPage'}>
-                            <button className='confirmar' type='button'>
-                                Confirmar
-                            </button>
-                        </Link>
+                        <div className="button">
+                            <Link href={'/LoginPage'}>
+                                <button className='confirmar' type='button'>
+                                    Confirmar
+                                </button>
+                            </Link>
+                        </div>
                     </form>
                     <img src="/images/raposa-new-password.png" alt="fox" className='fox2'/>
                 </div>

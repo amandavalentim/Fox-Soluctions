@@ -886,7 +886,7 @@ const FormComponent2 = styled.section `
 
         form {
             /* margin-left: 25.5%; */
-            margin-top: 10%;
+            margin-top: 7.5%;
         }
 
         .fox {

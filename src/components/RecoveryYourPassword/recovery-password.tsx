@@ -30,7 +30,7 @@ const PageComponent = styled.section `
     }
 
     .fox {
-        margin-top: -20%;
+        margin-top: -18%;
         margin-left: 63%;
         width: 100px;
     }
@@ -38,14 +38,12 @@ const PageComponent = styled.section `
     h1 {
         font-size: 1.2em;
         font-family: 'Poppins-medium';
-        /* margin-left: 11%; */
         text-align: center;
-        margin-top: 5%;
+        margin-top: 10%;
     }
 
     #op {
         width: 250px;
-        /* margin-left: 11%; */
         margin-top: 20%;
     }
 
@@ -53,9 +51,14 @@ const PageComponent = styled.section `
         font-size: 1em;
     }
 
+    .button {
+        display: flex;
+        justify-content: center;
+    }
+
     .enviar {
         margin-top: 13%;
-        margin-left: 24%;
+        /* margin-left: 24%; */
         text-align: center;
         width: 170px;
         height: 50px;
@@ -67,7 +70,7 @@ const PageComponent = styled.section `
 
     .enviar:active {
         margin-top: 13%;
-        margin-left: 24%;
+        /* margin-left: 24%; */
         width: 170px;
         height: 50px;
         font-size: 1.6em;
@@ -104,6 +107,7 @@ const PageComponent = styled.section `
             justify-content: space-between;
             justify-content: center;
             align-items: center;
+            text-align: center;
         }
 
         h1 {
@@ -125,6 +129,11 @@ const PageComponent = styled.section `
             font-size: 0.8em;
         }
 
+        .button {
+            display: flex;
+            justify-content: center;
+        }
+
         .enviar {
             width: 130px;
             height: 40px;
@@ -135,7 +144,7 @@ const PageComponent = styled.section `
             color: #ffffff;
             margin: 40px;
             margin-top: 15%;
-            margin-left: 24%;
+            /* margin-left: 24%; */
             text-align: center;
             cursor: pointer;
         }
@@ -150,7 +159,6 @@ const PageComponent = styled.section `
             color: #ffffff;
             margin: 40px;
             margin-top: 15%;
-            margin-left: 24%;
             text-align: center;
         }
 
@@ -202,6 +210,11 @@ const PageComponent = styled.section `
 
         #op::-webkit-input-placeholder { /* Chrome/Opera/Safari */
             font-size: 1.2em;
+        }
+
+        .button {
+            display: flex;
+            justify-content: center;
         }
 
         .enviar {
@@ -268,6 +281,11 @@ const PageComponent = styled.section `
             font-size: 1.4em;
         }
 
+        .button {
+            display: flex;
+            justify-content: center;
+        }
+
         .enviar {
             width: 150px;
             height: 50px;
@@ -278,7 +296,7 @@ const PageComponent = styled.section `
             color: #ffffff;
             margin: 40px;
             margin-top: 3%;
-            margin-left: 27.5%;
+            /* margin-left: 27.5%; */
             text-align: center;
             cursor: pointer;
         }
@@ -293,7 +311,7 @@ const PageComponent = styled.section `
             color: #ffffff;
             margin: 40px;
             margin-top: 3%;
-            margin-left: 27.5%;
+            /* margin-left: 27.5%; */
             text-align: center;
             cursor: pointer;
         }
@@ -308,7 +326,7 @@ const PageComponent = styled.section `
             color: #ffffff;
             margin: 40px;
             margin-top: 3%;
-            margin-left: 27.5%;
+            /* margin-left: 27.5%; */
             text-align: center;
             cursor: pointer;
         }
@@ -352,11 +370,15 @@ const PageComponent = styled.section `
             text-align: center;
         }
 
+        .button {
+            display: flex;
+            justify-content: center;
+        }
         
         .enviar {
             text-align: center;
             margin-top: -1%;
-            margin-left: 27%;
+            /* margin-left: 27%; */
             width: 150px;
             height: 50px;
             font-size: 2em;
@@ -369,7 +391,7 @@ const PageComponent = styled.section `
         .enviar:hover {
             text-align: center;
             margin-top: -1%;
-            margin-left: 27%;
+            /* margin-left: 27%; */
             width: 150px;
             height: 50px;
             font-size: 2em;
@@ -380,7 +402,7 @@ const PageComponent = styled.section `
         .enviar:active {
             text-align: center;
             margin-top: -1%;
-            margin-left: 27%;
+            /* margin-left: 27%; */
             width: 150px;
             height: 50px;
             font-size: 2em;
@@ -428,6 +450,11 @@ const PageComponent = styled.section `
             font-size: 1.2em;
         }
 
+        .button {
+            display: flex;
+            justify-content: center;
+        }
+
        .enviar {
             width: 150px;
             height: 50px;
@@ -438,7 +465,7 @@ const PageComponent = styled.section `
             color: #ffffff;
             margin: 40px;
             margin-top: -15%;
-            margin-left: 28%;
+            /* margin-left: 28%; */
             text-align: center;
             cursor: pointer;
         }
@@ -453,7 +480,7 @@ const PageComponent = styled.section `
             color: #ffffff;
             margin: 40px;
             margin-top: -15%;
-            margin-left: 28%;
+            /* margin-left: 28%; */
             text-align: center;
             cursor: pointer;
         }
@@ -468,7 +495,7 @@ const PageComponent = styled.section `
             color: #ffffff;
             margin: 40px;
             margin-top: -15%;
-            margin-left: 28%;
+            /* margin-left: 28%; */
             text-align: center;
             cursor: pointer;
         }
@@ -493,11 +520,13 @@ const ForgotPassword = function() {
                 {/* Mobile page content */}
                 <h1>Recupere a sua senha:</h1>
                 <Input type="string" name="email" id="op" placeholder='Digite o seu e-mail ou telefone'/>
-                    <Link href={'/NewPasswordPage'}>
-                        <button className='enviar' type='button'>
-                            Enviar
-                        </button>
-                    </Link>
+                    <div className="button">
+                        <Link href={'/NewPasswordPage'}>
+                            <button className='enviar' type='button'>
+                                Enviar
+                            </button>
+                        </Link>
+                    </div>
             </nav>
 
             <nav className='tablet-desktops'>
@@ -507,11 +536,13 @@ const ForgotPassword = function() {
                     <div className='email'>
                         <Input type="string" name="email" id="op" placeholder='Digite o seu e-mail ou telefone'/>
                     </div>
-                    <Link href={'/NewPasswordPage'}>
-                        <button className='enviar' type='button'>
-                            Enviar
-                        </button>
-                    </Link>
+                    <div className="button">
+                        <Link href={'/NewPasswordPage'}>
+                            <button className='enviar' type='button'>
+                                Enviar
+                            </button>
+                        </Link>
+                    </div>
                 </form>
                 <img src="/images/Stella2.png" alt="fox" className='fox'/>
             </nav>

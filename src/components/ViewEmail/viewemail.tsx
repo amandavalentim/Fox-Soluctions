@@ -38,13 +38,16 @@ p {
 
 .buttons {
     text-align: center;
-    margin-left: -23%;
-    margin-top: 5%;
+    /* margin-left: -23%; */
+    margin-top: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #ok {
     margin-top: 5%;
-    margin-left: 20%;
+    margin-right: 5%;
     width: 70px;
     height: 40px;
     font-size: 1.1em;
@@ -55,7 +58,7 @@ p {
 
 #ok:active {
     margin-top: 5%;
-    margin-left: 20%;
+    margin-right: 5%;
     width: 70px;
     height: 40px;
     font-size: 1.1em;
@@ -66,7 +69,7 @@ p {
 
 #change {
     margin-top: 5%;
-    margin-left: 14%;
+    margin-left: 20%;
     width: 80px;
     height: 40px;
     font-size: 1.1em;
@@ -77,7 +80,7 @@ p {
 
 #change:active {
     margin-top: 5%;
-    margin-left: 14%;
+    margin-left: 20%;
     width: 80px;
     height: 40px;
     font-size: 1.1em;
@@ -89,7 +92,7 @@ p {
 .fox {
     width: 130px;
     height: 100px;
-    margin-top: 18.9%;
+    margin-top: 13.5%;
     margin-left: 28%;
 }
 
@@ -147,7 +150,7 @@ p {
 
     #ok:active {
         background-color: #86a40f;
-        margin-left: 20.3%;
+        /* margin-left: 20.3%; */
     }
 
     #change {
@@ -156,7 +159,7 @@ p {
     }
 
     #change:active {
-        margin-left: 10%;
+        /* margin-left: 10%; */
         background-color: #86a40f;
     }
 
